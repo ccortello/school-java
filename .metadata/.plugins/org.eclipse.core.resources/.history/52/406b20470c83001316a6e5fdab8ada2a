@@ -1,0 +1,23 @@
+package homework03;
+
+/**
+ * Created by thehoule and ccortello on 1/21/14.
+ */
+public class DatedItem<I> {
+
+    private I item;
+    private long quantity;
+    private String exp_date;
+
+    public DatedItem(I item, long quantity, String exp_date) {
+    	
+    	// store parameters to fields
+    	this.item=item;
+    	this.quantity=quantity;
+    	this.exp_date=exp_date;
+    }
+    
+    public void getDate() {
+    	return exp_date;
+    }
+}

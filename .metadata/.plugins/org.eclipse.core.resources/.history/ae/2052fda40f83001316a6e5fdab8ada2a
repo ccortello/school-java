@@ -1,0 +1,20 @@
+package homework03;
+
+/**
+ * A few simple tests to evaluate the functionality of the Inventory, DatedItem, and Item classes
+ * 
+ * @author	thehoule, ccortello
+ * @date	1/21/14
+ *
+ */
+
+public class InventoryTester {
+
+	public static void main(String[] args) {
+		
+		Inventory inventory = new Inventory<Item>();
+		
+		DatedItem<Item> datedItems = new DatedItem<Item>(new Item("2% Milk"), 5, "A fortnight ago");
+	}
+
+}

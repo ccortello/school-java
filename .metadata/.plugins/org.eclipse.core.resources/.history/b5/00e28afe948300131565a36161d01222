@@ -1,0 +1,96 @@
+package homework03;
+
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.GregorianCalendar;
+import java.util.List;
+
+/**
+ * A list of Items to be used in a hypothetical inventory
+ * Created by thehoule and ccortello on 1/21/14.
+ */
+public class Inventory<I extends Item> {
+
+    private ArrayList<DatedItem> datedItemsList;
+    private boolean update = false; //flag to determine list add conditions
+
+    // A simple constructor which initializes the list of items in the inventory
+    public Inventory() {
+        datedItemsList = new ArrayList<DatedItem>();
+    }
+
+
+    public void addItem(I item, GregorianCalendar criticalDate, int quantity){
+
+    	// Test for invalid items
+        if((item == null) || (criticalDate == null) || (quantity < 0))
+            return;
+        
+        //Size tests
+        if(datedItemsList.size() > 0){
+            for(DatedItem itemIndex : datedItemsList)
+                if (itemIndex.getItem().hashCode() == item.hashCode()) { //hash comparison for same object
+                    itemIndex.setQuantity(itemIndex.getQuantity() + quantity); //Add new quantity
+                    itemIndex.setExp_date(itemIndex.getDate()); //Set new date
+                    update = true; //Bool flag that prevent double adding to list
+                }
+
+            if(!update){
+                datedItemsList.add(new DatedItem(item, quantity, criticalDate)); //Add item to list
+                update = false; //update flag
+            }
+            else
+                update = false;
+        }
+        if(datedItemsList.size() == 0)
+            datedItemsList.add(new DatedItem(item, quantity, criticalDate)); //Add if we're at the start of the list
+        
+//        debug
+        System.out.println("Add size: " + datedItemsList.size());
+    }
+
+    public void removeItem(I item, GregorianCalendar criticalDate, int quantity){
+        //Null check
+        if((item == null) || (criticalDate == null) || (quantity <= 0))
+            return;
+
+        for(DatedItem itemIndex : datedItemsList){ //Check for correct item
+            if ((itemIndex.getItem().hashCode() == item.hashCode()) && (itemIndex.getDate() == criticalDate)) { //hash comparison for same object and date
+                itemIndex.setQuantity(itemIndex.getQuantity() - quantity); //Remove quantity
+                if(itemIndex.getQuantity() <= 0)
+                    datedItemsList.remove(itemIndex);
+            }
+        }
+
+        System.out.println("Remove size: " + datedItemsList.size());
+    }
+
+    public int getQuantity(I item, GregorianCalendar criticalDate){
+        int quantity = 0;
+        //Null check
+        if((item == null) || (criticalDate == null))
+            return -1;
+
+        for(DatedItem itemIndex : datedItemsList) //Check for correct item
+            if ((itemIndex.getItem().hashCode() == item.hashCode()) && (itemIndex.getDate() == criticalDate)) //hash comparison for same object and date
+                quantity = itemIndex.getQuantity(); //Remove quantity
+        return quantity; //to change
+    }
+
+    public GregorianCalendar getDate(I item){
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
+
+        for(DatedItem itemIndex : datedItemsList) //Check for correct item
+        {
+            if (itemIndex.getItem().hashCode() == item.hashCode()) //hash comparison for same object and date
+                //finish this up
+                return null;
+        }
+        return null;
+    }
+
+    public ArrayList<I> getItemsPastDate(GregorianCalendar targetDate){
+
+        return null;
+    }
+}

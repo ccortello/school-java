@@ -1,0 +1,42 @@
+package homework03;
+
+/**
+ * A simple container class to store objects
+ * 
+ * @author thehoule and ccortello
+ * @version 1/21/14.
+ */
+public class DatedItem<I> {
+
+    private I item;
+    private long quantity;
+    private String exp_date;
+
+    public DatedItem(I item, long quantity, String exp_date) {
+    	
+    	// Store parameters to fields
+    	this.item=item;
+    	this.quantity=quantity;
+    	this.exp_date=exp_date;
+    }
+    
+    /* Simple accessor methods to return field values */
+    
+    public I getItem() {
+    	return item;
+    }
+    
+    public long getQuantity() {
+    	return quantity;
+    }
+    
+    public String getDate() {
+    	return exp_date;
+    }
+    
+    /* Mutator method */
+    
+    public void setQuantity(long quantity) {
+    	this.quantity=quantity;
+    }
+}

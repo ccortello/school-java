@@ -1,0 +1,75 @@
+package homework03;
+
+import java.util.ArrayList;
+import java.util.GregorianCalendar;
+import java.util.List;
+
+/**
+ * A list of Items to be used in a hypothetical inventory
+ * Created by thehoule and ccortello on 1/21/14.
+ */
+public class Inventory<I extends Item> {
+
+    private ArrayList<DatedItem> datedItemsList;
+    private Object item2;
+
+    // A simple constructor which initializes the list of items in the inventory
+    public Inventory() {
+//        System.out.println("Before setting new ArrayList");
+        datedItemsList = new ArrayList<DatedItem>();
+//        System.out.println("After setting new ArrayList");
+    }
+
+
+    public void addItem(I item, GregorianCalendar criticalDate, int quantity){
+//        System.out.println("Before if");
+        if(datedItemsList.size() > 0){
+//            System.out.println("Before for loop");
+            for(int x = 0; x < datedItemsList.size(); x++ ){
+//                System.out.println("This is inside for loop");
+                item2 = datedItemsList.get(x).getItem();
+//                System.out.println("Inside add item for loop.");
+                if (item2.hashCode() == item.hashCode()) {
+//                    System.out.println("This is before setting quantity");
+                    datedItemsList.get(x).setQuantity(datedItemsList.get(x).getQuantity() + quantity); //Add new quantity
+//                    System.out.println("Before set exp_date");
+                    datedItemsList.get(x).setExp_date(datedItemsList.get(x).getDate()); //Set new date
+//                    System.out.println(datedItemsList.get(x).getQuantity() + " " + datedItemsList.get(x).getDate());
+                }
+            }
+
+//            System.out.println("Before dataItems add");
+            datedItemsList.add(new DatedItem(item, quantity, criticalDate));
+//            System.out.println("After dataItems add");
+//            System.out.println("This is size: " + datedItemsList.size());
+
+        }
+//        System.out.println("Before 0 if");
+        if(datedItemsList.size() == 0){
+//            System.out.println("Inside 0 if");
+            datedItemsList.add(new DatedItem(item, quantity, criticalDate));
+//            System.out.println("After add in 0 if");
+        }
+//        System.out.println("After for loop :  " + datedItemsList.get(0).toString());
+
+    }
+
+    public void removeItem(I item, GregorianCalendar criticalDate, int quantity){
+
+    }
+
+    public int getQuantity(I item, GregorianCalendar criticalDate){
+
+        return 0; //to change
+    }
+
+    public GregorianCalendar getDate(I item){
+
+        return null;
+    }
+
+    public ArrayList<I> getItemsPastDate(GregorianCalendar targetDate){
+
+        return null;
+    }
+}

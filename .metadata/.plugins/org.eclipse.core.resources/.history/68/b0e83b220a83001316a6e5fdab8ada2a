@@ -1,0 +1,14 @@
+package homework03;
+
+/**
+ * Created by thehoule on 1/21/14.
+ */
+public class DatedItem<I> {
+
+    private I item;
+    private double quantity; //maybe int
+    private String exp_date;
+
+
+
+}

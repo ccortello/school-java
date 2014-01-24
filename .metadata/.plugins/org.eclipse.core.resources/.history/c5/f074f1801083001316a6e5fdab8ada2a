@@ -1,0 +1,24 @@
+package homework03;
+
+import java.util.GregorianCalendar;
+
+/**
+ * A few simple tests to evaluate the functionality of the Inventory, DatedItem, and Item classes
+ * 
+ * @author	thehoule, ccortello
+ * @date	1/21/14
+ *
+ */
+
+public class InventoryTester {
+
+	public static void main(String[] args) {
+		
+		Inventory inventory = new Inventory<ArrayList>();
+		
+		DatedItem<Item> milk = new DatedItem<Item>(new Item("2% Milk"), 5, new GregorianCalendar(1993, 9, 21));
+		
+		inventory.add(milk);
+	}
+
+}

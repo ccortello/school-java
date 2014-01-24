@@ -1,0 +1,52 @@
+package homework03;
+
+import java.util.GregorianCalendar;
+
+/**
+ * A simple container class to store Item objects
+ *
+ * @author thehoule and ccortello
+ * @version 1/21/14.
+ */
+public class DatedItem<I> {
+
+    private I item;
+    private long quantity;
+    private GregorianCalendar exp_date;
+
+    public DatedItem(I item, long quantity, GregorianCalendar exp_date) {
+
+        // Store parameters to fields
+        this.item=item;
+        this.quantity=quantity;
+        this.exp_date=exp_date;
+        System.out.println("This is Milk: " + item + " " + quantity + " " + exp_date);
+    }
+    
+    /* Simple accessor methods to return field values */
+
+    public I getItem() {
+        return item;
+    }
+
+    public long getQuantity() {
+        System.out.println("Inside get quantity");
+        return quantity;
+    }
+
+    public GregorianCalendar getDate() {
+        System.out.println("Inside get date");
+        return exp_date;
+    }
+
+    public void setExp_date(GregorianCalendar date) {
+        System.out.println("Setting Exp_data");
+        exp_date = date;
+    }
+    
+    /* Mutator method */
+
+    public void setQuantity(long quantity) {
+        this.quantity=quantity;
+    }
+}
