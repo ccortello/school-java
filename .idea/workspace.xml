@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="" />
+    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="workspace.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -72,7 +75,7 @@
       <file leaf-file-name="DatedItem.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/DatedItem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="901">
+            <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
               <folding />
             </state>
           </provider>
@@ -81,7 +84,7 @@
       <file leaf-file-name="Inventory.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/Inventory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="19" selection-start="1994" selection-end="1994" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="1751">
+            <state line="82" column="30" selection-start="3175" selection-end="3175" vertical-scroll-proportion="0.0" vertical-offset="826" max-vertical-offset="1700">
               <folding />
             </state>
           </provider>
@@ -90,10 +93,8 @@
       <file leaf-file-name="InventoryTester.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/InventoryTester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="8" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.33830276" vertical-offset="351" max-vertical-offset="1275">
-              <folding>
-                <element signature="e#685#691#0" expanded="true" />
-              </folding>
+            <state line="25" column="58" selection-start="694" selection-end="694" vertical-scroll-proportion="0.46681923" vertical-offset="0" max-vertical-offset="1275">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -114,6 +115,12 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/InventoryTester.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
@@ -132,7 +139,7 @@
     <option name="width" value="960" />
     <option name="height" value="1040" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -176,7 +183,7 @@
     <property name="dynamic.classpath" value="false" />
     <property name="FullScreen" value="false" />
     <property name="SearchEverywhereHistory" value="I" />
-    <property name="options.lastSelected" value="preferences.pluginManager" />
+    <property name="options.lastSelected" value="appearance" />
     <property name="options.splitter.main.proportions" value="0.24083333" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -271,11 +278,13 @@
       <workItem from="1390444372648" duration="3118000" />
       <workItem from="1390511329074" duration="163000" />
       <workItem from="1390527574841" duration="336000" />
+      <workItem from="1390528548355" duration="467000" />
+      <workItem from="1390529041813" duration="105000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6297000" />
+    <option name="totallyTimeSpent" value="6869000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -344,6 +353,62 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/DatedItem.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/Inventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="20" selection-start="2620" selection-end="2620" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="1751">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/InventoryTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="58" selection-start="694" selection-end="694" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="1292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="7" selection-start="629" selection-end="629" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1564">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/DatedItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/Inventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="19" selection-start="1994" selection-end="1994" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="1751">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/InventoryTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="8" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="1275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="7" selection-start="629" selection-end="629" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1564">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/DatedItem.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="0" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="901">
           <folding />
         </state>
@@ -359,9 +424,7 @@
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/InventoryTester.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="52" selection-start="756" selection-end="756" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1275">
-          <folding>
-            <element signature="e#685#691#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -389,9 +452,7 @@
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/InventoryTester.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="52" selection-start="756" selection-end="756" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
-          <folding>
-            <element signature="e#685#691#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -419,9 +480,7 @@
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/InventoryTester.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="66" column="53" selection-start="2887" selection-end="2887" vertical-scroll-proportion="0.0" vertical-offset="1122" max-vertical-offset="1258">
-          <folding>
-            <element signature="e#685#691#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -437,13 +496,6 @@
         <state line="858" column="0" selection-start="31271" selection-end="31271" vertical-scroll-proportion="0.21975583" vertical-offset="13997" max-vertical-offset="19635" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/DatedItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0" vertical-offset="33" max-vertical-offset="629">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/Item.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="7" selection-start="629" selection-end="629" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1564">
@@ -451,19 +503,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/DatedItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="882">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/Inventory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="19" selection-start="1994" selection-end="1994" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
+        <state line="82" column="30" selection-start="3175" selection-end="3175" vertical-scroll-proportion="0.0" vertical-offset="826" max-vertical-offset="1700">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/InventoryTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="8" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.33830276" vertical-offset="351" max-vertical-offset="1275">
-          <folding>
-            <element signature="e#685#691#0" expanded="true" />
-          </folding>
+        <state line="25" column="58" selection-start="694" selection-end="694" vertical-scroll-proportion="0.46681923" vertical-offset="0" max-vertical-offset="1275">
+          <folding />
         </state>
       </provider>
     </entry>
