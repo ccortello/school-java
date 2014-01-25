@@ -18,37 +18,38 @@ public class InventoryTester {
         System.out.println("CS 2420 Homework03\nCody Cortello + Nick Houle\n");
 
         //Different Item creations
+        System.out.println("Testing Item creation");
         Item test = new Item("Milk");
         Item test2 = new Item("Bread");
         Item test3 = new Item("Eggs");
-        
+
         //Inventory to add to
+        System.out.println("\nTesting Inventory creation");
         Inventory<Item> inventory = new Inventory<Item>();
         
         //Different day tests for update and setting
+        System.out.println("\nCreating dates for items");
         GregorianCalendar critical_date = new GregorianCalendar(2,2,2);
         GregorianCalendar test2_critical_date = new GregorianCalendar(3,3,3);
         GregorianCalendar test3_critical_date = new GregorianCalendar(4,4,4);
         
         //Add items to inventory
+        System.out.println("\nAdding items to Inventory");
         inventory.addItem(test, critical_date, 8);
         inventory.addItem(test2, test2_critical_date, 10);
         inventory.addItem(test3, test3_critical_date, 15);
         
         //Update first item with different date and quantity
+        System.out.println("\nTesting item removal under normal circumstances");
         inventory.removeItem(test2, test2_critical_date, 5);
-        
-//        invent.addItem(test, test2_critical_date, 12);
-        int value = inventory.getQuantity(test2, test2_critical_date);
-        System.out.println("Value: " + value);
-        System.out.println("Finished.");
-        
-/*		Starting my debug code		*/
-        System.out.println("-------------------------------------\nBegin ccortello debug\n-------------------------------------");
-        
-        SimpleDateFormat dfmt = new SimpleDateFormat("EEE, MMM d, ''yy");
 
-        System.out.println("getDate and getQuantity tests:");
+        //Test for correct updated value
+        int value = inventory.getQuantity(test2, test2_critical_date);
+        System.out.println("Updated value: " + value);
+
+        //Date testing
+        SimpleDateFormat dfmt = new SimpleDateFormat("EEE, MMM d, ''yy");
+        System.out.println("\ngetDate and getQuantity tests:");
 
         System.out.println("Date of 'test' Item = "+dfmt.format(inventory.getDate(test).getTime()));
         System.out.println("Date of 'test2' Item = "+dfmt.format(inventory.getDate(test2).getTime()));
@@ -66,6 +67,11 @@ public class InventoryTester {
         System.out.println("\nRemoving another 10 of 'test3'");
         inventory.removeItem(test3, inventory.getDate(test3), 10);
 
-        System.out.println("Quantity of 'test3' Item = "+inventory.getQuantity(test3, inventory.getDate(test3)));
+        System.out.println("\nQuantity of 'test3' Item = " + inventory.getQuantity(test3, inventory.getDate(test3)));
+
+        System.out.println("\n\ngetItemsPastDate test");
+
+        System.out.println("Items older than " + dfmt.format(new GregorianCalendar(2, 3, 3)) + "(should return 2 items)");
+        System.out.println(inventory.getItemsPastDate(new GregorianCalendar(2, 3, 3)));
     }
 }

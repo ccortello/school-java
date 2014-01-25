@@ -1,9 +1,7 @@
 package homework03;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.GregorianCalendar;
-import java.util.List;
 
 /**
  * A list of Items to be used in a hypothetical inventory
@@ -19,15 +17,14 @@ public class Inventory<I extends Item> {
         datedItemsList = new ArrayList<DatedItem>();
     }
 
-
     public void addItem(I item, GregorianCalendar criticalDate, int quantity){
 
     	// Test for invalid items
-        if((item == null) || (criticalDate == null) || (quantity < 0))
+        if ((item == null) || (criticalDate == null) || (quantity < 0))
             return;
         
         //Size tests
-        if(datedItemsList.size() > 0){
+        if (datedItemsList.size() > 0) {
             for(DatedItem itemIndex : datedItemsList)
                 if (itemIndex.getItem().hashCode() == item.hashCode()) { //hash comparison for same object
                     itemIndex.setQuantity(itemIndex.getQuantity() + quantity); //Add new quantity
@@ -35,29 +32,26 @@ public class Inventory<I extends Item> {
                     update = true; //Bool flag that prevent double adding to list
                 }
 
-            if(!update){
+            if (!update) {
                 datedItemsList.add(new DatedItem(item, quantity, criticalDate)); //Add item to list
                 update = false; //update flag
             }
             else
                 update = false;
         }
-        if(datedItemsList.size() == 0)
+        if (datedItemsList.size() == 0)
             datedItemsList.add(new DatedItem(item, quantity, criticalDate)); //Add if we're at the start of the list
-        
-//      debug
-        System.out.println("Add size: " + datedItemsList.size());
     }
 
     public void removeItem(I item, GregorianCalendar criticalDate, int quantity){
         //Null check
-        if((item == null) || (criticalDate == null) || (quantity <= 0))
+        if ((item == null) || (criticalDate == null) || (quantity <= 0))
             return;
 
-        for(DatedItem itemIndex : datedItemsList) //Check for correct item
+        for (DatedItem itemIndex : datedItemsList) //Check for correct item
             if ((itemIndex.getItem().hashCode() == item.hashCode()) && (itemIndex.getDate() == criticalDate)) { //hash comparison for same object and date
-                if(itemIndex.getQuantity() <= quantity){
-                    datedItemsList.remove(itemIndex);
+                if (itemIndex.getQuantity() <= quantity) { //check the quantity of items available so the quantity is never negative
+                    datedItemsList.remove(itemIndex); // if too many items are removed simply delete the item entry
                     return;
                 }
                 itemIndex.setQuantity(itemIndex.getQuantity() - quantity); //Remove quantity
