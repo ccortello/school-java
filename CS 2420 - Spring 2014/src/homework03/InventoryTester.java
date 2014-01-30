@@ -1,13 +1,14 @@
 package homework03;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.GregorianCalendar;
 
 /**
  * A few simple tests to evaluate the functionality of the Inventory, DatedItem, and Item classes
  *
- * @author	thehoule, ccortello
- * @version	1/21/14
+ * @author Nick Houle, Cody Cortello
+ * @version January 21, 2014
  */
 
 public class InventoryTester {
@@ -48,7 +49,7 @@ public class InventoryTester {
         System.out.println("Updated value: " + value);
 
         //Date testing
-        SimpleDateFormat dfmt = new SimpleDateFormat("EEE, MMM d, ''yy");
+        SimpleDateFormat dfmt = new SimpleDateFormat("EEE, MMM d, yyyy");
         System.out.println("\ngetDate and getQuantity tests:");
 
         System.out.println("Date of 'test' Item = "+dfmt.format(inventory.getDate(test).getTime()));
@@ -69,9 +70,47 @@ public class InventoryTester {
 
         System.out.println("\nQuantity of 'test3' Item = " + inventory.getQuantity(test3, inventory.getDate(test3)));
 
-        System.out.println("\n\ngetItemsPastDate test");
+        System.out.println("\ngetItemsPastDate test");
+        System.out.println("Creating new inventory with ten items");
 
-        System.out.println("Items older than " + dfmt.format(new GregorianCalendar(2, 3, 3)) + "(should return 2 items)");
-        System.out.println(inventory.getItemsPastDate(new GregorianCalendar(2, 3, 3)));
+        Inventory newInventory = new Inventory();
+        Item testItem1 = new Item("Milk");
+        Item testItem2 = new Item("Bread");
+        Item testItem3 = new Item("Eggs");
+        Item testItem4 = new Item("Pasta");
+        Item testItem5 = new Item("Cheese");
+        Item testItem6 = new Item("Cookies");
+        Item testItem7 = new Item("Bananas");
+
+        GregorianCalendar date1 = new GregorianCalendar(2000, 2, 2);
+        GregorianCalendar date2 = new GregorianCalendar(2003, 3, 3);
+        GregorianCalendar date3 = new GregorianCalendar(2013, 4, 2);
+        GregorianCalendar date4 = new GregorianCalendar(2005, 5, 2);
+        GregorianCalendar date5 = new GregorianCalendar(2006, 6, 2);
+        GregorianCalendar date6 = new GregorianCalendar(2007, 7, 2);
+        GregorianCalendar date7 = new GregorianCalendar(2008, 8, 2);
+
+        //Add items to inventory
+        newInventory.addItem(testItem1, date1, 8);
+        newInventory.addItem(testItem2, date2, 10);
+        newInventory.addItem(testItem3, date3, 15);
+        newInventory.addItem(testItem4, date4, 15);
+        newInventory.addItem(testItem5, date5, 15);
+        newInventory.addItem(testItem6, date6, 15);
+        newInventory.addItem(testItem7, date7, 15);
+
+        GregorianCalendar testExpiration = new GregorianCalendar(2004, 9, 21);
+
+        System.out.println("Number of items older than " + dfmt.format(testExpiration.getTime()) + " (should return five items)");
+
+        // create array of items past the testExpiration date
+        ArrayList<Item> itemsPastDate = new ArrayList<Item>();
+        itemsPastDate.addAll(newInventory.getItemsPastDate(testExpiration));
+
+        System.out.println(itemsPastDate.size());
+
+        System.out.println("\nThose items are:");
+        for (Item itemIndex : itemsPastDate)
+            System.out.println(itemIndex.getName());
     }
 }

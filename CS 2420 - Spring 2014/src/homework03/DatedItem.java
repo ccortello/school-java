@@ -5,8 +5,8 @@ import java.util.GregorianCalendar;
 /**
  * A simple container class to store Item objects
  *
- * @author thehoule and ccortello
- * @version 1/21/14.
+ * @author Nick Houle, Cody Cortello
+ * @version January 21, 2014
  */
 public class DatedItem<I> {
 

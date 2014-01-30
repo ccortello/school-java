@@ -5,7 +5,9 @@ import java.util.GregorianCalendar;
 
 /**
  * A list of Items to be used in a hypothetical inventory
- * Created by thehoule and ccortello on 1/21/14.
+ *
+ * @author Nick Houle, Cody Cortello
+ * @version January 21, 2014
  */
 public class Inventory<I extends Item> {
 
@@ -83,8 +85,8 @@ public class Inventory<I extends Item> {
     public ArrayList<I> getItemsPastDate(GregorianCalendar targetDate){
         ArrayList<I> itemsPastDate = new ArrayList<I>(); // initialize return list
 
-        for (DatedItem<I> itemIndex : datedItemsList) // parse through list
-            if (targetDate.before(itemIndex.getDate())) // add items if the given date is before their expiration
+        for (DatedItem<I> itemIndex : datedItemsList) // iterate through list
+            if (targetDate.compareTo(itemIndex.getDate()) == -1) // add items if the given date is before their expiration
                 itemsPastDate.add(itemIndex.getItem());
 
         return itemsPastDate;
