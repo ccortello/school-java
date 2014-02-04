@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="Initial commit&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework04/FoodItem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework04/Inventory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework04/Item.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework04/WarehouseReport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework04/data1.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework04/data2.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework04/data3.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Spring 2014/CS 2420 - Spring 2014.eml" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/CS 2420 - Spring 2014.eml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/~Misc/~Misc.eml" afterPath="$PROJECT_DIR$/~Misc/~Misc.eml" />
     </list>
     <ignored path="workspace.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,8 +77,10 @@
       <file leaf-file-name="FoodItem.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework04/FoodItem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="13" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2380">
-              <folding />
+            <state line="15" column="13" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2261">
+              <folding>
+                <element signature="n#!!doc" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -95,7 +88,7 @@
       <file leaf-file-name="Item.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework04/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="13" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="1615">
+            <state line="20" column="13" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="1530">
               <folding />
             </state>
           </provider>
@@ -104,7 +97,7 @@
       <file leaf-file-name="Inventory.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework04/Inventory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="208" column="7" selection-start="6886" selection-end="6886" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4267">
+            <state line="191" column="3" selection-start="6449" selection-end="6449" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3876">
               <folding />
             </state>
           </provider>
@@ -113,7 +106,7 @@
       <file leaf-file-name="WarehouseReport.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework04/WarehouseReport.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="36" selection-start="935" selection-end="935" vertical-scroll-proportion="0.5660377" vertical-offset="0" max-vertical-offset="901">
+            <state line="30" column="36" selection-start="936" selection-end="936" vertical-scroll-proportion="0.5660377" vertical-offset="0" max-vertical-offset="901">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -413,7 +406,7 @@
       <workItem from="1391377058691" duration="272000" />
       <workItem from="1391377332169" duration="2000" />
       <workItem from="1391377377218" duration="1204000" />
-      <workItem from="1391477883727" duration="1720000" />
+      <workItem from="1391477883727" duration="1779000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -427,11 +420,15 @@
       <created>1391048488849</created>
       <updated>1391048488849</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Initial commit&#10;">
+      <created>1391479951529</created>
+      <updated>1391479951529</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16276000" />
+    <option name="totallyTimeSpent" value="16335000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -821,21 +818,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework04/Item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="13" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0" vertical-offset="109" max-vertical-offset="1530">
+        <state line="20" column="13" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="1530">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework04/FoodItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="2380">
-          <folding />
+        <state line="15" column="13" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2261">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework04/Inventory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="208" column="7" selection-start="6886" selection-end="6886" vertical-scroll-proportion="0.0" vertical-offset="3344" max-vertical-offset="4267">
+        <state line="191" column="3" selection-start="6449" selection-end="6449" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3876">
           <folding />
         </state>
       </provider>
@@ -849,7 +848,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework04/WarehouseReport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="36" selection-start="935" selection-end="935" vertical-scroll-proportion="0.5660377" vertical-offset="0" max-vertical-offset="901">
+        <state line="30" column="36" selection-start="936" selection-end="936" vertical-scroll-proportion="0.5660377" vertical-offset="0" max-vertical-offset="901">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
