@@ -9,7 +9,7 @@ import java.util.Scanner;
  * which products still exist in every warehouse, and the single busiest day for each warehouse.
  *
  * @version 2/2/14.
- * @authoer Cody Cortello
+ * @author Cody Cortello
  */
 public class WarehouseReport {
 
@@ -19,15 +19,17 @@ public class WarehouseReport {
         System.out.print("Enter a filename to parse: ");
         Scanner userInput = new Scanner(System.in);
 
+        Scanner fileScanner = null;
         try {
-            Scanner fileScanner = new Scanner(new File(userInput.next()));
-            while (fileScanner.hasNextLine()) {
-                processNextLine(fileScanner.nextLine());
-            }
+            fileScanner = new Scanner(new File(userInput.next()));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
 
+        while (fileScanner.hasNextLine())
+            processNextLine(fileScanner.nextLine());
+
+        userInput.close();
         System.out.println("Done!");
     }
 
