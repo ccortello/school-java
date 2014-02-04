@@ -19,9 +19,13 @@ public class WarehouseReport {
         System.out.print("Enter a filename to parse: ");
         Scanner userInput = new Scanner(System.in);
 
+//        debug
+//        File dataFile = new File("src/homework04/"+userInput.next());
+        File dataFile = new File("src/homework04/data1.txt");
+
         Scanner fileScanner = null;
         try {
-            fileScanner = new Scanner(new File(userInput.next()));
+            fileScanner = new Scanner(dataFile);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
