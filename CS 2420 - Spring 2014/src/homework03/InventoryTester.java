@@ -31,9 +31,9 @@ public class InventoryTester {
         //Different day tests for update and setting
         System.out.println("\nCreating dates for items");
         GregorianCalendar critical_date = new GregorianCalendar(2,2,2);
-        GregorianCalendar test2_critical_date = new GregorianCalendar(3,3,3);
-        GregorianCalendar test3_critical_date = new GregorianCalendar(4,4,4);
-        
+        GregorianCalendar test2_critical_date = new GregorianCalendar(2, 2, 3);
+        GregorianCalendar test3_critical_date = new GregorianCalendar(2, 2, 4);
+
         //Add items to inventory
         System.out.println("\nAdding items to Inventory");
         inventory.addItem(test, critical_date, 8);

@@ -3,6 +3,7 @@ package homework04;
 import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.GregorianCalendar;
+import java.util.HashSet;
 import java.util.List;
 
 /**
@@ -164,6 +165,41 @@ public class Inventory<I extends Item> {
                 result.add(i.item);
 
         return result;
+    }
+
+    /**
+     * Remove expired items from the inventory
+     *
+     * @param date a GregorianCalendar date
+     * @param inv  the Inventory to remove items from
+     */
+    public void expireItems(Inventory<I> inv, GregorianCalendar date) {
+
+        // find expired items
+        ArrayList<I> expiredItems = inv.getItemsPastDate(date);
+
+        // loop through inventory removing all of each expired item
+        for (I item : expiredItems) {
+            int quantity = inv.getQuantity(item, inv.getDate(item));
+            inv.removeItem(item, inv.getDate(item), quantity);
+        }
+    }
+
+    /**
+     * Returns a set of Items from the inventory
+     *
+     * @return
+     */
+    public HashSet<Item> itemsInInventory() {
+
+        // initialize set to return
+        HashSet<Item> outputSet = new HashSet<Item>();
+
+        // loop through inventory and add every item in the inventory to the set
+        for (DatedItem i : inventory)
+            outputSet.add(i.item);
+
+        return outputSet;
     }
 
     /**
