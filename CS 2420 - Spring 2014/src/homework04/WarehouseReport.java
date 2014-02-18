@@ -2,7 +2,6 @@ package homework04;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
@@ -10,23 +9,18 @@ import java.util.*;
  * which products still exist in every warehouse, and the single busiest day for each warehouse.
  *
  * @version 2/2/14.
- * @author Cody Cortello
+ * @author Cody Cortello and Nick Houle
  */
 public class WarehouseReport {
 
     // initialize lists, sets, and maps to hold relevant information from the file
     private Map<Integer, String> foodNames;
     private Map<Integer, Integer> shelfLives;
-    private Map<String, Inventory<Item>> warehouseInventories;
-    private Map<Inventory<Item>, String> warehouseNames;
+    private Map<String, Inventory<Item>> warehouses;
     private GregorianCalendar date;
-
-    //  debug
-    private int requestNumber = 0;
-    private int receiveNumber = 0;
-    private int nextNumber = 0;
-    private int warehouseNumber = 0;
-//    
+    private int temp_quantity;
+    private Map transaction = new HashMap();
+    private Map total_transaction = new HashMap();
 
     public static void main(String[] args) {
         new WarehouseReport();
@@ -37,21 +31,16 @@ public class WarehouseReport {
         // initialize fields
         foodNames = new HashMap<Integer, String>();
         shelfLives = new HashMap<Integer, Integer>();
-        warehouseInventories = new HashMap<String, Inventory<Item>>();
+        warehouses = new HashMap<String, Inventory<Item>>();
         date = null;
-
-//        debug
-        warehouseNames = new HashMap<Inventory<Item>, String>();
 
         // prompt user for input
         System.out.print("Enter a filename to parse: ");
         Scanner userInput = new Scanner(System.in);
+        String fileName = userInput.next();
 
         // initialize file from specified input
-//        debug, for speed
-        System.out.println("");
-//        File dataFile = new File("userInput.next());
-        File dataFile = new File("src/homework04/data4.txt");
+        File dataFile = new File(fileName);
 
         // scan the file
         Scanner fileScanner = null;
@@ -61,20 +50,13 @@ public class WarehouseReport {
             e.printStackTrace();
         }
 
+        // send each line of the file to be processed
         while (fileScanner.hasNextLine())
             processNextLine(fileScanner.nextLine().trim());
 
-//      debug
-//        int warehouseNumber = 1;
-//        for (String warehouseName : warehouses.keySet()){
-//        	System.out.println("Warehouse #"+warehouseNumber+":"+warehouseName);
-//        	warehouseNumber++;
-//        }
-
+        // calculate and print the report, and close the file scanner
         printReport();
-
         userInput.close();
-        System.out.println("Done!");
     }
 
     /*
@@ -110,8 +92,8 @@ public class WarehouseReport {
             foodNames.put(upc, foodName);
             shelfLives.put(upc, shelfLife);
 
-//    		debug
-//    		System.out.println(upc+"\t"+foodName+"\t"+shelfLife);
+            // close scanner
+            s.close();
         }
 
         if (firstWord.equals("Warehouse")) {
@@ -125,12 +107,10 @@ public class WarehouseReport {
 
             // put warehouse in map of warehouses
             Inventory<Item> warehouseInventory = new Inventory<Item>();
-            warehouseInventories.put(warehouseName, warehouseInventory);
+            warehouses.put(warehouseName, warehouseInventory);
 
-//        	debug
-            warehouseNumber++;
-            warehouseNames.put(warehouseInventory, warehouseName);
-            System.out.println("Warehouse #" + warehouseNumber + ": " + warehouseName);
+            // close scanner
+            s.close();
         }
 
         if (firstWord.equals("Start")) {
@@ -145,10 +125,8 @@ public class WarehouseReport {
             // store values to 'date' variable
             date = new GregorianCalendar(year, month - 1, day);
 
-//            debug
-//            SimpleDateFormat df = new SimpleDateFormat("MM-dd-yyyy");
-//            System.out.println(df.format(date.getTime()));
-//            
+            // close scanner
+            s.close();
         }
 
         if (firstWord.equals("Receive:")) {
@@ -163,15 +141,19 @@ public class WarehouseReport {
             // add the items to the warehouse
             Item itemToAdd = new Item(foodNames.get(upc));
             GregorianCalendar newDate = (GregorianCalendar) date.clone();
-
             newDate.roll(GregorianCalendar.DAY_OF_MONTH, shelfLives.get(upc));
+            warehouses.get(warehouseName).addItem(itemToAdd, newDate, quantity);
 
-//          debug
-//            SimpleDateFormat df = new SimpleDateFormat("MM-dd-yyyy");
-//            System.out.println("date: "+df.format(date.getTime()));
-//            System.out.println("newDate: "+df.format(newDate.getTime()));
-//          
-            warehouseInventories.get(warehouseName).addItem(itemToAdd, newDate, quantity);
+            if (transaction.containsKey(warehouseName)) {
+                int temp = (Integer) transaction.get(warehouseName);
+                temp += quantity;
+                transaction.remove(warehouseName);
+                transaction.put(warehouseName, temp);
+            } else
+                transaction.put(warehouseName, quantity);
+
+            // close scanner
+            s.close();
         }
 
         if (firstWord.equals("Request:")) {
@@ -179,42 +161,77 @@ public class WarehouseReport {
             int upc = Integer.parseInt(s.next());
             int quantity = Integer.parseInt(s.next());
             String warehouseName = "";
-            while (s.hasNext())
+            while (s.hasNext()) // use concatenation and trim to construct warehouse name
                 warehouseName += s.next() + " ";
             warehouseName = warehouseName.trim();
+            
+            /* remove the items from the warehouse */
 
-            // remove the items from the warehouse
+            // establish item and inventory to remove from
             Item itemToRemove = new Item(foodNames.get(upc));
-            GregorianCalendar newDate = (GregorianCalendar) date.clone();
-            warehouseInventories.get(warehouseName).removeItem(itemToRemove, newDate, quantity);
+            Inventory<Item> warehouseRequested = warehouses.get(warehouseName);
+
+            // decrease the inventory by the items from earliest expiration date to latest
+            //  this is done by updating an 'itemsRemoved' counter and moving the date forward one day at a time so that the items with the earliest
+            //  expiration dates get removed first
+            int itemsRemoved = 0;
+            GregorianCalendar removeDate = (GregorianCalendar) date.clone();
+            int quantityToRemove = quantity;
+
+            // while we still have items to remove and the inventory contains those items
+            while (itemsRemoved < quantity && warehouseRequested.itemsInInventory().contains(itemToRemove)) {
+
+                // request the quantity of the item at the current date
+                int quantityOfEarliestItem = warehouseRequested.getQuantity(itemToRemove, removeDate);
+
+                // if there is no item at the current date then advance the date and try again
+                if (quantityOfEarliestItem == 0) {
+                    removeDate.roll(GregorianCalendar.DAY_OF_MONTH, 1);
+                    continue;
+                }
+
+                // remove the requested number of the item, update the counter, and move the date forward
+                //  note: the requested amount is removed from the inventory and the items removed is increased by the original quantity of the
+                //  earliest item. This updates the variables correctly when the requested amount is greater than, equal to, and less than the
+                //  quantity of the earliest item.
+                warehouseRequested.removeItem(itemToRemove, removeDate, quantityToRemove);
+                if (transaction.containsKey(warehouseRequested)) {
+                    int temp = (Integer) transaction.get(warehouseRequested);
+                    temp += quantityToRemove;
+                    transaction.remove(warehouseRequested);
+                    transaction.put(warehouseName, temp);
+                } else
+                    transaction.put(warehouseRequested, quantityToRemove);
+                itemsRemoved += quantityOfEarliestItem;
+                quantityToRemove -= quantityOfEarliestItem;
+                removeDate.roll(GregorianCalendar.DAY_OF_MONTH, 1);
+            }
+
+            // close scanner
+            s.close();
         }
 
         if (firstWord.equals("Next")) {
-//        	debug
-            SimpleDateFormat df = new SimpleDateFormat("MM-dd-yyyy");
-            System.out.println(df.format(date.getTime()));
-//            
 
-            //Advance the effective date one day
+            // advance the effective date one day
             date.add(Calendar.DAY_OF_MONTH, 1);
 
             // loop through the inventories and expire the old items
-            for (Inventory<Item> i : warehouseInventories.values())
+            for (Inventory<Item> i : warehouses.values())
                 i.expireItems(i, date);
+
+            // close scanner
+            s.close();
         }
 
         if (firstWord.equals("End")) {
-
-//        	debug
-            System.out.println("\nAnd the final tally is:");
-            for (Inventory<Item> inv : warehouseInventories.values()) {
-                if (warehouseNames.get(inv) != null)
-                    inv.outputToConsole(warehouseNames.get(inv));
-                warehouseNumber++;
-            }
-//        	
+            // close scanner and return
+            s.close();
             return;
         }
+
+        // close scanner
+        s.close();
     }
 
     /*
@@ -244,7 +261,7 @@ public class WarehouseReport {
             boolean unstocked = true;
 
             // check if the item is in any warehouse's inventory
-            for (Inventory<Item> checkInv : warehouseInventories.values()) {
+            for (Inventory<Item> checkInv : warehouses.values()) {
 
                 GregorianCalendar checkDate = checkInv.getDate(checkItem);
                 int checkQuantity = checkInv.getQuantity(checkItem, checkDate);
@@ -253,7 +270,6 @@ public class WarehouseReport {
                 if (checkDate != null || checkQuantity != 0) {
 
                     // if the inventory contains the item set the unstocked flag to false and exit the warehouses loop
-//					System.out.println("Break 1 reached!");
                     unstocked = false;
                     break;
                 }
@@ -282,19 +298,18 @@ public class WarehouseReport {
             boolean inAll = true;
 
             // check if the item is in any warehouse's inventory
-            for (Inventory<Item> checkInv : warehouseInventories.values()) {
+            for (Inventory<Item> checkInv : warehouses.values()) {
                 GregorianCalendar checkDate = checkInv.getDate(checkItem);
                 int checkQuantity = checkInv.getQuantity(checkItem, checkDate);
 
                 // the item isn't in a warehouse then change the flag and stop looping through warehouses
                 if (checkDate == null || checkQuantity == 0) {
-//					System.out.println("Break 2 reached! "+checkItem.name);
                     inAll = false;
                     break;
                 }
             }
 
-            // add the item to the 'stocked' list if this statement is reached
+            // add the item to the 'stocked' list if it's in all of the warehouses
             if (inAll)
                 universalItems.add(checkUpc);
         }
@@ -302,5 +317,24 @@ public class WarehouseReport {
         // print the items in universalItems
         for (int upc : universalItems)
             System.out.println(upc + " " + foodNames.get(upc));
+        int mostTransactions = 0;
+        String name = "a";
+
+        // print busiest day header
+        System.out.println("\nBusiest Days:");
+
+        //Determine busiest days and print them out
+        for (Object key : transaction.keySet()) {
+            for (Object key_value : transaction.keySet()) {
+                if ((Integer) transaction.get(key_value) > (Integer) transaction.get(key)) {
+                    name = (String) key;
+                    mostTransactions = (Integer) transaction.get(key_value);
+                } else {
+                    name = (String) key;
+                    mostTransactions = (Integer) transaction.get(key);
+                }
+            }
+        }
+        System.out.println(name + " " + mostTransactions);
     }
 }

@@ -175,13 +175,22 @@ public class Inventory<I extends Item> {
      */
     public void expireItems(Inventory<I> inv, GregorianCalendar date) {
 
+        // roll the given date forward one day so things which expire on the given day will be returned
+        GregorianCalendar newDate = (GregorianCalendar) date.clone();
+        newDate.roll(GregorianCalendar.DAY_OF_MONTH, 1);
+
         // find expired items
-        ArrayList<I> expiredItems = inv.getItemsPastDate(date);
+        ArrayList<I> expiredItems = inv.getItemsPastDate(newDate);
 
         // loop through inventory removing all of each expired item
         for (I item : expiredItems) {
-            int quantity = inv.getQuantity(item, inv.getDate(item));
-            inv.removeItem(item, inv.getDate(item), quantity);
+
+            // get the date and quantity of the item
+            GregorianCalendar itemDate = inv.getDate(item);
+            int itemQuantity = inv.getQuantity(item, itemDate);
+
+            // remove the item from the inventory
+            inv.removeItem(item, itemDate, itemQuantity);
         }
     }
 
