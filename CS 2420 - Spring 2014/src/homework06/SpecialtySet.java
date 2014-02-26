@@ -74,6 +74,10 @@ public class SpecialtySet<E extends Comparable<E>> {
      * @param data
      */
     private void locatePosition(E data) {
+        // if the list is of size 0 then return
+        if (size == 0)
+            return;
+
         // if at end of list and last element is too big, then restart the search
         if (last.data.compareTo(data) > 0 && current == null) {
             last = null;
