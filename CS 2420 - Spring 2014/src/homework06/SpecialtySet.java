@@ -27,7 +27,7 @@ public class SpecialtySet<E extends Comparable<E>> {
     // Instance variables.  Students are allowed
     //   only these, do not add or change instance variables.
 
-    private Node head, last, current;
+    private Node head, tail, last, current;
     private int size;
 
     // Instance methods below.
@@ -74,8 +74,17 @@ public class SpecialtySet<E extends Comparable<E>> {
      * @param data
      */
     private void locatePosition(E data) {
+        // initiate 'walking' fields
         Node last = null;
         Node current = head;
+
+        // find correct data
+        while (current != null) {
+            if (current.data.equals(data))
+                return current;
+            else
+
+        }
     }
 
 

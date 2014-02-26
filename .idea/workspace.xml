@@ -4,7 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework05/QuicksortAnalysisPart1.java" line="67" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="Initial commit&#10;">
+    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="update">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySet.java" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -81,7 +81,7 @@
       <file leaf-file-name="SpecialtySet.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="28" selection-start="2496" selection-end="2496" vertical-scroll-proportion="0.7777778" vertical-offset="833" max-vertical-offset="3043">
+            <state line="85" column="16" selection-start="2712" selection-end="2712" vertical-scroll-proportion="0.9444444" vertical-offset="867" max-vertical-offset="3196">
               <folding />
             </state>
           </provider>
@@ -434,7 +434,7 @@
       <workItem from="1391655802627" duration="247000" />
       <workItem from="1392684851314" duration="12886000" />
       <workItem from="1392775733461" duration="26000" />
-      <workItem from="1393379357941" duration="3426000" />
+      <workItem from="1393379357941" duration="3577000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -516,11 +516,15 @@
       <created>1393382749544</created>
       <updated>1393382749544</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="update">
+      <created>1393382864030</created>
+      <updated>1393382864030</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36595000" />
+    <option name="totallyTimeSpent" value="36746000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -609,7 +613,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Initial commit&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit&#10;" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -881,7 +886,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="28" selection-start="2496" selection-end="2496" vertical-scroll-proportion="0.7777778" vertical-offset="833" max-vertical-offset="3043">
+        <state line="85" column="16" selection-start="2712" selection-end="2712" vertical-scroll-proportion="0.9444444" vertical-offset="867" max-vertical-offset="3196">
           <folding />
         </state>
       </provider>
