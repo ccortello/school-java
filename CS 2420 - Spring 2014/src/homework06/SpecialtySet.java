@@ -74,6 +74,8 @@ public class SpecialtySet<E extends Comparable<E>> {
      * @param data
      */
     private void locatePosition(E data) {
+        Node last = null;
+        Node current = head;
     }
 
 
