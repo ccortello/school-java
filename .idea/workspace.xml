@@ -80,7 +80,7 @@
       <file leaf-file-name="SpecialtySet.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="34" selection-start="1879" selection-end="1879" vertical-scroll-proportion="0.30555555" vertical-offset="867" max-vertical-offset="3043">
+            <state line="77" column="28" selection-start="2496" selection-end="2496" vertical-scroll-proportion="0.7222222" vertical-offset="867" max-vertical-offset="3043">
               <folding />
             </state>
           </provider>
@@ -433,7 +433,7 @@
       <workItem from="1391655802627" duration="247000" />
       <workItem from="1392684851314" duration="12886000" />
       <workItem from="1392775733461" duration="26000" />
-      <workItem from="1393379357941" duration="3175000" />
+      <workItem from="1393379357941" duration="3272000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -499,11 +499,15 @@
       <created>1393382488101</created>
       <updated>1393382488101</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Initial commit&#10;">
+      <created>1393382601586</created>
+      <updated>1393382601586</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36344000" />
+    <option name="totallyTimeSpent" value="36441000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -864,7 +868,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="34" selection-start="1879" selection-end="1879" vertical-scroll-proportion="0.30555555" vertical-offset="867" max-vertical-offset="3043">
+        <state line="77" column="28" selection-start="2496" selection-end="2496" vertical-scroll-proportion="0.7222222" vertical-offset="867" max-vertical-offset="3043">
           <folding />
         </state>
       </provider>
