@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="Initial commit&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySet.java" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -81,7 +80,7 @@
       <file leaf-file-name="SpecialtySet.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="11" selection-start="2453" selection-end="2453" vertical-scroll-proportion="0.6944444" vertical-offset="867" max-vertical-offset="3043">
+            <state line="62" column="34" selection-start="1879" selection-end="1879" vertical-scroll-proportion="0.30555555" vertical-offset="867" max-vertical-offset="3043">
               <folding />
             </state>
           </provider>
@@ -434,7 +433,7 @@
       <workItem from="1391655802627" duration="247000" />
       <workItem from="1392684851314" duration="12886000" />
       <workItem from="1392775733461" duration="26000" />
-      <workItem from="1393379357941" duration="3060000" />
+      <workItem from="1393379357941" duration="3175000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -496,11 +495,15 @@
       <created>1393382423112</created>
       <updated>1393382423112</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Initial commit&#10;">
+      <created>1393382488101</created>
+      <updated>1393382488101</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36229000" />
+    <option name="totallyTimeSpent" value="36344000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -861,7 +864,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="11" selection-start="2453" selection-end="2453" vertical-scroll-proportion="0.6944444" vertical-offset="867" max-vertical-offset="3043">
+        <state line="62" column="34" selection-start="1879" selection-end="1879" vertical-scroll-proportion="0.30555555" vertical-offset="867" max-vertical-offset="3043">
           <folding />
         </state>
       </provider>
