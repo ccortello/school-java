@@ -45,7 +45,7 @@ public class SpecialtySet<E extends Comparable<E>> {
      * @return a count of the elements in this set
      */
     public int size() {
-        return 12345;  // Stub
+        return size;
     }
 
 
