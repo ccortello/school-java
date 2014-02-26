@@ -89,7 +89,6 @@ public class SpecialtySet<E extends Comparable<E>> {
 
             // if the data isn't found, simply return ('current' and 'last should be correctly set)
             return;
-            dafjsdfasd
         }
 
         // if
