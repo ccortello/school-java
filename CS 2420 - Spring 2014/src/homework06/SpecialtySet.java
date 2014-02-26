@@ -76,6 +76,7 @@ public class SpecialtySet<E extends Comparable<E>> {
     private void locatePosition(E data) {
         Node last = null;
         Node current = head;
+        System.out.println("test");
     }
 
 
