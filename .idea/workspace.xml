@@ -5,10 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="Initial commit&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySetTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework05/TimingExperiment08.java" />
-      <change type="MOVED" beforePath="C:\Users\Cody\workspace\CS 2420 - Spring 2014\src\homework05\QuicksortAnalysis.java" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework05/QuicksortAnalysisPart1.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -84,7 +80,7 @@
       <file leaf-file-name="SpecialtySet.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="7" selection-start="1293" selection-end="1293" vertical-scroll-proportion="0.5555556" vertical-offset="425" max-vertical-offset="3162">
+            <state line="25" column="52" selection-start="879" selection-end="879" vertical-scroll-proportion="0.055555556" vertical-offset="391" max-vertical-offset="3009">
               <folding />
             </state>
           </provider>
@@ -93,8 +89,14 @@
       <file leaf-file-name="SpecialtySetTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySetTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="13" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0" vertical-offset="1283" max-vertical-offset="3060">
-              <folding />
+            <state line="2" column="0" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0" vertical-offset="2142" max-vertical-offset="2856">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#826#834#0" expanded="true" />
+                <element signature="e#1068#1076#0" expanded="true" />
+                <element signature="e#1509#1525#0" expanded="true" />
+                <element signature="e#1616#1625#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,6 +110,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="ccortello" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="school-java" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/InventoryTester.java" root0="SKIP_INSPECTION" />
@@ -126,6 +132,7 @@
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework05/QuicksortAnalysisPart2.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework05/TimingExperiment08.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework05/QuicksortAnalysisPart1.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySet.java" />
       </list>
     </option>
   </component>
@@ -181,24 +188,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="CS 2420 - Spring 2014" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CS 2420 - Spring 2014" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homework06" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -421,7 +410,7 @@
       <workItem from="1391655802627" duration="247000" />
       <workItem from="1392684851314" duration="12886000" />
       <workItem from="1392775733461" duration="26000" />
-      <workItem from="1393379357941" duration="577000" />
+      <workItem from="1393379357941" duration="1464000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -467,11 +456,15 @@
       <created>1392690188532</created>
       <updated>1392690188532</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Initial commit&#10;">
+      <created>1393380009057</created>
+      <updated>1393380009057</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33746000" />
+    <option name="totallyTimeSpent" value="34633000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -506,18 +499,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32671756" sideWeight="0.528754" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15812592" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15812592" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24122137" sideWeight="0.48509052" order="2" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32901832" sideWeight="0.514377" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32671756" sideWeight="0.528754" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -819,14 +812,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySetTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="13" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0" vertical-offset="1283" max-vertical-offset="3060">
-          <folding />
+        <state line="2" column="0" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0" vertical-offset="2142" max-vertical-offset="2856">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#826#834#0" expanded="true" />
+            <element signature="e#1068#1076#0" expanded="true" />
+            <element signature="e#1509#1525#0" expanded="true" />
+            <element signature="e#1616#1625#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="7" selection-start="1293" selection-end="1293" vertical-scroll-proportion="0.5555556" vertical-offset="425" max-vertical-offset="3162">
+        <state line="25" column="52" selection-start="879" selection-end="879" vertical-scroll-proportion="0.055555556" vertical-offset="391" max-vertical-offset="3009">
           <folding />
         </state>
       </provider>
