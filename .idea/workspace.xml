@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework05/QuicksortAnalysisPart1.java" line="67" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="Initial commit&#10;">
-      <change type="DELETED" beforePath="C:\Users\Cody\workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\CS 2420 - Spring 2014\.indexes\e4\history.index" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/CS 2420 - Spring 2014/.markers" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/CS 2420 - Spring 2014/.markers" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3400578845.index" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3400578845.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.log" afterPath="$PROJECT_DIR$/.metadata/.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework05/QuicksortAnalysis.java" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework05/QuicksortAnalysis.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySetTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework05/TimingExperiment08.java" />
+      <change type="MOVED" beforePath="C:\Users\Cody\workspace\CS 2420 - Spring 2014\src\homework05\QuicksortAnalysis.java" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework05/QuicksortAnalysisPart1.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -84,32 +81,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="WarehouseReport.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework04/WarehouseReport.java">
+      <file leaf-file-name="SpecialtySet.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="18" selection-start="876" selection-end="876" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="5831">
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#9312#9321#0" expanded="true" />
-                <element signature="e#9382#9391#0" expanded="true" />
-              </folding>
+            <state line="45" column="7" selection-start="1293" selection-end="1293" vertical-scroll-proportion="0.5555556" vertical-offset="425" max-vertical-offset="3162">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuicksortAnalysis.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework05/QuicksortAnalysis.java">
+      <file leaf-file-name="SpecialtySetTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySetTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="273" selection-end="273" vertical-scroll-proportion="0.09220985" vertical-offset="112" max-vertical-offset="1870">
-              <folding>
-                <element signature="docComment;class#QuicksortAnalysis#0" expanded="false" />
-                <element signature="method#createDoubleArray#0;class#QuicksortAnalysis#0" expanded="false" />
-                <element signature="docComment;method#qs#0;class#QuicksortAnalysis#0" expanded="false" />
-                <element signature="method#qs#0;class#QuicksortAnalysis#0" expanded="false" />
-                <element signature="docComment;method#partition#0;class#QuicksortAnalysis#0" expanded="false" />
-                <element signature="docComment;method#advanceCount#0;class#QuicksortAnalysis#0" expanded="false" />
-                <element signature="method#advanceCount#0;class#QuicksortAnalysis#0" expanded="false" />
-              </folding>
+            <state line="22" column="13" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0" vertical-offset="1283" max-vertical-offset="3060">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -138,6 +123,9 @@
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework04/WarehouseAnalysis.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework04/WarehouseReport.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework05/QuicksortAnalysis.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework05/QuicksortAnalysisPart2.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework05/TimingExperiment08.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework05/QuicksortAnalysisPart1.java" />
       </list>
     </option>
   </component>
@@ -148,7 +136,7 @@
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -178,7 +166,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -211,7 +198,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="homework05" />
+              <option name="myItemId" value="homework06" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -232,6 +219,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -252,15 +240,23 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="SearchEverywhereHistory" value="cr" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="homework05" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Cody\workspace\CS 2420 - Spring 2014\src\homework05" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Cody\workspace\CS 2420 - Spring 2014\src\homework06" />
       <recent name="C:\Users\Cody\workspace\CS 2420 - Spring 2014\src\homework04" />
       <recent name="C:\Users\Cody\workspace\CS 2420 - Spring 2014\src" />
       <recent name="C:\Users\Cody\workspace\CS 2420 - Spring 2014" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.QuicksortAnalysis">
+  <component name="RunManager" selected="Application.QuicksortAnalysisPart1">
     <configuration default="false" name="InventoryTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="homework03.InventoryTester" />
       <option name="VM_PARAMETERS" />
@@ -293,8 +289,8 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="QuicksortAnalysis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homework05.QuicksortAnalysis" />
+    <configuration default="false" name="QuicksortAnalysisPart1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homework05.QuicksortAnalysisPart1" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -347,11 +343,11 @@
     <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.InventoryTester" />
       <item index="1" class="java.lang.String" itemvalue="Application.WarehouseReport" />
-      <item index="2" class="java.lang.String" itemvalue="Application.QuicksortAnalysis" />
+      <item index="2" class="java.lang.String" itemvalue="Application.QuicksortAnalysisPart1" />
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.QuicksortAnalysis" />
+        <item index="0" class="java.lang.String" itemvalue="Application.QuicksortAnalysisPart1" />
         <item index="1" class="java.lang.String" itemvalue="Application.WarehouseReport" />
         <item index="2" class="java.lang.String" itemvalue="Application.InventoryTester" />
       </list>
@@ -423,7 +419,9 @@
       <workItem from="1391495170318" duration="159000" />
       <workItem from="1391567254935" duration="323000" />
       <workItem from="1391655802627" duration="247000" />
-      <workItem from="1392684851314" duration="5231000" />
+      <workItem from="1392684851314" duration="12886000" />
+      <workItem from="1392775733461" duration="26000" />
+      <workItem from="1393379357941" duration="577000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -465,11 +463,15 @@
       <created>1392687820595</created>
       <updated>1392687820595</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Initial commit&#10;">
+      <created>1392690188532</created>
+      <updated>1392690188532</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25488000" />
+    <option name="totallyTimeSpent" value="33746000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -492,30 +494,30 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32682925" sideWeight="0.528754" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12462236" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.53333336" sideWeight="0.48509052" order="2" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15812592" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24122137" sideWeight="0.48509052" order="2" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32901832" sideWeight="0.514377" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32671756" sideWeight="0.528754" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -566,6 +568,16 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/Inventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1683" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/InventoryTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="0" selection-start="3267" selection-end="3267" vertical-scroll-proportion="0.0" vertical-offset="1133" max-vertical-offset="2057" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/Item.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="7" selection-start="629" selection-end="629" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1564" />
@@ -583,31 +595,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/InventoryTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="0" selection-start="3267" selection-end="3267" vertical-scroll-proportion="0.0" vertical-offset="1133" max-vertical-offset="2057">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="7" selection-start="629" selection-end="629" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1564" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/DatedItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="22" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="901" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/Inventory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1683" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/InventoryTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="0" selection-start="3267" selection-end="3267" vertical-scroll-proportion="0.0" vertical-offset="1133" max-vertical-offset="2057">
-          <folding />
-        </state>
+        <state line="74" column="0" selection-start="3267" selection-end="3267" vertical-scroll-proportion="0.0" vertical-offset="1133" max-vertical-offset="2057" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/Item.java">
@@ -627,9 +615,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/InventoryTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="0" selection-start="3267" selection-end="3267" vertical-scroll-proportion="0.0" vertical-offset="1258" max-vertical-offset="2057">
-          <folding />
-        </state>
+        <state line="74" column="0" selection-start="3267" selection-end="3267" vertical-scroll-proportion="0.0" vertical-offset="1258" max-vertical-offset="2057" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/Item.java">
@@ -649,9 +635,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/InventoryTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="19" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1275">
-          <folding />
-        </state>
+        <state line="9" column="19" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1275" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/Item.java">
@@ -671,9 +655,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/InventoryTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="58" selection-start="694" selection-end="694" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="1292">
-          <folding />
-        </state>
+        <state line="25" column="58" selection-start="694" selection-end="694" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="1292" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/Item.java">
@@ -693,9 +675,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/InventoryTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="8" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="1275">
-          <folding />
-        </state>
+        <state line="39" column="8" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="1275" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/Item.java">
@@ -715,9 +695,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/InventoryTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="52" selection-start="756" selection-end="756" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1275">
-          <folding />
-        </state>
+        <state line="27" column="52" selection-start="756" selection-end="756" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1275" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/Item.java">
@@ -737,9 +715,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/InventoryTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="52" selection-start="756" selection-end="756" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
-          <folding />
-        </state>
+        <state line="27" column="52" selection-start="756" selection-end="756" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/Item.java">
@@ -759,9 +735,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/InventoryTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="53" selection-start="2887" selection-end="2887" vertical-scroll-proportion="0.0" vertical-offset="1122" max-vertical-offset="1258">
-          <folding />
-        </state>
+        <state line="66" column="53" selection-start="2887" selection-end="2887" vertical-scroll-proportion="0.0" vertical-offset="1122" max-vertical-offset="1258" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/Item.java">
@@ -806,9 +780,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework04/Inventory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="191" column="3" selection-start="6449" selection-end="6449" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3876">
-          <folding />
-        </state>
+        <state line="191" column="3" selection-start="6449" selection-end="6449" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3876" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/~Misc/src/CS3810HW9.java">
@@ -818,34 +790,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework03/InventoryTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="57" selection-start="182" selection-end="225" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="2023">
-          <folding />
-        </state>
+        <state line="7" column="57" selection-start="182" selection-end="225" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="2023" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework04/WarehouseReport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="18" selection-start="876" selection-end="876" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="5831">
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#9312#9321#0" expanded="true" />
-            <element signature="e#9382#9391#0" expanded="true" />
-          </folding>
+        <state line="25" column="18" selection-start="876" selection-end="876" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="5831" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework01/SelectionSortExperiment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="1255" selection-end="1255" vertical-scroll-proportion="0.6136364" vertical-offset="13" max-vertical-offset="1360" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework05/QuicksortAnalysisPart1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="0" selection-start="3780" selection-end="3780" vertical-scroll-proportion="0.6383701" vertical-offset="1307" max-vertical-offset="4930">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework05/QuicksortAnalysis.java">
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework05/TimingExperiment08.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="273" selection-end="273" vertical-scroll-proportion="0.09220985" vertical-offset="112" max-vertical-offset="1870">
-          <folding>
-            <element signature="docComment;class#QuicksortAnalysis#0" expanded="false" />
-            <element signature="method#createDoubleArray#0;class#QuicksortAnalysis#0" expanded="false" />
-            <element signature="docComment;method#qs#0;class#QuicksortAnalysis#0" expanded="false" />
-            <element signature="method#qs#0;class#QuicksortAnalysis#0" expanded="false" />
-            <element signature="docComment;method#partition#0;class#QuicksortAnalysis#0" expanded="false" />
-            <element signature="docComment;method#advanceCount#0;class#QuicksortAnalysis#0" expanded="false" />
-            <element signature="method#advanceCount#0;class#QuicksortAnalysis#0" expanded="false" />
-          </folding>
+        <state line="33" column="9" selection-start="832" selection-end="832" vertical-scroll-proportion="0.4227504" vertical-offset="312" max-vertical-offset="901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySetTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="13" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0" vertical-offset="1283" max-vertical-offset="3060">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="7" selection-start="1293" selection-end="1293" vertical-scroll-proportion="0.5555556" vertical-offset="425" max-vertical-offset="3162">
+          <folding />
         </state>
       </provider>
     </entry>
