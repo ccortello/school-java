@@ -74,24 +74,24 @@ public class SpecialtySet<E extends Comparable<E>> {
      * @param data
      */
     private void locatePosition(E data) {
-        // loop from current position if not at beginning of list
-        if (last.data != null && last.data.compareTo(data) < 0) {
-
-            // loop through the list while not at end or the data is larger than the element to be found
-            while (current != null && current.data.compareTo(data) < 0) {
-                if (current.data.equals(data))
-                    return;
-
-                // if the data at 'current' doesn't match 'data' then continue walking through the list
-                last = current;
-                current = current.next;
-            }
-
-            // if the data isn't found, simply return ('current' and 'last should be correctly set)
-            return;
+        // if at end of list and last element is too big, then restart the search
+        if (last.data.compareTo(data) > 0 && current == null) {
+            last = null;
+            current = head;
         }
 
-        // if
+        // loop through the list while not at end or the data is larger than the element to be found
+        while (current != null && current.data.compareTo(data) < 0) {
+            if (current.data.equals(data))
+                return;
+
+            // if the data at 'current' doesn't match 'data' then continue walking through the list
+            last = current;
+            current = current.next;
+        }
+
+        // if the data isn't found, simply return ('current' and 'last should be correctly set)
+        return;
     }
 
 
