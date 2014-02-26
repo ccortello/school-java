@@ -59,12 +59,12 @@ public class SpecialtySet<E extends Comparable<E>> {
      * will be null if 'data' should occupy the first position
      * in the list.
      * <p/>
-     * The 'current' variable either points to the node containing
+     * The 'current' variable ether points to the node containing
      * the data (if the data exists in the list), or the node
      * following the position that the data should occupy (if
      * the data does not exist in the list).  'Current' will
      * be null only if the data is not in the list and would
-     * naturally appear at the end of the list.
+     * naturally appear at the enid of the list.
      * <p/>
      * Finally, if the node at 'last' exists and last.data < data,
      * this function begins the search at 'current'.  Otherwise,
@@ -74,16 +74,20 @@ public class SpecialtySet<E extends Comparable<E>> {
      * @param data
      */
     private void locatePosition(E data) {
-        // initiate 'walking' fields
-        Node last = null;
-        Node current = head;
+        if (last.data != null) {
+            while (current != null && current.data.compareTo(data) < 0)
+        }
 
-        // find correct data
-        while (current != null) {
-            if (current.data.equals(data))
-                return current;
-            else
+        last = null;
+        current = head;
 
+        while (current != null &&) {   // 'walk' through list while before the end
+            if (current.data.equals(data)) // if the data at the current node is the data requested
+                return;     // exit, the current
+
+            // if the current data is incorrect
+            last = current;
+            current = current.next;
         }
     }
 
