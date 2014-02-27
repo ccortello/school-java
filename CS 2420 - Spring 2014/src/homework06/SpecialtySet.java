@@ -130,7 +130,17 @@ public class SpecialtySet<E extends Comparable<E>> {
      */
     public void add(E data) {
         if (!contains(data)) {
-            last.next = new Node(data);
+            System.out.println("Starting the add with " + data.toString());
+            Node newNode = new Node(data);
+            System.out.println("newNode initialized!");
+            System.out.println("newNode data = " + newNode.data);
+
+            // fails here
+            last.next = newNode;
+
+
+            System.out.println("last.next.data = ");
+            System.out.println(last.next.data);
             last.next.next = current;
             current = last.next;
         }
@@ -169,13 +179,14 @@ public class SpecialtySet<E extends Comparable<E>> {
      * @return true iff the set passes an internal test
      */
     boolean validate() {
+        // iterate through list and check that each element is greater than the last
         last = head;
         current = last.next;
         while (current != null) {
             if (current.data.compareTo(last.data) >= 0)
                 return false;
         }
-        return true;  // Stub
+        return true;
     }
 
 
