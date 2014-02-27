@@ -79,19 +79,25 @@ public class SpecialtySet<E extends Comparable<E>> {
             return;
 
         // if at end of list and last element is too big, then restart the search
-        if (last.data.compareTo(data) > 0 && current == null) {
+        if (current == null && last.data.compareTo(data) > 0) {
             last = null;
             current = head;
         }
 
         // loop through the list while not at end or the data is larger than the element to be found
         while (current != null && current.data.compareTo(data) < 0) {
-            if (current.data.equals(data))
+
+            if (current.data.equals(data)) {
                 return;
+            }
 
             // if the data at 'current' doesn't match 'data' then continue walking through the list
             last = current;
+//            System.out.println("current 'current' = "+current.data.toString());
             current = current.next;
+            if (current == null)
+                return;
+//            System.out.println("current.next = "+current.data.toString());
         }
 
         // if the data isn't found, simply return ('current' and 'last should be correctly set)
@@ -130,19 +136,34 @@ public class SpecialtySet<E extends Comparable<E>> {
      */
     public void add(E data) {
         if (!contains(data)) {
-            System.out.println("Starting the add with " + data.toString());
+
+            // initialize new Node (to be added) with the given data
             Node newNode = new Node(data);
-            System.out.println("newNode initialized!");
-            System.out.println("newNode data = " + newNode.data);
 
-            // fails here
+            // handle adding to empty set
+            if (size == 0) {
+                head = newNode;
+                current = newNode;
+//                last = newNode;
+                size++;
+                return;
+            }
+//            else {
+//                System.out.println("current.data = "+current.data.toString());
+//                System.out.println("last.data = "+last.data.toString());
+//            }
+            System.out.println("after add if statement");
+
+
+            // update Node tracker variables
             last.next = newNode;
-
-
-            System.out.println("last.next.data = ");
-            System.out.println(last.next.data);
             last.next.next = current;
             current = last.next;
+
+            System.out.println("before size update");
+
+            // increment size
+            size++;
         }
     }
 
@@ -180,8 +201,16 @@ public class SpecialtySet<E extends Comparable<E>> {
      */
     boolean validate() {
         // iterate through list and check that each element is greater than the last
-        last = head;
-        current = last.next;
+        current = head;
+        System.out.println("current = " + last.data.toString());
+        while (current.next != null) {
+            System.out.println("entering while loop");
+            System.out.println(current.next.data.toString());
+            current = current.next;
+        }
+        System.out.println("Exiting first validate while loop");
+        current = head;
+        last = null;
         while (current != null) {
             if (current.data.compareTo(last.data) >= 0)
                 return false;
@@ -189,6 +218,32 @@ public class SpecialtySet<E extends Comparable<E>> {
         return true;
     }
 
+    /**
+     * Prints the contents of the SpecialtySet in order,
+     * with tabs as delimiters
+     *
+     * @return String of the contents of the SpecialtySet
+     */
+    public String toString() {
+        // initialize return String and reset list trackers to the beginning of the list
+        String returnString = "";
+        current = head;
+        last = null;
+
+        System.out.println("Size = " + size);
+
+        // loop through the list and add each element in the list to the return String
+        for (int i = 0; i < size; i++) {
+            returnString += current.data.toString() + "\t";
+            System.out.println("last.data = " + last.data.toString());
+            last = current;
+            System.out.println("current.next.data = " + current.next.data.toString());
+            current = current.next;
+        }
+        returnString = returnString.trim();
+        return returnString;
+
+    }
 
     // An example of an inner class (a class within another object).
 
