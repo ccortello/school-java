@@ -143,19 +143,14 @@ public class SpecialtySet<E extends Comparable<E>> {
     public void add(E data) {
 //    		System.out.println("\nStarting add, current = "+current.data.toString()+", last = "+last.data.toString());
         // handle null case
-        if (this == null || size == 0)
+        if (this == null)
             return;
 
+        // if the data already exists in the list don't add it (if condition will be skipped and nothing will happen
         if (!contains(data)) {
-            locatePosition(data);
 
-//            debug
-            System.out.println("\nStarting add:");
-            if (current != null)
-                System.out.println("current = " + current.data.toString());
-            if (last != null)
-                System.out.println("last = " + last.data.toString());
-//
+            // find the correct location for the data
+            locatePosition(data);
 
             if (current != null)
                 System.out.println("starting add, current = " + current.data.toString());
