@@ -9,31 +9,31 @@ import java.util.TreeSet;
 public class SpecialtySetTrial {
     public static void main(String[] args) {
         SpecialtySet<Integer> newSet = new SpecialtySet<Integer>();
+        String intsAdded = "";
+        Set<Integer> compareSet = new TreeSet<Integer>();
+
 //        newSet.add(123);
 //        System.out.println("first add completed!");
 //        if (newSet.contains(123))
 //            System.out.println("set correctly contains first add :123");
 
 
-        String intsAdded = "";
-        Set<Integer> compareSet = new TreeSet<Integer>();
-
-        compareSet.add(123);
-        newSet.add(122);
-        if (newSet.contains(122))
-            System.out.println("set correctly contains 122");
-//        System.out.println("after ");
-        newSet.add(121);
-        if (newSet.contains(121))
-            System.out.println("set correctly contains 121");
-        newSet.add(124);
-        System.out.println("added 124!");
-        System.out.println("New set: " + newSet.toString());
-        if (newSet.contains(124))
-            System.out.println("set correctly contains 124");
-        System.out.println("after third add");
-        newSet.add(120);
-        System.out.println("after fourth add");
+//        compareSet.add(123);
+//        newSet.add(122);
+//        if (newSet.contains(122))
+//            System.out.println("set correctly contains 122");
+////        System.out.println("after ");
+//        newSet.add(121);
+//        if (newSet.contains(121))
+//            System.out.println("set correctly contains 121");
+//        newSet.add(124);
+//        System.out.println("added 124!");
+//        System.out.println("New set: " + newSet.toString());
+//        if (newSet.contains(124))
+//            System.out.println("set correctly contains 124");
+//        System.out.println("after third add");
+//        newSet.add(120);
+//        System.out.println("after fourth add");
 
 //        System.out.println("\n\nentering for loop");
 //        for (int i=1; i<20; i++) {

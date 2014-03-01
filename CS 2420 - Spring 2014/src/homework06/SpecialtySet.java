@@ -217,7 +217,7 @@ public class SpecialtySet<E extends Comparable<E>> {
     boolean validate() {
         // iterate through list and check that each element is greater than the last
         current = head;
-        System.out.println("current = " + last.data.toString());
+        System.out.println("\nValidate:\nHead = " + current.data.toString());
         while (current.next != null) {
 //            System.out.println("entering while loop");
 //            System.out.println(current.next.data.toString());
