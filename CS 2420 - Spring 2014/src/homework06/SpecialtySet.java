@@ -74,8 +74,8 @@ public class SpecialtySet<E extends Comparable<E>> {
      * @param data
      */
     private void locatePosition(E data) {
-        // if the list is of size 0 then return
-        if (size == 0)
+        // handle null case
+        if (this == null || size == 0)
             return;
 
         // if at end of list and last element is too big, then restart the search
@@ -91,7 +91,7 @@ public class SpecialtySet<E extends Comparable<E>> {
                 return;
             }
 
-            // if the data at 'current' doesn't match 'data' then continue walking through the list
+            // continue walking through the list since the data wasn't found
             last = current;
             current = current.next;
 
@@ -115,15 +115,18 @@ public class SpecialtySet<E extends Comparable<E>> {
      * this function.
      */
     public boolean contains(E data) {
+//        debug
         if (current != null)
             System.out.println("contains, current = " + current.data.toString());
         if (last != null)
             System.out.println("contains, last = " + last.data.toString());
+//
+
         locatePosition(data);
-        if (current == null)
-            return false;
-        else
+        if (current.data.compareTo(data) == 0) // iff the data matched the given data return true
             return true;
+        else
+            return false;
     }
 
     /**
@@ -139,17 +142,20 @@ public class SpecialtySet<E extends Comparable<E>> {
      */
     public void add(E data) {
 //    		System.out.println("\nStarting add, current = "+current.data.toString()+", last = "+last.data.toString());
+        // handle null case
+        if (this == null || size == 0)
+            return;
+
         if (!contains(data)) {
             locatePosition(data);
 
-
-            if (size != 0) {
-                System.out.println("\nStarting add:");
-                if (current != null)
-                    System.out.println("current = " + current.data.toString());
-                if (last != null)
-                    System.out.println("last = " + last.data.toString());
-            }
+//            debug
+            System.out.println("\nStarting add:");
+            if (current != null)
+                System.out.println("current = " + current.data.toString());
+            if (last != null)
+                System.out.println("last = " + last.data.toString());
+//
 
             if (current != null)
                 System.out.println("starting add, current = " + current.data.toString());
@@ -194,9 +200,14 @@ public class SpecialtySet<E extends Comparable<E>> {
      *   to the previous node (as appropriate).
      */
     public void remove(E data) {
+        // if the data is found in the array
         if (contains(data)) {
+
+            // change the node pointers to skip the data
             last.next = last.next.next;
             current = last.next;
+
+            // and decrement the size
             size -= 1;
         }
     }
@@ -215,18 +226,25 @@ public class SpecialtySet<E extends Comparable<E>> {
      * @return true iff the set passes an internal test
      */
     boolean validate() {
-        // iterate through list and check that each element is greater than the last
-        current = head;
-        last = null;
-        System.out.println("\nValidating" + this.toString() + "\nHead = " + current.data.toString());
 
+        // handle null case
+        if (this == null || size == 0)
+            return true;
 
-//        System.out.println("Exiting first validate while loop");
-        last = head;
+        System.out.println("\nValidating\n" + this.toString() + "\nHead = " + current.data.toString());
+
+        // Reset node variables
         current = head.next;
+        last = head;
+
+        // iterate through list and check that each element is greater than the last
         while (current != null) {
             if (current.data.compareTo(last.data) >= 0)
                 return false;
+
+            // 'walk' to next element
+            last = current;
+            current = current.next;
         }
         return true;
     }
