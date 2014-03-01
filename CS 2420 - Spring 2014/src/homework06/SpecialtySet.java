@@ -120,10 +120,10 @@ public class SpecialtySet<E extends Comparable<E>> {
      */
     public boolean contains(E data) {
 //        debug
-        if (current != null)
-            System.out.println("contains, current = " + current.data.toString());
-        if (last != null)
-            System.out.println("contains, last = " + last.data.toString());
+//        if (current != null)
+//            System.out.println("contains, current = " + current.data.toString());
+//        if (last != null)
+//            System.out.println("contains, last = " + last.data.toString());
 //
 
         locatePosition(data);
@@ -216,47 +216,14 @@ public class SpecialtySet<E extends Comparable<E>> {
      */
     public void remove(E data) {
         if (contains(data)) {
+            // handle removing first element
+            if (last == null && current == head)
+                head = current.next;
+
             last.next = last.next.next;
             current = last.next;
             size -= 1;
         }
-    }
-
-
-    /**
-     * A debugging function (not required) that
-     * verifies the element count and element sortedness.
-     * My test also printed out the contents of the set.
-     * <p/>
-     * Students may write debugging functions like this
-     * one, but they may not write external tests or other
-     * internal code that depends on the execution of any
-     * internal test function.
-     *
-     * @return true iff the set passes an internal test
-     */
-    boolean validate() {
-
-        // handle null case
-        if (this == null || size == 0)
-            return true;
-
-        //System.out.println("\nValidating\n" + this.toString() + "\nHead = " + current.data.toString());
-
-        // Reset node variables
-        current = head.next;
-        last = head;
-
-        // iterate through list and check that each element is greater than the last
-        while (current != null) {
-            if (current.data.compareTo(last.data) >= 0)
-                return false;
-
-            // 'walk' to next element
-            last = current;
-            current = current.next;
-        }
-        return true;
     }
 
 

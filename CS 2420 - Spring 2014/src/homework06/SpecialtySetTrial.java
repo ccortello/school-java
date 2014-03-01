@@ -1,5 +1,6 @@
 package homework06;
 
+import java.util.ArrayList;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -11,6 +12,8 @@ public class SpecialtySetTrial {
         SpecialtySet<Integer> newSet = new SpecialtySet<Integer>();
         String intsAdded = "";
         Set<Integer> compareSet = new TreeSet<Integer>();
+        Set<Integer> compareSet2 = new TreeSet<Integer>();
+        ArrayList<Integer> compareArray = new ArrayList<Integer>();
 
 //        newSet.add(123);
 //        System.out.println("first add completed!");
@@ -34,7 +37,6 @@ public class SpecialtySetTrial {
 //        System.out.println("after third add");
 //        newSet.add(120);
 //        System.out.println("after fourth add");
-
         System.out.println("\n\nentering for loop");
         for (int i = 1; i < 20; i++) {
 //            int randomInt = (int) (Math.random() * 1000);
@@ -43,6 +45,10 @@ public class SpecialtySetTrial {
             newSet.add(randomInt);
 //        	System.out.println("after adding to SpecialtySet");
             compareSet.add(randomInt);
+            if (intsAdded.length() % 2 == 0)
+                compareArray.add(randomInt);
+//            if (intsAdded.length() % 2==0)
+//                newSet.remove(randomInt);
 //        	System.out.println("after adding to the compareSet");
             intsAdded += randomInt + "\t";
         }
@@ -54,6 +60,10 @@ public class SpecialtySetTrial {
             newSet.add(randomInt);
 //        	System.out.println("after adding to SpecialtySet");
             compareSet.add(randomInt);
+            if (intsAdded.length() % 2 == 0)
+                compareArray.add(randomInt);
+//            if (intsAdded.length() % 2==0)
+//                newSet.remove(randomInt);
 //        	System.out.println("after adding to the compareSet");
             intsAdded += randomInt + "\t";
         }
@@ -66,8 +76,17 @@ public class SpecialtySetTrial {
         System.out.println("Set should be:\t" + compareSet.toString());
         System.out.println("newSet elements:\n" + newSet.toString());
         System.out.println("Done!");
-        System.out.println("\n\nStarting validation");
-        if (newSet.validate())
-            System.out.println("Sorted correctly!");
+
+        System.out.println("\n-\n" + "Removing elements");
+//        System.out.println("Set should be:\t" + compareArray.toString());
+//        for(int x = 1; x < 3; x++){
+//            newSet.remove(x);
+//        }
+        newSet.remove(10);
+        newSet.remove(1);
+        newSet.remove(15);
+        newSet.remove(3);
+        newSet.remove(20);
+        System.out.println("newSet elements:\n" + newSet.toString());
     }
 }
