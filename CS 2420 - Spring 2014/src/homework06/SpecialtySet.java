@@ -123,7 +123,7 @@ public class SpecialtySet<E extends Comparable<E>> {
 //
 
         locatePosition(data);
-        if (current.data.compareTo(data) == 0) // iff the data matched the given data return true
+        if (current != null && current.data.compareTo(data) == 0) // iff the data matched the given data return true
             return true;
         else
             return false;
@@ -152,28 +152,31 @@ public class SpecialtySet<E extends Comparable<E>> {
             // find the correct location for the data
             locatePosition(data);
 
+//
             if (current != null)
                 System.out.println("starting add, current = " + current.data.toString());
             if (last != null)
                 System.out.println("starting add, last = " + last.data.toString());
-
+//
 
             // initialize new Node (to be added) with the given data
             Node newNode = new Node(data);
 
             // handle adding to empty set
             if (size == 0) {
+
                 // add the new node, increment size, and return
                 head = newNode;
                 current = newNode;
                 size++;
-                System.out.println("added, set = " + this.toString());
+//                System.out.println("added, set = " + this.toString());
                 return;
             }
 
             // if at beginning of list update head and the Node variables
             if (last == null && current == head) {
                 head = newNode;
+                head.next = current;
                 size++;
             }
 
@@ -191,8 +194,7 @@ public class SpecialtySet<E extends Comparable<E>> {
                 current = last.next;
                 size++;
             }
-
-            System.out.println("added, set = " + this.toString() + "\n");
+//            System.out.println("added, set = " + this.toString() + "\n");
         }
     }
 
