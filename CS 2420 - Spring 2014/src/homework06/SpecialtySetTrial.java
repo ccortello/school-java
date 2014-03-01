@@ -37,8 +37,8 @@ public class SpecialtySetTrial {
 
         System.out.println("\n\nentering for loop");
         for (int i = 1; i < 20; i++) {
-            int randomInt = (int) (Math.random() * 1000);
-//        	int randomInt = i;
+//            int randomInt = (int) (Math.random() * 1000);
+            int randomInt = i;
 //        	System.out.println("before adding to the sets");
             newSet.add(randomInt);
 //        	System.out.println("after adding to SpecialtySet");
@@ -46,23 +46,21 @@ public class SpecialtySetTrial {
 //        	System.out.println("after adding to the compareSet");
             intsAdded += randomInt + "\t";
         }
-//        
-//        for (int i=20; i>0; i--) {
+
+        for (int i = 20; i > 0; i--) {
 //        	int randomInt = (int) (Math.random()*1000);
-////        	int randomInt = i;
-////        	System.out.println("before adding to the sets");
-//        	newSet.add(randomInt);
-////        	System.out.println("after adding to SpecialtySet");
-//        	compareSet.add(randomInt);
-////        	System.out.println("after adding to the compareSet");
-//        	intsAdded+=randomInt+"\t";
-//        }
+            int randomInt = i;
+//        	System.out.println("before adding to the sets");
+            newSet.add(randomInt);
+//        	System.out.println("after adding to SpecialtySet");
+            compareSet.add(randomInt);
+//        	System.out.println("after adding to the compareSet");
+            intsAdded += randomInt + "\t";
+        }
 
 //        System.out.println("after for loop");
 //        newSet.add(10000);
 
-        Set<Integer> intsAdded2 = new TreeSet<Integer>();
-        int other = 0;
         intsAdded.trim();
         System.out.println("\n\nintsAdded, in order:\n" + intsAdded + "\n");
         System.out.println("Set should be:\t" + compareSet.toString());

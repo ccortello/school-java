@@ -191,7 +191,7 @@ public class SpecialtySet<E extends Comparable<E>> {
             }
 
             // otherwise, simply update Node tracker variables (middle of list) and increment size
-            else {
+            else if (!last.data.equals(data)) {
                 last.next = newNode;
                 last.next.next = current;
                 current = last.next;
