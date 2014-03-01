@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="update">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySet.java" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySetTrial.java" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySetTrial.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -84,7 +81,7 @@
       <file leaf-file-name="SpecialtySet.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="219" column="59" selection-start="7349" selection-end="7349" vertical-scroll-proportion="0.22222222" vertical-offset="3587" max-vertical-offset="5049">
+            <state line="242" column="21" selection-start="7974" selection-end="7974" vertical-scroll-proportion="1.1111112" vertical-offset="3434" max-vertical-offset="5083">
               <folding />
             </state>
           </provider>
@@ -93,7 +90,7 @@
       <file leaf-file-name="SpecialtySetTrial.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySetTrial.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="47" selection-start="2231" selection-end="2231" vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="1343">
+            <state line="60" column="47" selection-start="2230" selection-end="2230" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="1326">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#251#260#0" expanded="true" />
@@ -473,7 +470,7 @@
       <workItem from="1393384537911" duration="2023000" />
       <workItem from="1393467665444" duration="268000" />
       <workItem from="1393467974132" duration="7456000" />
-      <workItem from="1393708367805" duration="451000" />
+      <workItem from="1393708367805" duration="571000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -623,11 +620,15 @@
       <created>1393708411241</created>
       <updated>1393708411241</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="update">
+      <created>1393708834195</created>
+      <updated>1393708834195</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48264000" />
+    <option name="totallyTimeSpent" value="48384000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -951,7 +952,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySetTrial.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="47" selection-start="2231" selection-end="2231" vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="1343">
+        <state line="60" column="47" selection-start="2230" selection-end="2230" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="1326">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#251#260#0" expanded="true" />
@@ -962,7 +963,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="219" column="59" selection-start="7349" selection-end="7349" vertical-scroll-proportion="0.22222222" vertical-offset="3587" max-vertical-offset="5049">
+        <state line="242" column="21" selection-start="7974" selection-end="7974" vertical-scroll-proportion="1.1111112" vertical-offset="3434" max-vertical-offset="5083">
           <folding />
         </state>
       </provider>

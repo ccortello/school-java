@@ -217,12 +217,10 @@ public class SpecialtySet<E extends Comparable<E>> {
     boolean validate() {
         // iterate through list and check that each element is greater than the last
         current = head;
-        System.out.println("\nValidate:\nHead = " + current.data.toString());
-        while (current.next != null) {
-//            System.out.println("entering while loop");
-//            System.out.println(current.next.data.toString());
-            current = current.next;
-        }
+        last = null;
+        System.out.println("\nValidating" + this.toString() + "\nHead = " + current.data.toString());
+
+
 //        System.out.println("Exiting first validate while loop");
         last = head;
         current = head.next;
@@ -240,6 +238,10 @@ public class SpecialtySet<E extends Comparable<E>> {
      * @return String of the contents of the SpecialtySet
      */
     public String toString() {
+        // handle null case
+        if (this == null || size == 0)
+            return "";
+
         // initialize return String and reset list trackers to the beginning of the list
         String returnString = "";
         current = head;
