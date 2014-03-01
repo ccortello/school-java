@@ -61,7 +61,8 @@ public class SpecialtySetTrial {
 //        System.out.println("after for loop");
 //        newSet.add(10000);
 
-        intsAdded2 = new TreeSet<E>();
+        Set<Integer> intsAdded2 = new TreeSet<Integer>();
+        int other = 0;
         intsAdded.trim();
         System.out.println("\n\nintsAdded, in order:\n" + intsAdded + "\n");
         System.out.println("Set should be:\t" + compareSet.toString());

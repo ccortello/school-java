@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="update">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySetTrial.java" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySetTrial.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -90,11 +91,12 @@
       <file leaf-file-name="SpecialtySetTrial.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySetTrial.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="38" selection-start="2299" selection-end="2299" vertical-scroll-proportion="0.75" vertical-offset="612" max-vertical-offset="1360">
+            <state line="64" column="22" selection-start="2342" selection-end="2342" vertical-scroll-proportion="0.7777778" vertical-offset="612" max-vertical-offset="1377">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#251#260#0" expanded="true" />
                 <element signature="e#340#349#0" expanded="true" />
+                <element signature="e#2307#2316#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -470,7 +472,7 @@
       <workItem from="1393384537911" duration="2023000" />
       <workItem from="1393467665444" duration="268000" />
       <workItem from="1393467974132" duration="7456000" />
-      <workItem from="1393708367805" duration="4735000" />
+      <workItem from="1393708367805" duration="4953000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -648,11 +650,15 @@
       <created>1393712902756</created>
       <updated>1393712902756</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="update">
+      <created>1393713141315</created>
+      <updated>1393713141315</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52548000" />
+    <option name="totallyTimeSpent" value="52766000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -983,11 +989,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySetTrial.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="38" selection-start="2299" selection-end="2299" vertical-scroll-proportion="0.75" vertical-offset="612" max-vertical-offset="1360">
+        <state line="64" column="22" selection-start="2342" selection-end="2342" vertical-scroll-proportion="0.7777778" vertical-offset="612" max-vertical-offset="1377">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#251#260#0" expanded="true" />
             <element signature="e#340#349#0" expanded="true" />
+            <element signature="e#2307#2316#0" expanded="true" />
           </folding>
         </state>
       </provider>
