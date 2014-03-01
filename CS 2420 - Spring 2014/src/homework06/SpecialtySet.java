@@ -85,12 +85,11 @@ public class SpecialtySet<E extends Comparable<E>> {
         }
 
         // loop through the list while not at end or the data is larger than the element to be found
-        if ((current != null && current.data.compareTo(data) < 0)) {
+        if (current != null && current.data.compareTo(data) < 0) {
 
             while (current.data.compareTo(data) < 0) {
-                if (current.data.equals(data)) {
+                if (current.data.equals(data))
                     return;
-                }
 
                 // if the data at 'current' doesn't match 'data' then continue walking through the list
                 last = current;
