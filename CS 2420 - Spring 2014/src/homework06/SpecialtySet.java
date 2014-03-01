@@ -93,15 +93,14 @@ public class SpecialtySet<E extends Comparable<E>> {
 
             // if the data at 'current' doesn't match 'data' then continue walking through the list
             last = current;
-//            System.out.println("current 'current' = "+current.data.toString());
             current = current.next;
-            if (current == null)
-                return;
-//            System.out.println("current.next = "+current.data.toString());
-        }
 
-        // if the data isn't found, simply return ('current' and 'last should be correctly set)
-        return;
+            // return if at end of list ('current' and 'last' should be correctly set)
+            if (current == null) {
+                System.out.println("locate position: last.data = " + last.data.toString());
+                return;
+            }
+        }
     }
 
     /**
@@ -116,6 +115,10 @@ public class SpecialtySet<E extends Comparable<E>> {
      * this function.
      */
     public boolean contains(E data) {
+        if (current != null)
+            System.out.println("contains, current = " + current.data.toString());
+        if (last != null)
+            System.out.println("contains, last = " + last.data.toString());
         locatePosition(data);
         if (current == null)
             return false;
@@ -135,35 +138,47 @@ public class SpecialtySet<E extends Comparable<E>> {
      *   to the previous node (as appropriate).
      */
     public void add(E data) {
+//    		System.out.println("\nStarting add, current = "+current.data.toString()+", last = "+last.data.toString());
         if (!contains(data)) {
+            locatePosition(data);
+
+
+            if (size != 0) {
+                System.out.println("\nStarting add:");
+                if (current != null)
+                    System.out.println("current = " + current.data.toString());
+                if (last != null)
+                    System.out.println("last = " + last.data.toString());
+            }
+
+            if (current != null)
+                System.out.println("starting add, current = " + current.data.toString());
+            if (last != null)
+                System.out.println("starting add, last = " + last.data.toString());
+
 
             // initialize new Node (to be added) with the given data
             Node newNode = new Node(data);
 
             // handle adding to empty set
             if (size == 0) {
+                // add the new node, increment size, and return
                 head = newNode;
                 current = newNode;
-//                last = newNode;
                 size++;
+                System.out.println("added, set = " + this.toString());
                 return;
             }
-//            else {
-//                System.out.println("current.data = "+current.data.toString());
-//                System.out.println("last.data = "+last.data.toString());
-//            }
-            System.out.println("after add if statement");
-
 
             // update Node tracker variables
             last.next = newNode;
             last.next.next = current;
             current = last.next;
 
-            System.out.println("before size update");
-
             // increment size
             size++;
+
+            System.out.println("added, set = " + this.toString() + "\n");
         }
     }
 
@@ -204,13 +219,13 @@ public class SpecialtySet<E extends Comparable<E>> {
         current = head;
         System.out.println("current = " + last.data.toString());
         while (current.next != null) {
-            System.out.println("entering while loop");
-            System.out.println(current.next.data.toString());
+//            System.out.println("entering while loop");
+//            System.out.println(current.next.data.toString());
             current = current.next;
         }
-        System.out.println("Exiting first validate while loop");
-        current = head;
-        last = null;
+//        System.out.println("Exiting first validate while loop");
+        last = head;
+        current = head.next;
         while (current != null) {
             if (current.data.compareTo(last.data) >= 0)
                 return false;
@@ -230,14 +245,13 @@ public class SpecialtySet<E extends Comparable<E>> {
         current = head;
         last = null;
 
-        System.out.println("Size = " + size);
+//        System.out.println("in toString, btw: Size = " + size);
 
         // loop through the list and add each element in the list to the return String
-        for (int i = 0; i < size; i++) {
+        while (current != null) {
             returnString += current.data.toString() + "\t";
-            System.out.println("last.data = " + last.data.toString());
+
             last = current;
-            System.out.println("current.next.data = " + current.next.data.toString());
             current = current.next;
         }
         returnString = returnString.trim();
