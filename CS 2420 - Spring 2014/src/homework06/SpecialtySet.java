@@ -74,8 +74,8 @@ public class SpecialtySet<E extends Comparable<E>> {
      * @param data
      */
     private void locatePosition(E data) {
-        // handle null case
-        if (this == null || size == 0)
+        // if the list is of size 0 then return
+        if (size == 0)
             return;
 
         // if at end of list and last element is too big, then restart the search
@@ -85,21 +85,25 @@ public class SpecialtySet<E extends Comparable<E>> {
         }
 
         // loop through the list while not at end or the data is larger than the element to be found
-        while (current != null && current.data.compareTo(data) < 0) {
+        if ((current != null && current.data.compareTo(data) < 0)) {
 
-            if (current.data.equals(data)) {
-                return;
+            while (current.data.compareTo(data) < 0) {
+                if (current.data.equals(data)) {
+                    return;
+                }
+
+                // if the data at 'current' doesn't match 'data' then continue walking through the list
+                last = current;
+                current = current.next;
+
+                // return if at end of list ('current' and 'last' should be correctly set)
+                if (current == null) {
+                    System.out.println("locate position: last.data = " + last.data.toString());
+                    return;
+                }
             }
-
-            // continue walking through the list since the data wasn't found
-            last = current;
-            current = current.next;
-
-            // return if at end of list ('current' and 'last' should be correctly set)
-            if (current == null) {
-                System.out.println("locate position: last.data = " + last.data.toString());
-                return;
-            }
+        } else if ((current != null && current.data.compareTo(data) > 0)) {
+            return;
         }
     }
 
@@ -152,31 +156,30 @@ public class SpecialtySet<E extends Comparable<E>> {
             // find the correct location for the data
             locatePosition(data);
 
-//
             if (current != null)
                 System.out.println("starting add, current = " + current.data.toString());
             if (last != null)
                 System.out.println("starting add, last = " + last.data.toString());
-//
+
 
             // initialize new Node (to be added) with the given data
             Node newNode = new Node(data);
 
             // handle adding to empty set
             if (size == 0) {
-
                 // add the new node, increment size, and return
                 head = newNode;
                 current = newNode;
                 size++;
-//                System.out.println("added, set = " + this.toString());
+                System.out.println("added, set = " + this.toString());
                 return;
             }
 
-            // if at beginning of list update head and the Node variables
+            // if at beginning of list update head, last, and current
             if (last == null && current == head) {
-                head = newNode;
-                head.next = current;
+                current = newNode;
+                current.next = head;
+                head = current;
                 size++;
             }
 
@@ -194,9 +197,11 @@ public class SpecialtySet<E extends Comparable<E>> {
                 current = last.next;
                 size++;
             }
-//            System.out.println("added, set = " + this.toString() + "\n");
+
+            System.out.println("added, set = " + this.toString() + "\n");
         }
     }
+
 
     /**
      * Guarantees that the specified data is not in the set.
@@ -210,14 +215,9 @@ public class SpecialtySet<E extends Comparable<E>> {
      *   to the previous node (as appropriate).
      */
     public void remove(E data) {
-        // if the data is found in the array
         if (contains(data)) {
-
-            // change the node pointers to skip the data
             last.next = last.next.next;
             current = last.next;
-
-            // and decrement the size
             size -= 1;
         }
     }
@@ -241,7 +241,7 @@ public class SpecialtySet<E extends Comparable<E>> {
         if (this == null || size == 0)
             return true;
 
-        System.out.println("\nValidating\n" + this.toString() + "\nHead = " + current.data.toString());
+        //System.out.println("\nValidating\n" + this.toString() + "\nHead = " + current.data.toString());
 
         // Reset node variables
         current = head.next;
@@ -259,6 +259,7 @@ public class SpecialtySet<E extends Comparable<E>> {
         return true;
     }
 
+
     /**
      * Prints the contents of the SpecialtySet in order,
      * with tabs as delimiters
@@ -266,10 +267,6 @@ public class SpecialtySet<E extends Comparable<E>> {
      * @return String of the contents of the SpecialtySet
      */
     public String toString() {
-        // handle null case
-        if (this == null || size == 0)
-            return "";
-
         // initialize return String and reset list trackers to the beginning of the list
         String returnString = "";
         current = head;
