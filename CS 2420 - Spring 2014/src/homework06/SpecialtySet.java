@@ -176,13 +176,26 @@ public class SpecialtySet<E extends Comparable<E>> {
                 return;
             }
 
-            // update Node tracker variables
-            last.next = newNode;
-            last.next.next = current;
-            current = last.next;
+            // if at beginning of list update head and the Node variables
+            if (last == null && current == head) {
+                head = newNode;
+                size++;
+            }
 
-            // increment size
-            size++;
+            // if at end of list simply update 'last' node
+            else if (last != null && current == null) {
+                last.next = newNode;
+                current = newNode;
+                size++;
+            }
+
+            // otherwise, simply update Node tracker variables (middle of list) and increment size
+            else {
+                last.next = newNode;
+                last.next.next = current;
+                current = last.next;
+                size++;
+            }
 
             System.out.println("added, set = " + this.toString() + "\n");
         }
