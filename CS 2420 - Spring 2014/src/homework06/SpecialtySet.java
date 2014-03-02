@@ -74,25 +74,34 @@ public class SpecialtySet<E extends Comparable<E>> {
      * @param data
      */
     private void locatePosition(E data) {
+
+//        debug
+//        if (last != null)
+//            System.out.print("starting locating position: last = " + last.data.toString()+", data = "+data.toString());
+//        else
+//            System.out.print("starting locating position: last = null, data = "+data.toString());
+//        if (current != null)
+//            System.out.println(", current = " + current.data.toString());
+//        else
+//            System.out.println(", current = null");
+//
+
         // if the list is of size 0 then return
         if (size == 0)
             return;
 
         // if at end of list and last element is too big, then restart the search
-        if (current == null && last.data.compareTo(data) > 0) {
+        if (current == null || (last != null && last.data.compareTo(data) > 0)) {
             last = null;
             current = head;
         }
 
-        // loop through the list while not at end or the data is larger than the element to be found
-        if (current != null && current.data.compareTo(data) < 0) {
+        while (current != null && current.data.compareTo(data) < 0) {
+            if (current.data.compareTo(data) == 0) // if the data at 'current' doesn't match 'data'
+                return;
 
-            while (current.data.compareTo(data) < 0) {
-                if (current.data.equals(data))
-                    return;
-
-                // if the data at 'current' doesn't match 'data' then continue walking through the list
-                last = current;
+            // then continue walking through the list
+            last = current;
                 current = current.next;
 
                 // return if at end of list ('current' and 'last' should be correctly set)
@@ -101,9 +110,16 @@ public class SpecialtySet<E extends Comparable<E>> {
                     return;
                 }
             }
-        } else if ((current != null && current.data.compareTo(data) > 0)) {
-            return;
-        }
+
+//        debug
+//        if (last != null)
+//            System.out.print("after locating position: last = " + last.data.toString()+", data = "+data.toString());
+//        else
+//            System.out.print("after locating position: last = null, data = "+data.toString());
+//        if (current != null)
+//            System.out.println(", current = " + current.data.toString());
+//        else
+//            System.out.println(", current = null");
     }
 
     /**
@@ -118,14 +134,15 @@ public class SpecialtySet<E extends Comparable<E>> {
      * this function.
      */
     public boolean contains(E data) {
+
+        locatePosition(data);
+
 //        debug
 //        if (current != null)
 //            System.out.println("contains, current = " + current.data.toString());
 //        if (last != null)
 //            System.out.println("contains, last = " + last.data.toString());
-//
 
-        locatePosition(data);
         if (current != null && current.data.compareTo(data) == 0) // iff the data matched the given data return true
             return true;
         else
@@ -216,12 +233,16 @@ public class SpecialtySet<E extends Comparable<E>> {
     public void remove(E data) {
         if (contains(data)) {
             // handle removing first element
-            if (last == null && current == head)
+            if (last == null && current == head) {
                 head = current.next;
+                current = head;
+                size--;
+                return;
+            }
 
             last.next = last.next.next;
             current = last.next;
-            size -= 1;
+            size--;
         }
     }
 

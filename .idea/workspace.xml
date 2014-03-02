@@ -6,8 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="update">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3400578845.index" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3400578845.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySet.java" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySetTrial.java" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySetTrial.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -84,7 +85,7 @@
       <file leaf-file-name="SpecialtySet.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="227" column="0" selection-start="7645" selection-end="7645" vertical-scroll-proportion="0.5555556" vertical-offset="3519" max-vertical-offset="4930">
+            <state line="114" column="27" selection-start="3891" selection-end="4288" vertical-scroll-proportion="0.61445785" vertical-offset="1683" max-vertical-offset="5287">
               <folding />
             </state>
           </provider>
@@ -93,7 +94,7 @@
       <file leaf-file-name="SpecialtySetTrial.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySetTrial.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="31" selection-start="3253" selection-end="3253" vertical-scroll-proportion="0.0" vertical-offset="1394" max-vertical-offset="1666">
+            <state line="88" column="24" selection-start="3396" selection-end="3396" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="1666">
               <folding />
             </state>
           </provider>
@@ -174,7 +175,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -185,62 +186,7 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CS 2420 - Spring 2014" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CS 2420 - Spring 2014" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homework06" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CS 2420 - Spring 2014" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="GoToClass.includeLibraries" value="false" />
@@ -470,7 +416,7 @@
       <workItem from="1393467665444" duration="268000" />
       <workItem from="1393467974132" duration="7456000" />
       <workItem from="1393708367805" duration="8930000" />
-      <workItem from="1393717471416" duration="89000" />
+      <workItem from="1393717471416" duration="1855000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -664,11 +610,15 @@
       <created>1393717171745</created>
       <updated>1393717171745</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="update">
+      <created>1393717568412</created>
+      <updated>1393717568412</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56832000" />
+    <option name="totallyTimeSpent" value="58598000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -703,18 +653,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3260188" sideWeight="0.528754" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15812592" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24451411" sideWeight="0.49267936" order="2" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30877742" sideWeight="0.49267936" order="2" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32901832" sideWeight="0.514377" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3260188" sideWeight="0.528754" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -1017,14 +967,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySetTrial.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="31" selection-start="3253" selection-end="3253" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1666">
+        <state line="88" column="24" selection-start="3396" selection-end="3396" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="1666">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="227" column="0" selection-start="7645" selection-end="7645" vertical-scroll-proportion="0.5555556" vertical-offset="3519" max-vertical-offset="4930">
+        <state line="114" column="27" selection-start="3891" selection-end="4288" vertical-scroll-proportion="0.61445785" vertical-offset="1683" max-vertical-offset="5287">
           <folding />
         </state>
       </provider>

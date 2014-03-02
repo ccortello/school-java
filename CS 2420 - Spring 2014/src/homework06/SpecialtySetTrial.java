@@ -87,6 +87,8 @@ public class SpecialtySetTrial {
         newSet.remove(15);
         newSet.remove(3);
         newSet.remove(20);
+        newSet.remove(155);
+
         System.out.println("newSet elements:\n" + newSet.toString());
     }
 }
