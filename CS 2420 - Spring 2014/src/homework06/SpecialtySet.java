@@ -75,7 +75,7 @@ public class SpecialtySet<E extends Comparable<E>> {
      */
     private void locatePosition(E data) {
 
-        // if the list is of size 0 then return
+        // if the list is of size 0 then return (null case)
         if (size == 0)
             return;
 
@@ -92,9 +92,9 @@ public class SpecialtySet<E extends Comparable<E>> {
 
             // then continue walking through the list
             last = current;
-                current = current.next;
+            current = current.next;
 
-                // return if at end of list ('current' and 'last' should be correctly set)
+            // return if at end of list ('current' and 'last' should be correctly set)
             if (current == null)
                 return;
             }
@@ -199,21 +199,22 @@ public class SpecialtySet<E extends Comparable<E>> {
      */
     public void remove(E data) {
 
-        //
-        if (contains(data)) {
+        // if the data isn't in the set then simply return
+        if (!contains(data))
+            return;
 
-            // handle removing first element
-            if (last == null && current == head) {
-                head = current.next;
-                current = head;
-                size--;
-                return;
-            }
-
-            last.next = last.next.next;
-            current = last.next;
+        // handle removing first element
+        if (last == null && current == head) {
+            head = current.next;
+            current = head;
             size--;
+            return;
         }
+
+        // otherwise simply update Node references to skip the 'current' Node
+        last.next = last.next.next;
+        current = last.next;
+        size--;
     }
 
 
@@ -224,20 +225,22 @@ public class SpecialtySet<E extends Comparable<E>> {
      * @return String of the contents of the SpecialtySet
      */
     public String toString() {
+
         // initialize return String and reset list trackers to the beginning of the list
         String returnString = "";
         current = head;
         last = null;
 
-//        System.out.println("in toString, btw: Size = " + size);
-
         // loop through the list and add each element in the list to the return String
         while (current != null) {
             returnString += current.data.toString() + "\t";
 
+            // "walk" Node variables to next Node
             last = current;
             current = current.next;
         }
+
+        // trim the string to remove whitespace and return
         returnString = returnString.trim();
         return returnString;
 
