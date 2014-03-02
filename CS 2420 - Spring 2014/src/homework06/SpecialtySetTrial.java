@@ -90,5 +90,7 @@ public class SpecialtySetTrial {
         newSet.remove(155);
 
         System.out.println("newSet elements:\n" + newSet.toString());
+        if (newSet.validate())
+            System.out.println("newSet sorted correctly!");
     }
 }

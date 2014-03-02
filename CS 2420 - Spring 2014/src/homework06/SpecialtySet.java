@@ -156,7 +156,6 @@ public class SpecialtySet<E extends Comparable<E>> {
                 head = newNode;
                 current = newNode;
                 size++;
-                System.out.println("added, set = " + this.toString());
                 return;
             }
 
@@ -217,6 +216,40 @@ public class SpecialtySet<E extends Comparable<E>> {
         size--;
     }
 
+    /**
+     * A debugging function (not required) that
+     * verifies the element count and element sortedness.
+     * My test also printed out the contents of the set.
+     * <p/>
+     * Students may write debugging functions like this
+     * one, but they may not write external tests or other
+     * internal code that depends on the execution of any
+     * internal test function.
+     *
+     * @return true iff the set passes an internal test
+     */
+    boolean validate() {
+        // handle null case
+        if (size <= 2)
+            return true;
+
+        // set Node variables to beginning of list
+        current = head.next;
+        last = head;
+
+        // walk through the list checking each element against the one before it
+        while (current != null) {
+            if (current.data.compareTo(last.data) <= 0)
+                return false;
+
+            // increment current and last
+            last = current;
+            current = current.next;
+        }
+
+        // if all elements are greater than the element previous then the list is sorted
+        return true;
+    }
 
     /**
      * Prints the contents of the SpecialtySet in order,
