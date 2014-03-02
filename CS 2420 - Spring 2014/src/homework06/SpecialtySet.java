@@ -75,17 +75,6 @@ public class SpecialtySet<E extends Comparable<E>> {
      */
     private void locatePosition(E data) {
 
-//        debug
-//        if (last != null)
-//            System.out.print("starting locating position: last = " + last.data.toString()+", data = "+data.toString());
-//        else
-//            System.out.print("starting locating position: last = null, data = "+data.toString());
-//        if (current != null)
-//            System.out.println(", current = " + current.data.toString());
-//        else
-//            System.out.println(", current = null");
-//
-
         // if the list is of size 0 then return
         if (size == 0)
             return;
@@ -96,6 +85,7 @@ public class SpecialtySet<E extends Comparable<E>> {
             current = head;
         }
 
+        // while not at end and the current data is less than the data being looked for
         while (current != null && current.data.compareTo(data) < 0) {
             if (current.data.compareTo(data) == 0) // if the data at 'current' doesn't match 'data'
                 return;
@@ -105,21 +95,9 @@ public class SpecialtySet<E extends Comparable<E>> {
                 current = current.next;
 
                 // return if at end of list ('current' and 'last' should be correctly set)
-                if (current == null) {
-                    System.out.println("locate position: last.data = " + last.data.toString());
-                    return;
-                }
+            if (current == null)
+                return;
             }
-
-//        debug
-//        if (last != null)
-//            System.out.print("after locating position: last = " + last.data.toString()+", data = "+data.toString());
-//        else
-//            System.out.print("after locating position: last = null, data = "+data.toString());
-//        if (current != null)
-//            System.out.println(", current = " + current.data.toString());
-//        else
-//            System.out.println(", current = null");
     }
 
     /**
@@ -135,15 +113,11 @@ public class SpecialtySet<E extends Comparable<E>> {
      */
     public boolean contains(E data) {
 
+        // set the Node variables correctly
         locatePosition(data);
 
-//        debug
-//        if (current != null)
-//            System.out.println("contains, current = " + current.data.toString());
-//        if (last != null)
-//            System.out.println("contains, last = " + last.data.toString());
-
-        if (current != null && current.data.compareTo(data) == 0) // iff the data matched the given data return true
+        // return true iff the data at 'current' = the given data
+        if (current != null && current.data.compareTo(data) == 0)
             return true;
         else
             return false;
@@ -161,7 +135,7 @@ public class SpecialtySet<E extends Comparable<E>> {
      *   to the previous node (as appropriate).
      */
     public void add(E data) {
-//    		System.out.println("\nStarting add, current = "+current.data.toString()+", last = "+last.data.toString());
+
         // handle null case
         if (this == null)
             return;
@@ -172,17 +146,12 @@ public class SpecialtySet<E extends Comparable<E>> {
             // find the correct location for the data
             locatePosition(data);
 
-            if (current != null)
-                System.out.println("starting add, current = " + current.data.toString());
-            if (last != null)
-                System.out.println("starting add, last = " + last.data.toString());
-
-
             // initialize new Node (to be added) with the given data
             Node newNode = new Node(data);
 
             // handle adding to empty set
             if (size == 0) {
+
                 // add the new node, increment size, and return
                 head = newNode;
                 current = newNode;
@@ -191,7 +160,7 @@ public class SpecialtySet<E extends Comparable<E>> {
                 return;
             }
 
-            // if at beginning of list update head, last, and current
+            // if at beginning of list update head, last, and current and increment size
             if (last == null && current == head) {
                 current = newNode;
                 current.next = head;
@@ -199,7 +168,7 @@ public class SpecialtySet<E extends Comparable<E>> {
                 size++;
             }
 
-            // if at end of list simply update 'last' node
+            // if at end of list simply update 'last' node and increment size
             else if (last != null && current == null) {
                 last.next = newNode;
                 current = newNode;
@@ -213,8 +182,6 @@ public class SpecialtySet<E extends Comparable<E>> {
                 current = last.next;
                 size++;
             }
-
-            System.out.println("added, set = " + this.toString() + "\n");
         }
     }
 
@@ -231,7 +198,10 @@ public class SpecialtySet<E extends Comparable<E>> {
      *   to the previous node (as appropriate).
      */
     public void remove(E data) {
+
+        //
         if (contains(data)) {
+
             // handle removing first element
             if (last == null && current == head) {
                 head = current.next;
