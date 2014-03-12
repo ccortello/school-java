@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="update">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/TreePanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/CS 2420 - Spring 2014/.markers" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/CS 2420 - Spring 2014/.markers" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3400578845.index" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3400578845.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -87,11 +92,11 @@
       <file leaf-file-name="TreePanel.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/TreePanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="97" selection-start="2720" selection-end="2720" vertical-scroll-proportion="0.19444445" vertical-offset="1360" max-vertical-offset="3077">
+            <state line="24" column="5" selection-start="605" selection-end="605" vertical-scroll-proportion="-0.75" vertical-offset="867" max-vertical-offset="3196">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2112#2113#0" expanded="true" />
-                <element signature="e#2148#2149#0" expanded="true" />
+                <element signature="e#2115#2116#0" expanded="true" />
+                <element signature="e#2151#2152#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,9 +115,7 @@
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/TreeTester.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="13" column="25" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -524,7 +527,7 @@
       <workItem from="1393717471416" duration="3034000" />
       <workItem from="1393734906831" duration="120000" />
       <workItem from="1393735080358" duration="133000" />
-      <workItem from="1394581627344" duration="3655000" />
+      <workItem from="1394581627344" duration="4280000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -754,11 +757,15 @@
       <created>1394584855903</created>
       <updated>1394584855903</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="update">
+      <created>1394585302816</created>
+      <updated>1394585302816</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63685000" />
+    <option name="totallyTimeSpent" value="64310000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -881,9 +888,7 @@
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/TreeTester.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="25" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -896,11 +901,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/TreePanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="97" selection-start="2720" selection-end="2720" vertical-scroll-proportion="0.19444445" vertical-offset="1360" max-vertical-offset="3077">
+        <state line="24" column="5" selection-start="605" selection-end="605" vertical-scroll-proportion="-0.75" vertical-offset="867" max-vertical-offset="3196">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2112#2113#0" expanded="true" />
-            <element signature="e#2148#2149#0" expanded="true" />
+            <element signature="e#2115#2116#0" expanded="true" />
+            <element signature="e#2151#2152#0" expanded="true" />
           </folding>
         </state>
       </provider>
