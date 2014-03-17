@@ -1,8 +1,6 @@
 package homework07;
 
-import javax.swing.tree.TreeNode;
 import java.io.File;
-import java.util.Scanner;
 
 /**
  * Created by Cody on 3/11/14.
@@ -31,14 +29,7 @@ public class TreeTester {
 //                    chooser.getSelectedFile().getName());
 //        }
 
-        try {
-            Scanner treeScanner = new Scanner(treeFile);
-            TreeNode treeRoot = new TreeNode(null);
-            treeRoot.createTree(treeScanner);
-        }
-    }
-}
-catch(FileNotFoundException e){e.printStackTrace();}
+        StringTree testTree = new StringTree(treeFile);
 
         System.out.println("End of TreeTester constructor (Done!)");
     }
