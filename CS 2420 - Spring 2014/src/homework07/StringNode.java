@@ -7,10 +7,11 @@ import java.util.TreeSet;
  * Created by Cody on 3/17/14.
  */
 public class StringNode {
+    // TODO: determine public or private nature of fields
     public String data;
-    private StringNode root;
-    private StringNode parent;
-    private TreeSet<StringNode> children;
+    public StringNode root;
+    public StringNode parent;
+    public TreeSet<StringNode> children;
 
     public StringNode() {
         children = new TreeSet<StringNode>();
