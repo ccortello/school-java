@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="update">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/StringNodeTest.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Spring 2014/.classpath" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/.classpath" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/StringNode.java" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/StringNode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/TreeTester.java" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/TreeTester.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -597,7 +593,7 @@
       <workItem from="1393735080358" duration="133000" />
       <workItem from="1394581627344" duration="5836000" />
       <workItem from="1394653634471" duration="49000" />
-      <workItem from="1395068483444" duration="5203000" />
+      <workItem from="1395068483444" duration="5211000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -847,11 +843,15 @@
       <created>1395076952065</created>
       <updated>1395076952065</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="update">
+      <created>1395077460636</created>
+      <updated>1395077460636</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71118000" />
+    <option name="totallyTimeSpent" value="71126000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
