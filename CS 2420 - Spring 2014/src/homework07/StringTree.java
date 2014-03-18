@@ -2,6 +2,7 @@ package homework07;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Map;
 import java.util.Scanner;
 
 /**
@@ -10,6 +11,7 @@ import java.util.Scanner;
  */
 public class StringTree {
     private StringNode root;
+    private Map<Integer, Integer> widths;
 
     public StringTree(File inputFile) throws FileNotFoundException {
         Scanner s = new Scanner(inputFile);
