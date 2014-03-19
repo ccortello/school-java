@@ -52,10 +52,15 @@ public class Tree {
         }
     }
 
+    /**
+     * A recursive DFS debugging function which prints a representation of the tree with the input node as root
+     *
+     * @param inputNode the root node of the tree to be printed
+     */
     private void printTree(Node inputNode) {
         for (Node n : inputNode.children)
             printTree(n);
-        System.out.println(inputNode.data);
+        System.out.print(inputNode.data+" ");
     }
 
     /**
