@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="update">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/Tree.java" />
-      <change type="DELETED" beforePath="C:\Users\Cody\workspace\CS 2420 - Spring 2014\src\homework07\StringNode.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cody\workspace\CS 2420 - Spring 2014\src\homework07\StringTree.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/TreeTester.java" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/TreeTester.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/Tree.java" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/Tree.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -99,25 +96,25 @@
       <file leaf-file-name="testTree.tree" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/testTree.tree">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="9" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+            <state line="20" column="11" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="595">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TreeTester.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TreeTester.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/TreeTester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="11" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.4516129" vertical-offset="311" max-vertical-offset="714">
+            <state line="33" column="36" selection-start="1147" selection-end="1147" vertical-scroll-proportion="0.0" vertical-offset="308" max-vertical-offset="714">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tree.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Tree.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/Tree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="11" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1003">
+            <state line="58" column="43" selection-start="2172" selection-end="2172" vertical-scroll-proportion="0.62222224" vertical-offset="649" max-vertical-offset="1309">
               <folding />
             </state>
           </provider>
@@ -159,7 +156,6 @@
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework05/QuicksortAnalysisPart1.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySet.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySetTrial.java" />
-        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/testTree.tree" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/CreatePanel.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/TreePanel.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/TreeNode.java" />
@@ -168,8 +164,9 @@
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/ScrollPaneDemo.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/StringNode.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/StringTree.java" />
-        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/Tree.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/TreeTester.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/testTree.tree" />
+        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/Tree.java" />
       </list>
     </option>
   </component>
@@ -573,7 +570,7 @@
       <workItem from="1394653634471" duration="49000" />
       <workItem from="1395068483444" duration="5467000" />
       <workItem from="1395106471556" duration="2854000" />
-      <workItem from="1395155618299" duration="1948000" />
+      <workItem from="1395155618299" duration="5448000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -867,11 +864,15 @@
       <created>1395202453092</created>
       <updated>1395202453092</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="update">
+      <created>1395203649903</created>
+      <updated>1395203649903</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76184000" />
+    <option name="totallyTimeSpent" value="79684000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -895,26 +896,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5140625" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3275862" sideWeight="0.5139092" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5139092" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.50732064" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32842106" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32526317" sideWeight="0.528125" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32445142" sideWeight="0.52781844" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1566618" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3275862" sideWeight="0.48535872" order="2" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32445142" sideWeight="0.47218156" order="2" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1124,23 +1125,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/TreePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="40" selection-start="1329" selection-end="1329" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="3060">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySetTrial.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="38" selection-start="1481" selection-end="1481" vertical-scroll-proportion="1.3686441" vertical-offset="0" max-vertical-offset="1700">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/testTree.tree">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="9" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
           <folding />
         </state>
       </provider>
@@ -1152,16 +1139,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/Tree.java">
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/TreeTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="11" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1003">
+        <state line="33" column="36" selection-start="1147" selection-end="1147" vertical-scroll-proportion="0.0" vertical-offset="308" max-vertical-offset="714">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/TreeTester.java">
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/TreePanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="11" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.4516129" vertical-offset="311" max-vertical-offset="714">
+        <state line="43" column="40" selection-start="1329" selection-end="1329" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="3060">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/testTree.tree">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="11" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/Tree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="43" selection-start="2172" selection-end="2172" vertical-scroll-proportion="0.62222224" vertical-offset="649" max-vertical-offset="1309">
           <folding />
         </state>
       </provider>
