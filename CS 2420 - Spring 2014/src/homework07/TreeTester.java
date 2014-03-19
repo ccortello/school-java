@@ -29,7 +29,7 @@ public class TreeTester {
 //                    chooser.getSelectedFile().getName());
 //        }
 
-//        StringTree testTree = new StringTree(treeFile);
+        StringTree testTree = new StringTree(treeFile);
         StringNode testNode = new StringNode();
         System.out.println(testNode.data);
 
