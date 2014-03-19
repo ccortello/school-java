@@ -29,10 +29,8 @@ public class TreeTester {
 //                    chooser.getSelectedFile().getName());
 //        }
 
-        StringTree testTree = new StringTree(treeFile);
-        StringNode testNode = new StringNode();
-        System.out.println(testNode.data);
+        Tree testTree = new Tree(treeFile);
 
-        System.out.println("End of TreeTester constructor (Done!)");
+        System.out.println("Done!");
     }
 }
