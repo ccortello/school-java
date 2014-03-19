@@ -8,17 +8,15 @@ import java.util.Map;
 import java.util.Scanner;
 
 /**
- * A tree composed of TreeNodes
+ * A tree composed of Nodes
  * Created by Cody on 3/17/14.
  */
 public class Tree {
     private Node root;
     private Node currentNode;
-    public int currentDepth;
     private Map<Integer, Integer> maximumWidths;
 
     public Tree(File inputFile) {
-        currentDepth = 0;
         try {
             // create scanner in the passed file
             Scanner s = new Scanner(inputFile);
@@ -33,29 +31,36 @@ public class Tree {
 
             // scans the input file and substantiates the tree
             while (s.hasNext()) {
+                // store the current string in the scanner for analysis
                 String currentString = s.next();
-//                System.out.println(currentString + " | ");
-                if (currentString.startsWith("<") && !currentString.substring(1, 2).equals("/")) { // if the string is an opening tag
-//                    System.out.println("if: "+currentString);
+
+                // if the string is an opening tag then create a new Node
+                if (currentString.startsWith("<") && !currentString.substring(1, 2).equals("/")) {
                     String newNodeString = s.next();
                     Node addNode = new Node(currentNode, newNodeString.substring(0, newNodeString.length() - 1));
-//                    System.out.println("New Node data = "+addNode.data);
+
+                    // update the current node's children and the current node variable to correctly place the new node
+                    //  in the tree
                     currentNode.children.add(addNode);
                     currentNode = addNode;
-                } else // otherwise the string is a closing tag - change the current node to its parent
+
+                }
+
+                // otherwise the tag is a closing tag, so simply go up a level in the tree
+                else
                     currentNode = currentNode.parent;
             }
+//          debug
             printTree(root);
-            System.out.println("After StringTree while loop");
         } catch (FileNotFoundException e) {
             JOptionPane.showMessageDialog(null, "File not found!");
         }
     }
 
     /**
-     * A recursive DFS debugging function which prints a representation of the tree with the input node as root
+     * A recursive DFS debugging function which prints a representation of the tree with the input node treated as root
      *
-     * @param inputNode the root node of the tree to be printed
+     * @param inputNode the top node of the tree to be printed
      */
     private void printTree(Node inputNode) {
         for (Node n : inputNode.children)
@@ -64,13 +69,16 @@ public class Tree {
     }
 
     /**
-     * Represents a single node in
+     * Represents a single node in the tree, being a simple container class for three data fields
      */
     public class Node {
+
+        // a Node is a con
         public String data;
         public Node parent;
         public ArrayList<Node> children;
 
+        // to construct a Node simply copy the passed data into the correct fields
         public Node(Node parent, String data) {
             this.parent = parent;
             this.data = data;
