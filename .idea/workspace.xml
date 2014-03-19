@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="update">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/Tree.java" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/Tree.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -93,28 +92,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testTree.tree" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/testTree.tree">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="11" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="595">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TreeTester.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TreeTester.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/TreeTester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="1065" selection-end="1065" vertical-scroll-proportion="0.0" vertical-offset="257" max-vertical-offset="714">
+            <state line="17" column="31" selection-start="416" selection-end="416" vertical-scroll-proportion="0.71358025" vertical-offset="0" max-vertical-offset="714">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tree.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Tree.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/Tree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="27" selection-start="2562" selection-end="2562" vertical-scroll-proportion="2.980247" vertical-offset="0" max-vertical-offset="1513">
+            <state line="76" column="27" selection-start="2562" selection-end="2562" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1513">
               <folding />
             </state>
           </provider>
@@ -570,7 +560,7 @@
       <workItem from="1394653634471" duration="49000" />
       <workItem from="1395068483444" duration="5467000" />
       <workItem from="1395106471556" duration="2854000" />
-      <workItem from="1395155618299" duration="6017000" />
+      <workItem from="1395155618299" duration="6061000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -876,11 +866,15 @@
       <created>1395207277272</created>
       <updated>1395207277272</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="update">
+      <created>1395207721264</created>
+      <updated>1395207721265</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80253000" />
+    <option name="totallyTimeSpent" value="80297000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1147,16 +1141,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/testTree.tree">
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/Tree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="11" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="595">
+        <state line="76" column="27" selection-start="2562" selection-end="2562" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1513">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/TreeTester.java">
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/testTree.tree">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1065" selection-end="1065" vertical-scroll-proportion="0.0" vertical-offset="257" max-vertical-offset="714">
+        <state line="20" column="11" selection-start="228" selection-end="228" vertical-scroll-proportion="0.37037036" vertical-offset="190" max-vertical-offset="595">
           <folding />
         </state>
       </provider>
@@ -1168,9 +1162,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/Tree.java">
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/TreeTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="27" selection-start="2562" selection-end="2562" vertical-scroll-proportion="2.980247" vertical-offset="0" max-vertical-offset="1513">
+        <state line="17" column="31" selection-start="416" selection-end="416" vertical-scroll-proportion="0.71358025" vertical-offset="0" max-vertical-offset="714">
           <folding />
         </state>
       </provider>
