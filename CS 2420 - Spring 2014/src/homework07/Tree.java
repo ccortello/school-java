@@ -1,22 +1,24 @@
 package homework07;
 
 import javax.swing.*;
+import java.awt.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.Map;
 import java.util.Scanner;
 
 /**
  * A tree composed of Nodes
- * Created by Cody on 3/17/14.
+ * Created by Cody Cortello and Nick Houle on 3/17/14.
  */
 public class Tree {
     private Node root;
     private Node currentNode;
-    private Map<Integer, Integer> maximumWidths;
+    private int width, height;
 
     public Tree(File inputFile) {
+        width = 0;
+        height = 0;
         try {
             // create scanner in the passed file
             Scanner s = new Scanner(inputFile);
@@ -52,6 +54,7 @@ public class Tree {
             }
 //          debug
             printTree(root);
+            System.out.println("");
         } catch (FileNotFoundException e) {
             JOptionPane.showMessageDialog(null, "File not found!");
         }
@@ -66,6 +69,41 @@ public class Tree {
         for (Node n : inputNode.children)
             printTree(n);
         System.out.print(inputNode.data+" ");
+    }
+
+    /**
+     * Returns the pixel width of the current tree in order to draw it using the Graphics class.
+     * Note: this is done by passing the children of the root to a recursive function getNodeWidth and recursively
+     * calculating the width of the entire tree.
+     *
+     * @param g the Graphics object used by the paint method
+     * @return the pixel width of the tree as an integer
+     */
+    public int getTreeWidth(Graphics g) {
+        return getNodeWidth(root, g);
+    }
+
+    private int getNodeWidth(Node inputNode, Graphics g) {
+        for (Node n : inputNode.children) {
+            System.out.println("gNW: current node = " + inputNode.data);
+            int childrenWidth = getNodeWidth(n, g);
+            System.out.println("childrenWidth = " + childrenWidth);
+            int currentNodeWidth = g.getFontMetrics().stringWidth(inputNode.data) + 10;
+            System.out.println("currentNodeWidth = " + currentNodeWidth);
+            if (currentNodeWidth > childrenWidth)
+                return currentNodeWidth;
+            return childrenWidth;
+        }
+        if (inputNode.children.size() == 0) {
+            int nodeWidth = g.getFontMetrics().stringWidth(inputNode.data) + 10;
+            System.out.println("gNW:if: current node = " + inputNode.data + ", length = " + nodeWidth);
+            return nodeWidth;
+        }
+        return 0;
+    }
+
+    public int getTreeHeight(Graphics g) {
+        return 10000;
     }
 
     /**

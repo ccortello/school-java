@@ -21,8 +21,8 @@ public class TreeTester {
 //                "Tree Lists", "tree");
 //        chooser.setFileFilter(gifFilter);
 //        File treeFile = chooser.getSelectedFile();
-
-//        debug which prints the name of the file to the console
+//
+////        debug which prints the name of the file to the console
 //        int returnVal = chooser.showOpenDialog(null);
 //        if(returnVal == JFileChooser.APPROVE_OPTION) {
 //            System.out.println("You chose to open this file: " +
@@ -30,8 +30,6 @@ public class TreeTester {
 //        }
 
         Tree testTree = new Tree(treeFile);
-        TreePanel treePanel = new TreePanel();
-
-        System.out.println("Done!");
+        TreePanel treePanel = new TreePanel(testTree);
     }
 }

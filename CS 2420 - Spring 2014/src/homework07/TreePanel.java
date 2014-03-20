@@ -14,7 +14,16 @@ import java.awt.event.MouseMotionListener;
  */
 public class TreePanel extends JPanel implements MouseMotionListener, MouseListener {
 
-    public TreePanel() {
+    // Instance variables for our TreePanel object..
+
+    private JScrollPane enclosingPane;
+    private int lastMouseX, lastMouseY;
+    private boolean dimensionsCalculated;
+    private Tree panelTree;
+
+    public TreePanel(Tree inputTree) {
+        dimensionsCalculated = false;
+        this.panelTree = inputTree;
         // Create a frame to hold the scroll pane.
 
         JFrame frame = new JFrame("Tree Panel");
@@ -23,10 +32,6 @@ public class TreePanel extends JPanel implements MouseMotionListener, MouseListe
 
         // Other code will go right here.
 
-        // Create our JPanel, set its minimum and preferred size to be 10000, 10000
-
-        this.setMinimumSize(new Dimension(10000, 10000));
-        this.setPreferredSize(new Dimension(10000, 10000));
 
         // Create a scroll pane to contain our oversized JPanel.
         //   Add it to the center of the content area.
@@ -36,11 +41,9 @@ public class TreePanel extends JPanel implements MouseMotionListener, MouseListe
         frame.add(pane, BorderLayout.CENTER);
 
         // Register the pane with our panel.
-
         this.setEnclosingPane(pane);
 
         // Add self mouse listeners to our panel.
-
         this.addMouseListener(this);
         this.addMouseMotionListener(this);
 
@@ -51,11 +54,6 @@ public class TreePanel extends JPanel implements MouseMotionListener, MouseListe
         frame.pack();
         frame.setVisible(true);
     }
-
-    // Instance variables for our ScrollPaneDemo object..
-
-    private JScrollPane enclosingPane;
-    private int lastMouseX, lastMouseY;
 
     /**
      * Allows the main method to set an instance variable in this panel.
@@ -76,6 +74,23 @@ public class TreePanel extends JPanel implements MouseMotionListener, MouseListe
      * @param g a graphics object
      */
     public void paint(Graphics g) {
+
+        g.setFont(new Font("Serif", Font.PLAIN, 16));
+
+        // calculates the correct dimensions
+
+        if (dimensionsCalculated == false) {
+            int treeWidth = panelTree.getTreeWidth(g);
+            System.out.println("paint: treeWidth = " + treeWidth);
+            int treeHeight = panelTree.getTreeHeight(g);
+            System.out.println("paint: treeHeight = " + treeHeight);
+
+            this.setMinimumSize(new Dimension(treeWidth, treeHeight));
+            this.setPreferredSize(new Dimension(treeWidth, treeHeight));
+
+            dimensionsCalculated = true;
+        }
+
         // Get clipped coordinates
         int upperLeftX = g.getClipBounds().x;
         int upperLeftY = g.getClipBounds().y;
@@ -108,6 +123,7 @@ public class TreePanel extends JPanel implements MouseMotionListener, MouseListe
                 g.fillOval(x - 2, y - 2, 5, 5);
                 g.drawString("(" + x + "," + y + ")", x + 2, y);
             }
+
     }
 
     /**
