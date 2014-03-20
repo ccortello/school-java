@@ -13,14 +13,6 @@ import java.awt.event.MouseMotionListener;
  * @version March 3, 2014
  */
 public class TreePanel extends JPanel implements MouseMotionListener, MouseListener {
-    /**
-     * The application entry point.
-     *
-     * @param args ignored
-     */
-    public static void main(String[] args) {
-        new TreePanel();
-    }
 
     public TreePanel() {
         // Create a frame to hold the scroll pane.
@@ -33,28 +25,29 @@ public class TreePanel extends JPanel implements MouseMotionListener, MouseListe
 
         // Create our JPanel, set its minimum and preferred size to be 10000, 10000
 
-        ScrollPaneDemo panel = new ScrollPaneDemo();
-        panel.setMinimumSize(new Dimension(10000, 10000));
-        panel.setPreferredSize(new Dimension(10000, 10000));
+        this.setMinimumSize(new Dimension(10000, 10000));
+        this.setPreferredSize(new Dimension(10000, 10000));
 
         // Create a scroll pane to contain our oversized JPanel.
         //   Add it to the center of the content area.
 
-        JScrollPane pane = new JScrollPane(panel);
+        JScrollPane pane = new JScrollPane(this);
         pane.setBackground(Color.WHITE);
         frame.add(pane, BorderLayout.CENTER);
 
         // Register the pane with our panel.
 
-        panel.setEnclosingPane(pane);
+        this.setEnclosingPane(pane);
 
         // Add self mouse listeners to our panel.
 
-        panel.addMouseListener(panel);
-        panel.addMouseMotionListener(panel);
+        this.addMouseListener(this);
+        this.addMouseMotionListener(this);
+
+        // make the frame automatically maximized
+        frame.setExtendedState(frame.getExtendedState() | JFrame.MAXIMIZED_BOTH);
 
         // Pack the frame and make it visible.
-
         frame.pack();
         frame.setVisible(true);
     }
@@ -83,7 +76,6 @@ public class TreePanel extends JPanel implements MouseMotionListener, MouseListe
      * @param g a graphics object
      */
     public void paint(Graphics g) {
-//      Note: this is all from ScrollPaneDemo and isn't relevant to the tree class we're creating
         // Get clipped coordinates
         int upperLeftX = g.getClipBounds().x;
         int upperLeftY = g.getClipBounds().y;
@@ -105,20 +97,17 @@ public class TreePanel extends JPanel implements MouseMotionListener, MouseListe
 
         // Clear the background.
 
-        g.setColor (Color.WHITE);
-        g.fillRect(firstX, firstY, lastX-firstX, lastY-firstY);
+        g.setColor(Color.WHITE);
+        g.fillRect(firstX, firstY, lastX - firstX, lastY - firstY);
 
         // Draw coordinates every 100x100 pixels.
 
-        g.setColor (Color.BLACK);
+        g.setColor(Color.BLACK);
         for (int y = firstY; y <= lastY; y += 100)
-            for (int x = firstX; x <= lastX; x += 100)
-            {
-                g.fillOval(x-2, y-2, 5, 5);
-                g.drawString("(" + x + "," + y + ")", x+2, y);
+            for (int x = firstX; x <= lastX; x += 100) {
+                g.fillOval(x - 2, y - 2, 5, 5);
+                g.drawString("(" + x + "," + y + ")", x + 2, y);
             }
-//
-
     }
 
     /**
