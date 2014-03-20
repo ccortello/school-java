@@ -34,8 +34,8 @@ public class TreePanel extends JPanel implements MouseMotionListener, MouseListe
         // Create our JPanel, set its minimum and preferred size to be 10000, 10000
 
         ScrollPaneDemo panel = new ScrollPaneDemo();
-//        panel.setMinimumSize(new Dimension(10000, 10000));
-//        panel.setPreferredSize(new Dimension(10000, 10000));
+        panel.setMinimumSize(new Dimension(10000, 10000));
+        panel.setPreferredSize(new Dimension(10000, 10000));
 
         // Create a scroll pane to contain our oversized JPanel.
         //   Add it to the center of the content area.
@@ -67,7 +67,7 @@ public class TreePanel extends JPanel implements MouseMotionListener, MouseListe
     /**
      * Allows the main method to set an instance variable in this panel.
      *
-     * @param enclosingPane a JScrollPane object that is controlling the view of this panel
+     * @param pane a JScrollPane object that is controlling the view of this panel
      */
     public void setEnclosingPane(JScrollPane pane) {
         enclosingPane = pane;
@@ -83,7 +83,7 @@ public class TreePanel extends JPanel implements MouseMotionListener, MouseListe
      * @param g a graphics object
      */
     public void paint(Graphics g) {
-/*      Note: this is all from ScrollPaneDemo and isn't relevant to the tree class we're creating
+//      Note: this is all from ScrollPaneDemo and isn't relevant to the tree class we're creating
         // Get clipped coordinates
         int upperLeftX = g.getClipBounds().x;
         int upperLeftY = g.getClipBounds().y;
@@ -117,7 +117,7 @@ public class TreePanel extends JPanel implements MouseMotionListener, MouseListe
                 g.fillOval(x-2, y-2, 5, 5);
                 g.drawString("(" + x + "," + y + ")", x+2, y);
             }
-*/
+//
 
     }
 

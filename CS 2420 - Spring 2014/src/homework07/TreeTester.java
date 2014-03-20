@@ -30,6 +30,7 @@ public class TreeTester {
 //        }
 
         Tree testTree = new Tree(treeFile);
+        TreePanel treePanel = new TreePanel();
 
         System.out.println("Done!");
     }
