@@ -8,8 +8,8 @@ import java.util.*;
  * Prompts user to enter filename of warehouse data and computes and prints which products do not exist in any warehouse,
  * which products still exist in every warehouse, and the single busiest day for each warehouse.
  *
- * @version 2/2/14.
  * @author Cody Cortello and Nick Houle
+ * @version 2/2/14.
  */
 public class WarehouseReport {
 
@@ -18,9 +18,7 @@ public class WarehouseReport {
     private Map<Integer, Integer> shelfLives;
     private Map<String, Inventory<Item>> warehouses;
     private GregorianCalendar date;
-    private int temp_quantity;
-    private Map transaction = new HashMap();
-    private Map total_transaction = new HashMap();
+    private Map<String, Integer> transactions;
 
     public static void main(String[] args) {
         new WarehouseReport();
@@ -40,7 +38,7 @@ public class WarehouseReport {
         String fileName = userInput.next();
 
         // initialize file from specified input
-        File dataFile = new File(fileName);
+        File dataFile = new File("data3.txt");
 
         // scan the file
         Scanner fileScanner = null;
@@ -74,7 +72,7 @@ public class WarehouseReport {
             s.next();
             s.next();
             s.next();
-            Integer upc = s.nextInt();
+            Integer upc = Integer.parseInt(s.next());
 
             //  extract the shelf life
             s.next();
@@ -144,13 +142,13 @@ public class WarehouseReport {
             newDate.roll(GregorianCalendar.DAY_OF_MONTH, shelfLives.get(upc));
             warehouses.get(warehouseName).addItem(itemToAdd, newDate, quantity);
 
-            if (transaction.containsKey(warehouseName)) {
-                int temp = (Integer) transaction.get(warehouseName);
+            if (transactions.containsKey(warehouseName)) {
+                int temp = (Integer) transactions.get(warehouseName);
                 temp += quantity;
-                transaction.remove(warehouseName);
-                transaction.put(warehouseName, temp);
+                transactions.remove(warehouseName);
+                transactions.put(warehouseName, temp);
             } else
-                transaction.put(warehouseName, quantity);
+                transactions.put(warehouseName, quantity);
 
             // close scanner
             s.close();
@@ -195,13 +193,13 @@ public class WarehouseReport {
                 //  earliest item. This updates the variables correctly when the requested amount is greater than, equal to, and less than the
                 //  quantity of the earliest item.
                 warehouseRequested.removeItem(itemToRemove, removeDate, quantityToRemove);
-                if (transaction.containsKey(warehouseRequested)) {
-                    int temp = (Integer) transaction.get(warehouseRequested);
+                if (transactions.containsKey(warehouseRequested)) {
+                    int temp = (Integer) transactions.get(warehouseRequested);
                     temp += quantityToRemove;
-                    transaction.remove(warehouseRequested);
-                    transaction.put(warehouseName, temp);
+                    transactions.remove(warehouseRequested);
+                    transactions.put(warehouseName, temp);
                 } else
-                    transaction.put(warehouseRequested, quantityToRemove);
+                    transactions.put(warehouseName, quantityToRemove);
                 itemsRemoved += quantityOfEarliestItem;
                 quantityToRemove -= quantityOfEarliestItem;
                 removeDate.roll(GregorianCalendar.DAY_OF_MONTH, 1);
@@ -284,7 +282,7 @@ public class WarehouseReport {
         for (int upc : unstockedItems)
             System.out.println(upc + " " + foodNames.get(upc));
         System.out.print("\n");
-		
+
 		/* Find items stocked by all warehouses */
 
         // print first line
@@ -324,14 +322,14 @@ public class WarehouseReport {
         System.out.println("\nBusiest Days:");
 
         //Determine busiest days and print them out
-        for (Object key : transaction.keySet()) {
-            for (Object key_value : transaction.keySet()) {
-                if ((Integer) transaction.get(key_value) > (Integer) transaction.get(key)) {
+        for (Object key : transactions.keySet()) {
+            for (Object key_value : transactions.keySet()) {
+                if ((Integer) transactions.get(key_value) > (Integer) transactions.get(key)) {
                     name = (String) key;
-                    mostTransactions = (Integer) transaction.get(key_value);
+                    mostTransactions = (Integer) transactions.get(key_value);
                 } else {
                     name = (String) key;
-                    mostTransactions = (Integer) transaction.get(key);
+                    mostTransactions = (Integer) transactions.get(key);
                 }
             }
         }

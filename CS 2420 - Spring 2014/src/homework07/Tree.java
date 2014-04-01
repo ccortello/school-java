@@ -14,11 +14,12 @@ import java.util.Scanner;
 public class Tree {
     private Node root;
     private Node currentNode;
-    private int width, height;
+    private int width, currentHeight, currentDepth, treeDepth;
 
     public Tree(File inputFile) {
+        currentDepth = 1;
         width = 0;
-        height = 0;
+        currentHeight = 0;
         try {
             // create scanner in the passed file
             Scanner s = new Scanner(inputFile);
@@ -28,8 +29,6 @@ public class Tree {
             String rootString = s.next();
             root = new Node(null, rootString.substring(0, rootString.length() - 1));
             currentNode = root;
-
-//            System.out.println("root data = "+root.data);
 
             // scans the input file and substantiates the tree
             while (s.hasNext()) {
@@ -52,9 +51,6 @@ public class Tree {
                 else
                     currentNode = currentNode.parent;
             }
-//          debug
-            printTree(root);
-            System.out.println("");
         } catch (FileNotFoundException e) {
             JOptionPane.showMessageDialog(null, "File not found!");
         }
@@ -68,7 +64,6 @@ public class Tree {
     private void printTree(Node inputNode) {
         for (Node n : inputNode.children)
             printTree(n);
-        System.out.print(inputNode.data+" ");
     }
 
     /**
@@ -80,30 +75,58 @@ public class Tree {
      * @return the pixel width of the tree as an integer
      */
     public int getTreeWidth(Graphics g) {
+        root.width = g.getFontMetrics().stringWidth(root.data);
         return getNodeWidth(root, g);
     }
 
     private int getNodeWidth(Node inputNode, Graphics g) {
         for (Node n : inputNode.children) {
-            System.out.println("gNW: current node = " + inputNode.data);
-            int childrenWidth = getNodeWidth(n, g);
-            System.out.println("childrenWidth = " + childrenWidth);
-            int currentNodeWidth = g.getFontMetrics().stringWidth(inputNode.data) + 10;
-            System.out.println("currentNodeWidth = " + currentNodeWidth);
-            if (currentNodeWidth > childrenWidth)
-                return currentNodeWidth;
-            return childrenWidth;
+            n.width = g.getFontMetrics().stringWidth(n.data) + 10;
+//            System.out.println("node "+n.data+", width = "+n.width);
+            getNodeWidth(n, g);
         }
-        if (inputNode.children.size() == 0) {
-            int nodeWidth = g.getFontMetrics().stringWidth(inputNode.data) + 10;
-            System.out.println("gNW:if: current node = " + inputNode.data + ", length = " + nodeWidth);
-            return nodeWidth;
-        }
-        return 0;
+        if (inputNode.children.size() == 0)
+            this.width += g.getFontMetrics().stringWidth(inputNode.data) + 10;
+        return this.width;
     }
 
     public int getTreeHeight(Graphics g) {
-        return 10000;
+        root.height = g.getFontMetrics().getHeight();
+        root.depth = 1;
+        return getNodeHeight(root, g);
+    }
+
+    public int getNodeHeight(Node inputNode, Graphics g) {
+        if (inputNode != null)
+            inputNode.height = g.getFontMetrics().getHeight();
+//        System.out.println("Node: "+inputNode.data+", height = "+inputNode.height);
+        for (Node n : inputNode.children) {
+            currentDepth++;
+            inputNode.depth = currentDepth;
+            if (currentDepth > treeDepth)
+                treeDepth = currentDepth;
+            getNodeHeight(n, g);
+        }
+        currentDepth--;
+
+        return treeDepth * (g.getFontMetrics().getHeight() + 5);
+    }
+
+    public void drawTree(Graphics g, int treeWidth, int treeHeight) {
+        drawNode(root, g, treeWidth, treeHeight);
+    }
+
+    private void drawNode(Node inputNode, Graphics g, int treeWidth, int treeHeight) {
+        int x = 0;
+//        System.out.println("node "+inputNode.data+": x="+x+", y="+y);
+        for (Node n : inputNode.children) {
+            drawNode(n, g, treeWidth, treeHeight);
+            currentHeight += inputNode.height;
+            g.drawRect(0, currentHeight, n.width, n.height);
+            g.drawString(n.data, x + 5, currentHeight + inputNode.height - 2);
+        }
+//        g.drawRect(0, currentHeight, root.width, root.height);
+//        g.drawString(root.data, x + 5, currentHeight+inputNode.height-2);
     }
 
     /**
@@ -115,6 +138,7 @@ public class Tree {
         public String data;
         public Node parent;
         public ArrayList<Node> children;
+        public int width, height, depth;
 
         // to construct a Node simply copy the passed data into the correct fields
         public Node(Node parent, String data) {

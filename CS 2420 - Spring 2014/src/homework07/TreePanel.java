@@ -9,7 +9,7 @@ import java.awt.event.MouseMotionListener;
 /**
  * An application for demonstrating how to use JScrollPane objects effectively.
  *
- * @author *** Your name here ***
+ * @author Cody Cortello and Nick Houle
  * @version March 3, 2014
  */
 public class TreePanel extends JPanel implements MouseMotionListener, MouseListener {
@@ -20,6 +20,7 @@ public class TreePanel extends JPanel implements MouseMotionListener, MouseListe
     private int lastMouseX, lastMouseY;
     private boolean dimensionsCalculated;
     private Tree panelTree;
+    private int width, height;
 
     public TreePanel(Tree inputTree) {
         dimensionsCalculated = false;
@@ -80,50 +81,17 @@ public class TreePanel extends JPanel implements MouseMotionListener, MouseListe
         // calculates the correct dimensions
 
         if (dimensionsCalculated == false) {
-            int treeWidth = panelTree.getTreeWidth(g);
-            System.out.println("paint: treeWidth = " + treeWidth);
-            int treeHeight = panelTree.getTreeHeight(g);
-            System.out.println("paint: treeHeight = " + treeHeight);
+            int width = panelTree.getTreeWidth(g);
+            int height = panelTree.getTreeHeight(g);
 
-            this.setMinimumSize(new Dimension(treeWidth, treeHeight));
-            this.setPreferredSize(new Dimension(treeWidth, treeHeight));
+            this.setMinimumSize(new Dimension(width, height));
+            this.setPreferredSize(new Dimension(width, height));
 
             dimensionsCalculated = true;
         }
 
-        // Get clipped coordinates
-        int upperLeftX = g.getClipBounds().x;
-        int upperLeftY = g.getClipBounds().y;
-        int visibleWidth = g.getClipBounds().width;
-        int visibleHeight = g.getClipBounds().height;
-
-        // Compute a position on the panel that is above and to the left of the currently
-        //   exposed view.
-
-        int firstX = Math.max(0, upperLeftX - upperLeftX % 100 - 100);
-        int firstY = Math.max(0, upperLeftY - upperLeftY % 100 - 100);
-
-        // Compute the last possible position of a coordinate in the visible space.
-
-        int lastX = (upperLeftX + visibleWidth) - (upperLeftX + visibleWidth) % 100 + 200;
-        int lastY = (upperLeftY + visibleHeight) - (upperLeftY + visibleHeight) % 100 + 200;
-
-        // Ignore the fact that most of our panel is invisible.  Just draw everything.
-
-        // Clear the background.
-
-        g.setColor(Color.WHITE);
-        g.fillRect(firstX, firstY, lastX - firstX, lastY - firstY);
-
-        // Draw coordinates every 100x100 pixels.
-
-        g.setColor(Color.BLACK);
-        for (int y = firstY; y <= lastY; y += 100)
-            for (int x = firstX; x <= lastX; x += 100) {
-                g.fillOval(x - 2, y - 2, 5, 5);
-                g.drawString("(" + x + "," + y + ")", x + 2, y);
-            }
-
+        panelTree.drawTree(g, width, height);
+        revalidate();
     }
 
     /**
