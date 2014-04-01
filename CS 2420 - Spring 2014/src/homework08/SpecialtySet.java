@@ -79,8 +79,15 @@ public class SpecialtySet<E extends Comparable<E>> {
             return;
         }
 
+        // if the data exists in the tree don't add it
+        if (this.contains(data))
+            return;
+
         // use a recursive function to add the data to the set
-        this.root.nodeAdd(data);
+        //  note: doing this.contains followed by this.
+        this.add(data);
+        this.size++;
+
     }
 
     /**
@@ -147,7 +154,7 @@ public class SpecialtySet<E extends Comparable<E>> {
          * @param data
          * @return
          */
-        public boolean nodeContains(E data) {
+        private boolean nodeContains(E data) {
             // handle null case and end of recursion
             if (this == null)
                 return false;
@@ -163,7 +170,7 @@ public class SpecialtySet<E extends Comparable<E>> {
                 return this.right.nodeContains(data);
         }
 
-        public void nodeAdd(E data) {
+        private boolean nodeAdd(E data) {
             // if the current node matches the data simply return
             if (this.data.compareTo(data) == 0)
                 return;
@@ -178,6 +185,7 @@ public class SpecialtySet<E extends Comparable<E>> {
                     updateHeight(newNode);
                 }
             }
+
         }
     }
 }
