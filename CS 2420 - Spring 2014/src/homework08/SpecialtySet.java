@@ -84,7 +84,8 @@ public class SpecialtySet<E extends Comparable<E>> {
             return;
 
         // use a recursive function to add the data to the set
-        //  note: doing this.contains followed by this.
+        //  note: doing this.contains followed by this.add parses through the tree twice in succession,
+        //  thereby doubling the cost, but maintains theta(log n)
         this.add(data);
         this.size++;
 
