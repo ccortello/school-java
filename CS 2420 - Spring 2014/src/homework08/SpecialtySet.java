@@ -62,7 +62,10 @@ public class SpecialtySet<E extends Comparable<E>> {
      * this function.
      */
     public boolean contains(E data) {
-        return root.nodeContains(data);
+        if (this.root == null)
+            return false;
+        else
+            return root.nodeContains(data);
     }
 
     /**
@@ -74,8 +77,10 @@ public class SpecialtySet<E extends Comparable<E>> {
     public void add(E data) {
         // adding to an empty tree
         if (this.root == null) {
+            System.out.println("Adding " + data + ", size == " + this.size);
             this.root = new Node(data);
             this.size = 1;
+            System.out.println("New tree root = " + root.data + ", size = " + this.size);
             return;
         }
 
@@ -86,9 +91,11 @@ public class SpecialtySet<E extends Comparable<E>> {
         // use a recursive function to add the data to the set
         //  note: doing this.contains followed by this.add parses through the tree twice in succession,
         //  thereby doubling the cost, but maintains theta(log n)
-        this.add(data);
+        System.out.println("Adding " + data + ", size = " + this.size);
+        if (data.compareTo(root.data) == -1)
+            this.root.left.nodeAdd(data);
+        else this.root.right.nodeAdd(data);
         this.size++;
-
     }
 
     /**
@@ -109,7 +116,7 @@ public class SpecialtySet<E extends Comparable<E>> {
      * A debugging function (not required) that
      * verifies the element count and element sortedness.
      * My test also printed out the contents of the set.
-     * <p/>
+     *
      * Students may write debugging functions like this
      * one, but they may not write external tests or other
      * internal code that depends on the execution of any
@@ -118,9 +125,44 @@ public class SpecialtySet<E extends Comparable<E>> {
      * @return true iff the set passes an internal test
      */
     boolean validate() {
-        return false;  // Stub
+        if (this.root == null)
+            return true;
+        else if (height(this.root) == -1)
+            return false;
+        return true;
     }
 
+    /**
+     * Private helper to get the height of the tree
+     */
+    private int height(Node root) {
+        if (root == null)
+            return 0;
+
+        int left_child = height(root.left);
+        int right_child = height(root.right);
+
+        if (left_child == -1 || right_child == -1)
+            return -1;
+
+        if (Math.abs(left_child - right_child) > 1) {
+            return -1;
+        }
+
+        return Math.max(left_child, right_child) + 1;
+
+    }
+
+    /**
+     * A toString override for outputting the contents of the tree
+     */
+    public String toString() {
+        String outputString = "";
+        if (this.root != null) {
+            outputString += this.root.toString();
+        }
+        return outputString;
+    }
 
     // An example of an inner class (a class within another object).
 
@@ -165,10 +207,16 @@ public class SpecialtySet<E extends Comparable<E>> {
                 return true;
 
                 // use recursion to check the left and right nodes
-            else if (data.compareTo(this.data) == -1)
-                return this.left.nodeContains(data);
-            else
-                return this.right.nodeContains(data);
+            else if (data.compareTo(this.data) == -1) {
+                if (this.left != null)
+                    return this.left.nodeContains(data);
+                else return false;
+            } else {
+                if (this.right != null)
+                    return this.right.nodeContains(data);
+                else return false;
+            }
+
         }
 
         private void nodeAdd(E data) {
@@ -183,8 +231,34 @@ public class SpecialtySet<E extends Comparable<E>> {
                 else {
                     Node newNode = new Node(data);
                     this.left = newNode;
-                    updateHeight(newNode);
+                    newNode.updateHeight();
                 }
+            }
+        }
+
+        /**
+         * Private helper to update the height of the affected
+         * nodes in the binary tree
+         */
+        private void updateHeight() {
+            if (this.parent.height == this.height) {
+                this.parent.height++;
+                this.parent.updateHeight();
+            }
+        }
+
+        /**
+         * A toString override which recursively creates an output string
+         */
+        public String toString() {
+            String outputString = "";
+            if (this == null)
+                return outputString;
+            else {
+                outputString += this.left.toString();
+                outputString += this.data.toString();
+                outputString += this.right.toString();
+                return outputString;
             }
         }
     }

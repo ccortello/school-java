@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="update">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySet.java" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySetTrial.java" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySetTrial.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -78,7 +79,7 @@
       <file leaf-file-name="SpecialtySet.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="171" column="20" selection-start="5314" selection-end="5314" vertical-scroll-proportion="0.33333334" vertical-offset="2703" max-vertical-offset="3315">
+            <state line="93" column="50" selection-start="2907" selection-end="2907" vertical-scroll-proportion="0.6633663" vertical-offset="1313" max-vertical-offset="4641">
               <folding />
             </state>
           </provider>
@@ -87,9 +88,9 @@
       <file leaf-file-name="SpecialtySetTrial.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySetTrial.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+            <state line="9" column="0" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="425">
               <folding>
-                <element signature="e#213#221#0" expanded="true" />
+                <element signature="e#214#223#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,8 +99,21 @@
       <file leaf-file-name="SpecialtySetTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySetTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="21" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4420">
-              <folding />
+            <state line="219" column="35" selection-start="6308" selection-end="6308" vertical-scroll-proportion="0.0" vertical-offset="3519" max-vertical-offset="4420">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#932#940#0" expanded="true" />
+                <element signature="e#1174#1182#0" expanded="true" />
+                <element signature="e#1615#1631#0" expanded="true" />
+                <element signature="e#1722#1731#0" expanded="true" />
+                <element signature="e#4551#4560#0" expanded="true" />
+                <element signature="e#4955#4963#0" expanded="true" />
+                <element signature="e#5021#5029#0" expanded="true" />
+                <element signature="e#5655#5664#0" expanded="true" />
+                <element signature="e#5723#5732#0" expanded="true" />
+                <element signature="e#6476#6485#0" expanded="true" />
+                <element signature="e#6875#6884#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -153,9 +167,9 @@
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework04/WarehouseReport.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySetTest.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySetTest.groovy" />
-        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySetTest.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySetTest2.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/PublicSpecialtySet.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySetTest.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySetTrial.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySet.java" />
       </list>
@@ -477,10 +491,10 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.SpecialtySetTrial (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Application.WarehouseReport" />
-        <item index="2" class="java.lang.String" itemvalue="Application.TreeTester" />
-        <item index="3" class="java.lang.String" itemvalue="Application.TreePanel" />
-        <item index="4" class="java.lang.String" itemvalue="Application.SpecialtySetTrial" />
+        <item index="1" class="java.lang.String" itemvalue="Application.SpecialtySetTrial" />
+        <item index="2" class="java.lang.String" itemvalue="Application.WarehouseReport" />
+        <item index="3" class="java.lang.String" itemvalue="Application.TreeTester" />
+        <item index="4" class="java.lang.String" itemvalue="Application.TreePanel" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
@@ -566,7 +580,7 @@
       <workItem from="1395155618299" duration="21078000" />
       <workItem from="1395782435314" duration="1807000" />
       <workItem from="1396315085900" duration="2034000" />
-      <workItem from="1396317174039" duration="5448000" />
+      <workItem from="1396317174039" duration="7886000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -904,11 +918,15 @@
       <created>1396325020151</created>
       <updated>1396325020152</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="update">
+      <created>1396325080059</created>
+      <updated>1396325080059</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104603000" />
+    <option name="totallyTimeSpent" value="107041000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -950,7 +968,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15373352" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3260188" sideWeight="0.48609078" order="2" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3260188" sideWeight="0.48609078" order="2" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5139092" order="1" side_tool="false" content_ui="tabs" />
@@ -1179,7 +1197,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework04/InventoryTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="247" selection-end="247" vertical-scroll-proportion="-0.33116883" vertical-offset="493" max-vertical-offset="2091" />
+        <state line="11" column="13" selection-start="247" selection-end="247" vertical-scroll-proportion="-0.33116883" vertical-offset="493" max-vertical-offset="2091">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework04/WarehouseReport.java">
@@ -1205,23 +1225,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySetTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="21" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4828">
-          <folding />
+        <state line="219" column="35" selection-start="6308" selection-end="6308" vertical-scroll-proportion="0.0" vertical-offset="3519" max-vertical-offset="4420">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#932#940#0" expanded="true" />
+            <element signature="e#1174#1182#0" expanded="true" />
+            <element signature="e#1615#1631#0" expanded="true" />
+            <element signature="e#1722#1731#0" expanded="true" />
+            <element signature="e#4551#4560#0" expanded="true" />
+            <element signature="e#4955#4963#0" expanded="true" />
+            <element signature="e#5021#5029#0" expanded="true" />
+            <element signature="e#5655#5664#0" expanded="true" />
+            <element signature="e#5723#5732#0" expanded="true" />
+            <element signature="e#6476#6485#0" expanded="true" />
+            <element signature="e#6875#6884#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySetTrial.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+        <state line="9" column="0" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="425">
           <folding>
-            <element signature="e#213#221#0" expanded="true" />
+            <element signature="e#214#223#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="171" column="20" selection-start="5314" selection-end="5314" vertical-scroll-proportion="0.33333334" vertical-offset="2703" max-vertical-offset="3315">
+        <state line="93" column="50" selection-start="2907" selection-end="2907" vertical-scroll-proportion="0.6633663" vertical-offset="1313" max-vertical-offset="4641">
           <folding />
         </state>
       </provider>
