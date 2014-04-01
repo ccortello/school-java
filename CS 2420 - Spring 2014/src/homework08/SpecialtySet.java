@@ -171,7 +171,7 @@ public class SpecialtySet<E extends Comparable<E>> {
                 return this.right.nodeContains(data);
         }
 
-        private boolean nodeAdd(E data) {
+        private void nodeAdd(E data) {
             // if the current node matches the data simply return
             if (this.data.compareTo(data) == 0)
                 return;
@@ -186,7 +186,6 @@ public class SpecialtySet<E extends Comparable<E>> {
                     updateHeight(newNode);
                 }
             }
-
         }
     }
 }
