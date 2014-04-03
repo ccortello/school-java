@@ -65,7 +65,7 @@ public class SpecialtySet<E extends Comparable<E>> {
         if (this.root == null)
             return false;
         else
-            return root.nodeContains(data);
+            return nodeContains(root, data);
     }
 
     /**
@@ -85,16 +85,15 @@ public class SpecialtySet<E extends Comparable<E>> {
         }
 
         // if the data exists in the tree don't add it
-        if (this.contains(data))
-            return;
+        if (this.contains(data)) return;
 
         // use a recursive function to add the data to the set
         //  note: doing this.contains followed by this.add parses through the tree twice in succession,
         //  thereby doubling the cost, but maintains theta(log n)
         System.out.println("Adding " + data + ", size = " + this.size);
         if (data.compareTo(root.data) == -1)
-            this.root.left.nodeAdd(data);
-        else this.root.right.nodeAdd(data);
+            nodeAdd(this.root.left, data);
+        else nodeAdd(this.root.right, data);
         this.size++;
     }
 
@@ -197,41 +196,41 @@ public class SpecialtySet<E extends Comparable<E>> {
          * @param data
          * @return
          */
-        private boolean nodeContains(E data) {
+        private boolean nodeContains(Node n, E data) {
             // handle null case and end of recursion
-            if (this == null)
+            if (n == null)
                 return false;
 
             // check the current node first
-            if (this.data.compareTo(data) == 0)
+            if (n.data.compareTo(data) == 0)
                 return true;
 
                 // use recursion to check the left and right nodes
-            else if (data.compareTo(this.data) == -1) {
-                if (this.left != null)
-                    return this.left.nodeContains(data);
+            else if (data.compareTo(n.data) == -1) {
+                if (n.left != null)
+                    return nodeContains(n.left, data);
                 else return false;
             } else {
-                if (this.right != null)
-                    return this.right.nodeContains(data);
+                if (n.right != null)
+                    return nodeContains(n.right, data);
                 else return false;
             }
 
         }
 
-        private void nodeAdd(E data) {
+        private void nodeAdd(Node n, E data) {
             // if the current node matches the data simply return
-            if (this.data.compareTo(data) == 0)
+            if (n.data.compareTo(data) == 0)
                 return;
 
             // otherwise use recursion to add to the left or right side as appropriate
-            if (this.data.compareTo(data) == -1) {
-                if (this.left != null)
-                    this.left.nodeAdd(data);
+            if (n.data.compareTo(data) == -1) {
+                if (n.left != null)
+                    nodeAdd(n.left, data);
                 else {
                     Node newNode = new Node(data);
-                    this.left = newNode;
-                    newNode.updateHeight();
+                    n.left = newNode;
+                    updateHeight(newNode);
                 }
             }
         }
@@ -240,10 +239,10 @@ public class SpecialtySet<E extends Comparable<E>> {
          * Private helper to update the height of the affected
          * nodes in the binary tree
          */
-        private void updateHeight() {
-            if (this.parent.height == this.height) {
-                this.parent.height++;
-                this.parent.updateHeight();
+        private void updateHeight(Node n) {
+            if (n.parent.height == n.height) {
+                n.parent.height++;
+                updateHeight(n.parent);
             }
         }
 
