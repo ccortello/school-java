@@ -64,8 +64,7 @@ public class SpecialtySet<E extends Comparable<E>> {
     public boolean contains(E data) {
         if (this.root == null)
             return false;
-        else
-            return nodeContains(root, data);
+        else return root.nodeContains(root, data);
     }
 
     /**
@@ -92,8 +91,8 @@ public class SpecialtySet<E extends Comparable<E>> {
         //  thereby doubling the cost, but maintains theta(log n)
         System.out.println("Adding " + data + ", size = " + this.size);
         if (data.compareTo(root.data) == -1)
-            nodeAdd(this.root.left, data);
-        else nodeAdd(this.root.right, data);
+            root.nodeAdd(this.root.left, data);
+        else root.nodeAdd(this.root.right, data);
         this.size++;
     }
 
@@ -219,6 +218,10 @@ public class SpecialtySet<E extends Comparable<E>> {
         }
 
         private void nodeAdd(Node n, E data) {
+            // check null case
+            if (n == null)
+                return;
+
             // if the current node matches the data simply return
             if (n.data.compareTo(data) == 0)
                 return;
