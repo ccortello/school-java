@@ -12,14 +12,25 @@ public class SpecialtySetTrial {
         int test = 0;
         ArrayList<Integer> addedNumbers = new ArrayList<Integer>();
         HashSet<Integer> addedSet = new HashSet<Integer>();
-        for (int i = 1; i <= 10000; i++) {
-            test = (int) (Math.random() * 10000);
+        int[] numbersToAdd = {7, 9, 4, 10, 5, 8, 2, 3, 1, 11, -1, -2};
+        int[] numbersToRemove = {-1};
+        for (int i = 0; i < numbersToAdd.length; i++) {
+//            test = (int) (Math.random() * 10000);
 //            test = i;
+            test = numbersToAdd[i];
             specialtySet.add(test);
             addedNumbers.add(test);
             addedSet.add(test);
 //            System.out.println("Added Integer #" + i + ": " + test);
         }
+        for (int i = 0; i < numbersToRemove.length; i++) {
+//            test = (int) (Math.random() * 10000);
+//            test = i;
+            test = numbersToRemove[i];
+            specialtySet.remove(test);
+            System.out.println("Removing Integer #" + (i + 1) + ": " + test);
+        }
+        specialtySet.add(-3);
         System.out.println("Size = " + specialtySet.size() + ", size should be " + addedSet.size());
         if (specialtySet.validate())
             System.out.println("Validated successfully!");

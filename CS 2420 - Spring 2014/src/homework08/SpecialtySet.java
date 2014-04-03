@@ -76,28 +76,28 @@ public class SpecialtySet<E extends Comparable<E>> {
     public void add(E data) {
         // adding to an empty tree
         if (this.root == null) {
-//            System.out.println("Adding " + data + ", size == " + this.size);
+            System.out.println("Adding " + data + ", size == " + this.size);
             this.root = new Node(data);
             this.size = 1;
-//            System.out.println("New tree root = " + root.data + ", size = " + this.size);
+            System.out.println("New tree root = " + root.data + ", size = " + this.size);
             return;
         }
 
         // if the data exists in the tree don't add it
         if (this.contains(data)) {
-//        	System.out.println("Data "+data+" already exists in tree");
+            System.out.println("Data " + data + " already exists in tree");
             return;
         }
 
         // use a recursive function to add the data to the set
         //  note: doing this.contains followed by this.add parses through the tree twice in succession,
         //  thereby doubling the cost, but maintains theta(log n)
-//        System.out.println("Adding " + data + ", size = " + this.size);
+        System.out.println("Adding " + data + ", size = " + this.size);
         if (data.compareTo(this.root.data) == -1) {
-//            System.out.println("Adding "+data+" to root.left");
+            System.out.println("Adding " + data + " to root.left");
             root.nodeAdd(this.root, data);
         } else {
-//            System.out.println("Adding "+data+" to root.right");
+            System.out.println("Adding " + data + " to root.right");
             root.nodeAdd(this.root, data);
         }
         this.size++;
@@ -115,9 +115,16 @@ public class SpecialtySet<E extends Comparable<E>> {
      *   to the previous node (as appropriate).
      */
     public void remove(E data) {
+//        System.out.println("\nremove method called\n");
         // if the data is in the tree remove it
-        if (this.contains(data)) root.nodeRemove(root, data);
-        else return;
+        if (!this.contains(data)) {
+//            System.out.println("Data "+data+" not contained in tree");
+            return;
+        } else {
+//            System.out.println("Data "+data+" contained in tree, removing...");
+            root.nodeRemove(0, root, data); // TODO: should this need a direction passed, or no? Implement a join()?
+            this.size--;
+        }
     }
 
     /**
@@ -135,9 +142,6 @@ public class SpecialtySet<E extends Comparable<E>> {
     boolean validate() {
         if (root == null)
             return true;
-//        else if (height(this.root) == -1)
-//            return false;
-//        return true;
 
         // recursively check the left and right branches of the tree, returning false if either validation fails
         if (!root.nodeValidate(root.left)) return false;
@@ -145,26 +149,22 @@ public class SpecialtySet<E extends Comparable<E>> {
         return true; // return true if both branches validate correctly
     }
 
-    /**
-     * Private helper to get the height of the tree
-     */
-    private int height(Node root) {
-        if (root == null)
-            return 0;
-
-        int left_child = height(root.left);
-        int right_child = height(root.right);
-
-        if (left_child == -1 || right_child == -1)
-            return -1;
-
-        if (Math.abs(left_child - right_child) > 1) {
-            return -1;
-        }
-
-        return Math.max(left_child, right_child) + 1;
-
-    }
+//    /**
+//     * Private helper to get the height of the tree
+//     */
+//    private int getHeight(Node root) {
+//        if (root == null)
+//            return 0;
+//
+//        int left_child = getHeight(root.left);
+//        int right_child = getHeight(root.right);
+//
+//        if (left_child == -1 || right_child == -1) return -1;
+//        if (Math.abs(left_child - right_child) > 1) return -1;
+//
+//        return Math.max(left_child, right_child) + 1;
+//
+//    }
 
     /**
      * A toString override for outputting the contents of the tree
@@ -234,28 +234,28 @@ public class SpecialtySet<E extends Comparable<E>> {
 
         private void nodeAdd(Node n, E data) {
             if (n == null) {
-//                System.out.println("nodeAdd, n = null");
+                System.out.println("nodeAdd, n = null");
                 return;
             }
             if (n != null && n.data != null)
-//        	    System.out.println("nodeAdd called, n = "+n.data);
-//            else System.out.println("nodeAdd called, n = null");
+                System.out.println("nodeAdd called, n = " + n.data);
+            else System.out.println("nodeAdd called, n = null");
 
-                // check null case
+            // check null case
                 if (n == null) {
-//            	System.out.println("nodeAdd: n == null");
+                    System.out.println("nodeAdd: n == null");
                     return;
                 }
 
             // if the current node matches the data simply return
             if (n.data.compareTo(data) == 0) {
-//            	System.out.println("nodeAdd: added data is greater than root");
+                System.out.println("nodeAdd: added data is greater than root");
                 return;
             }
 
             // otherwise use recursion to add to the left or right side as appropriate
             if (data.compareTo(n.data) == -1) {
-//            	System.out.println("nodeAdd: added data "+data+" is less than data "+n.data);
+                System.out.println("nodeAdd: added data " + data + " is less than data " + n.data);
                 if (n.left != null)
                     nodeAdd(n.left, data);
                 else { // if the left branch is null add a new node in that position and update
@@ -266,7 +266,7 @@ public class SpecialtySet<E extends Comparable<E>> {
                     updateHeight(newNode);
                 }
             } else { // if the value is greater test the right side of the node
-//            	System.out.println("nodeAdd: added data "+data+" is greater than data "+n.data);
+                System.out.println("nodeAdd: added data " + data + " is greater than data " + n.data);
                 if (n.right != null)
                     nodeAdd(n.right, data);
                 else { // if the right branch is null add a new node in that position and update
@@ -284,14 +284,25 @@ public class SpecialtySet<E extends Comparable<E>> {
          * nodes in the binary tree
          */
         private void updateHeight(Node n) {
-            if (n.parent == null) return;
-            if (n.parent.height == n.height) {
-                n.parent.height++;
-                updateHeight(n.parent);
-            } else if (n.parent.height - 2 == n.height) {
-                n.parent.height--;
+            if (n == null) return; // handle null case (base case of recursion)
+            int nodeHeight = maxHeight(n); // find what the node's height _should_ be
+            if (n.height == nodeHeight) return; // if the node's height is correct end the recursion
+            else {
+                n.height = nodeHeight;
                 updateHeight(n.parent);
             }
+        }
+
+        private int maxHeight(Node n) {
+            if (n.left == null && n.right == null) return 0;
+
+            int leftHeight = 0;
+            int rightHeight = 0;
+
+            if (n.left != null) leftHeight = maxHeight(n.left);
+            if (n.right != null) rightHeight = maxHeight(n.right);
+
+            return (Math.max(leftHeight, rightHeight) + 1);
         }
 
         /**
@@ -324,37 +335,54 @@ public class SpecialtySet<E extends Comparable<E>> {
             else return false;
         }
 
-        public void nodeRemove(Node n, E data) {
+        public void nodeRemove(int direction, Node n, E data) {
             int compare = data.compareTo(n.data);
+            System.out.println("nodeRemove: n.data = " + n.data + ", data=" + data + ", compare=" + compare);
             // if the data is in the left branch remove it from the left branch
             if (compare == -1) {
-                n.nodeRemove(n.left, data);
+                n.nodeRemove(-1, n.left, data);
                 return;
             }
             // if the data is in the right branch remove it from the right branch
             else if (compare == 1) {
-                n.nodeRemove(n.right, data);
+                n.nodeRemove(1, n.right, data);
                 return;
             } else { // if the data matches the data at the current node (Node n) then n is to be removed
                 // establish references for the nodes connected to the node to be removed
-                Node removeParent = parent;
+                Node removeParent = n.parent;
                 Node removeLeft = n.left;
                 Node removeRight = n.right;
+                System.out.println("nodeRemove: node found, n=" + n.data + ", parent=" + removeParent.data + ", left=" + removeLeft.data + ", right=" + removeRight);
 
                 // if the node has no children then simply delete it and update the parent's height
                 if (removeLeft == null && removeRight == null) {
-                    n = null;
+                    System.out.println("Removing a node with no children!");
+                    if (direction == -1) removeParent.left = null;
+                    else if (direction == 1) removeParent.right = null;
+                    else {
+                    } // TODO: implement root case with no children
                     updateHeight(removeParent);
                 }
 
                 // if the node only has one child then delete that child and update the parent accordingly
-                if (removeLeft == null && removeRight != null) {
-                    n = removeRight;
+                else if (removeLeft == null && removeRight != null) { // only has right children
+                    System.out.println("Removing a node with only right children");
+                    if (direction == -1) removeParent.left = removeRight;
+                    else if (direction == 1) removeParent.right = removeRight;
+                    // TODO: implement root case remove with one child
                     updateHeight(n);
-                }
-                if (removeRight == null && removeLeft != null) {
-                    n = removeLeft;
+                } else if (removeRight == null && removeLeft != null) {
+                    n = removeLeft; //TODO: change this to null the node instead of the reference to it
+                    // TODO: implement root case remove with one child
                     updateHeight(n);
+                } else { // if the node has two children
+                    // TODO: implement root case remove with two children. All below needs revision
+                    Node leftmostRight = n.right;
+                    while (leftmostRight.left != null) leftmostRight = leftmostRight.left;
+                    n.data = leftmostRight.data;
+                    Node leftmostRightParent = leftmostRight.parent;
+                    leftmostRightParent.left = null;
+                    updateHeight(leftmostRightParent);
                 }
             }
         }
