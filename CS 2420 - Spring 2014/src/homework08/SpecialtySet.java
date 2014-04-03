@@ -235,6 +235,14 @@ public class SpecialtySet<E extends Comparable<E>> {
                     n.left = newNode;
                     updateHeight(newNode);
                 }
+            } else { // if the value is greater test the right side of the node
+                if (n.right != null)
+                    nodeAdd(n.right, data);
+                else {
+                    Node newNode = new Node(data);
+                    n.right = newNode;
+                    updateHeight(newNode);
+                }
             }
         }
 
