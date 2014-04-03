@@ -76,23 +76,30 @@ public class SpecialtySet<E extends Comparable<E>> {
     public void add(E data) {
         // adding to an empty tree
         if (this.root == null) {
-            System.out.println("Adding " + data + ", size == " + this.size);
+//            System.out.println("Adding " + data + ", size == " + this.size);
             this.root = new Node(data);
             this.size = 1;
-            System.out.println("New tree root = " + root.data + ", size = " + this.size);
+//            System.out.println("New tree root = " + root.data + ", size = " + this.size);
             return;
         }
 
         // if the data exists in the tree don't add it
-        if (this.contains(data)) return;
+        if (this.contains(data)) {
+//        	System.out.println("Data "+data+" already exists in tree");
+            return;
+        }
 
         // use a recursive function to add the data to the set
         //  note: doing this.contains followed by this.add parses through the tree twice in succession,
         //  thereby doubling the cost, but maintains theta(log n)
-        System.out.println("Adding " + data + ", size = " + this.size);
-        if (data.compareTo(root.data) == -1)
-            root.nodeAdd(this.root.left, data);
-        else root.nodeAdd(this.root.right, data);
+//        System.out.println("Adding " + data + ", size = " + this.size);
+        if (data.compareTo(this.root.data) == -1) {
+//            System.out.println("Adding "+data+" to root.left");
+            root.nodeAdd(this.root, data);
+        } else {
+//            System.out.println("Adding "+data+" to root.right");
+            root.nodeAdd(this.root, data);
+        }
         this.size++;
     }
 
@@ -108,6 +115,9 @@ public class SpecialtySet<E extends Comparable<E>> {
      *   to the previous node (as appropriate).
      */
     public void remove(E data) {
+        // if the data is in the tree remove it
+        if (this.contains(data)) root.nodeRemove(root, data);
+        else return;
     }
 
     /**
@@ -123,11 +133,16 @@ public class SpecialtySet<E extends Comparable<E>> {
      * @return true iff the set passes an internal test
      */
     boolean validate() {
-        if (this.root == null)
+        if (root == null)
             return true;
-        else if (height(this.root) == -1)
-            return false;
-        return true;
+//        else if (height(this.root) == -1)
+//            return false;
+//        return true;
+
+        // recursively check the left and right branches of the tree, returning false if either validation fails
+        if (!root.nodeValidate(root.left)) return false;
+        if (!root.nodeValidate(root.right)) return false;
+        return true; // return true if both branches validate correctly
     }
 
     /**
@@ -218,29 +233,47 @@ public class SpecialtySet<E extends Comparable<E>> {
         }
 
         private void nodeAdd(Node n, E data) {
-            // check null case
-            if (n == null)
+            if (n == null) {
+//                System.out.println("nodeAdd, n = null");
                 return;
+            }
+            if (n != null && n.data != null)
+//        	    System.out.println("nodeAdd called, n = "+n.data);
+//            else System.out.println("nodeAdd called, n = null");
+
+                // check null case
+                if (n == null) {
+//            	System.out.println("nodeAdd: n == null");
+                    return;
+                }
 
             // if the current node matches the data simply return
-            if (n.data.compareTo(data) == 0)
+            if (n.data.compareTo(data) == 0) {
+//            	System.out.println("nodeAdd: added data is greater than root");
                 return;
+            }
 
             // otherwise use recursion to add to the left or right side as appropriate
-            if (n.data.compareTo(data) == -1) {
+            if (data.compareTo(n.data) == -1) {
+//            	System.out.println("nodeAdd: added data "+data+" is less than data "+n.data);
                 if (n.left != null)
                     nodeAdd(n.left, data);
-                else {
+                else { // if the left branch is null add a new node in that position and update
+                    //  the height and parent variables
                     Node newNode = new Node(data);
                     n.left = newNode;
+                    newNode.parent = n;
                     updateHeight(newNode);
                 }
             } else { // if the value is greater test the right side of the node
+//            	System.out.println("nodeAdd: added data "+data+" is greater than data "+n.data);
                 if (n.right != null)
                     nodeAdd(n.right, data);
-                else {
+                else { // if the right branch is null add a new node in that position and update
+                    //  the height and parent variables
                     Node newNode = new Node(data);
                     n.right = newNode;
+                    newNode.parent = n;
                     updateHeight(newNode);
                 }
             }
@@ -251,8 +284,12 @@ public class SpecialtySet<E extends Comparable<E>> {
          * nodes in the binary tree
          */
         private void updateHeight(Node n) {
+            if (n.parent == null) return;
             if (n.parent.height == n.height) {
                 n.parent.height++;
+                updateHeight(n.parent);
+            } else if (n.parent.height - 2 == n.height) {
+                n.parent.height--;
                 updateHeight(n.parent);
             }
         }
@@ -269,6 +306,56 @@ public class SpecialtySet<E extends Comparable<E>> {
                 outputString += this.data.toString();
                 outputString += this.right.toString();
                 return outputString;
+            }
+        }
+
+        public boolean nodeValidate(Node n) {
+            // handle null case and base case of recursion
+            if (n == null) return true;
+
+            // recursively check the left and right nodes.
+            // first, compare the left and right nodes against the parent (the input node, n)
+            if (n.left != null && n.left.data.compareTo(n.data) != -1) return false;
+            if (n.right != null && n.right.data.compareTo(n.data) != 1) return false;
+
+            // if the parent to children comparison works for this node then recursively do the same for
+            // both of the children.
+            if (nodeValidate(n.left) && nodeValidate(n.right)) return true;
+            else return false;
+        }
+
+        public void nodeRemove(Node n, E data) {
+            int compare = data.compareTo(n.data);
+            // if the data is in the left branch remove it from the left branch
+            if (compare == -1) {
+                n.nodeRemove(n.left, data);
+                return;
+            }
+            // if the data is in the right branch remove it from the right branch
+            else if (compare == 1) {
+                n.nodeRemove(n.right, data);
+                return;
+            } else { // if the data matches the data at the current node (Node n) then n is to be removed
+                // establish references for the nodes connected to the node to be removed
+                Node removeParent = parent;
+                Node removeLeft = n.left;
+                Node removeRight = n.right;
+
+                // if the node has no children then simply delete it and update the parent's height
+                if (removeLeft == null && removeRight == null) {
+                    n = null;
+                    updateHeight(removeParent);
+                }
+
+                // if the node only has one child then delete that child and update the parent accordingly
+                if (removeLeft == null && removeRight != null) {
+                    n = removeRight;
+                    updateHeight(n);
+                }
+                if (removeRight == null && removeLeft != null) {
+                    n = removeLeft;
+                    updateHeight(n);
+                }
             }
         }
     }
