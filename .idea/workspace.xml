@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="update">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/CS 2420 - Spring 2014/.markers" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/CS 2420 - Spring 2014/.markers" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3400578845.index" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3400578845.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySet.java" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySetTrial.java" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySetTrial.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -79,8 +84,23 @@
       <file leaf-file-name="SpecialtySet.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="375" column="38" selection-start="14152" selection-end="14152" vertical-scroll-proportion="0.50605327" vertical-offset="6166" max-vertical-offset="6817">
-              <folding />
+            <state line="234" column="46" selection-start="7744" selection-end="7744" vertical-scroll-proportion="0.44444445" vertical-offset="3706" max-vertical-offset="7038">
+              <folding>
+                <element signature="method#SpecialtySet#0;class#SpecialtySet#0" expanded="true" />
+                <element signature="method#size#0;class#SpecialtySet#0" expanded="true" />
+                <element signature="method#contains#0;class#SpecialtySet#0" expanded="true" />
+                <element signature="method#add#0;class#SpecialtySet#0" expanded="true" />
+                <element signature="method#remove#0;class#SpecialtySet#0" expanded="true" />
+                <element signature="method#validate#0;class#SpecialtySet#0" expanded="true" />
+                <element signature="method#toString#0;class#SpecialtySet#0" expanded="true" />
+                <element signature="method#Node#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+                <element signature="method#nodeContains#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+                <element signature="method#updateHeight#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+                <element signature="method#maxHeight#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+                <element signature="method#toString#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+                <element signature="method#nodeValidate#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+                <element signature="method#nodeRemove#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -88,7 +108,7 @@
       <file leaf-file-name="SpecialtySetTrial.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySetTrial.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="35" selection-start="1726" selection-end="1726" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="850">
+            <state line="15" column="34" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="850">
               <folding />
             </state>
           </provider>
@@ -97,7 +117,7 @@
       <file leaf-file-name="SpecialtySetTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySetTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="219" column="35" selection-start="6308" selection-end="6308" vertical-scroll-proportion="0.0" vertical-offset="3366" max-vertical-offset="4267">
+            <state line="219" column="35" selection-start="6308" selection-end="6308" vertical-scroll-proportion="0.0" vertical-offset="3723" max-vertical-offset="4420">
               <folding />
             </state>
           </provider>
@@ -167,7 +187,7 @@
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -207,7 +227,7 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="editor.preferences.appearance" />
+    <property name="options.lastSelected" value="editor" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -387,10 +407,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="GWT.ConfigurationType" factoryName="GWT Configuration">
-      <module name="" />
-      <method />
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -409,6 +425,10 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="GWT.ConfigurationType" factoryName="GWT Configuration">
+      <module name="" />
       <method />
     </configuration>
     <list size="5">
@@ -513,7 +533,8 @@
       <workItem from="1396317174039" duration="8647000" />
       <workItem from="1396459546706" duration="1190000" />
       <workItem from="1396489287906" duration="15790000" />
-      <workItem from="1396666193946" duration="1296000" />
+      <workItem from="1396666193946" duration="5269000" />
+      <workItem from="1396727255639" duration="115000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -883,11 +904,15 @@
       <created>1396505282520</created>
       <updated>1396505282520</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="update">
+      <created>1396667565022</created>
+      <updated>1396667565022</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126078000" />
+    <option name="totallyTimeSpent" value="130166000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -910,7 +935,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5140625" order="7" side_tool="false" content_ui="tabs" />
@@ -922,20 +947,20 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32842106" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32445142" sideWeight="0.52781844" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15373352" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35250738" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5221239" sideWeight="0.47218156" order="2" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5139092" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32153392" sideWeight="0.52781844" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -954,13 +979,13 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32445142" sideWeight="0.52781844" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15373352" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2507837" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2507837" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -985,10 +1010,39 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySetTrial.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="34" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="850">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySetTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="219" column="35" selection-start="6308" selection-end="6308" vertical-scroll-proportion="0.0" vertical-offset="3723" max-vertical-offset="4420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="124" column="116" selection-start="4261" selection-end="4261" vertical-scroll-proportion="0.0" vertical-offset="522" max-vertical-offset="6732">
-          <folding />
+          <folding>
+            <element signature="method#SpecialtySet#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#size#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#contains#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#add#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#remove#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#validate#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#toString#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#Node#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#nodeContains#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#updateHeight#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#maxHeight#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#toString#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#nodeValidate#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#nodeRemove#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1009,7 +1063,22 @@
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="210" column="16" selection-start="6464" selection-end="6464" vertical-scroll-proportion="0.0" vertical-offset="3262" max-vertical-offset="4607">
-          <folding />
+          <folding>
+            <element signature="method#SpecialtySet#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#size#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#contains#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#add#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#remove#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#validate#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#toString#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#Node#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#nodeContains#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#updateHeight#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#maxHeight#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#toString#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#nodeValidate#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#nodeRemove#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1030,7 +1099,22 @@
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="96" column="43" selection-start="3071" selection-end="3071" vertical-scroll-proportion="0.0" vertical-offset="1313" max-vertical-offset="4607">
-          <folding />
+          <folding>
+            <element signature="method#SpecialtySet#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#size#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#contains#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#add#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#remove#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#validate#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#toString#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#Node#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#nodeContains#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#updateHeight#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#maxHeight#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#toString#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#nodeValidate#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#nodeRemove#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1051,7 +1135,22 @@
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="116" column="0" selection-start="3378" selection-end="3378" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2720">
-          <folding />
+          <folding>
+            <element signature="method#SpecialtySet#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#size#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#contains#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#add#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#remove#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#validate#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#toString#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#Node#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#nodeContains#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#updateHeight#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#maxHeight#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#toString#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#nodeValidate#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#nodeRemove#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1234,9 +1333,7 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_51/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="19" selection-start="3638" selection-end="3638" vertical-scroll-proportion="0.0" vertical-offset="1134" max-vertical-offset="52292">
-          <folding />
-        </state>
+        <state line="107" column="19" selection-start="3638" selection-end="3638" vertical-scroll-proportion="0.0" vertical-offset="1134" max-vertical-offset="52292" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySetTest.java">
@@ -1248,15 +1345,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySetTrial.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="35" selection-start="1726" selection-end="1726" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="850">
+        <state line="15" column="34" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0" vertical-offset="178" max-vertical-offset="833">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="375" column="38" selection-start="14152" selection-end="14152" vertical-scroll-proportion="0.50605327" vertical-offset="6166" max-vertical-offset="6817">
-          <folding />
+        <state line="234" column="46" selection-start="7744" selection-end="7744" vertical-scroll-proportion="0.44444445" vertical-offset="3706" max-vertical-offset="7038">
+          <folding>
+            <element signature="method#SpecialtySet#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#size#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#contains#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#add#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#remove#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#validate#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#toString#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#Node#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#nodeContains#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#updateHeight#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#maxHeight#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#toString#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#nodeValidate#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+            <element signature="method#nodeRemove#0;class#Node#0;class#SpecialtySet#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

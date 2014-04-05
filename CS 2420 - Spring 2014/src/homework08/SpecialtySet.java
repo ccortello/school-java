@@ -242,16 +242,13 @@ public class SpecialtySet<E extends Comparable<E>> {
             else System.out.println("nodeAdd called, n = null");
 
             // check null case
-                if (n == null) {
-                    System.out.println("nodeAdd: n == null");
-                    return;
-                }
-
-            // if the current node matches the data simply return
-            if (n.data.compareTo(data) == 0) {
-                System.out.println("nodeAdd: added data is greater than root");
+            if (n == null) {
+                System.out.println("nodeAdd: n == null");
                 return;
             }
+
+            // if the current node matches the data simply return
+            if (n.data.compareTo(data) == 0) return;
 
             // otherwise use recursion to add to the left or right side as appropriate
             if (data.compareTo(n.data) == -1) {
@@ -263,7 +260,7 @@ public class SpecialtySet<E extends Comparable<E>> {
                     Node newNode = new Node(data);
                     n.left = newNode;
                     newNode.parent = n;
-                    updateHeight(newNode);
+                    updateHeight(n);
                 }
             } else { // if the value is greater test the right side of the node
                 System.out.println("nodeAdd: added data " + data + " is greater than data " + n.data);
@@ -274,7 +271,7 @@ public class SpecialtySet<E extends Comparable<E>> {
                     Node newNode = new Node(data);
                     n.right = newNode;
                     newNode.parent = n;
-                    updateHeight(newNode);
+                    updateHeight(n);
                 }
             }
         }
@@ -286,6 +283,7 @@ public class SpecialtySet<E extends Comparable<E>> {
         private void updateHeight(Node n) {
             if (n == null) return; // handle null case (base case of recursion)
             int nodeHeight = maxHeight(n); // find what the node's height _should_ be
+            System.out.println("updateHeight: node=" + n + ", height is currently " + n.height + ", should be " + nodeHeight);
             if (n.height == nodeHeight) return; // if the node's height is correct end the recursion
             else {
                 n.height = nodeHeight;
@@ -314,7 +312,7 @@ public class SpecialtySet<E extends Comparable<E>> {
                 return outputString;
             else {
                 if (this.left != null) outputString += this.left.toString();
-                outputString += " " + this.data.toString() + " ";
+                outputString += this.data.toString() + "\t" + this.height + "\n";
                 if (this.right != null) outputString += this.right.toString();
                 return outputString;
             }
@@ -358,7 +356,7 @@ public class SpecialtySet<E extends Comparable<E>> {
                 Node removeParent = n.parent;
                 Node removeLeft = n.left;
                 Node removeRight = n.right;
-                System.out.println("nodeRemove: node found, n=" + n.data + ", parent=" + removeParent.data + ", left=" + removeLeft.data + ", right=" + removeRight);
+                System.out.println("nodeRemove: node found, n=" + n + ", parent=" + removeParent + ", left=" + removeLeft + ", right=" + removeRight);
 
                 // if the node has no children then simply delete it and update the parent's height
                 if (removeLeft == null && removeRight == null) {
@@ -371,23 +369,38 @@ public class SpecialtySet<E extends Comparable<E>> {
                 }
 
                 // if the node only has one child then delete that child and update the parent accordingly
-                else if (removeLeft == null && removeRight != null) { // only has right children
+
+                // only has right children
+                else if (removeLeft == null) {
                     System.out.println("Removing a node with only right children");
                     if (direction == -1) removeParent.left = removeRight;
                     else if (direction == 1) removeParent.right = removeRight;
                     // TODO: implement root case remove with one child
-                    updateHeight(n);
+                    updateHeight(removeRight);
+
+                    // only has left children
                 } else if (removeRight == null) {
-                    n = removeLeft; //TODO: change this to null the node instead of the reference to it
-                    // TODO: implement root case remove with one child
-                    updateHeight(n);
-                } else { // if the node has two children
-                    // TODO: implement root case remove with two children. All below needs revision
+                    if (direction == -1) removeParent.left = removeLeft;
+                    else if (direction == 1) removeParent.right = removeLeft;
+                    else {
+                    } // TODO: implement root case remove with one child
+                    updateHeight(removeLeft);
+
+                    // if the node has two children
+                } else {
+                    // TODO: implement root case with two children
+
+                    // find the node with the smallest data which is greater than the node being deleted, referred to
+                    //  here as the 'leftmostRight' node as per its location in a tree diagram
                     Node leftmostRight = n.right;
                     while (leftmostRight.left != null) leftmostRight = leftmostRight.left;
+
+                    // copy the data from the leftmostRight node to the node to be deleted and remove the reference to
+                    //  the leftmost right node. This serves the functionality of replacing the current node with the
+                    //  leftmost right node. Afterwards, update the removed node's parent, as per all removals
                     n.data = leftmostRight.data;
                     Node leftmostRightParent = leftmostRight.parent;
-                    leftmostRightParent.left = null;
+                    leftmostRightParent.right = leftmostRightParent.right.right;
                     updateHeight(leftmostRightParent);
                 }
             }
