@@ -13,7 +13,7 @@ public class SpecialtySetTrial {
         ArrayList<Integer> addedNumbers = new ArrayList<Integer>();
         HashSet<Integer> addedSet = new HashSet<Integer>();
         int[] numbersToAdd = {7, 9, 4, 10, 5, 8, 2, 3, 1, 11, -1, -2};
-        int[] numbersToRemove = {9};
+        int[] numbersToRemove = {7};
         for (int i = 0; i < numbersToAdd.length; i++) {
 //            test = (int) (Math.random() * 10000);
 //            test = i;
@@ -38,6 +38,7 @@ public class SpecialtySetTrial {
         System.out.println("Added a total of " + addedNumbers.size() + " numbers");
         System.out.println("\nPrinting Specialty Set...");
         System.out.println(specialtySet);
+        System.out.println(specialtySet.size());
 
         System.out.println("Done testing!");
     }

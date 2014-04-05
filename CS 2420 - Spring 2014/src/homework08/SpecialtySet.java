@@ -57,10 +57,6 @@ public class SpecialtySet<E extends Comparable<E>> {
      * @param data A data value to search for
      * @return true iff the data is in the set
      */
-    /* Implementation note:  The postconditions for the
-     * 'locatePosition' function are also guaranteed for
-     * this function.
-     */
     public boolean contains(E data) {
         if (this.root == null)
             return false;
@@ -115,14 +111,16 @@ public class SpecialtySet<E extends Comparable<E>> {
      *   to the previous node (as appropriate).
      */
     public void remove(E data) {
+        // explicit removal of last node
+        if (root.data.compareTo(data) == 0 && size == 1) {
+            this.root = null;
+            size--;
+        }
+
 //        System.out.println("\nremove method called\n");
         // if the data is in the tree remove it
-        if (!this.contains(data)) {
-//            System.out.println("Data "+data+" not contained in tree");
-            return;
-        } else {
-//            System.out.println("Data "+data+" contained in tree, removing...");
-            root.nodeRemove(0, root, data); // TODO: should this need a direction passed, or no? Implement a join()?
+        if (this.contains(data)) {
+            root.nodeRemove(0, root, data);
             this.size--;
         }
     }
@@ -253,13 +251,17 @@ public class SpecialtySet<E extends Comparable<E>> {
             // otherwise use recursion to add to the left or right side as appropriate
             if (data.compareTo(n.data) == -1) {
                 System.out.println("nodeAdd: added data " + data + " is less than data " + n.data);
-                if (n.left != null)
+                if (n.left != null) {
                     nodeAdd(n.left, data);
-                else { // if the left branch is null add a new node in that position and update
+
+                } else { // if the left branch is null add a new node in that position and update
                     //  the height and parent variables
                     Node newNode = new Node(data);
                     n.left = newNode;
                     newNode.parent = n;
+                    if (n.left.height - n.right.height == 2) {
+                        if (data < n.left.data)
+                    }
                     updateHeight(n);
                 }
             } else { // if the value is greater test the right side of the node
@@ -271,6 +273,7 @@ public class SpecialtySet<E extends Comparable<E>> {
                     Node newNode = new Node(data);
                     n.right = newNode;
                     newNode.parent = n;
+
                     updateHeight(n);
                 }
             }
@@ -363,8 +366,7 @@ public class SpecialtySet<E extends Comparable<E>> {
                     System.out.println("Removing a node with no children!");
                     if (direction == -1) removeParent.left = null;
                     else if (direction == 1) removeParent.right = null;
-                    else {
-                    }// TODO: implement root case with no children
+                    // note: root case with no children is handled at beginning of SpecialtySet remove()
                     updateHeight(removeParent);
                 }
 
@@ -375,7 +377,22 @@ public class SpecialtySet<E extends Comparable<E>> {
                     System.out.println("Removing a node with only right children");
                     if (direction == -1) removeParent.left = removeRight;
                     else if (direction == 1) removeParent.right = removeRight;
-                    // TODO: implement root case remove with one child
+                    else {
+                        // find the node with the smallest data which is greater than the node being deleted, referred to
+                        //  here as the 'leftmostRight' node as per its location in a tree diagram
+                        Node leftmostRight = n.right;
+                        while (leftmostRight.left != null) leftmostRight = leftmostRight.left;
+
+                        // copy the data from the leftmostRight node to the node to be deleted and remove the reference to
+                        //  the leftmost right node. This serves the functionality of replacing the current node with the
+                        //  leftmost right node. Afterwards, update the removed node's parent, as per all removals
+                        n.data = leftmostRight.data; // copy the data into the node to be deleted
+                        Node leftmostRightParent = leftmostRight.parent; // store a reference to the leftmostRight's parent,
+                        //  so we can reference it after the deletion
+                        if (n.right == leftmostRight) leftmostRightParent.right = leftmostRightParent.right.right;
+                        else leftmostRightParent.left = leftmostRightParent.left.right;
+                        updateHeight(leftmostRightParent);
+                    }
                     updateHeight(removeRight);
 
                     // only has left children
@@ -383,12 +400,25 @@ public class SpecialtySet<E extends Comparable<E>> {
                     if (direction == -1) removeParent.left = removeLeft;
                     else if (direction == 1) removeParent.right = removeLeft;
                     else {
-                    } // TODO: implement root case remove with one child
+                        // find the node with the greatest data which is smaller than the node being deleted, referred to
+                        //  here as the 'rightmostLeft' node as per its location in a tree diagram
+                        Node rightmostLeft = n.left;
+                        while (rightmostLeft.right != null) rightmostLeft = rightmostLeft.right;
+
+                        // copy the data from the leftmostRight node to the node to be deleted and remove the reference to
+                        //  the leftmost right node. This serves the functionality of replacing the current node with the
+                        //  leftmost right node. Afterwards, update the removed node's parent, as per all removals
+                        n.data = rightmostLeft.data; // copy the data into the node to be deleted
+                        Node leftmostRightParent = rightmostLeft.parent; // store a reference to the leftmostRight's parent,
+                        //  so we can reference it after the deletion
+                        if (n.left == rightmostLeft) leftmostRightParent.left = leftmostRightParent.left.left;
+                        else leftmostRightParent.right = leftmostRightParent.right.left;
+                        updateHeight(leftmostRightParent);
+                    }
                     updateHeight(removeLeft);
 
                     // if the node has two children
                 } else {
-                    // TODO: implement root case with two children
 
                     // find the node with the smallest data which is greater than the node being deleted, referred to
                     //  here as the 'leftmostRight' node as per its location in a tree diagram
@@ -398,9 +428,11 @@ public class SpecialtySet<E extends Comparable<E>> {
                     // copy the data from the leftmostRight node to the node to be deleted and remove the reference to
                     //  the leftmost right node. This serves the functionality of replacing the current node with the
                     //  leftmost right node. Afterwards, update the removed node's parent, as per all removals
-                    n.data = leftmostRight.data;
-                    Node leftmostRightParent = leftmostRight.parent;
-                    leftmostRightParent.right = leftmostRightParent.right.right;
+                    n.data = leftmostRight.data; // copy the data into the node to be deleted
+                    Node leftmostRightParent = leftmostRight.parent; // store a reference to the leftmostRight's parent,
+                    //  so we can reference it after the deletion
+                    if (n.right == leftmostRight) leftmostRightParent.right = leftmostRightParent.right.right;
+                    else leftmostRightParent.left = leftmostRightParent.left.right;
                     updateHeight(leftmostRightParent);
                 }
             }
