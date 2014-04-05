@@ -37,6 +37,8 @@ public class SpecialtySetTrial {
         else System.out.println("Validation failed");
 //        System.out.println("Added numbers, in order: "+addedNumbers);
         System.out.println("Added a total of " + addedNumbers.size() + " numbers");
+        System.out.println("\nPrinting Specialty Set...");
+        System.out.println(specialtySet + "\n");
 
         System.out.println("Done testing!");
     }

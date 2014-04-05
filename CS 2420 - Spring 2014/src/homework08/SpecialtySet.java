@@ -313,9 +313,9 @@ public class SpecialtySet<E extends Comparable<E>> {
             if (this == null)
                 return outputString;
             else {
-                outputString += this.left.toString();
-                outputString += this.data.toString();
-                outputString += this.right.toString();
+                if (this.left != null) outputString += this.left.toString();
+                outputString += " " + this.data.toString() + " ";
+                if (this.right != null) outputString += this.right.toString();
                 return outputString;
             }
         }
@@ -336,8 +336,14 @@ public class SpecialtySet<E extends Comparable<E>> {
         }
 
         public void nodeRemove(int direction, Node n, E data) {
+            // if the node isn't in the tree then simply return (null case)
+            if (n == null) return;
+
+            // check the data against the data in the current node
             int compare = data.compareTo(n.data);
+//
             System.out.println("nodeRemove: n.data = " + n.data + ", data=" + data + ", compare=" + compare);
+
             // if the data is in the left branch remove it from the left branch
             if (compare == -1) {
                 n.nodeRemove(-1, n.left, data);
@@ -360,7 +366,7 @@ public class SpecialtySet<E extends Comparable<E>> {
                     if (direction == -1) removeParent.left = null;
                     else if (direction == 1) removeParent.right = null;
                     else {
-                    } // TODO: implement root case with no children
+                    }// TODO: implement root case with no children
                     updateHeight(removeParent);
                 }
 
@@ -371,7 +377,7 @@ public class SpecialtySet<E extends Comparable<E>> {
                     else if (direction == 1) removeParent.right = removeRight;
                     // TODO: implement root case remove with one child
                     updateHeight(n);
-                } else if (removeRight == null && removeLeft != null) {
+                } else if (removeRight == null) {
                     n = removeLeft; //TODO: change this to null the node instead of the reference to it
                     // TODO: implement root case remove with one child
                     updateHeight(n);
