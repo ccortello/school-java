@@ -72,28 +72,23 @@ public class SpecialtySet<E extends Comparable<E>> {
     public void add(E data) {
         // adding to an empty tree
         if (this.root == null) {
-            System.out.println("Adding " + data + ", size == " + this.size);
             this.root = new Node(data);
             this.size = 1;
-            System.out.println("New tree root = " + root.data + ", size = " + this.size);
             return;
         }
 
         // if the data exists in the tree don't add it
-        if (this.contains(data)) {
-            System.out.println("Data " + data + " already exists in tree");
-            return;
-        }
+        if (this.contains(data)) return;
 
         // use a recursive function to add the data to the set
         //  note: doing this.contains followed by this.add parses through the tree twice in succession,
         //  thereby doubling the cost, but maintains theta(log n)
-        System.out.println("Adding " + data + ", size = " + this.size);
+//        System.out.println("Adding " + data + ", size = " + this.size);
         if (data.compareTo(this.root.data) == -1) {
-            System.out.println("Adding " + data + " to root.left");
+//            System.out.println("Adding " + data + " to root.left");
             root.nodeAdd(this.root, data);
         } else {
-            System.out.println("Adding " + data + " to root.right");
+//            System.out.println("Adding " + data + " to root.right");
             root.nodeAdd(this.root, data);
         }
         this.size++;
@@ -117,7 +112,6 @@ public class SpecialtySet<E extends Comparable<E>> {
             size--;
         }
 
-//        System.out.println("\nremove method called\n");
         // if the data is in the tree remove it
         if (this.contains(data)) {
             root.nodeRemove(0, root, data);
@@ -147,31 +141,13 @@ public class SpecialtySet<E extends Comparable<E>> {
         return true; // return true if both branches validate correctly
     }
 
-//    /**
-//     * Private helper to get the height of the tree
-//     */
-//    private int getHeight(Node root) {
-//        if (root == null)
-//            return 0;
-//
-//        int left_child = getHeight(root.left);
-//        int right_child = getHeight(root.right);
-//
-//        if (left_child == -1 || right_child == -1) return -1;
-//        if (Math.abs(left_child - right_child) > 1) return -1;
-//
-//        return Math.max(left_child, right_child) + 1;
-//
-//    }
-
     /**
      * A toString override for outputting the contents of the tree
      */
     public String toString() {
         String outputString = "";
-        if (this.root != null) {
+        if (this.root != null)
             outputString += this.root.toString();
-        }
         return outputString;
     }
 
@@ -205,8 +181,10 @@ public class SpecialtySet<E extends Comparable<E>> {
         }
 
         /**
-         * @param data
-         * @return
+         * A recursive function which returns true iff the input node either matches the input data or has a node
+         * directly under it which matches the data
+         * @param data the data to be found
+         * @return boolean true if the node either matches the data or a subnode under it matches the data
          */
         private boolean nodeContains(Node n, E data) {
             // handle null case and end of recursion
@@ -231,69 +209,262 @@ public class SpecialtySet<E extends Comparable<E>> {
         }
 
         private void nodeAdd(Node n, E data) {
-            if (n == null) {
-                System.out.println("nodeAdd, n = null");
-                return;
-            }
-            if (n != null && n.data != null)
-                System.out.println("nodeAdd called, n = " + n.data);
-            else System.out.println("nodeAdd called, n = null");
-
             // check null case
-            if (n == null) {
-                System.out.println("nodeAdd: n == null");
-                return;
-            }
+            if (n == null) return;
 
             // if the current node matches the data simply return
             if (n.data.compareTo(data) == 0) return;
 
             // otherwise use recursion to add to the left or right side as appropriate
             if (data.compareTo(n.data) == -1) {
-                System.out.println("nodeAdd: added data " + data + " is less than data " + n.data);
-                if (n.left != null) {
-                    nodeAdd(n.left, data);
-
-                } else { // if the left branch is null add a new node in that position and update
+//                System.out.println("nodeAdd: added data " + data + " is less than data " + n.data);
+                if (n.left != null) nodeAdd(n.left, data);
+                else { // if the left branch is null add a new node in that position and update
                     //  the height and parent variables
                     Node newNode = new Node(data);
                     n.left = newNode;
                     newNode.parent = n;
-                    if (n.left.height - n.right.height == 2) {
-                        if (data < n.left.data)
-                    }
                     updateHeight(n);
+                    balance(newNode);
                 }
             } else { // if the value is greater test the right side of the node
-                System.out.println("nodeAdd: added data " + data + " is greater than data " + n.data);
-                if (n.right != null)
-                    nodeAdd(n.right, data);
+//                System.out.println("nodeAdd: added data " + data + " is greater than data " + n.data);
+                if (n.right != null) nodeAdd(n.right, data);
                 else { // if the right branch is null add a new node in that position and update
                     //  the height and parent variables
                     Node newNode = new Node(data);
                     n.right = newNode;
                     newNode.parent = n;
-
                     updateHeight(n);
+                    balance(newNode);
                 }
             }
         }
 
         /**
-         * Private helper to update the height of the affected
-         * nodes in the binary tree
+         * Checks the height of the children of the passed node to see if balancing is necessary and
+         * if balancing _is_ necessary uses one of four rotate methods to correctly balance the node
+         *
+         * @param n the node at the root of the balancing
          */
-        private void updateHeight(Node n) {
-            if (n == null) return; // handle null case (base case of recursion)
-            int nodeHeight = maxHeight(n); // find what the node's height _should_ be
-            System.out.println("updateHeight: node=" + n + ", height is currently " + n.height + ", should be " + nodeHeight);
-            if (n.height == nodeHeight) return; // if the node's height is correct end the recursion
-            else {
-                n.height = nodeHeight;
-                updateHeight(n.parent);
+        private void balance(Node n) {
+            // check to see if adding the node unbalanced the tree anywhere along its height and balances if necessary
+            if (n == null || n.parent == null || n.parent.parent == null) return;
+
+            Node grandparent = n.parent.parent;
+
+            // check the height conditions
+            int leftHeight = grandparent.left == null ? -1 : grandparent.left.height;
+            int rightHeight = grandparent.right == null ? -1 : grandparent.right.height;
+//            System.out.println("leftHeight="+leftHeight+", rightHeight="+rightHeight);
+
+            // if the heights show imbalance then balance the node
+            if (Math.abs(leftHeight - rightHeight) == 2) {
+
+//                System.out.print("balance: n=" + n.data + ", ");
+//                if(n.parent!=null) System.out.print("parent="+n.parent.data+", ");
+//                if (n.parent!=null&&n.parent.parent!=null) System.out.println("grandparent="+n.parent.parent.data);
+
+                // check the location of the nodes under grandparent and balance the tree accordingly
+                if (n.data.compareTo(grandparent.data) == -1) {
+                    if (n.data.compareTo(n.parent.data) == -1)
+                        rotateLeft(n);
+                    else rotateLeftRight(n);
+                } else {
+                    if (n.data.compareTo(n.parent.data) == 1) rotateRight(n);
+                    else rotateRightLeft(n);
+                }
+            } else {
+                // move up in the tree
+                balance(n.parent);
             }
         }
 
+
+        /* The next four methods alter the locations of the nodes connected to n to assure the AVL tree condition */
+
+        private void rotateLeft(Node n) {
+            // store references to the parent and grandparent nodes
+            Node parent = n.parent;
+            Node grandparent = n.parent.parent;
+
+            // swap the top two data fields (to maintain a correct root node upon position swapping)
+            E temp = grandparent.data;
+            grandparent.data = parent.data;
+            parent.data = temp;
+
+            // rotate into correct positions
+            grandparent.left = n;
+            parent.left = parent.right;
+            parent.right = grandparent.right;
+            grandparent.right = parent;
+
+            // update the parent fields
+            parent.parent = grandparent;
+            n.parent = grandparent;
+
+            balanceHeightUpdate(n);
+
+            // update the height of the parent node
+            int parentRight = parent.right == null ? -1 : parent.right.height;
+            int parentLeft = parent.left == null ? -1 : parent.left.height;
+
+            // update the height of the grandparent node
+            int grandLeft = grandparent.left == null ? -1 : grandparent.left.height;
+            int grandRight = grandparent.right == null ? -1 : grandparent.right.height;
+            grandparent.height = Math.max(grandLeft, grandRight);
+        }
+
+        private void rotateRight(Node n) {
+//            if (n==null || n.parent==null||n.parent.parent==null) return;
+//            System.out.print("rotateRight, n="+n+", ");
+//            System.out.print("parent=" + (n.parent == null ? null : n.parent.data) + ", ");
+//            System.out.println("grandparent=" + (n.parent==null||n.parent.parent == null || n.parent.data == null ? null : n.parent.parent.data));
+            // store references to the parent and grandparent nodes
+            Node parent = n.parent;
+            Node grandparent = n.parent.parent;
+
+            // swap the top two data fields (to maintain a correct root node upon position swapping)
+            E temp = grandparent.data;
+            grandparent.data = parent.data;
+            parent.data = temp;
+
+            // rotate into correct positions
+            grandparent.right = n;
+            parent.right = parent.left;
+            parent.left = grandparent.left;
+            grandparent.left = parent;
+
+            // update the parent fields
+            parent.parent = grandparent;
+            n.parent = grandparent;
+
+            balanceHeightUpdate(n);
+
+            // update the height of the parent node
+            int parentRight = parent.right == null ? -1 : parent.right.height;
+            int parentLeft = parent.left == null ? -1 : parent.left.height;
+            parent.height = Math.max(parentRight, parentLeft) + 1;
+//            System.out.println("parent "+parent.data+" height="+parent.height+", rightHeight="+parentRight+", leftHeight="+parentLeft);
+
+            // update the height of the grandparent node
+            int grandLeft = grandparent.left == null ? -1 : grandparent.left.height;
+            int grandRight = grandparent.right == null ? -1 : grandparent.right.height;
+            grandparent.height = Math.max(grandLeft, grandRight) + 1;
+//            System.out.println("grandparent "+grandparent.data+" height="+grandparent.height+", rightHeight="+grandRight+" leftHeight="+grandLeft);
+
+
+//            System.out.print("rotateRight completed, n=");
+//            System.out.println(n);
+        }
+
+        private void rotateLeftRight(Node n) {
+//            System.out.println("rotateLeftRight");
+            // store references to the parent and grandparent nodes
+            Node parent = n.parent;
+            Node grandparent = n.parent.parent;
+
+            // swap n and grandparent data (to maintain a correct root node upon position swapping)
+            E temp = grandparent.data;
+            grandparent.data = n.data;
+            n.data = temp;
+
+            // rotate into correct positions
+            parent.right = n.left;
+            n.left = n.right;
+            n.right = grandparent.right;
+            grandparent.right = n;
+
+            // update the parent fields
+            parent.parent = grandparent;
+            n.parent = grandparent;
+
+            balanceHeightUpdate(n);
+
+            // update the height of the parent node
+            int parentRight = parent.right == null ? -1 : parent.right.height;
+            int parentLeft = parent.left == null ? -1 : parent.left.height;
+            parent.height = Math.max(parentRight, parentLeft) + 1;
+
+            // update the height of the n node
+            int nLeft = n.left == null ? -1 : n.left.height;
+            int nRight = n.right == null ? -1 : n.right.height;
+            n.height = Math.max(nLeft, nRight) + 1;
+
+            // update the height of the grandparent node
+            int grandLeft = grandparent.left == null ? -1 : grandparent.left.height;
+            int grandRight = grandparent.right == null ? -1 : grandparent.right.height;
+            grandparent.height = Math.max(grandLeft, grandRight) + 1;
+        }
+
+        private void rotateRightLeft(Node n) {
+            // store references to the parent and grandparent nodes
+            Node parent = n.parent;
+            Node grandparent = n.parent.parent;
+
+            // swap n and grandparent data (to maintain a correct root node upon position swapping)
+            E temp = grandparent.data;
+            grandparent.data = n.data;
+            n.data = temp;
+
+            // rotate into correct positions
+            parent.left = n.right;
+            n.right = n.left;
+            n.left = grandparent.left;
+            grandparent.left = n;
+
+            // update the parent fields
+            parent.parent = grandparent;
+            n.parent = grandparent;
+
+            balanceHeightUpdate(n);
+
+            // update the height of the n node
+            int nLeft = n.left == null ? -1 : n.left.height;
+            int nRight = n.right == null ? -1 : n.right.height;
+            n.height = Math.max(nLeft, nRight) + 1;
+
+            // update the height of the parent node
+            int parentRight = parent.right == null ? -1 : parent.right.height;
+            int parentLeft = parent.left == null ? -1 : parent.left.height;
+            parent.height = Math.max(parentRight, parentLeft) + 1;
+
+            // update the height of the grandparent node
+            int grandLeft = grandparent.left == null ? -1 : grandparent.left.height;
+            int grandRight = grandparent.right == null ? -1 : grandparent.right.height;
+            grandparent.height = Math.max(grandLeft, grandRight) + 1;
+        }
+
+        /**
+         * Recursively updates the heights of the nodes in a tree after a balance has ocurred
+         *
+         * @param n the node whose height is checked
+         */
+        private void balanceHeightUpdate(Node n) {
+            if (n.parent != null && n.parent.height - n.height == 2) {
+                n.parent.height--;
+                balanceHeightUpdate(n.parent);
+            }
+        }
+
+        /**
+         * Private helper to update the height of the affected nodes in the binary tree
+         */
+        private void updateHeight(Node n) {
+            if (n == null) return; // handle null case (base case of recursion)
+            int leftHeight = n.left == null ? -1 : n.left.height;
+            int rightHeight = n.right == null ? -1 : n.right.height;
+            int nodeHeight = Math.max(leftHeight, rightHeight) + 1; // find what the node's height _should_ be
+            if (n.height == nodeHeight) return; // if the node's height is correct end the recursion
+            n.height = nodeHeight;
+            updateHeight(n.parent);
+        }
+
+        /**
+         * A recursive method to find the longest path from the passed node to the bottom of the tree
+         * @param n the node whose height is needed
+         * @return
+         */
         private int maxHeight(Node n) {
             if (n.left == null && n.right == null) return 0;
 
@@ -314,8 +485,12 @@ public class SpecialtySet<E extends Comparable<E>> {
             if (this == null)
                 return outputString;
             else {
+                String thisParent = this.parent == null ? null : this.parent.data.toString();
+                String thisLeft = this.left == null ? null : this.left.data.toString();
+                String thisRight = this.right == null ? null : this.right.data.toString();
+
                 if (this.left != null) outputString += this.left.toString();
-                outputString += this.data.toString() + "\t" + this.height + "\n";
+                outputString += this.data.toString() + "\t" + this.height + "\t" + thisParent + "\t" + thisLeft + "\t" + thisRight+"\n";
                 if (this.right != null) outputString += this.right.toString();
                 return outputString;
             }
@@ -342,28 +517,21 @@ public class SpecialtySet<E extends Comparable<E>> {
 
             // check the data against the data in the current node
             int compare = data.compareTo(n.data);
-//
-            System.out.println("nodeRemove: n.data = " + n.data + ", data=" + data + ", compare=" + compare);
 
             // if the data is in the left branch remove it from the left branch
-            if (compare == -1) {
-                n.nodeRemove(-1, n.left, data);
-                return;
-            }
+            if (compare == -1) n.nodeRemove(-1, n.left, data);
+
             // if the data is in the right branch remove it from the right branch
-            else if (compare == 1) {
-                n.nodeRemove(1, n.right, data);
-                return;
-            } else { // if the data matches the data at the current node (Node n) then n is to be removed
+            else if (compare == 1) n.nodeRemove(1, n.right, data);
+
+            else { // if the data matches the data at the current node (Node n) then n is to be removed
                 // establish references for the nodes connected to the node to be removed
                 Node removeParent = n.parent;
                 Node removeLeft = n.left;
                 Node removeRight = n.right;
-                System.out.println("nodeRemove: node found, n=" + n + ", parent=" + removeParent + ", left=" + removeLeft + ", right=" + removeRight);
 
                 // if the node has no children then simply delete it and update the parent's height
                 if (removeLeft == null && removeRight == null) {
-                    System.out.println("Removing a node with no children!");
                     if (direction == -1) removeParent.left = null;
                     else if (direction == 1) removeParent.right = null;
                     // note: root case with no children is handled at beginning of SpecialtySet remove()
@@ -374,7 +542,6 @@ public class SpecialtySet<E extends Comparable<E>> {
 
                 // only has right children
                 else if (removeLeft == null) {
-                    System.out.println("Removing a node with only right children");
                     if (direction == -1) removeParent.left = removeRight;
                     else if (direction == 1) removeParent.right = removeRight;
                     else {
