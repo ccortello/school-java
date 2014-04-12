@@ -1,6 +1,6 @@
-package homework09.experiment02;
+package homework09.experiment03;
 
-import homework09.experiment02.SimpleHashSet.TableFullException;
+import homework09.experiment03.SimpleHashSet.TableFullException;
 
 import java.util.Random;
 
@@ -59,17 +59,19 @@ public class TestApplication {
 
             // Randomly determine an action to do with this element.
 
-            boolean doAdd = r.nextInt(totalActions) > actionCount;
+            int doAdd = r.nextInt(totalActions);
 
-            if (doAdd) {
+            if (doAdd % 3 == 0) {
                 try {
 //                    System.out.println ("Adding " + element + " (hashes to location " + (Math.abs(element.hashCode()) % setCapacity) + ")");
 
                     // Attempt to add the element.
                     set.resetProbeCount();
+                    set.contains(element);
+                    System.out.println(set.probeCount + "\t" + setCapacity + "\t" + expectedSetSize);
                     set.add(element);
                     //TODO: print out relevant output for each insertion
-                    System.out.println(set.probeCount + "\t" + setCapacity + "\t" + expectedSetSize);
+//                    System.out.println(set.probeCount + "\t" + setCapacity + "\t" +expectedSetSize);
 
 //                    System.out.print(set.getProbeCount()+", ");
                     // If the element was in the set, nothing should have happened.
@@ -102,7 +104,7 @@ public class TestApplication {
                         return;
                     }
                 }
-            } else {
+            } else if (doAdd % 3 == 1) {
                 // Delete an element.
 
 //                System.out.println ("Removing " + element + " (hashes to location " + (Math.abs(element.hashCode()) % setCapacity) + ")");
@@ -119,6 +121,11 @@ public class TestApplication {
                     shouldBeInTheSet[number] = false;
                     expectedSetSize--;
                 }
+            } else {
+                set.resetProbeCount();
+                set.contains(element);
+                System.out.println(set.probeCount + "\t" + setCapacity + "\t" + expectedSetSize);
+
             }
 
             // Verify that the set only contains the elements that have been added but not removed.

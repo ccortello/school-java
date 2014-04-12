@@ -1,4 +1,4 @@
-package homework09;
+package homework09.experiment03;
 
 /**
  * This class is a hash table implementation of a set.  It is
@@ -28,9 +28,10 @@ package homework09;
 public class SimpleHashSet {
     // Instance variables.
 
-    private Object[] table;
-    private int capacity;
-    private int probeCount;
+    public Object[] table;
+    public int capacity;
+    public int probeCount;
+    public int size;
 
     /**
      * Builds a hash set with the specified maximum size.
@@ -41,6 +42,7 @@ public class SimpleHashSet {
         this.capacity = capacity;
         this.table = new Object[capacity];
         this.probeCount = 0;
+        this.size = 0;
     }
 
     /**
@@ -49,7 +51,7 @@ public class SimpleHashSet {
      * object, the specified object will not be added.
      *
      * @param element any object
-     * @throws homework09.SimpleHashSet.TableFullException if the hash table is full
+     * @throws homework09.experiment02.SimpleHashSet.TableFullException if the hash table is full
      */
     public void add(Object element) {
         ///// You must complete this method /////
@@ -62,6 +64,7 @@ public class SimpleHashSet {
             probeCount++;
             if (temp == null) {
                 table[(hash + retry) % capacity] = element;
+                size++;
                 return;
             } else if (temp.equals(element))
                 return;
@@ -166,6 +169,7 @@ public class SimpleHashSet {
         // Clear the free position.
 
         table[freePosition] = null;
+        size--;
     }
 
     /**
@@ -216,7 +220,7 @@ public class SimpleHashSet {
     /**
      * An exception class for indicating the table is full.
      */
-    public static class TableFullException extends RuntimeException {
+    static class TableFullException extends RuntimeException {
         TableFullException() {
             super("The hash table is full.");
         }
