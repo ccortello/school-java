@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="update">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment03/NumberName.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment03/SimpleHashSet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment03/TestApplication.java" />
-      <change type="DELETED" beforePath="C:\Users\Cody\workspace\CS 2420 - Spring 2014\src\homework09\experiment02\MyTestApplication.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/SimpleHashSet.java" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/SimpleHashSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/CS 2420 - Spring 2014/.markers" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/CS 2420 - Spring 2014/.markers" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3400578845.index" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3400578845.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment02/TestApplication.java" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment02/TestApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -35,7 +37,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+    <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
         <option name="NOTIFY_UNCAUGHT" value="true" />
@@ -71,28 +73,21 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideWarnings" value="true" />
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="workspace" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="TestApplication.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment02/TestApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="3" selection-start="274" selection-end="274" vertical-scroll-proportion="-2.95466" vertical-offset="1377" max-vertical-offset="3117">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -152,16 +147,18 @@
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment01/experiment01/NumberName.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment01/experiment02/SimpleHashSet.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/homework09/experiment02/SimpleHashSet.java" />
-        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/NumberName.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment01/TestApplication.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment02/SimpleHashSet.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment02/MyTestApplication.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment02/experiment02/NumberName.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment03/NumberName.java" />
-        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/TestApplication.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment03/SimpleHashSet.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment03/TestApplication.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/TestApplication.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/SimpleHashSet.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/NumberName.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experimentX/NumberName.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experimentX/SimpleHashSet.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment02/TestApplication.java" />
       </list>
     </option>
@@ -203,6 +200,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -271,14 +269,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="experiment02" />
+              <option name="myItemId" value="experimentX" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -351,23 +348,7 @@
       <recent name="C:\Users\Cody\workspace\CS 2420 - Spring 2014\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestApplication (1)">
-    <configuration default="false" name="SpecialtySetTrial (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homework08.SpecialtySetTrial" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="CS 2420 - Spring 2014" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.TestApplication (4)">
     <configuration default="false" name="TestApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="homework09.homework09.experiment01.TestApplication" />
       <option name="VM_PARAMETERS" />
@@ -432,6 +413,22 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="TestApplication (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homework09.experimentX.TestApplication" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="CS 2420 - Spring 2014" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -467,6 +464,10 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="GWT.ConfigurationType" factoryName="GWT Configuration">
+      <module name="" />
+      <method />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -487,24 +488,20 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="true" type="GWT.ConfigurationType" factoryName="GWT Configuration">
-      <module name="" />
-      <method />
-    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.SpecialtySetTrial (1)" />
-      <item index="1" class="java.lang.String" itemvalue="Application.TestApplication" />
-      <item index="2" class="java.lang.String" itemvalue="Application.TestApplication (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Application.TestApplication (2)" />
-      <item index="4" class="java.lang.String" itemvalue="Application.TestApplication (3)" />
+      <item index="0" class="java.lang.String" itemvalue="Application.TestApplication" />
+      <item index="1" class="java.lang.String" itemvalue="Application.TestApplication (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Application.TestApplication (2)" />
+      <item index="3" class="java.lang.String" itemvalue="Application.TestApplication (3)" />
+      <item index="4" class="java.lang.String" itemvalue="Application.TestApplication (4)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.TestApplication (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Application.TestApplication (3)" />
-        <item index="2" class="java.lang.String" itemvalue="Application.TestApplication (2)" />
-        <item index="3" class="java.lang.String" itemvalue="Application.TestApplication" />
-        <item index="4" class="java.lang.String" itemvalue="Application.SpecialtySetTrial (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Application.TestApplication (4)" />
+        <item index="1" class="java.lang.String" itemvalue="Application.TestApplication (2)" />
+        <item index="2" class="java.lang.String" itemvalue="Application.TestApplication (3)" />
+        <item index="3" class="java.lang.String" itemvalue="Application.TestApplication (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Application.TestApplication" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
@@ -596,7 +593,10 @@
       <workItem from="1396666193946" duration="5269000" />
       <workItem from="1396727255639" duration="30725000" />
       <workItem from="1397093818092" duration="11092000" />
-      <workItem from="1397266701208" duration="12958000" />
+      <workItem from="1397266701208" duration="13217000" />
+      <workItem from="1397340516058" duration="1447000" />
+      <workItem from="1397342333797" duration="119000" />
+      <workItem from="1397342837538" duration="51000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -986,11 +986,15 @@
       <created>1397105484866</created>
       <updated>1397105484866</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="update">
+      <created>1397279714726</created>
+      <updated>1397279714726</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="184826000" />
+    <option name="totallyTimeSpent" value="186702000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1014,32 +1018,32 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5140625" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.50732064" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32842106" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31661442" sideWeight="0.5270864" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15812592" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15812592" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.50732064" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31661442" sideWeight="0.47291362" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
-      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32842106" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5139092" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31661442" sideWeight="0.5270864" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1055,15 +1059,15 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32842106" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31661442" sideWeight="0.5270864" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31661442" sideWeight="0.5270864" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15812592" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15812592" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31661442" sideWeight="0.47291362" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
@@ -1090,11 +1094,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/TreePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="39" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2703" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/TreeTester.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="0" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="697" />
@@ -1262,9 +1261,7 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_51/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="19" selection-start="3638" selection-end="3638" vertical-scroll-proportion="0.0" vertical-offset="1134" max-vertical-offset="52292">
-          <folding />
-        </state>
+        <state line="107" column="19" selection-start="3638" selection-end="3638" vertical-scroll-proportion="0.0" vertical-offset="1134" max-vertical-offset="52292" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySetTest.java">
@@ -1279,9 +1276,7 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_51/src.zip!/java/lang/Math.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="878" column="0" selection-start="35183" selection-end="35183" vertical-scroll-proportion="0.33236152" vertical-offset="12976" max-vertical-offset="23256">
-          <folding />
-        </state>
+        <state line="878" column="0" selection-start="35183" selection-end="35183" vertical-scroll-proportion="0.33236152" vertical-offset="12976" max-vertical-offset="23256" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySetTrial.java">
@@ -1296,70 +1291,77 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment02/NumberName.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
-          <folding />
-        </state>
+        <state line="11" column="13" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment03/SimpleHashSet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4235">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment03/NumberName.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2331">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4235" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment03/TestApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="33" selection-start="699" selection-end="699" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="3253">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="27" column="33" selection-start="699" selection-end="699" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="3253" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment02/SimpleHashSet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4235">
-          <folding />
-        </state>
+        <state line="222" column="4" selection-start="6941" selection-end="6941" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="4437" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/TestApplication.java">
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment03/NumberName.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="28" selection-start="495" selection-end="497" vertical-scroll-proportion="0.8564232" vertical-offset="0" max-vertical-offset="2947">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="11" column="13" selection-start="326" selection-end="326" vertical-scroll-proportion="0.30555555" vertical-offset="0" max-vertical-offset="2533" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/NumberName.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="10" selection-start="35" selection-end="35" vertical-scroll-proportion="0.124390244" vertical-offset="0" max-vertical-offset="2331">
+        <state line="0" column="18" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2533">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/SimpleHashSet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="218" column="11" selection-start="6841" selection-end="6841" vertical-scroll-proportion="0.6219512" vertical-offset="3417" max-vertical-offset="4167">
+        <state line="0" column="18" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4369">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/TestApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="21" selection-end="21" vertical-scroll-proportion="0.085642315" vertical-offset="0" max-vertical-offset="2947">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experimentX/NumberName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="30" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experimentX/SimpleHashSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="30" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4439">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experimentX/TestApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="23" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="3185">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment02/TestApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="3" selection-start="274" selection-end="274" vertical-scroll-proportion="-2.95466" vertical-offset="1377" max-vertical-offset="3117">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="40" column="8" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="2805">
+          <folding />
         </state>
       </provider>
     </entry>
