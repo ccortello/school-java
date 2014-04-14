@@ -1,6 +1,6 @@
-package homework09.experiment03;
+package homework09;
 
-import homework09.experiment03.SimpleHashSet.TableFullException;
+import homework09.SimpleHashSet.TableFullException;
 
 import java.util.Random;
 
@@ -11,20 +11,14 @@ import java.util.Random;
  * @author Peter Jensen
  * @version Summer 2010
  */
-public class TestApplication {
+public class TestApplicationExperiment02 {
 
     public static void main(String[] args) {
-        // make a file to write to
-
-
-        // Print out the header
-        System.out.println("Probes\tcapacity\tsetSize");
-
         // Determine the number of possible elements, the set capacity, and
         //   the number of tests.
 
+        int elementCount = 2000;
         int setCapacity = 1000;
-        int elementCount = setCapacity * 3;
         int totalActions = 10000;
 
         // Create a boolean array that will indicate if each
@@ -50,7 +44,7 @@ public class TestApplication {
         for (int actionCount = 0; actionCount < totalActions; actionCount++) {
             // Debug - print out the table.
             //set.debugTable();
-//            System.out.println ("  " + set.getClusterMap());
+//            System.out.println("  " + set.getClusterMap());
 
             // Select a random number element.
 
@@ -59,37 +53,30 @@ public class TestApplication {
 
             // Randomly determine an action to do with this element.
 
-            int doAdd = r.nextInt(totalActions);
+            boolean doAdd = r.nextInt(totalActions) > actionCount;
 
-            if (doAdd % 3 == 0) {
+            if (doAdd) {
                 try {
-//                    System.out.println ("Adding " + element + " (hashes to location " + (Math.abs(element.hashCode()) % setCapacity) + ")");
+//                    System.out.println("Adding " + element + " (hashes to location " + (Math.abs(element.hashCode()) % setCapacity) + ")");
 
                     // Attempt to add the element.
                     set.resetProbeCount();
-                    set.contains(element);
-                    System.out.println(set.probeCount + "\t" + setCapacity + "\t" + expectedSetSize);
                     set.add(element);
-                    //TODO: print out relevant output for each insertion
-//                    System.out.println(set.probeCount + "\t" + setCapacity + "\t" +expectedSetSize);
+                    System.out.println(set.getProbeCount() + "\t" + setCapacity + "\t" + expectedSetSize);
 
-//                    System.out.print(set.getProbeCount()+", ");
                     // If the element was in the set, nothing should have happened.
-                    if (set.probeCount == setCapacity) {
-                        System.out.println("Attempted add to full set");
-                    }
 
                     if (!shouldBeInTheSet[number]) {
                         // The element was added.  If the table was full, error.
 
                         if (expectedSetSize == setCapacity) {
                             System.out.flush();
-//                            System.err.println ("Set sizes disagree.  The table should have " + expectedSetSize + " elements in it, but an exception was not raised.");
+                            System.err.println("Set sizes disagree.  The table should have " + expectedSetSize + " elements in it, but an exception was not raised.");
                             System.err.flush();
                             return;
                         }
 
-                        // Otherwise, increase the count
+                        // Otherwise, increase the count.
 
                         shouldBeInTheSet[number] = true;
                         expectedSetSize++;
@@ -99,15 +86,15 @@ public class TestApplication {
 
                     if (expectedSetSize != setCapacity) {
                         System.out.flush();
-//                        System.err.println ("Set sizes disagree.  The table should only have " + expectedSetSize + " elements in it, but it appears to have " + setCapacity + " elements in it.");
+                        System.err.println("Set sizes disagree.  The table should only have " + expectedSetSize + " elements in it, but it appears to have " + setCapacity + " elements in it.");
                         System.err.flush();
                         return;
                     }
                 }
-            } else if (doAdd % 3 == 1) {
+            } else {
                 // Delete an element.
 
-//                System.out.println ("Removing " + element + " (hashes to location " + (Math.abs(element.hashCode()) % setCapacity) + ")");
+//                System.out.println("Removing " + element + " (hashes to location " + (Math.abs(element.hashCode()) % setCapacity) + ")");
 
                 // Attempt to remove the element.
 
@@ -121,11 +108,6 @@ public class TestApplication {
                     shouldBeInTheSet[number] = false;
                     expectedSetSize--;
                 }
-            } else {
-                set.resetProbeCount();
-                set.contains(element);
-                System.out.println(set.probeCount + "\t" + setCapacity + "\t" + expectedSetSize);
-
             }
 
             // Verify that the set only contains the elements that have been added but not removed.
@@ -139,14 +121,14 @@ public class TestApplication {
 
                 if (inTheSet && !shouldBeInTheSet[i]) {
                     System.out.flush();
-//                    System.err.println (n + " (hashes to location " + (Math.abs(n.hashCode()) % setCapacity) + ") appears to be in the set, but should not be.");
+//                    System.err.println(n + " (hashes to location " + (Math.abs(n.hashCode()) % setCapacity) + ") appears to be in the set, but should not be.");
                     System.err.flush();
                     hasError = true;
                 }
 
                 if (!inTheSet && shouldBeInTheSet[i]) {
                     System.out.flush();
-//                    System.err.println (n + " (hashes to location " + (Math.abs(n.hashCode()) % setCapacity) + ") does not appear to be in the set, but should be.");
+//                    System.err.println(n + " (hashes to location " + (Math.abs(n.hashCode()) % setCapacity) + ") does not appear to be in the set, but should be.");
                     System.err.flush();
                     hasError = true;
                 }
@@ -160,9 +142,11 @@ public class TestApplication {
 
         // Debug - print out the table.
 //        set.debugTable();
-//        System.out.println ("\nCluster Map:  " + set.getClusterMap());
+//        System.out.println();
+//        System.out.println("Cluster Map:  " + set.getClusterMap());
 
-//        System.out.println ("\nTotal number of probes: " + set.getProbeCount());
+//        System.out.println();
+//        System.out.println("Total number of probes: " + set.getProbeCount());
     }
 
 }
