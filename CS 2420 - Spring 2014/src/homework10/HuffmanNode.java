@@ -164,6 +164,4 @@ public class HuffmanNode implements Comparable<HuffmanNode> {
             else return 0;
         }
     }
-
-
 }
