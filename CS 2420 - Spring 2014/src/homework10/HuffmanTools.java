@@ -281,7 +281,6 @@ public class HuffmanTools {
      *
      * @param filename The name of a file
      * @param data     The bytes to be written to the specified file
-     * @return The bytes contained in the specified file
      */
     static public void writeBytesToFile(String filename, byte[] data) {
         try {
@@ -289,7 +288,7 @@ public class HuffmanTools {
             output.write(data);
             output.close();
         } catch (IOException e) {
-            System.out.println("Unable to read bytes from " + filename);
+            System.out.println("Unable to write bytes to " + filename);
         }
     }
 }

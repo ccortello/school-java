@@ -33,7 +33,7 @@ public class HuffmanNode implements Comparable<HuffmanNode> {
      * @param token The token to store in this leaf node
      */
     public HuffmanNode(HuffmanToken token) {
-        // Stubbed out
+        this.totalFrequency = token.getFrequency();
     }
 
     /**
@@ -60,7 +60,19 @@ public class HuffmanNode implements Comparable<HuffmanNode> {
      * @param right The subtree to become the right child of this node
      */
     public HuffmanNode(HuffmanNode left, HuffmanNode right) {
-        // Stubbed out
+        // sum the frequencies of the left and right nodes
+        this.totalFrequency = left.totalFrequency + right.totalFrequency;
+
+        // update the codes for the left and right nodes' tokens
+        for (HuffmanToken leftToken : left.tokens)
+            leftToken.prependBitToCode(false);
+        for (HuffmanToken rightToken : right.tokens)
+            rightToken.prependBitToCode(true);
+
+        // add the tokens of the left and right nodes in sorted order
+        // TODO: should this be in compareTo sorted order, or simply 'left then right' order as below?
+        this.tokens.addAll(left.tokens);
+        this.tokens.addAll(right.tokens);
     }
 
     /**
@@ -70,8 +82,8 @@ public class HuffmanNode implements Comparable<HuffmanNode> {
      * @return The left subtree of this node
      */
     public HuffmanNode getLeftSubtree() {
-        // Stubbed out
-        return null;
+        if (this.left == null) return null;
+        else return this.left;
     }
 
     /**
@@ -81,8 +93,8 @@ public class HuffmanNode implements Comparable<HuffmanNode> {
      * @return The right subtree of this node
      */
     public HuffmanNode getRightSubtree() {
-        // Stubbed out
-        return null;
+        if (this.right == null) return null;
+        else return this.right;
     }
 
     /**
@@ -91,8 +103,7 @@ public class HuffmanNode implements Comparable<HuffmanNode> {
      * @return True if this node is a leaf node
      */
     public boolean isLeafNode() {
-        // Stubbed out
-        return false;
+        return (this.right == null && this.left == null);
     }
 
     /**
@@ -103,8 +114,8 @@ public class HuffmanNode implements Comparable<HuffmanNode> {
      * @return The token stored in this leaf node
      */
     public HuffmanToken getToken() {
-        // Stubbed out
-        return null;
+        if (this.isLeafNode()) return this.tokens.get(0);
+        else return null;
     }
 
     /**
@@ -118,8 +129,7 @@ public class HuffmanNode implements Comparable<HuffmanNode> {
      * @return True if the this node equals the given node
      */
     public boolean equals(Object o) {
-        // Stubbed out
-        return false;
+        return (((HuffmanNode) o).compareTo(this) == 0);
     }
 
     /**
@@ -142,7 +152,18 @@ public class HuffmanNode implements Comparable<HuffmanNode> {
      * @return -1, 0, or 1, depending on the relative order of the nodes
      */
     public int compareTo(HuffmanNode node) {
-        // Stubbed out
-        return 0;
+        // first, compare frequencies
+        if (this.totalFrequency < node.totalFrequency) return -1;
+        else if (this.totalFrequency > node.totalFrequency) return 1;
+        else {
+            // second, compare the byte value of the tokens
+            if (this.tokens.get(0).getValue() < node.tokens.get(0).getValue()) return -1;
+            else if (this.tokens.get(0).getValue() > node.tokens.get(0).getValue()) return 1;
+
+                // this should only be reached if the frequencies and the tokens are the same
+            else return 0;
+        }
     }
+
+
 }
