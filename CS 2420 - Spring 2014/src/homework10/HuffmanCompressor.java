@@ -1,8 +1,7 @@
 package homework10;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Map;
+import java.util.*;
 
 /**
  * A HuffmanCompressor object contains no data - it is just an
@@ -47,8 +46,30 @@ public class HuffmanCompressor implements Compressor {
      * @return A list of HuffmanTokens that contain token counts
      */
     public ArrayList<HuffmanToken> countTokens(byte[] data) {
-        // Stubbed out
-        return null;
+
+        // initialize the return list and a map to track the frequencies of each byte in the input array
+        ArrayList<HuffmanToken> returnList = new ArrayList<HuffmanToken>();
+        HashMap<Byte, Integer> frequencyMap = new HashMap<Byte, Integer>();
+
+        // iterate through the input array and update the map accordingly
+        //  note: a HashMap is implemented instead of just the ArrayList to minimize the access complexity
+        for (byte currentByte : data) {
+
+            // check if the byte already exists in the map, and either create an entry or increment the frequency accordingly
+            if (!frequencyMap.containsKey(currentByte))
+                frequencyMap.put(currentByte, 0);
+            else frequencyMap.put(currentByte, frequencyMap.get(currentByte) + 1);
+        }
+
+        // use the HashMap to create HuffmanTokens and add them to the returnList
+        for (Byte mapKey : frequencyMap.keySet()) {
+            HuffmanToken addToken = new HuffmanToken(mapKey);
+            addToken.setFrequency(frequencyMap.get(mapKey));
+            returnList.add(addToken);
+        }
+
+        // return the substantiated list
+        return returnList;
     }
 
     /**
@@ -69,8 +90,28 @@ public class HuffmanCompressor implements Compressor {
      * @return The root node of a Huffman tree
      */
     public HuffmanNode buildHuffmanCodeTree(ArrayList<HuffmanToken> tokens) {
-        // Stubbed out
-        return null;
+
+        // initialize the queue
+        PriorityQueue<HuffmanNode> queue = new PriorityQueue<HuffmanNode>(tokens.size());
+
+        // create a node for each token and add the tokens to the queue
+        for (HuffmanToken addToken : tokens)
+            queue.add(new HuffmanNode(addToken));
+
+        // combine the nodes in the queue until there is only one node left
+        while (queue.size() > 1) {
+
+            // poll the bottom two nodes and combine them
+            HuffmanNode firstNode = queue.poll();
+            HuffmanNode secondNode = queue.poll();
+            HuffmanNode combineNode = new HuffmanNode(firstNode, secondNode);
+
+            // add the combined node back to the queue
+            queue.add(combineNode);
+        }
+
+        // return the root of the new tree, being the only node left in the queue
+        return queue.poll();
     }
 
     /**
@@ -86,8 +127,16 @@ public class HuffmanCompressor implements Compressor {
      * @return A map that maps byte values to their Huffman codes
      */
     public Map<Byte, ArrayList<Boolean>> createEncodingMap(ArrayList<HuffmanToken> tokens) {
-        // Stubbed out
-        return null;
+
+        // initialize return map
+        TreeMap<Byte, ArrayList<Boolean>> returnMap = new TreeMap<Byte, ArrayList<Boolean>>();
+
+        // substantiate the map using the values from each input token
+        for (HuffmanToken currentToken : tokens)
+            returnMap.put(currentToken.getValue(), currentToken.getCode());
+
+        // return the map
+        return returnMap;
     }
 
     /**
@@ -103,8 +152,7 @@ public class HuffmanCompressor implements Compressor {
      * @return An ArrayList of bits (Booleans) that represent the compressed (Huffman encoded) data
      */
     public ArrayList<Boolean> encodeBytes(byte[] data, Map<Byte, ArrayList<Boolean>> encodingMap) {
-        // Stubbed out
-        return null;
+
     }
 
     /**
