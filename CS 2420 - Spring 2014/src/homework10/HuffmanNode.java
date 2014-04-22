@@ -67,11 +67,10 @@ public class HuffmanNode implements Comparable<HuffmanNode> {
      */
     public HuffmanNode(HuffmanNode left, HuffmanNode right) {
         // initialize fields
-        //  sum the frequencies of the left and right nodes
-        this.totalFrequency = left.totalFrequency + right.totalFrequency;
-
-        // initialize list of tokens
-        this.tokens = new ArrayList<HuffmanToken>();
+        this.totalFrequency = left.totalFrequency + right.totalFrequency; //  sum the frequencies of the left and right nodes
+        this.tokens = new ArrayList<HuffmanToken>(); // initialize list of tokens
+        this.left = left; // set left and right nodes
+        this.right = right;
 
         // update the codes for the left and right nodes' tokens
         for (HuffmanToken leftToken : left.tokens)

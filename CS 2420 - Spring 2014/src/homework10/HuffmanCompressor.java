@@ -98,12 +98,12 @@ public class HuffmanCompressor implements Compressor {
 
         // create a node for each token and add the tokens to the queue
         for (HuffmanToken addToken : tokens) {
-            System.out.println("HuffmanCompressor: adding token " + addToken.getValue() + " to queue");
+//            System.out.println("HuffmanCompressor: adding token " + addToken.getValue() + " to queue");
             queue.add(new HuffmanNode(addToken));
-            System.out.println("HuffmanCompressor: added token " + addToken.getValue() + " to queue");
+//            System.out.println("HuffmanCompressor: added token " + addToken.getValue() + " to queue");
         }
 
-        System.out.println("HuffmanCompressor: starting queue while statement");
+//        System.out.println("HuffmanCompressor: starting queue while statement");
 
         // combine the nodes in the queue until there is only one node left
         while (queue.size() > 1) {
