@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="update">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanCompressor.java" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanCompressor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanCompressorTest.java" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanCompressorTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanNode.java" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanNode.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanTester.java" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanTester.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanToken.java" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanToken.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySetTest.java" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySetTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -72,7 +69,7 @@
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanNode.java" line="157" class="homework10.HuffmanNode" package="homework10">
+      <breakpoint url="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanNode.java" line="83" class="homework10.HuffmanNode" package="homework10">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -86,36 +83,6 @@
         <option name="INSTANCE_FILTERS_ENABLED" value="false" />
         <option name="CONDITION" value="&#13;&#13;JAVA" />
         <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanCompressor.java" line="97" class="homework10.HuffmanCompressor" package="homework10">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanTester.java" line="16" class="homework10.HuffmanTester" package="homework10">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </line_breakpoints>
     <breakpoint_rules />
@@ -136,24 +103,24 @@
       <file leaf-file-name="HuffmanCompressor.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanCompressor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="0" selection-start="4360" selection-end="4360" vertical-scroll-proportion="0.0" vertical-offset="1578" max-vertical-offset="5893">
+            <state line="117" column="52" selection-start="5522" selection-end="5522" vertical-scroll-proportion="0.0" vertical-offset="1757" max-vertical-offset="6170">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2179#2193#0" expanded="true" />
-                <element signature="e#2254#2269#0" expanded="true" />
-                <element signature="e#4257#4270#0" expanded="true" />
-                <element signature="e#5980#6006#0" expanded="true" />
-                <element signature="e#12410#12424#0" expanded="true" />
-                <element signature="e#13493#13502#0" expanded="true" />
+                <element signature="e#2254#2268#0" expanded="true" />
+                <element signature="e#2329#2344#0" expanded="true" />
+                <element signature="e#4332#4345#0" expanded="true" />
+                <element signature="e#6665#6691#0" expanded="true" />
+                <element signature="e#13095#13109#0" expanded="true" />
+                <element signature="e#14178#14187#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HuffmanToken.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="HuffmanToken.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanToken.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0" vertical-offset="254" max-vertical-offset="1394">
+            <state line="81" column="5" selection-start="2172" selection-end="2172" vertical-scroll-proportion="0.43362832" vertical-offset="499" max-vertical-offset="1155">
               <folding>
                 <element signature="docComment;class#HuffmanToken#0" expanded="false" />
                 <element signature="docComment;method#HuffmanToken#0;class#HuffmanToken#0" expanded="false" />
@@ -163,7 +130,6 @@
                 <element signature="docComment;method#setFrequency#0;class#HuffmanToken#0" expanded="false" />
                 <element signature="docComment;method#getValue#0;class#HuffmanToken#0" expanded="false" />
                 <element signature="docComment;method#prependBitToCode#0;class#HuffmanToken#0" expanded="false" />
-                <element signature="method#prependBitToCode#0;class#HuffmanToken#0" expanded="false" />
                 <element signature="docComment;method#getCode#0;class#HuffmanToken#0" expanded="false" />
                 <element signature="e#2498#2507#0" expanded="true" />
               </folding>
@@ -171,10 +137,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HuffmanTester.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="HuffmanTester.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanTester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="29" selection-start="453" selection-end="453" vertical-scroll-proportion="0.7116279" vertical-offset="51" max-vertical-offset="555">
+            <state line="24" column="0" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.0" vertical-offset="295" max-vertical-offset="781">
               <folding />
             </state>
           </provider>
@@ -183,7 +149,7 @@
       <file leaf-file-name="Test.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/Test.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+            <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="305">
               <folding />
             </state>
           </provider>
@@ -192,7 +158,7 @@
       <file leaf-file-name="HuffmanNode.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" vertical-offset="201" max-vertical-offset="3071">
+            <state line="79" column="29" selection-start="3307" selection-end="3307" vertical-scroll-proportion="0.0" vertical-offset="1196" max-vertical-offset="3348">
               <folding />
             </state>
           </provider>
@@ -275,12 +241,12 @@
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/Compressor.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySetTest.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanCompressorTest.java" />
-        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanNode.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanTools.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanToken.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/Test.txt" />
-        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanCompressor.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanTester.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanCompressor.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanNode.java" />
       </list>
     </option>
   </component>
@@ -720,7 +686,7 @@
       <workItem from="1397441613107" duration="1971000" />
       <workItem from="1397449058644" duration="2854000" />
       <workItem from="1397699261186" duration="9601000" />
-      <workItem from="1398131196919" duration="6022000" />
+      <workItem from="1398131196919" duration="8774000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -1150,11 +1116,15 @@
       <created>1398136311672</created>
       <updated>1398136311672</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="update">
+      <created>1398140456384</created>
+      <updated>1398140456384</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209615000" />
+    <option name="totallyTimeSpent" value="212367000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1185,7 +1155,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.62225705" sideWeight="0.50732064" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4278997" sideWeight="0.50732064" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32842106" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1196,7 +1166,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18740849" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.62225705" sideWeight="0.49267936" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4278997" sideWeight="0.49267936" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5139092" order="2" side_tool="false" content_ui="tabs" />
@@ -1504,9 +1474,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/Test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="305">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.0" vertical-offset="295" max-vertical-offset="781">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanCompressor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="52" selection-start="5522" selection-end="5522" vertical-scroll-proportion="0.0" vertical-offset="1757" max-vertical-offset="6170">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2254#2268#0" expanded="true" />
+            <element signature="e#2329#2344#0" expanded="true" />
+            <element signature="e#4332#4345#0" expanded="true" />
+            <element signature="e#6665#6691#0" expanded="true" />
+            <element signature="e#13095#13109#0" expanded="true" />
+            <element signature="e#14178#14187#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="29" selection-start="3307" selection-end="3307" vertical-scroll-proportion="0.0" vertical-offset="1196" max-vertical-offset="3348">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanToken.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0" vertical-offset="254" max-vertical-offset="1394">
+        <state line="81" column="5" selection-start="2172" selection-end="2172" vertical-scroll-proportion="0.43362832" vertical-offset="499" max-vertical-offset="1155">
           <folding>
             <element signature="docComment;class#HuffmanToken#0" expanded="false" />
             <element signature="docComment;method#HuffmanToken#0;class#HuffmanToken#0" expanded="false" />
@@ -1516,46 +1522,9 @@
             <element signature="docComment;method#setFrequency#0;class#HuffmanToken#0" expanded="false" />
             <element signature="docComment;method#getValue#0;class#HuffmanToken#0" expanded="false" />
             <element signature="docComment;method#prependBitToCode#0;class#HuffmanToken#0" expanded="false" />
-            <element signature="method#prependBitToCode#0;class#HuffmanToken#0" expanded="false" />
             <element signature="docComment;method#getCode#0;class#HuffmanToken#0" expanded="false" />
             <element signature="e#2498#2507#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/Test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="227">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" vertical-offset="201" max-vertical-offset="3071">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanCompressor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="0" selection-start="4360" selection-end="4360" vertical-scroll-proportion="0.0" vertical-offset="1578" max-vertical-offset="5893">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2179#2193#0" expanded="true" />
-            <element signature="e#2254#2269#0" expanded="true" />
-            <element signature="e#4257#4270#0" expanded="true" />
-            <element signature="e#5980#6006#0" expanded="true" />
-            <element signature="e#12410#12424#0" expanded="true" />
-            <element signature="e#13493#13502#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="29" selection-start="453" selection-end="453" vertical-scroll-proportion="0.7116279" vertical-offset="51" max-vertical-offset="555">
-          <folding />
         </state>
       </provider>
     </entry>

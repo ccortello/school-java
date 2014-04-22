@@ -33,8 +33,13 @@ public class HuffmanNode implements Comparable<HuffmanNode> {
      * @param token The token to store in this leaf node
      */
     public HuffmanNode(HuffmanToken token) {
+
+        // initialize the frequency and list of tokens
         this.totalFrequency = token.getFrequency();
         this.tokens = new ArrayList<HuffmanToken>();
+
+        // add this node to its own list of tokens
+        this.tokens.add(token);
     }
 
     /**
@@ -61,8 +66,12 @@ public class HuffmanNode implements Comparable<HuffmanNode> {
      * @param right The subtree to become the right child of this node
      */
     public HuffmanNode(HuffmanNode left, HuffmanNode right) {
-        // sum the frequencies of the left and right nodes
+        // initialize fields
+        //  sum the frequencies of the left and right nodes
         this.totalFrequency = left.totalFrequency + right.totalFrequency;
+
+        // initialize list of tokens
+        this.tokens = new ArrayList<HuffmanToken>();
 
         // update the codes for the left and right nodes' tokens
         for (HuffmanToken leftToken : left.tokens)
@@ -72,8 +81,8 @@ public class HuffmanNode implements Comparable<HuffmanNode> {
 
         // add the tokens of the left and right nodes in sorted order
         // TODO: should this be in compareTo sorted order, or simply 'left then right' order as below?
-        this.tokens.addAll(left.tokens);
-        this.tokens.addAll(right.tokens);
+        if (left != null) this.tokens.addAll(left.tokens);
+        if (right != null) this.tokens.addAll(right.tokens);
     }
 
     /**
@@ -83,7 +92,7 @@ public class HuffmanNode implements Comparable<HuffmanNode> {
      * @return The left subtree of this node
      */
     public HuffmanNode getLeftSubtree() {
-        if (this.left == null) return null;
+        if (!this.isLeafNode()) return null;
         else return this.left;
     }
 
@@ -94,7 +103,7 @@ public class HuffmanNode implements Comparable<HuffmanNode> {
      * @return The right subtree of this node
      */
     public HuffmanNode getRightSubtree() {
-        if (this.right == null) return null;
+        if (!this.isLeafNode()) return null;
         else return this.right;
     }
 

@@ -103,13 +103,20 @@ public class HuffmanCompressor implements Compressor {
             System.out.println("HuffmanCompressor: added token " + addToken.getValue() + " to queue");
         }
 
+        System.out.println("HuffmanCompressor: starting queue while statement");
+
         // combine the nodes in the queue until there is only one node left
         while (queue.size() > 1) {
 
             // poll the bottom two nodes and combine them
             HuffmanNode firstNode = queue.poll();
             HuffmanNode secondNode = queue.poll();
+            System.out.println("HuffmanCompressor: combining " + firstNode.getToken().getValue()
+                    + " (frequency " + firstNode.getToken().getFrequency() + ") with " + secondNode.getToken().getValue()
+                    + " (frequency " + secondNode.getToken().getFrequency() + ")");
             HuffmanNode combineNode = new HuffmanNode(firstNode, secondNode);
+            System.out.println("HuffmanCompressor: combined node is " + combineNode.getToken().getValue() + " with frequency "
+                    + combineNode.getToken().getFrequency() + " and code " + combineNode.getToken().getCode());
 
             // add the combined node back to the queue
             queue.add(combineNode);
