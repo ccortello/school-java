@@ -98,6 +98,9 @@ public class HuffmanCompressor implements Compressor {
         for (HuffmanToken addToken : tokens)
             queue.add(new HuffmanNode(addToken));
 
+//        debug print the queue
+        System.out.println(queue);
+
         // combine the nodes in the queue until there is only one node left
         while (queue.size() > 1) {
 
@@ -153,6 +156,8 @@ public class HuffmanCompressor implements Compressor {
      */
     public ArrayList<Boolean> encodeBytes(byte[] data, Map<Byte, ArrayList<Boolean>> encodingMap) {
 
+        // stubbed out
+        return new ArrayList<Boolean>();
     }
 
     /**
@@ -189,7 +194,7 @@ public class HuffmanCompressor implements Compressor {
      * Some of the code for this method has been provided for you.  You should figure out
      * what it does, it will significantly help you.
      *
-     * @param compressedData An array of bytes that contains some data that should be compressed
+     * @param data An array of bytes that contains some data that should be compressed
      * @return An array of bytes that contains the compressed form of the original data
      */
     public byte[] compress(byte[] data) {
@@ -216,7 +221,7 @@ public class HuffmanCompressor implements Compressor {
         }
 
         // Return statement stubbed out.
-        return null;
+        return output;
     }
 
     /**
