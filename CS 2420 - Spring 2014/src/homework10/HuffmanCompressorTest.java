@@ -30,6 +30,7 @@ public class HuffmanCompressorTest {
     @Test
     public void test02() {
         HuffmanCompressor compressor = new HuffmanCompressor();
-        HuffmanTools.readBytesFromFile("Yankee.txt");
+        byte[] byteArray = HuffmanTools.readBytesFromFile("Yankee.txt");
+        HuffmanTools.dumpHuffmanCodedData(byteArray);
     }
 }

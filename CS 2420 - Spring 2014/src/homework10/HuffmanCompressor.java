@@ -1,6 +1,8 @@
 package homework10;
 
-import java.io.*;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
 import java.util.*;
 
 /**
@@ -57,7 +59,7 @@ public class HuffmanCompressor implements Compressor {
 
             // check if the byte already exists in the map, and either create an entry or increment the frequency accordingly
             if (!frequencyMap.containsKey(currentByte))
-                frequencyMap.put(currentByte, 0);
+                frequencyMap.put(currentByte, 1);
             else frequencyMap.put(currentByte, frequencyMap.get(currentByte) + 1);
         }
 
@@ -95,11 +97,11 @@ public class HuffmanCompressor implements Compressor {
         PriorityQueue<HuffmanNode> queue = new PriorityQueue<HuffmanNode>(tokens.size());
 
         // create a node for each token and add the tokens to the queue
-        for (HuffmanToken addToken : tokens)
+        for (HuffmanToken addToken : tokens) {
+            System.out.println("HuffmanCompressor: adding token " + addToken.getValue() + " to queue");
             queue.add(new HuffmanNode(addToken));
-
-//        debug print the queue
-        System.out.println(queue);
+            System.out.println("HuffmanCompressor: added token " + addToken.getValue() + " to queue");
+        }
 
         // combine the nodes in the queue until there is only one node left
         while (queue.size() > 1) {
@@ -198,30 +200,30 @@ public class HuffmanCompressor implements Compressor {
      * @return An array of bytes that contains the compressed form of the original data
      */
     public byte[] compress(byte[] data) {
-        // Variable initialization and compression steps stubbed out here.
-
-        HuffmanTools.dumpHuffmanCodes(tokens);  // Useful for debugging
-
-        // You need to set up the appropriate variables before this code begins.  This
-        //   code will place various data elements of the compressed data into
-        //   a byte array for you.
-
-        try {
-            ByteArrayOutputStream byteOutput = new ByteArrayOutputStream();
-            DataOutputStream output = new DataOutputStream(byteOutput);
-
-            output.writeInt(data.length);
-            writeTokenList(output, tokens);
-            writeBitCodes(output, encodedBits);
-
-            compressedBytes = byteOutput.toByteArray();
-        } catch (IOException e) {
-            System.out.println("Fatal compression error: " + e.getMessage());
-            e.printStackTrace();
-        }
-
-        // Return statement stubbed out.
-        return output;
+//        // Variable initialization and compression steps stubbed out here.
+//
+//        HuffmanTools.dumpHuffmanCodes(tokens);  // Useful for debugging
+//
+//        // You need to set up the appropriate variables before this code begins.  This
+//        //   code will place various data elements of the compressed data into
+//        //   a byte array for you.
+//
+//        try {
+//            ByteArrayOutputStream byteOutput = new ByteArrayOutputStream();
+//            DataOutputStream output = new DataOutputStream(byteOutput);
+//
+//            output.writeInt(data.length);
+//            writeTokenList(output, tokens);
+//            writeBitCodes(output, encodedBits);
+//
+//            compressedBytes = byteOutput.toByteArray();
+//        } catch (IOException e) {
+//            System.out.println("Fatal compression error: " + e.getMessage());
+//            e.printStackTrace();
+//        }
+//
+//        // Return statement stubbed out.
+        return null;
     }
 
     /**
@@ -239,29 +241,29 @@ public class HuffmanCompressor implements Compressor {
      * @return An array of bytes that contains the original, uncompressed data
      */
     public byte[] decompress(byte[] compressedData) {
-        // Variable initialization stubbed out here.
-
-        // You need to set up the appropriate variables before this code begins.  This
-        //   code will extract various data elements from the compressedData bytes for you.
-
-        try {
-            ByteArrayInputStream byteInput = new ByteArrayInputStream(compressedData);
-            DataInputStream input = new DataInputStream(byteInput);
-
-            dataLength = input.readInt();
-            tokens = readTokenList(input);
-            encodedBits = readBitCodes(input);
-        } catch (IOException e) {
-            System.out.println("Fatal compression error: " + e.getMessage());
-            e.printStackTrace();
-            return null;
-        }
-
-        // Decompression steps stubbed out here.
-
-        HuffmanTools.dumpHuffmanCodes(tokens);  // Useful for debugging
-
-        // Return statement stubbed out.
+//        // Variable initialization stubbed out here.
+//
+//        // You need to set up the appropriate variables before this code begins.  This
+//        //   code will extract various data elements from the compressedData bytes for you.
+//
+//        try {
+//            ByteArrayInputStream byteInput = new ByteArrayInputStream(compressedData);
+//            DataInputStream input = new DataInputStream(byteInput);
+//
+//            dataLength = input.readInt();
+//            tokens = readTokenList(input);
+//            encodedBits = readBitCodes(input);
+//        } catch (IOException e) {
+//            System.out.println("Fatal compression error: " + e.getMessage());
+//            e.printStackTrace();
+//            return null;
+//        }
+//
+//        // Decompression steps stubbed out here.
+//
+//        HuffmanTools.dumpHuffmanCodes(tokens);  // Useful for debugging
+//
+//        // Return statement stubbed out.
         return null;
     }
 

@@ -34,6 +34,7 @@ public class HuffmanNode implements Comparable<HuffmanNode> {
      */
     public HuffmanNode(HuffmanToken token) {
         this.totalFrequency = token.getFrequency();
+        this.tokens = new ArrayList<HuffmanToken>();
     }
 
     /**
@@ -152,6 +153,7 @@ public class HuffmanNode implements Comparable<HuffmanNode> {
      * @return -1, 0, or 1, depending on the relative order of the nodes
      */
     public int compareTo(HuffmanNode node) {
+
         // first, compare frequencies
         if (this.totalFrequency < node.totalFrequency) return -1;
         else if (this.totalFrequency > node.totalFrequency) return 1;

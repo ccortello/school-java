@@ -33,7 +33,7 @@ public class HuffmanToken {
      */
     public HuffmanToken(byte value) {
         this.value = value;
-        this.frequency = 0;
+        this.frequency = 1;
         this.code = new ArrayList<Boolean>();
     }
 
