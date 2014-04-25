@@ -22,6 +22,6 @@ public class HuffmanTester {
 //                    +currentToken.getCode());
 //        }
 
-        HuffmanNode huffmanRoot = compressor.buildHuffmanCodeTree(huffmanTokens);
+//        HuffmanNode huffmanRoot = compressor.buildHuffmanCodeTree(huffmanTokens);
     }
 }
