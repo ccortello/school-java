@@ -111,12 +111,16 @@ public class HuffmanCompressor implements Compressor {
             // poll the bottom two nodes and combine them
             HuffmanNode firstNode = queue.poll();
             HuffmanNode secondNode = queue.poll();
-            System.out.println("HuffmanCompressor: combining " + firstNode.getToken().getValue()
-                    + " (frequency " + firstNode.getToken().getFrequency() + ") with " + secondNode.getToken().getValue()
-                    + " (frequency " + secondNode.getToken().getFrequency() + ")");
+//            if (firstNode.getToken() != null && secondNode.getToken() != null)
+//            System.out.println("HuffmanCompressor: combining " + firstNode.getToken().getValue()
+//                    + " (frequency " + firstNode.getToken().getFrequency() + ") with " + secondNode.getToken().getValue()
+//                    + " (frequency " + secondNode.getToken().getFrequency() + ")");
+
             HuffmanNode combineNode = new HuffmanNode(firstNode, secondNode);
-            System.out.println("HuffmanCompressor: combined node is " + combineNode.getToken().getValue() + " with frequency "
-                    + combineNode.getToken().getFrequency() + " and code " + combineNode.getToken().getCode());
+
+//            if (combineNode.getToken() != null)
+//                System.out.println("HuffmanCompressor: combined node is " + combineNode.getToken().getValue() + " with frequency "
+//                    + combineNode.getToken().getFrequency() + " and code " + combineNode.getToken().getCode());
 
             // add the combined node back to the queue
             queue.add(combineNode);
@@ -307,18 +311,32 @@ public class HuffmanCompressor implements Compressor {
     }
 
     /**
-     * The student should write the comments for this method.
+     * This method writes the bytes represented by an ArrayList of booleans to the given DataOutputStream object and
+     * returns a count of the bytes written.
+     *
+     * @param output    an DataOutputStream object which the bytes should be written to
+     * @param bits      an ArrayList of booleans which represent bytes
+     * @return the number of bytes written to the DataOutputStream
+     *
+     * @throws java.io.IOException
      */
     public int writeBitCodes(DataOutputStream output, ArrayList<Boolean> bits) throws IOException {
         int bytesWritten = 0;
 
+        // loop through input ArrayList 8 booleans (1 byte) at a time
         for (int pos = 0; pos < bits.size(); pos += 8) {
             int b = 0;
+
+            // use the next 8 positions to substantiate a return byte
             for (int i = 0; i < 8; i++) {
                 b = b * 2;
+
+                // increment b if the boolean at the relevant position is true
                 if (pos + i < bits.size() && bits.get(pos + i))
                     b = b + 1;
             }
+
+            // write the substantiated byte to the output stream and update the bytesWritten counter
             output.writeByte((byte) b);
             bytesWritten++;
         }
@@ -327,14 +345,22 @@ public class HuffmanCompressor implements Compressor {
     }
 
     /**
-     * The student should write the comments for this method.
+     * Given a DataInputStream this function returns an ArrayList<Boolean> of the bits in the DataInputStream
+     *
+     * @param input a DataInputStream object to read bits from
+     * @return an ArrayList which represents the bits available in the DataInputStream
+     *
+     * @throws java.io.IOException
      */
     public ArrayList<Boolean> readBitCodes(DataInputStream input) throws IOException {
         ArrayList<Boolean> bits = new ArrayList<Boolean>();
 
+        // read each of the bytes from the input one at a time
         while (input.available() > 0) {
             int b = input.readByte();
 
+            // shift the current byte and AND the byte with 1 to write each bit of the byte to the output ArrayList
+            //  note: the '==1' returns true iff the bit is a one, which makes it effectively a cast from int to boolean
             for (int i = 7; i >= 0; i--)
                 bits.add(((b >> i) & 1) == 1);
         }

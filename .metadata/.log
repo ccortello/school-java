@@ -1262,3 +1262,38 @@ org.eclipse.swt.SWTException: Widget is disposed
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+
+!ENTRY org.eclipse.team.cvs.core 4 274 2014-04-24 21:30:38.678
+!MESSAGE Problem writing resource '/CS 2420 - Spring 2014/src/homework09/experiment02/CVS/Template'. Resource is out of sync with the file system: '/CS 2420 - Spring 2014/src/homework09/experiment02/CVS/Template'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/CS 2420 - Spring 2014/src/homework09/experiment02/CVS/Template'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.write(FileSystemResourceManager.java:1076)
+	at org.eclipse.core.internal.resources.File.internalSetContents(File.java:321)
+	at org.eclipse.core.internal.resources.File.setContents(File.java:360)
+	at org.eclipse.core.internal.resources.File.setContents(File.java:464)
+	at org.eclipse.team.internal.ccvs.core.resources.EclipseFile.setContents(EclipseFile.java:180)
+	at org.eclipse.team.internal.ccvs.core.client.Session.receiveFile(Session.java:801)
+	at org.eclipse.team.internal.ccvs.core.client.TemplateHandler.handle(TemplateHandler.java:102)
+	at org.eclipse.team.internal.ccvs.core.client.Request.executeRequest(Request.java:218)
+	at org.eclipse.team.internal.ccvs.core.client.Command.doExecute(Command.java:413)
+	at org.eclipse.team.internal.ccvs.core.client.Command$1.run(Command.java:326)
+	at org.eclipse.team.internal.ccvs.core.resources.EclipseSynchronizer.run(EclipseSynchronizer.java:1474)
+	at org.eclipse.team.internal.ccvs.core.resources.EclipseResource$2.run(EclipseResource.java:262)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.team.internal.ccvs.core.resources.EclipseResource.run(EclipseResource.java:259)
+	at org.eclipse.team.internal.ccvs.core.client.Command.execute(Command.java:338)
+	at org.eclipse.team.internal.ccvs.core.client.Command.execute(Command.java:804)
+	at org.eclipse.team.internal.ccvs.ui.operations.AddOperation.add(AddOperation.java:178)
+	at org.eclipse.team.internal.ccvs.ui.operations.AddOperation.execute(AddOperation.java:66)
+	at org.eclipse.team.internal.ccvs.ui.operations.RepositoryProviderOperation.execute(RepositoryProviderOperation.java:275)
+	at org.eclipse.team.internal.ccvs.ui.operations.RepositoryProviderOperation.execute(RepositoryProviderOperation.java:251)
+	at org.eclipse.team.internal.ccvs.ui.operations.RepositoryProviderOperation.execute(RepositoryProviderOperation.java:205)
+	at org.eclipse.team.internal.ccvs.ui.operations.CVSOperation.run(CVSOperation.java:79)
+	at org.eclipse.team.internal.ccvs.ui.wizards.CommitWizard$AddAndCommitOperation.execute(CommitWizard.java:99)
+	at org.eclipse.team.internal.ccvs.ui.operations.CVSOperation.run(CVSOperation.java:79)
+	at org.eclipse.team.internal.ui.actions.JobRunnableContext.run(JobRunnableContext.java:144)
+	at org.eclipse.team.internal.ui.actions.JobRunnableContext$ResourceJob.runInWorkspace(JobRunnableContext.java:72)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2014-04-24 21:30:38.679
+!MESSAGE Resource is out of sync with the file system: '/CS 2420 - Spring 2014/src/homework09/experiment02/CVS/Template'.

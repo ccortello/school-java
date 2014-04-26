@@ -17,11 +17,22 @@ public class HuffmanTester {
         ArrayList<HuffmanToken> huffmanTokens = compressor.countTokens(byteArray);
 
 // debug: output each token, its frequency, and its code
-//        for (HuffmanToken currentToken : huffmanTokens) {
+//        for (HuffmanToken currentToken: huffmanTokens) {
 //            System.out.println(((char) currentToken.getValue())+" has frequency "+currentToken.getFrequency()+" and code "
 //                    +currentToken.getCode());
 //        }
 
-//        HuffmanNode huffmanRoot = compressor.buildHuffmanCodeTree(huffmanTokens);
+//        System.out.println("\nCreating Tree");
+        HuffmanNode huffmanRoot = compressor.buildHuffmanCodeTree(huffmanTokens);
+
+//        System.out.print("\nTokens after tree creation:");
+//
+//        // debug: output each token, its frequency, and its code
+//        for (HuffmanToken currentToken: huffmanTokens) {
+//            System.out.println(((char) currentToken.getValue())+" has frequency "+currentToken.getFrequency()+" and code "
+//                    +currentToken.getCode());
+//        }
+
+
     }
 }
