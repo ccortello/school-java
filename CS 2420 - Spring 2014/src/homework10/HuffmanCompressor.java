@@ -282,11 +282,19 @@ public class HuffmanCompressor implements Compressor {
     //   this code, you should try to comment these methods yourself.
 
     /**
-     * The student should write the comments for this method.
+     * The method writes the code table of a given ArrayList of HuffmanToken objects to the given DataOutputStream. This
+     * is used as the second segment of output when compressing data
+     *
+     * @param output    the DataOutputStream to be written to
+     * @param tokens    the HuffmanTokens which are used to write the output code table
+     *
+     * @throws java.io.IOException
      */
     public void writeTokenList(DataOutputStream output, ArrayList<HuffmanToken> tokens) throws IOException {
+        // write the number of tokens to the output
         output.writeInt(tokens.size());
 
+        // write each token's value and frequency to the output
         for (HuffmanToken token : tokens) {
             output.writeByte(token.getValue());
             output.writeInt(token.getFrequency());
@@ -294,13 +302,23 @@ public class HuffmanCompressor implements Compressor {
     }
 
     /**
-     * The student should write the comments for this method.
+     * This method substantiates an ArrayList of HuffmanTokens by reading the DataInputStream (which represents a
+     * compressed code table of values and frequencies).
+     *
+     * @param input     the DataInputStream to be read
+     * @return an ArrayList of HuffmanTokens
      */
     public ArrayList<HuffmanToken> readTokenList(DataInputStream input) throws IOException {
+
+        // initialize the return list
         ArrayList<HuffmanToken> tokens = new ArrayList<HuffmanToken>();
 
+        // use the first integer in the input stream to set a count of tokens to read from the DataInputStream
         int count = input.readInt();
 
+        // use each value and frequency in the code table (again, existing in the given DataInputStream) to create
+        // HuffmanTokens.
+        //  note: the DataInputStream
         for (int i = 0; i < count; i++) {
             HuffmanToken token = new HuffmanToken(input.readByte());
             token.setFrequency(input.readInt());
