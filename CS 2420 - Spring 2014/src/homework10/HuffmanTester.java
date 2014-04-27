@@ -1,38 +1,26 @@
 package homework10;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
- * Created by Cody on 4/16/14.
+ * Created by Cody Cortello and Nick Houle on 4/16/14.
  */
 public class HuffmanTester {
     public static void main(String[] args) {
+        new HuffmanTester();
+    }
+
+    public HuffmanTester() {
         HuffmanCompressor compressor = new HuffmanCompressor();
-        byte[] byteArray = HuffmanTools.readBytesFromFile("C:\\Users\\Cody\\workspace\\CS 2420 - Spring 2014\\src\\homework10\\Yankee.txt");
-//        HuffmanTools.dumpBytesAsValues(byteArray, 0, 100); System.out.println();
-//        HuffmanTools.dumpBytesAsIntegers(byteArray, 0, 100); System.out.println();
-//        HuffmanTools.dumpBytesAsCharacters(byteArray, 0, 100); System.out.println();
-//        HuffmanTools.dumpBytesAsBits(byteArray, 0, 100); System.out.println();
+        byte[] byteArray = HuffmanTools.readBytesFromFile("C:\\Users\\Cody\\workspace\\CS 2420 - Spring 2014\\src\\homework10\\Ulysses.txt");
 
-        ArrayList<HuffmanToken> huffmanTokens = compressor.countTokens(byteArray);
-
-// debug: output each token, its frequency, and its code
-//        for (HuffmanToken currentToken: huffmanTokens) {
-//            System.out.println(((char) currentToken.getValue())+" has frequency "+currentToken.getFrequency()+" and code "
-//                    +currentToken.getCode());
-//        }
-
-//        System.out.println("\nCreating Tree");
-        HuffmanNode huffmanRoot = compressor.buildHuffmanCodeTree(huffmanTokens);
-
-//        System.out.print("\nTokens after tree creation:");
-//
-//        // debug: output each token, its frequency, and its code
-//        for (HuffmanToken currentToken: huffmanTokens) {
-//            System.out.println(((char) currentToken.getValue())+" has frequency "+currentToken.getFrequency()+" and code "
-//                    +currentToken.getCode());
-//        }
-
-
+        // attempt top down compression and decompression
+        byte[] compressedBytes = compressor.compress(byteArray);
+        byte[] decompressedBytes = compressor.decompress(compressedBytes);
+        HuffmanTools.writeBytesToFile("Compression output.txt", decompressedBytes);
+        if (Arrays.equals(byteArray, decompressedBytes))
+            System.out.println("Compression successful!");
+        else
+            System.out.println("Compression failed");
     }
 }

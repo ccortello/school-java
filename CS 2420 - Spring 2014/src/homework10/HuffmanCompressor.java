@@ -1,8 +1,6 @@
 package homework10;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.util.*;
 
 /**
@@ -97,13 +95,8 @@ public class HuffmanCompressor implements Compressor {
         PriorityQueue<HuffmanNode> queue = new PriorityQueue<HuffmanNode>(tokens.size());
 
         // create a node for each token and add the tokens to the queue
-        for (HuffmanToken addToken : tokens) {
-//            System.out.println("HuffmanCompressor: adding token " + addToken.getValue() + " to queue");
+        for (HuffmanToken addToken : tokens)
             queue.add(new HuffmanNode(addToken));
-//            System.out.println("HuffmanCompressor: added token " + addToken.getValue() + " to queue");
-        }
-
-//        System.out.println("HuffmanCompressor: starting queue while statement");
 
         // combine the nodes in the queue until there is only one node left
         while (queue.size() > 1) {
@@ -111,16 +104,7 @@ public class HuffmanCompressor implements Compressor {
             // poll the bottom two nodes and combine them
             HuffmanNode firstNode = queue.poll();
             HuffmanNode secondNode = queue.poll();
-//            if (firstNode.getToken() != null && secondNode.getToken() != null)
-//            System.out.println("HuffmanCompressor: combining " + firstNode.getToken().getValue()
-//                    + " (frequency " + firstNode.getToken().getFrequency() + ") with " + secondNode.getToken().getValue()
-//                    + " (frequency " + secondNode.getToken().getFrequency() + ")");
-
             HuffmanNode combineNode = new HuffmanNode(firstNode, secondNode);
-
-//            if (combineNode.getToken() != null)
-//                System.out.println("HuffmanCompressor: combined node is " + combineNode.getToken().getValue() + " with frequency "
-//                    + combineNode.getToken().getFrequency() + " and code " + combineNode.getToken().getCode());
 
             // add the combined node back to the queue
             queue.add(combineNode);
@@ -169,18 +153,24 @@ public class HuffmanCompressor implements Compressor {
      */
     public ArrayList<Boolean> encodeBytes(byte[] data, Map<Byte, ArrayList<Boolean>> encodingMap) {
 
-        // stubbed out
-        return new ArrayList<Boolean>();
+        // initialize return list
+        ArrayList<Boolean> returnList = new ArrayList<Boolean>();
+
+        // for each byte in the input array find the uncompressed value from the map and write the byte to the array
+        for (byte currentByte : data)
+            returnList.addAll(encodingMap.get(currentByte));
+
+        return returnList;
     }
 
     /**
      * This helper method decodes a list of bits (which are Huffman codes) into
      * an array of bytes.  In order to do the decoding, a Huffman tree
-     * containing the tokens is required.<p>&nbsp;<p>
-     * <p/>
+     * containing the tokens is required.
+     *
      * To do the decoding, follow the decoding algorithm given in the book
-     * or review your notes from lecture.<p>&nbsp;<p>
-     * <p/>
+     * or review your notes from lecture.
+     *
      * (You will need
      * to build a Huffman tree prior to calling this method, and the Huffman
      * tree you build should be exactly the same as the one that was used to
@@ -192,8 +182,34 @@ public class HuffmanCompressor implements Compressor {
      * @return An array of bytes that represent the uncompressed data
      */
     public byte[] decodeBits(ArrayList<Boolean> bitCodes, HuffmanNode codeTree, int dataLength) {
-        // Stubbed out
-        return null;
+
+        // intialize the return array using the input dataLength
+        byte[] returnArray = new byte[dataLength];
+
+        // create two markers to indicate where the return array should be written to and the position where the next bit
+        //  should be read from
+        int writePosition = 0, bitPos = 0;
+
+        // use the bits in the input array to traverse the tree and output the bytes when a leaf node is encountered
+        HuffmanNode currentNode = codeTree;
+        while (writePosition < dataLength) {
+
+            // until the current node is a leaf keep traversing down the tree and incrementing the position
+            while (!currentNode.isLeafNode()) {
+                if (bitCodes.get(bitPos)) currentNode = currentNode.getRightSubtree();
+                else currentNode = currentNode.getLeftSubtree();
+                bitPos++;
+            }
+
+            // once a leaf node has been found write the token to the output array, increment the write position, and
+            //  reset currentNode to reset the looping
+            returnArray[writePosition] = currentNode.getToken().getValue();
+            writePosition++;
+            currentNode = codeTree;
+        }
+
+        // return the array of uncompressed bits
+        return returnArray;
     }
 
     /**
@@ -211,30 +227,42 @@ public class HuffmanCompressor implements Compressor {
      * @return An array of bytes that contains the compressed form of the original data
      */
     public byte[] compress(byte[] data) {
-//        // Variable initialization and compression steps stubbed out here.
-//
-//        HuffmanTools.dumpHuffmanCodes(tokens);  // Useful for debugging
-//
-//        // You need to set up the appropriate variables before this code begins.  This
-//        //   code will place various data elements of the compressed data into
-//        //   a byte array for you.
-//
-//        try {
-//            ByteArrayOutputStream byteOutput = new ByteArrayOutputStream();
-//            DataOutputStream output = new DataOutputStream(byteOutput);
-//
-//            output.writeInt(data.length);
-//            writeTokenList(output, tokens);
-//            writeBitCodes(output, encodedBits);
-//
-//            compressedBytes = byteOutput.toByteArray();
-//        } catch (IOException e) {
-//            System.out.println("Fatal compression error: " + e.getMessage());
-//            e.printStackTrace();
-//        }
-//
-//        // Return statement stubbed out.
-        return null;
+
+        // initialize the output array
+        byte[] compressedBytes = new byte[]{};
+
+        // use the input array to substantiate a list of HuffmanTokens
+        ArrayList<HuffmanToken> tokens = countTokens(data);
+
+        // create a tree with the tokens to set their codes correctly
+        buildHuffmanCodeTree(tokens);
+
+        // use the tokens to encode the bits
+        ArrayList<Boolean> encodedBits = encodeBytes(data, createEncodingMap(tokens));
+
+        HuffmanTools.dumpHuffmanCodes(tokens);  // Useful for debugging
+
+        // You need to set up the appropriate variables before this code begins.  This
+        //   code will place various data elements of the compressed data into
+        //   a byte array for you.
+
+        try {
+            ByteArrayOutputStream byteOutput = new ByteArrayOutputStream();
+            DataOutputStream output = new DataOutputStream(byteOutput);
+
+            // write the compressed data: first the size of the uncompressed data, then the code table of values and
+            //  frequencies of the bytes, and fin
+            output.writeInt(data.length);
+            writeTokenList(output, tokens);
+            writeBitCodes(output, encodedBits);
+
+            compressedBytes = byteOutput.toByteArray();
+        } catch (IOException e) {
+            System.out.println("Fatal compression error: " + e.getMessage());
+            e.printStackTrace();
+        }
+
+        return compressedBytes;
     }
 
     /**
@@ -252,30 +280,40 @@ public class HuffmanCompressor implements Compressor {
      * @return An array of bytes that contains the original, uncompressed data
      */
     public byte[] decompress(byte[] compressedData) {
-//        // Variable initialization stubbed out here.
-//
-//        // You need to set up the appropriate variables before this code begins.  This
-//        //   code will extract various data elements from the compressedData bytes for you.
-//
-//        try {
-//            ByteArrayInputStream byteInput = new ByteArrayInputStream(compressedData);
-//            DataInputStream input = new DataInputStream(byteInput);
-//
-//            dataLength = input.readInt();
-//            tokens = readTokenList(input);
-//            encodedBits = readBitCodes(input);
-//        } catch (IOException e) {
-//            System.out.println("Fatal compression error: " + e.getMessage());
-//            e.printStackTrace();
-//            return null;
-//        }
-//
-//        // Decompression steps stubbed out here.
-//
+
+        // Variable initialization stubbed out here.
+        int dataLength;
+        ArrayList<HuffmanToken> tokens;
+        ArrayList<Boolean> encodedBits;
+
+        // You need to set up the appropriate variables before this code begins.  This
+        //   code will extract various data elements from the compressedData bytes for you.
+
+        try {
+            ByteArrayInputStream byteInput = new ByteArrayInputStream(compressedData);
+            DataInputStream input = new DataInputStream(byteInput);
+
+            dataLength = input.readInt();
+            tokens = readTokenList(input);
+            encodedBits = readBitCodes(input);
+        } catch (IOException e) {
+            System.out.println("Fatal compression error: " + e.getMessage());
+            e.printStackTrace();
+            return null;
+        }
+
+        // Decompression steps stubbed out here.
+
+        // create a tree from the tokens
+        HuffmanNode root = buildHuffmanCodeTree(tokens);
+
+        // decode the given bits using the substantiated tree
+        byte[] decompressedData = decodeBits(encodedBits, root, dataLength);
+
 //        HuffmanTools.dumpHuffmanCodes(tokens);  // Useful for debugging
-//
-//        // Return statement stubbed out.
-        return null;
+
+        // Return statement stubbed out.
+        return decompressedData;
     }
 
     // The following methods read and write data values from a ByteArray Streams.  Because I'm giving you
@@ -318,13 +356,15 @@ public class HuffmanCompressor implements Compressor {
 
         // use each value and frequency in the code table (again, existing in the given DataInputStream) to create
         // HuffmanTokens.
-        //  note: the DataInputStream
+        //  note: the DataInputStream will stop reading exactly where the code table ends and the compressed data begins
+        //        since the count of tokens determines the number of values and frequencies which are read
         for (int i = 0; i < count; i++) {
             HuffmanToken token = new HuffmanToken(input.readByte());
             token.setFrequency(input.readInt());
             tokens.add(token);
         }
 
+        // return the substantited list of HuffmanTokens
         return tokens;
     }
 

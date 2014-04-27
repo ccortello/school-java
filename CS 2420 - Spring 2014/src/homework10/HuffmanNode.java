@@ -79,7 +79,7 @@ public class HuffmanNode implements Comparable<HuffmanNode> {
             rightToken.prependBitToCode(true);
 
         // add the tokens of the left and right nodes in sorted order
-        // TODO: should this be in compareTo sorted order, or simply 'left then right' order as below?
+        // TODO: should this be in compareTo sorted order, or simply 'in order' order as below?
         if (left != null) this.tokens.addAll(left.tokens);
         if (right != null) this.tokens.addAll(right.tokens);
     }
@@ -91,7 +91,7 @@ public class HuffmanNode implements Comparable<HuffmanNode> {
      * @return The left subtree of this node
      */
     public HuffmanNode getLeftSubtree() {
-        if (!this.isLeafNode()) return null;
+        if (this.isLeafNode()) return null;
         else return this.left;
     }
 
@@ -102,7 +102,7 @@ public class HuffmanNode implements Comparable<HuffmanNode> {
      * @return The right subtree of this node
      */
     public HuffmanNode getRightSubtree() {
-        if (!this.isLeafNode()) return null;
+        if (this.isLeafNode()) return null;
         else return this.right;
     }
 
