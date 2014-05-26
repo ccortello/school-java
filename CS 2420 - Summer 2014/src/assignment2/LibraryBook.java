@@ -67,10 +67,20 @@ public class LibraryBook extends Book {
     }
 
     public void checkIn() {
-
+        // remove 'holder' and 'dueDate'
+        this.holder = null;
+        this.dueDate = null;
     }
 
-    public void checkOut() {
-
+    /**
+     * Checks out a book,
+     *
+     * @param holder
+     * @param dueDate
+     */
+    public void checkOut(String holder, GregorianCalendar dueDate) {
+        // set 'holder' and 'dueDate'
+        this.holder = holder;
+        this.dueDate = dueDate;
     }
 }
