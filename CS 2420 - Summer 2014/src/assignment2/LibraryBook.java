@@ -20,11 +20,6 @@ public class LibraryBook extends Book {
         super(_isbn, _author, _title);
         this.holder = holder;
         this.dueDate = dueDate;
-
-        // does super(...); make these redundant?
-//        this.isbn = _isbn;
-//        this.author = _author;
-//        this.title = _title;
     }
 
     /**
@@ -49,31 +44,10 @@ public class LibraryBook extends Book {
     }
 
     /**
-     * Two books are considered equal if they have the same ISBN, author, and
-     * title.
-     *
-     * @param other --
-     *              the object begin compared with "this"
-     * @return true if "other" is a Book and is equal to "this", false otherwise
+     * @return the due date
      */
-    public boolean equals(Object other) {
-        // verify that the given object is a Book
-        if (!(other instanceof LibraryBook))
-            return false;
-
-        // cast object to Book type to remove casting from rest of code
-        LibraryBook inputBook = (LibraryBook) other;
-
-        // compare every field in the Book to the current object
-        if (!inputBook.getAuthor().equals(author))
-            return false;
-        else if (inputBook.getIsbn() != isbn)
-            return false;
-        else if (!inputBook.getTitle().equals(title))
-            return false;
-
-        // only once all fields have been verified return true
-        return true;
+    public GregorianCalendar getDueDate() {
+        return this.dueDate;
     }
 
     /**
@@ -81,5 +55,29 @@ public class LibraryBook extends Book {
      */
     public String toString() {
         return isbn + ", " + author + ", \"" + title + "\"";
+    }
+
+    public void checkIn() {
+
+    }
+
+    public void checkOut() {
+
+    }
+
+    /**
+     * @param isbn
+     * @param author
+     * @param title
+     */
+    public LibraryBook(long isbn, String author, String title) {
+
+    }
+
+    /**
+     * @return
+     */
+    public String getHolder() {
+
     }
 }
