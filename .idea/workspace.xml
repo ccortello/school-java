@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="method initialization&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/Library.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/Mushroom_Publishing.txt" />
+    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="Library, LibraryTest, and Mush... files copied to directory">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/BookTest.java" />
+      <change type="DELETED" beforePath="X:\Java\school-java\CS 2420 - Summer 2014\src\assignment2\BookTester.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryBook.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryBook.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -94,41 +93,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LibraryBook.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="LibraryBook.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryBook.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="236" max-vertical-offset="1156">
-              <caret line="18" column="64" selection-start-line="18" selection-start-column="64" selection-end-line="19" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.73318386" vertical-offset="540" max-vertical-offset="1224">
+              <caret line="57" column="51" selection-start-line="57" selection-start-column="51" selection-end-line="57" selection-end-column="51" />
               <folding>
                 <element signature="docComment;method#getAuthor#0;class#LibraryBook#0" expanded="false" />
                 <element signature="e#726#727#0" expanded="true" />
                 <element signature="e#760#761#0" expanded="true" />
                 <element signature="docComment;method#getIsbn#0;class#LibraryBook#0" expanded="false" />
+                <element signature="e#934#935#0" expanded="true" />
+                <element signature="e#967#968#0" expanded="true" />
+                <element signature="e#1056#1057#0" expanded="true" />
+                <element signature="e#1091#1092#0" expanded="true" />
                 <element signature="docComment;method#toString#0;class#LibraryBook#0" expanded="false" />
+                <element signature="e#1286#1287#0" expanded="true" />
+                <element signature="e#1353#1354#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mushroom_Publishing.txt" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/Mushroom_Publishing.txt">
+      <file leaf-file-name="BookTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/BookTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="920">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BookTester.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/BookTester.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="340">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-              <folding>
-                <element signature="e#186#187#0" expanded="true" />
-                <element signature="e#212#213#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -156,7 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/TreePanel.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/TreeTester.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/Tree.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework04/WarehouseReport.java" />
@@ -206,6 +197,7 @@
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment1/MatrixTester.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/Book.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/BookTester.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/BookTest.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryBook.java" />
       </list>
     </option>
@@ -375,25 +367,9 @@
       <recent name="C:\Users\Cody\workspace\CS 2420 - Spring 2014\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MatrixTester">
+  <component name="RunManager" selected="Application.BookTest">
     <configuration default="false" name="TestApplication (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="homework09.experiment03.TestApplication" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="CS 2420 - Spring 2014" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestApplicationExperiment02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homework09.TestApplicationExperiment02" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -454,6 +430,22 @@
     </configuration>
     <configuration default="false" name="MatrixTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="assignment1.MatrixTester" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="CS 2420 - Summer 2014" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="BookTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assignment2.BookTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -599,18 +591,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.TestApplication (2)" />
-      <item index="1" class="java.lang.String" itemvalue="Application.TestApplicationExperiment02" />
-      <item index="2" class="java.lang.String" itemvalue="Application.HuffmanTester" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.HuffmanCompressorTest" />
-      <item index="4" class="java.lang.String" itemvalue="Application.MatrixTester" />
+      <item index="1" class="java.lang.String" itemvalue="Application.HuffmanTester" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.HuffmanCompressorTest" />
+      <item index="3" class="java.lang.String" itemvalue="Application.MatrixTester" />
+      <item index="4" class="java.lang.String" itemvalue="Application.BookTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.MatrixTester" />
-        <item index="1" class="java.lang.String" itemvalue="Application.HuffmanTester" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.HuffmanCompressorTest" />
-        <item index="3" class="java.lang.String" itemvalue="Application.TestApplication (2)" />
-        <item index="4" class="java.lang.String" itemvalue="Application.TestApplicationExperiment02" />
+        <item index="0" class="java.lang.String" itemvalue="Application.BookTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.MatrixTester" />
+        <item index="2" class="java.lang.String" itemvalue="Application.HuffmanTester" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.HuffmanCompressorTest" />
+        <item index="4" class="java.lang.String" itemvalue="Application.TestApplication (2)" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1203,7 +1195,11 @@
       <created>1401141869131</created>
       <updated>1401141869131</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="Library, LibraryTest, and Mush... files copied to directory">
+      <created>1401142167192</created>
+      <updated>1401142167192</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1244,7 +1240,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32842106" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31637844" sideWeight="0.52708334" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5" sideWeight="0.52708334" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1280,7 +1276,8 @@
     <MESSAGE value="file commit testing" />
     <MESSAGE value="update" />
     <MESSAGE value="method initialization&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="method initialization&#10;" />
+    <MESSAGE value="Library, LibraryTest, and Mush... files copied to directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Library, LibraryTest, and Mush... files copied to directory" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1291,14 +1288,11 @@
       </breakpoints-dialog>
     </breakpoint-manager>
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="576">
-          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1604" max-vertical-offset="3078">
@@ -1625,17 +1619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/BookTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="340">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding>
-            <element signature="e#186#187#0" expanded="true" />
-            <element signature="e#212#213#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/Book.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1292">
@@ -1644,25 +1627,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/Mushroom_Publishing.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12934783" vertical-offset="0" max-vertical-offset="1768">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/BookTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryBook.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="236" max-vertical-offset="1156">
-          <caret line="18" column="64" selection-start-line="18" selection-start-column="64" selection-end-line="19" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.73318386" vertical-offset="540" max-vertical-offset="1224">
+          <caret line="57" column="51" selection-start-line="57" selection-start-column="51" selection-end-line="57" selection-end-column="51" />
           <folding>
             <element signature="docComment;method#getAuthor#0;class#LibraryBook#0" expanded="false" />
             <element signature="e#726#727#0" expanded="true" />
             <element signature="e#760#761#0" expanded="true" />
             <element signature="docComment;method#getIsbn#0;class#LibraryBook#0" expanded="false" />
+            <element signature="e#934#935#0" expanded="true" />
+            <element signature="e#967#968#0" expanded="true" />
+            <element signature="e#1056#1057#0" expanded="true" />
+            <element signature="e#1091#1092#0" expanded="true" />
             <element signature="docComment;method#toString#0;class#LibraryBook#0" expanded="false" />
+            <element signature="e#1286#1287#0" expanded="true" />
+            <element signature="e#1353#1354#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/Mushroom_Publishing.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="920">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

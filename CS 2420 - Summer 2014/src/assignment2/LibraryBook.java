@@ -53,6 +53,13 @@ public class LibraryBook extends Book {
     }
 
     /**
+     * @return the holder
+     */
+    public String getHolder() {
+        return this.holder;
+    }
+
+    /**
      * Returns a string representation of the book.
      */
     public String toString() {
@@ -64,13 +71,6 @@ public class LibraryBook extends Book {
     }
 
     public void checkOut() {
-
-    }
-
-    /**
-     * @return
-     */
-    public String getHolder() {
 
     }
 }
