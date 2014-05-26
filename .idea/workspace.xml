@@ -84,8 +84,8 @@
       <file leaf-file-name="Book.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/Book.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7945652" vertical-offset="306" max-vertical-offset="1292">
-              <caret line="67" column="62" selection-start-line="67" selection-start-column="62" selection-end-line="67" selection-end-column="62" />
+            <state vertical-scroll-proportion="0.7576087" vertical-offset="357" max-vertical-offset="1292">
+              <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -1129,7 +1129,15 @@
       <created>1401139310185</created>
       <updated>1401139310185</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="update">
+      <created>1401139974937</created>
+      <updated>1401139974937</updated>
+    </task>
+    <task id="LOCAL-00117" summary="file commit testing">
+      <created>1401140285814</created>
+      <updated>1401140285814</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1204,7 +1212,8 @@
     </option>
     <MESSAGE value="Initial commit&#10;" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="file commit testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="file commit testing" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1574,8 +1583,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/Book.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7945652" vertical-offset="306" max-vertical-offset="1292">
-          <caret line="67" column="62" selection-start-line="67" selection-start-column="62" selection-end-line="67" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.7576087" vertical-offset="357" max-vertical-offset="1292">
+          <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
           <folding />
         </state>
       </provider>
