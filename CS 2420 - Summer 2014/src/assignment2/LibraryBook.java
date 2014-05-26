@@ -53,6 +53,13 @@ public class LibraryBook extends Book {
     }
 
     /**
+     * @return the holder
+     */
+    public String getHolder() {
+        return this.holder;
+    }
+
+    /**
      * Returns a string representation of the book.
      */
     public String toString() {
@@ -60,17 +67,20 @@ public class LibraryBook extends Book {
     }
 
     public void checkIn() {
-
-    }
-
-    public void checkOut() {
-
+        // remove 'holder' and 'dueDate'
+        this.holder = null;
+        this.dueDate = null;
     }
 
     /**
-     * @return
+     * Checks out a book,
+     *
+     * @param holder
+     * @param dueDate
      */
-    public String getHolder() {
-
+    public void checkOut(String holder, GregorianCalendar dueDate) {
+        // set 'holder' and 'dueDate'
+        this.holder = holder;
+        this.dueDate = dueDate;
     }
 }
