@@ -16,10 +16,12 @@ public class LibraryBook extends Book {
     private String holder;
     private GregorianCalendar dueDate;
 
-    public LibraryBook(long _isbn, String _author, String _title, String holder, GregorianCalendar dueDate) {
-        super(_isbn, _author, _title);
-        this.holder = holder;
-        this.dueDate = dueDate;
+    public LibraryBook(long isbn, String author, String title) {
+        super(isbn, author, title);
+
+        // fields automatically initialized to null, but the statements here are added for clarity
+        holder = null;
+        dueDate = null;
     }
 
     /**
@@ -62,15 +64,6 @@ public class LibraryBook extends Book {
     }
 
     public void checkOut() {
-
-    }
-
-    /**
-     * @param isbn
-     * @param author
-     * @param title
-     */
-    public LibraryBook(long isbn, String author, String title) {
 
     }
 
