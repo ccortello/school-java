@@ -50,9 +50,23 @@ public class Book {
      * @return true if "other" is a Book and is equal to "this", false otherwise
      */
     public boolean equals(Object other) {
-        // FILL IN -- do not return false unless appropriate
+        // verify that the given object is a Book
+        if (!(other instanceof Book))
+            return false;
 
-        return false;
+        // cast object to Book type to remove casting from rest of code
+        Book inputBook = (Book) other;
+
+        // compare every field in the Book to the current object
+        if (!inputBook.getAuthor().equals(author))
+            return false;
+        else if (inputBook.getIsbn() != isbn)
+            return false;
+        else if (!inputBook.getTitle().equals(title))
+            return false;
+
+        // only once all fields have been verified return true
+        return true;
     }
 
     /**
