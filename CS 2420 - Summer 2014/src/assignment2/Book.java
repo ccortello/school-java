@@ -67,8 +67,6 @@ public class Book {
 
         // only once all fields have been verified return true
         return true;
-
-        // cody local test!
     }
 
     /**
