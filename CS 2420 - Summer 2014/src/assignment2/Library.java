@@ -119,9 +119,12 @@ public class Library {
         ArrayList<LibraryBook> returnList = new ArrayList<LibraryBook>();
 
         // parse library and add all books with specified holder to return list
-        for (LibraryBook libraryBook : library)
+        for (LibraryBook libraryBook : library) {
+            if (libraryBook.getHolder() == null)
+                continue;
             if (libraryBook.getHolder().equals(holder))
                 returnList.add(libraryBook);
+        }
 
         // return the substantiated list of books
         return returnList;

@@ -15,10 +15,6 @@ public class LibraryBook extends Book {
 
     public LibraryBook(long isbn, String author, String title) {
         super(isbn, author, title);
-
-        // fields automatically initialized to null, but the statements here are added for clarity
-        holder = null;
-        dueDate = null;
     }
 
     /**
@@ -39,7 +35,7 @@ public class LibraryBook extends Book {
      * Sets the due date
      */
     public void setDueDate(int month, int day, int year) {
-        this.dueDate.set(year, month, day);
+        this.dueDate = new GregorianCalendar(year, month, day);
     }
 
     /**
