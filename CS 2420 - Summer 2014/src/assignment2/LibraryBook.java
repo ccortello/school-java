@@ -62,8 +62,15 @@ public class LibraryBook extends Book {
     /**
      * Sets the due date
      */
-    public void setDueDate() {
+    public void setDueDate(int month, int day, int year) {
+        this.dueDate = new GregorianCalendar(year, month, day);
+    }
 
+    /**
+     * Sets the holder
+     */
+    public void setHolder(String newHolder) {
+        this.holder = newHolder;
     }
 
     /**

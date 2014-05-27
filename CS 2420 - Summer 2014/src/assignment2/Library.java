@@ -148,11 +148,19 @@ public class Library {
      *               year of the new due date of the library book
      */
     public boolean checkout(long isbn, String holder, int month, int day, int year) {
-        for (LibraryBook libraryBook : library) {
+        for (LibraryBook libraryBook : library)
             if (libraryBook.getIsbn() == isbn) {
-                libraryBook.
+
+                // check if book is already checked out
+                if (libraryBook.getHolder() != null)
+                    return false;
+
+                // since the book hasn't been checked out set holder and due date and return
+                libraryBook.setHolder(holder);
+                libraryBook.setDueDate(month, day, year);
+                return true;
             }
-        }
+        // if the book wasn't found return false
         return false;
     }
 
