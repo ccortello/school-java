@@ -60,6 +60,13 @@ public class LibraryBook extends Book {
     }
 
     /**
+     * Sets the due date
+     */
+    public void setDueDate() {
+
+    }
+
+    /**
      * Returns a string representation of the book.
      */
     public String toString() {

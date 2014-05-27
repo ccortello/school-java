@@ -100,7 +100,9 @@ public class Library {
      *             ISBN of the book to be looked up
      */
     public String lookup(long isbn) {
-        // FILL IN -- do not return null unless appropriate
+        for (LibraryBook libraryBook : library)
+            if (libraryBook.getIsbn() == isbn)
+                return libraryBook.getHolder();
         return null;
     }
 
@@ -113,8 +115,16 @@ public class Library {
      *               holder whose checked out books are returned
      */
     public ArrayList<LibraryBook> lookup(String holder) {
-        // FILL IN -- do not return null
-        return null;
+        // initialize list of books with specified holder
+        ArrayList<LibraryBook> returnList = new ArrayList<LibraryBook>();
+
+        // parse library and add all books with specified holder to return list
+        for (LibraryBook libraryBook : library)
+            if (libraryBook.getHolder().equals(holder))
+                returnList.add(libraryBook);
+
+        // return the substantiated list of books
+        return returnList;
     }
 
     /**
@@ -138,7 +148,11 @@ public class Library {
      *               year of the new due date of the library book
      */
     public boolean checkout(long isbn, String holder, int month, int day, int year) {
-        // FILL IN -- do not return false unless appropriate
+        for (LibraryBook libraryBook : library) {
+            if (libraryBook.getIsbn() == isbn) {
+                libraryBook.
+            }
+        }
         return false;
     }
 
