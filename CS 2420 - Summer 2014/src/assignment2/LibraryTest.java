@@ -49,9 +49,10 @@ public class LibraryTest {
             System.err.println("TEST FAILED -- small library: checkin(holder)");
 
         // test a medium library
-        lib.addAll("Mushroom_Publishing.txt");
+        lib.addAll("C:\\Users\\Cody\\Java\\school-java\\CS 2420 - Summer 2014\\src\\assignment2\\Mushroom_Publishing.txt");
 
-        // FILL IN
+        // test a large library
+
 
         System.out.println("Testing done.");
     }
@@ -76,7 +77,7 @@ public class LibraryTest {
             for (int j = 0; j < 13; j++)
                 isbn += randomNumGen.nextInt(10);
 
-            result.add(new LibraryBook(Long.parseLong(isbn), "An author", "A title"));
+            result.add(new LibraryBook(Long.parseLong(isbn), "An author " + i, "A title " + i));
         }
 
         return result;
