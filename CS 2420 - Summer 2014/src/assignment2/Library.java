@@ -177,7 +177,14 @@ public class Library {
      *             ISBN of the library book to be checked in
      */
     public boolean checkin(long isbn) {
-        // FILL IN -- do not return false unless appropriate
+        // parse entire libaray
+        for (LibraryBook libraryBook : library)
+
+            // if the correct book is found
+            if (libraryBook.getIsbn() == isbn) {
+                boolean wasIn = (libraryBook.getHolder() == null);
+                if ()
+            }
         return false;
     }
 

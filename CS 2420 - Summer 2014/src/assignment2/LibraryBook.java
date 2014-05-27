@@ -10,9 +10,6 @@ import java.util.GregorianCalendar;
  */
 public class LibraryBook extends Book {
 
-    private long isbn;
-    private String author;
-    private String title;
     private String holder;
     private GregorianCalendar dueDate;
 
@@ -22,27 +19,6 @@ public class LibraryBook extends Book {
         // fields automatically initialized to null, but the statements here are added for clarity
         holder = null;
         dueDate = null;
-    }
-
-    /**
-     * @return the author
-     */
-    public String getAuthor() {
-        return this.author;
-    }
-
-    /**
-     * @return the ISBN
-     */
-    public long getIsbn() {
-        return this.isbn;
-    }
-
-    /**
-     * @return the title
-     */
-    public String getTitle() {
-        return this.title;
     }
 
     /**
@@ -71,13 +47,6 @@ public class LibraryBook extends Book {
      */
     public void setHolder(String newHolder) {
         this.holder = newHolder;
-    }
-
-    /**
-     * Returns a string representation of the book.
-     */
-    public String toString() {
-        return isbn + ", " + author + ", \"" + title + "\"";
     }
 
     public void checkIn() {
