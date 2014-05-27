@@ -206,4 +206,11 @@ public class Library {
         // FILL IN -- do not return false unless appropriate
         return false;
     }
+
+    /**
+     * Test method which returns a copy of the list of books
+     */
+    public ArrayList<LibraryBook> bookList() {
+        return new ArrayList<LibraryBook>(library);
+    }
 }

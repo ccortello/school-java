@@ -3,6 +3,7 @@ package assignment2;
 import java.util.ArrayList;
 import java.util.GregorianCalendar;
 import java.util.Random;
+import java.util.UUID;
 
 /**
  * Testing class for Library.
@@ -52,7 +53,28 @@ public class LibraryTest {
         lib.addAll("C:\\Users\\Cody\\Java\\school-java\\CS 2420 - Summer 2014\\src\\assignment2\\Mushroom_Publishing.txt");
 
         // test a large library
-
+        Library testLibrary = new Library();
+        int numberOfBooks = 10000;
+        ArrayList<Long> isbnList = new ArrayList<Long>(numberOfBooks);
+        ArrayList<String> authorList = new ArrayList<String>(numberOfBooks);
+        ArrayList<String> titleList = new ArrayList<String>(numberOfBooks);
+        for (int i = 0; i < numberOfBooks; i++) {
+            long isbn = generateIsbn();
+            String author = UUID.randomUUID().toString() + "Author #" + i;
+            String title = UUID.randomUUID().toString() + "Title #" + i;
+            String holder = UUID.randomUUID().toString() + " Holder #" + i;
+            testLibrary.add(isbn, author, title);
+            testLibrary.checkout(isbn, holder, 0, 0, 0);
+            isbnList.add(isbn);
+            authorList.add(author);
+            titleList.add(title);
+        }
+        int numberOfLookups = 1000;
+        for (int i = 0; i < numberOfLookups; i++) {
+            int randIndex = (int) (Math.random() * numberOfBooks);
+            long isbnTest = isbnList.get(randIndex);
+            System.out.println("Holder #" + i + "\t" + testLibrary.lookup(isbnTest));
+        }
 
         System.out.println("Testing done.");
     }
@@ -77,7 +99,7 @@ public class LibraryTest {
             for (int j = 0; j < 13; j++)
                 isbn += randomNumGen.nextInt(10);
 
-            result.add(new LibraryBook(Long.parseLong(isbn), "An author " + i, "A title " + i));
+            result.add(new LibraryBook(Long.parseLong(isbn), "An Author", "A Title"));
         }
 
         return result;
