@@ -56,8 +56,9 @@ public class LibraryTest {
         Library testLibrary = new Library();
         int numberOfBooks = 10000;
         ArrayList<Long> isbnList = new ArrayList<Long>(numberOfBooks);
-        ArrayList<String> authorList = new ArrayList<String>(numberOfBooks);
-        ArrayList<String> titleList = new ArrayList<String>(numberOfBooks);
+        ArrayList<String> holderList = new ArrayList<String>(numberOfBooks);
+//        ArrayList<String> authorList = new ArrayList<String>(numberOfBooks);
+//        ArrayList<String> titleList = new ArrayList<String>(numberOfBooks);
         for (int i = 0; i < numberOfBooks; i++) {
             long isbn = generateIsbn();
             String author = UUID.randomUUID().toString() + "Author #" + i;
@@ -66,14 +67,17 @@ public class LibraryTest {
             testLibrary.add(isbn, author, title);
             testLibrary.checkout(isbn, holder, 0, 0, 0);
             isbnList.add(isbn);
-            authorList.add(author);
-            titleList.add(title);
+            holderList.add(holder);
+//            authorList.add(author);
+//            titleList.add(title);
         }
         int numberOfLookups = 1000;
         for (int i = 0; i < numberOfLookups; i++) {
             int randIndex = (int) (Math.random() * numberOfBooks);
             long isbnTest = isbnList.get(randIndex);
-            System.out.println("Holder #" + i + "\t" + testLibrary.lookup(isbnTest));
+//            System.out.println("Holder #" + i + "\t" + testLibrary.lookup(isbnTest));
+            if (!testLibrary.lookup(isbnTest).equals(holderList.get(randIndex)))
+                System.out.println("Holder lookup failed");
         }
 
         System.out.println("Testing done.");
