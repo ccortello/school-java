@@ -59,33 +59,33 @@ public class LibraryTest {
         // keep lists tracking the ISBNs and holders of the books we add to the library
         ArrayList<Long> isbnList = new ArrayList<Long>(numberOfBooks);
         ArrayList<String> holderList = new ArrayList<String>(numberOfBooks);
-//        ArrayList<String> authorList = new ArrayList<String>(numberOfBooks);
-//        ArrayList<String> titleList = new ArrayList<String>(numberOfBooks);
 
         // generate random isbns and book fields, substantiate books with those fields, and add those books to the library
         for (int i = 0; i < numberOfBooks; i++) {
             long isbn = generateIsbn();
-            String author = UUID.randomUUID().toString() + "Author #" + i;
-            String title = UUID.randomUUID().toString() + "Title #" + i;
-            String holder = UUID.randomUUID().toString() + " Holder #" + i;
+            String author = UUID.randomUUID().toString() + "\tAuthor #" + String.format("%04d", i);
+            String title = UUID.randomUUID().toString() + "\tTitle #" + String.format("%04d", i);
+            String holder = "Holder = " + UUID.randomUUID().toString() + "\t#" + String.format("%04d", i);
             testLibrary.add(isbn, author, title);
-            testLibrary.checkout(isbn, holder, 0, 0, 0);
+            testLibrary.checkout(isbn, holder, (int) (Math.random() * 12), (int) (Math.random() * 12), (int) (Math.random() * 12));
 
             // keep track of the fields which were used to substantiate the books
             //  (in order to validate the lookups later)
             isbnList.add(isbn);
             holderList.add(holder);
-//            authorList.add(author);
-//            titleList.add(title);
         }
 
         // lookup books from random positions in the library and validate their holders against the
         //  previously substantiated list
-        int numberOfLookups = 100000;
+        int numberOfLookups = 10000;
         for (int i = 0; i < numberOfLookups; i++) {
             int randIndex = (int) (Math.random() * numberOfBooks);
             long isbnTest = isbnList.get(randIndex);
-//            System.out.println("Holder #" + i + "\t" + testLibrary.lookup(isbnTest));
+
+            // console output for debugging purposes
+//            System.out.println("Lookup #" + String.format("%05d", i+1) + "\t" + testLibrary.lookup(isbnTest));
+
+            // validate the holder against the substantiated list
             if (!testLibrary.lookup(isbnTest).equals(holderList.get(randIndex)))
                 System.out.println("Holder lookup failed");
         }

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="updated">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/Library.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/Library.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryTest.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -153,11 +152,13 @@
       <file leaf-file-name="LibraryTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.038990825" vertical-offset="1241" max-vertical-offset="2380">
-              <caret line="77" column="37" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.73165137" vertical-offset="1415" max-vertical-offset="2431">
+              <caret line="102" column="21" selection-start-line="102" selection-start-column="21" selection-end-line="103" selection-end-column="54" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#2726#2732#0" expanded="true" />
                 <element signature="e#2801#2809#0" expanded="true" />
+                <element signature="e#4955#4968#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -855,7 +856,7 @@
       <workItem from="1401207506850" duration="383000" />
       <workItem from="1401207897958" duration="938000" />
       <workItem from="1401209484404" duration="468000" />
-      <workItem from="1401210028357" duration="6814000" />
+      <workItem from="1401210028357" duration="7970000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -1397,11 +1398,15 @@
       <created>1401216165834</created>
       <updated>1401216165834</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="updated">
+      <created>1401216857489</created>
+      <updated>1401216857489</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="245612000" />
+    <option name="totallyTimeSpent" value="246768000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1887,11 +1892,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.038990825" vertical-offset="1241" max-vertical-offset="2380">
-          <caret line="77" column="37" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.73165137" vertical-offset="1415" max-vertical-offset="2431">
+          <caret line="102" column="21" selection-start-line="102" selection-start-column="21" selection-end-line="103" selection-end-column="54" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#2726#2732#0" expanded="true" />
             <element signature="e#2801#2809#0" expanded="true" />
+            <element signature="e#4955#4968#0" expanded="true" />
           </folding>
         </state>
       </provider>
