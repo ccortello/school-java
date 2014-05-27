@@ -39,7 +39,7 @@ public class LibraryBook extends Book {
      * Sets the due date
      */
     public void setDueDate(int month, int day, int year) {
-        this.dueDate = new GregorianCalendar(year, month, day);
+        this.dueDate.set(year, month, day);
     }
 
     /**
