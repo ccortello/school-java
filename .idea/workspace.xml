@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="updated">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryTest.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryBookGeneric.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -149,17 +149,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LibraryTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="LibraryTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.73165137" vertical-offset="1415" max-vertical-offset="2431">
-              <caret line="102" column="21" selection-start-line="102" selection-start-column="21" selection-end-line="103" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1415" max-vertical-offset="2431">
+              <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2726#2732#0" expanded="true" />
                 <element signature="e#2801#2809#0" expanded="true" />
-                <element signature="e#4955#4968#0" expanded="true" />
+                <element signature="e#4966#4979#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LibraryBookGeneric.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryBookGeneric.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.37155962" vertical-offset="586" max-vertical-offset="1037">
+              <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -196,7 +206,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySetTest.groovy" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySetTest2.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/PublicSpecialtySet.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySetTrial.java" />
@@ -247,6 +256,7 @@
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/Mushroom_Publishing.txt" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/Library.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryTest.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryBookGeneric.java" />
       </list>
     </option>
   </component>
@@ -856,7 +866,7 @@
       <workItem from="1401207506850" duration="383000" />
       <workItem from="1401207897958" duration="938000" />
       <workItem from="1401209484404" duration="468000" />
-      <workItem from="1401210028357" duration="7970000" />
+      <workItem from="1401210028357" duration="8560000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -1402,11 +1412,15 @@
       <created>1401216857489</created>
       <updated>1401216857489</updated>
     </task>
-    <option name="localTasksCounter" value="137" />
+    <task id="LOCAL-00137" summary="updated">
+      <created>1401218009211</created>
+      <updated>1401218009211</updated>
+    </task>
+    <option name="localTasksCounter" value="138" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246768000" />
+    <option name="totallyTimeSpent" value="247358000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1501,13 +1515,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanTools.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1920" max-vertical-offset="4500">
-          <caret line="128" column="43" selection-start-line="128" selection-start-column="43" selection-end-line="128" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySetTrial.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="1734">
@@ -1892,14 +1899,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73165137" vertical-offset="1415" max-vertical-offset="2431">
-          <caret line="102" column="21" selection-start-line="102" selection-start-column="21" selection-end-line="103" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1415" max-vertical-offset="2431">
+          <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2726#2732#0" expanded="true" />
             <element signature="e#2801#2809#0" expanded="true" />
-            <element signature="e#4955#4968#0" expanded="true" />
+            <element signature="e#4966#4979#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryBookGeneric.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37155962" vertical-offset="586" max-vertical-offset="1037">
+          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
