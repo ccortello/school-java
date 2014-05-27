@@ -55,10 +55,14 @@ public class LibraryTest {
         // test a large library
         Library testLibrary = new Library();
         int numberOfBooks = 10000;
+
+        // keep lists tracking the ISBNs and holders of the books we add to the library
         ArrayList<Long> isbnList = new ArrayList<Long>(numberOfBooks);
         ArrayList<String> holderList = new ArrayList<String>(numberOfBooks);
 //        ArrayList<String> authorList = new ArrayList<String>(numberOfBooks);
 //        ArrayList<String> titleList = new ArrayList<String>(numberOfBooks);
+
+        // generate random isbns and book fields, substantiate books with those fields, and add those books to the library
         for (int i = 0; i < numberOfBooks; i++) {
             long isbn = generateIsbn();
             String author = UUID.randomUUID().toString() + "Author #" + i;
@@ -66,12 +70,18 @@ public class LibraryTest {
             String holder = UUID.randomUUID().toString() + " Holder #" + i;
             testLibrary.add(isbn, author, title);
             testLibrary.checkout(isbn, holder, 0, 0, 0);
+
+            // keep track of the fields which were used to substantiate the books
+            //  (in order to validate the lookups later)
             isbnList.add(isbn);
             holderList.add(holder);
 //            authorList.add(author);
 //            titleList.add(title);
         }
-        int numberOfLookups = 1000;
+
+        // lookup books from random positions in the library and validate their holders against the
+        //  previously substantiated list
+        int numberOfLookups = 100000;
         for (int i = 0; i < numberOfLookups; i++) {
             int randIndex = (int) (Math.random() * numberOfBooks);
             long isbnTest = isbnList.get(randIndex);

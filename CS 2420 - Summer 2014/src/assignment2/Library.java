@@ -210,7 +210,7 @@ public class Library {
     /**
      * Test method which returns a copy of the list of books
      */
-    public ArrayList<LibraryBook> bookList() {
+    protected ArrayList<LibraryBook> bookList() {
         return new ArrayList<LibraryBook>(library);
     }
 }
