@@ -203,8 +203,13 @@ public class Library {
      *               holder of the library books to be checked in
      */
     public boolean checkin(String holder) {
-        // FILL IN -- do not return false unless appropriate
-        return false;
+        // get list of all books under specified holder
+        ArrayList<LibraryBook> books = this.lookup(holder);
+        if (books.size() == 0) // if no books under the specified holder return false
+            return false;
+        for (LibraryBook book : books) // otherwise check in each book and return true
+            book.checkIn();
+        return true;
     }
 
     /**

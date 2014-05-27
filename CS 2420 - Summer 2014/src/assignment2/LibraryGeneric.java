@@ -28,7 +28,7 @@ public class LibraryGeneric<Type> {
      *               title of the book to be added
      */
     public void add(long isbn, String author, String title) {
-        library.add(new LibraryBook(isbn, author, title));
+        library.add(new LibraryBookGeneric<Type>(isbn, author, title));
     }
 
     /**
@@ -74,7 +74,7 @@ public class LibraryGeneric<Type> {
                     throw new ParseException("Title", lineNum);
                 String title = lineIn.next();
 
-                toBeAdded.add(new LibraryBook(isbn, author, title));
+                toBeAdded.add(new LibraryBookGeneric<Type>(isbn, author, title));
 
                 lineNum++;
             }
@@ -99,10 +99,10 @@ public class LibraryGeneric<Type> {
      * @param isbn --
      *             ISBN of the book to be looked up
      */
-    public String lookup(long isbn) {
-        for (LibraryBook libraryBook : library)
-            if (libraryBook.getIsbn() == isbn)
-                return libraryBook.getHolder();
+    public Type lookup(long isbn) {
+        for (LibraryBookGeneric<Type> libraryBookGeneric : library)
+            if (libraryBookGeneric.getIsbn() == isbn)
+                return libraryBookGeneric.getHolder();
         return null;
     }
 
@@ -114,16 +114,16 @@ public class LibraryGeneric<Type> {
      * @param holder --
      *               holder whose checked out books are returned
      */
-    public ArrayList<LibraryBookGeneric<Type>> lookup(String holder) {
+    public ArrayList<LibraryBookGeneric<Type>> lookup(Type holder) {
         // initialize list of books with specified holder
         ArrayList<LibraryBookGeneric<Type>> returnList = new ArrayList<LibraryBookGeneric<Type>>();
 
         // parse library and add all books with specified holder to return list
-        for (LibraryBook libraryBook : library) {
-            if (libraryBook.getHolder() == null)
+        for (LibraryBookGeneric<Type> libraryBookGeneric : library) {
+            if (libraryBookGeneric.getHolder() == null)
                 continue;
-            if (libraryBook.getHolder().equals(holder))
-                returnList.add(libraryBook);
+            if (libraryBookGeneric.getHolder().equals(holder))
+                returnList.add(libraryBookGeneric);
         }
 
         // return the substantiated list of books
@@ -150,17 +150,17 @@ public class LibraryGeneric<Type> {
      * @param year   --
      *               year of the new due date of the library book
      */
-    public boolean checkout(long isbn, String holder, int month, int day, int year) {
-        for (LibraryBook libraryBook : library)
-            if (libraryBook.getIsbn() == isbn) {
+    public boolean checkout(long isbn, Type holder, int month, int day, int year) {
+        for (LibraryBookGeneric<Type> libraryBookGeneric : library)
+            if (libraryBookGeneric.getIsbn() == isbn) {
 
                 // check if book is already checked out
-                if (libraryBook.getHolder() != null)
+                if (libraryBookGeneric.getHolder() != null)
                     return false;
 
                 // since the book hasn't been checked out set holder and due date and return
-                libraryBook.setHolder(holder);
-                libraryBook.setDueDate(month, day, year);
+                libraryBookGeneric.setHolder(holder);
+                libraryBookGeneric.setDueDate(month, day, year);
                 return true;
             }
         // if the book wasn't found return false
@@ -180,12 +180,12 @@ public class LibraryGeneric<Type> {
      *             ISBN of the library book to be checked in
      */
     public boolean checkin(long isbn) {
-        for (LibraryBook libraryBook : library) // parse entire library
-            if (libraryBook.getIsbn() == isbn) { // either return false if book is checked in or check the book out
+        for (LibraryBookGeneric<Type> libraryBookGeneric : library) // parse entire library
+            if (libraryBookGeneric.getIsbn() == isbn) { // either return false if book is checked in or check the book out
                 //  and return true
-                if (libraryBook.getHolder() == null)
+                if (libraryBookGeneric.getHolder() == null)
                     return false;
-                libraryBook.checkIn();
+                libraryBookGeneric.checkIn();
                 return true;
             }
         return false; // if the book wasn't found return false
@@ -202,15 +202,20 @@ public class LibraryGeneric<Type> {
      * @param holder --
      *               holder of the library books to be checked in
      */
-    public boolean checkin(String holder) {
-        // FILL IN -- do not return false unless appropriate
-        return false;
+    public boolean checkin(Type holder) {
+        // get list of all books under specified holder
+        ArrayList<LibraryBook> books = this.lookup(holder);
+        if (books.size() == 0)
+            return false;
+        for (LibraryBook book : books)
+            book.checkIn();
+        return true;
     }
 
     /**
      * Test method which returns a copy of the list of books
      */
     protected ArrayList<LibraryBookGeneric<Type>> bookList() {
-        return new ArrayList<LibraryBookGeneric<Type>>`(library);
+        return new ArrayList<LibraryBookGeneric<Type>>(library);
     }
 }
