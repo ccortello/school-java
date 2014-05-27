@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="updated">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/Library.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/Library.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryGeneric.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryGeneric.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -82,11 +81,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LibraryGeneric.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="LibraryGeneric.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryGeneric.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3338" max-vertical-offset="3859">
-              <caret line="211" column="20" selection-start-line="211" selection-start-column="20" selection-end-line="211" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.41513762" vertical-offset="3389" max-vertical-offset="3859">
+              <caret line="210" column="34" selection-start-line="210" selection-start-column="34" selection-end-line="210" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#370#371#0" expanded="true" />
@@ -95,31 +94,6 @@
                 <element signature="e#1171#1172#0" expanded="true" />
                 <element signature="e#1527#1553#0" expanded="true" />
                 <element signature="e#3856#3882#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Library.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/Library.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45412844" vertical-offset="1060" max-vertical-offset="1564">
-              <caret line="209" column="52" selection-start-line="209" selection-start-column="52" selection-end-line="209" selection-end-column="52" />
-              <folding>
-                <element signature="docComment;class#Library#0" expanded="false" />
-                <element signature="docComment;method#add#0;class#Library#0" expanded="false" />
-                <element signature="method#addAll#1;class#Library#0" expanded="false" />
-                <element signature="docComment;method#lookup#0;class#Library#0" expanded="false" />
-                <element signature="method#lookup#0;class#Library#0" expanded="false" />
-                <element signature="docComment;method#lookup#1;class#Library#0" expanded="false" />
-                <element signature="e#3689#3702#0" expanded="true" />
-                <element signature="docComment;method#checkout#0;class#Library#0" expanded="false" />
-                <element signature="method#checkout#0;class#Library#0" expanded="false" />
-                <element signature="docComment;method#checkin#0;class#Library#0" expanded="false" />
-                <element signature="method#checkin#0;class#Library#0" expanded="false" />
-                <element signature="e#6070#6136#0" expanded="false" />
-                <element signature="e#7305#7306#0" expanded="true" />
-                <element signature="e#7363#7364#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -196,8 +170,8 @@
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/Mushroom_Publishing.txt" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryTest.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryBookGeneric.java" />
-        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryGeneric.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/Library.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryGeneric.java" />
       </list>
     </option>
   </component>
@@ -807,7 +781,7 @@
       <workItem from="1401207506850" duration="383000" />
       <workItem from="1401207897958" duration="938000" />
       <workItem from="1401209484404" duration="468000" />
-      <workItem from="1401210028357" duration="9391000" />
+      <workItem from="1401210028357" duration="9465000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -1365,11 +1339,15 @@
       <created>1401218818469</created>
       <updated>1401218818469</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="updated">
+      <created>1401219431243</created>
+      <updated>1401219431243</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="248189000" />
+    <option name="totallyTimeSpent" value="248263000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1834,25 +1812,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryGeneric.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3338" max-vertical-offset="3859">
-          <caret line="211" column="20" selection-start-line="211" selection-start-column="20" selection-end-line="211" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#370#371#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#1135#1136#0" expanded="true" />
-            <element signature="e#1171#1172#0" expanded="true" />
-            <element signature="e#1527#1553#0" expanded="true" />
-            <element signature="e#3856#3882#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/Library.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45412844" vertical-offset="1060" max-vertical-offset="1564">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1060" max-vertical-offset="1564">
           <caret line="209" column="52" selection-start-line="209" selection-start-column="52" selection-end-line="209" selection-end-column="52" />
           <folding>
             <element signature="docComment;class#Library#0" expanded="false" />
@@ -1869,6 +1831,22 @@
             <element signature="e#6070#6136#0" expanded="false" />
             <element signature="e#7305#7306#0" expanded="true" />
             <element signature="e#7363#7364#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryGeneric.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41513762" vertical-offset="3389" max-vertical-offset="3859">
+          <caret line="210" column="34" selection-start-line="210" selection-start-column="34" selection-end-line="210" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#1135#1136#0" expanded="true" />
+            <element signature="e#1171#1172#0" expanded="true" />
+            <element signature="e#1527#1553#0" expanded="true" />
+            <element signature="e#3856#3882#0" expanded="true" />
           </folding>
         </state>
       </provider>

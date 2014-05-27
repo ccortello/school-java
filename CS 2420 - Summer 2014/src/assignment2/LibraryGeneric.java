@@ -204,11 +204,11 @@ public class LibraryGeneric<Type> {
      */
     public boolean checkin(Type holder) {
         // get list of all books under specified holder
-        ArrayList<LibraryBook> books = this.lookup(holder);
-        if (books.size() == 0)
+        ArrayList<LibraryBookGeneric<Type>> genericBooks = this.lookup(holder);
+        if (genericBooks.size() == 0)
             return false;
-        for (LibraryBook book : books)
-            book.checkIn();
+        for (LibraryBookGeneric<Type> genericBook : genericBooks)
+            genericBook.checkIn();
         return true;
     }
 
