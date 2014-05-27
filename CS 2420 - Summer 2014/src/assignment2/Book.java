@@ -5,6 +5,11 @@ package assignment2;
  * once the book is created.
  * <p/>
  * Note that ISBNs are unique.
+ *
+ * @author Cody Cortello
+ * @author Casey Nordgran
+ * @version 1.0
+ *
  */
 public class Book {
 
