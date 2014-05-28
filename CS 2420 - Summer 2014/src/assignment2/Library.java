@@ -1,7 +1,8 @@
 package assignment2;
 
-import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.nio.file.FileSystems;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -53,7 +54,7 @@ public class Library {
         ArrayList<LibraryBook> toBeAdded = new ArrayList<LibraryBook>();
 
         try {
-            Scanner fileIn = new Scanner(new File(filename));
+            Scanner fileIn = new Scanner(FileSystems.getDefault().getPath(filename));
             int lineNum = 1;
 
             while (fileIn.hasNextLine()) {
@@ -85,6 +86,9 @@ public class Library {
             System.err.println(e.getLocalizedMessage()
                     + " formatted incorrectly at line " + e.getErrorOffset()
                     + ". Nothing added to the library.");
+            return;
+        } catch (IOException e) {
+            System.err.println(e.getMessage());
             return;
         }
 

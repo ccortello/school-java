@@ -50,7 +50,7 @@ public class LibraryTest {
             System.err.println("TEST FAILED -- small library: checkin(holder)");
 
         // test a medium library
-        lib.addAll("C:\\Users\\Cody\\Java\\school-java\\CS 2420 - Summer 2014\\src\\assignment2\\Mushroom_Publishing.txt");
+        lib.addAll("Mushroom_Publishing.txt");
 
         // test a large library
         Library testLibrary = new Library();
