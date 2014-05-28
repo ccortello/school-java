@@ -54,8 +54,8 @@ public class LibraryBook extends Book {
     /**
      * Checks out a book,
      *
-     * @param holder
-     * @param dueDate
+     * @param holder  name of the person that is checking out the book.
+     * @param dueDate date the book is to be returned.
      */
     public void checkOut(String holder, GregorianCalendar dueDate) {
         // set 'holder' and 'dueDate'

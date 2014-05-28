@@ -1,9 +1,9 @@
 package assignment2;
 
-import java.io.IOException;
-import java.nio.file.FileSystems;
 import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.GregorianCalendar;
+import java.util.Random;
+import java.util.UUID;
 
 /**
  * Testing class for Library.
@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class LibraryTest {
 
     public static void main(String[] args) {
-       /* // test an empty library
+        // test an empty library
         Library lib = new Library();
 
         if (lib.lookup(978037429279L) != null)
@@ -49,8 +49,21 @@ public class LibraryTest {
         if (lib.checkin("Jane Doe"))
             System.err.println("TEST FAILED -- small library: checkin(holder)");
 
-        // test a medium library
-        lib.addAll("Mushroom_Publishing.txt");
+        // test a medium library, add the .txt book list all at once to 'lib'
+        String fileInward = "Mushroom_Publishing.txt";
+        Library lib2 = new Library();
+        lib2.addAll(fileInward);
+        for (int i = 0; i < lib2.size(); i++) {
+            long isbnPrint = lib2.getInstanceOf(i).getIsbn();
+            String authorPrint = lib2.getInstanceOf(i).getAuthor();
+            String titlePrint = lib2.getInstanceOf(i).getTitle();
+            System.out.print(isbnPrint + "\t");
+            System.out.print(authorPrint + "\t");
+            System.out.print(titlePrint + "\t");
+            System.out.print("\n");
+
+        }
+
 
         // test a large library
         Library testLibrary = new Library();
@@ -78,40 +91,38 @@ public class LibraryTest {
         // lookup books from random positions in the library and validate their holders against the
         //  previously substantiated list
         int numberOfLookups = 10000;
-        for (int i = 0; i < numberOfLookups; i++) {
+        for (
+                int i = 0;
+                i < numberOfLookups; i++)
+
+        {
             int randIndex = (int) (Math.random() * numberOfBooks);
             long isbnTest = isbnList.get(randIndex);
 
             // console output for debugging purposes
-//            System.out.println("Lookup #" + String.format("%05d", i+1) + "\t" + testLibrary.lookup(isbnTest));
+//            System.out.println("Lookup #" + String.format("%05d", j+1) + "\t" + testLibrary.lookup(isbnTest));
 
             // validate the holder against the substantiated list
             if (!testLibrary.lookup(isbnTest).equals(holderList.get(randIndex)))
                 System.out.println("Holder lookup failed");
         }
 
-        System.out.println("Testing done.");*/
+        System.out.println("Testing done.");
 
-        String nameFile = new String("lastNames.txt");
-
-        ArrayList<String> namesArr = generateNames(nameFile);
-
-        for (int i = 0; i < namesArr.size(); i++) {
-            System.out.println((String) f);
-        }
+    }
 
 
-        /**
-         * Returns a library of "dummy" books (random ISBN and placeholders for author
-         * and title).
-         * <p/>
-         * Useful for collecting running times for operations on libraries of varying
-         * size.
-         *
-         * @param size --
-         *             size of the library to be generated
-         */
-    /*public static ArrayList<LibraryBook> generateLibrary(int size) {
+    /**
+     * Returns a library of "dummy" books (random ISBN and placeholders for author
+     * and title).
+     * <p/>
+     * Useful for collecting running times for operations on libraries of varying
+     * size.
+     *
+     * @param size --
+     *             size of the library to be generated
+     */
+    public static ArrayList<LibraryBook> generateLibrary(int size) {
         ArrayList<LibraryBook> result = new ArrayList<LibraryBook>();
 
         for (int i = 0; i < size; i++) {
@@ -127,12 +138,12 @@ public class LibraryTest {
         return result;
     }
 
-    *//**
-         * Returns a randomly-generated ISBN (a long with 13 digits).
-         * <p/>
-         * Useful for collecting running times for operations on libraries of varying
-         * size.
-         *//*
+    /**
+     * Returns a randomly-generated ISBN (a long with 13 digits).
+     * <p/>
+     * Useful for collecting running times for operations on libraries of varying
+     * size.
+     */
     public static long generateIsbn() {
         Random randomNumGen = new Random();
 
@@ -142,26 +153,5 @@ public class LibraryTest {
 
         return Long.parseLong(isbn);
     }
-*/
 
-
-        public static ArrayList<String> generateNames (String nameFile){
-            ArrayList<String> outArr = new ArrayList<String>();
-
-            try {
-                Scanner fileIn = new Scanner(FileSystems.getDefault().getPath(nameFile));
-
-                int nameIndex = 0;
-
-                while (fileIn.hasNextLine()) {
-                    outArr.add(nameIndex, (fileIn.nextLine() + "\t"));
-                    nameIndex++;
-                }
-            } catch (IOException e) {
-                System.err.println(e.getMessage());
-                return (ArrayList<String>) "File not Found";
-            }
-
-            return outArr;
-        }
-    }
+}

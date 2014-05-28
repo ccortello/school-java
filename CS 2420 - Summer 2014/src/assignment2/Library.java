@@ -222,4 +222,12 @@ public class Library {
     protected ArrayList<LibraryBook> bookList() {
         return new ArrayList<LibraryBook>(library);
     }
+
+    public int size() {
+        return library.size();
+    }
+
+    public LibraryBook getInstanceOf(int index) {
+        return library.get(index);
+    }
 }
