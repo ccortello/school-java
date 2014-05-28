@@ -9,14 +9,11 @@ package assignment2;
  * @author Cody Cortello
  * @author Casey Nordgran
  * @version 1.0
- *
  */
 public class Book {
 
     private long isbn;
-
     private String author;
-
     private String title;
 
     public Book(long _isbn, String _author, String _title) {

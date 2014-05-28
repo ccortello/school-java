@@ -18,9 +18,15 @@ public class LibraryBook extends Book {
     private String holder;
     private GregorianCalendar dueDate;
 
-    //sole constructor for the LibraryBook class
+    /**
+     * sole constructor for the LibraryBook class, uses the book constructor
+     * to assign ISBN, author, and title, and also requires holder & dueDate be set
+     * to null until they are checked out.
+     */
     public LibraryBook(long isbn, String author, String title) {
         super(isbn, author, title);
+        holder = null;
+        dueDate = null;
     }
 
     /**

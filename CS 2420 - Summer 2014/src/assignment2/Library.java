@@ -257,7 +257,7 @@ public class Library {
     }
 
     /**
-     * Returns a  LibraryBook object at the index of this LibraryBook ArrayList
+     * Returns a LibraryBook object copy at the index of this LibraryBook ArrayList
      *
      * @param index Index of requested LibraryBook object to be returned.
      * @return requested library book at specific index
