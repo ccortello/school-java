@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="updated">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryTest.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -81,38 +81,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LibraryTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="LibraryTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1168" max-vertical-offset="3575">
-              <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.45482865" vertical-offset="1983" max-vertical-offset="4200">
+              <caret line="95" column="50" selection-start-line="95" selection-start-column="50" selection-end-line="95" selection-end-column="50" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2649#2655#0" expanded="true" />
-                <element signature="e#2724#2732#0" expanded="true" />
-                <element signature="method#generateLibrary#0;class#LibraryTest#0" expanded="true" />
-                <element signature="e#4889#4902#0" expanded="true" />
-                <element signature="method#generateIsbn#0;class#LibraryTest#0" expanded="true" />
+                <element signature="docComment;class#LibraryTest#0" expanded="false" />
+                <element signature="e#6099#6107#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Library.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Library.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/Library.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25525945" vertical-offset="593" max-vertical-offset="3150">
-              <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="2175">
+              <caret line="91" column="19" selection-start-line="91" selection-start-column="19" selection-end-line="91" selection-end-column="19" />
               <folding>
                 <element signature="docComment;class#Library#0" expanded="false" />
                 <element signature="docComment;method#add#0;class#Library#0" expanded="false" />
-                <element signature="e#1483#1496#0" expanded="true" />
+                <element signature="docComment;method#addAll#0;class#Library#0" expanded="false" />
+                <element signature="docComment;method#addAll#1;class#Library#0" expanded="false" />
+                <element signature="docComment;method#lookup#0;class#Library#0" expanded="false" />
                 <element signature="docComment;method#lookup#1;class#Library#0" expanded="false" />
-                <element signature="e#3856#3869#0" expanded="true" />
                 <element signature="docComment;method#checkout#0;class#Library#0" expanded="false" />
                 <element signature="docComment;method#checkin#0;class#Library#0" expanded="false" />
                 <element signature="e#6237#6303#0" expanded="false" />
-                <element signature="method#checkin#1;class#Library#0" expanded="true" />
+                <element signature="docComment;method#checkin#1;class#Library#0" expanded="false" />
+                <element signature="docComment;method#bookList#0;class#Library#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -189,8 +187,8 @@
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/Mushroom_Publishing.txt" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryBookGeneric.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryGeneric.java" />
-        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryTest.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/Library.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryTest.java" />
       </list>
     </option>
   </component>
@@ -336,7 +334,7 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.sourceCode" />
+    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -1325,7 +1323,11 @@
       <created>1401237041109</created>
       <updated>1401237041109</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="updated">
+      <created>1401237143807</created>
+      <updated>1401237143807</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1361,19 +1363,20 @@
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.14166667" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5139092" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45523193" sideWeight="0.5072917" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32842106" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27184466" sideWeight="0.3703125" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27184466" sideWeight="0.3703125" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14166667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1952535" sideWeight="0.49270833" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27184466" sideWeight="0.6296875" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1381,7 +1384,6 @@
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5139092" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1406,9 +1408,9 @@
     <MESSAGE value="method initialization&#10;" />
     <MESSAGE value="Library, LibraryTest, and Mush... files copied to directory" />
     <MESSAGE value="moved getHolder, made BookTest" />
-    <MESSAGE value="updated" />
     <MESSAGE value="changed Library.addAll(String Filename) method to take only the abstract file name." />
-    <option name="LAST_COMMIT_MESSAGE" value="changed Library.addAll(String Filename) method to take only the abstract file name." />
+    <MESSAGE value="updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1775,35 +1777,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryTest.java">
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/Library.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1168" max-vertical-offset="3575">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="2175">
+          <caret line="91" column="19" selection-start-line="91" selection-start-column="19" selection-end-line="91" selection-end-column="19" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2649#2655#0" expanded="true" />
-            <element signature="e#2724#2732#0" expanded="true" />
-            <element signature="method#generateLibrary#0;class#LibraryTest#0" expanded="true" />
-            <element signature="e#4889#4902#0" expanded="true" />
-            <element signature="method#generateIsbn#0;class#LibraryTest#0" expanded="true" />
+            <element signature="docComment;class#Library#0" expanded="false" />
+            <element signature="docComment;method#add#0;class#Library#0" expanded="false" />
+            <element signature="docComment;method#addAll#0;class#Library#0" expanded="false" />
+            <element signature="docComment;method#addAll#1;class#Library#0" expanded="false" />
+            <element signature="docComment;method#lookup#0;class#Library#0" expanded="false" />
+            <element signature="docComment;method#lookup#1;class#Library#0" expanded="false" />
+            <element signature="docComment;method#checkout#0;class#Library#0" expanded="false" />
+            <element signature="docComment;method#checkin#0;class#Library#0" expanded="false" />
+            <element signature="e#6237#6303#0" expanded="false" />
+            <element signature="docComment;method#checkin#1;class#Library#0" expanded="false" />
+            <element signature="docComment;method#bookList#0;class#Library#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/Library.java">
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25525945" vertical-offset="593" max-vertical-offset="3150">
-          <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.45482865" vertical-offset="1983" max-vertical-offset="4200">
+          <caret line="95" column="50" selection-start-line="95" selection-start-column="50" selection-end-line="95" selection-end-column="50" />
           <folding>
-            <element signature="docComment;class#Library#0" expanded="false" />
-            <element signature="docComment;method#add#0;class#Library#0" expanded="false" />
-            <element signature="e#1483#1496#0" expanded="true" />
-            <element signature="docComment;method#lookup#1;class#Library#0" expanded="false" />
-            <element signature="e#3856#3869#0" expanded="true" />
-            <element signature="docComment;method#checkout#0;class#Library#0" expanded="false" />
-            <element signature="docComment;method#checkin#0;class#Library#0" expanded="false" />
-            <element signature="e#6237#6303#0" expanded="false" />
-            <element signature="method#checkin#1;class#Library#0" expanded="true" />
+            <element signature="docComment;class#LibraryTest#0" expanded="false" />
+            <element signature="e#6099#6107#0" expanded="true" />
           </folding>
         </state>
       </provider>
