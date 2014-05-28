@@ -1,19 +1,25 @@
 package assignment2;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.nio.file.FileSystems;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
  * Class representation of a library (a collection of library books).
+ *
+ * @author Cody Cortello
+ * @author Casey Nordgran
+ * @version 1.0
  */
 public class Library {
 
+    // field containing the collection of libraryBook objects
     private ArrayList<LibraryBook> library;
 
+    // sole constructor for the Library class
     public Library() {
         library = new ArrayList<LibraryBook>();
     }
@@ -48,21 +54,32 @@ public class Library {
      * <p/>
      * If file does not exist or format is violated, do nothing.
      *
-     * @param filename
+     * @param filename name of the text file to be read
      */
     public void addAll(String filename) {
+        // temporary array to hold field values read from the text file.
         ArrayList<LibraryBook> toBeAdded = new ArrayList<LibraryBook>();
 
         try {
-            Scanner fileIn = new Scanner(FileSystems.getDefault().getPath(filename));
+            // creates current directory path as a string.
+            String current = new java.io.File(".").getCanonicalPath();
+
+            // creates file directory of parent file to this class
+            File parentFile = new File(current);
+
+            // fileIn scans the file 'filename' found in parentFile
+            Scanner fileIn = new Scanner(new File(parentFile, filename));
             int lineNum = 1;
 
+            // pull the data from the file one line at a time
             while (fileIn.hasNextLine()) {
                 String line = fileIn.nextLine();
 
+                // second scanner to read each line separately
                 Scanner lineIn = new Scanner(line);
-                lineIn.useDelimiter("\\t");
+                lineIn.useDelimiter("\t");
 
+                // next three if statements throw exceptions if the format is wrong
                 if (!lineIn.hasNextLong())
                     throw new ParseException("ISBN", lineNum);
                 long isbn = lineIn.nextLong();
@@ -75,8 +92,10 @@ public class Library {
                     throw new ParseException("Title", lineNum);
                 String title = lineIn.next();
 
+                // fields from 1 line used to create new library book and add it to the temp list
                 toBeAdded.add(new LibraryBook(isbn, author, title));
 
+                // line number is followed to give line# of exception error if it occurrs
                 lineNum++;
             }
         } catch (FileNotFoundException e) {
@@ -88,10 +107,11 @@ public class Library {
                     + ". Nothing added to the library.");
             return;
         } catch (IOException e) {
-            System.err.println(e.getMessage());
+            System.err.println(e.getMessage() + "\t The Files directory path is incorrect!");
             return;
         }
 
+        // field values finally assigned to the library array list of library books
         library.addAll(toBeAdded);
     }
 
@@ -209,9 +229,13 @@ public class Library {
     public boolean checkin(String holder) {
         // get list of all books under specified holder
         ArrayList<LibraryBook> books = this.lookup(holder);
-        if (books.size() == 0) // if no books under the specified holder return false
+
+        // if no books under the specified holder return false
+        if (books.size() == 0)
             return false;
-        for (LibraryBook book : books) // otherwise check in each book and return true
+
+        // otherwise check in each book and return true
+        for (LibraryBook book : books)
             book.checkIn();
         return true;
     }
@@ -223,10 +247,21 @@ public class Library {
         return new ArrayList<LibraryBook>(library);
     }
 
-    public int size() {
+    /**
+     * Used for testing purposes in the LibraryTest class
+     *
+     * @return Number of books that are in the library.
+     */
+    protected int bookCount() {
         return library.size();
     }
 
+    /**
+     * Returns a  LibraryBook object at the index of this LibraryBook ArrayList
+     *
+     * @param index Index of requested LibraryBook object to be returned.
+     * @return requested library book at specific index
+     */
     public LibraryBook getInstanceOf(int index) {
         return library.get(index);
     }

@@ -7,44 +7,59 @@ import java.util.GregorianCalendar;
  * once the book is created.
  * <p/>
  * Note that ISBNs are unique.
+ *
+ * @author Cody Cortello
+ * @author Casey Nordgran
+ * @version 1.0
  */
 public class LibraryBook extends Book {
 
+    // two extra fields added in order to checkout a book
     private String holder;
     private GregorianCalendar dueDate;
 
+    //sole constructor for the LibraryBook class
     public LibraryBook(long isbn, String author, String title) {
         super(isbn, author, title);
     }
 
     /**
-     * @return the due date
+     * @return the due date of the book
      */
     public GregorianCalendar getDueDate() {
         return this.dueDate;
     }
 
     /**
-     * @return the holder
+     * @return Name of the person with the book checked out
      */
     public String getHolder() {
         return this.holder;
     }
 
     /**
-     * Sets the due date
+     * Sets the due date of this libraryBook at time of checkout
+     *
+     * @param month Month as an integer between 0 and 11
+     * @param day   Day of the month
+     * @param year  year of the due date
      */
     public void setDueDate(int month, int day, int year) {
         this.dueDate = new GregorianCalendar(year, month, day);
     }
 
     /**
-     * Sets the holder
+     * Sets the holder field to the name of the person checking out the book.
+     *
+     * @param newHolder Name of the person that is checking out the library book.
      */
     public void setHolder(String newHolder) {
         this.holder = newHolder;
     }
 
+    /**
+     * Sets the holder & due date fields back to null when the book is checked in.
+     */
     public void checkIn() {
         // remove 'holder' and 'dueDate'
         this.holder = null;
@@ -52,7 +67,7 @@ public class LibraryBook extends Book {
     }
 
     /**
-     * Checks out a book,
+     * Checks this book out to holder, and sets the due date.
      *
      * @param holder  name of the person that is checking out the book.
      * @param dueDate date the book is to be returned.

@@ -49,19 +49,19 @@ public class LibraryTest {
         if (lib.checkin("Jane Doe"))
             System.err.println("TEST FAILED -- small library: checkin(holder)");
 
-        // test a medium library, add the .txt book list all at once to 'lib'
+
+        // test a medium library, add the .txt book list all at once to 'lib2'
         String fileInward = "Mushroom_Publishing.txt";
         Library lib2 = new Library();
         lib2.addAll(fileInward);
-        for (int i = 0; i < lib2.size(); i++) {
-            long isbnPrint = lib2.getInstanceOf(i).getIsbn();
+        for (int i = 0; i < lib2.bookCount(); i++) {
+            long isbnPrint = (long) lib2.getInstanceOf(i).getIsbn();
             String authorPrint = lib2.getInstanceOf(i).getAuthor();
             String titlePrint = lib2.getInstanceOf(i).getTitle();
             System.out.print(isbnPrint + "\t");
             System.out.print(authorPrint + "\t");
             System.out.print(titlePrint + "\t");
             System.out.print("\n");
-
         }
 
 
@@ -91,11 +91,7 @@ public class LibraryTest {
         // lookup books from random positions in the library and validate their holders against the
         //  previously substantiated list
         int numberOfLookups = 10000;
-        for (
-                int i = 0;
-                i < numberOfLookups; i++)
-
-        {
+        for (int i = 0; i < numberOfLookups; i++) {
             int randIndex = (int) (Math.random() * numberOfBooks);
             long isbnTest = isbnList.get(randIndex);
 
