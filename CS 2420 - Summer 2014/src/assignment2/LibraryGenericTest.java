@@ -9,7 +9,6 @@ import java.util.GregorianCalendar;
  * @author Cody Cortello
  * @author Casey Nordgran
  * @version 1.0
-
  */
 public class LibraryGenericTest {
 
@@ -88,10 +87,6 @@ public class LibraryGenericTest {
             System.err.println("TEST FAILED: lookup(holder)");
         if (!lib2.checkin(patron2))
             System.err.println("TEST FAILED: checkin(holder)");
-
-        /* our added tests */
-
-
 
         System.out.println("Testing done.");
     }
