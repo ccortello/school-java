@@ -44,6 +44,15 @@ public class LibraryBook extends Book {
     }
 
     /**
+     * Sets the holder field to the name of the person checking out the book.
+     *
+     * @param newHolder Name of the person that is checking out the library book.
+     */
+    public void setHolder(String newHolder) {
+        this.holder = newHolder;
+    }
+
+    /**
      * Sets the due date of this libraryBook at time of checkout
      *
      * @param month Month as an integer between 0 and 11
@@ -52,15 +61,6 @@ public class LibraryBook extends Book {
      */
     public void setDueDate(int month, int day, int year) {
         this.dueDate = new GregorianCalendar(year, month, day);
-    }
-
-    /**
-     * Sets the holder field to the name of the person checking out the book.
-     *
-     * @param newHolder Name of the person that is checking out the library book.
-     */
-    public void setHolder(String newHolder) {
-        this.holder = newHolder;
     }
 
     /**

@@ -43,17 +43,17 @@ public class LibraryBookGeneric<Type> extends Book {
     }
 
     /**
-     * Sets the due date
-     */
-    public void setDueDate(int month, int day, int year) {
-        this.dueDate = new GregorianCalendar(year, month, day);
-    }
-
-    /**
      * Sets the holder
      */
     public void setHolder(Type newHolder) {
         this.holder = newHolder;
+    }
+
+    /**
+     * Sets the due date
+     */
+    public void setDueDate(int month, int day, int year) {
+        this.dueDate = new GregorianCalendar(year, month, day);
     }
 
     /**

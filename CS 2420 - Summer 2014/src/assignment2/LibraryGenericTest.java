@@ -89,6 +89,10 @@ public class LibraryGenericTest {
         if (!lib2.checkin(patron2))
             System.err.println("TEST FAILED: checkin(holder)");
 
+        /* our added tests */
+
+
+
         System.out.println("Testing done.");
     }
 }

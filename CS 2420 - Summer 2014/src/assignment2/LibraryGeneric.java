@@ -12,7 +12,6 @@ import java.util.*;
  * @author Cody Cortello
  * @author Casey Nordgran
  * @version 1.0
- *
  */
 public class LibraryGeneric<Type> {
 
@@ -21,6 +20,25 @@ public class LibraryGeneric<Type> {
     // sole constructor of this LibraryGeneric<Type> class
     public LibraryGeneric() {
         library = new ArrayList<LibraryBookGeneric<Type>>();
+    }
+
+    /**
+     * Performs a SELECTION SORT on the input ArrayList.
+     * 1. Find the smallest item in the list.
+     * 2. Swap the smallest item with the first item in the list.
+     * 3. Now let the list be the remaining unsorted portion
+     * (second item to Nth item) and repeat steps 1, 2, and 3.
+     */
+    private static <ListType> void sort(ArrayList<ListType> list, Comparator<ListType> c) {
+        for (int i = 0; i < list.size() - 1; i++) {
+            int j, minIndex;
+            for (j = i + 1, minIndex = i; j < list.size(); j++)
+                if (c.compare(list.get(j), list.get(minIndex)) < 0)
+                    minIndex = j;
+            ListType temp = list.get(i);
+            list.set(i, list.get(minIndex));
+            list.set(minIndex, temp);
+        }
     }
 
     /**
@@ -290,25 +308,6 @@ public class LibraryGeneric<Type> {
 
         // return books in overdueList after they are sorted.
         return overdueList;
-    }
-
-    /**
-     * Performs a SELECTION SORT on the input ArrayList.
-     * 1. Find the smallest item in the list.
-     * 2. Swap the smallest item with the first item in the list.
-     * 3. Now let the list be the remaining unsorted portion
-     * (second item to Nth item) and repeat steps 1, 2, and 3.
-     */
-    private static <ListType> void sort(ArrayList<ListType> list, Comparator<ListType> c) {
-        for (int i = 0; i < list.size() - 1; i++) {
-            int j, minIndex;
-            for (j = i + 1, minIndex = i; j < list.size(); j++)
-                if (c.compare(list.get(j), list.get(minIndex)) < 0)
-                    minIndex = j;
-            ListType temp = list.get(i);
-            list.set(i, list.get(minIndex));
-            list.set(minIndex, temp);
-        }
     }
 
     /**
