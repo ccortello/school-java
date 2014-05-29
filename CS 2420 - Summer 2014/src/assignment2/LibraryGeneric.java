@@ -2,17 +2,23 @@ package assignment2;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.text.ParseException;
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * Class representation of a library (a collection of library books).
+ *
+ * @author Cody Cortello
+ * @author Casey Nordgran
+ * @version 1.0
+ *
  */
 public class LibraryGeneric<Type> {
 
     private ArrayList<LibraryBookGeneric<Type>> library;
 
+    // sole constructor of this LibraryGeneric<Type> class
     public LibraryGeneric() {
         library = new ArrayList<LibraryBookGeneric<Type>>();
     }
@@ -47,21 +53,25 @@ public class LibraryGeneric<Type> {
      * <p/>
      * If file does not exist or format is violated, do nothing.
      *
-     * @param filename
+     * @param filename Name of the text file, must have file extension as well.
      */
     public void addAll(String filename) {
         ArrayList<LibraryBookGeneric<Type>> toBeAdded = new ArrayList<LibraryBookGeneric<Type>>();
 
         try {
+            // fileIn scans the file 'filename'
             Scanner fileIn = new Scanner(new File(filename));
             int lineNum = 1;
 
+            // pull the data from the file one line at a time
             while (fileIn.hasNextLine()) {
                 String line = fileIn.nextLine();
 
+                // second scanner to read each line separately
                 Scanner lineIn = new Scanner(line);
-                lineIn.useDelimiter("\\t");
+                lineIn.useDelimiter("\t");
 
+                // next three if statements throw exceptions if the format is wrong
                 if (!lineIn.hasNextLong())
                     throw new ParseException("ISBN", lineNum);
                 long isbn = lineIn.nextLong();
@@ -74,8 +84,10 @@ public class LibraryGeneric<Type> {
                     throw new ParseException("Title", lineNum);
                 String title = lineIn.next();
 
+                // fields from 1 line used to create new library book and add it to the temp list
                 toBeAdded.add(new LibraryBookGeneric<Type>(isbn, author, title));
 
+                // line number is followed to give line# of exception error if it occurrs
                 lineNum++;
             }
         } catch (FileNotFoundException e) {
@@ -85,6 +97,9 @@ public class LibraryGeneric<Type> {
             System.err.println(e.getLocalizedMessage()
                     + " formatted incorrectly at line " + e.getErrorOffset()
                     + ". Nothing added to the library.");
+            return;
+        } catch (IOException e) {
+            System.err.println(e.getMessage() + "\t The Files directory path is incorrect!");
             return;
         }
 
@@ -180,15 +195,17 @@ public class LibraryGeneric<Type> {
      *             ISBN of the library book to be checked in
      */
     public boolean checkin(long isbn) {
-        for (LibraryBookGeneric<Type> libraryBookGeneric : library) // parse entire library
-            if (libraryBookGeneric.getIsbn() == isbn) { // either return false if book is checked in or check the book out
-                //  and return true
+        // parse entire library
+        for (LibraryBookGeneric<Type> libraryBookGeneric : library)
+            // either return false if book is checked in or check the book out and return true
+            if (libraryBookGeneric.getIsbn() == isbn) {
                 if (libraryBookGeneric.getHolder() == null)
                     return false;
                 libraryBookGeneric.checkIn();
                 return true;
             }
-        return false; // if the book wasn't found return false
+        // if the book wasn't found return false
+        return false;
     }
 
     /**
@@ -207,6 +224,7 @@ public class LibraryGeneric<Type> {
         ArrayList<LibraryBookGeneric<Type>> genericBooks = this.lookup(holder);
         if (genericBooks.size() == 0)
             return false;
+        // check in each book that shows up in the list.
         for (LibraryBookGeneric<Type> genericBook : genericBooks)
             genericBook.checkIn();
         return true;
@@ -218,4 +236,150 @@ public class LibraryGeneric<Type> {
     protected ArrayList<LibraryBookGeneric<Type>> bookList() {
         return new ArrayList<LibraryBookGeneric<Type>>(library);
     }
+
+    /**
+     * Returns the list of library books, sorted by ISBN (smallest ISBN first).
+     */
+    public ArrayList<LibraryBookGeneric<Type>> getInventoryList() {
+        ArrayList<LibraryBookGeneric<Type>> libraryCopy = new ArrayList<LibraryBookGeneric<Type>>();
+        libraryCopy.addAll(library);
+
+        OrderByIsbn comparator = new OrderByIsbn();
+
+        sort(libraryCopy, comparator);
+
+        return libraryCopy;
+    }
+
+    /**
+     * Returns the list of library books, sorted by author
+     */
+    public ArrayList<LibraryBookGeneric<Type>> getOrderedByAuthor() {
+        ArrayList<LibraryBookGeneric<Type>> libraryCopy = new ArrayList<LibraryBookGeneric<Type>>();
+        libraryCopy.addAll(library);
+
+        OrderByAuthor comparator = new OrderByAuthor();
+
+        sort(libraryCopy, comparator);
+
+        return libraryCopy;
+    }
+
+    /**
+     * Returns the list of library books with due dates older than the input
+     * date. The list is sorted by date (oldest first).
+     * <p/>
+     * If no library books are overdue, returns an empty list.
+     */
+    public ArrayList<LibraryBookGeneric<Type>> getOverdueList(int month, int day, int year) {
+        ArrayList<LibraryBookGeneric<Type>> overdueList = new ArrayList<LibraryBookGeneric<Type>>(0);
+
+        // calender  date determined by the parameters passed in of month, day, year
+        GregorianCalendar selectDate = new GregorianCalendar(year, month, day);
+
+        // only books that test to be overdue are added to the overdueList
+        for (LibraryBookGeneric<Type> libBook : library) {
+            if ((libBook.getDueDate().compareTo(selectDate)) < 0)
+                overdueList.add(libBook);
+        }
+
+        OrderByDueDate comparator = new OrderByDueDate();
+
+        //sorts overdueList by the OrderByDueDate comparator function object
+        sort(overdueList, comparator);
+
+        // return books in overdueList after they are sorted.
+        return overdueList;
+    }
+
+    /**
+     * Performs a SELECTION SORT on the input ArrayList.
+     * 1. Find the smallest item in the list.
+     * 2. Swap the smallest item with the first item in the list.
+     * 3. Now let the list be the remaining unsorted portion
+     * (second item to Nth item) and repeat steps 1, 2, and 3.
+     */
+    private static <ListType> void sort(ArrayList<ListType> list, Comparator<ListType> c) {
+        for (int i = 0; i < list.size() - 1; i++) {
+            int j, minIndex;
+            for (j = i + 1, minIndex = i; j < list.size(); j++)
+                if (c.compare(list.get(j), list.get(minIndex)) < 0)
+                    minIndex = j;
+            ListType temp = list.get(i);
+            list.set(i, list.get(minIndex));
+            list.set(minIndex, temp);
+        }
+    }
+
+    /**
+     * Comparator that defines an ordering among library books using the ISBN.
+     */
+    protected class OrderByIsbn implements Comparator<LibraryBookGeneric<Type>> {
+
+        /**
+         * Returns a negative value if lhs is smaller than rhs. Returns a positive
+         * value if lhs is larger than rhs. Returns 0 if lhs and rhs are equal.
+         */
+        public int compare(LibraryBookGeneric<Type> lhs,
+                           LibraryBookGeneric<Type> rhs) {
+            return (int) (lhs.getIsbn() - rhs.getIsbn());
+        }
+    }
+
+    /**
+     * Comparator that defines an ordering among library books using the author,  and book title as a tie-breaker.
+     */
+    protected class OrderByAuthor implements Comparator<LibraryBookGeneric<Type>> {
+
+        /**
+         * Uses the compareTo String method
+         * Returns a negative value if lhs is lexicographically smaller than rhs. Returns a positive
+         * value if lhs is lexicographically larger than rhs. If lhs == rhs, than the titles of the books
+         * are compared to each other.
+         */
+        public int compare(LibraryBookGeneric<Type> lhs, LibraryBookGeneric<Type> rhs) {
+            if ((lhs.getAuthor().compareTo(rhs.getAuthor())) > 0)
+                return 1;
+            else if ((lhs.getAuthor().compareTo(rhs.getAuthor())) < 0)
+                return -1;
+            else
+                return lhs.getTitle().compareTo(rhs.getTitle());
+        }
+    }
+
+    /**
+     * Comparator that defines an ordering among library books using the due date.
+     */
+    protected class OrderByDueDate implements Comparator<LibraryBookGeneric<Type>> {
+
+        /**
+         * Returns a negative value if lhs is smaller than rhs. Returns a positive
+         * value if lhs is larger than rhs. Returns 0 if lhs and rhs are equal.
+         */
+        public int compare(LibraryBookGeneric<Type> lhs, LibraryBookGeneric<Type> rhs) {
+            /*
+            any due date that is null has the year field set to max for the local date
+            variables to ensure that books with due dates are due before books with null
+            due dates (meaning no due date and they are checked in)
+            */
+            // local variable dates to avoid null pointer exceptions
+            GregorianCalendar lhsDate = new GregorianCalendar();
+            GregorianCalendar rhsDate = new GregorianCalendar();
+
+            if (lhs.getDueDate() == null)
+                lhsDate.set(Calendar.YEAR, lhsDate.getActualMaximum(Calendar.YEAR));
+            else
+                lhsDate = (GregorianCalendar) lhs.getDueDate().clone(); //clone copy of lhs due date
+
+            if (rhs.getDueDate() == null)
+                rhsDate.set(Calendar.YEAR, rhsDate.getActualMaximum(Calendar.YEAR));
+            else
+                rhsDate = (GregorianCalendar) rhs.getDueDate().clone(); //clone copy of rhs due date
+
+            // return comparison of newly assigned local date variables
+            return lhsDate.compareTo(rhsDate);
+        }
+    }
+
 }
+

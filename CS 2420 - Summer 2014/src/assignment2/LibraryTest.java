@@ -49,8 +49,21 @@ public class LibraryTest {
         if (lib.checkin("Jane Doe"))
             System.err.println("TEST FAILED -- small library: checkin(holder)");
 
-        // test a medium library
-        lib.addAll("C:\\Users\\Cody\\Java\\school-java\\CS 2420 - Summer 2014\\src\\assignment2\\Mushroom_Publishing.txt");
+
+        // test a medium library, add the .txt book list all at once to 'lib2'
+        String filename = "Mushroom_Publishing.txt";  //file must be placed in current project file
+        Library lib2 = new Library();
+        lib2.addAll(filename);
+        for (int i = 0; i < lib2.bookCount(); i++) {
+            long isbnPrint = (long) lib2.getInstanceOf(i).getIsbn();
+            String authorPrint = lib2.getInstanceOf(i).getAuthor();
+            String titlePrint = lib2.getInstanceOf(i).getTitle();
+            System.out.print(isbnPrint + "\t");
+            System.out.print(authorPrint + "\t");
+            System.out.print(titlePrint + "\t");
+            System.out.print("\n");
+        }
+
 
         // test a large library
         Library testLibrary = new Library();
@@ -83,7 +96,7 @@ public class LibraryTest {
             long isbnTest = isbnList.get(randIndex);
 
             // console output for debugging purposes
-//            System.out.println("Lookup #" + String.format("%05d", i+1) + "\t" + testLibrary.lookup(isbnTest));
+//            System.out.println("Lookup #" + String.format("%05d", j+1) + "\t" + testLibrary.lookup(isbnTest));
 
             // validate the holder against the substantiated list
             if (!testLibrary.lookup(isbnTest).equals(holderList.get(randIndex)))
@@ -91,7 +104,9 @@ public class LibraryTest {
         }
 
         System.out.println("Testing done.");
+
     }
+
 
     /**
      * Returns a library of "dummy" books (random ISBN and placeholders for author
@@ -134,4 +149,5 @@ public class LibraryTest {
 
         return Long.parseLong(isbn);
     }
+
 }
