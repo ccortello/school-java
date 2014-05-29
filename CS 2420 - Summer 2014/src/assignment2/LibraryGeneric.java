@@ -290,7 +290,7 @@ public class LibraryGeneric<Type> {
      * If no library books are overdue, returns an empty list.
      */
     public ArrayList<LibraryBookGeneric<Type>> getOverdueList(int month, int day, int year) {
-        ArrayList<LibraryBookGeneric<Type>> overdueList = new ArrayList<LibraryBookGeneric<Type>>(0);
+        ArrayList<LibraryBookGeneric<Type>> overdueList = new ArrayList<LibraryBookGeneric<Type>>();
 
         // calender  date determined by the parameters passed in of month, day, year
         GregorianCalendar selectDate = new GregorianCalendar(year, month, day);

@@ -3,7 +3,6 @@ package assignment2;
 import junit.framework.TestCase;
 
 import java.util.ArrayList;
-import java.util.GregorianCalendar;
 
 /**
  * Unit tests for the methods added to LibraryGeneric
@@ -74,22 +73,25 @@ public class OurLibraryGenericTest extends TestCase {
 
     public void testGetOverdueList() throws Exception {
         // checkout each book to set a due date
-        book1.checkOut("first holder", new GregorianCalendar(2014, 5, 25));
-        book2.checkOut("second holder", new GregorianCalendar(2014, 5, 26));
-        book3.checkOut("third holder", new GregorianCalendar(2014, 5, 27));
-        book4.checkOut("fourth holder", new GregorianCalendar(2014, 5, 28));
-        book5.checkOut("fifth holder", new GregorianCalendar(2014, 5, 29));
-        book6.checkOut("sixth holder", new GregorianCalendar(2014, 5, 30));
+        /* should be overdue */
+        testLibraryString.checkout(book1.getIsbn(), "first holder", 2014, 5, 26);
+        testLibraryString.checkout(book2.getIsbn(), "second holder", 2014, 5, 26);
+        testLibraryString.checkout(book3.getIsbn(), "third holder", 2014, 5, 28);
+        testLibraryString.checkout(book4.getIsbn(), "fourth holder", 2014, 5, 24);
+
+        /* should _not_ be overdue */
+        testLibraryString.checkout(book5.getIsbn(), "fifth holder", 2014, 5, 29);
+        testLibraryString.checkout(book6.getIsbn(), "sixth holder", 2014, 5, 30);
 
         // use getOverdueList() to retrieve a sorted list
-        ArrayList<LibraryBookGeneric<String>> stringInventoryList = testLibraryString.getOverdueList(5, 26, 2014);
+        ArrayList<LibraryBookGeneric<String>> stringInventoryList = testLibraryString.getOverdueList(5, 29, 2014);
 
         System.out.println("\nOverdue book list:\n" + stringInventoryList);
 
         // assertEquals for each book in the sorted array against the expected sorting of the books
-        assertEquals(book5, stringInventoryList.get(0));
-        assertEquals(book1, stringInventoryList.get(1));
-        assertEquals(book4, stringInventoryList.get(2));
-        assertEquals(book2, stringInventoryList.get(3));
+        assertEquals(book3, stringInventoryList.get(0));
+        assertEquals(book4, stringInventoryList.get(1));
+        assertEquals(book5, stringInventoryList.get(2));
+        assertEquals(book6, stringInventoryList.get(3));
     }
 }
