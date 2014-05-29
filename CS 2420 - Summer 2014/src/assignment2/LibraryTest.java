@@ -7,6 +7,11 @@ import java.util.UUID;
 
 /**
  * Testing class for Library.
+ *
+ * @author Cody Cortello
+ * @author Casey Nordgran
+ * @version 1.0
+ *
  */
 public class LibraryTest {
 
