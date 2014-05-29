@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="updated">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryGeneric.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryGeneric.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/OurLibraryGenericTest.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/OurLibraryGenericTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -85,8 +84,8 @@
       <file leaf-file-name="LibraryGeneric.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryGeneric.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40088105" vertical-offset="1252" max-vertical-offset="1870">
-              <caret line="300" column="25" selection-start-line="300" selection-start-column="25" selection-end-line="300" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.6255507" vertical-offset="1252" max-vertical-offset="1921">
+              <caret line="303" column="56" selection-start-line="303" selection-start-column="56" selection-end-line="303" selection-end-column="56" />
               <folding>
                 <element signature="docComment;method#sort#0;class#LibraryGeneric#0" expanded="false" />
                 <element signature="method#sort#0;class#LibraryGeneric#0" expanded="false" />
@@ -1639,11 +1638,15 @@
       <created>1401396002464</created>
       <updated>1401396002464</updated>
     </task>
-    <option name="localTasksCounter" value="153" />
+    <task id="LOCAL-00153" summary="updated">
+      <created>1401396132459</created>
+      <updated>1401396132459</updated>
+    </task>
+    <option name="localTasksCounter" value="154" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="254316000" />
+    <option name="totallyTimeSpent" value="254347000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -2158,8 +2161,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryGeneric.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40088105" vertical-offset="1252" max-vertical-offset="1870">
-          <caret line="300" column="25" selection-start-line="300" selection-start-column="25" selection-end-line="300" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.6255507" vertical-offset="1252" max-vertical-offset="1921">
+          <caret line="303" column="56" selection-start-line="303" selection-start-column="56" selection-end-line="303" selection-end-column="56" />
           <folding>
             <element signature="docComment;method#sort#0;class#LibraryGeneric#0" expanded="false" />
             <element signature="method#sort#0;class#LibraryGeneric#0" expanded="false" />

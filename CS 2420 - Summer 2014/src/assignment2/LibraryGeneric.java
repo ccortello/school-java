@@ -297,8 +297,11 @@ public class LibraryGeneric<Type> {
 
         // only books that test to be overdue are added to the overdueList
         for (LibraryBookGeneric<Type> libBook : library) {
+            // handle null case in due date (book checked in)
             if (libBook.getDueDate() == null)
                 continue;
+
+            // if the book is overdue add it to the list
             if ((libBook.getDueDate().compareTo(selectDate)) < 0)
                 overdueList.add(libBook);
         }
