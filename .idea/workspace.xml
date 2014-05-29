@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="updated">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryGenericTest.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryGenericTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/assignment2analysis.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/assignment2analysis.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -84,8 +85,8 @@
       <file leaf-file-name="LibraryGeneric.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryGeneric.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.85" vertical-offset="0" max-vertical-offset="1258">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.595" vertical-offset="0" max-vertical-offset="1258">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="docComment;method#sort#0;class#LibraryGeneric#0" expanded="false" />
                 <element signature="method#sort#0;class#LibraryGeneric#0" expanded="false" />
@@ -398,8 +399,8 @@
       <recent name="lab07" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\examples" />
       <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment2" />
+      <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\examples" />
       <recent name="X:\Java\school-java\CS 2420 - Summer 2014\src\assignment2" />
       <recent name="C:\Users\Cody\workspace\CS 2420 - Spring 2014\src\homework10" />
       <recent name="C:\Users\Cody\workspace\CS 2420 - Spring 2014\src\homework09\experiment03" />
@@ -1554,11 +1555,15 @@
       <created>1401389686531</created>
       <updated>1401389686531</updated>
     </task>
-    <option name="localTasksCounter" value="145" />
+    <task id="LOCAL-00145" summary="updated">
+      <created>1401391600455</created>
+      <updated>1401391600455</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="250652000" />
+    <option name="totallyTimeSpent" value="251280000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -2028,16 +2033,16 @@
           <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#405#413#0" expanded="true" />
-            <element signature="e#2390#2403#0" expanded="true" />
+            <element signature="e#404#412#0" expanded="true" />
+            <element signature="e#2389#2402#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryGeneric.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.85" vertical-offset="0" max-vertical-offset="1258">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.595" vertical-offset="0" max-vertical-offset="1258">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="docComment;method#sort#0;class#LibraryGeneric#0" expanded="false" />
             <element signature="method#sort#0;class#LibraryGeneric#0" expanded="false" />
