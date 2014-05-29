@@ -10,7 +10,7 @@ public class OurLibraryGenericTest extends TestCase {
     public void setUp() throws Exception {
         super.setUp();
 
-        testLibraryPhone.add();
+//        testLibraryPhone.add();
     }
 
     public void tearDown() throws Exception {
