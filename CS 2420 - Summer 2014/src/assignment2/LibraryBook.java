@@ -71,16 +71,4 @@ public class LibraryBook extends Book {
         this.holder = null;
         this.dueDate = null;
     }
-
-    /**
-     * Checks this book out to holder, and sets the due date.
-     *
-     * @param holder  name of the person that is checking out the book.
-     * @param dueDate date the book is to be returned.
-     */
-    public void checkOut(String holder, GregorianCalendar dueDate) {
-        // set 'holder' and 'dueDate'
-        this.holder = holder;
-        this.dueDate = dueDate;
-    }
 }

@@ -73,6 +73,7 @@ public class OurLibraryGenericTest extends TestCase {
 
     public void testGetOverdueList() throws Exception {
         // checkout each book to set a due date
+
         /* should be overdue */
         testLibraryString.checkout(book1.getIsbn(), "first holder", 2014, 5, 26);
         testLibraryString.checkout(book2.getIsbn(), "second holder", 2014, 5, 26);
@@ -86,12 +87,10 @@ public class OurLibraryGenericTest extends TestCase {
         // use getOverdueList() to retrieve a sorted list
         ArrayList<LibraryBookGeneric<String>> stringInventoryList = testLibraryString.getOverdueList(5, 29, 2014);
 
-        System.out.println("\nOverdue book list:\n" + stringInventoryList);
-
         // assertEquals for each book in the sorted array against the expected sorting of the books
-        assertEquals(book3, stringInventoryList.get(0));
-        assertEquals(book4, stringInventoryList.get(1));
-        assertEquals(book5, stringInventoryList.get(2));
-        assertEquals(book6, stringInventoryList.get(3));
+        assertEquals(book4, stringInventoryList.get(0));
+        assertEquals(book2, stringInventoryList.get(1));
+        assertEquals(book1, stringInventoryList.get(2));
+        assertEquals(book3, stringInventoryList.get(3));
     }
 }
