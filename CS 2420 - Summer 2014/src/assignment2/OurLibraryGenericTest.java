@@ -46,10 +46,13 @@ public class OurLibraryGenericTest extends TestCase {
     public void testGetInventoryList() throws Exception {
         // use getInventoryList() to retrieve a sorted list
         ArrayList<LibraryBookGeneric<String>> stringInventoryList = testLibraryString.getInventoryList();
-        System.out.println(stringInventoryList.get(0));
-        System.out.println(book1);
 
-
+        // assertEquals for each book in the sorted array against the expected sorting of the books
+        assertEquals(stringInventoryList.get(0), book1);
+        assertEquals(stringInventoryList.get(1), book2);
+        assertEquals(stringInventoryList.get(2), book4);
+        assertEquals(stringInventoryList.get(3), book5);
+        assertEquals(stringInventoryList.get(4), book3);
     }
 
     public void testGetOrderedByAuthor() throws Exception {
