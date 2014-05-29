@@ -1,4 +1,4 @@
-package examples;
+package examples.week2examples;
 
 import java.util.Random;
 
