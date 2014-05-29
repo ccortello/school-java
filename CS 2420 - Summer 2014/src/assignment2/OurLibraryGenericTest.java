@@ -17,7 +17,7 @@ public class OurLibraryGenericTest extends TestCase {
 
     // the only fields are a test library (of String type) and books to be added to the library
     LibraryGeneric<String> testLibraryString;
-    LibraryBookGeneric<String> book1, book2, book3, book4, book5;
+    LibraryBookGeneric<String> book1, book2, book3, book4, book5, book6;
 
     public void setUp() throws Exception {
         super.setUp();
@@ -31,7 +31,7 @@ public class OurLibraryGenericTest extends TestCase {
         book3 = new LibraryBookGeneric<String>(1234567890687L, "third author", "third title");
         book4 = new LibraryBookGeneric<String>(1234567890500L, "fourth author", "fourth title");
         book5 = new LibraryBookGeneric<String>(1234567890501L, "fifth author", "fifth title");
-        book5 = new LibraryBookGeneric<String>(1234567890501L, "fifth author", "fifth title");
+        book6 = new LibraryBookGeneric<String>(1234567890506L, "fifth author", "sixth title");
 
         // add books to library
         testLibraryString.add(book1.getIsbn(), book1.getAuthor(), book1.getTitle());
@@ -39,6 +39,7 @@ public class OurLibraryGenericTest extends TestCase {
         testLibraryString.add(book3.getIsbn(), book3.getAuthor(), book3.getTitle());
         testLibraryString.add(book4.getIsbn(), book4.getAuthor(), book4.getTitle());
         testLibraryString.add(book5.getIsbn(), book5.getAuthor(), book5.getTitle());
+        testLibraryString.add(book6.getIsbn(), book6.getAuthor(), book6.getTitle());
     }
 
     public void tearDown() throws Exception {
