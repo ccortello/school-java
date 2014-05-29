@@ -51,9 +51,9 @@ public class LibraryTest {
 
 
         // test a medium library, add the .txt book list all at once to 'lib2'
-        String fileInward = "Mushroom_Publishing.txt";
+        String filename = "Mushroom_Publishing.txt";  //file must be placed in current project file
         Library lib2 = new Library();
-        lib2.addAll(fileInward);
+        lib2.addAll(filename);
         for (int i = 0; i < lib2.bookCount(); i++) {
             long isbnPrint = (long) lib2.getInstanceOf(i).getIsbn();
             String authorPrint = lib2.getInstanceOf(i).getAuthor();

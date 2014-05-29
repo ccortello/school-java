@@ -61,14 +61,7 @@ public class Library {
         ArrayList<LibraryBook> toBeAdded = new ArrayList<LibraryBook>();
 
         try {
-            // creates current directory path as a string.
-            String current = new java.io.File(".").getCanonicalPath();
-
-            // creates file directory of parent file to this class
-            File parentFile = new File(current);
-
-            // fileIn scans the file 'filename' found in parentFile
-            Scanner fileIn = new Scanner(new File(parentFile, filename));
+            Scanner fileIn = new Scanner(new File(filename));
             int lineNum = 1;
 
             // pull the data from the file one line at a time
