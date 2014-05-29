@@ -10,6 +10,7 @@ import java.util.ArrayList;
  * @author Cody Cortello
  * @author Casey Nordgran
  * @version 1.0
+ *
  */
 
 public class OurLibraryGenericTest extends TestCase {
@@ -30,6 +31,8 @@ public class OurLibraryGenericTest extends TestCase {
         book3 = new LibraryBookGeneric<String>(1234567890687L, "third author", "third title");
         book4 = new LibraryBookGeneric<String>(1234567890500L, "fourth author", "fourth title");
         book5 = new LibraryBookGeneric<String>(1234567890501L, "fifth author", "fifth title");
+
+        // sixth book to test getOrderedByAuthor when author is the same
         book6 = new LibraryBookGeneric<String>(1234567890506L, "fifth author", "sixth title");
 
         // add books to library
