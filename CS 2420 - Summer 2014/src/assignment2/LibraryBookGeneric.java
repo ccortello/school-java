@@ -64,16 +64,4 @@ public class LibraryBookGeneric<Type> extends Book {
         this.holder = null;
         this.dueDate = null;
     }
-
-    /**
-     * Checks out a book,
-     *
-     * @param holder  defined by <Type> determines who has the book checkout.
-     * @param dueDate date the book must be returned to the library.
-     */
-    public void checkOut(Type holder, GregorianCalendar dueDate) {
-        // set 'holder' and 'dueDate'
-        this.holder = holder;
-        this.dueDate = dueDate;
-    }
 }

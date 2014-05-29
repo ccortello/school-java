@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="updated">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryBook.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryBook.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/OurLibraryGenericTest.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/OurLibraryGenericTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryBookGeneric.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryBookGeneric.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -125,15 +124,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OurLibraryGenericTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="OurLibraryGenericTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/OurLibraryGenericTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.6956522" vertical-offset="0" max-vertical-offset="1717">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1717">
               <caret line="95" column="1" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1845#1846#0" expanded="true" />
                 <element signature="e#1885#1886#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LibraryBookGeneric.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryBookGeneric.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3501144" vertical-offset="0" max-vertical-offset="680">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding>
+                <element signature="docComment;class#LibraryBookGeneric#0" expanded="false" />
+                <element signature="docComment;method#LibraryBookGeneric#0;class#LibraryBookGeneric#0" expanded="false" />
+                <element signature="method#LibraryBookGeneric#0;class#LibraryBookGeneric#0" expanded="false" />
+                <element signature="docComment;method#getDueDate#0;class#LibraryBookGeneric#0" expanded="false" />
+                <element signature="docComment;method#getHolder#0;class#LibraryBookGeneric#0" expanded="false" />
+                <element signature="docComment;method#setHolder#0;class#LibraryBookGeneric#0" expanded="false" />
+                <element signature="docComment;method#setDueDate#0;class#LibraryBookGeneric#0" expanded="false" />
+                <element signature="e#1245#1246#0" expanded="true" />
+                <element signature="e#1315#1316#0" expanded="true" />
+                <element signature="docComment;method#checkIn#0;class#LibraryBookGeneric#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -214,7 +234,6 @@
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/BookTester.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/Book.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/Mushroom_Publishing.txt" />
-        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryBookGeneric.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/Library.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryTest.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/examples/week1examples/Shape.java" />
@@ -225,6 +244,7 @@
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryGeneric.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryBook.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/OurLibraryGenericTest.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryBookGeneric.java" />
       </list>
     </option>
   </component>
@@ -1660,11 +1680,15 @@
       <created>1401396837520</created>
       <updated>1401396837520</updated>
     </task>
-    <option name="localTasksCounter" value="157" />
+    <task id="LOCAL-00157" summary="updated">
+      <created>1401396948682</created>
+      <updated>1401396948682</updated>
+    </task>
+    <option name="localTasksCounter" value="158" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="255132000" />
+    <option name="totallyTimeSpent" value="255154000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1688,7 +1712,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5140625" order="8" side_tool="false" content_ui="tabs" />
@@ -1710,8 +1734,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17423134" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2688679" sideWeight="0.49267936" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17423134" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2688679" sideWeight="0.49267936" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -2137,24 +2161,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryBookGeneric.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52037615" vertical-offset="412" max-vertical-offset="782">
-          <caret line="73" column="65" selection-start-line="73" selection-start-column="65" selection-end-line="73" selection-end-column="65" />
-          <folding>
-            <element signature="docComment;class#LibraryBookGeneric#0" expanded="false" />
-            <element signature="docComment;method#LibraryBookGeneric#0;class#LibraryBookGeneric#0" expanded="false" />
-            <element signature="method#LibraryBookGeneric#0;class#LibraryBookGeneric#0" expanded="false" />
-            <element signature="docComment;method#getDueDate#0;class#LibraryBookGeneric#0" expanded="false" />
-            <element signature="docComment;method#getHolder#0;class#LibraryBookGeneric#0" expanded="false" />
-            <element signature="docComment;method#setHolder#0;class#LibraryBookGeneric#0" expanded="false" />
-            <element signature="docComment;method#setDueDate#0;class#LibraryBookGeneric#0" expanded="false" />
-            <element signature="docComment;method#checkIn#0;class#LibraryBookGeneric#0" expanded="false" />
-            <element signature="method#checkIn#0;class#LibraryBookGeneric#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryBook.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1258">
@@ -2209,12 +2215,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/OurLibraryGenericTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.6956522" vertical-offset="0" max-vertical-offset="1717">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1717">
           <caret line="95" column="1" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1845#1846#0" expanded="true" />
             <element signature="e#1885#1886#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryBookGeneric.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3501144" vertical-offset="0" max-vertical-offset="680">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#LibraryBookGeneric#0" expanded="false" />
+            <element signature="docComment;method#LibraryBookGeneric#0;class#LibraryBookGeneric#0" expanded="false" />
+            <element signature="method#LibraryBookGeneric#0;class#LibraryBookGeneric#0" expanded="false" />
+            <element signature="docComment;method#getDueDate#0;class#LibraryBookGeneric#0" expanded="false" />
+            <element signature="docComment;method#getHolder#0;class#LibraryBookGeneric#0" expanded="false" />
+            <element signature="docComment;method#setHolder#0;class#LibraryBookGeneric#0" expanded="false" />
+            <element signature="docComment;method#setDueDate#0;class#LibraryBookGeneric#0" expanded="false" />
+            <element signature="e#1245#1246#0" expanded="true" />
+            <element signature="e#1315#1316#0" expanded="true" />
+            <element signature="docComment;method#checkIn#0;class#LibraryBookGeneric#0" expanded="false" />
           </folding>
         </state>
       </provider>
