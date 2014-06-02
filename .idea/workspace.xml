@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="updated">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollectionTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollection.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollection.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -105,19 +104,19 @@
       <file leaf-file-name="ArrayBasedCollection.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.575" vertical-offset="1103" max-vertical-offset="2057">
-              <caret line="228" column="15" selection-start-line="228" selection-start-column="15" selection-end-line="228" selection-end-column="15" />
+            <state vertical-scroll-proportion="0.70434785" vertical-offset="1392" max-vertical-offset="2414">
+              <caret line="253" column="74" selection-start-line="253" selection-start-column="74" selection-end-line="253" selection-end-column="74" />
               <folding>
                 <element signature="docComment;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#ArrayBasedCollection#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="method#ArrayBasedCollection#0;class#ArrayBasedCollection#0" expanded="false" />
-                <element signature="e#1359#1446#0" expanded="false" />
+                <element signature="e#1266#1353#0" expanded="false" />
                 <element signature="docComment;method#ArrayBasedCollection#1;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="method#ArrayBasedCollection#1;class#ArrayBasedCollection#0" expanded="false" />
-                <element signature="e#1844#1931#0" expanded="false" />
+                <element signature="e#1751#1838#0" expanded="false" />
                 <element signature="docComment;method#grow#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="method#grow#0;class#ArrayBasedCollection#0" expanded="false" />
-                <element signature="e#2329#2385#0" expanded="false" />
+                <element signature="e#2236#2292#0" expanded="false" />
                 <element signature="docComment;method#add#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="method#add#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#addAll#0;class#ArrayBasedCollection#0" expanded="false" />
@@ -126,8 +125,6 @@
                 <element signature="method#clear#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#contains#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="method#contains#0;class#ArrayBasedCollection#0" expanded="false" />
-                <element signature="e#5706#5707#0" expanded="true" />
-                <element signature="e#5753#5754#0" expanded="true" />
                 <element signature="docComment;method#removeAll#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="method#removeAll#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#retainAll#0;class#ArrayBasedCollection#0" expanded="false" />
@@ -137,10 +134,10 @@
                 <element signature="method#toArray#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#toArray#1;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="method#toArray#1;class#ArrayBasedCollection#0" expanded="false" />
-                <element signature="e#7055#7106#0" expanded="false" />
+                <element signature="e#6951#7002#0" expanded="false" />
                 <element signature="docComment;method#toSortedList#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="method#toSortedList#0;class#ArrayBasedCollection#0" expanded="false" />
-                <element signature="e#7339#7423#0" expanded="false" />
+                <element signature="e#7235#7319#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -946,7 +943,7 @@
       <workItem from="1401210028357" duration="9465000" />
       <workItem from="1401388227024" duration="1452000" />
       <workItem from="1401697663196" duration="13000" />
-      <workItem from="1401737072680" duration="6056000" />
+      <workItem from="1401737072680" duration="9797000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -1588,11 +1585,15 @@
       <created>1401740739154</created>
       <updated>1401740739154</updated>
     </task>
-    <option name="localTasksCounter" value="161" />
+    <task id="LOCAL-00161" summary="updated">
+      <created>1401744486027</created>
+      <updated>1401744486027</updated>
+    </task>
+    <option name="localTasksCounter" value="162" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="262196000" />
+    <option name="totallyTimeSpent" value="265937000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -2076,19 +2077,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.575" vertical-offset="1103" max-vertical-offset="2057">
-          <caret line="228" column="15" selection-start-line="228" selection-start-column="15" selection-end-line="228" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.70434785" vertical-offset="1392" max-vertical-offset="2414">
+          <caret line="253" column="74" selection-start-line="253" selection-start-column="74" selection-end-line="253" selection-end-column="74" />
           <folding>
             <element signature="docComment;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#ArrayBasedCollection#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="method#ArrayBasedCollection#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="e#1359#1446#0" expanded="false" />
+            <element signature="e#1266#1353#0" expanded="false" />
             <element signature="docComment;method#ArrayBasedCollection#1;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="method#ArrayBasedCollection#1;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="e#1844#1931#0" expanded="false" />
+            <element signature="e#1751#1838#0" expanded="false" />
             <element signature="docComment;method#grow#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="method#grow#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="e#2329#2385#0" expanded="false" />
+            <element signature="e#2236#2292#0" expanded="false" />
             <element signature="docComment;method#add#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="method#add#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#addAll#0;class#ArrayBasedCollection#0" expanded="false" />
@@ -2097,8 +2098,6 @@
             <element signature="method#clear#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#contains#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="method#contains#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="e#5706#5707#0" expanded="true" />
-            <element signature="e#5753#5754#0" expanded="true" />
             <element signature="docComment;method#removeAll#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="method#removeAll#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#retainAll#0;class#ArrayBasedCollection#0" expanded="false" />
@@ -2108,10 +2107,10 @@
             <element signature="method#toArray#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#toArray#1;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="method#toArray#1;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="e#7055#7106#0" expanded="false" />
+            <element signature="e#6951#7002#0" expanded="false" />
             <element signature="docComment;method#toSortedList#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="method#toSortedList#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="e#7339#7423#0" expanded="false" />
+            <element signature="e#7235#7319#0" expanded="false" />
           </folding>
         </state>
       </provider>

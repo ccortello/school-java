@@ -1,9 +1,6 @@
 package assignment3;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.Iterator;
+import java.util.*;
 
 /**
  * @param <E> - generic type placeholder
@@ -222,26 +219,51 @@ public class ArrayBasedCollection<E> implements Collection<E> {
      */
     private class ArrayBasedIterator implements Iterator<E> {
         int index;
-        boolean gotNext;
+        boolean gotNext, canRemove;
 
         public ArrayBasedIterator() {
             index = 0;
-            if
+            gotNext = (size != 0);
+            canRemove = false;
         }
 
         /* Returns true if the iteration has more elements. */
         public boolean hasNext() {
-            // TODO Auto-generated method stub
-            return false;
+            return gotNext;
         }
 
-        public E next() {
-            // TODO Auto-generated method stub
-            return null;
+        public E next() throws NoSuchElementException {
+            // if there is nothing left to iterate throw the exception
+            if (!gotNext)
+                throw new NoSuchElementException();
+
+            // if there are elements left then 1) increment the Iterator, 2) change the gotNext boolean if the end of the list
+            //  has been reached, 3) asserts canRemove, and 4) return the correct data
+            index++;
+            if (index == size)
+                gotNext = false;
+            canRemove = true;
+            return data[index - 1];
         }
 
-        public void remove() {
-            // TODO Auto-generated method stub
+        public void remove() throws IllegalStateException {
+            // if not a valid remove then throw an exception
+            if (!canRemove)
+                throw new IllegalStateException();
+
+            // copy each element backwards to replace the previous element
+            int copyIndex = index;
+            while (copyIndex < size) {
+                data[copyIndex - 1] = data[copyIndex];
+                copyIndex++;
+            }
+
+            data[size - 1] = null;    // remove copied end element
+
+            // update ArrayBasedCollection fields
+            size--;
+            index--;
+            canRemove = false;
         }
     }
 }
