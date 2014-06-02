@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="updated">
-      <change type="DELETED" beforePath="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment2\BookTest.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollection.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/SearchUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -81,44 +82,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LibraryGeneric.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryGeneric.java">
+      <file leaf-file-name="LibraryTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1177" max-vertical-offset="2006">
-              <caret line="335" column="0" selection-start-line="335" selection-start-column="0" selection-end-line="356" selection-end-column="83" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="2788">
+              <caret line="72" column="11" selection-start-line="72" selection-start-column="11" selection-end-line="72" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SortDemo.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/examples/week2examples/SortDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1734">
+              <caret line="37" column="5" selection-start-line="3" selection-start-column="2" selection-end-line="37" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArrayBasedCollection.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="2.5684783" vertical-offset="561" max-vertical-offset="3944">
+              <caret line="176" column="145" selection-start-line="176" selection-start-column="145" selection-end-line="176" selection-end-column="145" />
               <folding>
-                <element signature="docComment;method#sort#0;class#LibraryGeneric#0" expanded="false" />
-                <element signature="method#sort#0;class#LibraryGeneric#0" expanded="false" />
-                <element signature="docComment;method#add#0;class#LibraryGeneric#0" expanded="false" />
-                <element signature="method#add#0;class#LibraryGeneric#0" expanded="false" />
-                <element signature="docComment;method#addAll#0;class#LibraryGeneric#0" expanded="false" />
-                <element signature="docComment;method#addAll#1;class#LibraryGeneric#0" expanded="false" />
-                <element signature="method#addAll#1;class#LibraryGeneric#0" expanded="false" />
-                <element signature="docComment;method#lookup#0;class#LibraryGeneric#0" expanded="false" />
-                <element signature="method#lookup#0;class#LibraryGeneric#0" expanded="false" />
-                <element signature="docComment;method#lookup#1;class#LibraryGeneric#0" expanded="false" />
-                <element signature="method#lookup#1;class#LibraryGeneric#0" expanded="false" />
-                <element signature="docComment;method#checkout#0;class#LibraryGeneric#0" expanded="false" />
-                <element signature="method#checkout#0;class#LibraryGeneric#0" expanded="false" />
-                <element signature="docComment;method#checkin#0;class#LibraryGeneric#0" expanded="false" />
-                <element signature="method#checkin#0;class#LibraryGeneric#0" expanded="false" />
-                <element signature="docComment;method#checkin#1;class#LibraryGeneric#0" expanded="false" />
-                <element signature="method#checkin#1;class#LibraryGeneric#0" expanded="false" />
-                <element signature="e#9517#9543#0" expanded="true" />
-                <element signature="docComment;method#getOrderedByAuthor#0;class#LibraryGeneric#0" expanded="false" />
-                <element signature="method#getOrderedByAuthor#0;class#LibraryGeneric#0" expanded="false" />
-                <element signature="e#10518#10544#0" expanded="true" />
-                <element signature="docComment;class#OrderByIsbn#0;class#LibraryGeneric#0" expanded="false" />
-                <element signature="class#OrderByIsbn#0;class#LibraryGeneric#0" expanded="false" />
-                <element signature="docComment;method#compare#0;class#OrderByIsbn#0;class#LibraryGeneric#0" expanded="false" />
-                <element signature="docComment;class#OrderByAuthor#0;class#LibraryGeneric#0" expanded="false" />
-                <element signature="class#OrderByAuthor#0;class#LibraryGeneric#0" expanded="false" />
-                <element signature="docComment;method#compare#0;class#OrderByAuthor#0;class#LibraryGeneric#0" expanded="false" />
-                <element signature="method#compare#0;class#OrderByAuthor#0;class#LibraryGeneric#0" expanded="false" />
-                <element signature="docComment;class#OrderByDueDate#0;class#LibraryGeneric#0" expanded="false" />
-                <element signature="class#OrderByDueDate#0;class#LibraryGeneric#0" expanded="false" />
-                <element signature="docComment;method#compare#0;class#OrderByDueDate#0;class#LibraryGeneric#0" expanded="false" />
-                <element signature="method#compare#0;class#OrderByDueDate#0;class#LibraryGeneric#0" expanded="false" />
+                <element signature="e#1157#1187#0" expanded="true" />
+                <element signature="e#1528#1558#0" expanded="true" />
+                <element signature="e#3455#3456#0" expanded="true" />
+                <element signature="e#3478#3479#0" expanded="true" />
+                <element signature="e#4435#4436#0" expanded="true" />
+                <element signature="e#4453#4454#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -127,71 +122,9 @@
       <file leaf-file-name="OurLibraryGenericTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/OurLibraryGenericTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1717">
-              <caret line="95" column="1" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1845#1846#0" expanded="true" />
-                <element signature="e#1885#1886#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LibraryBookGeneric.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryBookGeneric.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
-              <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-              <folding>
-                <element signature="docComment;class#LibraryBookGeneric#0" expanded="false" />
-                <element signature="docComment;method#LibraryBookGeneric#0;class#LibraryBookGeneric#0" expanded="false" />
-                <element signature="method#LibraryBookGeneric#0;class#LibraryBookGeneric#0" expanded="false" />
-                <element signature="docComment;method#getDueDate#0;class#LibraryBookGeneric#0" expanded="false" />
-                <element signature="docComment;method#getHolder#0;class#LibraryBookGeneric#0" expanded="false" />
-                <element signature="docComment;method#setHolder#0;class#LibraryBookGeneric#0" expanded="false" />
-                <element signature="docComment;method#setDueDate#0;class#LibraryBookGeneric#0" expanded="false" />
-                <element signature="e#1245#1246#0" expanded="true" />
-                <element signature="e#1315#1316#0" expanded="true" />
-                <element signature="docComment;method#checkIn#0;class#LibraryBookGeneric#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LibraryGenericTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryGenericTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1246" max-vertical-offset="1683">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#404#412#0" expanded="true" />
-                <element signature="e#2389#2402#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PhoneNumber.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/PhoneNumber.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3707094" vertical-offset="76" max-vertical-offset="952">
-              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="770" max-vertical-offset="1768">
+              <caret line="98" column="1" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LibraryBook.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryBook.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1258">
-              <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
-              <folding>
-                <element signature="e#1654#1655#0" expanded="true" />
-                <element signature="e#1724#1725#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -218,8 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/lab09/experiment02/SimpleHashSet.java" />
-        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment01/experiment01/NumberName.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment01/experiment02/SimpleHashSet.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/homework09/experiment02/SimpleHashSet.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment01/TestApplication.java" />
@@ -269,6 +200,8 @@
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/OurLibraryGenericTest.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryBookGeneric.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/PhoneNumber.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/examples/week2examples/SortDemo.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollection.java" />
       </list>
     </option>
   </component>
@@ -278,8 +211,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -309,6 +242,48 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Problems">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="CS 2420 - Summer 2014">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="CS 2420 - Summer 2014">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -355,50 +330,8 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assignment2" />
+              <option name="myItemId" value="assignment3" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Problems">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="CS 2420 - Summer 2014">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="CS 2420 - Summer 2014">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -448,16 +381,16 @@
     <property name="LayoutCode.rearrangeEntriesJava" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="junit.framework.TestCase" />
+      <recent name="" />
+      <recent name="groovy.util.GroovyTestCase" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="assignment2" />
       <recent name="homework10" />
       <recent name="homework08" />
       <recent name="homework07" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="junit.framework.TestCase" />
-      <recent name="" />
-      <recent name="groovy.util.GroovyTestCase" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="assignment2" />
@@ -467,11 +400,11 @@
       <recent name="lab07" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment3" />
       <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment2" />
       <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\examples" />
       <recent name="X:\Java\school-java\CS 2420 - Summer 2014\src\assignment2" />
       <recent name="C:\Users\Cody\workspace\CS 2420 - Spring 2014\src\homework10" />
-      <recent name="C:\Users\Cody\workspace\CS 2420 - Spring 2014\src\homework09\experiment03" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment2" />
@@ -480,119 +413,6 @@
       <recent name="C:\Users\Cody\workspace\CS 2420 - Spring 2014\src\lab09" />
       <recent name="C:\Users\Cody\workspace\CS 2420 - Spring 2014\src\homework08" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree">
-    <UpdateInfo date="Moments ago" ActionInfo="_Update">
-      <UpdatedFiles>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated from server" />
-          <option name="myStatusName" value="Changed on server" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CHANGED_ON_SERVER" />
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Updated" />
-            <option name="myStatusName" value="Changed" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="UPDATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryGenericTest.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryTest.java</PATH>
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Created" />
-            <option name="myStatusName" value="Created" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="CREATED" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Deleted" />
-            <option name="myStatusName" value="Deleted" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="true" />
-            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Restored" />
-            <option name="myStatusName" value="Will be restored" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="RESTORED" />
-          </FILE-GROUP>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Modified" />
-          <option name="myStatusName" value="Modified" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MODIFIED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Skipped" />
-          <option name="myStatusName" value="Skipped" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SKIPPED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with conflicts" />
-          <option name="myStatusName" value="Will be merged with conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_CONFLICTS" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with tree conflicts" />
-          <option name="myStatusName" value="Merged with tree conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with property conflicts" />
-          <option name="myStatusName" value="Will be merged with property conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged" />
-          <option name="myStatusName" value="Will be merged" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Not in repository" />
-          <option name="myStatusName" value="Not in repository" />
-          <option name="mySupportsDeletion" value="true" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UNKNOWN" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally added" />
-          <option name="myStatusName" value="Locally added" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_ADDED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally removed" />
-          <option name="myStatusName" value="Locally removed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_REMOVED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Switched" />
-          <option name="myStatusName" value="Switched" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SWITCHED" />
-        </FILE-GROUP>
-      </UpdatedFiles>
-    </UpdateInfo>
   </component>
   <component name="RunManager" selected="JUnit.OurLibraryGenericTest.testGetOverdueList">
     <configuration default="false" name="LibraryGenericTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -1079,6 +899,8 @@
       <workItem from="1401209484404" duration="468000" />
       <workItem from="1401210028357" duration="9465000" />
       <workItem from="1401388227024" duration="1452000" />
+      <workItem from="1401697663196" duration="13000" />
+      <workItem from="1401737072680" duration="2302000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -1712,11 +1534,15 @@
       <created>1401396969374</created>
       <updated>1401396969374</updated>
     </task>
-    <option name="localTasksCounter" value="159" />
+    <task id="LOCAL-00159" summary="updated">
+      <created>1401397056062</created>
+      <updated>1401397056062</updated>
+    </task>
+    <option name="localTasksCounter" value="160" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="255241000" />
+    <option name="totallyTimeSpent" value="258442000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1739,7 +1565,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1755,20 +1581,20 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32704404" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27044025" sideWeight="0.36969253" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32700422" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17423134" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2688679" sideWeight="0.49267936" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17395833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32704404" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5139092" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27044025" sideWeight="0.36969253" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1842,13 +1668,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/TreeTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="578">
-          <caret line="13" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/TreePanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="3196">
@@ -2098,17 +1917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3325062" vertical-offset="10083" max-vertical-offset="18921">
           <caret line="634" column="0" selection-start-line="634" selection-start-column="0" selection-end-line="634" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1530" max-vertical-offset="2618">
-          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#LibraryTest#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2116,7 +1924,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2124,9 +1931,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5871711" vertical-offset="0" max-vertical-offset="1513">
           <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2134,7 +1938,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="2175">
           <caret line="91" column="19" selection-start-line="91" selection-start-column="19" selection-end-line="91" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2142,7 +1945,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3325688" vertical-offset="4632" max-vertical-offset="52904">
           <caret line="326" column="13" selection-start-line="326" selection-start-column="13" selection-end-line="326" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2150,7 +1952,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.35091743" vertical-offset="357" max-vertical-offset="1326">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2158,7 +1959,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7572559" vertical-offset="87" max-vertical-offset="1513">
           <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2166,10 +1966,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1258">
           <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
-          <folding>
-            <element signature="e#1654#1655#0" expanded="true" />
-            <element signature="e#1724#1725#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2177,91 +1973,66 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1177" max-vertical-offset="2006">
           <caret line="335" column="0" selection-start-line="335" selection-start-column="0" selection-end-line="356" selection-end-column="83" />
-          <folding>
-            <element signature="docComment;method#sort#0;class#LibraryGeneric#0" expanded="false" />
-            <element signature="method#sort#0;class#LibraryGeneric#0" expanded="false" />
-            <element signature="docComment;method#add#0;class#LibraryGeneric#0" expanded="false" />
-            <element signature="method#add#0;class#LibraryGeneric#0" expanded="false" />
-            <element signature="docComment;method#addAll#0;class#LibraryGeneric#0" expanded="false" />
-            <element signature="docComment;method#addAll#1;class#LibraryGeneric#0" expanded="false" />
-            <element signature="method#addAll#1;class#LibraryGeneric#0" expanded="false" />
-            <element signature="docComment;method#lookup#0;class#LibraryGeneric#0" expanded="false" />
-            <element signature="method#lookup#0;class#LibraryGeneric#0" expanded="false" />
-            <element signature="docComment;method#lookup#1;class#LibraryGeneric#0" expanded="false" />
-            <element signature="method#lookup#1;class#LibraryGeneric#0" expanded="false" />
-            <element signature="docComment;method#checkout#0;class#LibraryGeneric#0" expanded="false" />
-            <element signature="method#checkout#0;class#LibraryGeneric#0" expanded="false" />
-            <element signature="docComment;method#checkin#0;class#LibraryGeneric#0" expanded="false" />
-            <element signature="method#checkin#0;class#LibraryGeneric#0" expanded="false" />
-            <element signature="docComment;method#checkin#1;class#LibraryGeneric#0" expanded="false" />
-            <element signature="method#checkin#1;class#LibraryGeneric#0" expanded="false" />
-            <element signature="e#9517#9543#0" expanded="true" />
-            <element signature="docComment;method#getOrderedByAuthor#0;class#LibraryGeneric#0" expanded="false" />
-            <element signature="method#getOrderedByAuthor#0;class#LibraryGeneric#0" expanded="false" />
-            <element signature="e#10518#10544#0" expanded="true" />
-            <element signature="docComment;class#OrderByIsbn#0;class#LibraryGeneric#0" expanded="false" />
-            <element signature="class#OrderByIsbn#0;class#LibraryGeneric#0" expanded="false" />
-            <element signature="docComment;method#compare#0;class#OrderByIsbn#0;class#LibraryGeneric#0" expanded="false" />
-            <element signature="docComment;class#OrderByAuthor#0;class#LibraryGeneric#0" expanded="false" />
-            <element signature="class#OrderByAuthor#0;class#LibraryGeneric#0" expanded="false" />
-            <element signature="docComment;method#compare#0;class#OrderByAuthor#0;class#LibraryGeneric#0" expanded="false" />
-            <element signature="method#compare#0;class#OrderByAuthor#0;class#LibraryGeneric#0" expanded="false" />
-            <element signature="docComment;class#OrderByDueDate#0;class#LibraryGeneric#0" expanded="false" />
-            <element signature="class#OrderByDueDate#0;class#LibraryGeneric#0" expanded="false" />
-            <element signature="docComment;method#compare#0;class#OrderByDueDate#0;class#LibraryGeneric#0" expanded="false" />
-            <element signature="method#compare#0;class#OrderByDueDate#0;class#LibraryGeneric#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/OurLibraryGenericTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1717">
-          <caret line="95" column="1" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1845#1846#0" expanded="true" />
-            <element signature="e#1885#1886#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryBookGeneric.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
-          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding>
-            <element signature="docComment;class#LibraryBookGeneric#0" expanded="false" />
-            <element signature="docComment;method#LibraryBookGeneric#0;class#LibraryBookGeneric#0" expanded="false" />
-            <element signature="method#LibraryBookGeneric#0;class#LibraryBookGeneric#0" expanded="false" />
-            <element signature="docComment;method#getDueDate#0;class#LibraryBookGeneric#0" expanded="false" />
-            <element signature="docComment;method#getHolder#0;class#LibraryBookGeneric#0" expanded="false" />
-            <element signature="docComment;method#setHolder#0;class#LibraryBookGeneric#0" expanded="false" />
-            <element signature="docComment;method#setDueDate#0;class#LibraryBookGeneric#0" expanded="false" />
-            <element signature="e#1245#1246#0" expanded="true" />
-            <element signature="e#1315#1316#0" expanded="true" />
-            <element signature="docComment;method#checkIn#0;class#LibraryBookGeneric#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryGenericTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1246" max-vertical-offset="1683">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#404#412#0" expanded="true" />
-            <element signature="e#2389#2402#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/PhoneNumber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3707094" vertical-offset="76" max-vertical-offset="952">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.97254" vertical-offset="0" max-vertical-offset="952">
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryGenericTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.2677345" vertical-offset="1246" max-vertical-offset="1683">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryBookGeneric.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5446224" vertical-offset="0" max-vertical-offset="680">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/OurLibraryGenericTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="770" max-vertical-offset="1768">
+          <caret line="98" column="1" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2130" max-vertical-offset="2618">
+          <caret line="72" column="11" selection-start-line="72" selection-start-column="11" selection-end-line="72" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/examples/week2examples/SortDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1734">
+          <caret line="37" column="5" selection-start-line="3" selection-start-column="2" selection-end-line="37" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.5684783" vertical-offset="561" max-vertical-offset="3944">
+          <caret line="176" column="145" selection-start-line="176" selection-start-column="145" selection-end-line="176" selection-end-column="145" />
+          <folding>
+            <element signature="e#1157#1187#0" expanded="true" />
+            <element signature="e#1528#1558#0" expanded="true" />
+            <element signature="e#3455#3456#0" expanded="true" />
+            <element signature="e#3478#3479#0" expanded="true" />
+            <element signature="e#4435#4436#0" expanded="true" />
+            <element signature="e#4453#4454#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
