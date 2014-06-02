@@ -157,7 +157,14 @@ public class ArrayBasedCollection<E> implements Collection<E> {
      * Removes a single instance of the specified element from this collection, if it is present (optional operation).
      */
     public boolean remove(Object arg0) {
-        // TODO Auto-generated method stub
+        if (this.contains(arg0)) {
+            Iterator iterator = new ArrayBasedIterator();
+            Object next = iterator.next();
+            while (next != arg0)
+                next = iterator.next();
+            iterator.remove();
+            return true;
+        }
         return false;
     }
 
