@@ -104,24 +104,33 @@
       <file leaf-file-name="ArrayBasedCollection.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3848684" vertical-offset="1619" max-vertical-offset="3400">
-              <caret line="167" column="21" selection-start-line="167" selection-start-column="21" selection-end-line="167" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.36348686" vertical-offset="204" max-vertical-offset="1394">
+              <caret line="91" column="48" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="48" />
               <folding>
                 <element signature="docComment;class#ArrayBasedCollection#0" expanded="false" />
-                <element signature="e#1173#1203#0" expanded="true" />
+                <element signature="docComment;method#ArrayBasedCollection#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="method#ArrayBasedCollection#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="e#1266#1353#0" expanded="false" />
                 <element signature="docComment;method#ArrayBasedCollection#1;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="method#ArrayBasedCollection#1;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="e#1751#1838#0" expanded="false" />
                 <element signature="docComment;method#grow#0;class#ArrayBasedCollection#0" expanded="false" />
+                <element signature="method#grow#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="e#2236#2292#0" expanded="false" />
                 <element signature="docComment;method#add#0;class#ArrayBasedCollection#0" expanded="false" />
+                <element signature="method#add#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#addAll#0;class#ArrayBasedCollection#0" expanded="false" />
-                <element signature="method#addAll#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#clear#0;class#ArrayBasedCollection#0" expanded="false" />
+                <element signature="method#clear#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#contains#0;class#ArrayBasedCollection#0" expanded="false" />
-                <element signature="method#removeAll#0;class#ArrayBasedCollection#0" expanded="false" />
+                <element signature="method#contains#0;class#ArrayBasedCollection#0" expanded="false" />
+                <element signature="docComment;method#containsAll#0;class#ArrayBasedCollection#0" expanded="false" />
+                <element signature="method#containsAll#0;class#ArrayBasedCollection#0" expanded="false" />
+                <element signature="docComment;method#isEmpty#0;class#ArrayBasedCollection#0" expanded="false" />
+                <element signature="docComment;method#iterator#0;class#ArrayBasedCollection#0" expanded="false" />
+                <element signature="docComment;method#remove#0;class#ArrayBasedCollection#0" expanded="false" />
+                <element signature="method#remove#0;class#ArrayBasedCollection#0" expanded="false" />
+                <element signature="docComment;method#removeAll#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#retainAll#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="method#retainAll#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#size#0;class#ArrayBasedCollection#0" expanded="false" />
@@ -129,10 +138,19 @@
                 <element signature="method#toArray#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#toArray#1;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="method#toArray#1;class#ArrayBasedCollection#0" expanded="false" />
-                <element signature="e#7183#7234#0" expanded="false" />
+                <element signature="e#7195#7246#0" expanded="false" />
                 <element signature="docComment;method#toSortedList#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="method#toSortedList#0;class#ArrayBasedCollection#0" expanded="false" />
-                <element signature="e#7467#7551#0" expanded="false" />
+                <element signature="e#7479#7563#0" expanded="false" />
+                <element signature="docComment;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
+                <element signature="class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
+                <element signature="method#ArrayBasedIterator#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
+                <element signature="docComment;method#hasNext#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
+                <element signature="docComment;method#next#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
+                <element signature="method#next#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
+                <element signature="e#8422#8536#0" expanded="false" />
+                <element signature="docComment;method#remove#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
+                <element signature="method#remove#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -938,7 +956,7 @@
       <workItem from="1401210028357" duration="9465000" />
       <workItem from="1401388227024" duration="1452000" />
       <workItem from="1401697663196" duration="13000" />
-      <workItem from="1401737072680" duration="10099000" />
+      <workItem from="1401737072680" duration="10209000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -1592,11 +1610,15 @@
       <created>1401748256281</created>
       <updated>1401748256281</updated>
     </task>
-    <option name="localTasksCounter" value="164" />
+    <task id="LOCAL-00164" summary="updated">
+      <created>1401748532820</created>
+      <updated>1401748532820</updated>
+    </task>
+    <option name="localTasksCounter" value="165" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="266239000" />
+    <option name="totallyTimeSpent" value="266349000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -2080,24 +2102,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3848684" vertical-offset="1619" max-vertical-offset="3400">
-          <caret line="167" column="21" selection-start-line="167" selection-start-column="21" selection-end-line="167" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.36348686" vertical-offset="204" max-vertical-offset="1394">
+          <caret line="91" column="48" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="48" />
           <folding>
             <element signature="docComment;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="e#1173#1203#0" expanded="true" />
+            <element signature="docComment;method#ArrayBasedCollection#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="method#ArrayBasedCollection#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="e#1266#1353#0" expanded="false" />
             <element signature="docComment;method#ArrayBasedCollection#1;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="method#ArrayBasedCollection#1;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="e#1751#1838#0" expanded="false" />
             <element signature="docComment;method#grow#0;class#ArrayBasedCollection#0" expanded="false" />
+            <element signature="method#grow#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="e#2236#2292#0" expanded="false" />
             <element signature="docComment;method#add#0;class#ArrayBasedCollection#0" expanded="false" />
+            <element signature="method#add#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#addAll#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="method#addAll#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#clear#0;class#ArrayBasedCollection#0" expanded="false" />
+            <element signature="method#clear#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#contains#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="method#removeAll#0;class#ArrayBasedCollection#0" expanded="false" />
+            <element signature="method#contains#0;class#ArrayBasedCollection#0" expanded="false" />
+            <element signature="docComment;method#containsAll#0;class#ArrayBasedCollection#0" expanded="false" />
+            <element signature="method#containsAll#0;class#ArrayBasedCollection#0" expanded="false" />
+            <element signature="docComment;method#isEmpty#0;class#ArrayBasedCollection#0" expanded="false" />
+            <element signature="docComment;method#iterator#0;class#ArrayBasedCollection#0" expanded="false" />
+            <element signature="docComment;method#remove#0;class#ArrayBasedCollection#0" expanded="false" />
+            <element signature="method#remove#0;class#ArrayBasedCollection#0" expanded="false" />
+            <element signature="docComment;method#removeAll#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#retainAll#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="method#retainAll#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#size#0;class#ArrayBasedCollection#0" expanded="false" />
@@ -2105,10 +2136,19 @@
             <element signature="method#toArray#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#toArray#1;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="method#toArray#1;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="e#7183#7234#0" expanded="false" />
+            <element signature="e#7195#7246#0" expanded="false" />
             <element signature="docComment;method#toSortedList#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="method#toSortedList#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="e#7467#7551#0" expanded="false" />
+            <element signature="e#7479#7563#0" expanded="false" />
+            <element signature="docComment;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
+            <element signature="class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
+            <element signature="method#ArrayBasedIterator#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
+            <element signature="docComment;method#hasNext#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
+            <element signature="docComment;method#next#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
+            <element signature="method#next#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
+            <element signature="e#8422#8536#0" expanded="false" />
+            <element signature="docComment;method#remove#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
+            <element signature="method#remove#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
           </folding>
         </state>
       </provider>

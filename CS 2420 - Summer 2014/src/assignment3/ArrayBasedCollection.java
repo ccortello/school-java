@@ -172,7 +172,8 @@ public class ArrayBasedCollection<E> implements Collection<E> {
      * Removes all of this collection's elements that are also contained in the specified collection (optional operation).
      */
     public boolean removeAll(Collection<?> arg0) {
-        // TODO Auto-generated method stub
+        Iterator iterator = new Iterator() {
+        }
         return false;
     }
 
