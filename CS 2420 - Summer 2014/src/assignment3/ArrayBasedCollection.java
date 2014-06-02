@@ -24,7 +24,7 @@ public class ArrayBasedCollection<E> implements Collection<E> {
     int size; // Keep track of how many items we hold
 
     /**
-     *
+     * Initialize an ArrayBasedCollection<E> Object with a default capacity of 10.
      */
     @SuppressWarnings("unchecked")
     public ArrayBasedCollection() {
@@ -35,7 +35,7 @@ public class ArrayBasedCollection<E> implements Collection<E> {
     }
 
     /**
-     *
+     * Initialize an ArrayBasedCollection<E> Object with a specified capacity.
      */
     @SuppressWarnings("unchecked")
     public ArrayBasedCollection(int capacity) {
@@ -46,7 +46,7 @@ public class ArrayBasedCollection<E> implements Collection<E> {
     }
 
     /**
-     *
+     * Double the capacity of the current array (maintains the elements and their ordering)
      */
     @SuppressWarnings("unchecked")
     private void grow() {
@@ -54,51 +54,92 @@ public class ArrayBasedCollection<E> implements Collection<E> {
         // Doubles the size of the data storage array, retaining its current contents.
         // You will need to use something similar to the code in the constructor above to create a new array.
 
+        // create a new array of twice the capacity
         E newData[] = (E[]) new Object[this.data.length * 2];
 
+        // copy all elements
         for (int i = 0; i < size; i++)
             newData[i] = data[i];
 
+        // swap the smaller array with the substantiated bigger one
         this.data = newData;
     }
 
     /**
-     * Ensures that this collection contains the specified element (optional operation).
+     * Ensures that this collection contains the specified element.
+     *
+     * @param arg0  the element to be added
+     * @return true iff the ArrayCollection changed after method execution
      */
     public boolean add(E arg0) {
-        // TODO Auto-generated method stub
-        return false;
+        // check null case
+        if (arg0 == null)
+            return false;
+
+        // check for a duplicate
+        if (this.contains(arg0))
+            return false;
+
+        // if the element isn't in the list add it to the end and increment the size
+        data[size] = arg0;
+        size++;
+        return true;
     }
 
     /**
      * Adds all of the elements in the specified collection to this collection (optional operation).
+     *
+     * @param arg0  a Collection of elements to be added
+     * @return true iff any elements have been added
      */
     public boolean addAll(Collection<? extends E> arg0) {
-        // TODO Auto-generated method stub
-        return false;
+        int newSize = this.size; // save the initial size of this collection
+        for (E element : arg0) // add each element in the passed Collection
+            this.add(element);
+
+        return (newSize != this.size); // if the size changed then this ArrayBasedCollection changed - return as appropriate
     }
 
     /**
      * Removes all of the elements from this collection (optional operation).
      */
     public void clear() {
-        // TODO Auto-generated method stub
+        data = (E[]) new Object[10]; // Start with an initial capacity of 10
+        size = 0;
     }
 
     /**
      * Returns true if this collection contains the specified element.
+     *
+     * @param arg0  the Object to be found
+     * @return true iff arg0 is found in the Object
      */
     public boolean contains(Object arg0) {
-        // TODO Auto-generated method stub
-        return false;
+        // handle null case
+        if (arg0 == null)
+            return false;
+
+        // loop through this.data and check each position against the passed Object
+        for (int i = 0; i < size; i++)
+            if (data[i].equals(arg0))
+                return true; // if they match return true
+        return false; // if no matches were found return false
     }
 
     /**
      * Returns true if this collection contains all of the elements in the specified collection.
      */
     public boolean containsAll(Collection<?> arg0) {
-        // TODO Auto-generated method stub
-        return false;
+        // initiate a
+        Iterator iter = arg0.iterator();
+
+        // loop through the Collection, and if any element in the passed Collection is not found return false
+        while (iter.hasNext())
+            if (!this.contains(iter.next()))
+                return false;
+
+        // iff every element was found return true
+        return true;
     }
 
     /**
@@ -112,8 +153,7 @@ public class ArrayBasedCollection<E> implements Collection<E> {
      * Returns an iterator over the elements in this collection.
      */
     public Iterator<E> iterator() {
-        // TODO Auto-generated method stub
-        return null;
+        return new ArrayBasedIterator();
     }
 
     /**
@@ -185,9 +225,11 @@ public class ArrayBasedCollection<E> implements Collection<E> {
         boolean gotNext;
 
         public ArrayBasedIterator() {
-            // TODO Auto-generated method stub
+            index = 0;
+            if
         }
 
+        /* Returns true if the iteration has more elements. */
         public boolean hasNext() {
             // TODO Auto-generated method stub
             return false;
