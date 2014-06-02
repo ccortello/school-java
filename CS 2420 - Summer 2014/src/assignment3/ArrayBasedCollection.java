@@ -227,11 +227,18 @@ public class ArrayBasedCollection<E> implements Collection<E> {
             canRemove = false;
         }
 
-        /* Returns true if the iteration has more elements. */
+        /**
+         * @return
+         */
         public boolean hasNext() {
             return gotNext;
         }
 
+        /**
+         *
+         * @return
+         * @throws NoSuchElementException
+         */
         public E next() throws NoSuchElementException {
             // if there is nothing left to iterate throw the exception
             if (!gotNext)
@@ -246,6 +253,10 @@ public class ArrayBasedCollection<E> implements Collection<E> {
             return data[index - 1];
         }
 
+        /**
+         *
+         * @throws IllegalStateException
+         */
         public void remove() throws IllegalStateException {
             // if not a valid remove then throw an exception
             if (!canRemove)
