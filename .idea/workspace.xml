@@ -66,8 +66,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <breakpoint_rules converted="true" />
     <ui_properties converted="true" />
+    <breakpoint_rules converted="true" />
   </component>
   <component name="ErrorTreeViewConfiguration">
     <option name="autoscrollToSource" value="true" />
@@ -94,8 +94,8 @@
       <file leaf-file-name="SortDemo.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/examples/week2examples/SortDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1734">
-              <caret line="37" column="5" selection-start-line="3" selection-start-column="2" selection-end-line="37" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="1734">
+              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -104,8 +104,8 @@
       <file leaf-file-name="ArrayBasedCollection.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36348686" vertical-offset="204" max-vertical-offset="1394">
-              <caret line="91" column="48" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.60855263" vertical-offset="854" max-vertical-offset="1683">
+              <caret line="189" column="37" selection-start-line="189" selection-start-column="37" selection-end-line="189" selection-end-column="37" />
               <folding>
                 <element signature="docComment;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#ArrayBasedCollection#0;class#ArrayBasedCollection#0" expanded="false" />
@@ -120,6 +120,7 @@
                 <element signature="docComment;method#add#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="method#add#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#addAll#0;class#ArrayBasedCollection#0" expanded="false" />
+                <element signature="method#addAll#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#clear#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="method#clear#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#contains#0;class#ArrayBasedCollection#0" expanded="false" />
@@ -129,51 +130,25 @@
                 <element signature="docComment;method#isEmpty#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#iterator#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#remove#0;class#ArrayBasedCollection#0" expanded="false" />
-                <element signature="method#remove#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#removeAll#0;class#ArrayBasedCollection#0" expanded="false" />
-                <element signature="docComment;method#retainAll#0;class#ArrayBasedCollection#0" expanded="false" />
-                <element signature="method#retainAll#0;class#ArrayBasedCollection#0" expanded="false" />
-                <element signature="docComment;method#size#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#toArray#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="method#toArray#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#toArray#1;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="method#toArray#1;class#ArrayBasedCollection#0" expanded="false" />
-                <element signature="e#7195#7246#0" expanded="false" />
+                <element signature="e#7432#7483#0" expanded="false" />
                 <element signature="docComment;method#toSortedList#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="method#toSortedList#0;class#ArrayBasedCollection#0" expanded="false" />
-                <element signature="e#7479#7563#0" expanded="false" />
+                <element signature="e#7716#7800#0" expanded="false" />
                 <element signature="docComment;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="method#ArrayBasedIterator#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#hasNext#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#next#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="method#next#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
-                <element signature="e#8422#8536#0" expanded="false" />
+                <element signature="e#8659#8773#0" expanded="false" />
                 <element signature="docComment;method#remove#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="method#remove#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArrayBasedCollectionTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollectionTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="24" max-vertical-offset="1207">
-              <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-              <folding>
-                <element signature="method#tearDown#0;class#ArrayBasedCollectionTest#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OurLibraryGenericTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/OurLibraryGenericTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="770" max-vertical-offset="1768">
-              <caret line="98" column="1" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -260,8 +235,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -956,7 +931,8 @@
       <workItem from="1401210028357" duration="9465000" />
       <workItem from="1401388227024" duration="1452000" />
       <workItem from="1401697663196" duration="13000" />
-      <workItem from="1401737072680" duration="10209000" />
+      <workItem from="1401737072680" duration="10883000" />
+      <workItem from="1401824205280" duration="444000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -1614,11 +1590,15 @@
       <created>1401748532820</created>
       <updated>1401748532820</updated>
     </task>
-    <option name="localTasksCounter" value="165" />
+    <task id="LOCAL-00165" summary="updated">
+      <created>1401748643007</created>
+      <updated>1401748643007</updated>
+    </task>
+    <option name="localTasksCounter" value="166" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="266349000" />
+    <option name="totallyTimeSpent" value="267467000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1641,7 +1621,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1654,33 +1634,33 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4535865" sideWeight="0.50625" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32911393" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32700422" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27044025" sideWeight="0.36969253" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17395833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17349927" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32700422" sideWeight="0.49322918" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5139092" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27044025" sideWeight="0.36969253" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5140625" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.14166667" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32704404" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1699,8 +1679,8 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27044025" sideWeight="0.36969253" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -2066,14 +2046,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/OurLibraryGenericTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="770" max-vertical-offset="1768">
-          <caret line="98" column="1" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2130" max-vertical-offset="2618">
@@ -2082,28 +2054,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/examples/week2examples/SortDemo.java">
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollectionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1734">
-          <caret line="37" column="5" selection-start-line="3" selection-start-column="2" selection-end-line="37" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.5871711" vertical-offset="0" max-vertical-offset="1241">
+          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollectionTest.java">
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/OurLibraryGenericTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="24" max-vertical-offset="1207">
-          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-          <folding>
-            <element signature="method#tearDown#0;class#ArrayBasedCollectionTest#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="2.6282895" vertical-offset="0" max-vertical-offset="1700">
+          <caret line="98" column="1" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/examples/week2examples/SortDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="1734">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36348686" vertical-offset="204" max-vertical-offset="1394">
-          <caret line="91" column="48" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.60855263" vertical-offset="854" max-vertical-offset="1683">
+          <caret line="189" column="37" selection-start-line="189" selection-start-column="37" selection-end-line="189" selection-end-column="37" />
           <folding>
             <element signature="docComment;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#ArrayBasedCollection#0;class#ArrayBasedCollection#0" expanded="false" />
@@ -2118,6 +2096,7 @@
             <element signature="docComment;method#add#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="method#add#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#addAll#0;class#ArrayBasedCollection#0" expanded="false" />
+            <element signature="method#addAll#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#clear#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="method#clear#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#contains#0;class#ArrayBasedCollection#0" expanded="false" />
@@ -2127,26 +2106,22 @@
             <element signature="docComment;method#isEmpty#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#iterator#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#remove#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="method#remove#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#removeAll#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="docComment;method#retainAll#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="method#retainAll#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="docComment;method#size#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#toArray#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="method#toArray#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#toArray#1;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="method#toArray#1;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="e#7195#7246#0" expanded="false" />
+            <element signature="e#7432#7483#0" expanded="false" />
             <element signature="docComment;method#toSortedList#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="method#toSortedList#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="e#7479#7563#0" expanded="false" />
+            <element signature="e#7716#7800#0" expanded="false" />
             <element signature="docComment;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="method#ArrayBasedIterator#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#hasNext#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#next#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="method#next#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="e#8422#8536#0" expanded="false" />
+            <element signature="e#8659#8773#0" expanded="false" />
             <element signature="docComment;method#remove#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="method#remove#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
           </folding>

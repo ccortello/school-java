@@ -89,7 +89,7 @@ public class ArrayBasedCollection<E> implements Collection<E> {
      * @param arg0  a Collection of elements to be added
      * @return true iff any elements have been added
      */
-    public boolean addAll(Collection<? extends E> arg0) {
+    public boolean addAll(Collection<?> arg0) {
         int newSize = this.size; // save the initial size of this collection
         for (E element : arg0) // add each element in the passed Collection
             this.add(element);
@@ -157,6 +157,7 @@ public class ArrayBasedCollection<E> implements Collection<E> {
      * Removes a single instance of the specified element from this collection, if it is present (optional operation).
      */
     public boolean remove(Object arg0) {
+        // TODO: comment this bit
         if (this.contains(arg0)) {
             Iterator iterator = new ArrayBasedIterator();
             Object next = iterator.next();
@@ -172,17 +173,22 @@ public class ArrayBasedCollection<E> implements Collection<E> {
      * Removes all of this collection's elements that are also contained in the specified collection (optional operation).
      */
     public boolean removeAll(Collection<?> arg0) {
-        Iterator iterator = new Iterator() {
-        }
-        return false;
+        // TODO: comment this bit
+        int initialSize = size;
+        for (Object element : arg0)
+            this.remove(element);
+        return (size != initialSize);
     }
 
     /**
      * Retains only the elements in this collection that are contained in the specified collection (optional operation).
      */
     public boolean retainAll(Collection<?> arg0) {
-        // TODO Auto-generated method stub
-        return false;
+        int initialSize = size;
+        for (E element : data)
+            if (!arg0.contains(element))
+                this.remove(element);
+        return (size != initialSize);
     }
 
     /**
