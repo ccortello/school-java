@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="updated">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollection.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollection.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollectionTest.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollectionTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/lab01/CoinFlipExperiment.java" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/lab01/CoinFlipExperiment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanNode.java" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanNode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment1/MatrixTester.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment1/MatrixTester.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/TestApplicationExperiment03.java" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/TestApplicationExperiment03.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -86,11 +81,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ArrayBasedCollection.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ArrayBasedCollection.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.8325688" vertical-offset="788" max-vertical-offset="1224">
-              <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1343">
+              <caret line="154" column="0" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
               <folding>
                 <element signature="docComment;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#ArrayBasedCollection#0;class#ArrayBasedCollection#0" expanded="false" />
@@ -119,7 +114,6 @@
                 <element signature="docComment;method#removeAll#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="method#removeAll#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#retainAll#0;class#ArrayBasedCollection#0" expanded="false" />
-                <element signature="method#retainAll#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#size#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#toArray#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="method#toArray#0;class#ArrayBasedCollection#0" expanded="false" />
@@ -143,12 +137,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArrayBasedCollectionTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ArrayBasedCollectionTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollectionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
-              <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
-              <folding />
+            <state vertical-scroll-proportion="1.8478802" vertical-offset="602" max-vertical-offset="1513">
+              <caret line="159" column="44" selection-start-line="159" selection-start-column="44" selection-end-line="159" selection-end-column="44" />
+              <folding>
+                <element signature="method#setUp#0;class#ArrayBasedCollectionTest#0" expanded="false" />
+                <element signature="method#testAdd#0;class#ArrayBasedCollectionTest#0" expanded="false" />
+                <element signature="method#testAddAll#0;class#ArrayBasedCollectionTest#0" expanded="false" />
+                <element signature="method#testClear#0;class#ArrayBasedCollectionTest#0" expanded="false" />
+                <element signature="method#testContains#0;class#ArrayBasedCollectionTest#0" expanded="false" />
+                <element signature="method#testContainsAll#0;class#ArrayBasedCollectionTest#0" expanded="false" />
+                <element signature="method#testIsEmpty#0;class#ArrayBasedCollectionTest#0" expanded="false" />
+                <element signature="method#testIterator#0;class#ArrayBasedCollectionTest#0" expanded="false" />
+                <element signature="e#5193#5201#0" expanded="true" />
+                <element signature="e#6041#6049#0" expanded="true" />
+                <element signature="e#6598#6599#0" expanded="true" />
+                <element signature="e#6651#6652#0" expanded="true" />
+                <element signature="method#testToArray#0;class#ArrayBasedCollectionTest#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -224,8 +232,8 @@
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanNode.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/TestApplicationExperiment03.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment1/MatrixTester.java" />
-        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollectionTest.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollection.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollectionTest.java" />
       </list>
     </option>
   </component>
@@ -441,41 +449,19 @@
       <recent name="C:\Users\Cody\workspace\CS 2420 - Spring 2014\src\homework08" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ArrayBasedCollectionTest.testAdd">
-    <configuration default="false" name="LibraryGenericTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ArrayBasedCollectionTest.testRetainAll">
+    <configuration default="false" name="ArrayBasedCollectionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="assignment2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="assignment2.LibraryGenericTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="CS 2420 - Summer 2014" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="OurLibraryGenericTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="assignment2.*" />
+          <option name="PATTERN" value="assignment3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="CS 2420 - Summer 2014" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="assignment2" />
-      <option name="MAIN_CLASS_NAME" value="assignment2.OurLibraryGenericTest" />
+      <option name="PACKAGE_NAME" value="assignment3" />
+      <option name="MAIN_CLASS_NAME" value="assignment3.ArrayBasedCollectionTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -488,73 +474,11 @@
       </option>
       <envs />
       <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="OurLibraryGenericTest.testGetInventoryList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="assignment2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="CS 2420 - Summer 2014" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="assignment2" />
-      <option name="MAIN_CLASS_NAME" value="assignment2.OurLibraryGenericTest" />
-      <option name="METHOD_NAME" value="testGetInventoryList" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="OurLibraryGenericTest.testGetOverdueList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="assignment2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="CS 2420 - Summer 2014" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="assignment2" />
-      <option name="MAIN_CLASS_NAME" value="assignment2.OurLibraryGenericTest" />
-      <option name="METHOD_NAME" value="testGetOverdueList" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ArrayBasedCollectionTest.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="ArrayBasedCollectionTest.testIterator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="assignment3.*" />
@@ -566,7 +490,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="assignment3" />
       <option name="MAIN_CLASS_NAME" value="assignment3.ArrayBasedCollectionTest" />
-      <option name="METHOD_NAME" value="testAdd" />
+      <option name="METHOD_NAME" value="testIterator" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -578,13 +502,91 @@
       </option>
       <envs />
       <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ArrayBasedCollectionTest.testRemove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="assignment3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="CS 2420 - Summer 2014" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="assignment3" />
+      <option name="MAIN_CLASS_NAME" value="assignment3.ArrayBasedCollectionTest" />
+      <option name="METHOD_NAME" value="testRemove" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ArrayBasedCollectionTest.testRemoveAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="assignment3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="CS 2420 - Summer 2014" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="assignment3" />
+      <option name="MAIN_CLASS_NAME" value="assignment3.ArrayBasedCollectionTest" />
+      <option name="METHOD_NAME" value="testRemoveAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ArrayBasedCollectionTest.testRetainAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="assignment3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="CS 2420 - Summer 2014" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="assignment3" />
+      <option name="MAIN_CLASS_NAME" value="assignment3.ArrayBasedCollectionTest" />
+      <option name="METHOD_NAME" value="testRetainAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -813,19 +815,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.LibraryGenericTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.OurLibraryGenericTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.OurLibraryGenericTest.testGetInventoryList" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.OurLibraryGenericTest.testGetOverdueList" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ArrayBasedCollectionTest.testAdd" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ArrayBasedCollectionTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ArrayBasedCollectionTest.testIterator" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ArrayBasedCollectionTest.testRemove" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ArrayBasedCollectionTest.testRemoveAll" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ArrayBasedCollectionTest.testRetainAll" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ArrayBasedCollectionTest.testAdd" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.OurLibraryGenericTest.testGetOverdueList" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.OurLibraryGenericTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.OurLibraryGenericTest.testGetInventoryList" />
-        <item index="4" class="java.lang.String" itemvalue="Application.LibraryGenericTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ArrayBasedCollectionTest.testRetainAll" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ArrayBasedCollectionTest.testRemoveAll" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ArrayBasedCollectionTest.testRemove" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ArrayBasedCollectionTest.testIterator" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ArrayBasedCollectionTest" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -934,7 +936,7 @@
       <workItem from="1401388227024" duration="1452000" />
       <workItem from="1401697663196" duration="13000" />
       <workItem from="1401737072680" duration="10883000" />
-      <workItem from="1401824205280" duration="2913000" />
+      <workItem from="1401824205280" duration="5039000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -1624,11 +1626,15 @@
       <created>1401826826061</created>
       <updated>1401826826062</updated>
     </task>
-    <option name="localTasksCounter" value="173" />
+    <task id="LOCAL-00173" summary="updated">
+      <created>1401827215482</created>
+      <updated>1401827215482</updated>
+    </task>
+    <option name="localTasksCounter" value="174" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="269936000" />
+    <option name="totallyTimeSpent" value="272062000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1668,14 +1674,14 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32700422" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27044025" sideWeight="0.36969253" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27044025" sideWeight="0.36969253" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31484503" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1732224" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32700422" sideWeight="0.49322918" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3254717" sideWeight="0.6303075" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1693,10 +1699,10 @@
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32700422" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31484503" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17349927" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32700422" sideWeight="0.49322918" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1732224" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3254717" sideWeight="0.6303075" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -2105,18 +2111,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollectionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
-          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.8325688" vertical-offset="788" max-vertical-offset="1224">
-          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1343">
+          <caret line="154" column="0" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#ArrayBasedCollection#0;class#ArrayBasedCollection#0" expanded="false" />
@@ -2145,7 +2143,6 @@
             <element signature="docComment;method#removeAll#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="method#removeAll#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#retainAll#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="method#retainAll#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#size#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#toArray#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="method#toArray#0;class#ArrayBasedCollection#0" expanded="false" />
@@ -2164,6 +2161,28 @@
             <element signature="e#9466#9580#0" expanded="false" />
             <element signature="docComment;method#remove#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="method#remove#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollectionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.8478802" vertical-offset="602" max-vertical-offset="1513">
+          <caret line="159" column="44" selection-start-line="159" selection-start-column="44" selection-end-line="159" selection-end-column="44" />
+          <folding>
+            <element signature="method#setUp#0;class#ArrayBasedCollectionTest#0" expanded="false" />
+            <element signature="method#testAdd#0;class#ArrayBasedCollectionTest#0" expanded="false" />
+            <element signature="method#testAddAll#0;class#ArrayBasedCollectionTest#0" expanded="false" />
+            <element signature="method#testClear#0;class#ArrayBasedCollectionTest#0" expanded="false" />
+            <element signature="method#testContains#0;class#ArrayBasedCollectionTest#0" expanded="false" />
+            <element signature="method#testContainsAll#0;class#ArrayBasedCollectionTest#0" expanded="false" />
+            <element signature="method#testIsEmpty#0;class#ArrayBasedCollectionTest#0" expanded="false" />
+            <element signature="method#testIterator#0;class#ArrayBasedCollectionTest#0" expanded="false" />
+            <element signature="e#5193#5201#0" expanded="true" />
+            <element signature="e#6041#6049#0" expanded="true" />
+            <element signature="e#6598#6599#0" expanded="true" />
+            <element signature="e#6651#6652#0" expanded="true" />
+            <element signature="method#testToArray#0;class#ArrayBasedCollectionTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
