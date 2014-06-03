@@ -91,8 +91,8 @@ public class ArrayBasedCollection<E> implements Collection<E> {
      */
     public boolean addAll(Collection<?> arg0) {
         int newSize = this.size; // save the initial size of this collection
-        for (E element : arg0) // add each element in the passed Collection
-            this.add(element);
+        for (Object element : arg0) // add each element in the passed Collection
+            this.add((E) element); // TODO: is this cast okay, or should we implement the add another way?
 
         return (newSize != this.size); // if the size changed then this ArrayBasedCollection changed - return as appropriate
     }
