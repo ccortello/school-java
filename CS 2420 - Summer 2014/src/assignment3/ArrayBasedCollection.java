@@ -228,6 +228,7 @@ public class ArrayBasedCollection<E> implements Collection<E> {
         // Sorting method specific to ArrayCollection - not part of the Collection interface
         // Must implement an insertion sort (see lecture 6 for code ideas).
 
+        // create an array of objects and use insertion sort to sort the array in place
         E[] sortedArray = (E[]) this.toArray();
         for (int i = 1; i < sortedArray.length; i++) {
             E val = sortedArray[i];
@@ -237,6 +238,7 @@ public class ArrayBasedCollection<E> implements Collection<E> {
             sortedArray[j + 1] = val;
         }
 
+        // change the sorted array to a sorted ArrayList and return it
         ArrayList<E> sortedList = new ArrayList<E>(sortedArray.length);
         Collections.addAll(Arrays.asList(sortedArray));
         return sortedList;
