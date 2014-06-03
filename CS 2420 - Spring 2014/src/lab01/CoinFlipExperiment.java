@@ -3,7 +3,6 @@ package lab01;
 public class CoinFlipExperiment {
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
 
         int[] counts = new int[201];
 

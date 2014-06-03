@@ -79,7 +79,6 @@ public class HuffmanNode implements Comparable<HuffmanNode> {
             rightToken.prependBitToCode(true);
 
         // add the tokens of the left and right nodes in sorted order
-        // TODO: should this be in compareTo sorted order, or simply 'in order' order as below?
         if (left != null) this.tokens.addAll(left.tokens);
         if (right != null) this.tokens.addAll(right.tokens);
     }

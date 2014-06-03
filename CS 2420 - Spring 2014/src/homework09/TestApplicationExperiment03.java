@@ -117,7 +117,6 @@ public class TestApplicationExperiment03 {
                     expectedSetSize--;
                 }
             } else {
-                // TODO: this is the part I added, made a TODO for visibility
                 set.resetProbeCount();
                 set.contains(element);
                 System.out.println(set.getProbeCount() + "\t" + setCapacity + "\t" + expectedSetSize);

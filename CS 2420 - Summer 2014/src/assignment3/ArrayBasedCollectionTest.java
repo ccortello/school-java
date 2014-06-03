@@ -20,6 +20,8 @@ public class ArrayBasedCollectionTest extends TestCase {
     public void testAdd() throws Exception {
         testCollection1.add("Hello");
         testCollection1.add("World");
+        if (testCollection1.contains("Hello"))
+            System.out.println("Correctly contains \"Hello\"");
     }
 
     public void testAddAll() throws Exception {

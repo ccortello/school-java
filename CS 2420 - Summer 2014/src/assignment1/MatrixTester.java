@@ -18,7 +18,7 @@ public class MatrixTester {
 
 		
 		/* 
-		 * Note that none of the tests below will be correct until you have implemented all methods.
+         * Note that none of the tests below will be correct until you have implemented all methods.
 		 * This is just one example of a test, you must write more tests and cover all cases.
 		 */
 
@@ -32,7 +32,6 @@ public class MatrixTester {
         if (!referenceMultiply.equals(computedMultiply))
             System.out.println("Should be:\n" + referenceMultiply);
 
-            //TODO: fill in more tests that fully exercise all of your methods
         else
             System.out.println("Multiplication and .equals validate!");
 
