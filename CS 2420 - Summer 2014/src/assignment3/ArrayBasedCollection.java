@@ -184,6 +184,7 @@ public class ArrayBasedCollection<E> implements Collection<E> {
      * Retains only the elements in this collection that are contained in the specified collection (optional operation).
      */
     public boolean retainAll(Collection<?> arg0) {
+        // TODO: comment this bit
         int initialSize = size;
         for (E element : data)
             if (!arg0.contains(element))
@@ -202,8 +203,11 @@ public class ArrayBasedCollection<E> implements Collection<E> {
      * Returns an array containing all of the elements in this collection.
      */
     public Object[] toArray() {
-        // TODO Auto-generated method stub
-        return null;
+        // create new array and copy the elements from this.data into the array
+        Object[] returnArray = new Object[size];
+        for (int i = 0; i < size; i++)
+            returnArray[i] = data[i];
+        return returnArray;
     }
 
     /**
@@ -224,8 +228,15 @@ public class ArrayBasedCollection<E> implements Collection<E> {
         // Sorting method specific to ArrayCollection - not part of the Collection interface
         // Must implement an insertion sort (see lecture 6 for code ideas).
 
-        // TODO Auto-generated method stub
-        return null;
+        E[] sortedArray = (E[]) this.toArray();
+        for (int i = 1; i < sortedArray.length; i++) {
+            E val = sortedArray[i];
+            int j;
+            for (j = i - 1; j >= 0 && (cmp.compare(sortedArray[j], val) == 1); j--)
+                sortedArray[j + 1] = sortedArray[j];
+            sortedArray[j + 1] = val;
+        }
+        return sortedArray;
     }
 
     /**
