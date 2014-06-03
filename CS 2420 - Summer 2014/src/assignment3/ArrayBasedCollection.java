@@ -236,7 +236,11 @@ public class ArrayBasedCollection<E> implements Collection<E> {
                 sortedArray[j + 1] = sortedArray[j];
             sortedArray[j + 1] = val;
         }
-        return sortedArray;
+
+        ArrayList<E> sortedList = new ArrayList<E>(sortedArray.length);
+        for (E element : sortedArray)
+            sortedList.add(element);
+        return sortedList;
     }
 
     /**
