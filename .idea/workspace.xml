@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="updated">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollection.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollection.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -935,7 +934,7 @@
       <workItem from="1401388227024" duration="1452000" />
       <workItem from="1401697663196" duration="13000" />
       <workItem from="1401737072680" duration="10883000" />
-      <workItem from="1401824205280" duration="2221000" />
+      <workItem from="1401824205280" duration="2284000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -1613,11 +1612,15 @@
       <created>1401826454641</created>
       <updated>1401826454641</updated>
     </task>
-    <option name="localTasksCounter" value="170" />
+    <task id="LOCAL-00170" summary="updated">
+      <created>1401826512086</created>
+      <updated>1401826512086</updated>
+    </task>
+    <option name="localTasksCounter" value="171" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="269244000" />
+    <option name="totallyTimeSpent" value="269307000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
