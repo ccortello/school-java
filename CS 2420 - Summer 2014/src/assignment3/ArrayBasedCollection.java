@@ -82,8 +82,7 @@ public class ArrayBasedCollection<E> implements Collection<E> {
             grow();
 
         // if the element isn't in the list add it to the end and increment the size
-        data[size] = arg0;
-        size++;
+        data[size++] = arg0;
         return true;
     }
 
@@ -264,11 +263,10 @@ public class ArrayBasedCollection<E> implements Collection<E> {
      */
     private class ArrayBasedIterator implements Iterator<E> {
         int index;
-        boolean gotNext, canRemove;
+        boolean canRemove;
 
         public ArrayBasedIterator() {
             index = 0;
-            gotNext = (size != 0);
             canRemove = false;
         }
 
@@ -276,7 +274,7 @@ public class ArrayBasedCollection<E> implements Collection<E> {
          * @return
          */
         public boolean hasNext() {
-            return gotNext;
+            return canRemove;
         }
 
         /**
@@ -286,14 +284,14 @@ public class ArrayBasedCollection<E> implements Collection<E> {
          */
         public E next() throws NoSuchElementException {
             // if there is nothing left to iterate throw the exception
-            if (!gotNext)
+            if (index == size)
                 throw new NoSuchElementException();
 
             // if there are elements left then 1) increment the Iterator, 2) change the gotNext boolean if the end of the list
             //  has been reached, 3) asserts canRemove, and 4) return the correct data
             index++;
             if (index == size)
-                gotNext = false;
+                canRemove = false;
             canRemove = true;
             return data[index - 1];
         }
@@ -309,15 +307,12 @@ public class ArrayBasedCollection<E> implements Collection<E> {
 
             // copy each element backwards to replace the previous element
             int copyIndex = index;
-            while (copyIndex < size) {
-                data[copyIndex - 1] = data[copyIndex];
-                copyIndex++;
-            }
+            while (copyIndex < size)
+                data[copyIndex - 1] = data[copyIndex++];
 
-            data[size - 1] = null;    // remove copied end element
+            data[--size] = null;    // remove copied end element
 
             // update ArrayBasedCollection fields
-            size--;
             index--;
             canRemove = false;
         }
