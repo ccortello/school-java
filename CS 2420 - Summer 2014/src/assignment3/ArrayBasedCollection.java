@@ -290,9 +290,7 @@ public class ArrayBasedCollection<E> implements Collection<E> {
             // if there are elements left then 1) increment the Iterator, 2) change the gotNext boolean if the end of the list
             //  has been reached, 3) asserts canRemove, and 4) return the correct data
             index++;
-            if (index == size)
-                canRemove = false;
-            canRemove = true;
+            canRemove = (index != size);
             return data[index - 1];
         }
 
