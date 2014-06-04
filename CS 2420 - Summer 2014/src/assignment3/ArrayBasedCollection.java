@@ -92,7 +92,8 @@ public class ArrayBasedCollection<E> implements Collection<E> {
     public boolean addAll(Collection<? extends E> arg0) {
         int newSize = this.size; // save the initial size of this collection
         for (E element : arg0) // add each element in the passed Collection
-            this.add(element);
+            if (!this.contains(element)) // check for duplicates of this and arg0
+                this.add(element);
 
         return (newSize != this.size); // if the size changed then this ArrayBasedCollection changed - return as appropriate
     }
@@ -127,12 +128,19 @@ public class ArrayBasedCollection<E> implements Collection<E> {
      * Returns true if this collection contains all of the elements in the specified collection.
      */
     public boolean containsAll(Collection<?> arg0) {
-        // initiate a
-        Iterator iter = arg0.iterator();
+        if (arg0.size() == 0)
+            return false;
 
-        // loop through the Collection, and if any element in the passed Collection is not found return false
-        while (iter.hasNext())
-            if (!this.contains(iter.next()))
+//        // initiate a
+//        Iterator iter = arg0.iterator();
+//
+//        // loop through the Collection, and if any element in the passed Collection is not found return false
+//        while (iter.hasNext())
+//            if (!this.contains(iter.next()))
+//                return false;
+
+        for (Object element : arg0)
+            if (!this.contains(element))
                 return false;
 
         // iff every element was found return true
@@ -161,7 +169,8 @@ public class ArrayBasedCollection<E> implements Collection<E> {
         if (this.contains(arg0)) {
             Iterator iterator = new ArrayBasedIterator();
             Object next = iterator.next();
-            while (next != arg0)
+//            while (next != arg0)
+            while (!next.equals(arg0))
                 next = iterator.next();
             iterator.remove();
             return true;
@@ -185,6 +194,9 @@ public class ArrayBasedCollection<E> implements Collection<E> {
      */
     public boolean retainAll(Collection<?> arg0) {
         // TODO: comment this bit
+        //check for null reference
+        if (arg0.size() == 0)
+            return false;
         int initialSize = size;
         for (E element : data)
             if (!arg0.contains(element))
