@@ -9,7 +9,8 @@ import java.util.TreeSet;
 public class ArrayBasedCollectionTest extends TestCase {
     private ArrayBasedCollection<String> nullCollection, emptyCollection, testCollectionAdd, testCollectionAddAll,
             testCollectionClear, testCollectionContainsAll, testCollectionIterator,
-            testCollectionRemove, testCollectionRemoveAll, testCollectionRetainAll, testCollectionToArray;
+            testCollectionRemove, testCollectionRemoveAll, testCollectionRetainAll, testCollectionSize,
+            testCollectionToArray;
 
     public void setUp() throws Exception {
         super.setUp();
@@ -25,6 +26,7 @@ public class ArrayBasedCollectionTest extends TestCase {
         testCollectionRemove = new ArrayBasedCollection<String>();
         testCollectionRemoveAll = new ArrayBasedCollection<String>();
         testCollectionRetainAll = new ArrayBasedCollection<String>();
+        testCollectionSize = new ArrayBasedCollection<String>();
         testCollectionToArray = new ArrayBasedCollection<String>();
     }
 
@@ -157,7 +159,23 @@ public class ArrayBasedCollectionTest extends TestCase {
     }
 
     public void testSize() throws Exception {
-        assertEquals(emptyCollection.size, 0);
+        assertEquals(testCollectionSize.size, 0);
+        testCollectionSize.add("first");
+        assertEquals(testCollectionSize.size(), 1);
+        testCollectionSize.add("second");
+        assertEquals(testCollectionSize.size(), 2);
+        testCollectionSize.add("third");
+        assertEquals(testCollectionSize.size(), 3);
+        testCollectionSize.add("fourth");
+        assertEquals(testCollectionSize.size(), 4);
+        testCollectionSize.add("fifth");
+        assertEquals(testCollectionSize.size(), 5);
+        testCollectionSize.remove("fifth");
+        assertEquals(testCollectionSize.size(), 4);
+        testCollectionSize.remove("second");
+        assertEquals(testCollectionSize.size(), 3);
+        testCollectionSize.remove("third");
+        assertEquals(testCollectionSize.size(), 2);
     }
 
     public void testToArray() throws Exception {

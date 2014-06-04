@@ -77,6 +77,10 @@ public class ArrayBasedCollection<E> implements Collection<E> {
         if (this.contains(arg0))
             return false;
 
+        // grow if the array is full
+        if (size == data.length)
+            grow();
+
         // if the element isn't in the list add it to the end and increment the size
         data[size] = arg0;
         size++;
@@ -169,7 +173,6 @@ public class ArrayBasedCollection<E> implements Collection<E> {
         if (this.contains(arg0)) {
             Iterator iterator = new ArrayBasedIterator();
             Object next = iterator.next();
-//            while (next != arg0)
             while (!next.equals(arg0))
                 next = iterator.next();
             iterator.remove();
