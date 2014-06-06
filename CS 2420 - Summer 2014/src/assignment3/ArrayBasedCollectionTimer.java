@@ -27,7 +27,7 @@ public class ArrayBasedCollectionTimer {
         long startTime, midpointTime, stopTime;
 
         // Setup for the timing experiment.
-        int timesToLoop = 10000000;
+        int timesToLoop = 15;
         System.out.println("N\tTime"); // this prints the column headers
 
         // First, spin computing stuff until one second has gone by.
@@ -62,17 +62,15 @@ public class ArrayBasedCollectionTimer {
 
             //permute to randomize the element locations
             permuteInts(testArray);
-
             //comparator to be used in the toSortedList method
             IntegerComparator cmp = new IntegerComparator();
-
             //sorted list before start time to be used with binary search
             ArrayList<Integer> sortedList = nums.toSortedList(cmp);
 
             // start timing analysis, only uncomment the current needed test below
             startTime = System.nanoTime();
             for (int i = 0; i < timesToLoop; i++) {
-//                nums.toSortedList(new IntegerComparator());
+                nums.toSortedList(new IntegerComparator());
 //                nums.contains(testArray[i%N]);
 //                SearchUtil.binarySearch(sortedList, testArray[i % N], cmp);
             }
