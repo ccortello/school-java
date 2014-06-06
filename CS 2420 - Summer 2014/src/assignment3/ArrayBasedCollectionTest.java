@@ -3,6 +3,7 @@ package assignment3;
 import junit.framework.TestCase;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.TreeSet;
 
@@ -199,15 +200,21 @@ public class ArrayBasedCollectionTest extends TestCase {
     }
 
     public void testToSortedList() throws Exception {
-        testCollectionToSortedList.add("first");
-        testCollectionToSortedList.add("fourth");
-        testCollectionToSortedList.add("banana");
-        testCollectionToSortedList.add("apple");
-        testCollectionToSortedList.add("fubar");
-        testCollectionToSortedList.add("mork");
+        testCollectionToSortedList.add("1");
+        testCollectionToSortedList.add("2");
+        testCollectionToSortedList.add("3");
+        testCollectionToSortedList.add("4");
+        testCollectionToSortedList.add("5");
+        testCollectionToSortedList.add("6");
 
-        ArrayList<String> sortedList = testCollectionToSortedList.toSortedList();
+        class stringComparator implements Comparator<String> {
+            public int compare(String left, String right) {
+                return left.compareTo(right);
+            }
+        }
 
-        assertEquals("apple", sortedList.get(0));
+        ArrayList<String> sortedList = testCollectionToSortedList.toSortedList(new stringComparator());
+
+        System.out.println(sortedList);
     }
 }
