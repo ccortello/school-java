@@ -292,6 +292,8 @@ public class ArrayBasedCollectionTester extends TestCase {
         //  final sorted list against)
         int intsAdded = 100, range = 100;
         HashSet<Integer> testSet = new HashSet<Integer>();
+        // create new object for testList
+        testList = new ArrayBasedCollection<Integer>();
         for (int i = 0; i < intsAdded; i++) {
             int intToAdd = (int) ((Math.random() * range) + 1);
             // add random ints to both ArrayBasedCollection to test, and HashSet
