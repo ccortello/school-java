@@ -1,6 +1,6 @@
 package assignment3;
 
-import java.util.Random;
+import java.util.HashSet;
 
 /**
  * @author Paymon Saebi
@@ -28,7 +28,7 @@ public class ArrayBasedCollectionTimer {
         long startTime, midpointTime, stopTime;
 
         // Setup for the timing experiment.
-        int timesToLoop = 20;
+        int timesToLoop = 100;
         System.out.println("N\tTime");
 
         // First, spin computing stuff until one second has gone by.
@@ -45,12 +45,24 @@ public class ArrayBasedCollectionTimer {
             // Generate the random array before starting the timer
             //  note: instead of permuting ascending numbers a random array is created and ensured no duplications by
             //  checking each add element against a HashSet (which the ints are also added to)
-            ArrayBasedCollection<Integer> nums = permuteInts(N);
+            ArrayBasedCollection<Integer> nums = new ArrayBasedCollection<Integer>(N);
+            HashSet<Integer> testSet = new HashSet<Integer>();
+            int[] testArray = new int[N];
+            int index = 0;
+            while (nums.size() < N) {
+                int intToAdd = (int) (Math.random() * 100000);
+                nums.add(intToAdd);
+                testSet.add(intToAdd);
+                if (index < N)
+                    testArray[index++] = intToAdd;
+            }
 
             startTime = System.nanoTime();
 
-            for (long i = 0; i < timesToLoop; i++)
-                nums.toSortedList(new IntegerComparator());
+            for (int i = 0; i < timesToLoop; i++) {
+//                nums.toSortedList(new IntegerComparator());
+                nums.contains(testArray[i]);
+            }
 
             midpointTime = System.nanoTime();
 
@@ -67,31 +79,7 @@ public class ArrayBasedCollectionTimer {
             // Average it over the number of runs.
             double averageTime = ((midpointTime - startTime) - (stopTime - midpointTime)) / timesToLoop;
 
-//            System.out.println(N + "\t" + averageTime);
+            System.out.println(nums.size() + "\t" + averageTime);
         }
-    }
-
-    private static ArrayBasedCollection<Integer> permuteInts(ArrayBasedCollection<Integer> nums) {
-
-    }
-
-    public ArrayBasedCollection<Integer> permuteInts(int size) {
-        int randomArray[] = new int[size];
-        for (int i = 0; i < size; i++)
-            randomArray[i] = i;
-        for (int i = 0; i < size; i++)
-            swap(randomArray, i, new Random(System.currentTimeMillis()).nextInt(size));
-        ArrayBasedCollection<Integer> retval = new ArrayBasedCollection<Integer>();
-        for (int i = 0; i < size; i++) {
-            retval.add(randomArray[i]);
-        }
-        return retval;
-    }
-
-    // Swaps two items in the given array
-    public static void swap(int[] arr, int i, int j) {
-        int temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
     }
 }
