@@ -30,12 +30,7 @@ public class SearchUtilTest extends TestCase {
         }
 
         // use a default Comparator to compare the ints
-        class intComparator implements Comparator<Integer> {
-            public int compare(Integer left, Integer right) {
-                return left.compareTo(right);
-            }
-        }
-        Comparator<Integer> cmp = new intComparator();
+        Comparator<Integer> cmp = new IntegerComparator();
 
         // invoke the toSortedList method to sort the randomized ints
         ArrayList<Integer> sortedList = testList.toSortedList(cmp);
