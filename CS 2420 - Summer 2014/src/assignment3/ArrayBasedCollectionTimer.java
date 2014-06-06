@@ -52,6 +52,8 @@ public class ArrayBasedCollectionTimer {
                 int intToAdd = (int) (Math.random() * 100000);
                 nums.add(intToAdd);
                 testSet.add(intToAdd);
+
+                // fill the testArray with the ints then add to it at random indices
                 if (index < N)
                     testArray[index++] = intToAdd;
                 else
