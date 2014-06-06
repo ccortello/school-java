@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="put in different remove methods for iterator and class">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollectionTest.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollectionTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollectionTester.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollectionTester.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -84,8 +84,8 @@
       <file leaf-file-name="ArrayBasedCollection.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="2575">
-              <caret line="55" column="39" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="2125">
+              <caret line="131" column="37" selection-start-line="131" selection-start-column="37" selection-end-line="131" selection-end-column="37" />
               <folding>
                 <element signature="docComment;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#ArrayBasedCollection#0;class#ArrayBasedCollection#0" expanded="false" />
@@ -99,35 +99,72 @@
                 <element signature="docComment;method#clear#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#contains#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#containsAll#0;class#ArrayBasedCollection#0" expanded="false" />
-                <element signature="e#5379#5402#0" expanded="false" />
+                <element signature="e#5411#5434#0" expanded="false" />
                 <element signature="docComment;method#isEmpty#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#iterator#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#remove#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#removeAll#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#retainAll#0;class#ArrayBasedCollection#0" expanded="false" />
-                <element signature="e#7300#7325#0" expanded="false" />
                 <element signature="docComment;method#size#0;class#ArrayBasedCollection#0" expanded="false" />
+                <element signature="docComment;method#length#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#toArray#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#toArray#1;class#ArrayBasedCollection#0" expanded="false" />
-                <element signature="e#8320#8371#0" expanded="false" />
+                <element signature="e#9207#9258#0" expanded="false" />
                 <element signature="docComment;method#toSortedList#0;class#ArrayBasedCollection#0" expanded="false" />
-                <element signature="e#8604#8688#0" expanded="false" />
+                <element signature="e#9496#9580#0" expanded="false" />
                 <element signature="docComment;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
+                <element signature="class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#hasNext#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
                 <element signature="docComment;method#next#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
-                <element signature="e#10124#10238#0" expanded="false" />
+                <element signature="e#11073#11187#0" expanded="false" />
                 <element signature="docComment;method#remove#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArrayBasedCollectionTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollectionTest.java">
+      <file leaf-file-name="ArrayBasedCollectionTimer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollectionTimer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6533101" vertical-offset="625" max-vertical-offset="1250">
-              <caret line="188" column="24" selection-start-line="188" selection-start-column="24" selection-end-line="188" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1150" max-vertical-offset="3150">
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArrayBasedCollectionTester.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollectionTester.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.5257009" vertical-offset="5894" max-vertical-offset="7375">
+              <caret line="288" column="52" selection-start-line="288" selection-start-column="52" selection-end-line="288" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#setUp#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+                <element signature="method#tearDown#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+                <element signature="method#testAdd#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+                <element signature="method#testAddAll#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+                <element signature="e#2417#2425#0" expanded="true" />
+                <element signature="method#testClear#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+                <element signature="e#3351#3359#0" expanded="true" />
+                <element signature="method#testContains#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+                <element signature="method#testContainsAll#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+                <element signature="e#4582#4590#0" expanded="true" />
+                <element signature="method#testIsEmpty#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+                <element signature="method#testIterator#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+                <element signature="method#testRemove#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+                <element signature="method#testRemoveAll#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+                <element signature="e#7542#7550#0" expanded="true" />
+                <element signature="method#testRetainAll#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+                <element signature="e#8557#8565#0" expanded="true" />
+                <element signature="method#testSize#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+                <element signature="method#testToArray#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+                <element signature="method#testGrow#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+                <element signature="method#testToSortedList#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+                <element signature="e#12426#12427#0" expanded="true" />
+                <element signature="e#12486#12487#0" expanded="true" />
+                <element signature="e#13338#13347#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -154,8 +191,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment02/SimpleHashSet.java" />
-        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment02/MyTestApplication.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment02/experiment02/NumberName.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment03/NumberName.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment03/SimpleHashSet.java" />
@@ -204,7 +239,9 @@
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment1/MatrixTester.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/SearchUtil.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollection.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollectionTimer.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollectionTest.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollectionTester.java" />
       </list>
     </option>
   </component>
@@ -297,16 +334,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -355,6 +382,16 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="assignment3" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -1579,7 +1616,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5140625" order="8" side_tool="false" content_ui="tabs" />
@@ -1587,19 +1624,17 @@
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.14166667" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32705098" sideWeight="0.34438503" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43126386" sideWeight="0.40695187" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31707317" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26968718" sideWeight="0.36969253" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31484503" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.062084258" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31374723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14973262" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19679144" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3037694" sideWeight="0.655615" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
@@ -1608,6 +1643,8 @@
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32705098" sideWeight="0.34438503" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26968718" sideWeight="0.36969253" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1673,14 +1710,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollectionTest.java</url>
-          <line>155</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
@@ -1692,17 +1721,37 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/CS 2420 - Spring 2014.eml">
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollectionTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="903">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/CS 2420 - Spring 2014.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="903">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="275" max-vertical-offset="6775">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setUp#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="method#tearDown#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="method#testAdd#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="method#testAddAll#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="e#2417#2425#0" expanded="true" />
+            <element signature="method#testClear#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="e#3351#3359#0" expanded="true" />
+            <element signature="method#testContains#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="method#testContainsAll#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="e#4582#4590#0" expanded="true" />
+            <element signature="method#testIsEmpty#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="method#testIterator#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="method#testRemove#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="method#testRemoveAll#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="e#7542#7550#0" expanded="true" />
+            <element signature="method#testRetainAll#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="e#8557#8565#0" expanded="true" />
+            <element signature="method#testSize#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="method#testToArray#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="method#testGrow#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="method#testToSortedList#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="e#12426#12427#0" expanded="true" />
+            <element signature="e#12486#12487#0" expanded="true" />
+            <element signature="e#13338#13347#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2035,10 +2084,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollectionTimer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="575" max-vertical-offset="1975">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="2575">
-          <caret line="55" column="39" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="2125">
+          <caret line="131" column="37" selection-start-line="131" selection-start-column="37" selection-end-line="131" selection-end-column="37" />
           <folding>
             <element signature="docComment;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#ArrayBasedCollection#0;class#ArrayBasedCollection#0" expanded="false" />
@@ -2052,33 +2109,60 @@
             <element signature="docComment;method#clear#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#contains#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#containsAll#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="e#5379#5402#0" expanded="false" />
+            <element signature="e#5411#5434#0" expanded="false" />
             <element signature="docComment;method#isEmpty#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#iterator#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#remove#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#removeAll#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#retainAll#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="e#7300#7325#0" expanded="false" />
             <element signature="docComment;method#size#0;class#ArrayBasedCollection#0" expanded="false" />
+            <element signature="docComment;method#length#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#toArray#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#toArray#1;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="e#8320#8371#0" expanded="false" />
+            <element signature="e#9207#9258#0" expanded="false" />
             <element signature="docComment;method#toSortedList#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="e#8604#8688#0" expanded="false" />
+            <element signature="e#9496#9580#0" expanded="false" />
             <element signature="docComment;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
+            <element signature="class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#hasNext#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
             <element signature="docComment;method#next#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="e#10124#10238#0" expanded="false" />
+            <element signature="e#11073#11187#0" expanded="false" />
             <element signature="docComment;method#remove#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollectionTest.java">
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollectionTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6533101" vertical-offset="625" max-vertical-offset="1250">
-          <caret line="188" column="24" selection-start-line="188" selection-start-column="24" selection-end-line="188" selection-end-column="24" />
-          <folding />
+        <state vertical-scroll-proportion="1.5257009" vertical-offset="5894" max-vertical-offset="7375">
+          <caret line="288" column="52" selection-start-line="288" selection-start-column="52" selection-end-line="288" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setUp#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="method#tearDown#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="method#testAdd#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="method#testAddAll#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="e#2417#2425#0" expanded="true" />
+            <element signature="method#testClear#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="e#3351#3359#0" expanded="true" />
+            <element signature="method#testContains#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="method#testContainsAll#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="e#4582#4590#0" expanded="true" />
+            <element signature="method#testIsEmpty#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="method#testIterator#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="method#testRemove#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="method#testRemoveAll#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="e#7542#7550#0" expanded="true" />
+            <element signature="method#testRetainAll#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="e#8557#8565#0" expanded="true" />
+            <element signature="method#testSize#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="method#testToArray#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="method#testGrow#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="method#testToSortedList#0;class#ArrayBasedCollectionTester#0" expanded="true" />
+            <element signature="e#12426#12427#0" expanded="true" />
+            <element signature="e#12486#12487#0" expanded="true" />
+            <element signature="e#13338#13347#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
