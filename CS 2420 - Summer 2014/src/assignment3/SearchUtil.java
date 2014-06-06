@@ -32,9 +32,9 @@ public class SearchUtil {
         //this loop changes upper or lower bound index after comparing item to item at mid
         while (low <= high) {
             mid = (low + high) / 2;
-            if (cmp.compare(item, list[mid]) > 0)
+            if (cmp.compare(item, list.get(mid)) > 0)
                 low = mid + 1;
-            else if (cmp.compare(item, list[mid]) < 0)
+            else if (cmp.compare(item, list.get(mid)) < 0)
                 high = mid - 1;
             else
                 //if item is equal to item at mid, than item exists so return true
