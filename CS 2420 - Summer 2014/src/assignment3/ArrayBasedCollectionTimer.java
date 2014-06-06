@@ -13,7 +13,7 @@ import java.util.Random;
  */
 public class ArrayBasedCollectionTimer {
     /**
-     *
+     *  This is simply a driver method for timer()
      */
     public static void main(String[] args) {
         timer();
