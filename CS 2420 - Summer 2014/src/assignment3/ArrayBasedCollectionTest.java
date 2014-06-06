@@ -200,12 +200,12 @@ public class ArrayBasedCollectionTest extends TestCase {
     }
 
     public void testToSortedList() throws Exception {
-        testCollectionToSortedList.add("1");
-        testCollectionToSortedList.add("2");
-        testCollectionToSortedList.add("3");
-        testCollectionToSortedList.add("4");
-        testCollectionToSortedList.add("5");
         testCollectionToSortedList.add("6");
+        testCollectionToSortedList.add("5");
+        testCollectionToSortedList.add("4");
+        testCollectionToSortedList.add("3");
+        testCollectionToSortedList.add("2");
+        testCollectionToSortedList.add("1");
 
         class stringComparator implements Comparator<String> {
             public int compare(String left, String right) {

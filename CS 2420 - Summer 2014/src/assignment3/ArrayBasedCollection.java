@@ -276,7 +276,8 @@ public class ArrayBasedCollection<E> implements Collection<E> {
 
         // change the sorted array to a sorted ArrayList and return it
         ArrayList<E> sortedList = new ArrayList<E>(sortedArray.length);
-        Collections.addAll(Arrays.asList(sortedArray));
+        for (E element : sortedArray)
+            sortedList.add(element);
         return sortedList;
     }
 
