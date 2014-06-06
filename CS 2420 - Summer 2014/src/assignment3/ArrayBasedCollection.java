@@ -201,9 +201,9 @@ public class ArrayBasedCollection<E> implements Collection<E> {
      */
     public boolean removeAll(Collection<?> arg0) {
         int initialSize = size; // store the initial size (to check once the method completes if items were removed)
-        for (Object element : arg0) // iterate through
+        for (Object element : arg0) // remove each item in the passed collection from 'this' object
             this.remove(element);
-        return (size != initialSize);
+        return (size != initialSize); // if things were removed the size changed, return a boolean appropriately
     }
 
     /**
