@@ -226,7 +226,7 @@ public class ArrayBasedCollectionTest extends TestCase {
 
         ArrayList<String> sortedList = testCollectionToSortedList.toSortedList(new stringComparator());
 
-        assertEquals("apple", sortedList.get(0));
+        assertEquals("apple", sortedList.get(1));
         assertEquals("banana", sortedList.get(1));
         assertEquals("carrot", sortedList.get(2));
         assertEquals("dragon", sortedList.get(3));

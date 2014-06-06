@@ -8,7 +8,7 @@ package assignment3;
  *         Systematically test the ArrayBasedCollection class
  */
 public class ArrayBasedCollectionTester {
-    static ArrayBasedCollectionTest test;
+    static ArrayBasedCollectionTest test = new ArrayBasedCollectionTest();
 
     /**
      * Set up test fields then call 'tester' method to execute tests
@@ -17,6 +17,7 @@ public class ArrayBasedCollectionTester {
         try {
             test.setUp();
         } catch (Exception e) {
+            System.out.println(e.getMessage());
         }
 
         tester();
@@ -43,6 +44,7 @@ public class ArrayBasedCollectionTester {
             test.testToSortedList();
             test.tearDown();
         } catch (Exception e) {
+            System.out.println(e.getMessage());
         }
     }
 }
