@@ -35,8 +35,8 @@ public class ArrayBasedCollectionTest extends TestCase {
     public void testAdd() throws Exception {
         testCollectionAdd.add("Hello");
         testCollectionAdd.add("World");
-        assertEquals(testCollectionAdd.contains("Hello"), true);
-        assertEquals(testCollectionAdd.contains("World"), true);
+        assertEquals(true, testCollectionAdd.contains("Hello"));
+        assertEquals(true, testCollectionAdd.contains("World"));
     }
 
     public void testAddAll() throws Exception {
@@ -48,11 +48,11 @@ public class ArrayBasedCollectionTest extends TestCase {
         addList.add("test string 4");
 
         testCollectionAddAll.addAll(addList);
-        assertEquals(testCollectionAddAll.contains("test string 1"), true);
-        assertEquals(testCollectionAddAll.contains("test string 2"), true);
-        assertEquals(testCollectionAddAll.contains("test string 3"), true);
-        assertEquals(testCollectionAddAll.contains("test string 5"), true);
-        assertEquals(testCollectionAddAll.contains("test string 4"), true);
+        assertEquals(true, testCollectionAddAll.contains("test string 1"));
+        assertEquals(true, testCollectionAddAll.contains("test string 2"));
+        assertEquals(true, testCollectionAddAll.contains("test string 3"));
+        assertEquals(true, testCollectionAddAll.contains("test string 5"));
+        assertEquals(true, testCollectionAddAll.contains("test string 4"));
     }
 
     public void testClear() throws Exception {
@@ -63,10 +63,10 @@ public class ArrayBasedCollectionTest extends TestCase {
         addTree.add("coconut");
         testCollectionClear.addAll(addTree);
         testCollectionClear.clear();
-        assertEquals(testCollectionClear.contains("banana"), false);
-        assertEquals(testCollectionClear.contains("apple"), false);
-        assertEquals(testCollectionClear.contains("cherry"), false);
-        assertEquals(testCollectionClear.contains("coconut"), false);
+        assertEquals(false, testCollectionClear.contains("banana"));
+        assertEquals(false, testCollectionClear.contains("apple"));
+        assertEquals(false, testCollectionClear.contains("cherry"));
+        assertEquals(false, testCollectionClear.contains("coconut"));
     }
 
     public void testContains() throws Exception {
@@ -87,12 +87,12 @@ public class ArrayBasedCollectionTest extends TestCase {
         testCollectionContainsAll.add("help I'm trapped");
         testCollectionContainsAll.add("silly String");
 
-        assertEquals(testCollectionContainsAll.containsAll(addSet), true);
+        assertEquals(true, testCollectionContainsAll.containsAll(addSet));
     }
 
     public void testIsEmpty() throws Exception {
-        assertEquals(emptyCollection.isEmpty(), true);
-        assertEquals(testCollectionClear.isEmpty(), true);
+        assertEquals(true, emptyCollection.isEmpty());
+        assertEquals(true, testCollectionClear.isEmpty());
     }
 
     public void testIterator() throws Exception {
@@ -113,9 +113,9 @@ public class ArrayBasedCollectionTest extends TestCase {
         testCollectionRemove.add("third");
 
         testCollectionRemove.remove("second");
-        assertEquals(testCollectionRemove.contains("first"), true);
-        assertEquals(testCollectionRemove.contains("second"), false);
-        assertEquals(testCollectionRemove.contains("third"), true);
+        assertEquals(true, testCollectionRemove.contains("first"));
+        assertEquals(false, testCollectionRemove.contains("second"));
+        assertEquals(true, testCollectionRemove.contains("third"));
     }
 
     public void testRemoveAll() throws Exception {
@@ -131,11 +131,11 @@ public class ArrayBasedCollectionTest extends TestCase {
 
         testCollectionRemoveAll.removeAll(removeAllSet);
 
-        assertEquals(testCollectionRemoveAll.contains("first"), true);
-        assertEquals(testCollectionRemoveAll.contains("second"), false);
-        assertEquals(testCollectionRemoveAll.contains("third"), true);
-        assertEquals(testCollectionRemoveAll.contains("fourth"), false);
-        assertEquals(testCollectionRemoveAll.contains("fifth"), true);
+        assertEquals(true, testCollectionRemoveAll.contains("first"));
+        assertEquals(false, testCollectionRemoveAll.contains("second"));
+        assertEquals(true, testCollectionRemoveAll.contains("third"));
+        assertEquals(false, testCollectionRemoveAll.contains("fourth"));
+        assertEquals(true, testCollectionRemoveAll.contains("fifth"));
     }
 
     public void testRetainAll() throws Exception {
@@ -151,31 +151,31 @@ public class ArrayBasedCollectionTest extends TestCase {
 
         testCollectionRetainAll.retainAll(retainAllList);
 
-        assertEquals(testCollectionRetainAll.contains("first"), false);
-        assertEquals(testCollectionRetainAll.contains("second"), true);
-        assertEquals(testCollectionRetainAll.contains("third"), false);
-        assertEquals(testCollectionRetainAll.contains("fourth"), true);
-        assertEquals(testCollectionRetainAll.contains("fifth"), false);
+        assertEquals(false, testCollectionRetainAll.contains("first"));
+        assertEquals(true, testCollectionRetainAll.contains("second"));
+        assertEquals(false, testCollectionRetainAll.contains("third"));
+        assertEquals(true, testCollectionRetainAll.contains("fourth"));
+        assertEquals(false, testCollectionRetainAll.contains("fifth"));
     }
 
     public void testSize() throws Exception {
-        assertEquals(testCollectionSize.size, 0);
+        assertEquals(0, testCollectionSize.size);
         testCollectionSize.add("first");
-        assertEquals(testCollectionSize.size(), 1);
+        assertEquals(1, testCollectionSize.size());
         testCollectionSize.add("second");
-        assertEquals(testCollectionSize.size(), 2);
+        assertEquals(2, testCollectionSize.size());
         testCollectionSize.add("third");
-        assertEquals(testCollectionSize.size(), 3);
+        assertEquals(3, testCollectionSize.size());
         testCollectionSize.add("fourth");
-        assertEquals(testCollectionSize.size(), 4);
+        assertEquals(4, testCollectionSize.size());
         testCollectionSize.add("fifth");
-        assertEquals(testCollectionSize.size(), 5);
+        assertEquals(5, testCollectionSize.size());
         testCollectionSize.remove("fifth");
-        assertEquals(testCollectionSize.size(), 4);
+        assertEquals(4, testCollectionSize.size());
         testCollectionSize.remove("second");
-        assertEquals(testCollectionSize.size(), 3);
+        assertEquals(3, testCollectionSize.size());
         testCollectionSize.remove("third");
-        assertEquals(testCollectionSize.size(), 2);
+        assertEquals(2, testCollectionSize.size());
     }
 
     public void testToArray() throws Exception {

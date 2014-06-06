@@ -5,8 +5,9 @@ import java.util.Comparator;
 
 /**
  * @author Paymon Saebi
- * @author
- * @author
+ * @author Cody Cortello
+ * @author Casey Nordgran
+ * @version 6/5/2014
  */
 public class SearchUtil {
     /**
@@ -22,7 +23,24 @@ public class SearchUtil {
      * @return true if "item" exists in "list", false otherwise
      */
     public static <T> boolean binarySearch(ArrayList<T> list, T item, Comparator<? super T> cmp) {
-        //TODO: Fill in with a correct binary search implementation
+
+        //variables for lower, and upper bound indices, as well is a middle index
+        int low = 0;
+        int high = list.size() - 1;
+        int mid;
+
+        //this loop changes upper or lower bound index after comparing item to item at mid
+        while (low <= high) {
+            mid = (low + high) / 2;
+            if (cmp.compare(item, list[mid]) > 0)
+                low = mid + 1;
+            else if (cmp.compare(item, list[mid]) < 0)
+                high = mid - 1;
+            else
+                //if item is equal to item at mid, than item exists so return true
+                return true;
+        }
+        //if no item in list was found to be equal with item than return false.
         return false;
     }
 
