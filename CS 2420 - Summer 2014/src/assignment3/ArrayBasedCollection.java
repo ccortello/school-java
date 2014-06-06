@@ -175,17 +175,22 @@ public class ArrayBasedCollection<E> implements Collection<E> {
      */
     public boolean remove(Object arg0) {
         // TODO: comment this bit
-        int objIndex = 0;
-        for (int i = 0; i < size && objIndex == 0; i++)
-            if (data[i].equals(arg0))
+        int objIndex = -1;
+        for (int i = 0; i < size; i++)
+            if (data[i].equals(arg0)) {
                 objIndex = i;
+                break;
+            }
 
-        if (objIndex == 0)
+        // if the object wasn't found return false
+        if (objIndex == -1)
             return false;
 
+        // cascade items backward to effectively remove the item
         for (int i = objIndex; i < size - 1; i++)
             data[i] = data[i + 1];
 
+        // nullify the final item (which has an adjacent copy at this point) and return true
         data[(size--) - 1] = null;
         return true;
     }
@@ -205,15 +210,14 @@ public class ArrayBasedCollection<E> implements Collection<E> {
      * Retains only the elements in this collection that are contained in the specified collection (optional operation).
      */
     public boolean retainAll(Collection<?> arg0) {
-        // TODO: comment this bit
-        //check for null reference
+        //check for null Collection
         if (arg0.size() == 0)
             return false;
-        int initialSize = this.size;
-        for (Object element : arg0)
-            if (!(this.contains(element)))
+        int initialSize = this.size; // used to check for changes (if objects were actually removed)
+        for (E element : data) // loop through the array of E items in this object
+            if (!arg0.contains(element)) // if the object shouldn't be retained remove it
                 this.remove(element);
-        return (this.size != initialSize);
+        return (this.size != initialSize); // return a boolean based on the size changing (if elements were removed)
     }
 
     /**
