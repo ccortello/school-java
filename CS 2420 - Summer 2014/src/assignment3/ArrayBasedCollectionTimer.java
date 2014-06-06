@@ -1,6 +1,8 @@
 package assignment3;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Random;
 
 /**
  * @author Paymon Saebi
@@ -14,8 +16,6 @@ public class ArrayBasedCollectionTimer {
      *
      */
     public static void main(String[] args) {
-        // TODO add any preparations needed for the timing experiment
-
         timer();
     }
 
@@ -23,12 +23,11 @@ public class ArrayBasedCollectionTimer {
      * This code is refactored from Paymon's SortDemo.java code provided on the class website
      */
     public static void timer() {
-        //TODO: Write code to time your toSortedList, contains, and SearchUtil.binarySearch methods so you can plot the results.
         int[] temp;
         long startTime, midpointTime, stopTime;
 
         // Setup for the timing experiment.
-        int timesToLoop = 100;
+        int timesToLoop = 10000000;
         System.out.println("N\tTime");
 
         // First, spin computing stuff until one second has gone by.
@@ -55,13 +54,22 @@ public class ArrayBasedCollectionTimer {
                 testSet.add(intToAdd);
                 if (index < N)
                     testArray[index++] = intToAdd;
+                else
+                    testArray[((int) (Math.random() * N))] = intToAdd;
             }
+
+            permuteInts(testArray);
+
+            IntegerComparator cmp = new IntegerComparator();
+
+            ArrayList<Integer> sortedList = nums.toSortedList(cmp);
 
             startTime = System.nanoTime();
 
             for (int i = 0; i < timesToLoop; i++) {
 //                nums.toSortedList(new IntegerComparator());
-                nums.contains(testArray[i]);
+//                nums.contains(testArray[i%N]);
+                SearchUtil.binarySearch(sortedList, testArray[i % N], cmp);
             }
 
             midpointTime = System.nanoTime();
@@ -81,5 +89,32 @@ public class ArrayBasedCollectionTimer {
 
             System.out.println(nums.size() + "\t" + averageTime);
         }
+    }
+
+    /**
+     * Randomly permutes an array of integers.
+     * Copied from Paymon's 'SortUtil.java' example file
+     *
+     * @param testArray the array to be permuted
+     */
+    private static void permuteInts(int[] testArray) {
+        Random rand = new Random(System.currentTimeMillis());
+        for (int i = 0; i < testArray.length; i++) {
+            swap(testArray, i, rand.nextInt(testArray.length));
+        }
+    }
+
+    /**
+     * Swaps two ints in the given array of ints.
+     * Copied from Paymon's 'SortUtil.java' example file
+     *
+     * @param arr the array where the swapping should occur
+     * @param i   the first int to be swapped
+     * @param j   the second int to be swapped
+     */
+    public static void swap(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
 }

@@ -8,10 +8,12 @@ import java.util.HashSet;
 import java.util.TreeSet;
 
 public class ArrayBasedCollectionTester extends TestCase {
-    private ArrayBasedCollection<String> emptyCollection, testCollectionAdd, testCollectionAddAll,
+    ArrayBasedCollection<String> emptyCollection, testCollectionAdd, testCollectionAddAll,
             testCollectionClear, testCollectionContainsAll, testCollectionIterator,
             testCollectionRemove, testCollectionRemoveAll, testCollectionRetainAll, testCollectionSize,
             testCollectionToArray, testCollectionGrow, testCollectionToSortedList;
+
+    ArrayBasedCollection<Integer> testList;
 
     public void setUp() throws Exception {
         super.setUp();
@@ -31,6 +33,8 @@ public class ArrayBasedCollectionTester extends TestCase {
         testCollectionToArray = new ArrayBasedCollection<String>();
         testCollectionGrow = new ArrayBasedCollection<String>(0);
         testCollectionToSortedList = new ArrayBasedCollection<String>();
+
+        testList = new ArrayBasedCollection<Integer>();
     }
 
     public void tearDown() throws Exception {
@@ -233,5 +237,30 @@ public class ArrayBasedCollectionTester extends TestCase {
         assertEquals("dragon", sortedList.get(3));
         assertEquals("gorilla", sortedList.get(4));
         assertEquals("zebra", sortedList.get(5));
+    }
+
+    public void testBinarySearch() throws Exception {
+        // randomize 100 ints from 0 to 100 and add them to the ArrayBasedCollection and a HashSet (to compare the
+        //  final sorted list against)
+        int intsAdded = 100, range = 100;
+        HashSet<Integer> testSet = new HashSet<Integer>();
+        for (int i = 0; i < intsAdded; i++) {
+            int intToAdd = (int) ((Math.random() * range) + 1);
+            testList.add(intToAdd);
+            testSet.add(intToAdd);
+        }
+
+        // use a default Comparator to compare the ints
+        Comparator<Integer> cmp = new IntegerComparator();
+
+        // invoke the toSortedList method to sort the randomized ints
+        ArrayList<Integer> sortedList = testList.toSortedList(cmp);
+
+        // then search for 50 random ints in the sortedList and assert their existence
+        int tries = 50;
+        for (int i = 0; i < tries; i++) {
+            int intToTry = (int) ((Math.random() * range) + 1);
+            assertEquals(testSet.contains(intToTry), SearchUtil.binarySearch(sortedList, intToTry, cmp));
+        }
     }
 }

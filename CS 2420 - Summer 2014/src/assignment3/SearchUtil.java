@@ -11,7 +11,7 @@ import java.util.Comparator;
  */
 public class SearchUtil {
     /**
-     * Fill in the description
+     * A recursive search method which guarantees O(log N) execution
      *
      * @param <T>  The type of elements contained in the list
      * @param list An ArrayList to search through.
