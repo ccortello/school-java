@@ -28,7 +28,7 @@ public class ArrayBasedCollectionTimer {
 
         // Setup for the timing experiment.
         int timesToLoop = 10000000;
-        System.out.println("N\tTime");
+        System.out.println("N\tTime"); // this prints the column headers
 
         // First, spin computing stuff until one second has gone by.
         // This allows this thread to stabilize.
@@ -50,7 +50,7 @@ public class ArrayBasedCollectionTimer {
             int index = 0;
             while (nums.size() < N) {
                 int intToAdd = (int) (Math.random() * 100000);
-                nums.add(intToAdd);
+                nums.add(intToAdd);  //both nums & testSet do not allow duplicates.
                 testSet.add(intToAdd);
 
                 // fill the testArray with the ints then add to it at random indices
@@ -60,24 +60,28 @@ public class ArrayBasedCollectionTimer {
                     testArray[((int) (Math.random() * N))] = intToAdd;
             }
 
+            //permute to randomize the element locations
             permuteInts(testArray);
 
+            //comparator to be used in the toSortedList method
             IntegerComparator cmp = new IntegerComparator();
 
+            //sorted list before start time to be used with binary search
             ArrayList<Integer> sortedList = nums.toSortedList(cmp);
 
+            // start timing analysis, only uncomment the current needed test below
             startTime = System.nanoTime();
-
             for (int i = 0; i < timesToLoop; i++) {
 //                nums.toSortedList(new IntegerComparator());
 //                nums.contains(testArray[i%N]);
-                SearchUtil.binarySearch(sortedList, testArray[i % N], cmp);
+//                SearchUtil.binarySearch(sortedList, testArray[i % N], cmp);
             }
 
+            // end time for the for loop above, and begin time of for loop below.
             midpointTime = System.nanoTime();
 
-            // Run a loop with non-timed code to capture the cost of running
-            // the loop and anything extra that maybe needed to setup the timing
+            // Run a loop with non-timed code to capture the cost of running and empty loop
+            // and anything extra that maybe needed to setup the timing
             for (int i = 0; i < timesToLoop; i++) {
                 // empty block
             }
@@ -85,7 +89,7 @@ public class ArrayBasedCollectionTimer {
             stopTime = System.nanoTime();
 
             // Compute the time, subtract the cost of running the loop
-            // from the cost of running the loop and computing square roots.
+            // from the cost of running the loop and computing the called methods
             // Average it over the number of runs.
             double averageTime = ((midpointTime - startTime) - (stopTime - midpointTime)) / timesToLoop;
 
@@ -95,7 +99,7 @@ public class ArrayBasedCollectionTimer {
 
     /**
      * Randomly permutes an array of integers.
-     * Copied from Paymon's 'SortUtil.java' example file
+     * Implementation from Paymon's 'SortUtil.java' example file
      *
      * @param testArray the array to be permuted
      */
@@ -108,7 +112,7 @@ public class ArrayBasedCollectionTimer {
 
     /**
      * Swaps two ints in the given array of ints.
-     * Copied from Paymon's 'SortUtil.java' example file
+     * Implementation from Paymon's 'SortUtil.java' example file
      *
      * @param arr the array where the swapping should occur
      * @param i   the first int to be swapped
