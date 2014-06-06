@@ -26,7 +26,8 @@ public class ArrayBasedCollectionTimer {
         long startTime, midpointTime, stopTime;
 
         // Setup for the timing experiment.
-        int timesToLoop = 10;
+        int timesToLoop = 20;
+        System.out.println("N\tTime");
 
         // First, spin computing stuff until one second has gone by.
         // This allows this thread to stabilize.
@@ -38,31 +39,23 @@ public class ArrayBasedCollectionTimer {
 
         // Run complete timing for different values of N
         for (int N = 1000; N <= 20000; N += 1000) {
-            // Generate the random array before starting the timer
 
-            //int[] nums = SortUtil.randomInts(N);
-            //int[] nums = SortUtil.permuteInts(N);
-            //int[] nums = SortUtil.ascendingInts(N);
-            int[] nums = SortUtil.descendingInts(N);
+            // Generate the random array before starting the timer
+            ArrayBasedCollection<Integer> nums = new ArrayBasedCollection<Integer>();
+            for (int i = 0; i < N; i++)
+                nums.add((int) (Math.random() * 100000));
 
             startTime = System.nanoTime();
 
-            for (long i = 0; i < timesToLoop; i++) {
-                // The array must be cloned every time since it gets sorted
-                // the first iteration of this loop, and the rest will not
-                // act the way we exp[ect them to do.
-
-                //SortUtil.selectionSort(nums);
-                nums.
-                //SortUtil.shellSort(nums);
-            }
+            for (long i = 0; i < timesToLoop; i++)
+                nums.toSortedList(new IntegerComparator());
 
             midpointTime = System.nanoTime();
 
             // Run a loop with non-timed code to capture the cost of running
             // the loop and anything extra that maybe needed to setup the timing
             for (int i = 0; i < timesToLoop; i++) {
-                temp = nums.clone();
+                // empty block
             }
 
             stopTime = System.nanoTime();
@@ -72,7 +65,7 @@ public class ArrayBasedCollectionTimer {
             // Average it over the number of runs.
             double averageTime = ((midpointTime - startTime) - (stopTime - midpointTime)) / timesToLoop;
 
-            System.out.println(averageTime);
+            System.out.println(N + "\t" + averageTime);
         }
     }
 
