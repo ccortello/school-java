@@ -1,5 +1,7 @@
 package assignment3;
 
+import java.util.Random;
+
 /**
  * @author Paymon Saebi
  * @author Cody Cortello
@@ -41,9 +43,9 @@ public class ArrayBasedCollectionTimer {
         for (int N = 1000; N <= 20000; N += 1000) {
 
             // Generate the random array before starting the timer
-            ArrayBasedCollection<Integer> nums = new ArrayBasedCollection<Integer>();
-            for (int i = 0; i < N; i++)
-                nums.add((int) (Math.random() * 100000));
+            //  note: instead of permuting ascending numbers a random array is created and ensured no duplications by
+            //  checking each add element against a HashSet (which the ints are also added to)
+            ArrayBasedCollection<Integer> nums = permuteInts(N);
 
             startTime = System.nanoTime();
 
@@ -65,9 +67,31 @@ public class ArrayBasedCollectionTimer {
             // Average it over the number of runs.
             double averageTime = ((midpointTime - startTime) - (stopTime - midpointTime)) / timesToLoop;
 
-            System.out.println(N + "\t" + averageTime);
+//            System.out.println(N + "\t" + averageTime);
         }
     }
 
+    private static ArrayBasedCollection<Integer> permuteInts(ArrayBasedCollection<Integer> nums) {
 
+    }
+
+    public ArrayBasedCollection<Integer> permuteInts(int size) {
+        int randomArray[] = new int[size];
+        for (int i = 0; i < size; i++)
+            randomArray[i] = i;
+        for (int i = 0; i < size; i++)
+            swap(randomArray, i, new Random(System.currentTimeMillis()).nextInt(size));
+        ArrayBasedCollection<Integer> retval = new ArrayBasedCollection<Integer>();
+        for (int i = 0; i < size; i++) {
+            retval.add(randomArray[i]);
+        }
+        return retval;
+    }
+
+    // Swaps two items in the given array
+    public static void swap(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
 }
