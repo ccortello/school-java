@@ -57,7 +57,7 @@ public class ArrayBasedCollection<E> implements Collection<E> {
             return;
         }
 
-        // create a new array of twice the capacity
+        // for normal growth create a new array of twice the capacity
         E newData[] = (E[]) new Object[this.data.length * 2];
 
         // copy all elements
@@ -175,15 +175,19 @@ public class ArrayBasedCollection<E> implements Collection<E> {
      */
     public boolean remove(Object arg0) {
         // TODO: comment this bit
-        if (this.contains(arg0)) {
-            Iterator iterator = new ArrayBasedIterator();
-            Object next = iterator.next();
-            while (!next.equals(arg0))
-                next = iterator.next();
-            iterator.remove();
-            return true;
-        }
-        return false;
+        int objIndex = 0;
+        for (int i = 0; i < size && objIndex == 0; i++)
+            if (data[i].equals(arg0))
+                objIndex = i;
+
+        if (objIndex == 0)
+            return false;
+
+        for (int i = objIndex; i < size - 1; i++)
+            data[i] = data[i + 1];
+
+        data[(size--) - 1] = null;
+        return true;
     }
 
     /**
@@ -205,11 +209,11 @@ public class ArrayBasedCollection<E> implements Collection<E> {
         //check for null reference
         if (arg0.size() == 0)
             return false;
-        int initialSize = size;
-        for (E element : data)
-            if (!arg0.contains(element))
+        int initialSize = this.size;
+        for (Object element : arg0)
+            if (!(this.contains(element)))
                 this.remove(element);
-        return (size != initialSize);
+        return (this.size != initialSize);
     }
 
     /**
@@ -270,6 +274,7 @@ public class ArrayBasedCollection<E> implements Collection<E> {
     private class ArrayBasedIterator implements Iterator<E> {
         int index;
         boolean canRemove;
+        E toRemove;
 
         public ArrayBasedIterator() {
             index = 0;
@@ -297,7 +302,8 @@ public class ArrayBasedCollection<E> implements Collection<E> {
             //  has been reached, 3) asserts canRemove, and 4) return the correct data
             index++;
             canRemove = (index != size);
-            return data[index - 1];
+            toRemove = data[index - 1];
+            return toRemove;
         }
 
         /**
@@ -305,19 +311,11 @@ public class ArrayBasedCollection<E> implements Collection<E> {
          * @throws IllegalStateException
          */
         public void remove() throws IllegalStateException {
-            // if not a valid remove then throw an exception
             if (!canRemove)
                 throw new IllegalStateException();
 
-            // copy each element backwards to replace the previous element
-            int copyIndex = index;
-            while (copyIndex < size)
-                data[copyIndex - 1] = data[copyIndex++];
-
-            data[--size] = null;    // remove copied end element
-
-            // update ArrayBasedCollection fields
-            index--;
+            ArrayBasedCollection.this.remove(toRemove);
+            toRemove = null;
             canRemove = false;
         }
     }
