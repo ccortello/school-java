@@ -200,12 +200,12 @@ public class ArrayBasedCollectionTest extends TestCase {
     }
 
     public void testToSortedList() throws Exception {
-        testCollectionToSortedList.add("b");
-        testCollectionToSortedList.add("d");
-        testCollectionToSortedList.add("c");
-        testCollectionToSortedList.add("a");
-        testCollectionToSortedList.add("g");
-        testCollectionToSortedList.add("z");
+        testCollectionToSortedList.add("banana");
+        testCollectionToSortedList.add("dragon");
+        testCollectionToSortedList.add("carrot");
+        testCollectionToSortedList.add("apple");
+        testCollectionToSortedList.add("gorilla");
+        testCollectionToSortedList.add("zebra");
 
         class stringComparator implements Comparator<String> {
             public int compare(String left, String right) {
@@ -215,6 +215,11 @@ public class ArrayBasedCollectionTest extends TestCase {
 
         ArrayList<String> sortedList = testCollectionToSortedList.toSortedList(new stringComparator());
 
-        System.out.println(sortedList);
+        assertEquals("apple", sortedList.get(0));
+        assertEquals("banana", sortedList.get(1));
+        assertEquals("carrot", sortedList.get(2));
+        assertEquals("dragon", sortedList.get(3));
+        assertEquals("gorilla", sortedList.get(4));
+        assertEquals("zebra", sortedList.get(5));
     }
 }
