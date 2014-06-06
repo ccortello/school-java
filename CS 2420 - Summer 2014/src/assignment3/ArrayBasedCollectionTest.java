@@ -10,7 +10,7 @@ public class ArrayBasedCollectionTest extends TestCase {
     private ArrayBasedCollection<String> nullCollection, emptyCollection, testCollectionAdd, testCollectionAddAll,
             testCollectionClear, testCollectionContainsAll, testCollectionIterator,
             testCollectionRemove, testCollectionRemoveAll, testCollectionRetainAll, testCollectionSize,
-            testCollectionToArray;
+            testCollectionToArray, testCollectionGrow, testCollectionToSortedList;
 
     public void setUp() throws Exception {
         super.setUp();
@@ -28,6 +28,8 @@ public class ArrayBasedCollectionTest extends TestCase {
         testCollectionRetainAll = new ArrayBasedCollection<String>();
         testCollectionSize = new ArrayBasedCollection<String>();
         testCollectionToArray = new ArrayBasedCollection<String>();
+        testCollectionGrow = new ArrayBasedCollection<String>(0);
+        testCollectionToSortedList = new ArrayBasedCollection<String>();
     }
 
     public void tearDown() throws Exception {}
@@ -179,6 +181,15 @@ public class ArrayBasedCollectionTest extends TestCase {
     }
 
     public void testToArray() throws Exception {
+
+    }
+
+    public void testGrow() throws Exception {
+        testCollectionGrow.add("first");
+        assertEquals(testCollectionGrow.data.length, 1);
+    }
+
+    public void testToSortedList() throws Exception {
 
     }
 }

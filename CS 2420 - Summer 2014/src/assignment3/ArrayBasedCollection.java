@@ -51,6 +51,12 @@ public class ArrayBasedCollection<E> implements Collection<E> {
         // Doubles the size of the data storage array, retaining its current contents.
         // You will need to use something similar to the code in the constructor above to create a new array.
 
+        // if the size is zero increase the size to 1
+        if (data.length == 0) {
+            data = (E[]) new Object[1];
+            return;
+        }
+
         // create a new array of twice the capacity
         E newData[] = (E[]) new Object[this.data.length * 2];
 
