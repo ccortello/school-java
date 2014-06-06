@@ -53,7 +53,8 @@ public class ArrayBasedCollection<E> implements Collection<E> {
 
         // if the size is zero increase the size to 1
         if (data.length == 0) {
-            data = (E[]) new Object[1];
+            E newData[] = (E[]) new Object[1];
+            data = newData;
             return;
         }
 
@@ -174,7 +175,7 @@ public class ArrayBasedCollection<E> implements Collection<E> {
      * Removes a single instance of the specified element from this collection, if it is present (optional operation).
      */
     public boolean remove(Object arg0) {
-        // TODO: comment this bit
+        // set an index for the found object (default to -1 in order to check if it's found) and loop through objects in data
         int objIndex = -1;
         for (int i = 0; i < size; i++)
             if (data[i].equals(arg0)) {
@@ -225,6 +226,13 @@ public class ArrayBasedCollection<E> implements Collection<E> {
      */
     public int size() {
         return size;
+    }
+
+    /**
+     * Returns the length of the data array in this collection.
+     */
+    public int length() {
+        return data.length;
     }
 
     /**

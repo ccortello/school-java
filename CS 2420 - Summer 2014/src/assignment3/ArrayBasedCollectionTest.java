@@ -185,8 +185,13 @@ public class ArrayBasedCollectionTest extends TestCase {
     }
 
     public void testGrow() throws Exception {
+        // test adding to collection of size 0
         testCollectionGrow.add("first");
-        assertEquals(1, testCollectionGrow.data.length);
+        assertEquals(1, testCollectionGrow.length());
+        testCollectionGrow.add("second");
+        assertEquals(2, testCollectionGrow.length());
+        testCollectionGrow.add("third");
+        assertEquals(4, testCollectionGrow.length());
     }
 
     public void testToSortedList() throws Exception {
