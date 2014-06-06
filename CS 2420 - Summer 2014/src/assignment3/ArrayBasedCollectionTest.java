@@ -185,16 +185,29 @@ public class ArrayBasedCollectionTest extends TestCase {
     }
 
     public void testGrow() throws Exception {
-        // test adding to collection of size 0
+        // test adding to collection of size 0 up to size 8
         testCollectionGrow.add("first");
         assertEquals(1, testCollectionGrow.length());
         testCollectionGrow.add("second");
         assertEquals(2, testCollectionGrow.length());
         testCollectionGrow.add("third");
         assertEquals(4, testCollectionGrow.length());
+        testCollectionGrow.add("fourth");
+        assertEquals(4, testCollectionGrow.length());
+        testCollectionGrow.add("fifth");
+        assertEquals(8, testCollectionGrow.length());
     }
 
     public void testToSortedList() throws Exception {
+        testCollectionToSortedList.add("first");
+        testCollectionToSortedList.add("fourth");
+        testCollectionToSortedList.add("banana");
+        testCollectionToSortedList.add("apple");
+        testCollectionToSortedList.add("fubar");
+        testCollectionToSortedList.add("mork");
 
+        ArrayList<String> sortedList = testCollectionToSortedList.toSortedList();
+
+        assertEquals("apple", sortedList.get(0));
     }
 }
