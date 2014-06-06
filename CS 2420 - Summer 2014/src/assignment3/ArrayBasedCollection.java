@@ -200,9 +200,8 @@ public class ArrayBasedCollection<E> implements Collection<E> {
      * Removes all of this collection's elements that are also contained in the specified collection (optional operation).
      */
     public boolean removeAll(Collection<?> arg0) {
-        // TODO: comment this bit
-        int initialSize = size;
-        for (Object element : arg0)
+        int initialSize = size; // store the initial size (to check once the method completes if items were removed)
+        for (Object element : arg0) // iterate through
             this.remove(element);
         return (size != initialSize);
     }
