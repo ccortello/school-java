@@ -5,17 +5,20 @@ package assignment3;
  * @author Cody Cortello
  * @author Casey Nordgran
  *         <p/>
- *         Systematically test the ArrayBasedCollection class
+ *         Systematically arrayTest the ArrayBasedCollection class
  */
 public class ArrayBasedCollectionTester {
-    static ArrayBasedCollectionTest test = new ArrayBasedCollectionTest();
+    static ArrayBasedCollectionTest arrayTest = new ArrayBasedCollectionTest();
+    static SearchUtilTest searchTest = new SearchUtilTest();
 
     /**
-     * Set up test fields then call 'tester' method to execute tests
+     * Set up arrayTest fields then call 'tester' method to execute tests
      */
     public static void main(String[] args) {
+        System.out.println("If no exceptions are thrown then the JUnit tests all passed");
         try {
-            test.setUp();
+            arrayTest.setUp();
+            searchTest.setUp();
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -28,21 +31,24 @@ public class ArrayBasedCollectionTester {
      */
     public static void tester() {
         try {
-            test.testAdd();
-            test.testAddAll();
-            test.testClear();
-            test.testContains();
-            test.testContainsAll();
-            test.testGrow();
-            test.testIsEmpty();
-            test.testIterator();
-            test.testRemove();
-            test.testRemoveAll();
-            test.testRetainAll();
-            test.testSize();
-            test.testToArray();
-            test.testToSortedList();
-            test.tearDown();
+            arrayTest.testAdd();
+            arrayTest.testAddAll();
+            arrayTest.testClear();
+            arrayTest.testContains();
+            arrayTest.testContainsAll();
+            arrayTest.testGrow();
+            arrayTest.testIsEmpty();
+            arrayTest.testIterator();
+            arrayTest.testRemove();
+            arrayTest.testRemoveAll();
+            arrayTest.testRetainAll();
+            arrayTest.testSize();
+            arrayTest.testToArray();
+            arrayTest.testToSortedList();
+            arrayTest.tearDown();
+
+            searchTest.testBinarySearch();
+            searchTest.tearDown();
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }

@@ -72,7 +72,7 @@ public class ArrayBasedCollection<E> implements Collection<E> {
     /**
      * Ensures that this collection contains the specified element.
      *
-     * @param arg0  the element to be added
+     * @param arg0 the element to be added
      * @return true iff the ArrayCollection changed after method execution
      */
     public boolean add(E arg0) {
@@ -96,7 +96,7 @@ public class ArrayBasedCollection<E> implements Collection<E> {
     /**
      * Adds all of the elements in the specified collection to this collection (optional operation).
      *
-     * @param arg0  a Collection of elements to be added
+     * @param arg0 a Collection of elements to be added
      * @return true iff any elements have been added
      */
     public boolean addAll(Collection<? extends E> arg0) {
@@ -119,7 +119,7 @@ public class ArrayBasedCollection<E> implements Collection<E> {
     /**
      * Returns true if this collection contains the specified element.
      *
-     * @param arg0  the Object to be found
+     * @param arg0 the Object to be found
      * @return true iff arg0 is found in the Object
      */
     public boolean contains(Object arg0) {
@@ -251,7 +251,7 @@ public class ArrayBasedCollection<E> implements Collection<E> {
     public <T> T[] toArray(T[] arg0) {
         //Don't implement this method (unless you want to).
         // It must be here to complete the Collection interface.
-        // We will not test this method.
+        // We will not arrayTest this method.
 
         return null;
     }
@@ -303,7 +303,6 @@ public class ArrayBasedCollection<E> implements Collection<E> {
         }
 
         /**
-         *
          * @return
          * @throws NoSuchElementException
          */
@@ -321,7 +320,6 @@ public class ArrayBasedCollection<E> implements Collection<E> {
         }
 
         /**
-         *
          * @throws IllegalStateException
          */
         public void remove() throws IllegalStateException {

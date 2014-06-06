@@ -16,7 +16,7 @@ public class ArrayBasedCollectionTest extends TestCase {
     public void setUp() throws Exception {
         super.setUp();
 
-        // these constructors test the different possible values to be passed to the ArrayBasedCollection constructor
+        // these constructors arrayTest the different possible values to be passed to the ArrayBasedCollection constructor
         emptyCollection = new ArrayBasedCollection<String>(0);
         testCollectionAdd = new ArrayBasedCollection<String>();
         testCollectionAddAll = new ArrayBasedCollection<String>(100);
@@ -45,18 +45,18 @@ public class ArrayBasedCollectionTest extends TestCase {
 
     public void testAddAll() throws Exception {
         ArrayList<String> addList = new ArrayList<String>();
-        addList.add("test string 1");
-        addList.add("test string 2");
-        addList.add("test string 3");
-        addList.add("test string 5"); // out of order on purpose
-        addList.add("test string 4");
+        addList.add("arrayTest string 1");
+        addList.add("arrayTest string 2");
+        addList.add("arrayTest string 3");
+        addList.add("arrayTest string 5"); // out of order on purpose
+        addList.add("arrayTest string 4");
 
         testCollectionAddAll.addAll(addList);
-        assertEquals(true, testCollectionAddAll.contains("test string 1"));
-        assertEquals(true, testCollectionAddAll.contains("test string 2"));
-        assertEquals(true, testCollectionAddAll.contains("test string 3"));
-        assertEquals(true, testCollectionAddAll.contains("test string 5"));
-        assertEquals(true, testCollectionAddAll.contains("test string 4"));
+        assertEquals(true, testCollectionAddAll.contains("arrayTest string 1"));
+        assertEquals(true, testCollectionAddAll.contains("arrayTest string 2"));
+        assertEquals(true, testCollectionAddAll.contains("arrayTest string 3"));
+        assertEquals(true, testCollectionAddAll.contains("arrayTest string 5"));
+        assertEquals(true, testCollectionAddAll.contains("arrayTest string 4"));
     }
 
     public void testClear() throws Exception {
@@ -74,7 +74,7 @@ public class ArrayBasedCollectionTest extends TestCase {
     }
 
     public void testContains() throws Exception {
-        // contains in implemented in all other tests, so a standalone test isn't needed
+        // contains in implemented in all other tests, so a standalone arrayTest isn't needed
     }
 
     public void testContainsAll() throws Exception {
@@ -100,7 +100,7 @@ public class ArrayBasedCollectionTest extends TestCase {
     }
 
     public void testIterator() throws Exception {
-        // this test has no "assertEquals," but instead uses a foreach loop to show that the iterator implementation is valid
+        // this arrayTest has no "assertEquals," but instead uses a foreach loop to show that the iterator implementation is valid
         testCollectionIterator.add("first");
         testCollectionIterator.add("second");
         testCollectionIterator.add("third");
@@ -198,7 +198,7 @@ public class ArrayBasedCollectionTest extends TestCase {
     }
 
     public void testGrow() throws Exception {
-        // test adding to collection of size 0 up to size 8
+        // arrayTest adding to collection of size 0 up to size 8
         testCollectionGrow.add("first");
         assertEquals(1, testCollectionGrow.length());
         testCollectionGrow.add("second");
