@@ -7,6 +7,8 @@ import java.util.Comparator;
 import java.util.HashSet;
 import java.util.TreeSet;
 
+//TODO: comment class
+
 public class ArrayBasedCollectionTest extends TestCase {
     private ArrayBasedCollection<String> emptyCollection, testCollectionAdd, testCollectionAddAll,
             testCollectionClear, testCollectionContainsAll, testCollectionIterator,
