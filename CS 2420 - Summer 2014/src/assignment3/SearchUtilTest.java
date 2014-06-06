@@ -18,10 +18,12 @@ public class SearchUtilTest extends TestCase {
     }
 
     public void testBinarySearch() throws Exception {
-        int intsAdded = 500, range = 100;
+        // randomize 100 ints from 0 to 100 and add them to the ArrayBasedCollection
+        int intsAdded = 100, range = 100;
         for (int i = 0; i < intsAdded; i++)
-            testList.add((int) (Math.random() * range));
+            testList.add((int) (Math.random() * (range + 1)));
 
+        // use a default Comparator to compare Integers
         class intComparator implements Comparator<Integer> {
             public int compare(Integer left, Integer right) {
                 return left.compareTo(right);
