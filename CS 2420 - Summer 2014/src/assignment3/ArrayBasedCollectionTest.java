@@ -8,7 +8,7 @@ import java.util.HashSet;
 import java.util.TreeSet;
 
 public class ArrayBasedCollectionTest extends TestCase {
-    private ArrayBasedCollection<String> nullCollection, emptyCollection, testCollectionAdd, testCollectionAddAll,
+    private ArrayBasedCollection<String> emptyCollection, testCollectionAdd, testCollectionAddAll,
             testCollectionClear, testCollectionContainsAll, testCollectionIterator,
             testCollectionRemove, testCollectionRemoveAll, testCollectionRetainAll, testCollectionSize,
             testCollectionToArray, testCollectionGrow, testCollectionToSortedList;
@@ -182,7 +182,17 @@ public class ArrayBasedCollectionTest extends TestCase {
     }
 
     public void testToArray() throws Exception {
+        testCollectionToArray.add("first");
+        testCollectionToArray.add("second");
+        testCollectionToArray.add("eleventh");
+        testCollectionToArray.add("fifth");
 
+        Object[] testArray = testCollectionToArray.toArray();
+
+        assertEquals("first", testArray[0]);
+        assertEquals("second", testArray[1]);
+        assertEquals("eleventh", testArray[2]);
+        assertEquals("fifth", testArray[3]);
     }
 
     public void testGrow() throws Exception {
