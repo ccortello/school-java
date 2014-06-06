@@ -37,7 +37,7 @@ public class SearchUtil {
             else if (cmp.compare(item, list.get(mid)) < 0)
                 high = mid - 1;
             else
-                //if item is equal to item at mid, than item exists so return true
+                //if item is equal to item at mid then item exists so return true
                 return true;
         }
         //if no item in list was found to be equal with item than return false.
