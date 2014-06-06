@@ -266,10 +266,12 @@ public class ArrayBasedCollection<E> implements Collection<E> {
 
         // create an array of objects and use insertion sort to sort the array in place
         E[] sortedArray = (E[]) this.toArray();
+
+        // implement insertion sort on the array
         for (int i = 1; i < sortedArray.length; i++) {
             E val = sortedArray[i];
             int j;
-            for (j = i - 1; j >= 0 && (cmp.compare(sortedArray[j], val) == 1); j--)
+            for (j = i - 1; j >= 0 && (cmp.compare(sortedArray[j], val) > 0); j--)
                 sortedArray[j + 1] = sortedArray[j];
             sortedArray[j + 1] = val;
         }
