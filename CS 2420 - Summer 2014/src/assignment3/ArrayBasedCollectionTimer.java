@@ -27,7 +27,7 @@ public class ArrayBasedCollectionTimer {
         long startTime, midpointTime, stopTime;
 
         // Setup for the timing experiment.
-        int timesToLoop = 15;
+        int timesToLoop = 150;
         System.out.println("N\tTime"); // this prints the column headers
 
         // First, spin computing stuff until one second has gone by.
