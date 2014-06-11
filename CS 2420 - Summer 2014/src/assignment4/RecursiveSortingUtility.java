@@ -33,20 +33,17 @@ public class RecursiveSortingUtility {
      * @param end   - end index of the subarray of objects
      */
     private static <T extends Comparable<? super T>> void insertionSortIterative(ArrayList<T> list, int start, int end) {
-        // copy the array portion that needs to be sorted via insertion sort.
-        T[] sortedArray = (T[]) list.subList(start, end + 1).toArray();
-
-        // sort the array sortedArray
-        for (int i = 1; i < sortedArray.length; i++) {
-            T val = sortedArray[i];
+        // i index is the first element on the unsorted side of list
+        // the list section is the portion of list from indexes start to end inclusive.
+        for (int i = start + 1; i <= end; i++) {
+            // store value of item to insert
+            T val = list.get(i);
             int j;
-            for (j = i - 1; j >= 0 && (sortedArray[j].compareTo(val) > 0); j--)
-                sortedArray[j + 1] = sortedArray[j];
-            sortedArray[j + 1] = val;
-        }
-        // set elements of sortedArray back to list from index start to index end.
-        for (int i = 0; i < sortedArray.length; i++) {
-            list.set(start + i, sortedArray[0]);
+            // copy elements to the right until element is found that is < val
+            for (j = i - 1; j >= start && list.get(j).compareTo(val) > 0; j--)
+                list.set(j + 1, list.get(j));
+            // insert val at one index above the first element that is less than val
+            list.set(j + 1, val);
         }
     }
 
