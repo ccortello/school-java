@@ -9,9 +9,9 @@ import java.util.ArrayList;
  *         <p/>
  *         This sorting utility class provides static methods for recursive sorting
  *         <p/>
- *         Merge sort methods for threshold setting, driving, recursing, and merging
- *         Quicksort methods for driving, recursing, and finding different pivots
- *         Input generators for creating ascending, descending, and permuted lists
+ *         Merge sort methods for threshold setting, driving, recursing, and merging Quicksort methods for driving,
+ *         recursing, and finding different pivots Input generators for creating ascending, descending, and permuted
+ *         lists
  */
 public class RecursiveSortingUtility {
     private static int mergesortThreshold = 0;
@@ -53,7 +53,7 @@ public class RecursiveSortingUtility {
      * @param list - input ArrayList of objects, must have a Comparable implementation
      */
     public static <T extends Comparable<? super T>> void mergeSortDriver(ArrayList<T> list) {
-        // TODO:
+        // TODO:    mergeSortDriver  (ArrayList<T> list)
     }
 
     /**
@@ -65,7 +65,7 @@ public class RecursiveSortingUtility {
      * @param end   - end index of the subarray of objects
      */
     private static <T extends Comparable<? super T>> void mergeSortRecursive(ArrayList<T> list, ArrayList<T> temp, int start, int end) {
-        // TODO:
+        // TODO:    mergeSortRecursive    (ArrayList<T> list, ArrayList<T> temp, int start, int end)
     }
 
     /**
@@ -78,7 +78,7 @@ public class RecursiveSortingUtility {
      * @param end    - end index of the subarray of objects
      */
     private static <T extends Comparable<? super T>> void mergeSortedPortions(ArrayList<T> list, ArrayList<T> temp, int start, int middle, int end) {
-        // TODO:
+        // TODO:    mergeSortedPortions    (ArrayList<T> list, ArrayList<T> temp, int start, int middle, int end)
     }
 
     /**
@@ -87,7 +87,7 @@ public class RecursiveSortingUtility {
      * @param list - input ArrayList of T objects that must have a Comparable implementation
      */
     public static <T extends Comparable<? super T>> void quickSortDriver(ArrayList<T> list) {
-        // TODO:
+        // TODO:    quickSortDriver    (ArrayList<T> list)
     }
 
     /**
@@ -98,7 +98,7 @@ public class RecursiveSortingUtility {
      * @param end   - end index of the subarray of objects
      */
     private static <T extends Comparable<? super T>> void quickSortRecursive(ArrayList<T> list, int start, int end) {
-        // TODO:
+        // TODO:    quickSortRecursive    (ArrayList<T> list, int start, int end)
     }
 
     /**
@@ -107,9 +107,11 @@ public class RecursiveSortingUtility {
      * @param list  - input ArrayList of T objects that must have a Comparable implementation
      * @param start - start index of the subarray  of objects
      * @param end   - end index of the subarray  of objects
+     *
      * @return index of chosen pivot
      */
     public static <T extends Comparable<? super T>> int goodPivotStrategy(ArrayList<T> list, int start, int end) {
+
         int pivotIndex = (int) (start + end) / 2;
         return pivotIndex;
     }
@@ -120,6 +122,7 @@ public class RecursiveSortingUtility {
      * @param list  - input ArrayList of T objects that must have a Comparable implementation
      * @param start - start index of the subarray  of objects
      * @param end   - end index of the subarray  of objects
+     *
      * @return index of chosen pivot
      */
     public static <T extends Comparable<? super T>> int betterPivotStrategy(ArrayList<T> list, int start, int end) {
@@ -135,6 +138,7 @@ public class RecursiveSortingUtility {
      * @param list  - input ArrayList of T objects that must have a Comparable implementation
      * @param start - start index of the subarray  of objects
      * @param end   - end index of the subarray  of objects
+     *
      * @return index of chosen pivot
      */
     public static <T extends Comparable<? super T>> int bestPivotStrategy(ArrayList<T> list, int start, int end) {
@@ -164,6 +168,7 @@ public class RecursiveSortingUtility {
      * Best case input generation helper method
      *
      * @param size size of the returned ArrayList
+     *
      * @return an ArrayList of integers in sorted, ascending order.
      */
     public static ArrayList<Integer> generateBestCase(int size) {
@@ -171,20 +176,18 @@ public class RecursiveSortingUtility {
         for (int i = 0; i < size; i++) {
             temp.add((int) (Math.random() * 10 + i * 10));
         }
-
         return temp;
-
     }
 
     /**
      * Average case input generation helper method
      *
      * @param size the size of the returned ArrayList
+     *
      * @return An ArrayList of random integers from 0-size in permuted order
      */
     public static ArrayList<Integer> generateAverageCase(int size) {
         ArrayList<Integer> temp = new ArrayList<Integer>();
-
         return temp;
     }
 
@@ -192,13 +195,13 @@ public class RecursiveSortingUtility {
      * Worst case nput generation helper method
      *
      * @param size the size of the returned ArrayList
+     *
      * @return An ArrayList of integers in descending order
      */
     public static ArrayList<Integer> generateWorstCase(int size) {
         ArrayList<Integer> temp = new ArrayList<Integer>();
-        for (int i = size; i > 0; i--) {
+        for (int i = size; i > 0; i--)
             temp.add((int) (i * 10 - (Math.random() * 10)));
-        }
         return temp;
     }
 
