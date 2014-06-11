@@ -145,7 +145,7 @@ public class QuicksortAnalysisPart1 {
      */
     public void qs(double[] data, int start, int end) {
 
-        // handle trivial sorts
+        // handle base case and trivial sorts
         if (end - start + 1 < 2)
             return;
 
