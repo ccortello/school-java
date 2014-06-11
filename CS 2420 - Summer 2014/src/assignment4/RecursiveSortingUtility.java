@@ -53,7 +53,8 @@ public class RecursiveSortingUtility {
      * @param list - input ArrayList of objects, must have a Comparable implementation
      */
     public static <T extends Comparable<? super T>> void mergeSortDriver(ArrayList<T> list) {
-        // TODO:
+        // TODO: cody - filled in
+        mergeSortRecursive(list, new ArrayList<T>(list.size()), 0, list.size() - 1);
     }
 
     /**
@@ -65,7 +66,19 @@ public class RecursiveSortingUtility {
      * @param end   - end index of the subarray of objects
      */
     private static <T extends Comparable<? super T>> void mergeSortRecursive(ArrayList<T> list, ArrayList<T> temp, int start, int end) {
-        // TODO:
+        // TODO: cody - filled in from lecture
+        {
+            // handle base case and trivial sorts
+            if (start >= end) {
+                return;
+            }
+
+            int mid = (start + end) / 2;
+            mergeSortRecursive(list, new ArrayList<T>(list.size()), start, mid);  //left half
+            mergeSortRecursive(list, new ArrayList<T>(list.size()), mid + 1, end);  //right half
+
+            mergeSortedPortions(list, new ArrayList<T>(list.size()), start, mid, end);  //merge halves
+        }
     }
 
     /**
@@ -79,6 +92,7 @@ public class RecursiveSortingUtility {
      */
     private static <T extends Comparable<? super T>> void mergeSortedPortions(ArrayList<T> list, ArrayList<T> temp, int start, int middle, int end) {
         // TODO:
+
     }
 
     /**
@@ -87,19 +101,42 @@ public class RecursiveSortingUtility {
      * @param list - input ArrayList of T objects that must have a Comparable implementation
      */
     public static <T extends Comparable<? super T>> void quickSortDriver(ArrayList<T> list) {
-        // TODO:
+        // TODO: cody - filled in driver
+        quickSortRecursive(list, 0, list.size() - 1);
     }
 
-    /**
-     * Recursive quicksort algorithm method
-     *
-     * @param list  - input ArrayList of T objects that must have a Comparable implementation
-     * @param start - start index of the subarray of objects
-     * @param end   - end index of the subarray of objects
-     */
-    private static <T extends Comparable<? super T>> void quickSortRecursive(ArrayList<T> list, int start, int end) {
-        // TODO:
-    }
+        /**
+         * Recursive quicksort algorithm method
+         *
+         * @param list  - input ArrayList of T objects that must have a Comparable implementation
+         * @param start - start index of the subarray of objects
+         * @param end   - end index of the subarray of objects
+         */
+        private static <T extends Comparable<? super T>> void quickSortRecursive(ArrayList<T> list, int start, int end) {
+            // TODO: cody - filled in recursive quicksort with code from my previous course's homework05
+
+            // handle base case and trivial sorts
+            if (end - start + 1 < 2)
+                return;
+
+//        // implement insertion sort if the array has fewer than 10 elements
+//        else if (end - start + 1 < 10) {
+//            insertionSortSub(data, start, end);
+//        }
+
+                // otherwise sort the array using Quicksort
+            else {
+
+                // find the middle value for the pivot
+                int mid = goodPivotStrategy(list, start, end);
+//            int mid = betterPivotStrategy(list, start, end);
+//            int mid = bestPivotStrategy(list, start, end);
+
+                // use recursive calls to sort the array before the pivot and after the pivot
+                quickSortRecursive(list, start, mid - 1);
+                quickSortRecursive(list, mid + 1, end);
+            }
+        }
 
     /**
      * Recursive quicksort helper method
@@ -216,5 +253,5 @@ public class RecursiveSortingUtility {
         list.set(left, list.get(right));
         // replace right indexed element with previous value of left index stored in temp
         list.set(right, temp);
+        }
     }
-}
