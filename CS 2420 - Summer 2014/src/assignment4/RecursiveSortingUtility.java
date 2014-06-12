@@ -1,7 +1,6 @@
 package assignment4;
 
 import java.util.ArrayList;
-import java.util.Random;
 
 /**
  * @author Paymon Saebi
@@ -10,20 +9,31 @@ import java.util.Random;
  *         <p/>
  *         This sorting utility class provides static methods for recursive sorting
  *         <p/>
- *         Merge sort methods for threshold setting, driving, recursing, and merging
- *         Quicksort methods for driving, recursing, and finding different pivots
- *         Input generators for creating ascending, descending, and permuted lists
+ *         Merge sort methods for threshold setting, driving, recursing, and merging Quicksort methods for driving,
+ *         recursing, and finding different pivots Input generators for creating ascending, descending, and permuted
+ *         lists
  */
 public class RecursiveSortingUtility {
-    public static int mergesortThreshold = 0;
-    private static int seed = 802349812;
+
+    // field that determines size of array partitions from mergesort recursions that will be sorted with insertion sort
+    private static int mergesortThreshold = 0;
+
+
+    /**
+     * Only used for testing purposes in RecursiveSortingUtilityTest class, this method can be commented out.
+     *
+     * @return current mergesort thresholding setting for the mergeSortRecursive method
+     */
+    public static int getMergesortThreshold() {
+        return mergesortThreshold;
+    }
 
     /**
      * Helper method for setting the switching threshold for merge sort
      *
      * @param desiredThreshold - merge sort switching threshold
      */
-    public static void setMergeortThreshold(int desiredThreshold) {
+    public static void setMergeSortThreshold(int desiredThreshold) {
         mergesortThreshold = desiredThreshold;
     }
 
@@ -74,15 +84,18 @@ public class RecursiveSortingUtility {
             return;
         }
 
-        // check this condition if mergesortThreshold is set to 1 or 0
+        // check this condition if mergesortThreshold is not set above 1
         if (start >= end)
             return;
 
+        // find middle index between start and end to split array portion in half
         int mid = (start + end) / 2;
+        // pass new start and end indexes for each half of partitioned array, also pass temp array to aid in merging
+        // two arrays, the temp array is initialized to only the size needed.
         mergeSortRecursive(list, new ArrayList<T>(mid - start + 1), start, mid);  //left half
         mergeSortRecursive(list, new ArrayList<T>(end - mid), mid + 1, end);  //right half
 
-        mergeSortedPortions(list, temp, start, mid, end);  //merge halves
+        mergeSortedPortions(list, temp, start, mid, end);  //merge the two half when returned from above
     }
 
     /**
@@ -95,28 +108,33 @@ public class RecursiveSortingUtility {
      * @param end    - end index of the subarray of objects
      */
     private static <T extends Comparable<? super T>> void mergeSortedPortions(ArrayList<T> list, ArrayList<T> temp, int start, int middle, int end) {
-        // set new variables to start and end of each half
+        // set new variables as the end indexes of each half
         int leftBegin = start;
         int leftEnd = middle;
         int rightBegin = middle + 1;
         int rightEnd = end;
 
+        // compare indexed elements of each array started at beginning  arrays and adding the lesser element to temp
         while (leftBegin <= leftEnd && rightBegin <= rightEnd) {
             if (list.get(leftBegin).compareTo(list.get(rightBegin)) < 0) {
                 temp.add(list.get(leftBegin++));
             } else if (list.get(leftBegin).compareTo(list.get(rightBegin)) > 0)
                 temp.add(list.get(rightBegin++));
             else {
+                // if elements at each index are equal than add them both
                 temp.add(list.get(leftBegin++));
                 temp.add(list.get(rightBegin++));
             }
         }
+
+        // the following 2 for loops add remaining elements of an array if the other finished first.
         for (int i = leftBegin; i <= leftEnd; i++)
             temp.add(list.get(i));
 
         for (int i = rightBegin; i <= rightEnd; i++)
             temp.add(list.get(i));
 
+        // this for loop copies newly sorted and merged arrays in temp back to the original list
         for (int i = start, j = 0; i <= end && j <= (end - start); i++, j++)
             list.set(i, temp.get(j));
     }
@@ -138,54 +156,51 @@ public class RecursiveSortingUtility {
      * @param end   - end index of the subarray of objects
      */
     private static <T extends Comparable<? super T>> void quickSortRecursive(ArrayList<T> list, int start, int end) {
-
-        // handle base case and trivial sorts
-        if (end - start + 1 < 2)
+        // handle base case and trivial sorts, when array partition is of size 1 it is already sorted.
+        if ((end - start) < 1)
             return;
 
-        // find an index for the pivot
-//        int mid = goodPivotStrategy(list, start, end);
+        // find an index for the pivot, three options available below, uncomment desired pivotIndex return strategy
+        int mid = goodPivotStrategy(list, start, end);
 //        int mid = betterPivotStrategy(list, start, end);
-        int mid = bestPivotStrategy(list, start, end);
+//        int mid = bestPivotStrategy(list, start, end);
 
-
-        // store the value of the pivot in order to make comparisons
+        // store the value of the pivot element in order to make comparisons
         T pivot = list.get(mid);
 
-        // swap pivot to end
+        // swap pivot to the end index so it is not in the way.
         swapElements(list, mid, end);
 
-        // initialize the 'left' and 'right' indices
+        // initialize the 'left' and 'right' indices to be walked toward each other
         int left = start;
         int right = end - 1;
 
         // start infinite loop, will be ended with the break statement
         while (true) {
 
-            // increment left until an element which needs to be swapped is found
+            // increment left index until an element is found that is greater than or equal to the pivot.
             while (list.get(left).compareTo(pivot) < 0)
                 left++;
 
-            // decrement right until an element which needs to be swapped is found
-            while (right > left && list.get(right).compareTo(pivot) >= 0)
+            // decrement right index until element is found that is less than the pivot, or left and right indices cross
+            while (right > left && list.get(right).compareTo(pivot) > 0)
                 right--;
 
-            // stop moving pointers when 'left' index equals or passes 'right'
+            // stop moving pointers when 'left' index equals or passes 'right' index, break out of while loop
             if (left >= right)
                 break;
 
-            // swap left and right elements
-            swapElements(list, left, right);
-
-            // move the positions of right and left toward the pivot and try swapping again
-            left++;
-            right--;
+            // swap left and right elements if right index is still greater than left index, than adjust indexes
+            swapElements(list, left++, right--);
         }
 
-        // swap left and end elements
+        // swap left and end elements, occurs when left > right index and pivot point is determined
         swapElements(list, end, left);
 
-        // use recursive calls to sort the array before the pivot and after the pivot
+        /*
+        element at left index is now in its final place, split the array here and pass left and right side indices
+        of array partitions to two more recursion methods
+        */
         quickSortRecursive(list, start, left - 1);
         quickSortRecursive(list, left + 1, end);
     }
@@ -196,11 +211,12 @@ public class RecursiveSortingUtility {
      * @param list  - input ArrayList of T objects that must have a Comparable implementation
      * @param start - start index of the subarray  of objects
      * @param end   - end index of the subarray  of objects
-     * @return index of chosen pivot
+     *
+     * @return pivot index which is the middle index between the start and end indexes
      */
     public static <T extends Comparable<? super T>> int goodPivotStrategy(ArrayList<T> list, int start, int end) {
-        int pivotIndex = (start + end) / 2;
-        return pivotIndex;
+        // returns the middle index value between start and end indexes.
+        return (int) (start + end) / 2;
     }
 
     /**
@@ -209,13 +225,14 @@ public class RecursiveSortingUtility {
      * @param list  - input ArrayList of T objects that must have a Comparable implementation
      * @param start - start index of the subarray  of objects
      * @param end   - end index of the subarray  of objects
-     * @return index of chosen pivot
+     *
+     * @return random index as the pivot index, chosen between the index range from the start to end index.
      */
     public static <T extends Comparable<? super T>> int betterPivotStrategy(ArrayList<T> list, int start, int end) {
+        // determine range of index values to generate a random index that is valid
         int range = (end - start) + 1;
-        int pivotIndex = (int) (Math.random() * range) + start;
-
-        return pivotIndex;
+        // returns random index as pivot index, return value falling between start and end indexes.
+        return (int) ((Math.random() * range) + start);
     }
 
     /**
@@ -224,15 +241,42 @@ public class RecursiveSortingUtility {
      * @param list  - input ArrayList of T objects that must have a Comparable implementation
      * @param start - start index of the subarray  of objects
      * @param end   - end index of the subarray  of objects
-     * @return index of chosen pivot
+     *
+     * @return Pivot index. Three random non-repeating indexes are generated and the returned index is the median valued
+     *         element of the three elements at those indices.
      */
     public static <T extends Comparable<? super T>> int bestPivotStrategy(ArrayList<T> list, int start, int end) {
+        // declare 3 int variables to hold the 3 random indices
+        int a, b, c;
+        // determine range of indexes available for valid index generation
         int range = (end - start) + 1;
-        int a = ((int) (Math.random() * range) + start);
-        int b = ((int) (Math.random() * range) + start);
-        int c = ((int) (Math.random() * range) + start);
 
-        if (list.get(a).compareTo(list.get(b)) >= 0) {
+        // to handle cases of array partitions of 3 elements or less
+        // if the range is only 2 indices or less just return the end index
+        if (range <= 2)
+            return end;
+        // if array section is just 3 indices, assign a,b, & c in order.
+        if (range == 3) {
+            a = start;
+            b = start + 1;
+            c = end;
+        }
+
+        // assign first random index in valid index range to 'a'
+        a = ((int) (Math.random() * range) + start);
+
+        // continue assigning a random index to 'b' until a non duplicate of 'a' is assigned.
+        do {
+            b = ((int) (Math.random() * range) + start);
+        } while (a == b);
+
+        // continue assigning a random index to 'c' until a non duplicate of 'a' or 'b' is assigned.
+        do {
+            c = ((int) (Math.random() * range) + start);
+        } while (c == a || c == b);
+
+        // if statement combinations to determine which index points to the median valued element
+        if (list.get(a).compareTo(list.get(b)) >= 0) {    // following conditions if 'a' is greater than 'b'
             if (list.get(b).compareTo(list.get(c)) >= 0)
                 return b;
             if (list.get(a).compareTo(list.get(c)) >= 0)
@@ -240,7 +284,7 @@ public class RecursiveSortingUtility {
             else
                 return a;
         }
-        if (list.get(a).compareTo(list.get(b)) <= 0) {
+        if (list.get(a).compareTo(list.get(b)) <= 0) {  // following conditions if 'a' is less than 'b'
             if (list.get(b).compareTo(list.get(c)) <= 0)
                 return b;
             if (list.get(a).compareTo(list.get(c)) <= 0)
@@ -253,54 +297,62 @@ public class RecursiveSortingUtility {
      * Best case input generation helper method
      *
      * @param size size of the returned ArrayList
-     * @return an ArrayList of integers in sorted, ascending order.
+     *
+     * @return an ArrayList of integers in sorted, ascending order, of all values from 1 to 'size'
      */
     public static ArrayList<Integer> generateBestCase(int size) {
-        ArrayList<Integer> temp = new ArrayList<Integer>(size);
-        for (int i = 0; i < size; i++)
-            temp.add((int) (Math.random() * 10 + i * 10));
-
-        return temp;
+        // create new ArrayList of size equal to the parameter 'size'
+        ArrayList<Integer> arr = new ArrayList<Integer>(size);
+        // add values from 1 to size inclusive, in ascending order to arr
+        for (int i = 1; i <= size; i++)
+            arr.add(i);
+        // return ascending ArrayList
+        return arr;
     }
 
     /**
      * Average case input generation helper method
      *
      * @param size the size of the returned ArrayList
-     * @return An ArrayList of random integers from 0-size in permuted order
+     *
+     * @return An ArrayList of random integers  valued from 1 to 'size' in permuted order
      */
     public static ArrayList<Integer> generateAverageCase(int size) {
+        // create temporary array with the input size 'size'
         ArrayList<Integer> temp = new ArrayList<Integer>(size);
-        Random rand = new Random(seed);
-        for (int i = 0; i < size; i++)
-            temp.add(rand.nextInt() * Integer.MAX_VALUE);
-
+        // for the amount of elements that need to be added, add a random value between 1 and 'size'
+        for (int i = 0; i < size; i++) {
+            temp.add((int) ((Math.random() * size) + 1));
+        }
+        // after all random elements are added to temp ArrayList, return temp.
         return temp;
     }
 
     /**
-     * Worst case nput generation helper method
+     * Worst case input generation helper method
      *
      * @param size the size of the returned ArrayList
-     * @return An ArrayList of integers in descending order
+     *
+     * @return An ArrayList of all the integers from 'size' to 1 in descending order.
      */
     public static ArrayList<Integer> generateWorstCase(int size) {
-        ArrayList<Integer> temp = new ArrayList<Integer>(size);
-        Random rand = new Random(seed);
-        for (int i = size; i > 0; i--) {
-            temp.add(i * 10 - (rand.nextInt() * 10));
-        }
-        return temp;
+        // create new ArrayList of size equal to the parameter 'size'
+        ArrayList<Integer> arr = new ArrayList<Integer>(size);
+        // add values from size to 1 inclusive, in descending order to arr
+        for (int i = size; i > 0; i--)
+            arr.add(i);
+        // return descending ArrayList
+        return arr;
     }
 
     /**
-     * ArrayList elements swapping Helper method
+     * ArrayList elements swapping Helper method, swaps elements in list at the two given indices
      *
      * @param list  - input ArrayList of objects, must have a Comparable implementation
      * @param left  - index of the left element
      * @param right - index of the right element
      */
-    private static <T extends Comparable<? super T>> void swapElements(ArrayList<T> list, int left, int right) {
+    public static <T extends Comparable<? super T>> void swapElements(ArrayList<T> list, int left, int right) {
         // stored copy of left indexed element to temp
         T temp = list.get(left);
         // reassign left indexed element to a copy of the the right indexed element
