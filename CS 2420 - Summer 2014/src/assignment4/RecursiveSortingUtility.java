@@ -1,6 +1,7 @@
 package assignment4;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * @author Paymon Saebi
@@ -15,6 +16,7 @@ import java.util.ArrayList;
  */
 public class RecursiveSortingUtility {
     private static int mergesortThreshold = 0;
+    private static int seed = 802349812;
 
     /**
      * Helper method for setting the switching threshold for merge sort
@@ -178,7 +180,8 @@ public class RecursiveSortingUtility {
      */
     public static <T extends Comparable<? super T>> int betterPivotStrategy(ArrayList<T> list, int start, int end) {
         int range = (end - start) + 1;
-        int pivotIndex = (int) (Math.random() * range) + start;
+        Random rand = new Random(seed);
+        int pivotIndex = (int) (seed * range) + start;
 
         return pivotIndex;
     }
@@ -193,9 +196,10 @@ public class RecursiveSortingUtility {
      */
     public static <T extends Comparable<? super T>> int bestPivotStrategy(ArrayList<T> list, int start, int end) {
         int range = (end - start) + 1;
-        int a = (int) (Math.random() * range) + start;
-        int b = (int) (Math.random() * range) + start;
-        int c = (int) (Math.random() * range) + start;
+        Random rand = new Random(seed);
+        int a = (int) (seed * range) + start;
+        int b = (int) (seed * range) + start;
+        int c = (int) (seed * range) + start;
 
         if (list.get(a).compareTo(list.get(b)) >= 0) {
             if (list.get(b).compareTo(list.get(c)) >= 0)
