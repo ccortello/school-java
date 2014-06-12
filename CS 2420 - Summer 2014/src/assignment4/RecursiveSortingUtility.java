@@ -97,8 +97,6 @@ public class RecursiveSortingUtility {
         int leftEnd = middle;
         int rightBegin = middle + 1;
 
-
-
     }
 
     /**
@@ -257,5 +255,5 @@ public class RecursiveSortingUtility {
         list.set(left, list.get(right));
         // replace right indexed element with previous value of left index stored in temp
         list.set(right, temp);
-        }
     }
+}
