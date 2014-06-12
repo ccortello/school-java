@@ -97,6 +97,21 @@ public class RecursiveSortingUtility {
         int leftEnd = middle;
         int rightBegin = middle + 1;
 
+        while (start <= leftEnd && rightBegin <= end) {
+            if (list.get(start).compareTo(list.get(rightBegin)) > 0) {
+                temp.add(list.get(start++));
+            } else if (list.get(start).compareTo(list.get(rightBegin)) < 0)
+                temp.add(list.get(rightBegin++));
+            else {
+                temp.add(list.get(start++));
+                temp.add(list.get(rightBegin++));
+            }
+        }
+        for (int i = start; i < leftEnd; i++)
+            temp.add(list.get(i));
+
+        for (int i = rightBegin; i < end; i++)
+            temp.add(list.get(i));
     }
 
     /**
