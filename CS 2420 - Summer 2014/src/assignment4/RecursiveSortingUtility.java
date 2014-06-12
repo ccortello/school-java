@@ -15,7 +15,7 @@ import java.util.Random;
  *         Input generators for creating ascending, descending, and permuted lists
  */
 public class RecursiveSortingUtility {
-    private static int mergesortThreshold = 0;
+    public static int mergesortThreshold = 0;
     private static int seed = 802349812;
 
     /**
