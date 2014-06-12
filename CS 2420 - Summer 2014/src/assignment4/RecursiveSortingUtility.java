@@ -53,7 +53,6 @@ public class RecursiveSortingUtility {
      * @param list - input ArrayList of objects, must have a Comparable implementation
      */
     public static <T extends Comparable<? super T>> void mergeSortDriver(ArrayList<T> list) {
-        // TODO: cody - filled in
         mergeSortRecursive(list, new ArrayList<T>(list.size()), 0, list.size() - 1);
     }
 
@@ -99,7 +98,6 @@ public class RecursiveSortingUtility {
         int rightBegin = middle + 1;
 
 
-
     }
 
     /**
@@ -108,7 +106,6 @@ public class RecursiveSortingUtility {
      * @param list - input ArrayList of T objects that must have a Comparable implementation
      */
     public static <T extends Comparable<? super T>> void quickSortDriver(ArrayList<T> list) {
-        // TODO: cody - filled in driver
         quickSortRecursive(list, 0, list.size() - 1);
     }
 
@@ -260,5 +257,5 @@ public class RecursiveSortingUtility {
         list.set(left, list.get(right));
         // replace right indexed element with previous value of left index stored in temp
         list.set(right, temp);
-        }
     }
+}
