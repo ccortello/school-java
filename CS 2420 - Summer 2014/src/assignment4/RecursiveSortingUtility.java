@@ -143,14 +143,17 @@ public class RecursiveSortingUtility {
         if (end - start + 1 < 2)
             return;
 
-        // find the middle value for the pivot
+        // find an index for the pivot
         int mid = goodPivotStrategy(list, start, end);
 //        int mid = betterPivotStrategy(list, start, end);
 //        int mid = bestPivotStrategy(list, start, end);
 
 
-        // store the value of the pivot, assuming the pivot to be the last element in the array
+        // store the value of the pivot in order to make comparisons
         T pivot = list.get(mid);
+
+        // swap pivot to end
+        swapElements(list, mid, end);
 
         // initialize the 'left' and 'right' indices
         int left = start;
@@ -172,9 +175,7 @@ public class RecursiveSortingUtility {
                 break;
 
             // swap left and right elements
-            T temp = list.get(left);
-            list.set(left, list.get(right));
-            list.set(right, temp);
+            swapElements(list, left, right);
 
             // move the positions of right and left toward the pivot and try swapping again
             left++;
@@ -182,9 +183,7 @@ public class RecursiveSortingUtility {
         }
 
         // swap left and end elements
-        T temp = list.get(left);
-        list.set(left, list.get(end));
-        list.set(end, temp);
+        swapElements(list, end, left);
 
         // use recursive calls to sort the array before the pivot and after the pivot
         quickSortRecursive(list, start, mid - 1);
