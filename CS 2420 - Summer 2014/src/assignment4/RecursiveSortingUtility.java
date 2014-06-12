@@ -213,8 +213,7 @@ public class RecursiveSortingUtility {
      */
     public static <T extends Comparable<? super T>> int betterPivotStrategy(ArrayList<T> list, int start, int end) {
         int range = (end - start) + 1;
-        Random rand = new Random(seed);
-        int pivotIndex = rand.nextInt() * range + start;
+        int pivotIndex = (int) (Math.random() * range) + start;
 
         return pivotIndex;
     }
