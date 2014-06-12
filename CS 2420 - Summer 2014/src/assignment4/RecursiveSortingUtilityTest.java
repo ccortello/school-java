@@ -12,7 +12,7 @@ public class RecursiveSortingUtilityTest extends TestCase {
     public void setUp() throws Exception {
         super.setUp();
 
-        listSize = 10000;
+        listSize = 10;
         mergeSortList = RecursiveSortingUtility.generateAverageCase(listSize);
         quickSortList = RecursiveSortingUtility.generateAverageCase(listSize);
     }
