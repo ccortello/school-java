@@ -98,8 +98,21 @@ public class RecursiveSortingUtility {
         int leftEnd = middle;
         int rightBegin = middle + 1;
 
+        while (start <= leftEnd && rightBegin <= end) {
+            if (list.get(start).compareTo(list.get(rightBegin)) > 0) {
+                temp.add(list.get(start++));
+            } else if (list.get(start).compareTo(list.get(rightBegin)) < 0)
+                temp.add(list.get(rightBegin++));
+            else {
+                temp.add(list.get(start++));
+                temp.add(list.get(rightBegin++));
+            }
+        }
+        for (int i = start; i < leftEnd; i++)
+            temp.add(list.get(i));
 
-
+        for (int i = rightBegin; i < end; i++)
+            temp.add(list.get(i));
     }
 
     /**
@@ -211,7 +224,7 @@ public class RecursiveSortingUtility {
      * @return an ArrayList of integers in sorted, ascending order.
      */
     public static ArrayList<Integer> generateBestCase(int size) {
-        ArrayList<Integer> temp = new ArrayList<Integer>();
+        ArrayList<Integer> temp = new ArrayList<Integer>(size);
         for (int i = 0; i < size; i++) {
             temp.add((int) (Math.random() * 10 + i * 10));
         }
@@ -227,7 +240,9 @@ public class RecursiveSortingUtility {
      * @return An ArrayList of random integers from 0-size in permuted order
      */
     public static ArrayList<Integer> generateAverageCase(int size) {
-        ArrayList<Integer> temp = new ArrayList<Integer>();
+        ArrayList<Integer> temp = new ArrayList<Integer>(size);
+        for (int i = 0; i < size; i++)
+            temp.add((int) (Math.random() * Integer.MAX_VALUE));
 
         return temp;
     }
@@ -239,7 +254,7 @@ public class RecursiveSortingUtility {
      * @return An ArrayList of integers in descending order
      */
     public static ArrayList<Integer> generateWorstCase(int size) {
-        ArrayList<Integer> temp = new ArrayList<Integer>();
+        ArrayList<Integer> temp = new ArrayList<Integer>(size);
         for (int i = size; i > 0; i--) {
             temp.add((int) (i * 10 - (Math.random() * 10)));
         }
