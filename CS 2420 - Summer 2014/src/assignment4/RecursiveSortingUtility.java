@@ -144,9 +144,9 @@ public class RecursiveSortingUtility {
             return;
 
         // find an index for the pivot
-        int mid = goodPivotStrategy(list, start, end);
+//        int mid = goodPivotStrategy(list, start, end);
 //        int mid = betterPivotStrategy(list, start, end);
-//        int mid = bestPivotStrategy(list, start, end);
+        int mid = bestPivotStrategy(list, start, end);
 
 
         // store the value of the pivot in order to make comparisons
@@ -229,10 +229,9 @@ public class RecursiveSortingUtility {
      */
     public static <T extends Comparable<? super T>> int bestPivotStrategy(ArrayList<T> list, int start, int end) {
         int range = (end - start) + 1;
-        Random rand = new Random(seed);
-        int a = (rand.nextInt() * range) + start;
-        int b = (rand.nextInt() * range) + start;
-        int c = (rand.nextInt() * range) + start;
+        int a = ((int) (Math.random() * range) + start);
+        int b = ((int) (Math.random() * range) + start);
+        int c = ((int) (Math.random() * range) + start);
 
         if (list.get(a).compareTo(list.get(b)) >= 0) {
             if (list.get(b).compareTo(list.get(c)) >= 0)
