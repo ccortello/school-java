@@ -143,23 +143,54 @@ public class RecursiveSortingUtility {
         if (end - start + 1 < 2)
             return;
 
-//        // implement insertion sort if the array has fewer than 10 elements
-//        else if (end - start + 1 < 10) {
-//            insertionSortSub(data, start, end);
-//        }
+        // find the middle value for the pivot
+        int mid = goodPivotStrategy(list, start, end);
+//        int mid = betterPivotStrategy(list, start, end);
+//        int mid = bestPivotStrategy(list, start, end);
 
-            // otherwise sort the array using Quicksort
-        else {
+        // store the value of the pivot, assuming the pivot to be the last element in the array
+        double pivot = list.get(end);
 
-            // find the middle value for the pivot
-            int mid = goodPivotStrategy(list, start, end);
-//            int mid = betterPivotStrategy(list, start, end);
-//            int mid = bestPivotStrategy(list, start, end);
+        // initialize the 'left' and 'right' indices
+        int left = start;
+        int right = end - 1;
 
-            // use recursive calls to sort the array before the pivot and after the pivot
-            quickSortRecursive(list, start, mid - 1);
-            quickSortRecursive(list, mid + 1, end);
+        // start infinite loop, will be ended with the break statement
+        while (true) {
+
+            // increment 'left' to find the first value in the array larger than the pivot
+
+            //  Note: advanceCount is used to increment the comparisons counter, and doesn't change the boolean it is passed
+            while (advanceCount(data[left] < pivot))
+                left++;
+
+            //
+            while (right > left && advanceCount(data[right] >= pivot))
+                right--;
+
+            if (left >= right)
+                break;
+
+            // swap left and right elements
+            double temp = data[left];
+            data[left] = data[right];
+            data[right] = temp;
+
+            // move the positions of right and left toward the pivot
+            left++;
+            right--;
         }
+
+        // swap left and end elements
+        double temp = data[left];
+        data[left] = data[end];
+        data[end] = temp;
+
+        return left;
+
+        // use recursive calls to sort the array before the pivot and after the pivot
+        quickSortRecursive(list, start, mid - 1);
+        quickSortRecursive(list, mid + 1, end);
     }
 
     /**
@@ -171,7 +202,7 @@ public class RecursiveSortingUtility {
      * @return index of chosen pivot
      */
     public static <T extends Comparable<? super T>> int goodPivotStrategy(ArrayList<T> list, int start, int end) {
-        int pivotIndex = (int) (start + end) / 2;
+        int pivotIndex = (start + end) / 2;
         return pivotIndex;
     }
 
@@ -186,7 +217,7 @@ public class RecursiveSortingUtility {
     public static <T extends Comparable<? super T>> int betterPivotStrategy(ArrayList<T> list, int start, int end) {
         int range = (end - start) + 1;
         Random rand = new Random(seed);
-        int pivotIndex = (int) (seed * range) + start;
+        int pivotIndex = rand.nextInt() * range + start;
 
         return pivotIndex;
     }
@@ -202,9 +233,9 @@ public class RecursiveSortingUtility {
     public static <T extends Comparable<? super T>> int bestPivotStrategy(ArrayList<T> list, int start, int end) {
         int range = (end - start) + 1;
         Random rand = new Random(seed);
-        int a = (int) (seed * range) + start;
-        int b = (int) (seed * range) + start;
-        int c = (int) (seed * range) + start;
+        int a = (rand.nextInt() * range) + start;
+        int b = (rand.nextInt() * range) + start;
+        int c = (rand.nextInt() * range) + start;
 
         if (list.get(a).compareTo(list.get(b)) >= 0) {
             if (list.get(b).compareTo(list.get(c)) >= 0)
@@ -245,8 +276,9 @@ public class RecursiveSortingUtility {
      */
     public static ArrayList<Integer> generateAverageCase(int size) {
         ArrayList<Integer> temp = new ArrayList<Integer>(size);
+        Random rand = new Random(seed);
         for (int i = 0; i < size; i++)
-            temp.add((int) (Math.random() * Integer.MAX_VALUE));
+            temp.add(rand.nextInt() * Integer.MAX_VALUE);
 
         return temp;
     }
@@ -259,8 +291,9 @@ public class RecursiveSortingUtility {
      */
     public static ArrayList<Integer> generateWorstCase(int size) {
         ArrayList<Integer> temp = new ArrayList<Integer>(size);
+        Random rand = new Random(seed);
         for (int i = size; i > 0; i--) {
-            temp.add((int) (i * 10 - (Math.random() * 10)));
+            temp.add(i * 10 - (rand.nextInt() * 10));
         }
         return temp;
     }
