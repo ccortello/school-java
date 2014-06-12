@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="implemented:&#10;-mergeSortDriver&#10;-mergeSortRecursivve&#10;-quickSortDriver&#10;-quickSortRecursive">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework05/QuicksortAnalysisPart1.java" afterPath="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework05/QuicksortAnalysisPart1.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/RecursiveSortingUtility.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/RecursiveSortingUtility.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -67,8 +66,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <breakpoint_rules converted="true" />
     <ui_properties converted="true" />
+    <breakpoint_rules converted="true" />
   </component>
   <component name="ErrorTreeViewConfiguration">
     <option name="autoscrollToSource" value="true" />
@@ -85,14 +84,12 @@
       <file leaf-file-name="RecursiveSortingUtility.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/RecursiveSortingUtility.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.1065218" vertical-offset="0" max-vertical-offset="4471">
-              <caret line="114" column="80" selection-start-line="114" selection-start-column="62" selection-end-line="114" selection-end-column="80" />
+            <state vertical-scroll-proportion="1.4539474" vertical-offset="0" max-vertical-offset="4335">
+              <caret line="54" column="93" selection-start-line="54" selection-start-column="93" selection-end-line="54" selection-end-column="93" />
               <folding>
-                <element signature="e#812#813#0" expanded="true" />
-                <element signature="e#865#866#0" expanded="true" />
-                <element signature="e#8487#8496#0" expanded="true" />
-                <element signature="e#9013#9022#0" expanded="true" />
-                <element signature="e#9394#9403#0" expanded="true" />
+                <element signature="e#7952#7961#0" expanded="true" />
+                <element signature="e#8426#8435#0" expanded="true" />
+                <element signature="e#8767#8776#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -180,8 +177,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -211,6 +208,58 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="CS 2420 - Summer 2014">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="CS 2420 - Summer 2014">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Problems">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="CS 2420 - Summer 2014">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="CS 2420 - Summer 2014">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -293,58 +342,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="workspace" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Default">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="CS 2420 - Summer 2014">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="CS 2420 - Summer 2014">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Problems">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="CS 2420 - Summer 2014">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="CS 2420 - Summer 2014">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -813,7 +810,8 @@
       <workItem from="1401697663196" duration="13000" />
       <workItem from="1401737072680" duration="10883000" />
       <workItem from="1401824205280" duration="5039000" />
-      <workItem from="1402495988863" duration="2611000" />
+      <workItem from="1402495988863" duration="2818000" />
+      <workItem from="1402537257936" duration="66000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -1543,11 +1541,15 @@
       <created>1402440914877</created>
       <updated>1402440914877</updated>
     </task>
-    <option name="localTasksCounter" value="183" />
+    <task id="LOCAL-00183" summary="implemented:&#10;-mergeSortDriver&#10;-mergeSortRecursivve&#10;-quickSortDriver&#10;-quickSortRecursive">
+      <created>1402498800486</created>
+      <updated>1402498800486</updated>
+    </task>
+    <option name="localTasksCounter" value="184" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="274673000" />
+    <option name="totallyTimeSpent" value="274946000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1570,7 +1572,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1592,7 +1594,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18385416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18374817" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41574278" sideWeight="0.655615" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1606,10 +1608,10 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5140625" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.14166667" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3171521" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31484503" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1628,8 +1630,8 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26968718" sideWeight="0.36969253" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -1663,7 +1665,8 @@
     <MESSAGE value="update" />
     <MESSAGE value="finished" />
     <MESSAGE value="implemented:&#10;-insertionSortIterative&#10;-goodPivotStrategy&#10;-betterPivotStrategy&#10;-bestPivotStrategy&#10;-generateBestCase&#10;-generateAverageCase&#10;-generateWorstCase&#10;-swapElements" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented:&#10;-insertionSortIterative&#10;-goodPivotStrategy&#10;-betterPivotStrategy&#10;-bestPivotStrategy&#10;-generateBestCase&#10;-generateAverageCase&#10;-generateWorstCase&#10;-swapElements" />
+    <MESSAGE value="implemented:&#10;-mergeSortDriver&#10;-mergeSortRecursivve&#10;-quickSortDriver&#10;-quickSortRecursive" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented:&#10;-mergeSortDriver&#10;-mergeSortRecursivve&#10;-quickSortDriver&#10;-quickSortRecursive" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -2013,7 +2016,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1231" max-vertical-offset="2375">
           <caret line="292" column="46" selection-start-line="292" selection-start-column="32" selection-end-line="292" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2021,19 +2023,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2013809" vertical-offset="75" max-vertical-offset="2175">
           <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-          <folding>
-            <element signature="docComment;class#ArrayBasedCollectionTimer#0" expanded="false" />
-            <element signature="docComment;method#main#0;class#ArrayBasedCollectionTimer#0" expanded="false" />
-            <element signature="docComment;method#timer#0;class#ArrayBasedCollectionTimer#0" expanded="false" />
-            <element signature="method#timer#0;class#ArrayBasedCollectionTimer#0" expanded="true" />
-            <element signature="e#799#859#0" expanded="false" />
-            <element signature="e#1200#1254#0" expanded="false" />
-            <element signature="e#2784#2832#0" expanded="false" />
-            <element signature="e#3067#3146#0" expanded="false" />
-            <element signature="e#3372#3430#0" expanded="false" />
-            <element signature="docComment;method#permuteInts#0;class#ArrayBasedCollectionTimer#0" expanded="false" />
-            <element signature="docComment;method#swap#0;class#ArrayBasedCollectionTimer#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2041,45 +2030,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
           <caret line="145" column="54" selection-start-line="145" selection-start-column="54" selection-end-line="145" selection-end-column="54" />
-          <folding>
-            <element signature="docComment;class#QuicksortAnalysisPart1#0" expanded="false" />
-            <element signature="method#QuicksortAnalysisPart1#0;class#QuicksortAnalysisPart1#0" expanded="false" />
-            <element signature="e#772#878#0" expanded="false" />
-            <element signature="e#1854#1964#0" expanded="false" />
-            <element signature="e#2182#2288#0" expanded="false" />
-            <element signature="docComment;method#createDoubleArray#0;class#QuicksortAnalysisPart1#0" expanded="false" />
-            <element signature="method#createDoubleArray#0;class#QuicksortAnalysisPart1#0" expanded="false" />
-            <element signature="docComment;method#createIntArray#0;class#QuicksortAnalysisPart1#0" expanded="false" />
-            <element signature="method#createIntArray#0;class#QuicksortAnalysisPart1#0" expanded="false" />
-            <element signature="docComment;method#quicksort#0;class#QuicksortAnalysisPart1#0" expanded="false" />
-            <element signature="docComment;method#qs#0;class#QuicksortAnalysisPart1#0" expanded="false" />
-            <element signature="method#qs#0;class#QuicksortAnalysisPart1#0" expanded="false" />
-            <element signature="e#5232#5309#0" expanded="false" />
-            <element signature="docComment;method#partition#0;class#QuicksortAnalysisPart1#0" expanded="false" />
-            <element signature="method#partition#0;class#QuicksortAnalysisPart1#0" expanded="false" />
-            <element signature="e#6261#6339#0" expanded="false" />
-            <element signature="docComment;method#advanceCount#0;class#QuicksortAnalysisPart1#0" expanded="false" />
-            <element signature="method#advanceCount#0;class#QuicksortAnalysisPart1#0" expanded="false" />
-            <element signature="docComment;method#insertionSortSub#0;class#QuicksortAnalysisPart1#0" expanded="false" />
-            <element signature="method#insertionSortSub#0;class#QuicksortAnalysisPart1#0" expanded="false" />
-            <element signature="e#7977#8041#0" expanded="false" />
-            <element signature="e#8424#8491#0" expanded="false" />
-            <element signature="docComment;method#insertionSort#0;class#QuicksortAnalysisPart1#0" expanded="false" />
-            <element signature="method#insertionSort#0;class#QuicksortAnalysisPart1#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/RecursiveSortingUtility.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.1065218" vertical-offset="0" max-vertical-offset="4471">
-          <caret line="114" column="80" selection-start-line="114" selection-start-column="62" selection-end-line="114" selection-end-column="80" />
+        <state vertical-scroll-proportion="1.4539474" vertical-offset="0" max-vertical-offset="4335">
+          <caret line="54" column="93" selection-start-line="54" selection-start-column="93" selection-end-line="54" selection-end-column="93" />
           <folding>
-            <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#865#866#0" expanded="true" />
-            <element signature="e#8487#8496#0" expanded="true" />
-            <element signature="e#9013#9022#0" expanded="true" />
-            <element signature="e#9394#9403#0" expanded="true" />
+            <element signature="e#7952#7961#0" expanded="true" />
+            <element signature="e#8426#8435#0" expanded="true" />
+            <element signature="e#8767#8776#0" expanded="true" />
           </folding>
         </state>
       </provider>
