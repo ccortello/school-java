@@ -53,6 +53,7 @@ public class RecursiveSortingUtility {
      * @param list - input ArrayList of objects, must have a Comparable implementation
      */
     public static <T extends Comparable<? super T>> void mergeSortDriver(ArrayList<T> list) {
+        // TODO: cody - filled in
         mergeSortRecursive(list, new ArrayList<T>(list.size()), 0, list.size() - 1);
     }
 
@@ -65,29 +66,39 @@ public class RecursiveSortingUtility {
      * @param end   - end index of the subarray of objects
      */
     private static <T extends Comparable<? super T>> void mergeSortRecursive(ArrayList<T> list, ArrayList<T> temp, int start, int end) {
-        // handle base case and trivial sorts
-        if (start >= end) {
+
+        // handle base case when list portion reaches size of mergsortThreshold.
+        if (end - start <= mergesortThreshold && mergesortThreshold > 1) {
+            insertionSortIterative(list, start, end);
             return;
         }
 
-        int mid = (start + end) / 2;
-        mergeSortRecursive(list, new ArrayList<T>(list.size()), start, mid);  //left half
-        mergeSortRecursive(list, new ArrayList<T>(list.size()), mid + 1, end);  //right half
+        // check this condition if mergesortThreshold is set to 1 or 0
+        if (start >= end)
+            return;
 
-        mergeSortedPortions(list, new ArrayList<T>(list.size()), start, mid, end);  //merge halves
+        int mid = (start + end) / 2;
+        mergeSortRecursive(list, new ArrayList<T>(mid - start + 1), start, mid);  //left half
+        mergeSortRecursive(list, new ArrayList<T>(end - mid), mid + 1, end);  //right half
+
+        mergeSortedPortions(list, temp, start, mid, end);  //merge halves
     }
 
     /**
      * Recursive merge sort helper method
      *
      * @param list   - input ArrayList of T objects that must have a Comparable implementation
-     * @param temp   - temporary ArrayList in  which the result with be placed
+     * @param temp   - temporary ArrayList in  which the result will be placed
      * @param start  - start index of the subarray of objects
      * @param middle - middle index of the subarray of objects
      * @param end    - end index of the subarray of objects
      */
     private static <T extends Comparable<? super T>> void mergeSortedPortions(ArrayList<T> list, ArrayList<T> temp, int start, int middle, int end) {
-        // TODO:
+        // set new variables to start and end of each half
+        int leftEnd = middle;
+        int rightBegin = middle + 1;
+
+
 
     }
 
@@ -97,6 +108,7 @@ public class RecursiveSortingUtility {
      * @param list - input ArrayList of T objects that must have a Comparable implementation
      */
     public static <T extends Comparable<? super T>> void quickSortDriver(ArrayList<T> list) {
+        // TODO: cody - filled in driver
         quickSortRecursive(list, 0, list.size() - 1);
     }
 
@@ -108,6 +120,7 @@ public class RecursiveSortingUtility {
      * @param end   - end index of the subarray of objects
      */
     private static <T extends Comparable<? super T>> void quickSortRecursive(ArrayList<T> list, int start, int end) {
+        // TODO: cody - filled in recursive quicksort with code from my previous course's homework05
 
         // handle base case and trivial sorts
         if (end - start + 1 < 2)
@@ -247,5 +260,5 @@ public class RecursiveSortingUtility {
         list.set(left, list.get(right));
         // replace right indexed element with previous value of left index stored in temp
         list.set(right, temp);
+        }
     }
-}
