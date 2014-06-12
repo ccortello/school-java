@@ -94,24 +94,29 @@ public class RecursiveSortingUtility {
      */
     private static <T extends Comparable<? super T>> void mergeSortedPortions(ArrayList<T> list, ArrayList<T> temp, int start, int middle, int end) {
         // set new variables to start and end of each half
+        int leftBegin = start;
         int leftEnd = middle;
         int rightBegin = middle + 1;
+        int rightEnd = end;
 
-        while (start <= leftEnd && rightBegin <= end) {
-            if (list.get(start).compareTo(list.get(rightBegin)) > 0) {
-                temp.add(list.get(start++));
-            } else if (list.get(start).compareTo(list.get(rightBegin)) < 0)
+        while (leftBegin <= leftEnd && rightBegin <= rightEnd) {
+            if (list.get(leftBegin).compareTo(list.get(rightBegin)) < 0) {
+                temp.add(list.get(leftBegin++));
+            } else if (list.get(leftBegin).compareTo(list.get(rightBegin)) > 0)
                 temp.add(list.get(rightBegin++));
             else {
-                temp.add(list.get(start++));
+                temp.add(list.get(leftBegin++));
                 temp.add(list.get(rightBegin++));
             }
         }
-        for (int i = start; i < leftEnd; i++)
+        for (int i = leftBegin; i <= leftEnd; i++)
             temp.add(list.get(i));
 
-        for (int i = rightBegin; i < end; i++)
+        for (int i = rightBegin; i <= rightEnd; i++)
             temp.add(list.get(i));
+
+        for (int i = start, j = 0; i <= end && j <= (end - start); i++, j++)
+            list.set(i, temp.get(j));
     }
 
     /**
