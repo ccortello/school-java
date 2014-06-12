@@ -94,7 +94,11 @@ public class RecursiveSortingUtility {
      * @param end    - end index of the subarray of objects
      */
     private static <T extends Comparable<? super T>> void mergeSortedPortions(ArrayList<T> list, ArrayList<T> temp, int start, int middle, int end) {
-        // TODO:
+        // set new variables to start and end of each half
+        int leftEnd = middle;
+        int rightBegin = middle + 1;
+
+
 
     }
 
