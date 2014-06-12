@@ -148,8 +148,9 @@ public class RecursiveSortingUtility {
 //        int mid = betterPivotStrategy(list, start, end);
 //        int mid = bestPivotStrategy(list, start, end);
 
+
         // store the value of the pivot, assuming the pivot to be the last element in the array
-        double pivot = list.get(end);
+        T pivot = list.get(mid);
 
         // initialize the 'left' and 'right' indices
         int left = start;
@@ -161,20 +162,20 @@ public class RecursiveSortingUtility {
             // increment 'left' to find the first value in the array larger than the pivot
 
             //  Note: advanceCount is used to increment the comparisons counter, and doesn't change the boolean it is passed
-            while (advanceCount(data[left] < pivot))
+            while (list.get(left).compareTo(pivot) < 0)
                 left++;
 
             //
-            while (right > left && advanceCount(data[right] >= pivot))
+            while (right > left && list.get(right).compareTo(pivot) >= 0)
                 right--;
 
             if (left >= right)
                 break;
 
             // swap left and right elements
-            double temp = data[left];
-            data[left] = data[right];
-            data[right] = temp;
+            T temp = list.get(left);
+            list.set(left, list.get(right));
+            list.set(right, temp);
 
             // move the positions of right and left toward the pivot
             left++;
@@ -182,11 +183,9 @@ public class RecursiveSortingUtility {
         }
 
         // swap left and end elements
-        double temp = data[left];
-        data[left] = data[end];
-        data[end] = temp;
-
-        return left;
+        T temp = list.get(left);
+        list.set(left, list.get(end));
+        list.set(end, temp);
 
         // use recursive calls to sort the array before the pivot and after the pivot
         quickSortRecursive(list, start, mid - 1);
