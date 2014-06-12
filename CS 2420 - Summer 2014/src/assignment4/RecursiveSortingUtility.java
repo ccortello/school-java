@@ -53,7 +53,6 @@ public class RecursiveSortingUtility {
      * @param list - input ArrayList of objects, must have a Comparable implementation
      */
     public static <T extends Comparable<? super T>> void mergeSortDriver(ArrayList<T> list) {
-        // TODO: cody - filled in
         mergeSortRecursive(list, new ArrayList<T>(list.size()), 0, list.size() - 1);
     }
 
@@ -108,7 +107,6 @@ public class RecursiveSortingUtility {
      * @param list - input ArrayList of T objects that must have a Comparable implementation
      */
     public static <T extends Comparable<? super T>> void quickSortDriver(ArrayList<T> list) {
-        // TODO: cody - filled in driver
         quickSortRecursive(list, 0, list.size() - 1);
     }
 
@@ -120,7 +118,6 @@ public class RecursiveSortingUtility {
      * @param end   - end index of the subarray of objects
      */
     private static <T extends Comparable<? super T>> void quickSortRecursive(ArrayList<T> list, int start, int end) {
-        // TODO: cody - filled in recursive quicksort with code from my previous course's homework05
 
         // handle base case and trivial sorts
         if (end - start + 1 < 2)
@@ -211,13 +208,11 @@ public class RecursiveSortingUtility {
      * @return an ArrayList of integers in sorted, ascending order.
      */
     public static ArrayList<Integer> generateBestCase(int size) {
-        ArrayList<Integer> temp = new ArrayList<Integer>();
-        for (int i = 0; i < size; i++) {
+        ArrayList<Integer> temp = new ArrayList<Integer>(size);
+        for (int i = 0; i < size; i++)
             temp.add((int) (Math.random() * 10 + i * 10));
-        }
 
         return temp;
-
     }
 
     /**
@@ -227,7 +222,9 @@ public class RecursiveSortingUtility {
      * @return An ArrayList of random integers from 0-size in permuted order
      */
     public static ArrayList<Integer> generateAverageCase(int size) {
-        ArrayList<Integer> temp = new ArrayList<Integer>();
+        ArrayList<Integer> temp = new ArrayList<Integer>(size);
+        for (int i = 0; i < size; i++)
+            temp.add((int) (Math.random() * Integer.MAX_VALUE));
 
         return temp;
     }
@@ -239,7 +236,7 @@ public class RecursiveSortingUtility {
      * @return An ArrayList of integers in descending order
      */
     public static ArrayList<Integer> generateWorstCase(int size) {
-        ArrayList<Integer> temp = new ArrayList<Integer>();
+        ArrayList<Integer> temp = new ArrayList<Integer>(size);
         for (int i = size; i > 0; i--) {
             temp.add((int) (i * 10 - (Math.random() * 10)));
         }
