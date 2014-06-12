@@ -159,16 +159,15 @@ public class RecursiveSortingUtility {
         // start infinite loop, will be ended with the break statement
         while (true) {
 
-            // increment 'left' to find the first value in the array larger than the pivot
-
-            //  Note: advanceCount is used to increment the comparisons counter, and doesn't change the boolean it is passed
+            // increment left until an element which needs to be swapped is found
             while (list.get(left).compareTo(pivot) < 0)
                 left++;
 
-            //
+            // decrement right until an element which needs to be swapped is found
             while (right > left && list.get(right).compareTo(pivot) >= 0)
                 right--;
 
+            // stop moving around pivot when 'left' index equals or passes 'right'
             if (left >= right)
                 break;
 
@@ -177,7 +176,7 @@ public class RecursiveSortingUtility {
             list.set(left, list.get(right));
             list.set(right, temp);
 
-            // move the positions of right and left toward the pivot
+            // move the positions of right and left toward the pivot and try swapping again
             left++;
             right--;
         }
