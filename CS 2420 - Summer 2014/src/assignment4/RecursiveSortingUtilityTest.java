@@ -12,9 +12,18 @@ public class RecursiveSortingUtilityTest extends TestCase {
     public void setUp() throws Exception {
         super.setUp();
 
-        listSize = 10;
+        listSize = 10000;
         mergeSortList = RecursiveSortingUtility.generateAverageCase(listSize);
         quickSortList = RecursiveSortingUtility.generateAverageCase(listSize);
+//        quickSortList = new ArrayList<Integer>();
+//        quickSortList.add(1);
+//        quickSortList.add(6);
+//        quickSortList.add(3);
+//        quickSortList.add(5);
+//        quickSortList.add(0);
+//        quickSortList.add(7);
+//        quickSortList.add(2);
+//        quickSortList.add(4);
     }
 
 
@@ -26,7 +35,7 @@ public class RecursiveSortingUtilityTest extends TestCase {
 
     public void testQuickSortDriver() throws Exception {
         RecursiveSortingUtility.quickSortDriver(quickSortList);
-        for (int i = 0; i < listSize - 1; i++)
+        for (int i = 0; i < quickSortList.size() - 1; i++)
             assertFalse(quickSortList.get(i).compareTo(quickSortList.get(i + 1)) > 0);
     }
 

@@ -170,7 +170,7 @@ public class RecursiveSortingUtility {
             while (right > left && list.get(right).compareTo(pivot) >= 0)
                 right--;
 
-            // stop moving around pivot when 'left' index equals or passes 'right'
+            // stop moving pointers when 'left' index equals or passes 'right'
             if (left >= right)
                 break;
 
@@ -186,8 +186,8 @@ public class RecursiveSortingUtility {
         swapElements(list, end, left);
 
         // use recursive calls to sort the array before the pivot and after the pivot
-        quickSortRecursive(list, start, mid - 1);
-        quickSortRecursive(list, mid + 1, end);
+        quickSortRecursive(list, start, left - 1);
+        quickSortRecursive(list, left + 1, end);
     }
 
     /**
