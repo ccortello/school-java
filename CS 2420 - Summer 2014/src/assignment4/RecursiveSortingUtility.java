@@ -68,16 +68,20 @@ public class RecursiveSortingUtility {
     private static <T extends Comparable<? super T>> void mergeSortRecursive(ArrayList<T> list, ArrayList<T> temp, int start, int end) {
 
         // handle base case when list portion reaches size of mergsortThreshold.
-        if (end - start <= mergesortThreshold) {
+        if (end - start <= mergesortThreshold && mergesortThreshold > 1) {
             insertionSortIterative(list, start, end);
             return;
         }
 
-        int mid = (start + end) / 2;
-        mergeSortRecursive(list, new ArrayList<T>(list.size()), start, mid);  //left half
-        mergeSortRecursive(list, new ArrayList<T>(list.size()), mid + 1, end);  //right half
+        // check this condition if mergesortThreshold is set to 1 or 0
+        if (start >= end)
+            return;
 
-        mergeSortedPortions(list, new ArrayList<T>(list.size()), start, mid, end);  //merge halves
+        int mid = (start + end) / 2;
+        mergeSortRecursive(list, new ArrayList<T>(mid - start + 1), start, mid);  //left half
+        mergeSortRecursive(list, new ArrayList<T>(end - mid), mid + 1, end);  //right half
+
+        mergeSortedPortions(list, temp, start, mid, end);  //merge halves
     }
 
     /**
