@@ -80,7 +80,7 @@ public class RecursiveSortingUtility {
 
         // handle base case when list portion reaches size of mergsortThreshold.
         if (end - start <= mergesortThreshold && mergesortThreshold > 1) {
-            System.out.println("Insertion sorting with size " + (end - start)); // TODO: this statement never executes when the test is run! =/
+//            System.out.println("Insertion sorting with size " + (end - start)); // TODO: this statement never executes when the test is run! =/
             insertionSortIterative(list, start, end);
             return;
         }
@@ -93,8 +93,8 @@ public class RecursiveSortingUtility {
         int mid = (start + end) / 2;
         // pass new start and end indexes for each half of partitioned array, also pass temp array to aid in merging
         // two arrays, the temp array is initialized to only the size needed.
-        mergeSortRecursive(list, new ArrayList<T>(mid - start + 1), start, mid);  //left half
-        mergeSortRecursive(list, new ArrayList<T>(end - mid), mid + 1, end);  //right half
+        mergeSortRecursive(list, temp/*new ArrayList<T>(mid - start + 1)*/, start, mid);  //left half
+        mergeSortRecursive(list, temp/*new ArrayList<T>(end - mid)*/, mid + 1, end);  //right half
 
         mergeSortedPortions(list, temp, start, mid, end);  //merge the two half when returned from above
     }
@@ -110,34 +110,35 @@ public class RecursiveSortingUtility {
      */
     private static <T extends Comparable<? super T>> void mergeSortedPortions(ArrayList<T> list, ArrayList<T> temp, int start, int middle, int end) {
         // set new variables as the end indexes of each half
-        int leftBegin = start;
-        int leftEnd = middle;
+        int tempEnd = end - start;
+        int addIndex = start;
         int rightBegin = middle + 1;
-        int rightEnd = end;
 
         // compare indexed elements of each array started at beginning  arrays and adding the lesser element to temp
-        while (leftBegin <= leftEnd && rightBegin <= rightEnd) {
-            if (list.get(leftBegin).compareTo(list.get(rightBegin)) < 0) {
-                temp.add(list.get(leftBegin++));
-            } else if (list.get(leftBegin).compareTo(list.get(rightBegin)) > 0)
+        while (start <= middle && rightBegin <= end) {
+            if (list.get(start).compareTo(list.get(rightBegin)) < 0) {
+                temp.add(list.get(start++));
+            } else if (list.get(start).compareTo(list.get(rightBegin)) > 0)
                 temp.add(list.get(rightBegin++));
             else {
                 // if elements at each index are equal than add them both
-                temp.add(list.get(leftBegin++));
+                temp.add(list.get(start++));
                 temp.add(list.get(rightBegin++));
             }
         }
 
         // the following 2 for loops add remaining elements of an array if the other finished first.
-        for (int i = leftBegin; i <= leftEnd; i++)
+        for (int i = start; i <= middle; i++)
             temp.add(list.get(i));
 
-        for (int i = rightBegin; i <= rightEnd; i++)
+        for (int i = rightBegin; i <= end; i++)
             temp.add(list.get(i));
 
-        // this for loop copies newly sorted and merged arrays in temp back to the original list
-        for (int i = start, j = 0; i <= end && j <= (end - start); i++, j++)
-            list.set(i, temp.get(j));
+        // this for loop copies the sorted temp array to correct indices of of list array
+        for (T element : temp)
+            list.set(addIndex++, element);
+        //clear temp elements to avoid conflicts with other mergeSortedPortions processes
+        temp.clear();
     }
 
     /**

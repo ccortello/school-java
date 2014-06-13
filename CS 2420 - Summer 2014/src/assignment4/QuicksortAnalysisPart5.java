@@ -19,18 +19,21 @@ public class QuicksortAnalysisPart5 {
         int[] arraySizes = new int[]{5, 10, 50, 100, 500, 1000, 2000, 5000, 10000, 20000, 50000};
 
         // print the report header
-        RecursiveSortingUtility sort = new RecursiveSortingUtility();
+//        RecursiveSortingUtility RecursiveSortingUtility = new RecursiveSortingUtility();
 
         // loop through cutoff values and find the average time and number of comparisons for sorting an array of size
         // 100,000 with that cutoff value, then print the results
         for (int i = 0; i < 51; i++) {
 
             // change the cutoff value
-            sort.setMergeSortThreshold(i);
+            RecursiveSortingUtility.setMergeSortThreshold(i * 20);
+//            System.out.println(RecursiveSortingUtility.getMergesortThreshold());
 
     		/* timing code modified from Peter Jensen's TimingExperiment08.java from his CS 2420 class of Spring 2014 */
 
             long startTime, midpointTime, stopTime;
+
+            long timesToLoop = 20;
 
             // First, spin computing stuff until one second has gone by.
             // This allows this thread to stabilize.
@@ -40,15 +43,11 @@ public class QuicksortAnalysisPart5 {
             }
 
             // Now, run the test.
-
-            long timesToLoop = 20;
-
-
+            startTime = System.nanoTime();
             for (long j = 0; j < timesToLoop; j++) {
                 // create a random array of data and sort it
-                ArrayList<Integer> sortList = sort.generateAverageCase(100000);
-                startTime = System.nanoTime();
-                sort.quickSortDriver(sortList);
+                ArrayList<Integer> sortList = RecursiveSortingUtility.generateAverageCase(100000);
+                RecursiveSortingUtility.mergeSortDriver(sortList);
             }
 
             midpointTime = System.nanoTime();
@@ -68,7 +67,7 @@ public class QuicksortAnalysisPart5 {
             averageTime /= 1e9;
 
             // print out tab-delimited results
-            System.out.println(i + "\t" + averageTime + "\t");
+            System.out.println(i + "\t" + averageTime + "\t" + RecursiveSortingUtility.getMergesortThreshold());
         }
     }
 }
