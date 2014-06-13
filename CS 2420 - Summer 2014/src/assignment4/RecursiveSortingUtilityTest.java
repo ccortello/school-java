@@ -63,9 +63,11 @@ public class RecursiveSortingUtilityTest extends TestCase {
         for (int element : arr2) {
             quickSortList.add(element);
             swapElementsList.add(element);
-            //expected array after swapping swapElementsList
-            expectedSwapArray.add(element);
         }
+
+        //expected array after swapping swapElementsList
+        for (int element : arr3)
+            expectedSwapArray.add(element);
     }
 
     /**
@@ -232,8 +234,10 @@ public class RecursiveSortingUtilityTest extends TestCase {
         RecursiveSortingUtility.swapElements(swapElementsList, 0, 6);
 
         // compare swapElementsList after completing swaps with ArrayList expectedSwapArray
-        for (int i = 0; i < swapElementsList.size(); i++)
+        for (int i = 0; i < swapElementsList.size(); i++) {
             assertEquals(0, swapElementsList.get(i).compareTo(expectedSwapArray.get(i)));
+        }
+
     }
 
     /**
