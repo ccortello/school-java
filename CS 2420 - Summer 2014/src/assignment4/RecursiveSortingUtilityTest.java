@@ -56,15 +56,15 @@ public class RecursiveSortingUtilityTest extends TestCase {
         expectedSwapArray = new ArrayList<Integer>(arr3.length);
 
         // assign array values to different ArrayLists to be tested
-        for (int i = 0; i < arr.length; i++)
-            pivotStrategyList.add(arr[i]);
+        for (int element : arr)
+            pivotStrategyList.add(element);
 
         // assign array values to different ArrayLists to be tested
-        for (int i = 0; i < arr2.length; i++) {
-            quickSortList.add(arr2[i]);
-            swapElementsList.add(arr2[i]);
+        for (int element : arr2) {
+            quickSortList.add(element);
+            swapElementsList.add(element);
             //expected array after swapping swapElementsList
-            expectedSwapArray.add(arr3[i]);
+            expectedSwapArray.add(element);
         }
     }
 
@@ -145,7 +145,7 @@ public class RecursiveSortingUtilityTest extends TestCase {
         // tested many times to assure pivot index element is never -7 or 32
         for (int i = 0; i < numTries; i++) {
             pivotIndex = RecursiveSortingUtility.bestPivotStrategy(pivotStrategyList, 0, pivotStrategyList.size() - 1);
-            assertTrue((int) pivotStrategyList.get(pivotIndex) > - 7 && (int) pivotStrategyList.get(pivotIndex) < 32);
+            assertTrue(pivotStrategyList.get(pivotIndex) > -7 && pivotStrategyList.get(pivotIndex) < 32);
         }
     }
 

@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public class RecursiveSortingUtility {
 
     // field that determines size of array partitions from mergesort recursions that will be sorted with insertion sort
-    private static int mergesortThreshold = 0;
+    protected static int mergesortThreshold = 0;
 
 
     /**
@@ -80,6 +80,7 @@ public class RecursiveSortingUtility {
 
         // handle base case when list portion reaches size of mergsortThreshold.
         if (end - start <= mergesortThreshold && mergesortThreshold > 1) {
+            System.out.println("Insertion sorting with size " + (end - start)); // TODO: this statement never executes when the test is run! =/
             insertionSortIterative(list, start, end);
             return;
         }
