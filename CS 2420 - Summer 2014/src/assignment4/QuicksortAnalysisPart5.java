@@ -46,9 +46,9 @@ public class QuicksortAnalysisPart5 {
 
             for (long j = 0; j < timesToLoop; j++) {
                 // create a random array of data and sort it
-                ArrayList<Integer> sortList = RecursiveSortingUtility.generateAverageCase(100000);
+                ArrayList<Integer> sortList = sort.generateAverageCase(100000);
                 startTime = System.nanoTime();
-                RecursiveSortingUtility.quickSortDriver(sortList);
+                sort.quickSortDriver(sortList);
             }
 
             midpointTime = System.nanoTime();
