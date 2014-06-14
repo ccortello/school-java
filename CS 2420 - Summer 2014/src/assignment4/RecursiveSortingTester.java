@@ -22,9 +22,7 @@ public class RecursiveSortingTester extends TestCase {
     // threshold can be changed on the fly in setUp() and is set in the setMergeSortThreshold test method
     int listSize, numTries, threshold;
     // known arrays to assign to ArrayLists so expected values can be known
-    int[] arr = {1, 4, 9, 5, 13, 11, 24, - 2, 32, - 7};
-    int[] arr2 = {1, 6, 3, 5, 0, 7, 2, 4};
-    int[] arr3 = {2, 5, 3, 0, 6, 7, 1, 4};
+    int[] arr, arr2, arr3;
     // variables keeping track of number of tests in generateAverageCase test, used to find average number of inversions
     int testCount, inversionSum;
 
@@ -36,6 +34,11 @@ public class RecursiveSortingTester extends TestCase {
      */
     public void setUp() throws Exception {
         super.setUp();
+
+        // initialize arrays
+        int[] arr = {1, 4, 9, 5, 13, 11, 24, -2, 32, -7};
+        int[] arr2 = {1, 6, 3, 5, 0, 7, 2, 4};
+        int[] arr3 = {2, 5, 3, 0, 6, 7, 1, 4};
 
         // set integer parameter values
         threshold = 10;

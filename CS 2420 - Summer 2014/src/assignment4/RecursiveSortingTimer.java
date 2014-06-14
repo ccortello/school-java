@@ -3,14 +3,15 @@ package assignment4;
 import java.util.ArrayList;
 
 /**
- * Implements and times the 'Quicksort' algorithm
+ * Implements and times the  algorithm
  *
  * @author Cody Cortello
  * @author Casey Nordgran
  * @version 6/12/2014
  */
 public class RecursiveSortingTimer {
-    int arraySize = 100000;
+    int arraySize = 100;
+    long timesToLoop = 20;
 
     public static void main(String[] args) {
         new RecursiveSortingTimer();
@@ -22,16 +23,14 @@ public class RecursiveSortingTimer {
 
         // loop through cutoff values and find the average time and number of comparisons for sorting an array of size
         // 100,000 with that cutoff value, then print the results
-        for (int i = 0; i < 51; i++) {
+        for (int i = 0; i < 30; i++) {
 
             // change the cutoff value
-            RecursiveSortingUtility.setMergeSortThreshold(i * 20);
+            RecursiveSortingUtility.setMergeSortThreshold(i);
 
     		/* timing code modified from Peter Jensen's TimingExperiment08.java from his CS 2420 class of Spring 2014 */
 
             long startTime, midpointTime, stopTime;
-
-            long timesToLoop = 20;
 
             // First, spin computing stuff until one second has gone by.
             // This allows this thread to stabilize.
