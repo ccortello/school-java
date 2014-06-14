@@ -18,6 +18,8 @@ public class RecursiveSortingTimer {
 
     RecursiveSortingTimer() {
 
+        System.out.println("Time\tThreshold");
+
         // loop through cutoff values and find the average time and number of comparisons for sorting an array of size
         // 100,000 with that cutoff value, then print the results
         for (int i = 0; i < 51; i++) {
@@ -64,7 +66,7 @@ public class RecursiveSortingTimer {
             averageTime /= 1e9;
 
             // print out tab-delimited results
-            System.out.println(i + "\t" + averageTime + "\t" + RecursiveSortingUtility.getMergesortThreshold());
+            System.out.println(averageTime + "\t" + RecursiveSortingUtility.getMergesortThreshold());
         }
     }
 }
