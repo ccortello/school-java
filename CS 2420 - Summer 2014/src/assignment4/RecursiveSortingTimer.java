@@ -19,7 +19,7 @@ public class RecursiveSortingTimer {
 
     RecursiveSortingTimer() {
 
-        System.out.println("Time\tThreshold");
+        System.out.println("Size = " + arraySize + ", loops = " + timesToLoop + "\n\nTime\tThreshold");
 
         // loop through cutoff values and find the average time and number of comparisons for sorting an array of size
         // 100,000 with that cutoff value, then print the results
