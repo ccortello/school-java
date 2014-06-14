@@ -9,17 +9,14 @@ import java.util.ArrayList;
  * @author Casey Nordgran
  * @version 6/12/2014
  */
-public class QuicksortAnalysisPart5 {
+public class RecursiveSortingTimer {
+    int arraySize = 100000;
+
     public static void main(String[] args) {
-        new QuicksortAnalysisPart5();
+        new RecursiveSortingTimer();
     }
 
-    public QuicksortAnalysisPart5() {
-
-        int[] arraySizes = new int[]{5, 10, 50, 100, 500, 1000, 2000, 5000, 10000, 20000, 50000};
-
-        // print the report header
-//        RecursiveSortingUtility RecursiveSortingUtility = new RecursiveSortingUtility();
+    RecursiveSortingTimer() {
 
         // loop through cutoff values and find the average time and number of comparisons for sorting an array of size
         // 100,000 with that cutoff value, then print the results
@@ -46,7 +43,7 @@ public class QuicksortAnalysisPart5 {
             startTime = System.nanoTime();
             for (long j = 0; j < timesToLoop; j++) {
                 // create a random array of data and sort it
-                ArrayList<Integer> sortList = RecursiveSortingUtility.generateAverageCase(100000);
+                ArrayList<Integer> sortList = RecursiveSortingUtility.generateAverageCase(arraySize);
                 RecursiveSortingUtility.mergeSortDriver(sortList);
             }
 

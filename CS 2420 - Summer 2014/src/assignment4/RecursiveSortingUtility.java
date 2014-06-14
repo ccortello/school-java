@@ -20,7 +20,7 @@ public class RecursiveSortingUtility {
 
 
     /**
-     * Only used for testing purposes in RecursiveSortingUtilityTest class, this method can be commented out.
+     * Only used for testing purposes in RecursiveSortingUtilityTester class, this method can be commented out.
      *
      * @return current mergesort thresholding setting for the mergeSortRecursive method
      */
