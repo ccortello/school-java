@@ -3,7 +3,7 @@ package assignment4;
 import java.util.ArrayList;
 
 /**
- * Implements and tests the 'Quicksort' algorithm
+ * Implements and times the 'Quicksort' algorithm
  *
  * @author Cody Cortello
  * @author Casey Nordgran
@@ -26,7 +26,6 @@ public class RecursiveSortingTimer {
 
             // change the cutoff value
             RecursiveSortingUtility.setMergeSortThreshold(i * 20);
-//            System.out.println(RecursiveSortingUtility.getMergesortThreshold());
 
     		/* timing code modified from Peter Jensen's TimingExperiment08.java from his CS 2420 class of Spring 2014 */
 
