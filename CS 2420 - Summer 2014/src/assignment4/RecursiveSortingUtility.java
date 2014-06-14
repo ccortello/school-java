@@ -296,7 +296,7 @@ public class RecursiveSortingUtility {
     }
 
     /**
-     * Best case input generation helper method
+     * Generates an ArrayList of ints from 1 to size in ascending order
      *
      * @param size size of the returned ArrayList
      *
@@ -313,25 +313,22 @@ public class RecursiveSortingUtility {
     }
 
     /**
-     * Average case input generation helper method
+     * Generates an ArrayList of ints from 1 to size in random order
      *
      * @param size the size of the returned ArrayList
      *
      * @return An ArrayList of random integers  valued from 1 to 'size' in permuted order
      */
     public static ArrayList<Integer> generateAverageCase(int size) {
-        // create temporary array with the input size 'size'
-        ArrayList<Integer> temp = new ArrayList<Integer>(size);
-        // for the amount of elements that need to be added, add a random value between 1 and 'size'
-        for (int i = 0; i < size; i++) {
-            temp.add((int) ((Math.random() * size) + 1));
-        }
-        // after all random elements are added to temp ArrayList, return temp.
-        return temp;
+        // create an ascending array then permute each element
+        ArrayList<Integer> returnList = generateBestCase(size);
+        for (int i = 0; i < returnList.size() - 1; i++)
+            swapElements(returnList, i, (int) (Math.random() * size));
+        return returnList;
     }
 
     /**
-     * Worst case input generation helper method
+     * Generates an ArrayList of ints from 1 to size in ascending order
      *
      * @param size the size of the returned ArrayList
      *
