@@ -20,7 +20,7 @@ public class RecursiveSortingUtility {
 
 
     /**
-     * Only used for testing purposes in RecursiveSortingUtilityTester class, this method can be commented out.
+     * Only used for testing purposes in RecursiveSortingUtilityTest class, this method can be commented out.
      *
      * @return current mergesort thresholding setting for the mergeSortRecursive method
      */
@@ -322,8 +322,8 @@ public class RecursiveSortingUtility {
     public static ArrayList<Integer> generateAverageCase(int size) {
         // create an ascending array then permute each element
         ArrayList<Integer> returnList = generateBestCase(size);
-        for (int i = 0; i < returnList.size() - 1; i++)
-            swapElements(returnList, i, (int) (Math.random() * size));
+        for (int i = 0; i < returnList.size() * 100; i++)
+            swapElements(returnList, (int) (Math.random() * size), (int) (Math.random() * size));
         return returnList;
     }
 
