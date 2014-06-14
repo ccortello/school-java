@@ -10,8 +10,8 @@ import java.util.ArrayList;
  * @version 6/12/2014
  */
 public class RecursiveSortingTimer {
-    int arraySize = 100;
-    long timesToLoop = 20;
+    int arraySize = 1000;
+    long timesToLoop = 50;
 
     public static void main(String[] args) {
         new RecursiveSortingTimer();
