@@ -27,9 +27,6 @@ public class RecursiveSortingUtilityTest extends TestCase {
     int[] arr3 = {2, 5, 3, 0, 6, 7, 1, 4};
     // variables keeping track of number of tests in generateAverageCase test, used to find average number of inversions
     int testCount, inversionSum;
-    // list size for testing generateAverageCase arrays with insertion sort, since it takes much longer
-    int avgListSize;
-    ArrayList<Integer> toSort;
 
 
     /**
@@ -175,43 +172,41 @@ public class RecursiveSortingUtilityTest extends TestCase {
      */
     public void testGenerateAverageCase() throws Exception {
 
-        // set inversions counting variable to 0 and set the number of inputs or list size 'N'
-        int inversionSum = 0;
-        int N = 500;
-        // set number of times to redo the test to get a better average
-        int testCount = 100;
+        // initiate inversions counting variable to 0 and set the number of inputs or list size 'N'
+        inversionSum = 0;
+        listSize = 1000;
+        // set number of times to redo the test (more tries gives a better average)
+        testCount = 20;
 
         // for each loop, send a new generateAverageCase returned ArrayList to the inversionCounter method
         // and add the amount of inversion in that list for that loop to inversionSum
-        for (int i = 0; i < testCount; i++) {
-            inversionSum += RecursiveSortingUtilityTest.inversionCounter(new ArrayList<Integer>(RecursiveSortingUtility.generateAverageCase(N)));
-        }
+        for (int i = 0; i < testCount; i++)
+            inversionSum += RecursiveSortingUtilityTest.inversionCounter(RecursiveSortingUtility.generateAverageCase(listSize));
 
         // determine average amount of inversions for N inputs and amount of times tested equal to testCount
         double averageInversions = (double) inversionSum / testCount;
         // using 'N' calculate the expected average amount of inversion for the input amount of 'N'
-        double expectedInversion = (double) N * (N - 1) / 4;
-        // print the data of these two variables to compare the randomness of the generateAverageCase method.
-        System.out.println("\nFor a list size of N = " + N + " and total times tested equal to " + testCount + " times: ");
-        System.out.println("\nActual inversions count average for generated ArrayLists was:  " + averageInversions);
-        System.out.println("The Expected inversion count average for N = " + N + " inputs is:  " + expectedInversion);
-        System.out.println("\nThe difference bettween expected amount of inversions and actual average amount is: ");
-        double diff = Math.abs(averageInversions - expectedInversion);
-        System.out.println("     DIFFERENCE = abs(" + averageInversions + " - " + expectedInversion + ") = " + diff);
-        System.out.format("%n     Or, only a %4.2f", ((diff / expectedInversion) * 100));
-        System.out.print(" percent difference.\n");
+        double expectedInversions = (double) listSize * (listSize - 1) / 4;
+        // calculate the difference between the expected inversions and the acutal inversions, as a percentage
+        double percentError = Math.abs(expectedInversions - averageInversions) / expectedInversions * 100;
 
+        // print debug data of these two variables to compare the randomness of the generateAverageCase method.
+//        System.out.println("\nFor a list size of N = " + N + " and total times tested equal to " + testCount + " times: ");
+//        System.out.println("\nActual inversions count average for generated ArrayLists was:  " + averageInversions);
+//        System.out.println("The Expected inversion count average for N = " + N + " inputs is:  " + expectedInversions);
+//        System.out.println("\nThe difference bettween expected amount of inversions and actual average amount is: ");
+//        double diff = Math.abs(averageInversions - expectedInversions);
+//        System.out.println("     DIFFERENCE = abs(" + averageInversions + " - " + expectedInversions + ") = " + diff);
+//        System.out.format("%n     Or, only a %4.2f percent difference.\n", percentError);
 
-
-
+        // assert that the number of inversions is approximately close to what is expected for an InsertionSort on random data
+        assertTrue(percentError < 5);
     }
 
     /**
      * Tests that generateWorstCase returns an ArrayList with all values from from listSize to 1 in descending order.
-     *
-     * @throws Exception
      */
-    public void testGenerateWorstCase() throws Exception {
+    public void testGenerateWorstCase() {
         // list generation is tested many times 'numTries' assuring consistent results
         for (int i = 0; i < numTries; i++) {
             worstCaseArray = RecursiveSortingUtility.generateWorstCase(listSize);
@@ -234,9 +229,8 @@ public class RecursiveSortingUtilityTest extends TestCase {
         RecursiveSortingUtility.swapElements(swapElementsList, 0, 6);
 
         // compare swapElementsList after completing swaps with ArrayList expectedSwapArray
-        for (int i = 0; i < swapElementsList.size(); i++) {
+        for (int i = 0; i < swapElementsList.size(); i++)
             assertEquals(0, swapElementsList.get(i).compareTo(expectedSwapArray.get(i)));
-        }
 
     }
 
@@ -256,12 +250,10 @@ public class RecursiveSortingUtilityTest extends TestCase {
         int inversionSum = 0;
         // for each element at 'i', the for loops count how many elements are to the right of itself but smaller than
         // itself. After 'i' passes by every element, all inversion have been accounted for.
-        for (int i = 0; i < list.size(); i++) {
-            for (int j = i + 1; j < list.size() - 1; j++) {
+        for (int i = 0; i < list.size(); i++)
+            for (int j = i + 1; j < list.size() - 1; j++)
                 if (list.get(i).compareTo(list.get(j)) > 0)
                     inversionSum++;
-            }
-        }
         return inversionSum;
     }
 }
