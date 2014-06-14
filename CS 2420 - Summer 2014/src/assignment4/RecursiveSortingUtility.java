@@ -1,6 +1,7 @@
 package assignment4;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * @author Paymon Saebi
@@ -78,7 +79,7 @@ public class RecursiveSortingUtility {
      */
     private static <T extends Comparable<? super T>> void mergeSortRecursive(ArrayList<T> list, ArrayList<T> temp, int start, int end) {
 
-        // handle base case when list portion reaches size of mergsortThreshold.
+        // handle base case when list portion reaches size of mergesortThreshold.
         if (end - start <= mergesortThreshold && mergesortThreshold > 1) {
             insertionSortIterative(list, start, end);
             return;
@@ -162,7 +163,7 @@ public class RecursiveSortingUtility {
             return;
 
         // find an index for the pivot, three options available below, uncomment desired pivotIndex return strategy
-        int mid = goodPivotStrategy(list, start, end);
+        int mid = bestPivotStrategy(list, start, end);
 //        int mid = betterPivotStrategy(list, start, end);
 //        int mid = bestPivotStrategy(list, start, end);
 
@@ -319,10 +320,13 @@ public class RecursiveSortingUtility {
      * @return An ArrayList of random integers  valued from 1 to 'size' in permuted order
      */
     public static ArrayList<Integer> generateAverageCase(int size) {
+        // create a Random object with a seed for repeatable testing
+        Random rand = new Random(12349879102L);
+
         // create an ascending array then permute each element
         ArrayList<Integer> returnList = generateBestCase(size);
         for (int i = 0; i < returnList.size() * 100; i++)
-            swapElements(returnList, (int) (Math.random() * size), (int) (Math.random() * size));
+            swapElements(returnList, rand.nextInt() / Integer.MAX_VALUE * size, rand.nextInt() / Integer.MAX_VALUE * size);
         return returnList;
     }
 
