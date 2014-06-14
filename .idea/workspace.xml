@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="update">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/RecursiveSortingTimer.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/RecursiveSortingTimer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/RecursiveSortingUtility.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/RecursiveSortingUtility.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -84,40 +85,67 @@
       <file leaf-file-name="RecursiveSortingUtility.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/RecursiveSortingUtility.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1612">
-              <caret line="362" column="0" selection-start-line="362" selection-start-column="0" selection-end-line="362" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1743" max-vertical-offset="9542">
+              <caret line="82" column="48" selection-start-line="82" selection-start-column="48" selection-end-line="82" selection-end-column="48" />
               <folding>
-                <element signature="docComment;class#RecursiveSortingUtility#0" expanded="false" />
-                <element signature="docComment;method#getMergesortThreshold#0;class#RecursiveSortingUtility#0" expanded="false" />
-                <element signature="docComment;method#setMergeSortThreshold#0;class#RecursiveSortingUtility#0" expanded="false" />
-                <element signature="docComment;method#insertionSortIterative#0;class#RecursiveSortingUtility#0" expanded="false" />
-                <element signature="e#1704#1764#0" expanded="false" />
-                <element signature="docComment;method#mergeSortDriver#0;class#RecursiveSortingUtility#0" expanded="false" />
-                <element signature="docComment;method#mergeSortRecursive#0;class#RecursiveSortingUtility#0" expanded="false" />
-                <element signature="e#3807#3915#0" expanded="false" />
-                <element signature="docComment;method#mergeSortedPortions#0;class#RecursiveSortingUtility#0" expanded="false" />
-                <element signature="docComment;method#quickSortDriver#0;class#RecursiveSortingUtility#0" expanded="false" />
-                <element signature="docComment;method#quickSortRecursive#0;class#RecursiveSortingUtility#0" expanded="false" />
-                <element signature="e#7260#7318#0" expanded="false" />
-                <element signature="docComment;method#goodPivotStrategy#0;class#RecursiveSortingUtility#0" expanded="false" />
-                <element signature="docComment;method#betterPivotStrategy#0;class#RecursiveSortingUtility#0" expanded="false" />
-                <element signature="docComment;method#bestPivotStrategy#0;class#RecursiveSortingUtility#0" expanded="false" />
-                <element signature="e#11214#11274#0" expanded="false" />
-                <element signature="docComment;method#generateBestCase#0;class#RecursiveSortingUtility#0" expanded="false" />
-                <element signature="docComment;method#generateAverageCase#0;class#RecursiveSortingUtility#0" expanded="false" />
-                <element signature="docComment;method#generateWorstCase#0;class#RecursiveSortingUtility#0" expanded="false" />
-                <element signature="docComment;method#swapElements#0;class#RecursiveSortingUtility#0" expanded="false" />
+                <element signature="e#978#979#0" expanded="true" />
+                <element signature="e#1019#1020#0" expanded="true" />
+                <element signature="e#1248#1249#0" expanded="true" />
+                <element signature="e#1301#1302#0" expanded="true" />
+                <element signature="method#insertionSortIterative#0;class#RecursiveSortingUtility#0" expanded="true" />
+                <element signature="method#mergeSortDriver#0;class#RecursiveSortingUtility#0" expanded="true" />
+                <element signature="method#mergeSortedPortions#0;class#RecursiveSortingUtility#0" expanded="true" />
+                <element signature="method#quickSortDriver#0;class#RecursiveSortingUtility#0" expanded="true" />
+                <element signature="method#quickSortRecursive#0;class#RecursiveSortingUtility#0" expanded="true" />
+                <element signature="method#goodPivotStrategy#0;class#RecursiveSortingUtility#0" expanded="true" />
+                <element signature="method#betterPivotStrategy#0;class#RecursiveSortingUtility#0" expanded="true" />
+                <element signature="method#bestPivotStrategy#0;class#RecursiveSortingUtility#0" expanded="true" />
+                <element signature="method#generateBestCase#0;class#RecursiveSortingUtility#0" expanded="true" />
+                <element signature="e#13116#13125#0" expanded="true" />
+                <element signature="method#generateAverageCase#0;class#RecursiveSortingUtility#0" expanded="true" />
+                <element signature="method#generateWorstCase#0;class#RecursiveSortingUtility#0" expanded="true" />
+                <element signature="e#14390#14399#0" expanded="true" />
+                <element signature="method#swapElements#0;class#RecursiveSortingUtility#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RecursiveSortingTester.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="RecursiveSortingTester.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/RecursiveSortingTester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33294392" vertical-offset="1" max-vertical-offset="3432">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="3978" max-vertical-offset="7150">
+              <caret line="265" column="49" selection-start-line="265" selection-start-column="49" selection-end-line="265" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#setUp#0;class#RecursiveSortingTester#0" expanded="true" />
+                <element signature="method#testSetMergeSortThreshold#0;class#RecursiveSortingTester#0" expanded="true" />
+                <element signature="method#testMergeSortDriver#0;class#RecursiveSortingTester#0" expanded="true" />
+                <element signature="method#testQuickSortDriver#0;class#RecursiveSortingTester#0" expanded="true" />
+                <element signature="method#testGoodPivotStrategy#0;class#RecursiveSortingTester#0" expanded="true" />
+                <element signature="method#testBetterPivotStrategy#0;class#RecursiveSortingTester#0" expanded="true" />
+                <element signature="method#testBestPivotStrategy#0;class#RecursiveSortingTester#0" expanded="true" />
+                <element signature="method#testGenerateBestCase#0;class#RecursiveSortingTester#0" expanded="true" />
+                <element signature="method#testGenerateAverageCase#0;class#RecursiveSortingTester#0" expanded="true" />
+                <element signature="method#testGenerateWorstCase#0;class#RecursiveSortingTester#0" expanded="true" />
+                <element signature="method#testSwapElements#0;class#RecursiveSortingTester#0" expanded="true" />
+                <element signature="method#inversionCounter#0;class#RecursiveSortingTester#0" expanded="true" />
+                <element signature="method#testPrintSuccessMessage#0;class#RecursiveSortingTester#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecursiveSortingTimer.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/RecursiveSortingTimer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.9392523" vertical-offset="1224" max-vertical-offset="2184">
+              <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+              <folding>
+                <element signature="e#309#310#0" expanded="true" />
+                <element signature="e#352#353#0" expanded="true" />
+                <element signature="method#RecursiveSortingTimer#0;class#RecursiveSortingTimer#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -144,7 +172,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experimentX/SimpleHashSet.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment02/TestApplication.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment04/SimpleHashSet.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment04/TestApplication.java" />
@@ -195,6 +222,7 @@
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/RecursiveSortingUtilityTest.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/QuicksortAnalysisPart5.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/RecursiveSortingUtility.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/RecursiveSortingTimer.java" />
       </list>
     </option>
   </component>
@@ -360,7 +388,7 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="editor" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Java" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -431,24 +459,119 @@
       <recent name="C:\Users\Cody\workspace\CS 2420 - Spring 2014\src\homework08" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RecursiveSortingTester">
-    <configuration default="false" name="ArrayBasedCollectionTimer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="assignment3.ArrayBasedCollectionTimer" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="CS 2420 - Summer 2014" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RestoreUpdateTree">
+    <UpdateInfo date="Moments ago" ActionInfo="_Update">
+      <UpdatedFiles>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated from server" />
+          <option name="myStatusName" value="Changed on server" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CHANGED_ON_SERVER" />
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Updated" />
+            <option name="myStatusName" value="Changed" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="UPDATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/RecursiveSortingTimer.java</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Created" />
+            <option name="myStatusName" value="Created" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="CREATED" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Deleted" />
+            <option name="myStatusName" value="Deleted" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="true" />
+            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Restored" />
+            <option name="myStatusName" value="Will be restored" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="RESTORED" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Modified" />
+          <option name="myStatusName" value="Modified" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MODIFIED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Skipped" />
+          <option name="myStatusName" value="Skipped" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SKIPPED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with conflicts" />
+          <option name="myStatusName" value="Will be merged with conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_CONFLICTS" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with tree conflicts" />
+          <option name="myStatusName" value="Merged with tree conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with property conflicts" />
+          <option name="myStatusName" value="Will be merged with property conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged" />
+          <option name="myStatusName" value="Will be merged" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Not in repository" />
+          <option name="myStatusName" value="Not in repository" />
+          <option name="mySupportsDeletion" value="true" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UNKNOWN" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally added" />
+          <option name="myStatusName" value="Locally added" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_ADDED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally removed" />
+          <option name="myStatusName" value="Locally removed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_REMOVED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Switched" />
+          <option name="myStatusName" value="Switched" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SWITCHED" />
+        </FILE-GROUP>
+      </UpdatedFiles>
+    </UpdateInfo>
+  </component>
+  <component name="RunManager" selected="Application.RecursiveSortingTimer">
     <configuration default="false" name="RecursiveSortingUtilityTest.testQuickSortDriver" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="CS 2420 - Summer 2014" />
@@ -537,6 +660,23 @@
       </option>
       <envs />
       <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="RecursiveSortingTimer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="assignment4.RecursiveSortingTimer" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="CS 2420 - Summer 2014" />
+      <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
@@ -674,19 +814,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.ArrayBasedCollectionTimer" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.RecursiveSortingUtilityTest.testQuickSortDriver" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.RecursiveSortingUtilityTest" />
-      <item index="3" class="java.lang.String" itemvalue="Application.QuicksortAnalysisPart5" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.RecursiveSortingTester" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.RecursiveSortingUtilityTest.testQuickSortDriver" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.RecursiveSortingUtilityTest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.QuicksortAnalysisPart5" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.RecursiveSortingTester" />
+      <item index="4" class="java.lang.String" itemvalue="Application.RecursiveSortingTimer" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.RecursiveSortingTester" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.RecursiveSortingUtilityTest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.QuicksortAnalysisPart5" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.RecursiveSortingUtilityTest.testQuickSortDriver" />
-        <item index="4" class="java.lang.String" itemvalue="Application.ArrayBasedCollectionTimer" />
+        <item index="0" class="java.lang.String" itemvalue="Application.RecursiveSortingTimer" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.RecursiveSortingTester" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.RecursiveSortingUtilityTest" />
+        <item index="3" class="java.lang.String" itemvalue="Application.QuicksortAnalysisPart5" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.RecursiveSortingUtilityTest.testQuickSortDriver" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1558,7 +1698,11 @@
       <created>1402692278903</created>
       <updated>1402692278903</updated>
     </task>
-    <option name="localTasksCounter" value="191" />
+    <task id="LOCAL-00191" summary="update">
+      <created>1402714012917</created>
+      <updated>1402714012917</updated>
+    </task>
+    <option name="localTasksCounter" value="192" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1700,35 +1844,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/RecursiveSortingUtility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7358">
-          <caret line="141" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#RecursiveSortingUtility#0" expanded="false" />
-            <element signature="docComment;method#getMergesortThreshold#0;class#RecursiveSortingUtility#0" expanded="false" />
-            <element signature="docComment;method#setMergeSortThreshold#0;class#RecursiveSortingUtility#0" expanded="false" />
-            <element signature="docComment;method#insertionSortIterative#0;class#RecursiveSortingUtility#0" expanded="false" />
-            <element signature="e#1704#1764#0" expanded="false" />
-            <element signature="docComment;method#mergeSortDriver#0;class#RecursiveSortingUtility#0" expanded="false" />
-            <element signature="docComment;method#mergeSortRecursive#0;class#RecursiveSortingUtility#0" expanded="false" />
-            <element signature="e#3807#3915#0" expanded="false" />
-            <element signature="docComment;method#mergeSortedPortions#0;class#RecursiveSortingUtility#0" expanded="false" />
-            <element signature="docComment;method#quickSortDriver#0;class#RecursiveSortingUtility#0" expanded="false" />
-            <element signature="docComment;method#quickSortRecursive#0;class#RecursiveSortingUtility#0" expanded="false" />
-            <element signature="e#7260#7318#0" expanded="false" />
-            <element signature="docComment;method#goodPivotStrategy#0;class#RecursiveSortingUtility#0" expanded="false" />
-            <element signature="docComment;method#betterPivotStrategy#0;class#RecursiveSortingUtility#0" expanded="false" />
-            <element signature="docComment;method#bestPivotStrategy#0;class#RecursiveSortingUtility#0" expanded="false" />
-            <element signature="e#11214#11274#0" expanded="false" />
-            <element signature="docComment;method#generateBestCase#0;class#RecursiveSortingUtility#0" expanded="false" />
-            <element signature="docComment;method#generateAverageCase#0;class#RecursiveSortingUtility#0" expanded="false" />
-            <element signature="docComment;method#generateWorstCase#0;class#RecursiveSortingUtility#0" expanded="false" />
-            <element signature="docComment;method#swapElements#0;class#RecursiveSortingUtility#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework07/TreePanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="2601">
@@ -2067,38 +2182,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/RecursiveSortingUtility.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1612">
-          <caret line="362" column="0" selection-start-line="362" selection-start-column="0" selection-end-line="362" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1743" max-vertical-offset="9542">
+          <caret line="82" column="48" selection-start-line="82" selection-start-column="48" selection-end-line="82" selection-end-column="48" />
           <folding>
-            <element signature="docComment;class#RecursiveSortingUtility#0" expanded="false" />
-            <element signature="docComment;method#getMergesortThreshold#0;class#RecursiveSortingUtility#0" expanded="false" />
-            <element signature="docComment;method#setMergeSortThreshold#0;class#RecursiveSortingUtility#0" expanded="false" />
-            <element signature="docComment;method#insertionSortIterative#0;class#RecursiveSortingUtility#0" expanded="false" />
-            <element signature="e#1704#1764#0" expanded="false" />
-            <element signature="docComment;method#mergeSortDriver#0;class#RecursiveSortingUtility#0" expanded="false" />
-            <element signature="docComment;method#mergeSortRecursive#0;class#RecursiveSortingUtility#0" expanded="false" />
-            <element signature="e#3807#3915#0" expanded="false" />
-            <element signature="docComment;method#mergeSortedPortions#0;class#RecursiveSortingUtility#0" expanded="false" />
-            <element signature="docComment;method#quickSortDriver#0;class#RecursiveSortingUtility#0" expanded="false" />
-            <element signature="docComment;method#quickSortRecursive#0;class#RecursiveSortingUtility#0" expanded="false" />
-            <element signature="e#7260#7318#0" expanded="false" />
-            <element signature="docComment;method#goodPivotStrategy#0;class#RecursiveSortingUtility#0" expanded="false" />
-            <element signature="docComment;method#betterPivotStrategy#0;class#RecursiveSortingUtility#0" expanded="false" />
-            <element signature="docComment;method#bestPivotStrategy#0;class#RecursiveSortingUtility#0" expanded="false" />
-            <element signature="e#11214#11274#0" expanded="false" />
-            <element signature="docComment;method#generateBestCase#0;class#RecursiveSortingUtility#0" expanded="false" />
-            <element signature="docComment;method#generateAverageCase#0;class#RecursiveSortingUtility#0" expanded="false" />
-            <element signature="docComment;method#generateWorstCase#0;class#RecursiveSortingUtility#0" expanded="false" />
-            <element signature="docComment;method#swapElements#0;class#RecursiveSortingUtility#0" expanded="false" />
+            <element signature="e#978#979#0" expanded="true" />
+            <element signature="e#1019#1020#0" expanded="true" />
+            <element signature="e#1248#1249#0" expanded="true" />
+            <element signature="e#1301#1302#0" expanded="true" />
+            <element signature="method#insertionSortIterative#0;class#RecursiveSortingUtility#0" expanded="true" />
+            <element signature="method#mergeSortDriver#0;class#RecursiveSortingUtility#0" expanded="true" />
+            <element signature="method#mergeSortedPortions#0;class#RecursiveSortingUtility#0" expanded="true" />
+            <element signature="method#quickSortDriver#0;class#RecursiveSortingUtility#0" expanded="true" />
+            <element signature="method#quickSortRecursive#0;class#RecursiveSortingUtility#0" expanded="true" />
+            <element signature="method#goodPivotStrategy#0;class#RecursiveSortingUtility#0" expanded="true" />
+            <element signature="method#betterPivotStrategy#0;class#RecursiveSortingUtility#0" expanded="true" />
+            <element signature="method#bestPivotStrategy#0;class#RecursiveSortingUtility#0" expanded="true" />
+            <element signature="method#generateBestCase#0;class#RecursiveSortingUtility#0" expanded="true" />
+            <element signature="e#13116#13125#0" expanded="true" />
+            <element signature="method#generateAverageCase#0;class#RecursiveSortingUtility#0" expanded="true" />
+            <element signature="method#generateWorstCase#0;class#RecursiveSortingUtility#0" expanded="true" />
+            <element signature="e#14390#14399#0" expanded="true" />
+            <element signature="method#swapElements#0;class#RecursiveSortingUtility#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/RecursiveSortingTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33294392" vertical-offset="1" max-vertical-offset="3432">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="3978" max-vertical-offset="7150">
+          <caret line="265" column="49" selection-start-line="265" selection-start-column="49" selection-end-line="265" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setUp#0;class#RecursiveSortingTester#0" expanded="true" />
+            <element signature="method#testSetMergeSortThreshold#0;class#RecursiveSortingTester#0" expanded="true" />
+            <element signature="method#testMergeSortDriver#0;class#RecursiveSortingTester#0" expanded="true" />
+            <element signature="method#testQuickSortDriver#0;class#RecursiveSortingTester#0" expanded="true" />
+            <element signature="method#testGoodPivotStrategy#0;class#RecursiveSortingTester#0" expanded="true" />
+            <element signature="method#testBetterPivotStrategy#0;class#RecursiveSortingTester#0" expanded="true" />
+            <element signature="method#testBestPivotStrategy#0;class#RecursiveSortingTester#0" expanded="true" />
+            <element signature="method#testGenerateBestCase#0;class#RecursiveSortingTester#0" expanded="true" />
+            <element signature="method#testGenerateAverageCase#0;class#RecursiveSortingTester#0" expanded="true" />
+            <element signature="method#testGenerateWorstCase#0;class#RecursiveSortingTester#0" expanded="true" />
+            <element signature="method#testSwapElements#0;class#RecursiveSortingTester#0" expanded="true" />
+            <element signature="method#inversionCounter#0;class#RecursiveSortingTester#0" expanded="true" />
+            <element signature="method#testPrintSuccessMessage#0;class#RecursiveSortingTester#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/RecursiveSortingTimer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9392523" vertical-offset="1224" max-vertical-offset="2184">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding>
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#352#353#0" expanded="true" />
+            <element signature="method#RecursiveSortingTimer#0;class#RecursiveSortingTimer#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

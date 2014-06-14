@@ -80,7 +80,6 @@ public class RecursiveSortingUtility {
 
         // handle base case when list portion reaches size of mergsortThreshold.
         if (end - start <= mergesortThreshold && mergesortThreshold > 1) {
-//            System.out.println("Insertion sorting with size " + (end - start)); // TODO: this statement never executes when the test is run! =/
             insertionSortIterative(list, start, end);
             return;
         }
@@ -245,7 +244,7 @@ public class RecursiveSortingUtility {
      * @param end   - end index of the subarray  of objects
      *
      * @return Pivot index. Three random non-repeating indexes are generated and the returned index is the median valued
-     *         element of the three elements at those indices.
+     * element of the three elements at those indices.
      */
     public static <T extends Comparable<? super T>> int bestPivotStrategy(ArrayList<T> list, int start, int end) {
         // declare 3 int variables to hold the 3 random indices
