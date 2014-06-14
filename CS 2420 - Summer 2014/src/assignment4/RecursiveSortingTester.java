@@ -11,10 +11,10 @@ import java.util.ArrayList;
  * @author Casey Nordgran
  * @version 6/12/2014
  */
-public class RecursiveSortingUtilityTest extends TestCase {
+public class RecursiveSortingTester extends TestCase {
 
     /// all of the ArrayLists of Integer type used in each method for testing
-    ArrayList<Integer> mergeSortList, quickSortList, pivotStrategyList, bestCaseArray, worstCaseArray, averageCaseArray,
+    ArrayList<Integer> mergeSortList, quickSortList, pivotStrategyList, bestCaseArray, worstCaseArray,
             swapElementsList, expectedSwapArray;
 
     // listSize is defines generated list size as well as range of values
@@ -181,7 +181,7 @@ public class RecursiveSortingUtilityTest extends TestCase {
         // for each loop, send a new generateAverageCase returned ArrayList to the inversionCounter method
         // and add the amount of inversion in that list for that loop to inversionSum
         for (int i = 0; i < testCount; i++)
-            inversionSum += RecursiveSortingUtilityTest.inversionCounter(RecursiveSortingUtility.generateAverageCase(listSize));
+            inversionSum += RecursiveSortingTester.inversionCounter(RecursiveSortingUtility.generateAverageCase(listSize));
 
         // determine average amount of inversions for N inputs and amount of times tested equal to testCount
         double averageInversions = (double) inversionSum / testCount;
@@ -255,5 +255,13 @@ public class RecursiveSortingUtilityTest extends TestCase {
                 if (list.get(i).compareTo(list.get(j)) > 0)
                     inversionSum++;
         return inversionSum;
+    }
+
+    /**
+     * Prints a message to show completion of JUnit tests
+     */
+    public static void testPrintSuccessMessage() {
+        System.out.println("If no exceptions were thrown and this message printed then all JUnit tests were successfully" +
+                " passed!");
     }
 }
