@@ -11,7 +11,7 @@ import java.util.ArrayList;
  */
 public class RecursiveSortingTimer {
     int arraySize = 1000;
-    long timesToLoop = 100;
+    long timesToLoop = 50;
 
     public static void main(String[] args) {
         new RecursiveSortingTimer();
@@ -21,17 +21,9 @@ public class RecursiveSortingTimer {
 
         System.out.println("Size = " + arraySize + ", loops = " + timesToLoop + "\n\nTime\tThreshold");
 
-        ArrayList<Integer> sortList = RecursiveSortingUtility.generateAverageCase(arraySize);
-        ArrayList<Integer> testArray;
-
-//        for (int i = 1000; i <= 40000 ; i += 2000) {
-//
-//        }
-
-
         // loop through cutoff values and find the average time and number of comparisons for sorting an array of size
         // 100,000 with that cutoff value, then print the results
-        for (int i = 2; i < 30; i++) {
+        for (int i = 0; i < 30; i++) {
 
             // change the cutoff value
             RecursiveSortingUtility.setMergeSortThreshold(i);
@@ -51,7 +43,7 @@ public class RecursiveSortingTimer {
             startTime = System.nanoTime();
             for (long j = 0; j < timesToLoop; j++) {
                 // create a random array of data and sort it
-                testArray = new ArrayList<Integer>(sortList);
+                ArrayList<Integer> sortList = RecursiveSortingUtility.generateAverageCase(arraySize);
                 RecursiveSortingUtility.mergeSortDriver(sortList);
             }
 
@@ -60,7 +52,7 @@ public class RecursiveSortingTimer {
             // Calculate the cost of looping
 
             for (long j = 0; j < timesToLoop; j++) {
-                testArray = new ArrayList<Integer>(sortList);
+                // empty block
             }
 
             stopTime = System.nanoTime();
@@ -69,7 +61,7 @@ public class RecursiveSortingTimer {
             // from the cost of running the loop and sorting the array.
             // Average it over the number of runs.
             double averageTime = ((midpointTime - startTime) - (stopTime - midpointTime)) / timesToLoop;
-            averageTime /= 1.0e9;
+            averageTime /= 1e9;
 
             // print out tab-delimited results
             System.out.println(averageTime + "\t" + RecursiveSortingUtility.getMergesortThreshold());
