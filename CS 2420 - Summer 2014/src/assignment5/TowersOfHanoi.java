@@ -177,9 +177,10 @@ public class TowersOfHanoi {
         // throw exception if either tower is empty
         if (fromStack.isEmpty() || fromStack == toStack)
             throw new Exception("Abort! Illegal tower request!");
-        if (fromStack.peek().compareTo(toStack.peek()) >= 0 && ! toStack.isEmpty())
-            throw new Exception("Abort! Illegal disc movement!");
-
+        if (! toStack.isEmpty()) {
+            if (fromStack.peek() > toStack.peek())
+                throw new Exception("Abort! Illegal disc movement!");
+        }
 
         // Move one disc from the "from" tower to the "to" tower
         // If you made a move, increment this towers object's numOfMoves field.

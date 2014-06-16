@@ -50,13 +50,15 @@ public class MyLinkedList<E> implements List<E> {
      */
     public void addLast(E o) {
         // if this is first add, call addFirst
-        if (size == 0) addFirst(o);
-
-        // otherwise add new node, interchange references, assign new node as tail.
-        tail.next = new Node(o);
-        tail.next.prev = tail;
-        tail = tail.next;
-        size++;
+        if (size == 0) {
+            addFirst(o);
+        } else {
+            // otherwise add new node, interchange references, assign new node as tail.
+            tail.next = new Node(o);
+            tail.next.prev = tail;
+            tail = tail.next;
+            size++;
+        }
     }
 
     /**
@@ -67,26 +69,23 @@ public class MyLinkedList<E> implements List<E> {
         // check bounds and throw exception if necessary
         if (index == 0) {
             this.addFirst(element);
-            return;
-        }
-        if (index == size - 1) {
+        } else if (index == size - 1) {
             this.addLast(element);
-            return;
-        }
-        if (index < 0 || index >= size)
+        } else if (index < 0 || index >= size)
             throw new IndexOutOfBoundsException();
+        else {
+            Node prevNode, nextNode = head;
+            for (int i = 0; i < index; i++) {
+                nextNode = nextNode.next;
+            }
+            prevNode = nextNode.prev;
 
-        Node prevNode, nextNode = head;
-        for (int i = 0; i < index; i++) {
-            nextNode = nextNode.next;
+            prevNode.next = new Node(element);
+            nextNode.prev = prevNode.next;
+            prevNode.next.prev = prevNode;
+            nextNode.prev.next = nextNode;
+            size++;
         }
-        prevNode = nextNode.prev;
-
-        prevNode.next = new Node(element);
-        nextNode.prev = prevNode.next;
-        prevNode.next.prev = prevNode;
-        nextNode.prev.next = nextNode;
-        size++;
     }
 
     /**
@@ -145,14 +144,15 @@ public class MyLinkedList<E> implements List<E> {
             tail = null;
             size--;
             return item;
+        } else {
+            // store the data at head first, set head to second item, set first item to null
+            item = head.data;
+            head = head.next;
+            head.prev = null;
+            size--;
+            // return the stored data item
+            return item;
         }
-        // store the data at head first, set head to second item, set first item to null
-        item = head.data;
-        head = head.next;
-        head.prev = null;
-        size--;
-        // return the stored data item
-        return item;
     }
 
     /**
@@ -172,15 +172,15 @@ public class MyLinkedList<E> implements List<E> {
             tail = null;
             size--;
             return item;
+        } else {
+            // store the data at tail first, set tail to second to last item, set last item to null
+            item = tail.data;
+            tail = tail.prev;
+            tail.next = null;
+            size--;
+            // return the stored data item
+            return item;
         }
-
-        // store the data at tail first, set tail to second to last item, set last item to null
-        item = tail.data;
-        tail = tail.prev;
-        tail.next = null;
-        size--;
-        // return the stored data item
-        return item;
     }
 
     /**
