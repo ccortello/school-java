@@ -68,7 +68,6 @@ public class TowersOfHanoi {
                 try {
                     System.out.println("\nInitial state of the Towers of Hanoi:");
                     System.out.println(myTowers.toString());
-                    System.out.println("after myTowers.toString");
 
                     myTowers.solve(); // Ensure the solution finding process is exception free
 
@@ -153,8 +152,8 @@ public class TowersOfHanoi {
         // Throw an exception for every illegal case.
 
         // initialize variables to point to the two towers where the move is taking place
-        MyStack<Integer> fromStack = null;
-        MyStack<Integer> toStack = null;
+        MyStack<Integer> fromStack;
+        MyStack<Integer> toStack;
 
         // throw exception if an incorrect tower is requested
         if (from == 'A')
