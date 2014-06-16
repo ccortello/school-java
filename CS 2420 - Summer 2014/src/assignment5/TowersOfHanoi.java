@@ -155,12 +155,16 @@ public class TowersOfHanoi {
         // initialize variables to point to the two towers where the move is taking place
         MyStack<Integer> fromStack = null;
         MyStack<Integer> toStack = null;
+
+        // throw exception if an incorrect tower is requested
         if (from == 'A')
             fromStack = towerA;
         else if (from == 'B')
             fromStack = towerB;
         else if (from == 'C')
             fromStack = towerC;
+        else
+            throw new Exception("Illegal 'from' tower");
 
         if (to == 'A')
             toStack = towerA;
@@ -168,11 +172,7 @@ public class TowersOfHanoi {
             toStack = towerB;
         else if (to == 'C')
             toStack = towerC;
-
-        // throw exception if an incorrect tower is requested
-        if (fromStack == null)
-            throw new Exception("Illegal 'from' tower");
-        if (toStack == null)
+        else
             throw new Exception("Illegal 'to' tower");
 
         // throw exception if either tower is empty
