@@ -179,7 +179,7 @@ public class MyLinkedList<E> implements List<E> {
      */
     public E get(int index) throws IndexOutOfBoundsException {
         // check for a correct index
-        if (index < 0 || index > size)
+        if (index < 0 || index > size - 1)
             throw new IndexOutOfBoundsException();
 
         // handle removing from a list with one Node
@@ -262,6 +262,7 @@ public class MyLinkedList<E> implements List<E> {
         if (head == null)
             return false;
         Node currentNode = head;
+
     }
 
     /**
