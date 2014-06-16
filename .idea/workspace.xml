@@ -66,8 +66,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <breakpoint_rules converted="true" />
     <ui_properties converted="true" />
+    <breakpoint_rules converted="true" />
   </component>
   <component name="ErrorTreeViewConfiguration">
     <option name="autoscrollToSource" value="true" />
@@ -81,22 +81,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="List.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/List.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="416" max-vertical-offset="2990">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MyLinkedList.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="6214" max-vertical-offset="10972">
-              <caret line="239" column="17" selection-start-line="239" selection-start-column="17" selection-end-line="239" selection-end-column="17" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2033" max-vertical-offset="9744">
+              <caret line="88" column="75" selection-start-line="88" selection-start-column="75" selection-end-line="88" selection-end-column="75" />
+              <folding>
+                <element signature="method#addFirst#0;class#MyLinkedList#0" expanded="true" />
+                <element signature="method#addLast#0;class#MyLinkedList#0" expanded="true" />
+                <element signature="method#add#0;class#MyLinkedList#0" expanded="true" />
+                <element signature="method#findNode#0;class#MyLinkedList#0" expanded="true" />
+                <element signature="method#getFirst#0;class#MyLinkedList#0" expanded="true" />
+                <element signature="method#getLast#0;class#MyLinkedList#0" expanded="true" />
+                <element signature="method#get#0;class#MyLinkedList#0" expanded="true" />
+                <element signature="method#removeFirst#0;class#MyLinkedList#0" expanded="true" />
+                <element signature="method#removeLast#0;class#MyLinkedList#0" expanded="true" />
+                <element signature="method#remove#0;class#MyLinkedList#0" expanded="true" />
+                <element signature="method#remove#1;class#MyLinkedList#0" expanded="true" />
+                <element signature="method#contains#0;class#MyLinkedList#0" expanded="true" />
+                <element signature="method#indexOf#0;class#MyLinkedList#0" expanded="true" />
+                <element signature="method#lastIndexOf#0;class#MyLinkedList#0" expanded="true" />
+                <element signature="method#clear#0;class#MyLinkedList#0" expanded="true" />
+                <element signature="method#toArray#0;class#MyLinkedList#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,33 +111,32 @@
       <file leaf-file-name="LinkedStructureTester.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23935558" vertical-offset="546" max-vertical-offset="1950">
-              <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.5063291" vertical-offset="3642" max-vertical-offset="4511">
+              <caret line="314" column="5" selection-start-line="314" selection-start-column="5" selection-end-line="314" selection-end-column="5" />
               <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#283#291#0" expanded="true" />
                 <element signature="method#testAddFirst#0;class#LinkedStructureTester#0" expanded="true" />
                 <element signature="method#testAddLast#0;class#LinkedStructureTester#0" expanded="true" />
                 <element signature="method#testAdd#0;class#LinkedStructureTester#0" expanded="true" />
+                <element signature="method#testGetFirst#0;class#LinkedStructureTester#0" expanded="true" />
+                <element signature="method#testGetLast#0;class#LinkedStructureTester#0" expanded="true" />
+                <element signature="method#testGet#0;class#LinkedStructureTester#0" expanded="true" />
+                <element signature="method#testRemoveFirst#0;class#LinkedStructureTester#0" expanded="true" />
+                <element signature="method#testRemoveLast#0;class#LinkedStructureTester#0" expanded="true" />
+                <element signature="method#testRemove#0;class#LinkedStructureTester#0" expanded="true" />
+                <element signature="method#testRemove1#0;class#LinkedStructureTester#0" expanded="true" />
+                <element signature="method#testContains#0;class#LinkedStructureTester#0" expanded="true" />
+                <element signature="method#testIndexOf#0;class#LinkedStructureTester#0" expanded="true" />
+                <element signature="method#testLastIndexOf#0;class#LinkedStructureTester#0" expanded="true" />
+                <element signature="method#testSize#0;class#LinkedStructureTester#0" expanded="true" />
+                <element signature="method#testIsEmpty#0;class#LinkedStructureTester#0" expanded="true" />
+                <element signature="method#testClear#0;class#LinkedStructureTester#0" expanded="true" />
+                <element signature="method#testToArray#0;class#LinkedStructureTester#0" expanded="true" />
+                <element signature="method#testBulkTest#0;class#LinkedStructureTester#0" expanded="true" />
+                <element signature="e#13127#13136#0" expanded="true" />
+                <element signature="e#13192#13201#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TowersOfHanoi.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/TowersOfHanoi.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1794" max-vertical-offset="6682">
-              <caret line="69" column="60" selection-start-line="69" selection-start-column="60" selection-end-line="69" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyStack.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyStack.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1924" max-vertical-offset="2236">
-              <caret line="74" column="7" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -248,6 +254,58 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="CS 2420 - Summer 2014">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="CS 2420 - Summer 2014">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Problems">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="CS 2420 - Summer 2014">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="CS 2420 - Summer 2014">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -306,58 +364,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="assignment5" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Default">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="CS 2420 - Summer 2014">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="CS 2420 - Summer 2014">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Problems">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="CS 2420 - Summer 2014">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="CS 2420 - Summer 2014">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -583,6 +589,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -608,19 +627,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1639,10 +1645,10 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5140625" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.14166667" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3171521" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31484503" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1661,8 +1667,8 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26968718" sideWeight="0.36969253" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -2041,7 +2047,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1743" max-vertical-offset="9542">
           <caret line="82" column="48" selection-start-line="82" selection-start-column="48" selection-end-line="82" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2049,42 +2054,76 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="2070">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/TowersOfHanoi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4626">
-          <caret line="69" column="60" selection-start-line="69" selection-start-column="60" selection-end-line="69" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1612" max-vertical-offset="6682">
+          <caret line="62" column="60" selection-start-line="62" selection-start-column="60" selection-end-line="62" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.364486" vertical-offset="184" max-vertical-offset="1612">
+          <caret line="74" column="7" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3522" max-vertical-offset="7452">
-          <caret line="239" column="17" selection-start-line="239" selection-start-column="17" selection-end-line="239" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="871" max-vertical-offset="1440">
-          <caret line="74" column="7" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2033" max-vertical-offset="9744">
+          <caret line="88" column="75" selection-start-line="88" selection-start-column="75" selection-end-line="88" selection-end-column="75" />
+          <folding>
+            <element signature="method#addFirst#0;class#MyLinkedList#0" expanded="true" />
+            <element signature="method#addLast#0;class#MyLinkedList#0" expanded="true" />
+            <element signature="method#add#0;class#MyLinkedList#0" expanded="true" />
+            <element signature="method#findNode#0;class#MyLinkedList#0" expanded="true" />
+            <element signature="method#getFirst#0;class#MyLinkedList#0" expanded="true" />
+            <element signature="method#getLast#0;class#MyLinkedList#0" expanded="true" />
+            <element signature="method#get#0;class#MyLinkedList#0" expanded="true" />
+            <element signature="method#removeFirst#0;class#MyLinkedList#0" expanded="true" />
+            <element signature="method#removeLast#0;class#MyLinkedList#0" expanded="true" />
+            <element signature="method#remove#0;class#MyLinkedList#0" expanded="true" />
+            <element signature="method#remove#1;class#MyLinkedList#0" expanded="true" />
+            <element signature="method#contains#0;class#MyLinkedList#0" expanded="true" />
+            <element signature="method#indexOf#0;class#MyLinkedList#0" expanded="true" />
+            <element signature="method#lastIndexOf#0;class#MyLinkedList#0" expanded="true" />
+            <element signature="method#clear#0;class#MyLinkedList#0" expanded="true" />
+            <element signature="method#toArray#0;class#MyLinkedList#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23935558" vertical-offset="546" max-vertical-offset="1950">
-          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.5063291" vertical-offset="3642" max-vertical-offset="4511">
+          <caret line="314" column="5" selection-start-line="314" selection-start-column="5" selection-end-line="314" selection-end-column="5" />
           <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#283#291#0" expanded="true" />
             <element signature="method#testAddFirst#0;class#LinkedStructureTester#0" expanded="true" />
             <element signature="method#testAddLast#0;class#LinkedStructureTester#0" expanded="true" />
             <element signature="method#testAdd#0;class#LinkedStructureTester#0" expanded="true" />
+            <element signature="method#testGetFirst#0;class#LinkedStructureTester#0" expanded="true" />
+            <element signature="method#testGetLast#0;class#LinkedStructureTester#0" expanded="true" />
+            <element signature="method#testGet#0;class#LinkedStructureTester#0" expanded="true" />
+            <element signature="method#testRemoveFirst#0;class#LinkedStructureTester#0" expanded="true" />
+            <element signature="method#testRemoveLast#0;class#LinkedStructureTester#0" expanded="true" />
+            <element signature="method#testRemove#0;class#LinkedStructureTester#0" expanded="true" />
+            <element signature="method#testRemove1#0;class#LinkedStructureTester#0" expanded="true" />
+            <element signature="method#testContains#0;class#LinkedStructureTester#0" expanded="true" />
+            <element signature="method#testIndexOf#0;class#LinkedStructureTester#0" expanded="true" />
+            <element signature="method#testLastIndexOf#0;class#LinkedStructureTester#0" expanded="true" />
+            <element signature="method#testSize#0;class#LinkedStructureTester#0" expanded="true" />
+            <element signature="method#testIsEmpty#0;class#LinkedStructureTester#0" expanded="true" />
+            <element signature="method#testClear#0;class#LinkedStructureTester#0" expanded="true" />
+            <element signature="method#testToArray#0;class#LinkedStructureTester#0" expanded="true" />
+            <element signature="method#testBulkTest#0;class#LinkedStructureTester#0" expanded="true" />
+            <element signature="e#13127#13136#0" expanded="true" />
+            <element signature="e#13192#13201#0" expanded="true" />
           </folding>
         </state>
       </provider>
