@@ -373,7 +373,7 @@ public class MyLinkedList<E> implements List<E> {
      * Returns true if this collection contains no elements. O(1) for a doubly-linked list.
      */
     public boolean isEmpty() {
-        return (size == 0)
+        return (size == 0);
     }
 
     /**
@@ -390,8 +390,17 @@ public class MyLinkedList<E> implements List<E> {
      * O(N) for a doubly-linked list.
      */
     public Object[] toArray() {
-        Object[] result = null;
-        //TODO
+        // initialize return array and Node pointer for iteration
+        Object[] result = new Object[size];
+        Node currentNode = head;
+
+        // add each Node in the list to the return array
+        for (int i = 0; i < size - 1; i++) {
+            result[i] = currentNode;
+            currentNode = currentNode.prev;
+        }
+
+        // returnn the array
         return result;
     }
 
