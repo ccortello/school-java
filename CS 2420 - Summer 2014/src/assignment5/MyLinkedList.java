@@ -101,21 +101,49 @@ public class MyLinkedList<E> implements List<E> {
 
         // if the element needs to be inserted somewhere in the middle find the Nodes around the insertion point and
         //  update the fields of all three Nodes.
-        Node insertNodePrev = head, insertNode, insertNodeNext = null;
-
-        // if the Node is closer to the beginning then iterate from the head
-        int insertIndex = 0;
-        while (insertIndex != index) {
-            insertNodePrev = insertNodePrev.next;
-            insertIndex++;
-        }
-        insertNodeNext = insertNodePrev.next;
-        insertNode = new Node(element);
+        Node insertNodePrev = findNode(index);
+        Node insertNodeNext = insertNodePrev.next;
+        Node insertNode = new Node(element);
         insertNodePrev.next = insertNode;
         insertNode.prev = insertNodePrev;
         insertNodeNext.prev = insertNode;
         insertNode.next = insertNodeNext;
         size++;
+    }
+
+    /**
+     * Returns a pointer to the Node at a specified index. Assumes index is in the correct range. O(N) for a
+     * doubly-linked list.
+     */
+    private Node findNode(int index) {
+        // handle finding head and tail Nodes
+        if (index == 0)
+            return head;
+        else if (index == size - 1)
+            return tail;
+
+        // otherwise find the Node according to which end it is closer to
+        Node insertNodePrev;
+
+        // if the Node is closer to the beginning then iterate from the head
+        if (size / 2 > index) {
+            insertNodePrev = head;
+            int insertIndex = 0;
+            while (insertIndex != index) {
+                insertNodePrev = insertNodePrev.next;
+                insertIndex++;
+            }
+        }
+
+        // if the Node is closer to the end then iterate from the tail
+        else {
+            insertNodePrev = tail;
+            int insertIndex = size - 1;
+            while (insertIndex != index) {
+                insertNodePrev = insertNodePrev.prev;
+                insertIndex--;
+            }
+        }
     }
 
     /**
@@ -153,10 +181,10 @@ public class MyLinkedList<E> implements List<E> {
             // find the node to return and return it
         else {
             Node returnNode = head;
-            int addIndex = 0;
-            while (addIndex != index) {
+            int getIndex = 0;
+            while (getIndex != index) {
                 returnNode = returnNode.next;
-                addIndex++;
+                getIndex++;
             }
             return returnNode.data;
         }
@@ -200,9 +228,9 @@ public class MyLinkedList<E> implements List<E> {
      */
     public E remove(int index) throws IndexOutOfBoundsException {
         // check for a correct index
-        if (index < 0 || index > size - 1) {
-
-        }
+        if (index < 0 || index > size - 1)
+            throw new IndexOutOfBoundsException();
+        if ()
     }
 
     /**
