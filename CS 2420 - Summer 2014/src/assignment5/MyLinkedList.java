@@ -103,7 +103,7 @@ public class MyLinkedList<E> implements List<E> {
         //  update the fields of all three Nodes.
         Node insertNodePrev = head, insertNode, insertNodeNext = null;
 
-        // if the Node is closer to the beginning
+        // if the Node is closer to the beginning then iterate from the head
         int insertIndex = 0;
         while (insertIndex != index) {
             insertNodePrev = insertNodePrev.next;
@@ -199,9 +199,10 @@ public class MyLinkedList<E> implements List<E> {
      * is out of range. O(N) for a doubly-linked list.
      */
     public E remove(int index) throws IndexOutOfBoundsException {
-        E item = null;
-        //TODO
-        return item;
+        // check for a correct index
+        if (index < 0 || index > size - 1) {
+
+        }
     }
 
     /**
@@ -260,7 +261,9 @@ public class MyLinkedList<E> implements List<E> {
      * Removes all of the elements from this list. O(1) for a doubly-linked list.
      */
     public void clear() {
-        //TODO
+        tail = null;
+        head = null;
+        size = 0;
     }
 
     /**
