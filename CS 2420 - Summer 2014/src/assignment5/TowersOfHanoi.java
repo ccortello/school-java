@@ -68,6 +68,7 @@ public class TowersOfHanoi {
                 try {
                     System.out.println("\nInitial state of the Towers of Hanoi:");
                     System.out.println(myTowers.toString());
+                    System.out.println("after myTowers.toString");
 
                     myTowers.solve(); // Ensure the solution finding process is exception free
 
@@ -82,7 +83,6 @@ public class TowersOfHanoi {
                 }
                 catch (Exception e) {
                     System.err.println("ERROR: " + e.getMessage());
-                    return;
                 }
         }
     }
