@@ -202,6 +202,14 @@ public class MyLinkedList<E> implements List<E> {
         // check for a first element
         if (size == 0)
             throw new NoSuchElementException();
+
+        // handle removing from a list with one Node
+        if (size == 1) {
+            E data = head.data;
+            clear();
+            return data;
+        }
+
         // otherwise mark the head, update Node fields, decrement size, and return the correct data
         Node returnNode = head;
         head = head.next;
@@ -220,13 +228,13 @@ public class MyLinkedList<E> implements List<E> {
             throw new NoSuchElementException();
 
         // handle removing from a list with one Node
-        if (size == 1) {
+        else if (size == 1) {
             E data = head.data;
             clear();
             return data;
         }
 
-        // otherwise mark the head, update Node fields, decrement size, and return the correct data
+        // otherwise mark the tail, update Node fields, decrement size, and return the correct data
         Node returnNode = tail;
         tail = tail.prev;
         tail.prev = null;
@@ -246,6 +254,16 @@ public class MyLinkedList<E> implements List<E> {
         // check for a correct index
         if (index < 0 || index > size - 1)
             throw new IndexOutOfBoundsException();
+        // handle removing head or tail
+        if (index == 0) {
+            E data = head.data;
+            removeFirst();
+            return data;
+        } else if (index == size - 1) {
+            E data = tail.data;
+            removeLast();
+            return data;
+        }
 
         // find the node, remove the pointers to it, and return its data
         Node removeNode = findNode(index);
