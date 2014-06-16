@@ -307,8 +307,17 @@ public class MyLinkedList<E> implements List<E> {
      * for a doubly-linked list.
      */
     public boolean contains(E element) {
-        // TODO
-        return false;
+        // handle null case
+        if (head == null)
+            return false;
+
+        // find the node with the passed data
+        Node currentNode = head;
+        while (currentNode != null && !currentNode.data.equals(element))
+            currentNode = currentNode.next;
+
+        // if the entire list was iterated through return false
+        return (currentNode != null);
     }
 
     /**
@@ -316,8 +325,20 @@ public class MyLinkedList<E> implements List<E> {
      * contain the element. O(N) for a doubly-linked list.
      */
     public int indexOf(E element) {
-        //TODO
-        return 0;
+        // handle null case
+        if (head == null)
+            return -1;
+
+        // find the node with the passed data
+        Node currentNode = head;
+        int index = 0;
+        while (currentNode != null && !currentNode.data.equals(element)) {
+            currentNode = currentNode.next;
+            index++;
+        }
+
+        // if the entire list was iterated through return -1
+        return (currentNode == null) ? -1 : index;
     }
 
     /**
@@ -325,24 +346,34 @@ public class MyLinkedList<E> implements List<E> {
      * contain the element. O(N) for a doubly-linked list.
      */
     public int lastIndexOf(E element) {
-        //TODO
-        return 0;
+        // handle null case
+        if (head == null)
+            return -1;
+
+        // find the last node with the passed data
+        Node currentNode = tail;
+        int index = size - 1;
+        while (currentNode != null && !currentNode.data.equals(element)) {
+            currentNode = currentNode.prev;
+            index--;
+        }
+
+        // if the entire list was iterated through return -1
+        return (currentNode == null) ? -1 : index;
     }
 
     /**
      * Returns the number of elements in this list. O(1) for a doubly-linked list.
      */
     public int size() {
-        //TODO
-        return 0;
+        return size;
     }
 
     /**
      * Returns true if this collection contains no elements. O(1) for a doubly-linked list.
      */
     public boolean isEmpty() {
-        //TODO
-        return false;
+        return (size == 0)
     }
 
     /**
