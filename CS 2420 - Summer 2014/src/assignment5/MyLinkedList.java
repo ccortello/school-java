@@ -88,8 +88,9 @@ public class MyLinkedList<E> implements List<E> {
      */
     public void add(int index, E element) throws IndexOutOfBoundsException {
         // check for a correct index
-        if (index > size)
+        if (index < 0 || index > size)
             throw new IndexOutOfBoundsException();
+        // call the correct method if the element should be added first or last
         if (index == 0) {
             addFirst(element);
             return;
@@ -97,16 +98,24 @@ public class MyLinkedList<E> implements List<E> {
             addLast(element);
             return;
         }
+
+        // if the element needs to be inserted somewhere in the middle find the Nodes around the insertion point and
+        //  update the fields of all three Nodes.
         Node insertNodePrev = head, insertNode, insertNodeNext = null;
+
+        // if the Node is closer to the beginning
         int insertIndex = 0;
         while (insertIndex != index) {
             insertNodePrev = insertNodePrev.next;
             insertIndex++;
         }
-        insertNodePrev.next = insertNodeNext;
-        insertNodePrev.next = new Node(element);
         insertNodeNext = insertNodePrev.next;
-
+        insertNode = new Node(element);
+        insertNodePrev.next = insertNode;
+        insertNode.prev = insertNodePrev;
+        insertNodeNext.prev = insertNode;
+        insertNode.next = insertNodeNext;
+        size++;
     }
 
     /**
@@ -114,9 +123,11 @@ public class MyLinkedList<E> implements List<E> {
      * doubly-linked list.
      */
     public E getFirst() throws NoSuchElementException {
-        E item = null;
-        //TODO
-        return item;
+        // check for an empty list
+        if (head == null)
+            throw new NoSuchElementException();
+        else // if there is an item in the list, return it
+            return head.data;
     }
 
     /**
@@ -124,9 +135,11 @@ public class MyLinkedList<E> implements List<E> {
      * doubly-linked list.
      */
     public E getLast() throws NoSuchElementException {
-        E item = null;
-        //TODO
-        return item;
+        // check for an empty list
+        if (tail == null)
+            throw new NoSuchElementException();
+        else // if there is an item in the list, return it
+            return tail.data;
     }
 
     /**
@@ -134,9 +147,19 @@ public class MyLinkedList<E> implements List<E> {
      * range. O(N) for a doubly-linked list.
      */
     public E get(int index) throws IndexOutOfBoundsException {
-        E item = null;
-        //TODO
-        return item;
+        // check for a correct index
+        if (index < 0 || index > size)
+            throw new IndexOutOfBoundsException();
+            // find the node to return and return it
+        else {
+            Node returnNode = head;
+            int addIndex = 0;
+            while (addIndex != index) {
+                returnNode = returnNode.next;
+                addIndex++;
+            }
+            return returnNode.data;
+        }
     }
 
     /**
@@ -144,9 +167,15 @@ public class MyLinkedList<E> implements List<E> {
      * a doubly-linked list.
      */
     public E removeFirst() throws NoSuchElementException {
-        E item = null;
-        //TODO
-        return item;
+        // check for a first element
+        if (size == 0)
+            throw new NoSuchElementException();
+        // otherwise mark the head, update Node fields, decrement size, and return the correct data
+        Node returnNode = head;
+        head = head.next;
+        head.prev = null;
+        size--;
+        return returnNode.data;
     }
 
     /**
@@ -154,9 +183,15 @@ public class MyLinkedList<E> implements List<E> {
      * a doubly-linked list.
      */
     public E removeLast() throws NoSuchElementException {
-        E item = null;
-        //TODO
-        return item;
+        // check for a first element
+        if (size == 0)
+            throw new NoSuchElementException();
+        // otherwise mark the head, update Node fields, decrement size, and return the correct data
+        Node returnNode = tail;
+        tail = tail.prev;
+        tail.prev = null;
+        size--;
+        return returnNode.data;
     }
 
     /**
