@@ -123,27 +123,30 @@ public class MyLinkedList<E> implements List<E> {
             return tail;
 
         // otherwise find the Node according to which end it is closer to
-        Node insertNodePrev;
+        Node currentNode;
 
         // if the Node is closer to the beginning then iterate from the head
         if (size / 2 > index) {
-            insertNodePrev = head;
+            currentNode = head;
             int insertIndex = 0;
             while (insertIndex != index) {
-                insertNodePrev = insertNodePrev.next;
+                currentNode = currentNode.next;
                 insertIndex++;
             }
         }
 
         // if the Node is closer to the end then iterate from the tail
         else {
-            insertNodePrev = tail;
+            currentNode = tail;
             int insertIndex = size - 1;
             while (insertIndex != index) {
-                insertNodePrev = insertNodePrev.prev;
+                currentNode = currentNode.prev;
                 insertIndex--;
             }
         }
+
+        // return whichever Node was found
+        return currentNode;
     }
 
     /**
@@ -178,16 +181,17 @@ public class MyLinkedList<E> implements List<E> {
         // check for a correct index
         if (index < 0 || index > size)
             throw new IndexOutOfBoundsException();
-            // find the node to return and return it
-        else {
-            Node returnNode = head;
-            int getIndex = 0;
-            while (getIndex != index) {
-                returnNode = returnNode.next;
-                getIndex++;
-            }
-            return returnNode.data;
+
+        // handle removing from a list with one Node
+        if (size == 1) {
+            E data = head.data;
+            clear();
+            return data;
         }
+
+        // find the node to return and return it
+        else
+            return findNode(index).data;
     }
 
     /**
@@ -214,6 +218,14 @@ public class MyLinkedList<E> implements List<E> {
         // check for a first element
         if (size == 0)
             throw new NoSuchElementException();
+
+        // handle removing from a list with one Node
+        if (size == 1) {
+            E data = head.data;
+            clear();
+            return data;
+        }
+
         // otherwise mark the head, update Node fields, decrement size, and return the correct data
         Node returnNode = tail;
         tail = tail.prev;
@@ -227,19 +239,29 @@ public class MyLinkedList<E> implements List<E> {
      * is out of range. O(N) for a doubly-linked list.
      */
     public E remove(int index) throws IndexOutOfBoundsException {
+        // handle null list
+        if (size == 0)
+            return null;
+
         // check for a correct index
         if (index < 0 || index > size - 1)
             throw new IndexOutOfBoundsException();
-        if ()
+
+        // find the node, remove the pointers to it, and return its data
+        Node removeNode = findNode(index);
+        removeNode.next.prev = removeNode.prev;
+        removeNode.prev.next = removeNode.next;
+        return removeNode.data;
     }
 
     /**
-     * Removes the first occurrence of the specified element from this list, if it is present Returns true if the
-     * element was found and removed, false otherwise O(N) for a doubly-linked list.
+     * Removes the first occurrence of the specified element from this list, if it is present. Returns true if the
+     * element was found and removed, false otherwise. O(N) for a doubly-linked list.
      */
     public boolean remove(E element) {
-        // TODO
-        return false;
+        if (head == null)
+            return false;
+        Node currentNode = head;
     }
 
     /**
