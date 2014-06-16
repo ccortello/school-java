@@ -8,7 +8,8 @@ import java.util.NoSuchElementException;
  * @param <E> - the type of elements contained in the stack
  *
  * @author Paymon Saebi
- * @author
+ * @author Cody Cortello
+ * @author Casey Nordgran
  * @author Description:
  */
 public class MyStack<E> {
@@ -22,15 +23,14 @@ public class MyStack<E> {
      * Removes all of the elements from the stack.
      */
     public void clear() {
-        //TODO
+        linkedListStack.clear();
     }
 
     /**
      * Returns true if the stack contains no elements.
      */
     public boolean isEmpty() {
-        //TODO
-        return false;
+        return linkedListStack.isEmpty();
     }
 
     /**
@@ -61,8 +61,7 @@ public class MyStack<E> {
      * Returns the number of items in the stack.
      */
     public int size() {
-        //TODO
-        return 0;
+        return linkedListStack.size();
     }
 
     /**
@@ -70,7 +69,6 @@ public class MyStack<E> {
      * O(N) for a doubly-linked list.
      */
     public Object[] toArray() {
-        //TODO
-        return null;
+        return linkedListStack.toArray();
     }
 }

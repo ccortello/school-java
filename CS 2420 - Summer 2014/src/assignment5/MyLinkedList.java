@@ -281,13 +281,25 @@ public class MyLinkedList<E> implements List<E> {
         if (head == null)
             return false;
 
-        //
+        // find the node with the passed data
         Node currentNode = head;
-        while (!currentNode.data.equals(element) && currentNode.next != null)
+        while (currentNode != null && !currentNode.data.equals(element))
             currentNode = currentNode.next;
+
+        // if the entire list was iterated through return false
         if (currentNode == null)
             return false;
 
+        // otherwise, remove the Node
+        if (currentNode.equals(head))
+            removeFirst();
+        else if (currentNode.equals(tail))
+            removeLast();
+        else {
+            currentNode.next.prev = currentNode.prev;
+            currentNode.prev.next = currentNode.next;
+        }
+        return true;
     }
 
     /**
