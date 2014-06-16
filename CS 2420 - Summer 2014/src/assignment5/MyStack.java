@@ -60,7 +60,7 @@ public class MyStack<E> {
      * Pushes the input item onto the top of the stack.
      */
     public void push(E item) {
-        linkedListStack.addFirst(item);
+        linkedListStack.addLast(item);
     }
 
     /**

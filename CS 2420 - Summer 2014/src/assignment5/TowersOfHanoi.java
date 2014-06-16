@@ -82,7 +82,6 @@ public class TowersOfHanoi {
                 }
                 catch (Exception e) {
                     System.err.println("ERROR: " + e.getMessage());
-                    return;
                 }
         }
     }
@@ -151,11 +150,44 @@ public class TowersOfHanoi {
      */
     public void moveDiscSingle(char from, char to) throws Exception {
         // Throw an exception for every illegal case.
-        //TODO
+
+        // initialize variables to point to the two towers where the move is taking place
+        MyStack<Integer> fromStack;
+        MyStack<Integer> toStack;
+
+        // throw exception if an incorrect tower is requested
+        if (from == 'A')
+            fromStack = towerA;
+        else if (from == 'B')
+            fromStack = towerB;
+        else if (from == 'C')
+            fromStack = towerC;
+        else
+            throw new Exception("Illegal 'from' tower");
+
+        if (to == 'A')
+            toStack = towerA;
+        else if (to == 'B')
+            toStack = towerB;
+        else if (to == 'C')
+            toStack = towerC;
+        else
+            throw new Exception("Illegal 'to' tower");
+
+        // throw exception if either tower is empty
+        if (fromStack.isEmpty())
+            throw new Exception("'from' tower is empty");
+        if (toStack.isEmpty())
+            throw new Exception("'to' tower is empty");
+
+        // throw an exception if an illegal move is requested
+        if (fromStack.peek() > toStack.peek())
+            throw new Exception("Illegal move called: " + fromStack.peek() + " cannot be on top of " + toStack.peek());
 
         // Move one disc from the "from" tower to the "to" tower
         // If you made a move, increment this towers object's numOfMoves field.
-        //TODO
+        toStack.push(fromStack.pop());
+        numOfMoves++;
 
         // Leave this code here at the end of the method.
         if (verbose) // Print the state of the towers if the verbose option was passed.
