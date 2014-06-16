@@ -101,8 +101,8 @@ public class MyLinkedList<E> implements List<E> {
 
         // if the element needs to be inserted somewhere in the middle find the Nodes around the insertion point and
         //  update the fields of all three Nodes.
-        Node insertNodePrev = findNode(index);
-        Node insertNodeNext = insertNodePrev.next;
+        Node insertNodeNext = findNode(index);
+        Node insertNodePrev = insertNodeNext.prev;
         Node insertNode = new Node(element);
         insertNodePrev.next = insertNode;
         insertNode.prev = insertNodePrev;
@@ -182,16 +182,8 @@ public class MyLinkedList<E> implements List<E> {
         if (index < 0 || index > size - 1)
             throw new IndexOutOfBoundsException();
 
-        // handle removing from a list with one Node
-        if (size == 1) {
-            E data = head.data;
-            clear();
-            return data;
-        }
-
-        // find the node to return and return it
-        else
-            return findNode(index).data;
+        // return the data at the correct index
+        return findNode(index).data;
     }
 
     /**

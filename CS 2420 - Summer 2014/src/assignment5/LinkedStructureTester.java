@@ -16,7 +16,16 @@ public class LinkedStructureTester extends TestCase {
     }
 
     public void testAdd() throws Exception {
+        MyLinkedList<Integer> testList = new MyLinkedList<Integer>();
+        testList.addFirst(1);
+        testList.addLast(2);
+        testList.addLast(3);
+        testList.addLast(4);
+        testList.addLast(5);
 
+        testList.add(2, 222);
+        for (int i = 0; i < testList.size(); i++)
+            System.out.println(testList.get(i));
     }
 
     public void testGetFirst() throws Exception {
