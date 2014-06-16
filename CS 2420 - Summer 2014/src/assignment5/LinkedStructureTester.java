@@ -98,8 +98,8 @@ public class LinkedStructureTester extends TestCase {
                 addedInts.remove(popInt);
             }
         }
-        System.out.println("Integers added = \n" + addedInts.size());
-        System.out.println("\nCurrent stack size:\n" + stack.size());
+//        System.out.println("Integers added = \n" + addedInts.size());
+//        System.out.println("\nCurrent stack size:\n" + stack.size());
         assertEquals(addedInts.size(), stack.size());
     }
 }
