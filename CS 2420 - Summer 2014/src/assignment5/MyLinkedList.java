@@ -8,7 +8,8 @@ import java.util.NoSuchElementException;
  * @param <E> - the type of elements contained in the linked list
  *
  * @author Paymon Saebi
- * @author
+ * @author Cody Cortello
+ * @author Casey Nordgran
  * @author Description:
  */
 public class MyLinkedList<E> implements List<E> {
@@ -21,7 +22,7 @@ public class MyLinkedList<E> implements List<E> {
      * Constructor.  Creates a blank linked list.
      */
     public MyLinkedList() {
-        //TODO
+        int size = 0;
     }
 
     /**
@@ -30,16 +31,55 @@ public class MyLinkedList<E> implements List<E> {
      *                Inserts the specified element at the beginning of the list. O(1) for a doubly-linked list.
      */
     public void addFirst(E element) {
-        //TODO
+        // if adding first Node
+        if (size == 0) {
+            head = new Node(element);
+            tail = head;
+            size++;
+        }
+        // if adding second Node
+        else if (size == 1) {
+            head.prev = new Node(element);
+            head.prev.next = head;
+            head = head.prev;
+            tail = head.next;
+            size++;
+        }
+        // adding to a list with more than one Node
+        else {
+            head.prev = new Node(element);
+            head.prev.next = head;
+            head = head.prev;
+            size++;
+        }
     }
 
     /**
-     * @param element - The element to add at the end of the list.
+     * @param o - The element to add at the end of the list.
      *                <p/>
      *                Inserts the specified element at the end of the list. O(1) for a doubly-linked list.
      */
     public void addLast(E o) {
-        //TODO
+        // if adding first Node
+        if (size == 0) {
+            head = new Node(o);
+            tail = head;
+            size++;
+        }
+        // if adding the second Node
+        else if (size == 1) {
+            head.next = new Node(o);
+            head.next.prev = head;
+            tail = head.next;
+            size++;
+        }
+        // if adding to a list with more than one Node
+        else {
+            tail.next = new Node(o);
+            tail.next.prev = tail;
+            tail = tail.next;
+            size++;
+        }
     }
 
     /**
@@ -47,7 +87,26 @@ public class MyLinkedList<E> implements List<E> {
      * out of range. O(N) for a doubly-linked list.
      */
     public void add(int index, E element) throws IndexOutOfBoundsException {
-        //TODO
+        // check for a correct index
+        if (index > size)
+            throw new IndexOutOfBoundsException();
+        if (index == 0) {
+            addFirst(element);
+            return;
+        } else if (index == size) {
+            addLast(element);
+            return;
+        }
+        Node insertNodePrev = head, insertNode, insertNodeNext = null;
+        int insertIndex = 0;
+        while (insertIndex != index) {
+            insertNodePrev = insertNodePrev.next;
+            insertIndex++;
+        }
+        insertNodePrev.next = insertNodeNext;
+        insertNodePrev.next = new Node(element);
+        insertNodeNext = insertNodePrev.next;
+
     }
 
     /**
@@ -185,7 +244,7 @@ public class MyLinkedList<E> implements List<E> {
         Node prev;
 
         public Node(E element) {
-            //TODO
+            data = element;
         }
     }
 }
