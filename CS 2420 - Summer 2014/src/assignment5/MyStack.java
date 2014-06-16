@@ -42,22 +42,25 @@ public class MyStack<E> {
         if (linkedListStack.size() == 0)
             throw new NoSuchElementException();
 
-
+        return linkedListStack.getLast();
     }
 
     /**
      * Returns and removes the item at the top of the stack. Throws NoSuchElementException if the stack is empty.
      */
     public E pop() throws NoSuchElementException {
-        //TODO
-        return null;
+        // check for empty stack
+        if (linkedListStack.size() == 0)
+            throw new NoSuchElementException();
+
+        return linkedListStack.removeLast();
     }
 
     /**
      * Pushes the input item onto the top of the stack.
      */
     public void push(E item) {
-        //TODO
+        linkedListStack.addFirst(item);
     }
 
     /**
