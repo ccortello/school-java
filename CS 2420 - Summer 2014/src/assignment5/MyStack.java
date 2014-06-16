@@ -38,8 +38,11 @@ public class MyStack<E> {
      * stack is empty.
      */
     public E peek() throws NoSuchElementException {
-        //TODO
-        return null;
+        // check for empty stack
+        if (linkedListStack.size() == 0)
+            throw new NoSuchElementException();
+
+
     }
 
     /**
