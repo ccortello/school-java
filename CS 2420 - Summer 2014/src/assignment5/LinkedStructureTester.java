@@ -89,11 +89,13 @@ public class LinkedStructureTester extends TestCase {
         Random rand = new Random(26491324791L);
         MyStack<Integer> stack = new MyStack<Integer>();
         ArrayList<Integer> addedInts = new ArrayList<Integer>();
+
         for (int i = 0; i < initialIntegers; i++) {
             Integer intToAdd = rand.nextInt();
             stack.push(intToAdd);
             addedInts.add(intToAdd);
         }
+
         for (int i = 0; i < moves; i++) {
             int next = rand.nextInt();
             if (next % 2 == 0) {
@@ -101,10 +103,8 @@ public class LinkedStructureTester extends TestCase {
                 stack.push(pushInt);
                 addedInts.add(pushInt);
             } else if (next % 2 == 1) {
-                int randomIndex = rand.nextInt() / Integer.MAX_VALUE * addedInts.size();
-                Integer popInt = addedInts.get(randomIndex);
                 stack.pop();
-                addedInts.remove(popInt);
+                addedInts.set(addedInts.size() - 1, null);
             }
         }
 //        System.out.println("Integers added = \n" + addedInts.size());
