@@ -86,7 +86,7 @@ public class MyLinkedList<E> implements List<E> {
             return;
         }
         if (index < 0 || index >= size)  // check for out of bounds and throw exception.
-            throw new IndexOutOfBoundsException();
+            throw new IndexOutOfBoundsException("IndexOutOfBoundsException"); // message created for testing
 
         //find which end the index is closest to, and start from that end.
         boolean startFront = true;
@@ -131,7 +131,7 @@ public class MyLinkedList<E> implements List<E> {
     public E getFirst() throws NoSuchElementException {
         // check that there is at least one element in the list, if not, throw exception.
         if (size == 0)
-            throw new NoSuchElementException();
+            throw new NoSuchElementException("NoSuchElementException");//message for testing
         // return first element, or the data of head
         return head.data;
     }
@@ -146,7 +146,7 @@ public class MyLinkedList<E> implements List<E> {
     public E getLast() throws NoSuchElementException {
         // check that there is at least one element in the list, if not, throw exception.
         if (size == 0)
-            throw new NoSuchElementException();
+            throw new NoSuchElementException("NoSuchElementException");//message for testing
         // return data of last element, located at tail.
         return tail.data;
     }
@@ -163,7 +163,7 @@ public class MyLinkedList<E> implements List<E> {
     public E get(int index) throws IndexOutOfBoundsException {
         // first check for index being out of bounds
         if (size == 0 || index >= size || index < 0)
-            throw new IndexOutOfBoundsException();
+            throw new IndexOutOfBoundsException("IndexOutOfBoundsException"); //message added for testing
 
         // if index is the first or last index, use getFirst or getLast instead.
         if (index == 0)
@@ -206,7 +206,7 @@ public class MyLinkedList<E> implements List<E> {
         E item;
         // check that there is at least 1 element in the list, if not throw exception
         if (size == 0)
-            throw new NoSuchElementException();
+            throw new NoSuchElementException("NoSuchElementException");//message for testing
         // with only one item in the list, set the head and tail to null
         if (size == 1) {
             item = head.data;
@@ -236,7 +236,7 @@ public class MyLinkedList<E> implements List<E> {
         E item;
         // check that there is at least 1 element in the list
         if (size == 0)
-            throw new NoSuchElementException();
+            throw new NoSuchElementException("NoSuchElementException");//message for testing
         // with only one item in the list, set the head and tail to null
         if (size == 1) {
             item = tail.data;
@@ -267,7 +267,7 @@ public class MyLinkedList<E> implements List<E> {
         E item;
         // check first that index is not out of bounds, if so throw exception
         if (size == 0 || index >= size || index < 0)
-            throw new IndexOutOfBoundsException();
+            throw new IndexOutOfBoundsException("IndexOutOfBoundsException");//message added for testing
 
         // if index is the first or last index, use removeFirst & removeLast instead.
         if (index == 0)

@@ -3,6 +3,7 @@ package assignment5;
 import junit.framework.TestCase;
 
 import java.util.ArrayList;
+import java.util.NoSuchElementException;
 import java.util.Random;
 
 /**
@@ -23,10 +24,8 @@ public class LinkedStructureTester extends TestCase {
     /**
      * Tests that the first element is <tt>null</tt>, then adds 2 elements checking after each that the element added is
      * in the first index. This test also tests the <tt>getFirst</tt> method at the same time.
-     *
-     * @throws Exception
      */
-    public void testAddFirst() throws Exception {
+    public void testAddFirst() {
         // first test that the head and first element is null
         assertTrue(testListString.head == null);
         // add an string object to the testList
@@ -43,10 +42,8 @@ public class LinkedStructureTester extends TestCase {
      * Tests that the first element is <tt>null</tt>, then adds the previous two elements as before with <tt>addFirst</tt>
      * the adds 2 elements checking after each that the element added are in the last index.
      * This test also tests the <tt>getLast</tt> method at the same time.
-     *
-     * @throws Exception
      */
-    public void testAddLast() throws Exception {
+    public void testAddLast() {
         assertTrue(testListString.head == null);
         testListString.addFirst("addFirstTest001");
         testListString.addFirst("addFirstTest002");
@@ -65,7 +62,7 @@ public class LinkedStructureTester extends TestCase {
      *
      * @throws Exception
      */
-    public void testAdd() throws Exception {
+    public void testAdd() throws IndexOutOfBoundsException {
         assertTrue(testListString.head == null);
         // add five string elements to add elements to middle indexes
         testListString.addFirst("one");
@@ -84,27 +81,54 @@ public class LinkedStructureTester extends TestCase {
         assertTrue(testListString.get(2).equals("addTest002"));
         // test that the first element added "addTest001" is now at index 3
         assertTrue(testListString.get(3).equals("addTest001"));
+
+        // test throwing the IndexOutOfBoundsException exception
+        try {
+            testListEmpty.add(4, "bad index");
+        }
+        catch (Exception e) {
+            assertEquals("IndexOutOfBoundsException", e.getMessage());
+        }
     }
 
     /**
-     * This method is already tested to work in <tt>testAddFirst</tt>
+     * This method is already tested to work in <tt>testAddFirst</tt>, here only the thrown exception is tested
      * @throws Exception
      */
-    public void testGetFirst() throws Exception {
+    public void testGetFirst() throws NoSuchElementException {
+        try {
+            testListEmpty.getFirst();
+        }
+        catch (Exception e) {
+            assertEquals("NoSuchElementException", e.getMessage());
+        }
     }
 
     /**
-     * This method is already tested to work in <tt>testAddLast</tt>
+     * This method is already tested to work in <tt>testAddLast</tt>, here only the thrown exception is tested
      * @throws Exception
      */
-    public void testGetLast() throws Exception {
+    public void testGetLast() throws NoSuchElementException {
+        try {
+            testListEmpty.getLast();
+        }
+        catch (Exception e) {
+            assertEquals("NoSuchElementException", e.getMessage());
+        }
     }
 
     /**
-     * This method is already tested to work in <tt>testAdd</tt>
+     * This method is already tested to work in <tt>testAdd</tt>, here only the thrown exception is tested
      * @throws Exception
      */
-    public void testGet() throws Exception {
+    public void testGet() throws IndexOutOfBoundsException {
+        // test throwing the IndexOutOfBoundsException exception
+        try {
+            testListEmpty.get(4);
+        }
+        catch (Exception e) {
+            assertEquals("IndexOutOfBoundsException", e.getMessage());
+        }
     }
 
     /**
@@ -113,7 +137,7 @@ public class LinkedStructureTester extends TestCase {
      *
      * @throws Exception
      */
-    public void testRemoveFirst() throws Exception {
+    public void testRemoveFirst() throws NoSuchElementException {
         // fist assert list is null, then add three items to the list
         assertTrue(testListString.head == null);
         testListString.addFirst("one");
@@ -126,6 +150,14 @@ public class LinkedStructureTester extends TestCase {
         assertEquals("one", testListString.removeFirst());
         // then test that the new first item is equal to "two"
         assertTrue(testListString.getFirst().equals("two"));
+
+        // test throwing the exception
+        try {
+            testListEmpty.removeFirst();
+        }
+        catch (Exception e) {
+            assertEquals("NoSuchElementException", e.getMessage());
+        }
     }
 
     /**
@@ -134,7 +166,7 @@ public class LinkedStructureTester extends TestCase {
      *
      * @throws Exception
      */
-    public void testRemoveLast() throws Exception {
+    public void testRemoveLast() throws NoSuchElementException {
         // fist assert list is null, then add three items to the list
         assertTrue(testListString.head == null);
         testListString.addFirst("one");
@@ -147,6 +179,14 @@ public class LinkedStructureTester extends TestCase {
         assertEquals("three", testListString.removeLast());
         // then test that the new last item is equal to "two"
         assertTrue(testListString.getLast().equals("two"));
+
+        // test throwing the exception
+        try {
+            testListEmpty.removeLast();
+        }
+        catch (Exception e) {
+            assertEquals("NoSuchElementException", e.getMessage());
+        }
     }
 
     /**
@@ -154,7 +194,7 @@ public class LinkedStructureTester extends TestCase {
      * Adds five elements. Removes elements at index 1, test the new elements in their place.
      * @throws Exception
      */
-    public void testRemove() throws Exception {
+    public void testRemove() throws IndexOutOfBoundsException {
         assertTrue(testListString.head == null);
         // add five string elements to add elements to middle indexes
         testListString.addFirst("one");
@@ -171,6 +211,14 @@ public class LinkedStructureTester extends TestCase {
         assertTrue(testListString.get(1).equals("three") && testListString.size == 4);
         // assert that "one" is still there as the first element
         assertTrue(testListString.getFirst().equals("one"));
+
+        // test throwing the IndexOutOfBoundsException exception
+        try {
+            testListEmpty.remove(4);
+        }
+        catch (Exception e) {
+            assertEquals("IndexOutOfBoundsException", e.getMessage());
+        }
     }
 
     /**
@@ -178,10 +226,8 @@ public class LinkedStructureTester extends TestCase {
      * instead of an index pointing to an object. Test null, then adds five elements. Tests that "four" is present, then
      * removes "four" and tests that it is no longer there. This also test the <tt>contains</tt> method as it uses it to
      * assert that "four" is present or not
-     *
-     * @throws Exception
      */
-    public void testRemove1() throws Exception {
+    public void testRemove1() {
         assertTrue(testListString.head == null);
         // add five string elements to add elements to middle indexes
         testListString.addFirst("one");
@@ -200,17 +246,15 @@ public class LinkedStructureTester extends TestCase {
 
     /**
      * This is already tested above in <tt>testRemove1</tt>
-     * @throws Exception
      */
-    public void testContains() throws Exception {
+    public void testContains() {
     }
 
     /**
      * creates list of five elements, tests that passing "four" to <tt>indexOf</tt> returns the correct index of 3, the
      * then tests for index of "six" to show that it returns -1 meaning it is not in the list
-     * @throws Exception
      */
-    public void testIndexOf() throws Exception {
+    public void testIndexOf() {
         assertTrue(testListString.head == null);
         // add eight string elements
         testListString.addFirst("one");
@@ -228,7 +272,7 @@ public class LinkedStructureTester extends TestCase {
         assertEquals(- 1, testListString.indexOf("six"));
     }
 
-    public void testLastIndexOf() throws Exception {
+    public void testLastIndexOf() {
         assertTrue(testListString.head == null);
         // add eight string elements to add elements to middle indexes
         testListString.addFirst("one");
@@ -248,9 +292,8 @@ public class LinkedStructureTester extends TestCase {
 
     /**
      * test the size of the list after various adds
-     * @throws Exception
      */
-    public void testSize() throws Exception {
+    public void testSize() {
         assertTrue(testListString.head == null);
         assertEquals(0, testListString.size());
         // add eight string elements
@@ -269,9 +312,8 @@ public class LinkedStructureTester extends TestCase {
 
     /**
      * tests multiple times that the list is empty or not after adding and removing elements
-     * @throws Exception
      */
-    public void testIsEmpty() throws Exception {
+    public void testIsEmpty() {
 //        System.out.println(testListString.size());
         assertTrue(testListString.isEmpty());
         // add eight string elements
@@ -286,9 +328,8 @@ public class LinkedStructureTester extends TestCase {
 
     /**
      * adds multiple elements testing the size, then clears them and asserts size == 0 and isEmpty is true
-     * @throws Exception
      */
-    public void testClear() throws Exception {
+    public void testClear() {
         assertTrue(testListString.head == null);
         assertEquals(0, testListString.size());
         // add eight string elements, asserting the growing size
@@ -310,9 +351,8 @@ public class LinkedStructureTester extends TestCase {
     /**
      * creates a linkedlist of five elements, shows the returned Object array from toArray is all the same elements in
      * the same order
-     * @throws Exception
      */
-    public void testToArray() throws Exception {
+    public void testToArray() {
         assertTrue(testListString.head == null);
         // add five string elements to add elements to middle indexes
         testListString.addFirst("one");
