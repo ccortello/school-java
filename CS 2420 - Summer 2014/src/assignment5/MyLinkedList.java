@@ -259,9 +259,16 @@ public class MyLinkedList<E> implements List<E> {
      * element was found and removed, false otherwise. O(N) for a doubly-linked list.
      */
     public boolean remove(E element) {
+        // handle null case
         if (head == null)
             return false;
+
+        //
         Node currentNode = head;
+        while (!currentNode.data.equals(element) && currentNode.next != null)
+            currentNode = currentNode.next;
+        if (currentNode == null)
+            return false;
 
     }
 
