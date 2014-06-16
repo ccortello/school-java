@@ -237,7 +237,7 @@ public class MyLinkedList<E> implements List<E> {
         // otherwise mark the tail, update Node fields, decrement size, and return the correct data
         Node returnNode = tail;
         tail = tail.prev;
-        tail.prev = null;
+        tail.next = null;
         size--;
         return returnNode.data;
     }

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="changes to TowersOfHanoi">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/TowersOfHanoi.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/TowersOfHanoi.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTester.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTester.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyLinkedList.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyLinkedList.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -91,20 +92,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LinkedStructureTester.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTester.java">
+      <file leaf-file-name="MyLinkedList.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="469" max-vertical-offset="1422">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.6933333" vertical-offset="3954" max-vertical-offset="7452">
+              <caret line="239" column="17" selection-start-line="239" selection-start-column="17" selection-end-line="239" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TowersOfHanoi.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="LinkedStructureTester.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTester.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1530" max-vertical-offset="1980">
+              <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1369#1378#0" expanded="true" />
+                <element signature="e#1434#1443#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TowersOfHanoi.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/TowersOfHanoi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.3032529" vertical-offset="0" max-vertical-offset="4626">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4626">
               <caret line="69" column="60" selection-start-line="69" selection-start-column="60" selection-end-line="69" selection-end-column="60" />
               <folding>
                 <element signature="e#4738#4739#0" expanded="true" />
@@ -117,9 +132,12 @@
       <file leaf-file-name="MyStack.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyStack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="331" max-vertical-offset="1332">
-              <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="768" max-vertical-offset="1368">
+              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+              <folding>
+                <element signature="e#382#383#0" expanded="true" />
+                <element signature="e#437#438#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,8 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/SimpleHashSet.java" />
-        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/TestApplication.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment03/TestApplication.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/TestApplicationExperiment04.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/TestApplicationExperiment02.java" />
@@ -197,6 +213,8 @@
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyStack.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/TowerTester.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/TowersOfHanoi.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTester.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyLinkedList.java" />
       </list>
     </option>
   </component>
@@ -433,30 +451,7 @@
       <recent name="C:\Users\Cody\workspace\CS 2420 - Spring 2014\src\homework08" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RecursiveSortingTimer">
-    <configuration default="false" name="RecursiveSortingUtilityTest.testQuickSortDriver" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="CS 2420 - Summer 2014" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="assignment4" />
-      <option name="MAIN_CLASS_NAME" value="assignment4.RecursiveSortingUtilityTest" />
-      <option name="METHOD_NAME" value="testQuickSortDriver" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.LinkedStructureTester.testBulkTest">
     <configuration default="false" name="RecursiveSortingUtilityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="CS 2420 - Summer 2014" />
@@ -543,6 +538,29 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="LinkedStructureTester.testBulkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="CS 2420 - Summer 2014" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="assignment5" />
+      <option name="MAIN_CLASS_NAME" value="assignment5.LinkedStructureTester" />
+      <option name="METHOD_NAME" value="testBulkTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -601,19 +619,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.RecursiveSortingUtilityTest.testQuickSortDriver" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.RecursiveSortingUtilityTest" />
-      <item index="2" class="java.lang.String" itemvalue="Application.QuicksortAnalysisPart5" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.RecursiveSortingTester" />
-      <item index="4" class="java.lang.String" itemvalue="Application.RecursiveSortingTimer" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.RecursiveSortingUtilityTest" />
+      <item index="1" class="java.lang.String" itemvalue="Application.QuicksortAnalysisPart5" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.RecursiveSortingTester" />
+      <item index="3" class="java.lang.String" itemvalue="Application.RecursiveSortingTimer" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.LinkedStructureTester.testBulkTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.RecursiveSortingTimer" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.RecursiveSortingTester" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.RecursiveSortingUtilityTest" />
-        <item index="3" class="java.lang.String" itemvalue="Application.QuicksortAnalysisPart5" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.RecursiveSortingUtilityTest.testQuickSortDriver" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.LinkedStructureTester.testBulkTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.RecursiveSortingTimer" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.RecursiveSortingTester" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.RecursiveSortingUtilityTest" />
+        <item index="4" class="java.lang.String" itemvalue="Application.QuicksortAnalysisPart5" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1538,7 +1556,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43126386" sideWeight="0.30106953" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5121951" sideWeight="0.63036484" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5116989" sideWeight="0.63036484" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40133038" sideWeight="0.28916308" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1958,14 +1976,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28331584" vertical-offset="0" max-vertical-offset="7452">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/List.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="2070">
@@ -1974,30 +1984,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="331" max-vertical-offset="1332">
-          <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="469" max-vertical-offset="1422">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/TowersOfHanoi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3032529" vertical-offset="0" max-vertical-offset="4626">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4626">
           <caret line="69" column="60" selection-start-line="69" selection-start-column="60" selection-end-line="69" selection-end-column="60" />
           <folding>
             <element signature="e#4738#4739#0" expanded="true" />
             <element signature="e#4799#4800#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1530" max-vertical-offset="1980">
+          <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1369#1378#0" expanded="true" />
+            <element signature="e#1434#1443#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="768" max-vertical-offset="1368">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding>
+            <element signature="e#382#383#0" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6933333" vertical-offset="3954" max-vertical-offset="7452">
+          <caret line="239" column="17" selection-start-line="239" selection-start-column="17" selection-end-line="239" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
