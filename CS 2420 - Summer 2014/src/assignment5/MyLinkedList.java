@@ -8,7 +8,6 @@ import java.util.NoSuchElementException;
  * @param <E> - the type of elements contained in the linked list
  *
  * @author Paymon Saebi
- * @author Cody Cortello
  * @author Casey Nordgran
  * @author Description:
  */
@@ -22,7 +21,7 @@ public class MyLinkedList<E> implements List<E> {
      * Constructor.  Creates a blank linked list.
      */
     public MyLinkedList() {
-        int size = 0;
+        size = 0;
     }
 
     /**
@@ -31,22 +30,12 @@ public class MyLinkedList<E> implements List<E> {
      *                Inserts the specified element at the beginning of the list. O(1) for a doubly-linked list.
      */
     public void addFirst(E element) {
-        // if adding first Node
+        // if first element added
         if (size == 0) {
             head = new Node(element);
             tail = head;
             size++;
-        }
-        // if adding second Node
-        else if (size == 1) {
-            head.prev = new Node(element);
-            head.prev.next = head;
-            head = head.prev;
-            tail = head.next;
-            size++;
-        }
-        // adding to a list with more than one Node
-        else {
+        } else {
             head.prev = new Node(element);
             head.prev.next = head;
             head = head.prev;
@@ -56,30 +45,18 @@ public class MyLinkedList<E> implements List<E> {
 
     /**
      * @param o - The element to add at the end of the list.
-     *                <p/>
-     *                Inserts the specified element at the end of the list. O(1) for a doubly-linked list.
+     *          <p/>
+     *          Inserts the specified element at the end of the list. O(1) for a doubly-linked list.
      */
     public void addLast(E o) {
-        // if adding first Node
-        if (size == 0) {
-            head = new Node(o);
-            tail = head;
-            size++;
-        }
-        // if adding the second Node
-        else if (size == 1) {
-            head.next = new Node(o);
-            head.next.prev = head;
-            tail = head.next;
-            size++;
-        }
-        // if adding to a list with more than one Node
-        else {
-            tail.next = new Node(o);
-            tail.next.prev = tail;
-            tail = tail.next;
-            size++;
-        }
+        // if this is first add, call addFirst
+        if (size == 0) addFirst(o);
+
+        // otherwise add new node, interchange references, assign new node as tail.
+        tail.next = new Node(o);
+        tail.next.prev = tail;
+        tail = tail.next;
+        size++;
     }
 
     /**
@@ -87,66 +64,29 @@ public class MyLinkedList<E> implements List<E> {
      * out of range. O(N) for a doubly-linked list.
      */
     public void add(int index, E element) throws IndexOutOfBoundsException {
-        // check for a correct index
-        if (index < 0 || index > size)
-            throw new IndexOutOfBoundsException();
-        // call the correct method if the element should be added first or last
+        // check bounds and throw exception if necessary
         if (index == 0) {
-            addFirst(element);
-            return;
-        } else if (index == size) {
-            addLast(element);
+            this.addFirst(element);
             return;
         }
+        if (index == size - 1) {
+            this.addLast(element);
+            return;
+        }
+        if (index < 0 || index >= size)
+            throw new IndexOutOfBoundsException();
 
-        // if the element needs to be inserted somewhere in the middle find the Nodes around the insertion point and
-        //  update the fields of all three Nodes.
-        Node insertNodeNext = findNode(index);
-        Node insertNodePrev = insertNodeNext.prev;
-        Node insertNode = new Node(element);
-        insertNodePrev.next = insertNode;
-        insertNode.prev = insertNodePrev;
-        insertNodeNext.prev = insertNode;
-        insertNode.next = insertNodeNext;
+        Node prevNode, nextNode = head;
+        for (int i = 0; i < index; i++) {
+            nextNode = nextNode.next;
+        }
+        prevNode = nextNode.prev;
+
+        prevNode.next = new Node(element);
+        nextNode.prev = prevNode.next;
+        prevNode.next.prev = prevNode;
+        nextNode.prev.next = nextNode;
         size++;
-    }
-
-    /**
-     * Returns a pointer to the Node at a specified index. Assumes index is in the correct range. O(N) for a
-     * doubly-linked list.
-     */
-    private Node findNode(int index) {
-        // handle finding head and tail Nodes
-        if (index == 0)
-            return head;
-        else if (index == size - 1)
-            return tail;
-
-        // otherwise find the Node according to which end it is closer to
-        Node currentNode;
-
-        // if the Node is closer to the beginning then iterate from the head
-        if (size / 2 > index) {
-            currentNode = head;
-            int insertIndex = 0;
-            while (insertIndex != index) {
-                currentNode = currentNode.next;
-                insertIndex++;
-            }
-        }
-
-        // if the Node is closer to the end then iterate from the tail
-        else {
-            currentNode = tail;
-            int insertIndex = size - 1;
-            while (insertIndex != index) {
-                currentNode = currentNode.prev;
-                insertIndex--;
-            }
-        }
-
-        // return whichever Node was found
-        return currentNode;
     }
 
     /**
@@ -154,11 +94,9 @@ public class MyLinkedList<E> implements List<E> {
      * doubly-linked list.
      */
     public E getFirst() throws NoSuchElementException {
-        // check for an empty list
-        if (head == null)
+        if (size == 0)
             throw new NoSuchElementException();
-        else // if there is an item in the list, return it
-            return head.data;
+        return head.data;
     }
 
     /**
@@ -166,11 +104,9 @@ public class MyLinkedList<E> implements List<E> {
      * doubly-linked list.
      */
     public E getLast() throws NoSuchElementException {
-        // check for an empty list
-        if (tail == null)
+        if (size == 0)
             throw new NoSuchElementException();
-        else // if there is an item in the list, return it
-            return tail.data;
+        return tail.data;
     }
 
     /**
@@ -178,12 +114,19 @@ public class MyLinkedList<E> implements List<E> {
      * range. O(N) for a doubly-linked list.
      */
     public E get(int index) throws IndexOutOfBoundsException {
-        // check for a correct index
-        if (index < 0 || index > size - 1)
+        if (size == 0 || index >= size || index < 0)
             throw new IndexOutOfBoundsException();
 
-        // return the data at the correct index
-        return findNode(index).data;
+        if (index == 0)
+            return this.getFirst();
+        if (index == size - 1)
+            return this.getLast();
+
+        Node toReturn = head;
+        for (int i = 0; i < index; i++)
+            toReturn = toReturn.next;
+
+        return toReturn.data;
     }
 
     /**
@@ -191,23 +134,25 @@ public class MyLinkedList<E> implements List<E> {
      * a doubly-linked list.
      */
     public E removeFirst() throws NoSuchElementException {
-        // check for a first element
+        // variable to hold the removed element to be returned
+        E item;
+        // check that there is at least 1 element in the list
         if (size == 0)
             throw new NoSuchElementException();
-
-        // handle removing from a list with one Node
         if (size == 1) {
-            E data = head.data;
-            clear();
-            return data;
+            item = head.data;
+            head = null;
+            tail = null;
+            size--;
+            return item;
         }
-
-        // otherwise mark the head, update Node fields, decrement size, and return the correct data
-        Node returnNode = head;
+        // store the data at head first, set head to second item, set first item to null
+        item = head.data;
         head = head.next;
         head.prev = null;
         size--;
-        return returnNode.data;
+        // return the stored data item
+        return item;
     }
 
     /**
@@ -215,23 +160,27 @@ public class MyLinkedList<E> implements List<E> {
      * a doubly-linked list.
      */
     public E removeLast() throws NoSuchElementException {
-        // check for a first element
+        // variable for item to be removed and returned
+        E item;
+        // check that there is at least 1 element in the list
         if (size == 0)
             throw new NoSuchElementException();
 
-        // handle removing from a list with one Node
-        else if (size == 1) {
-            E data = head.data;
-            clear();
-            return data;
+        if (size == 1) {
+            item = tail.data;
+            head = null;
+            tail = null;
+            size--;
+            return item;
         }
 
-        // otherwise mark the tail, update Node fields, decrement size, and return the correct data
-        Node returnNode = tail;
+        // store the data at tail first, set tail to second to last item, set last item to null
+        item = tail.data;
         tail = tail.prev;
         tail.next = null;
         size--;
-        return returnNode.data;
+        // return the stored data item
+        return item;
     }
 
     /**
@@ -239,58 +188,48 @@ public class MyLinkedList<E> implements List<E> {
      * is out of range. O(N) for a doubly-linked list.
      */
     public E remove(int index) throws IndexOutOfBoundsException {
-        // handle null list
-        if (size == 0)
-            return null;
-
-        // check for a correct index
-        if (index < 0 || index > size - 1)
+        // variable for item to be removed and returned
+        E item;
+        if (size == 0 || index >= size || index < 0)
             throw new IndexOutOfBoundsException();
-        // handle removing head or tail
-        if (index == 0) {
-            E data = head.data;
-            removeFirst();
-            return data;
-        } else if (index == size - 1) {
-            E data = tail.data;
-            removeLast();
-            return data;
-        }
 
-        // find the node, remove the pointers to it, and return its data
-        Node removeNode = findNode(index);
-        removeNode.next.prev = removeNode.prev;
-        removeNode.prev.next = removeNode.next;
-        return removeNode.data;
+        Node toRemove = head;
+        // loop index amount to arrive at the desire node to remove
+        for (int i = 0; i < index; i++)
+            toRemove = toRemove.next;
+
+        item = toRemove.data;
+        toRemove.prev.next = toRemove.next;
+        toRemove.next.prev = toRemove.prev;
+        toRemove.next = null;
+        toRemove.prev = null;
+        size--;
+
+        // returned stored item that was removed.
+        return item;
     }
 
     /**
-     * Removes the first occurrence of the specified element from this list, if it is present. Returns true if the
-     * element was found and removed, false otherwise. O(N) for a doubly-linked list.
+     * Removes the first occurrence of the specified element from this list, if it is present Returns true if the
+     * element was found and removed, false otherwise O(N) for a doubly-linked list.
      */
     public boolean remove(E element) {
-        // handle null case
-        if (head == null)
+        if (size == 0)
+            return false;
+        // create starting node
+        Node toRemove = head;
+        while (! toRemove.data.equals(element) && toRemove != tail)
+            toRemove = toRemove.next;
+
+        if (toRemove == tail && ! toRemove.data.equals(element))
             return false;
 
-        // find the node with the passed data
-        Node currentNode = head;
-        while (currentNode != null && !currentNode.data.equals(element))
-            currentNode = currentNode.next;
-
-        // if the entire list was iterated through return false
-        if (currentNode == null)
-            return false;
-
-        // otherwise, remove the Node
-        if (currentNode.equals(head))
-            removeFirst();
-        else if (currentNode.equals(tail))
-            removeLast();
-        else {
-            currentNode.next.prev = currentNode.prev;
-            currentNode.prev.next = currentNode.next;
-        }
+        // at this point the element is found. Remove it, decrement size and return true.
+        toRemove.prev.next = toRemove.next;
+        toRemove.next.prev = toRemove.prev;
+        toRemove.next = null;
+        toRemove.prev = null;
+        size--;
         return true;
     }
 
@@ -299,17 +238,16 @@ public class MyLinkedList<E> implements List<E> {
      * for a doubly-linked list.
      */
     public boolean contains(E element) {
-        // handle null case
-        if (head == null)
+        if (size == 0)
             return false;
 
-        // find the node with the passed data
-        Node currentNode = head;
-        while (currentNode != null && !currentNode.data.equals(element))
-            currentNode = currentNode.next;
+        Node toFind = head;
+        while (! toFind.data.equals(element) && toFind != tail)
+            toFind = toFind.next;
 
-        // if the entire list was iterated through return false
-        return (currentNode != null);
+        if (toFind == tail && ! toFind.data.equals(element))
+            return false;
+        return true;
     }
 
     /**
@@ -317,20 +255,19 @@ public class MyLinkedList<E> implements List<E> {
      * contain the element. O(N) for a doubly-linked list.
      */
     public int indexOf(E element) {
-        // handle null case
-        if (head == null)
+        if (size == 0)
             return -1;
 
-        // find the node with the passed data
-        Node currentNode = head;
-        int index = 0;
-        while (currentNode != null && !currentNode.data.equals(element)) {
-            currentNode = currentNode.next;
-            index++;
+        int returnIndex = 0;
+        Node toFind = head;
+        while (! toFind.data.equals(element) && toFind != tail) {
+            toFind = toFind.next;
+            returnIndex++;
         }
 
-        // if the entire list was iterated through return -1
-        return (currentNode == null) ? -1 : index;
+        if (toFind == tail && ! toFind.data.equals(element))
+            return - 1;
+        return returnIndex;
     }
 
     /**
@@ -338,20 +275,19 @@ public class MyLinkedList<E> implements List<E> {
      * contain the element. O(N) for a doubly-linked list.
      */
     public int lastIndexOf(E element) {
-        // handle null case
-        if (head == null)
+        if (size == 0)
             return -1;
 
-        // find the last node with the passed data
-        Node currentNode = tail;
-        int index = size - 1;
-        while (currentNode != null && !currentNode.data.equals(element)) {
-            currentNode = currentNode.prev;
-            index--;
+        int returnIndex = size - 1;
+        Node toFind = tail;
+        while (! toFind.data.equals(element) && toFind != head) {
+            toFind = toFind.prev;
+            returnIndex--;
         }
 
-        // if the entire list was iterated through return -1
-        return (currentNode == null) ? -1 : index;
+        if (toFind == head && ! toFind.data.equals(element))
+            return - 1;
+        return returnIndex;
     }
 
     /**
@@ -365,15 +301,15 @@ public class MyLinkedList<E> implements List<E> {
      * Returns true if this collection contains no elements. O(1) for a doubly-linked list.
      */
     public boolean isEmpty() {
-        return (size == 0);
+        return size == 0;
     }
 
     /**
      * Removes all of the elements from this list. O(1) for a doubly-linked list.
      */
     public void clear() {
-        tail = null;
         head = null;
+        tail = null;
         size = 0;
     }
 
@@ -382,17 +318,10 @@ public class MyLinkedList<E> implements List<E> {
      * O(N) for a doubly-linked list.
      */
     public Object[] toArray() {
-        // initialize return array and Node pointer for iteration
         Object[] result = new Object[size];
-        Node currentNode = head;
+        for (int i = 0; i < size; i++)
+            result[i] = this.get(i);
 
-        // add each Node in the list to the return array
-        for (int i = 0; i < size - 1; i++) {
-            result[i] = currentNode;
-            currentNode = currentNode.prev;
-        }
-
-        // return the array
         return result;
     }
 

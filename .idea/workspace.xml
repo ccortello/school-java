@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="updated tester class with testBulk">
+    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="implemented the rest of the JUnit tests">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTester.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTester.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyLinkedList.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyLinkedList.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -81,16 +82,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MyLinkedList.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MyLinkedList.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2033" max-vertical-offset="9744">
-              <caret line="88" column="75" selection-start-line="88" selection-start-column="75" selection-end-line="88" selection-end-column="75" />
+            <state vertical-scroll-proportion="0.6283084" vertical-offset="4894" max-vertical-offset="5831">
+              <caret line="320" column="43" selection-start-line="320" selection-start-column="43" selection-end-line="320" selection-end-column="43" />
               <folding>
+                <element signature="e#474#475#0" expanded="true" />
+                <element signature="e#498#499#0" expanded="true" />
                 <element signature="method#addFirst#0;class#MyLinkedList#0" expanded="true" />
                 <element signature="method#addLast#0;class#MyLinkedList#0" expanded="true" />
                 <element signature="method#add#0;class#MyLinkedList#0" expanded="true" />
-                <element signature="method#findNode#0;class#MyLinkedList#0" expanded="true" />
                 <element signature="method#getFirst#0;class#MyLinkedList#0" expanded="true" />
                 <element signature="method#getLast#0;class#MyLinkedList#0" expanded="true" />
                 <element signature="method#get#0;class#MyLinkedList#0" expanded="true" />
@@ -101,41 +103,58 @@
                 <element signature="method#contains#0;class#MyLinkedList#0" expanded="true" />
                 <element signature="method#indexOf#0;class#MyLinkedList#0" expanded="true" />
                 <element signature="method#lastIndexOf#0;class#MyLinkedList#0" expanded="true" />
+                <element signature="e#8978#8979#0" expanded="true" />
+                <element signature="e#9005#9006#0" expanded="true" />
+                <element signature="e#9145#9146#0" expanded="true" />
+                <element signature="e#9175#9176#0" expanded="true" />
                 <element signature="method#clear#0;class#MyLinkedList#0" expanded="true" />
-                <element signature="method#toArray#0;class#MyLinkedList#0" expanded="true" />
+                <element signature="e#9834#9835#0" expanded="true" />
+                <element signature="e#9872#9873#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LinkedStructureTester.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="LinkedStructureTester.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5063291" vertical-offset="3642" max-vertical-offset="4511">
-              <caret line="314" column="5" selection-start-line="314" selection-start-column="5" selection-end-line="314" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1479" max-vertical-offset="3679">
+              <caret line="177" column="20" selection-start-line="177" selection-start-column="20" selection-end-line="177" selection-end-column="20" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#283#291#0" expanded="true" />
+                <element signature="e#229#237#0" expanded="true" />
+                <element signature="docComment;method#testAddFirst#0;class#LinkedStructureTester#0" expanded="false" />
                 <element signature="method#testAddFirst#0;class#LinkedStructureTester#0" expanded="true" />
+                <element signature="docComment;method#testAddLast#0;class#LinkedStructureTester#0" expanded="false" />
                 <element signature="method#testAddLast#0;class#LinkedStructureTester#0" expanded="true" />
+                <element signature="docComment;method#testAdd#0;class#LinkedStructureTester#0" expanded="false" />
                 <element signature="method#testAdd#0;class#LinkedStructureTester#0" expanded="true" />
+                <element signature="e#2701#2777#0" expanded="false" />
+                <element signature="docComment;method#testGetFirst#0;class#LinkedStructureTester#0" expanded="false" />
                 <element signature="method#testGetFirst#0;class#LinkedStructureTester#0" expanded="true" />
+                <element signature="docComment;method#testGetLast#0;class#LinkedStructureTester#0" expanded="false" />
                 <element signature="method#testGetLast#0;class#LinkedStructureTester#0" expanded="true" />
+                <element signature="docComment;method#testGet#0;class#LinkedStructureTester#0" expanded="false" />
                 <element signature="method#testGet#0;class#LinkedStructureTester#0" expanded="true" />
+                <element signature="docComment;method#testRemoveFirst#0;class#LinkedStructureTester#0" expanded="false" />
                 <element signature="method#testRemoveFirst#0;class#LinkedStructureTester#0" expanded="true" />
+                <element signature="docComment;method#testRemoveLast#0;class#LinkedStructureTester#0" expanded="false" />
                 <element signature="method#testRemoveLast#0;class#LinkedStructureTester#0" expanded="true" />
+                <element signature="docComment;method#testRemove#0;class#LinkedStructureTester#0" expanded="false" />
                 <element signature="method#testRemove#0;class#LinkedStructureTester#0" expanded="true" />
-                <element signature="method#testRemove1#0;class#LinkedStructureTester#0" expanded="true" />
+                <element signature="docComment;method#testRemove1#0;class#LinkedStructureTester#0" expanded="false" />
+                <element signature="docComment;method#testContains#0;class#LinkedStructureTester#0" expanded="false" />
                 <element signature="method#testContains#0;class#LinkedStructureTester#0" expanded="true" />
+                <element signature="docComment;method#testIndexOf#0;class#LinkedStructureTester#0" expanded="false" />
                 <element signature="method#testIndexOf#0;class#LinkedStructureTester#0" expanded="true" />
                 <element signature="method#testLastIndexOf#0;class#LinkedStructureTester#0" expanded="true" />
+                <element signature="docComment;method#testSize#0;class#LinkedStructureTester#0" expanded="false" />
                 <element signature="method#testSize#0;class#LinkedStructureTester#0" expanded="true" />
+                <element signature="docComment;method#testIsEmpty#0;class#LinkedStructureTester#0" expanded="false" />
                 <element signature="method#testIsEmpty#0;class#LinkedStructureTester#0" expanded="true" />
+                <element signature="docComment;method#testClear#0;class#LinkedStructureTester#0" expanded="false" />
                 <element signature="method#testClear#0;class#LinkedStructureTester#0" expanded="true" />
+                <element signature="docComment;method#testToArray#0;class#LinkedStructureTester#0" expanded="false" />
                 <element signature="method#testToArray#0;class#LinkedStructureTester#0" expanded="true" />
-                <element signature="method#testBulkTest#0;class#LinkedStructureTester#0" expanded="true" />
-                <element signature="e#13127#13136#0" expanded="true" />
-                <element signature="e#13192#13201#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -211,9 +230,9 @@
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/RecursiveSortingTimer.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/TowerTester.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/TowersOfHanoi.java" />
-        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyLinkedList.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyStack.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTester.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyLinkedList.java" />
       </list>
     </option>
   </component>
@@ -450,7 +469,7 @@
       <recent name="C:\Users\Cody\workspace\CS 2420 - Spring 2014\src\homework08" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LinkedStructureTester.testBulkTest">
+  <component name="RunManager" selected="JUnit.LinkedStructureTester">
     <configuration default="false" name="RecursiveSortingUtilityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="CS 2420 - Summer 2014" />
@@ -477,23 +496,6 @@
       </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="QuicksortAnalysisPart5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="assignment4.QuicksortAnalysisPart5" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="CS 2420 - Summer 2014" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -546,6 +548,29 @@
       <option name="MAIN_CLASS_NAME" value="assignment5.LinkedStructureTester" />
       <option name="METHOD_NAME" value="testBulkTest" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="LinkedStructureTester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="CS 2420 - Summer 2014" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="assignment5" />
+      <option name="MAIN_CLASS_NAME" value="assignment5.LinkedStructureTester" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -687,18 +712,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.RecursiveSortingUtilityTest" />
-      <item index="1" class="java.lang.String" itemvalue="Application.QuicksortAnalysisPart5" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.RecursiveSortingTester" />
-      <item index="3" class="java.lang.String" itemvalue="Application.RecursiveSortingTimer" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.LinkedStructureTester.testBulkTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.RecursiveSortingTester" />
+      <item index="2" class="java.lang.String" itemvalue="Application.RecursiveSortingTimer" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.LinkedStructureTester.testBulkTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.LinkedStructureTester" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.LinkedStructureTester.testBulkTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.RecursiveSortingTimer" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.RecursiveSortingTester" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.RecursiveSortingUtilityTest" />
-        <item index="4" class="java.lang.String" itemvalue="Application.QuicksortAnalysisPart5" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.LinkedStructureTester" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.LinkedStructureTester.testBulkTest" />
+        <item index="2" class="java.lang.String" itemvalue="Application.RecursiveSortingTimer" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.RecursiveSortingTester" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.RecursiveSortingUtilityTest" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1582,7 +1607,11 @@
       <created>1402717632243</created>
       <updated>1402717632243</updated>
     </task>
-    <option name="localTasksCounter" value="194" />
+    <task id="LOCAL-00194" summary="implemented the rest of the JUnit tests">
+      <created>1402932516916</created>
+      <updated>1402932516916</updated>
+    </task>
+    <option name="localTasksCounter" value="195" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1623,13 +1652,14 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40133038" sideWeight="0.28916308" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26940134" sideWeight="0.3696352" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31374723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17381974" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.390507" sideWeight="0.63036484" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3902439" sideWeight="0.63036484" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1638,7 +1668,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32705098" sideWeight="0.34438503" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26940134" sideWeight="0.3696352" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1710,7 +1739,8 @@
     <MESSAGE value="changes to Timer" />
     <MESSAGE value="changes to TowersOfHanoi" />
     <MESSAGE value="updated removeLast()" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated removeLast()" />
+    <MESSAGE value="implemented the rest of the JUnit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented the rest of the JUnit tests" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -2072,15 +2102,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1479" max-vertical-offset="3679">
+          <caret line="177" column="20" selection-start-line="177" selection-start-column="20" selection-end-line="177" selection-end-column="20" />
+          <folding>
+            <element signature="e#229#237#0" expanded="true" />
+            <element signature="docComment;method#testAddFirst#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="method#testAddFirst#0;class#LinkedStructureTester#0" expanded="true" />
+            <element signature="docComment;method#testAddLast#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="method#testAddLast#0;class#LinkedStructureTester#0" expanded="true" />
+            <element signature="docComment;method#testAdd#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="method#testAdd#0;class#LinkedStructureTester#0" expanded="true" />
+            <element signature="e#2701#2777#0" expanded="false" />
+            <element signature="docComment;method#testGetFirst#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="method#testGetFirst#0;class#LinkedStructureTester#0" expanded="true" />
+            <element signature="docComment;method#testGetLast#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="method#testGetLast#0;class#LinkedStructureTester#0" expanded="true" />
+            <element signature="docComment;method#testGet#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="method#testGet#0;class#LinkedStructureTester#0" expanded="true" />
+            <element signature="docComment;method#testRemoveFirst#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="method#testRemoveFirst#0;class#LinkedStructureTester#0" expanded="true" />
+            <element signature="docComment;method#testRemoveLast#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="method#testRemoveLast#0;class#LinkedStructureTester#0" expanded="true" />
+            <element signature="docComment;method#testRemove#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="method#testRemove#0;class#LinkedStructureTester#0" expanded="true" />
+            <element signature="docComment;method#testRemove1#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="docComment;method#testContains#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="method#testContains#0;class#LinkedStructureTester#0" expanded="true" />
+            <element signature="docComment;method#testIndexOf#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="method#testIndexOf#0;class#LinkedStructureTester#0" expanded="true" />
+            <element signature="method#testLastIndexOf#0;class#LinkedStructureTester#0" expanded="true" />
+            <element signature="docComment;method#testSize#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="method#testSize#0;class#LinkedStructureTester#0" expanded="true" />
+            <element signature="docComment;method#testIsEmpty#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="method#testIsEmpty#0;class#LinkedStructureTester#0" expanded="true" />
+            <element signature="docComment;method#testClear#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="method#testClear#0;class#LinkedStructureTester#0" expanded="true" />
+            <element signature="docComment;method#testToArray#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="method#testToArray#0;class#LinkedStructureTester#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2033" max-vertical-offset="9744">
-          <caret line="88" column="75" selection-start-line="88" selection-start-column="75" selection-end-line="88" selection-end-column="75" />
+        <state vertical-scroll-proportion="0.6283084" vertical-offset="4894" max-vertical-offset="5831">
+          <caret line="320" column="43" selection-start-line="320" selection-start-column="43" selection-end-line="320" selection-end-column="43" />
           <folding>
+            <element signature="e#474#475#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
             <element signature="method#addFirst#0;class#MyLinkedList#0" expanded="true" />
             <element signature="method#addLast#0;class#MyLinkedList#0" expanded="true" />
             <element signature="method#add#0;class#MyLinkedList#0" expanded="true" />
-            <element signature="method#findNode#0;class#MyLinkedList#0" expanded="true" />
             <element signature="method#getFirst#0;class#MyLinkedList#0" expanded="true" />
             <element signature="method#getLast#0;class#MyLinkedList#0" expanded="true" />
             <element signature="method#get#0;class#MyLinkedList#0" expanded="true" />
@@ -2091,39 +2165,13 @@
             <element signature="method#contains#0;class#MyLinkedList#0" expanded="true" />
             <element signature="method#indexOf#0;class#MyLinkedList#0" expanded="true" />
             <element signature="method#lastIndexOf#0;class#MyLinkedList#0" expanded="true" />
+            <element signature="e#8978#8979#0" expanded="true" />
+            <element signature="e#9005#9006#0" expanded="true" />
+            <element signature="e#9145#9146#0" expanded="true" />
+            <element signature="e#9175#9176#0" expanded="true" />
             <element signature="method#clear#0;class#MyLinkedList#0" expanded="true" />
-            <element signature="method#toArray#0;class#MyLinkedList#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5063291" vertical-offset="3642" max-vertical-offset="4511">
-          <caret line="314" column="5" selection-start-line="314" selection-start-column="5" selection-end-line="314" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#283#291#0" expanded="true" />
-            <element signature="method#testAddFirst#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testAddLast#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testAdd#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testGetFirst#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testGetLast#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testGet#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testRemoveFirst#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testRemoveLast#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testRemove#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testRemove1#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testContains#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testIndexOf#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testLastIndexOf#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testSize#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testIsEmpty#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testClear#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testToArray#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testBulkTest#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="e#13127#13136#0" expanded="true" />
-            <element signature="e#13192#13201#0" expanded="true" />
+            <element signature="e#9834#9835#0" expanded="true" />
+            <element signature="e#9872#9873#0" expanded="true" />
           </folding>
         </state>
       </provider>
