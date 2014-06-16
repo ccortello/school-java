@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="changes to Timer">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/List.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyLinkedList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyStack.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/TowersOfHanoi.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/RecursiveSortingTimer.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/RecursiveSortingTimer.java" />
+    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="update on MyLinkedList">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyLinkedList.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyLinkedList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/TowersOfHanoi.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/TowersOfHanoi.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -85,22 +82,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="List.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/List.java">
+      <file leaf-file-name="MyLinkedList.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3432">
-              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.6086956" vertical-offset="2260" max-vertical-offset="3180">
+              <caret line="402" column="16" selection-start-line="402" selection-start-column="16" selection-end-line="402" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyLinkedList.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyLinkedList.java">
+      <file leaf-file-name="LinkedStructureTester.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33256617" vertical-offset="101" max-vertical-offset="4654">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1125">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TowersOfHanoi.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/TowersOfHanoi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-156.0" vertical-offset="0" max-vertical-offset="884">
+              <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+              <folding>
+                <element signature="docComment;class#TowersOfHanoi#0" expanded="false" />
+                <element signature="docComment;method#main#0;class#TowersOfHanoi#0" expanded="false" />
+                <element signature="docComment;method#TowersOfHanoi#0;class#TowersOfHanoi#0" expanded="false" />
+                <element signature="docComment;method#solve#0;class#TowersOfHanoi#0" expanded="false" />
+                <element signature="docComment;method#moveDiscsRecursive#0;class#TowersOfHanoi#0" expanded="false" />
+                <element signature="docComment;method#moveDiscSingle#0;class#TowersOfHanoi#0" expanded="false" />
+                <element signature="e#6596#6641#0" expanded="false" />
+                <element signature="docComment;method#toString#0;class#TowersOfHanoi#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -127,11 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment02/TestApplication.java" />
-        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment04/SimpleHashSet.java" />
-        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment04/TestApplication.java" />
-        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/SimpleHashSet.java" />
-        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/TestApplication.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/experiment03/TestApplication.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/TestApplicationExperiment04.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework09/TestApplicationExperiment02.java" />
@@ -178,6 +189,11 @@
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/QuicksortAnalysisPart5.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/RecursiveSortingUtility.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/RecursiveSortingTimer.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyLinkedListTester.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTester.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyStack.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/TowersOfHanoi.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyLinkedList.java" />
       </list>
     </option>
   </component>
@@ -185,10 +201,10 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1932" />
-    <option name="height" value="1050" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -343,7 +359,7 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Java" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -380,17 +396,17 @@
     <property name="restartRequiresConfirmation" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="junit.framework.TestCase" />
-      <recent name="" />
-      <recent name="groovy.util.GroovyTestCase" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="assignment5" />
       <recent name="assignment4" />
       <recent name="assignment3" />
       <recent name="assignment2" />
       <recent name="homework10" />
-      <recent name="homework08" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="junit.framework.TestCase" />
+      <recent name="" />
+      <recent name="groovy.util.GroovyTestCase" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="assignment4" />
@@ -524,31 +540,20 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -557,6 +562,9 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -600,21 +608,6 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -634,6 +627,110 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -780,6 +877,8 @@
       <workItem from="1401737072680" duration="10883000" />
       <workItem from="1401824205280" duration="5039000" />
       <workItem from="1402495988863" duration="2611000" />
+      <workItem from="1402887024370" duration="6186000" />
+      <workItem from="1402898813529" duration="1061000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -1553,11 +1652,63 @@
       <created>1402717632243</created>
       <updated>1402717632243</updated>
     </task>
-    <option name="localTasksCounter" value="194" />
+    <task id="LOCAL-00194" summary="update on MyLinkedList">
+      <created>1402888566288</created>
+      <updated>1402888566288</updated>
+    </task>
+    <task id="LOCAL-00195" summary="update on MyLinkedList">
+      <created>1402889847619</created>
+      <updated>1402889847619</updated>
+    </task>
+    <task id="LOCAL-00196" summary="update on MyLinkedList">
+      <created>1402890103700</created>
+      <updated>1402890103700</updated>
+    </task>
+    <task id="LOCAL-00197" summary="update on MyLinkedList">
+      <created>1402890647276</created>
+      <updated>1402890647276</updated>
+    </task>
+    <task id="LOCAL-00198" summary="update on MyLinkedList">
+      <created>1402891188367</created>
+      <updated>1402891188367</updated>
+    </task>
+    <task id="LOCAL-00199" summary="update on MyLinkedList">
+      <created>1402891251589</created>
+      <updated>1402891251589</updated>
+    </task>
+    <task id="LOCAL-00200" summary="update on MyLinkedList">
+      <created>1402891558810</created>
+      <updated>1402891558811</updated>
+    </task>
+    <task id="LOCAL-00201" summary="update on MyLinkedList">
+      <created>1402891807501</created>
+      <updated>1402891807501</updated>
+    </task>
+    <task id="LOCAL-00202" summary="update on MyLinkedList">
+      <created>1402892262579</created>
+      <updated>1402892262579</updated>
+    </task>
+    <task id="LOCAL-00203" summary="update on MyLinkedList">
+      <created>1402892619236</created>
+      <updated>1402892619236</updated>
+    </task>
+    <task id="LOCAL-00204" summary="update on MyLinkedList">
+      <created>1402892915285</created>
+      <updated>1402892915285</updated>
+    </task>
+    <task id="LOCAL-00205" summary="update on MyLinkedList">
+      <created>1402893045472</created>
+      <updated>1402893045472</updated>
+    </task>
+    <task id="LOCAL-00206" summary="update on MyLinkedList">
+      <created>1402893139275</created>
+      <updated>1402893139275</updated>
+    </task>
+    <option name="localTasksCounter" value="207" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="274673000" />
+    <option name="totallyTimeSpent" value="281920000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1580,8 +1731,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1932" height="1050" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5140625" order="8" side_tool="false" content_ui="tabs" />
@@ -1589,21 +1740,21 @@
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.14166667" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43126386" sideWeight="0.30106953" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40133038" sideWeight="0.28916308" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31374723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17435622" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17395833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5121951" sideWeight="0.63036484" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1621,11 +1772,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3171521" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31484503" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40133038" sideWeight="0.28916308" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31374723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29988852" sideWeight="0.49345237" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17395833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5121951" sideWeight="0.63036484" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1633,13 +1784,13 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5139092" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29988852" sideWeight="0.50595236" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32705098" sideWeight="0.34438503" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43126386" sideWeight="0.30106953" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26968718" sideWeight="0.36969253" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26940134" sideWeight="0.3696352" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -1679,7 +1830,8 @@
     <MESSAGE value="finished implementing the tests and added necessary comments" />
     <MESSAGE value="update" />
     <MESSAGE value="changes to Timer" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes to Timer" />
+    <MESSAGE value="update on MyLinkedList" />
+    <option name="LAST_COMMIT_MESSAGE" value="update on MyLinkedList" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1696,27 +1848,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework04/InventoryTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.33116883" vertical-offset="493" max-vertical-offset="2091">
-          <caret line="11" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework04/WarehouseReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="5797">
-          <caret line="62" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySetTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4675">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySetTrial.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3333334" vertical-offset="1088" max-vertical-offset="1700">
@@ -2018,24 +2149,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/RecursiveSortingTimer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="416" max-vertical-offset="2184">
-          <caret line="79" column="34" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
-          <folding>
-            <element signature="docComment;class#RecursiveSortingTimer#0" expanded="false" />
-            <element signature="e#626#736#0" expanded="false" />
-            <element signature="e#1135#1195#0" expanded="false" />
-            <element signature="e#2090#2148#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/RecursiveSortingTester.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="3.7359812" vertical-offset="0" max-vertical-offset="3380">
           <caret line="265" column="49" selection-start-line="265" selection-start-column="49" selection-end-line="265" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2043,22 +2160,73 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1743" max-vertical-offset="9542">
           <caret line="82" column="48" selection-start-line="82" selection-start-column="48" selection-end-line="82" selection-end-column="48" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/RecursiveSortingTimer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7576087" vertical-offset="187" max-vertical-offset="2312">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/List.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3432">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.74130434" vertical-offset="1035" max-vertical-offset="1955">
+          <caret line="101" column="9" selection-start-line="101" selection-start-column="9" selection-end-line="101" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50108695" vertical-offset="508" max-vertical-offset="1428">
+          <caret line="59" column="39" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
+          <folding>
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#570#571#0" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="method#peek#0;class#MyStack#0" expanded="true" />
+            <element signature="method#pop#0;class#MyStack#0" expanded="true" />
+            <element signature="e#1565#1566#0" expanded="true" />
+            <element signature="e#1611#1612#0" expanded="true" />
+            <element signature="e#1701#1702#0" expanded="true" />
+            <element signature="e#1746#1747#0" expanded="true" />
+            <element signature="e#1950#1951#0" expanded="true" />
+            <element signature="e#1998#1999#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/TowersOfHanoi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-156.0" vertical-offset="0" max-vertical-offset="884">
+          <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+          <folding>
+            <element signature="docComment;class#TowersOfHanoi#0" expanded="false" />
+            <element signature="docComment;method#main#0;class#TowersOfHanoi#0" expanded="false" />
+            <element signature="docComment;method#TowersOfHanoi#0;class#TowersOfHanoi#0" expanded="false" />
+            <element signature="docComment;method#solve#0;class#TowersOfHanoi#0" expanded="false" />
+            <element signature="docComment;method#moveDiscsRecursive#0;class#TowersOfHanoi#0" expanded="false" />
+            <element signature="docComment;method#moveDiscSingle#0;class#TowersOfHanoi#0" expanded="false" />
+            <element signature="e#6596#6641#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#TowersOfHanoi#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1125">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33256617" vertical-offset="101" max-vertical-offset="4654">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.6086956" vertical-offset="2260" max-vertical-offset="3180">
+          <caret line="402" column="16" selection-start-line="402" selection-start-column="16" selection-end-line="402" selection-end-column="16" />
           <folding />
         </state>
       </provider>

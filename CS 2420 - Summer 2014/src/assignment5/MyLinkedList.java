@@ -400,7 +400,7 @@ public class MyLinkedList<E> implements List<E> {
             currentNode = currentNode.prev;
         }
 
-        // returnn the array
+        // return the array
         return result;
     }
 

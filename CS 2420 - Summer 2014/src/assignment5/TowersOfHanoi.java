@@ -13,8 +13,8 @@ package assignment5;
  * Stacks are used to represent the towers and recursion is used to solve and the problem.
  *
  * @author Paymon Saebi
- * @author
- * @author
+ * @author Cody Cortello
+ * @author Casey Nordgran
  */
 public class TowersOfHanoi {
     private int numOfDiscs;
@@ -93,7 +93,7 @@ public class TowersOfHanoi {
      * Three towers are created. Initially, the first tower contain the given number of discs in a downward ascending
      * order and the other towers initialized to be empty.
      *
-     * @param _numOfDisks (Number of discs to be solved for)
+     * @param _numOfDiscs (Number of discs to be solved for)
      * @param _verbose    (Option of printing the state of towers)
      */
     public TowersOfHanoi(int _numOfDiscs, boolean _verbose) {
