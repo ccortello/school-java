@@ -77,7 +77,7 @@ public class LinkedStructureTester extends TestCase {
 
     public void testBulkTest() throws Exception {
         int initialIntegers = 100000, moves = 100000;
-        Random rand = new Random(238491324791L);
+        Random rand = new Random(26491324791L);
         MyStack<Integer> stack = new MyStack<Integer>();
         ArrayList<Integer> addedInts = new ArrayList<Integer>();
         for (int i = 0; i < initialIntegers; i++) {
@@ -98,6 +98,8 @@ public class LinkedStructureTester extends TestCase {
                 addedInts.remove(popInt);
             }
         }
+        System.out.println("Integers added = \n" + addedInts.size());
+        System.out.println("\nCurrent stack size:\n" + stack.size());
         assertEquals(addedInts.size(), stack.size());
     }
 }
