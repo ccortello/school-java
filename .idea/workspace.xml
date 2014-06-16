@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="update">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyLinkedList.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyLinkedList.java" />
+    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="added comments">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTester.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTester.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyStack.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyStack.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/TowersOfHanoi.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/TowersOfHanoi.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -84,8 +86,8 @@
       <file leaf-file-name="MyLinkedList.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.07825086" vertical-offset="0" max-vertical-offset="1258">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state vertical-scroll-proportion="1.2128884" vertical-offset="0" max-vertical-offset="1258">
+              <caret line="455" column="4" selection-start-line="455" selection-start-column="4" selection-end-line="455" selection-end-column="4" />
               <folding>
                 <element signature="docComment;class#MyLinkedList#0" expanded="false" />
                 <element signature="docComment;method#MyLinkedList#0;class#MyLinkedList#0" expanded="false" />
@@ -117,14 +119,14 @@
       <file leaf-file-name="TowersOfHanoi.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/TowersOfHanoi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1653" max-vertical-offset="4845">
-              <caret line="103" column="40" selection-start-line="103" selection-start-column="40" selection-end-line="103" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1772" max-vertical-offset="4864">
+              <caret line="185" column="11" selection-start-line="185" selection-start-column="11" selection-end-line="185" selection-end-column="11" />
               <folding>
                 <element signature="method#main#0;class#TowersOfHanoi#0" expanded="true" />
+                <element signature="method#TowersOfHanoi#0;class#TowersOfHanoi#0" expanded="true" />
                 <element signature="e#4767#4768#0" expanded="true" />
                 <element signature="e#4828#4829#0" expanded="true" />
                 <element signature="method#moveDiscsRecursive#0;class#TowersOfHanoi#0" expanded="true" />
-                <element signature="method#moveDiscSingle#0;class#TowersOfHanoi#0" expanded="true" />
                 <element signature="method#toString#0;class#TowersOfHanoi#0" expanded="true" />
               </folding>
             </state>
@@ -134,23 +136,18 @@
       <file leaf-file-name="MyStack.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyStack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1634">
-              <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="741">
+              <caret line="89" column="4" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="4" />
               <folding>
-                <element signature="e#382#383#0" expanded="true" />
-                <element signature="e#437#438#0" expanded="true" />
-                <element signature="e#531#532#0" expanded="true" />
-                <element signature="e#570#571#0" expanded="true" />
-                <element signature="e#673#674#0" expanded="true" />
-                <element signature="e#721#722#0" expanded="true" />
-                <element signature="method#peek#0;class#MyStack#0" expanded="true" />
-                <element signature="method#pop#0;class#MyStack#0" expanded="true" />
-                <element signature="e#1565#1566#0" expanded="true" />
-                <element signature="e#1610#1611#0" expanded="true" />
-                <element signature="e#1700#1701#0" expanded="true" />
-                <element signature="e#1745#1746#0" expanded="true" />
-                <element signature="e#1949#1950#0" expanded="true" />
-                <element signature="e#1997#1998#0" expanded="true" />
+                <element signature="docComment;class#MyStack#0" expanded="false" />
+                <element signature="docComment;method#MyStack#0;class#MyStack#0" expanded="false" />
+                <element signature="docComment;method#clear#0;class#MyStack#0" expanded="false" />
+                <element signature="docComment;method#isEmpty#0;class#MyStack#0" expanded="false" />
+                <element signature="docComment;method#peek#0;class#MyStack#0" expanded="false" />
+                <element signature="docComment;method#pop#0;class#MyStack#0" expanded="false" />
+                <element signature="docComment;method#push#0;class#MyStack#0" expanded="false" />
+                <element signature="docComment;method#size#0;class#MyStack#0" expanded="false" />
+                <element signature="docComment;method#toArray#0;class#MyStack#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -159,31 +156,28 @@
       <file leaf-file-name="LinkedStructureTester.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1482" max-vertical-offset="9074">
-              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1311">
+              <caret line="69" column="43" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#283#291#0" expanded="true" />
-                <element signature="method#testAddFirst#0;class#LinkedStructureTester#0" expanded="true" />
-                <element signature="method#testAddLast#0;class#LinkedStructureTester#0" expanded="true" />
-                <element signature="method#testAdd#0;class#LinkedStructureTester#0" expanded="true" />
-                <element signature="method#testGetFirst#0;class#LinkedStructureTester#0" expanded="true" />
-                <element signature="method#testGetLast#0;class#LinkedStructureTester#0" expanded="true" />
-                <element signature="method#testGet#0;class#LinkedStructureTester#0" expanded="true" />
-                <element signature="method#testRemoveFirst#0;class#LinkedStructureTester#0" expanded="true" />
-                <element signature="method#testRemoveLast#0;class#LinkedStructureTester#0" expanded="true" />
-                <element signature="method#testRemove#0;class#LinkedStructureTester#0" expanded="true" />
-                <element signature="method#testRemove1#0;class#LinkedStructureTester#0" expanded="true" />
-                <element signature="method#testContains#0;class#LinkedStructureTester#0" expanded="true" />
-                <element signature="method#testIndexOf#0;class#LinkedStructureTester#0" expanded="true" />
-                <element signature="method#testLastIndexOf#0;class#LinkedStructureTester#0" expanded="true" />
-                <element signature="method#testSize#0;class#LinkedStructureTester#0" expanded="true" />
-                <element signature="method#testIsEmpty#0;class#LinkedStructureTester#0" expanded="true" />
-                <element signature="method#testClear#0;class#LinkedStructureTester#0" expanded="true" />
-                <element signature="method#testToArray#0;class#LinkedStructureTester#0" expanded="true" />
-                <element signature="method#testBulkTest#0;class#LinkedStructureTester#0" expanded="true" />
-                <element signature="e#13219#13228#0" expanded="true" />
-                <element signature="e#13284#13293#0" expanded="true" />
+                <element signature="docComment;class#LinkedStructureTester#0" expanded="false" />
+                <element signature="docComment;method#testAddFirst#0;class#LinkedStructureTester#0" expanded="false" />
+                <element signature="docComment;method#testAddLast#0;class#LinkedStructureTester#0" expanded="false" />
+                <element signature="docComment;method#testAdd#0;class#LinkedStructureTester#0" expanded="false" />
+                <element signature="e#3411#3487#0" expanded="false" />
+                <element signature="docComment;method#testGetFirst#0;class#LinkedStructureTester#0" expanded="false" />
+                <element signature="docComment;method#testGetLast#0;class#LinkedStructureTester#0" expanded="false" />
+                <element signature="docComment;method#testGet#0;class#LinkedStructureTester#0" expanded="false" />
+                <element signature="docComment;method#testRemoveFirst#0;class#LinkedStructureTester#0" expanded="false" />
+                <element signature="docComment;method#testRemoveLast#0;class#LinkedStructureTester#0" expanded="false" />
+                <element signature="docComment;method#testRemove#0;class#LinkedStructureTester#0" expanded="false" />
+                <element signature="docComment;method#testRemove1#0;class#LinkedStructureTester#0" expanded="false" />
+                <element signature="docComment;method#testContains#0;class#LinkedStructureTester#0" expanded="false" />
+                <element signature="docComment;method#testIndexOf#0;class#LinkedStructureTester#0" expanded="false" />
+                <element signature="docComment;method#testSize#0;class#LinkedStructureTester#0" expanded="false" />
+                <element signature="docComment;method#testIsEmpty#0;class#LinkedStructureTester#0" expanded="false" />
+                <element signature="docComment;method#testClear#0;class#LinkedStructureTester#0" expanded="false" />
+                <element signature="docComment;method#testToArray#0;class#LinkedStructureTester#0" expanded="false" />
+                <element signature="e#14629#14700#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -258,10 +252,10 @@
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/RecursiveSortingUtility.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/RecursiveSortingTimer.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/TowerTester.java" />
-        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/TowersOfHanoi.java" />
-        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyStack.java" />
-        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTester.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyLinkedList.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyStack.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/TowersOfHanoi.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTester.java" />
       </list>
     </option>
   </component>
@@ -1656,7 +1650,11 @@
       <created>1402940293350</created>
       <updated>1402940293350</updated>
     </task>
-    <option name="localTasksCounter" value="199" />
+    <task id="LOCAL-00199" summary="added comments">
+      <created>1402947283140</created>
+      <updated>1402947283140</updated>
+    </task>
+    <option name="localTasksCounter" value="200" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1699,7 +1697,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40133038" sideWeight="0.28916308" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26940134" sideWeight="0.3696352" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31374723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24946351" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -1761,7 +1759,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Initial commit&#10;" />
     <MESSAGE value="file commit testing" />
     <MESSAGE value="method initialization&#10;" />
     <MESSAGE value="Library, LibraryTest, and Mush... files copied to directory" />
@@ -1786,7 +1783,8 @@
     <MESSAGE value="implemented the rest of the JUnit tests" />
     <MESSAGE value="copied some of my implementations over" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="added comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="added comments" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1808,20 +1806,15 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1924" max-vertical-offset="2236">
           <caret line="74" column="7" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
           <folding>
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#721#722#0" expanded="true" />
-            <element signature="method#peek#0;class#MyStack#0" expanded="true" />
-            <element signature="method#pop#0;class#MyStack#0" expanded="true" />
-            <element signature="e#1565#1566#0" expanded="true" />
-            <element signature="e#1610#1611#0" expanded="true" />
-            <element signature="e#1700#1701#0" expanded="true" />
-            <element signature="e#1745#1746#0" expanded="true" />
-            <element signature="e#1949#1950#0" expanded="true" />
-            <element signature="e#1997#1998#0" expanded="true" />
+            <element signature="docComment;class#MyStack#0" expanded="false" />
+            <element signature="docComment;method#MyStack#0;class#MyStack#0" expanded="false" />
+            <element signature="docComment;method#clear#0;class#MyStack#0" expanded="false" />
+            <element signature="docComment;method#isEmpty#0;class#MyStack#0" expanded="false" />
+            <element signature="docComment;method#peek#0;class#MyStack#0" expanded="false" />
+            <element signature="docComment;method#pop#0;class#MyStack#0" expanded="false" />
+            <element signature="docComment;method#push#0;class#MyStack#0" expanded="false" />
+            <element signature="docComment;method#size#0;class#MyStack#0" expanded="false" />
+            <element signature="docComment;method#toArray#0;class#MyStack#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2168,79 +2161,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/TowersOfHanoi.java">
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyStack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1653" max-vertical-offset="4864">
-          <caret line="103" column="40" selection-start-line="103" selection-start-column="40" selection-end-line="103" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="741">
+          <caret line="89" column="4" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="4" />
           <folding>
-            <element signature="method#main#0;class#TowersOfHanoi#0" expanded="true" />
-            <element signature="e#4767#4768#0" expanded="true" />
-            <element signature="e#4828#4829#0" expanded="true" />
-            <element signature="method#moveDiscsRecursive#0;class#TowersOfHanoi#0" expanded="true" />
-            <element signature="method#moveDiscSingle#0;class#TowersOfHanoi#0" expanded="true" />
-            <element signature="method#toString#0;class#TowersOfHanoi#0" expanded="true" />
+            <element signature="docComment;class#MyStack#0" expanded="false" />
+            <element signature="docComment;method#MyStack#0;class#MyStack#0" expanded="false" />
+            <element signature="docComment;method#clear#0;class#MyStack#0" expanded="false" />
+            <element signature="docComment;method#isEmpty#0;class#MyStack#0" expanded="false" />
+            <element signature="docComment;method#peek#0;class#MyStack#0" expanded="false" />
+            <element signature="docComment;method#pop#0;class#MyStack#0" expanded="false" />
+            <element signature="docComment;method#push#0;class#MyStack#0" expanded="false" />
+            <element signature="docComment;method#size#0;class#MyStack#0" expanded="false" />
+            <element signature="docComment;method#toArray#0;class#MyStack#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyStack.java">
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/TowersOfHanoi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1634">
-          <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1772" max-vertical-offset="4864">
+          <caret line="185" column="11" selection-start-line="185" selection-start-column="11" selection-end-line="185" selection-end-column="11" />
           <folding>
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#721#722#0" expanded="true" />
-            <element signature="method#peek#0;class#MyStack#0" expanded="true" />
-            <element signature="method#pop#0;class#MyStack#0" expanded="true" />
-            <element signature="e#1565#1566#0" expanded="true" />
-            <element signature="e#1610#1611#0" expanded="true" />
-            <element signature="e#1700#1701#0" expanded="true" />
-            <element signature="e#1745#1746#0" expanded="true" />
-            <element signature="e#1949#1950#0" expanded="true" />
-            <element signature="e#1997#1998#0" expanded="true" />
+            <element signature="method#main#0;class#TowersOfHanoi#0" expanded="true" />
+            <element signature="method#TowersOfHanoi#0;class#TowersOfHanoi#0" expanded="true" />
+            <element signature="e#4767#4768#0" expanded="true" />
+            <element signature="e#4828#4829#0" expanded="true" />
+            <element signature="method#moveDiscsRecursive#0;class#TowersOfHanoi#0" expanded="true" />
+            <element signature="method#toString#0;class#TowersOfHanoi#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1482" max-vertical-offset="9074">
-          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1311">
+          <caret line="69" column="43" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#283#291#0" expanded="true" />
-            <element signature="method#testAddFirst#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testAddLast#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testAdd#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testGetFirst#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testGetLast#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testGet#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testRemoveFirst#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testRemoveLast#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testRemove#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testRemove1#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testContains#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testIndexOf#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testLastIndexOf#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testSize#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testIsEmpty#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testClear#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testToArray#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="method#testBulkTest#0;class#LinkedStructureTester#0" expanded="true" />
-            <element signature="e#13219#13228#0" expanded="true" />
-            <element signature="e#13284#13293#0" expanded="true" />
+            <element signature="docComment;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="docComment;method#testAddFirst#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="docComment;method#testAddLast#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="docComment;method#testAdd#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="e#3411#3487#0" expanded="false" />
+            <element signature="docComment;method#testGetFirst#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="docComment;method#testGetLast#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="docComment;method#testGet#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="docComment;method#testRemoveFirst#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="docComment;method#testRemoveLast#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="docComment;method#testRemove#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="docComment;method#testRemove1#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="docComment;method#testContains#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="docComment;method#testIndexOf#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="docComment;method#testSize#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="docComment;method#testIsEmpty#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="docComment;method#testClear#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="docComment;method#testToArray#0;class#LinkedStructureTester#0" expanded="false" />
+            <element signature="e#14629#14700#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07825086" vertical-offset="0" max-vertical-offset="1258">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.2128884" vertical-offset="0" max-vertical-offset="1258">
+          <caret line="455" column="4" selection-start-line="455" selection-start-column="4" selection-end-line="455" selection-end-column="4" />
           <folding>
             <element signature="docComment;class#MyLinkedList#0" expanded="false" />
             <element signature="docComment;method#MyLinkedList#0;class#MyLinkedList#0" expanded="false" />

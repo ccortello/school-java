@@ -5,9 +5,20 @@ import junit.framework.TestCase;
 import java.util.ArrayList;
 import java.util.Random;
 
+/**
+ * A JUnit testing class to test the methods of MyLinkedList class, and the MyStack class at the end with the
+ * testBulkTest() method. This JUnit test does not use the setUp or tearDown methods as each test, for the most part,
+ * uses a slightly different linked list of data. Therefore, list assignments are done in the test methods.
+ *
+ * @author Cody Cortello
+ * @author Casey Nordgran
+ * @version 6/16/2014
+ */
 public class LinkedStructureTester extends TestCase {
     // list for testing that contains objects of type String
     MyLinkedList<String> testListString = new MyLinkedList<String>();
+    // second list for testing that will have no elements added to it.
+    MyLinkedList<String> testListEmpty = new MyLinkedList<String>();
 
     /**
      * Tests that the first element is <tt>null</tt>, then adds 2 elements checking after each that the element added is
@@ -29,8 +40,10 @@ public class LinkedStructureTester extends TestCase {
     }
 
     /**
-     * Tests that the first element is <tt>null</tt>, then adds 2 elements checking after each that the element added
-     * is in the last index. This test also tests the <tt>getLast</tt> method at the same time.
+     * Tests that the first element is <tt>null</tt>, then adds the previous two elements as before with <tt>addFirst</tt>
+     * the adds 2 elements checking after each that the element added are in the last index.
+     * This test also tests the <tt>getLast</tt> method at the same time.
+     *
      * @throws Exception
      */
     public void testAddLast() throws Exception {
@@ -49,6 +62,7 @@ public class LinkedStructureTester extends TestCase {
     /**
      * This test first asserts with the new test that <tt>testListString</tt> is again null. It then adds 5 elements to
      * the list with already proven working methods. It then tests the <tt>add</tt> and <tt>get</tt> methods.
+     *
      * @throws Exception
      */
     public void testAdd() throws Exception {
@@ -96,6 +110,7 @@ public class LinkedStructureTester extends TestCase {
     /**
      * Tests that the first item is removed from a list with <tt>removeFirst</tt> and also that the method returns the
      * correct item that it removed.
+     *
      * @throws Exception
      */
     public void testRemoveFirst() throws Exception {
@@ -105,9 +120,9 @@ public class LinkedStructureTester extends TestCase {
         testListString.addLast("two");
         testListString.addLast("three");
 
-        // assert the first item is still "one"
+        // assert the first item is "one" after all three adds
         assertTrue(testListString.getFirst().equals("one"));
-        // remove the first item testing that it also returns the first item that removed
+        // remove the first item at the same time as testing it's return values equals "one"
         assertEquals("one", testListString.removeFirst());
         // then test that the new first item is equal to "two"
         assertTrue(testListString.getFirst().equals("two"));
@@ -116,6 +131,7 @@ public class LinkedStructureTester extends TestCase {
     /**
      * Tests that the last item is removed from a list with <tt>removeLast</tt> and also that the method returns the
      * correct item that it removed.
+     *
      * @throws Exception
      */
     public void testRemoveLast() throws Exception {
@@ -134,8 +150,8 @@ public class LinkedStructureTester extends TestCase {
     }
 
     /**
-     * First test the list is null again. Adds five elements. Removes elements at index 1, test the new elements
-     * in their place.
+     * Tests the first Remove method with takes an index as the argument. First test the list is null again.
+     * Adds five elements. Removes elements at index 1, test the new elements in their place.
      * @throws Exception
      */
     public void testRemove() throws Exception {
@@ -158,10 +174,11 @@ public class LinkedStructureTester extends TestCase {
     }
 
     /**
-     * <tt>remove</tt> is overloaded and this tests the second remove function when it is passed and object to be removed
+     * <tt>remove</tt> is overloaded and this tests the second remove function when it is passed an object to be removed
      * instead of an index pointing to an object. Test null, then adds five elements. Tests that "four" is present, then
      * removes "four" and tests that it is no longer there. This also test the <tt>contains</tt> method as it uses it to
      * assert that "four" is present or not
+     *
      * @throws Exception
      */
     public void testRemove1() throws Exception {

@@ -149,13 +149,11 @@ public class TowersOfHanoi {
      * @throws Exception (Any illegal movement case)
      */
     public void moveDiscSingle(char from, char to) throws Exception {
-        // Throw an exception for every illegal case.
-
         // initialize variables to point to the two towers where the move is taking place
         MyStack<Integer> fromStack;
         MyStack<Integer> toStack;
 
-        // throw exception if an incorrect tower is requested
+        // throw exception if an incorrect tower name is requested
         if (from == 'A')
             fromStack = towerA;
         else if (from == 'B')
@@ -174,16 +172,19 @@ public class TowersOfHanoi {
         else
             throw new Exception("Abort! Illegal tower ID!");
 
-        // throw exception if either tower is empty
+        // throw exception if the 'from' tower is empty, or the 'from' and 'to' towers are the same tower.
         if (fromStack.isEmpty() || fromStack == toStack)
             throw new Exception("Abort! Illegal tower request!");
+
+        /*throw exception if an attempt is made to put a disk of larger size on top of a smaller disk.
+          the first if statement is necessary to compare disks after, but also aids in avoiding nullPointerException*/
         if (! toStack.isEmpty()) {
             if (fromStack.peek() > toStack.peek())
                 throw new Exception("Abort! Illegal disc movement!");
         }
 
-        // Move one disc from the "from" tower to the "to" tower
-        // If you made a move, increment this towers object's numOfMoves field.
+        /* Move one disc from the "from" tower to the "to" tower
+        If you made a move, increment this towers object's numOfMoves field.*/
         toStack.push(fromStack.pop());
         numOfMoves++;
 
