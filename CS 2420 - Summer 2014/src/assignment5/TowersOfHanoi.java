@@ -163,7 +163,7 @@ public class TowersOfHanoi {
         else if (from == 'C')
             fromStack = towerC;
         else
-            throw new Exception("Illegal 'from' tower");
+            throw new Exception("Abort! Illegal tower ID!");
 
         if (to == 'A')
             toStack = towerA;
@@ -172,17 +172,14 @@ public class TowersOfHanoi {
         else if (to == 'C')
             toStack = towerC;
         else
-            throw new Exception("Illegal 'to' tower");
+            throw new Exception("Abort! Illegal tower ID!");
 
         // throw exception if either tower is empty
-        if (fromStack.isEmpty())
-            throw new Exception("'from' tower is empty");
-        if (toStack.isEmpty())
-            throw new Exception("'to' tower is empty");
+        if (fromStack.isEmpty() || fromStack == toStack)
+            throw new Exception("Abort! Illegal tower request!");
+        if (fromStack.peek().compareTo(toStack.peek()) >= 0 && ! toStack.isEmpty())
+            throw new Exception("Abort! Illegal disc movement!");
 
-        // throw an exception if an illegal move is requested
-        if (fromStack.peek() > toStack.peek())
-            throw new Exception("Illegal move called: " + fromStack.peek() + " cannot be on top of " + toStack.peek());
 
         // Move one disc from the "from" tower to the "to" tower
         // If you made a move, increment this towers object's numOfMoves field.
