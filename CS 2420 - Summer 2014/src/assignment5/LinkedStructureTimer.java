@@ -196,7 +196,9 @@ public class LinkedStructureTimer {
 
             // get the hardware and everything spooled up before we start timing
             startTime = System.nanoTime();
-            while (System.nanoTime() - startTime < 1000000000) {
+            while (System.nanoTime() - startTime < 20000) {
+                randNum = (int) Math.random() * Integer.MAX_VALUE;
+                toTimeList.addFirst(randNum);
             }
 
             //start timeing addFirst

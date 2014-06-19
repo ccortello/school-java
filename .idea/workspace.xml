@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="different addFirst Test">
+    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="changes">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTimer.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTimer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -127,11 +127,11 @@
       <file leaf-file-name="LinkedStructureTimer.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTimer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30609897" vertical-offset="214" max-vertical-offset="1380">
-              <caret line="182" column="64" selection-start-line="182" selection-start-column="64" selection-end-line="182" selection-end-column="64" />
+            <state vertical-scroll-proportion="0.36139333" vertical-offset="671" max-vertical-offset="1540">
+              <caret line="198" column="56" selection-start-line="198" selection-start-column="56" selection-end-line="198" selection-end-column="56" />
               <folding>
                 <element signature="docComment;class#LinkedStructureTimer#0" expanded="false" />
-                <element signature="e#431#454#0" expanded="false" />
+                <element signature="method#LinkedStructureTimer#0;class#LinkedStructureTimer#0" expanded="true" />
                 <element signature="docComment;method#problem3ai#0;class#LinkedStructureTimer#0" expanded="false" />
                 <element signature="e#1434#1494#0" expanded="false" />
                 <element signature="e#2318#2422#0" expanded="false" />
@@ -144,7 +144,6 @@
                 <element signature="e#5977#6035#0" expanded="false" />
                 <element signature="docComment;method#problem3b#0;class#LinkedStructureTimer#0" expanded="false" />
                 <element signature="docComment;method#problem3c#0;class#LinkedStructureTimer#0" expanded="false" />
-                <element signature="e#6910#6919#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1631,7 +1630,11 @@
       <created>1403149090043</created>
       <updated>1403149090043</updated>
     </task>
-    <option name="localTasksCounter" value="204" />
+    <task id="LOCAL-00204" summary="changes">
+      <created>1403149236123</created>
+      <updated>1403149236123</updated>
+    </task>
+    <option name="localTasksCounter" value="205" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1679,7 +1682,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17326203" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5776053" sideWeight="0.63036484" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19955654" sideWeight="0.63036484" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1736,7 +1739,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="moved getHolder, made BookTest" />
     <MESSAGE value="changed Library.addAll(String Filename) method to take only the abstract file name." />
     <MESSAGE value="updated" />
     <MESSAGE value="added duplicate checking in addAll()&#10;used enhanced for loop in containtsAll() instead of creating and using iter, also&#10;    added null checking&#10;fixed while() expression to use .equals() for objects in the method remove()&#10;    instead of !=&#10;check for null reference added in retainAll()&#10;&#10;" />
@@ -1761,7 +1763,8 @@
     <MESSAGE value="added exceptions testing for the necessary methods in LinkedStructureTester" />
     <MESSAGE value="small changes" />
     <MESSAGE value="different addFirst Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="different addFirst Test" />
+    <MESSAGE value="changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -2170,11 +2173,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTimer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30609897" vertical-offset="214" max-vertical-offset="1380">
-          <caret line="182" column="64" selection-start-line="182" selection-start-column="64" selection-end-line="182" selection-end-column="64" />
+        <state vertical-scroll-proportion="0.36139333" vertical-offset="671" max-vertical-offset="1540">
+          <caret line="198" column="56" selection-start-line="198" selection-start-column="56" selection-end-line="198" selection-end-column="56" />
           <folding>
             <element signature="docComment;class#LinkedStructureTimer#0" expanded="false" />
-            <element signature="e#431#454#0" expanded="false" />
+            <element signature="method#LinkedStructureTimer#0;class#LinkedStructureTimer#0" expanded="true" />
             <element signature="docComment;method#problem3ai#0;class#LinkedStructureTimer#0" expanded="false" />
             <element signature="e#1434#1494#0" expanded="false" />
             <element signature="e#2318#2422#0" expanded="false" />
@@ -2187,7 +2190,6 @@
             <element signature="e#5977#6035#0" expanded="false" />
             <element signature="docComment;method#problem3b#0;class#LinkedStructureTimer#0" expanded="false" />
             <element signature="docComment;method#problem3c#0;class#LinkedStructureTimer#0" expanded="false" />
-            <element signature="e#6910#6919#0" expanded="true" />
           </folding>
         </state>
       </provider>
