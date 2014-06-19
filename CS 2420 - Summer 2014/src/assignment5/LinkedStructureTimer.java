@@ -26,21 +26,15 @@ public class LinkedStructureTimer {
     void problem3a() {
         // substantiate a random (seeded) MyLinkedList to run tests upon
         MyLinkedList<Integer> testList = new MyLinkedList<Integer>();
-        Random rand = new Random(13489723891023874L);
-        for (int i = 0; i < 100000; i++)
-            testList.addFirst(rand.nextInt());
+        int timesToLoop = 10000, maxSize = 10000;
+        long seed = 13489723891023874L;
+        Random rand = new Random(seed);
 
-        System.out.println("Size = " + arraySize + ", loops = " + timesToLoop + "\n\nThreshold\tTime");
-
-        ArrayList<Integer> sortList = RecursiveSortingUtility.generateAverageCase(arraySize);
-        ArrayList<Integer> testArray;
+        System.out.println("Size = " + testList.size() + ", loops = " + timesToLoop + "\n\nThreshold\tTime");
 
         // loop through cutoff values and find the average time and number of comparisons for sorting an array of size
         // 100,000 with that cutoff value, then print the results
-        for (int i = 0; i <= 10000; i += 100) {
-
-            // change the cutoff value
-            RecursiveSortingUtility.setMergeSortThreshold(i);
+        for (int i = 0; i <= maxSize; i += 100) {
 
     		/* timing code modified from Peter Jensen's TimingExperiment08.java from his CS 2420 class of Spring 2014 */
 
@@ -58,19 +52,28 @@ public class LinkedStructureTimer {
             startTime = System.nanoTime();
 
             for (long j = 0; j < timesToLoop; j++) {
-                // create a random array of data and sort it
-                testArray = new ArrayList<Integer>(sortList);
-//                startTime = System.nanoTime();
-                RecursiveSortingUtility.mergeSortDriver(testArray);
+                // create a MyLinkedList of the current size (by the outer for loop) and add one item. Note the 'k<=i'
+                for (int k = 0; k <= i; k++)
+                    testList.addFirst(rand.nextInt());
+
+                // reset testList so it's an empty set for the next loop
+                testList = new MyLinkedList<Integer>();
             }
 
             midpointTime = System.nanoTime();
 
-            // Calculate the cost of looping and copying the array
+            // reset random variable to assure that the execution time for the setup overhead is _exactly_ the same
+            rand = new Random(seed);
+
+            // Calculate the cost of looping, creating the test lists, and resetting testList
 
             for (long j = 0; j < timesToLoop; j++) {
-                testArray = new ArrayList<Integer>(sortList);
+                for (int k = 0; k < i; k++) // here 'k<i' is used because we want to subtract the list substantiation
+                    //  overhead but leave the execution time of the final addFirst
+                    testList.addFirst(rand.nextInt());
+                testList = new MyLinkedList<Integer>();
             }
+
 
             stopTime = System.nanoTime();
 
@@ -81,7 +84,7 @@ public class LinkedStructureTimer {
             averageTime /= 1.0e9;
 
             // print out tab-delimited results
-            System.out.println(RecursiveSortingUtility.getMergesortThreshold() + "\t" + averageTime);
+//            System.out.println(RecursiveSortingUtility.getMergesortThreshold() + "\t" + averageTime);
     }
 
     /**
