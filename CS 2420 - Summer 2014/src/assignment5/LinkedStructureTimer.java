@@ -190,6 +190,8 @@ public class LinkedStructureTimer {
         long startTime, endTime, middleTime;
         int randNum = 0;
         double totalTime = 0.0;
+        int timesToLoop = 10;
+        Random rand = new Random(seed);
 
         System.out.println("Added\tTotalTime");
         for (int i = 1000; i <= 10000000; i *= 2) {
@@ -197,26 +199,27 @@ public class LinkedStructureTimer {
             // get the hardware and everything spooled up before we start timing
             startTime = System.nanoTime();
             while (System.nanoTime() - startTime < 20000) {
-                randNum = (int) Math.random() * Integer.MAX_VALUE;
+                randNum = rand.nextInt();
                 toTimeList.addFirst(randNum);
             }
 
-            //start timeing addFirst
+            //start timing addFirst
             startTime = System.nanoTime();
             for (int j = 0; j < i; j++) {
-                randNum = (int) Math.random() * Integer.MAX_VALUE;
+                randNum = rand.nextInt();
                 toTimeList.addFirst(randNum);
             }
 
             middleTime = System.nanoTime();
 
+            // calculate overhead for looping and substantiating a random integer
             for (int j = 0; j < i; j++) {
-                randNum = (int) Math.random() * Integer.MAX_VALUE;
+                randNum = rand.nextInt();
             }
 
             endTime = System.nanoTime();
 
-            totalTime = (double) ((middleTime - startTime) - (endTime - middleTime));
+            totalTime = (double) ((middleTime - startTime) - (endTime - middleTime) /);
             System.out.println(i + "\t" + totalTime);
         }
     }
