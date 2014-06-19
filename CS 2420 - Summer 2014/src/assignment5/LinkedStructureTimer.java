@@ -206,6 +206,7 @@ public class LinkedStructureTimer {
                 }
 
                 // now that a list of the correct size has been substantiated, .get a random object assured to be in the list
+                testList.get(rand.nextInt(availableInts.size() - 1));
 
                 // reset testList so it's an empty list for the next loop
                 testList = new MyLinkedList<Integer>();
