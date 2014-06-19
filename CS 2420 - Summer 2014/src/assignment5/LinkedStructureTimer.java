@@ -16,10 +16,11 @@ public class LinkedStructureTimer {
     }
 
     LinkedStructureTimer() {
-        problem3ai();
+//        problem3ai();
 //        problem3aii();
 //        problem3b();
 //        problem3c();
+        prob3a();
     }
 
     /**
@@ -69,7 +70,6 @@ public class LinkedStructureTimer {
             //  timing note: the statements between midpointTime1 and midpointTime2 do not affect the timing at all.
             rand = new Random(seed);
 
-
             // since resetting rand would necessarily take execution time we establish a new midpointTime in order to
             //  calculate the overhead alone (separate from the time taken to reset rand)
             midpointTime2 = System.nanoTime();
@@ -79,7 +79,6 @@ public class LinkedStructureTimer {
             for (long j = 0; j < timesToLoop; j++) {
                 testList = new MyLinkedList<Integer>();
             }
-
 
             stopTime = System.nanoTime();
 
@@ -178,5 +177,44 @@ public class LinkedStructureTimer {
      */
     void problem3c() {
 
+    }
+
+    void prob3a() {
+        // create an initial linked list of 10 elements to start adding to during the timing.
+        MyLinkedList<Integer> toTimeList = new MyLinkedList<Integer>();
+        for (int i = 0; i < 10; i++) {
+            toTimeList.addFirst(listElements[i]);
+        }
+
+        long startTime, endTime, middleTime;
+        int randNum = 0;
+        double totalTime = 0.0;
+
+        System.out.println("Added\tTotalTime");
+        for (int i = 1000; i <= 10000000; i *= 2) {
+
+            // get the hardware and everything spooled up before we start timing
+            startTime = System.nanoTime();
+            while (System.nanoTime() - startTime < 1000000000) {
+            }
+
+            //start timeing addFirst
+            startTime = System.nanoTime();
+            for (int j = 0; j < i; j++) {
+                randNum = (int) Math.random() * Integer.MAX_VALUE;
+                toTimeList.addFirst(randNum);
+            }
+
+            middleTime = System.nanoTime();
+
+            for (int j = 0; j < i; j++) {
+                randNum = (int) Math.random() * Integer.MAX_VALUE;
+            }
+
+            endTime = System.nanoTime();
+
+            totalTime = (double) ((middleTime - startTime) - (endTime - middleTime));
+            System.out.println(i + "\t" + totalTime);
+        }
     }
 }
