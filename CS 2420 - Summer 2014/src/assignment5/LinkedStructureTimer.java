@@ -15,14 +15,26 @@ public class LinkedStructureTimer {
         problem3a();
     }
 
+    /**
+     * Finds the average running time of the addFirst method
+     * O(1) expected
+     */
     void problem3a() {
 
     }
 
+    /**
+     * Finds the average running time of the get method
+     * O(N) expected
+     */
     void problem3b() {
 
     }
 
+    /**
+     * Finds the average running time of the remove method
+     * O(N) expected
+     */
     void problem3c() {
 
     }
