@@ -222,9 +222,13 @@ public class LinkedStructureTimer {
             //  calculate the overhead alone (separate from the time taken to reset rand)
             midpointTime2 = System.nanoTime();
 
-            // Calculate the cost of looping, adding to  and resetting testList
-
+            // Calculate the cost of looping, adding to each list, and resetting testList
             for (long j = 0; j < timesToLoop; j++) {
+                for (int k = 0; k < i; k++) {
+                    int addInt = rand.nextInt();
+                    testList.addFirst(addInt);
+                    availableInts.add(addInt);
+                }
                 testList = new MyLinkedList<Integer>();
             }
 
