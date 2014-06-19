@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="working on 3bi, set fields">
+    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="updated tests for 3bi">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTimer.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTimer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -124,23 +124,22 @@
       <file leaf-file-name="LinkedStructureTimer.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTimer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37173912" vertical-offset="3109" max-vertical-offset="5253">
-              <caret line="203" column="73" selection-start-line="203" selection-start-column="73" selection-end-line="203" selection-end-column="73" />
+            <state vertical-scroll-proportion="0.8891304" vertical-offset="3568" max-vertical-offset="4505">
+              <caret line="258" column="0" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#415#416#0" expanded="true" />
-                <element signature="e#457#458#0" expanded="true" />
+                <element signature="e#357#358#0" expanded="true" />
+                <element signature="e#399#400#0" expanded="true" />
                 <element signature="method#LinkedStructureTimer#0;class#LinkedStructureTimer#0" expanded="true" />
                 <element signature="method#problem3ai#0;class#LinkedStructureTimer#0" expanded="true" />
-                <element signature="e#904#913#0" expanded="true" />
+                <element signature="e#846#855#0" expanded="true" />
                 <element signature="method#problem3aii#0;class#LinkedStructureTimer#0" expanded="true" />
-                <element signature="e#3804#3813#0" expanded="true" />
-                <element signature="e#6833#6842#0" expanded="true" />
-                <element signature="e#6902#6911#0" expanded="true" />
+                <element signature="e#3746#3755#0" expanded="true" />
+                <element signature="method#problem3bi#0;class#LinkedStructureTimer#0" expanded="true" />
+                <element signature="e#6775#6784#0" expanded="true" />
+                <element signature="e#6844#6853#0" expanded="true" />
                 <element signature="method#problem3bii#0;class#LinkedStructureTimer#0" expanded="true" />
                 <element signature="method#problem3c#0;class#LinkedStructureTimer#0" expanded="true" />
-                <element signature="method#prob3a#0;class#LinkedStructureTimer#0" expanded="true" />
-                <element signature="e#10271#10280#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -815,7 +814,7 @@
       <workItem from="1401737072680" duration="10883000" />
       <workItem from="1401824205280" duration="5039000" />
       <workItem from="1402495988863" duration="2611000" />
-      <workItem from="1403152972415" duration="1166000" />
+      <workItem from="1403152972415" duration="1246000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -1653,11 +1652,15 @@
       <created>1403153803540</created>
       <updated>1403153803540</updated>
     </task>
-    <option name="localTasksCounter" value="210" />
+    <task id="LOCAL-00210" summary="updated tests for 3bi">
+      <created>1403154156619</created>
+      <updated>1403154156619</updated>
+    </task>
+    <option name="localTasksCounter" value="211" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="275839000" />
+    <option name="totallyTimeSpent" value="275919000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1758,7 +1761,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="added comments and javadocs to ArrayBasedCollection class" />
     <MESSAGE value="added small amount of comments to ArrayBasedCollectionTimer" />
     <MESSAGE value="finished" />
     <MESSAGE value="implemented:&#10;-insertionSortIterative&#10;-goodPivotStrategy&#10;-betterPivotStrategy&#10;-bestPivotStrategy&#10;-generateBestCase&#10;-generateAverageCase&#10;-generateWorstCase&#10;-swapElements" />
@@ -1783,7 +1785,8 @@
     <MESSAGE value="working on 3bi and 3bii" />
     <MESSAGE value="removed timesToLoop from prob3a" />
     <MESSAGE value="working on 3bi, set fields" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on 3bi, set fields" />
+    <MESSAGE value="updated tests for 3bi" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated tests for 3bi" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -2156,23 +2159,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTimer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37173912" vertical-offset="3109" max-vertical-offset="5253">
-          <caret line="203" column="73" selection-start-line="203" selection-start-column="73" selection-end-line="203" selection-end-column="73" />
+        <state vertical-scroll-proportion="0.8891304" vertical-offset="3568" max-vertical-offset="4505">
+          <caret line="258" column="0" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
             <element signature="method#LinkedStructureTimer#0;class#LinkedStructureTimer#0" expanded="true" />
             <element signature="method#problem3ai#0;class#LinkedStructureTimer#0" expanded="true" />
-            <element signature="e#904#913#0" expanded="true" />
+            <element signature="e#846#855#0" expanded="true" />
             <element signature="method#problem3aii#0;class#LinkedStructureTimer#0" expanded="true" />
-            <element signature="e#3804#3813#0" expanded="true" />
-            <element signature="e#6833#6842#0" expanded="true" />
-            <element signature="e#6902#6911#0" expanded="true" />
+            <element signature="e#3746#3755#0" expanded="true" />
+            <element signature="method#problem3bi#0;class#LinkedStructureTimer#0" expanded="true" />
+            <element signature="e#6775#6784#0" expanded="true" />
+            <element signature="e#6844#6853#0" expanded="true" />
             <element signature="method#problem3bii#0;class#LinkedStructureTimer#0" expanded="true" />
             <element signature="method#problem3c#0;class#LinkedStructureTimer#0" expanded="true" />
-            <element signature="method#prob3a#0;class#LinkedStructureTimer#0" expanded="true" />
-            <element signature="e#10271#10280#0" expanded="true" />
           </folding>
         </state>
       </provider>

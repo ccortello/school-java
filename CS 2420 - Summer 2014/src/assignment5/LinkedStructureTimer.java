@@ -205,6 +205,8 @@ public class LinkedStructureTimer {
                     availableInts.add(addInt);
                 }
 
+                // now that a list of the correct size has been substantiated, .get a random object assured to be in the list
+
                 // reset testList so it's an empty list for the next loop
                 testList = new MyLinkedList<Integer>();
             }
@@ -220,7 +222,7 @@ public class LinkedStructureTimer {
             //  calculate the overhead alone (separate from the time taken to reset rand)
             midpointTime2 = System.nanoTime();
 
-            // Calculate the cost of looping and resetting testList
+            // Calculate the cost of looping, adding to  and resetting testList
 
             for (long j = 0; j < timesToLoop; j++) {
                 testList = new MyLinkedList<Integer>();
@@ -253,49 +255,5 @@ public class LinkedStructureTimer {
      */
     void problem3c() {
 
-    }
-
-    void prob3a() {
-        int[] listElements = {- 14, 13, 52, 65, 81, - 7, 2, 122, 137, - 43};
-        // create an initial linked list of 10 elements to start adding to during the timing.
-        MyLinkedList<Integer> toTimeList = new MyLinkedList<Integer>();
-        for (int i = 0; i < 10; i++) {
-            toTimeList.addFirst(listElements[i]);
-        }
-
-        long startTime, endTime, middleTime;
-        int randNum = 0;
-        double totalTime = 0.0;
-        Random rand = new Random(seed);
-
-        System.out.println("Added\tTotalTime");
-        for (int i = 1000; i <= 10000000; i *= 2) {
-
-            // get the hardware and everything spooled up before we start timing
-            startTime = System.nanoTime();
-            while (System.nanoTime() - startTime < 20000) {
-                randNum = rand.nextInt();
-                toTimeList.addFirst(randNum);
-            }
-
-            //start timing addFirst
-            startTime = System.nanoTime();
-            for (int j = 0; j < i; j++) {
-                randNum = rand.nextInt();
-                toTimeList.addFirst(randNum);
-            }
-
-            middleTime = System.nanoTime();
-
-            // calculate overhead for looping and substantiating a random integer
-            for (int j = 0; j < i; j++) {
-                randNum = rand.nextInt();
-            }
-
-            endTime = System.nanoTime();
-
-            totalTime = (double) ((middleTime - startTime) - (endTime - middleTime));
-            System.out.println(i + "\t" + totalTime);
-        }
     }
 }
