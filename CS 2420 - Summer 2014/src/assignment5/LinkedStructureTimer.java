@@ -18,10 +18,10 @@ public class LinkedStructureTimer {
     LinkedStructureTimer() {
 //        problem3ai();
 //        problem3aii();
-//        problem3bi();
+        problem3bi();
 //        problem3bii();
 //        problem3c();
-        prob3a();
+//        prob3a();
     }
 
     /**
