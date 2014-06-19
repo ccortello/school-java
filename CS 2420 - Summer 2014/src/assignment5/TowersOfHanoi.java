@@ -46,8 +46,7 @@ public class TowersOfHanoi {
 
             try {
                 numDiscs = Integer.parseInt(args[0]); // Ensure valid integer argument
-            }
-            catch (Exception e) {
+            } catch (Exception e) {
                 System.out.println("\nInvalid number of discs argument!\n");
                 return;
             }
@@ -76,11 +75,10 @@ public class TowersOfHanoi {
 
                     if (myTowers.towerB.size() == numDiscs) // Check to see if everything was moved
                         System.out.println("Done! " + myTowers.numOfMoves + " moves were required to solve " +
-                                           myTowers.numOfDiscs + " discs.\n");
+                                myTowers.numOfDiscs + " discs.\n");
                     else
                         System.out.println("Bummer! no solution found, recursion failed!");
-                }
-                catch (Exception e) {
+                } catch (Exception e) {
                     System.err.println("ERROR: " + e.getMessage());
                 }
         }
@@ -125,7 +123,6 @@ public class TowersOfHanoi {
      * @param to        (The tower to move the stack of discs to)
      * @param use       (The tower to be used to help the movements)
      * @param numToMove (The number of discs to be solved for)
-     *
      * @throws Exception (Any error while operating on the stacks)
      */
     private void moveDiscsRecursive(char from, char to, char use, int numToMove) throws Exception {
@@ -145,7 +142,6 @@ public class TowersOfHanoi {
      *
      * @param from (The tower to move ONE disc from)
      * @param to   (The tower to move ONE disc to)
-     *
      * @throws Exception (Any illegal movement case)
      */
     public void moveDiscSingle(char from, char to) throws Exception {
@@ -178,10 +174,8 @@ public class TowersOfHanoi {
 
         /*throw exception if an attempt is made to put a disk of larger size on top of a smaller disk.
           the first if statement is necessary to compare disks after, but also aids in avoiding nullPointerException*/
-        if (! toStack.isEmpty()) {
-            if (fromStack.peek() > toStack.peek())
-                throw new Exception("Abort! Illegal disc movement!\n");
-        }
+        if (!toStack.isEmpty() && fromStack.peek() > toStack.peek())
+            throw new Exception("Abort! Illegal disc movement!\n");
 
         /* Move one disc from the "from" tower to the "to" tower
         If you made a move, increment this towers object's numOfMoves field.*/

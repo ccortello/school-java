@@ -6,11 +6,9 @@ import java.util.NoSuchElementException;
  * Represents a generic doubly linked list.
  *
  * @param <E> - the type of elements contained in the linked list
- *
  * @author Paymon Saebi
  * @author Cody Cortello
  * @author Casey Nordgran
- *
  * @version 6/16/2014
  */
 public class MyLinkedList<E> implements List<E> {
@@ -71,7 +69,6 @@ public class MyLinkedList<E> implements List<E> {
      *
      * @param index   position of list to add the new element.
      * @param element new item to be added at the position of <tt>index</tt>
-     *
      * @throws IndexOutOfBoundsException
      */
     public void add(int index, E element) throws IndexOutOfBoundsException {
@@ -156,7 +153,6 @@ public class MyLinkedList<E> implements List<E> {
      * range. O(N) for a doubly-linked list.
      *
      * @param index Position of element in this list to be returned.
-     *
      * @return Element from this list located at the position of <tt>index</tt>
      * @throws IndexOutOfBoundsException
      */
@@ -321,17 +317,16 @@ public class MyLinkedList<E> implements List<E> {
         // create starting node
         Node toRemove = head;
         // traverse from the head node until the element is reached or the end is reached
-        while (! toRemove.data.equals(element) && toRemove != tail)
+        while (!toRemove.data.equals(element) && toRemove != tail)
             toRemove = toRemove.next;
 
         // if the tail was reached but the tail element is not equal to the argument, then the element wasn't found.
-        if (toRemove == tail && ! toRemove.data.equals(element))
+        if (toRemove == tail && !toRemove.data.equals(element))
             return false;
 
         // at this point the element is found. Remove it, decrement size and return true.
         toRemove.prev.next = toRemove.next;
         toRemove.next.prev = toRemove.prev;
-        toRemove = null;
         size--;
         return true;
     }
@@ -351,11 +346,11 @@ public class MyLinkedList<E> implements List<E> {
         // create starting node
         Node toFind = head;
         // traverse from the head node until the element is reached or the end is reached
-        while (! toFind.data.equals(element) && toFind != tail)
+        while (!toFind.data.equals(element) && toFind != tail)
             toFind = toFind.next;
 
         // if the tail was reached but the tail element is not equal to the argument, then the element wasn't found.
-        if (toFind == tail && ! toFind.data.equals(element))
+        if (toFind == tail && !toFind.data.equals(element))
             return false;
 
         // at this point the element is found, so return true.
@@ -368,26 +363,26 @@ public class MyLinkedList<E> implements List<E> {
      *
      * @param element Item to found in this list.
      * @return Index of the first occurrence of this element if it is found in this list, otherwise -1 to stating
-     *          the element was not found.
+     * the element was not found.
      */
     public int indexOf(E element) {
         // if there are no elements in this list, automatically return -1.
         if (size == 0)
-            return - 1;
+            return -1;
 
         // variable to keep track of the node indexes
         int returnIndex = 0;
         // create starting node
         Node toFind = head;
         // traverse from the head node until the element is reached or the end is reached
-        while (! toFind.data.equals(element) && toFind != tail) {
+        while (!toFind.data.equals(element) && toFind != tail) {
             toFind = toFind.next;
             returnIndex++;
         }
 
         // if the tail was reached but does not equal element, argument was not found so return -1
-        if (toFind == tail && ! toFind.data.equals(element))
-            return - 1;
+        if (toFind == tail && !toFind.data.equals(element))
+            return -1;
 
         // at this point the element is found, so return the associated index.
         return returnIndex;
@@ -399,26 +394,26 @@ public class MyLinkedList<E> implements List<E> {
      *
      * @param element Item for which the last of occurrence of is to be found in this list.
      * @return Index of the last occurrence of this element if it is found in this list, otherwise -1 to stating
-     *          the element was not found.
+     * the element was not found.
      */
     public int lastIndexOf(E element) {
         // if there are no elements in this list, automatically return -1.
         if (size == 0)
-            return - 1;
+            return -1;
 
         // variable to keep track of the node indexes, start from the tail and moving backward
         int returnIndex = size - 1;
         // create starting node
         Node toFind = tail;
         // traverse backward from the tail node until the element is reached or the beginning is reached
-        while (! toFind.data.equals(element) && toFind != head) {
+        while (!toFind.data.equals(element) && toFind != head) {
             toFind = toFind.prev;
             returnIndex--;
         }
 
         // if the head was reached but does not equal element, argument was not found so return -1
-        if (toFind == head && ! toFind.data.equals(element))
-            return - 1;
+        if (toFind == head && !toFind.data.equals(element))
+            return -1;
 
         // at this point the element is found, so return the associated index.
         return returnIndex;
