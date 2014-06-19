@@ -180,6 +180,7 @@ public class LinkedStructureTimer {
     }
 
     void prob3a() {
+        int[] listElements = {- 14, 13, 52, 65, 81, - 7, 2, 122, 137, - 43};
         // create an initial linked list of 10 elements to start adding to during the timing.
         MyLinkedList<Integer> toTimeList = new MyLinkedList<Integer>();
         for (int i = 0; i < 10; i++) {
