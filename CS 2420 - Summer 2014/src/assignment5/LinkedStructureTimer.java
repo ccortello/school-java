@@ -173,7 +173,7 @@ public class LinkedStructureTimer {
         MyLinkedList<Integer> testList = new MyLinkedList<Integer>();
         Random rand = new Random(seed);
 
-        int timesToLoop = 100, maxSize = 5000;
+        int timesToLoop = 100, maxSize = 2001;
 
         System.out.println("MaxSize = " + maxSize + ", loops = " + timesToLoop + "\n\nSize\tTime");
 
@@ -224,7 +224,6 @@ public class LinkedStructureTimer {
             for (long j = 0; j < timesToLoop; j++) {
                 for (int k = 0; k < i; k++)
                     testList.addFirst(rand.nextInt());
-
                 int randomIndex = rand.nextInt(testList.size());
                 testList = new MyLinkedList<Integer>();
             }
