@@ -199,7 +199,6 @@ public class LinkedStructureTimer {
         long startTime, endTime, middleTime;
         int randNum = 0;
         double totalTime = 0.0;
-        int timesToLoop = 10;
         Random rand = new Random(seed);
 
         System.out.println("Added\tTotalTime");
@@ -228,7 +227,7 @@ public class LinkedStructureTimer {
 
             endTime = System.nanoTime();
 
-            totalTime = (double) ((middleTime - startTime) - (endTime - middleTime) /);
+            totalTime = (double) ((middleTime - startTime) - (endTime - middleTime));
             System.out.println(i + "\t" + totalTime);
         }
     }
