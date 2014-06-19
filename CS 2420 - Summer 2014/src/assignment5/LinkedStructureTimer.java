@@ -59,7 +59,7 @@ public class LinkedStructureTimer {
                 for (int k = 0; k < i; k++)
                     testList.addFirst(rand.nextInt());
 
-                // reset testList so it's an empty set for the next loop
+                // reset testList so it's an empty list for the next loop
                 testList = new MyLinkedList<Integer>();
             }
 
@@ -127,7 +127,7 @@ public class LinkedStructureTimer {
                 for (int k = 0; k < i; k++)
                     testList.add(0, rand.nextInt());
 
-                // reset testList so it's an empty set for the next loop
+                // reset testList so it's an empty list for the next loop
                 testList = new ArrayList<Integer>();
             }
 
@@ -174,12 +174,12 @@ public class LinkedStructureTimer {
         ArrayList<Integer> availableInts = new ArrayList<Integer>();
         Random rand = new Random(seed);
 
-        int timesToLoop = 10000, maxSize = 20000;
+        int timesToLoop = 100, maxSize = 1000;
 
         System.out.println("MaxSize = " + maxSize + ", loops = " + timesToLoop + "\n\nSize\tTime");
 
         // loop through list sizes and find the average time for addFirst on a list of each size, then print the results
-        for (int i = 0; i <= maxSize; i += 500) {
+        for (int i = 0; i <= maxSize; i += 50) {
 
     		/* timing code modified from Peter Jensen's TimingExperiment08.java from his CS 2420 class of Spring 2014 */
 
@@ -198,10 +198,14 @@ public class LinkedStructureTimer {
 
             for (long j = 0; j < timesToLoop; j++) {
                 // create a MyLinkedList of the current size (the size is set by the outer for loop index 'i')
-                for (int k = 0; k < i; k++)
-                    testList.addFirst(rand.nextInt());
+                for (int k = 0; k < i; k++) {
+                    // create a random int and add it to both collections
+                    int addInt = rand.nextInt();
+                    testList.addFirst(addInt);
+                    availableInts.add(addInt);
+                }
 
-                // reset testList so it's an empty set for the next loop
+                // reset testList so it's an empty list for the next loop
                 testList = new MyLinkedList<Integer>();
             }
 
