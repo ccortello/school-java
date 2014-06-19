@@ -60,9 +60,11 @@ public class LinkedStructureTimer {
                 testList = new MyLinkedList<Integer>();
             }
 
+            // midpointTime1 marks the end of the testing execution.
             midpointTime1 = System.nanoTime();
 
-            // reset random variable to assure that the execution time for the setup overhead is _exactly_ the same
+            // reset random variable to assure that the execution time for the setup overhead is _exactly_ the same.
+            //  timing note: the statements between midpointTime1 and midpointTime2 do not affect the timing at all.
             rand = new Random(seed);
 
 
