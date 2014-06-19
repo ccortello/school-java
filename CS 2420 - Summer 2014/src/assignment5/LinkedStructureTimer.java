@@ -171,7 +171,6 @@ public class LinkedStructureTimer {
         // substantiate a random (seeded) MyLinkedList to run tests upon and an ArrayList of added objects from which
         //  objects can be accessed for the get method
         MyLinkedList<Integer> testList = new MyLinkedList<Integer>();
-        ArrayList<Integer> availableInts = new ArrayList<Integer>();
         Random rand = new Random(seed);
 
         int timesToLoop = 100, maxSize = 1000;
@@ -198,15 +197,11 @@ public class LinkedStructureTimer {
 
             for (long j = 0; j < timesToLoop; j++) {
                 // create a MyLinkedList of the current size (the size is set by the outer for loop index 'i')
-                for (int k = 0; k < i; k++) {
-                    // create a random int and add it to both collections
-                    int addInt = rand.nextInt();
-                    testList.addFirst(addInt);
-                    availableInts.add(addInt);
-                }
+                for (int k = 0; k < i; k++)
+                    testList.addFirst(rand.nextInt());
 
-                // now that a list of the correct size has been substantiated, .get a random object assured to be in the list
-                testList.get(rand.nextInt(availableInts.size() - 1));
+                // now that a list of the correct size has been substantiated, .get from a random index
+                testList.get(rand.nextInt(testList.size() - 1));
 
                 // reset testList so it's an empty list for the next loop
                 testList = new MyLinkedList<Integer>();
@@ -223,13 +218,10 @@ public class LinkedStructureTimer {
             //  calculate the overhead alone (separate from the time taken to reset rand)
             midpointTime2 = System.nanoTime();
 
-            // Calculate the cost of looping, adding to each list, and resetting testList
+            // Calculate the total overhead (cost of looping, substantiating the list, and resetting the list)
             for (long j = 0; j < timesToLoop; j++) {
-                for (int k = 0; k < i; k++) {
-                    int addInt = rand.nextInt();
-                    testList.addFirst(addInt);
-                    availableInts.add(addInt);
-                }
+                for (int k = 0; k < i; k++)
+                    testList.addFirst(rand.nextInt());
                 testList = new MyLinkedList<Integer>();
             }
 

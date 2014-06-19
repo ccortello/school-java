@@ -124,8 +124,8 @@
       <file leaf-file-name="LinkedStructureTimer.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTimer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29782608" vertical-offset="3262" max-vertical-offset="4590">
-              <caret line="208" column="64" selection-start-line="208" selection-start-column="64" selection-end-line="208" selection-end-column="64" />
+            <state vertical-scroll-proportion="0.7967391" vertical-offset="3007" max-vertical-offset="4454">
+              <caret line="220" column="110" selection-start-line="220" selection-start-column="110" selection-end-line="220" selection-end-column="110" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#357#358#0" expanded="true" />
@@ -136,7 +136,6 @@
                 <element signature="method#problem3aii#0;class#LinkedStructureTimer#0" expanded="true" />
                 <element signature="e#3746#3755#0" expanded="true" />
                 <element signature="e#6775#6784#0" expanded="true" />
-                <element signature="e#6844#6853#0" expanded="true" />
                 <element signature="method#problem3bii#0;class#LinkedStructureTimer#0" expanded="true" />
                 <element signature="method#problem3c#0;class#LinkedStructureTimer#0" expanded="true" />
               </folding>
@@ -813,7 +812,7 @@
       <workItem from="1401737072680" duration="10883000" />
       <workItem from="1401824205280" duration="5039000" />
       <workItem from="1402495988863" duration="2611000" />
-      <workItem from="1403152972415" duration="1461000" />
+      <workItem from="1403152972415" duration="1603000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -1663,11 +1662,15 @@
       <created>1403154331580</created>
       <updated>1403154331580</updated>
     </task>
-    <option name="localTasksCounter" value="213" />
+    <task id="LOCAL-00213" summary="continued timing for 3bi">
+      <created>1403154439949</created>
+      <updated>1403154439949</updated>
+    </task>
+    <option name="localTasksCounter" value="214" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="276134000" />
+    <option name="totallyTimeSpent" value="276276000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -2166,8 +2169,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTimer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29782608" vertical-offset="3262" max-vertical-offset="4590">
-          <caret line="208" column="64" selection-start-line="208" selection-start-column="64" selection-end-line="208" selection-end-column="64" />
+        <state vertical-scroll-proportion="0.7967391" vertical-offset="3007" max-vertical-offset="4454">
+          <caret line="220" column="110" selection-start-line="220" selection-start-column="110" selection-end-line="220" selection-end-column="110" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#357#358#0" expanded="true" />
@@ -2178,7 +2181,6 @@
             <element signature="method#problem3aii#0;class#LinkedStructureTimer#0" expanded="true" />
             <element signature="e#3746#3755#0" expanded="true" />
             <element signature="e#6775#6784#0" expanded="true" />
-            <element signature="e#6844#6853#0" expanded="true" />
             <element signature="method#problem3bii#0;class#LinkedStructureTimer#0" expanded="true" />
             <element signature="method#problem3c#0;class#LinkedStructureTimer#0" expanded="true" />
           </folding>
