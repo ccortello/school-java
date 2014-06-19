@@ -18,7 +18,8 @@ public class LinkedStructureTimer {
     LinkedStructureTimer() {
 //        problem3ai();
 //        problem3aii();
-//        problem3b();
+//        problem3bi();
+//        problem3bii();
 //        problem3c();
         prob3a();
     }
@@ -164,10 +165,18 @@ public class LinkedStructureTimer {
     }
 
     /**
-     * Finds the average running time of the get method
+     * Finds the average running time of the get method for a MyLinkedList
      * O(N) expected
      */
-    void problem3b() {
+    void problem3bi() {
+
+    }
+
+    /**
+     * Finds the average running time of the get(i) method for an ArrayList
+     * O(N) expected
+     */
+    void problem3bii() {
 
     }
 
