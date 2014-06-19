@@ -173,12 +173,12 @@ public class LinkedStructureTimer {
         MyLinkedList<Integer> testList = new MyLinkedList<Integer>();
         Random rand = new Random(seed);
 
-        int timesToLoop = 100, maxSize = 2001;
+        int timesToLoop = 100, maxSize = 10000;
 
         System.out.println("MaxSize = " + maxSize + ", loops = " + timesToLoop + "\n\nSize\tTime");
 
         // loop through list sizes and find the average time for addFirst on a list of each size, then print the results
-        for (int i = 1; i <= maxSize; i += 50) {
+        for (int i = 1000; i <= maxSize; i += 100) {
 
     		/* timing code modified from Peter Jensen's TimingExperiment08.java from his CS 2420 class of Spring 2014 */
 

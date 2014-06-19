@@ -181,7 +181,7 @@ public class MyLinkedList<E> implements List<E> {
             toReturn = head;
             for (int i = 0; i < index; i++)
                 toReturn = toReturn.next;
-        } else {
+        } else { // otherwise traverse the list backwards from the tail
             toReturn = tail;
             for (int i = 0; i < index; i++)
                 toReturn = toReturn.prev;
