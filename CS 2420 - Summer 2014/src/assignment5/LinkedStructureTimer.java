@@ -173,12 +173,12 @@ public class LinkedStructureTimer {
         MyLinkedList<Integer> testList = new MyLinkedList<Integer>();
         Random rand = new Random(seed);
 
-        int timesToLoop = 100, maxSize = 1000;
+        int timesToLoop = 100, maxSize = 5000;
 
         System.out.println("MaxSize = " + maxSize + ", loops = " + timesToLoop + "\n\nSize\tTime");
 
         // loop through list sizes and find the average time for addFirst on a list of each size, then print the results
-        for (int i = 0; i <= maxSize; i += 50) {
+        for (int i = 1; i <= maxSize; i += 50) {
 
     		/* timing code modified from Peter Jensen's TimingExperiment08.java from his CS 2420 class of Spring 2014 */
 
@@ -201,7 +201,8 @@ public class LinkedStructureTimer {
                     testList.addFirst(rand.nextInt());
 
                 // now that a list of the correct size has been substantiated, .get from a random index
-                testList.get(rand.nextInt(testList.size() - 1));
+                int randomIndex = rand.nextInt(testList.size());
+                testList.get(randomIndex);
 
                 // reset testList so it's an empty list for the next loop
                 testList = new MyLinkedList<Integer>();
@@ -218,10 +219,13 @@ public class LinkedStructureTimer {
             //  calculate the overhead alone (separate from the time taken to reset rand)
             midpointTime2 = System.nanoTime();
 
-            // Calculate the total overhead (cost of looping, substantiating the list, and resetting the list)
+            // Calculate the total overhead (cost of looping, substantiating the list, creating a random index, and
+            // resetting the list)
             for (long j = 0; j < timesToLoop; j++) {
                 for (int k = 0; k < i; k++)
                     testList.addFirst(rand.nextInt());
+
+                int randomIndex = rand.nextInt(testList.size());
                 testList = new MyLinkedList<Integer>();
             }
 
