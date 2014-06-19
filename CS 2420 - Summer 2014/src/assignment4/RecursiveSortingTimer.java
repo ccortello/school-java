@@ -16,7 +16,6 @@ class RecursiveSortingTimer {
     public static void main(String[] args) {
         new RecursiveSortingTimer();
     }
-
     RecursiveSortingTimer() {
 
         System.out.println("Size = " + arraySize + ", loops = " + timesToLoop + "\n\nThreshold\tTime");
@@ -74,7 +73,6 @@ class RecursiveSortingTimer {
         }
     }
 }
-/*
 
 class RecursiveSortingTimerQuick {
     long timesToLoop = 100;
@@ -94,8 +92,7 @@ class RecursiveSortingTimerQuick {
         for (int arraySize = 100000; arraySize <= 1000000; arraySize+=10000) {
             sortList = RecursiveSortingUtility.generateAverageCase(arraySize);
 
-    		*/
-/* timing code modified from Peter Jensen's TimingExperiment08.java from his CS 2420 class of Spring 2014 *//*
+/* timing code modified from Peter Jensen's TimingExperiment08.java from his CS 2420 class of Spring 2014 */
 
 
             long startTime, midpointTime, stopTime;
@@ -136,5 +133,4 @@ class RecursiveSortingTimerQuick {
         }
     }
 }
-*/
 
