@@ -161,7 +161,7 @@ public class TowersOfHanoi {
         else if (from == 'C')
             fromStack = towerC;
         else
-            throw new Exception("Abort! Illegal tower ID!");
+            throw new Exception("Abort! Illegal tower ID!\n");
 
         if (to == 'A')
             toStack = towerA;
@@ -170,17 +170,17 @@ public class TowersOfHanoi {
         else if (to == 'C')
             toStack = towerC;
         else
-            throw new Exception("Abort! Illegal tower ID!");
+            throw new Exception("Abort! Illegal tower ID!\n");
 
         // throw exception if the 'from' tower is empty, or the 'from' and 'to' towers are the same tower.
         if (fromStack.isEmpty() || fromStack == toStack)
-            throw new Exception("Abort! Illegal tower request!");
+            throw new Exception("Abort! Illegal tower request!\n");
 
         /*throw exception if an attempt is made to put a disk of larger size on top of a smaller disk.
           the first if statement is necessary to compare disks after, but also aids in avoiding nullPointerException*/
         if (! toStack.isEmpty()) {
             if (fromStack.peek() > toStack.peek())
-                throw new Exception("Abort! Illegal disc movement!");
+                throw new Exception("Abort! Illegal disc movement!\n");
         }
 
         /* Move one disc from the "from" tower to the "to" tower

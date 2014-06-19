@@ -331,8 +331,7 @@ public class MyLinkedList<E> implements List<E> {
         // at this point the element is found. Remove it, decrement size and return true.
         toRemove.prev.next = toRemove.next;
         toRemove.next.prev = toRemove.prev;
-        toRemove.next = null;
-        toRemove.prev = null;
+        toRemove = null;
         size--;
         return true;
     }
