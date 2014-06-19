@@ -26,7 +26,7 @@ public class LinkedStructureTimer {
     void problem3a() {
         // substantiate a random (seeded) MyLinkedList to run tests upon
         MyLinkedList<Integer> testList = new MyLinkedList<Integer>();
-        int timesToLoop = 10000, maxSize = 10000;
+        int timesToLoop = 10000, maxSize = 20000;
         long seed = 13489723891023874L;
         Random rand = new Random(seed);
 
@@ -34,7 +34,7 @@ public class LinkedStructureTimer {
 
         // loop through cutoff values and find the average time and number of comparisons for sorting an array of size
         // 100,000 with that cutoff value, then print the results
-        for (int i = 0; i <= maxSize; i += 100) {
+        for (int i = 0; i <= maxSize; i += 500) {
 
     		/* timing code modified from Peter Jensen's TimingExperiment08.java from his CS 2420 class of Spring 2014 */
 
