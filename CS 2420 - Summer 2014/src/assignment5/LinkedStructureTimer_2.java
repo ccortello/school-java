@@ -28,7 +28,7 @@ public class LinkedStructureTimer_2 {
 //        addTimer();
 //        linkedGetTimer();
 //        arrayGetTimer();
-//        linkedRemoveTimer();
+        linkedRemoveTimer();
 //        arrayRemoveTimer();
 //        pushTimer();
 //        popTimer();
@@ -291,7 +291,7 @@ public class LinkedStructureTimer_2 {
     }
 
     static void linkedRemoveTimer() {
-        int timesToLoop = 10;  // higher number causes more accurate average time
+        int timesToLoop = 10;  // higher number causes more accurate average time, but takes much longer
         int maxSize = 100000;   // determines right boundary of plot
         Random rand = new Random(); // used to create random lists
 
@@ -302,26 +302,18 @@ public class LinkedStructureTimer_2 {
         System.out.println("\nsize\ttime\tavg");
 
         // testing loops
-        for (int i = 0; i <= maxSize; i += 5000) {  // each of these loops accounts for a different input size 'N'
+        for (int i = 0; i <= maxSize; i += 10000) {  // each of these loops accounts for a different input size 'N'
 
-            // allows i to equal 1000 then 5000 and then even 5000 increments after.
-            if (i == 0) i = 1000;
+            if (i == 0) i = 1000;// allows i to equal 1000 then 5000 and then even 5000 increments after.
             // declare necessary variables and lists for testing
             MyLinkedList<Integer> linkedRemoveList = new MyLinkedList<Integer>();
-            MyLinkedList<Integer> tempList = new MyLinkedList<Integer>();
             long startTime, midTime, endTime;
-            int[] indexArray = new int[i];
             long seed = System.currentTimeMillis();
             rand.setSeed(seed);
 
             // add random numbers to linkedGetList until size equals i, this so the get method can be tested.
             for (int j = 0; j < i; j++) {
-                tempList.addFirst(rand.nextInt());
-            }
-
-            // this array is to have pre-set random index for linkedGetList to use with get.
-            for (int j = 0; j < i; j++) {
-                indexArray[j] = rand.nextInt(i);
+                linkedRemoveList.addFirst(rand.nextInt());
             }
 
             // this while loop runs for a full second to get things warmed up and running before timing starts
@@ -331,17 +323,20 @@ public class LinkedStructureTimer_2 {
 
             // startTime and testing start here
             startTime = System.nanoTime();
-
+            rand.setSeed(seed);                 // set seed at beginning of tests, than again after midTime
             for (int j = 0; j < timesToLoop; j++) {
                 for (int k = 0; k < i; k++) {
-                    linkedRemoveList.get(indexArray[k]);  //'get' will be called i times for timesToLoop times for a
-                }                                           //good average time for i
+                    linkedRemoveList.remove(rand.nextInt(i)); // use remove method first with the list at right N size
+                    linkedRemoveList.addFirst((int) (Math.random() * i)); // add int back, not using rand for consistency
+                }
             }
 
             midTime = System.nanoTime();   // midTime is set to aid in subtracting overhead
-
+            rand.setSeed(seed);             // reset with same seed as before for consistency
             for (int j = 0; j < timesToLoop; j++) {     // same loops run again without .get() to determine overhead
                 for (int k = 0; k < i; k++) {
+                    rand.nextInt(i);
+                    linkedRemoveList.addFirst((int) (Math.random() * i)); //reinclude all necessary overhead to subtract
                 }
             }
 
