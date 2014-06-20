@@ -28,10 +28,10 @@ public class LinkedStructureTimer_2 {
 //        addTimer();
 //        linkedGetTimer();
 //        arrayGetTimer();
-        linkedRemoveTimer();
+//        linkedRemoveTimer();
 //        arrayRemoveTimer();
 //        pushTimer();
-//        popTimer();
+        popTimer();
 //        peekTimer();
     }
 
@@ -352,15 +352,185 @@ public class LinkedStructureTimer_2 {
     }
 
     static void arrayRemoveTimer() {
-        //TODO: arrayRemoveTimer
+        int timesToLoop = 100;  // higher number causes more accurate average time, but takes much longer
+        int maxSize = 100000;   // determines right boundary of plot
+        Random rand = new Random(); // used to create random lists
+
+        //print info for the max input size and the number of times looping
+        System.out.println("MaxSize = " + maxSize + ", loops = " + timesToLoop);
+
+        // print column headers for the output data
+        System.out.println("\nsize\ttime\tavg");
+
+        // testing loops
+        for (int i = 0; i <= maxSize; i += 10000) {  // each of these loops accounts for a different input size 'N'
+
+            if (i == 0) i = 1000;// allows i to equal 1000 then 5000 and then even 5000 increments after.
+            // declare necessary variables and lists for testing
+            ArrayList<Integer> arrayRemoveList = new ArrayList<Integer>(i);
+            long startTime, midTime, endTime;
+            long seed = System.currentTimeMillis();
+            rand.setSeed(seed);
+
+            // add random numbers to linkedGetList until size equals i, this so the get method can be tested.
+            for (int j = 0; j < i; j++) {
+                arrayRemoveList.add(rand.nextInt());
+            }
+
+            // this while loop runs for a full second to get things warmed up and running before timing starts
+            startTime = System.nanoTime();
+            while (System.nanoTime() - startTime < 1e9) { //empty block
+            }
+
+            // startTime and testing start here
+            startTime = System.nanoTime();
+            rand.setSeed(seed);                 // set seed at beginning of tests, than again after midTime
+            for (int j = 0; j < timesToLoop; j++) {
+                for (int k = 0; k < i; k++) {
+                    arrayRemoveList.remove(rand.nextInt(i)); // use remove method first with the list at right N size
+                    arrayRemoveList.add((int) (Math.random() * i)); // add int back, not using rand for consistency
+                }
+            }
+
+            midTime = System.nanoTime();   // midTime is set to aid in subtracting overhead
+            rand.setSeed(seed);             // reset with same seed as before for consistency
+            for (int j = 0; j < timesToLoop; j++) {     // same loops run again without .get() to determine overhead
+                for (int k = 0; k < i; k++) {
+                    rand.nextInt(i);
+                    arrayRemoveList.add((int) (Math.random() * i)); //reinclude all necessary overhead to subtract
+                }
+            }
+
+            endTime = System.nanoTime();
+
+            // subtract the over head and determine average time for 'i' calls to get.
+            double totalTime = ((midTime - startTime) - (endTime - midTime)) / timesToLoop;
+            double avgTime = totalTime / i;
+            System.out.println(i + "\t" + totalTime + "\t" + avgTime);     // print results
+
+            if (i == 1000) i = 0;  // used to allows 1000 to 5000 then even increments of 5000
+        }
     }
 
     static void pushTimer() {
-        //TODO: pushTimer
+        int timesToLoop = 2500;  // higher number causes more accurate average time
+        int maxSize = 100000;   // determines right boundary of plot
+        Random rand = new Random(); // used to create random lists
+
+        //print info for the max input size and the number of times looping
+        System.out.println("MaxSize = " + maxSize + ", loops = " + timesToLoop);
+
+        // print column headers for the output data. Input Size, total time, & average time or growth rate
+        System.out.println("\nsize\ttime\tavg");
+
+        // testing loop
+        for (int i = 0; i <= maxSize; i += 5000) {   // each of these loops accounts for a different input size 'N'
+            // allows i to equal 1000 then 5000 and then even 5000 increments after.
+            if (i == 0) i = 1000;
+
+            // declare necessary variables and lists for testing
+            MyStack<Integer> pushTimeList = new MyStack<Integer>();
+            int[] randNum = new int[i * timesToLoop];
+            long startTime, midTime, endTime;
+            long seed = System.currentTimeMillis();
+            rand.setSeed(seed);
+
+            // create array of random numbers for addList to add from, size is loops * i.
+            for (int j = 0; j < timesToLoop * i; j++) {
+                randNum[j] = rand.nextInt();
+            }
+
+            // let a while loop run for a full second to get things spooled up.
+            startTime = System.nanoTime();
+            while (System.nanoTime() - startTime < 1e9) { //empty block
+            }
+
+            // startTime and testing start here.
+            startTime = System.nanoTime();
+
+            for (int j = 0; j < timesToLoop; j++) {   //timesToLoop helps take an average of i inputs
+                for (int k = 0; k < i; k++) {         //number of inputs depends on i
+                    pushTimeList.push(randNum[j * k]);
+                }
+                pushTimeList = new MyStack<Integer>();
+            }
+
+            midTime = System.nanoTime();        // middle time is set, to subtract startTime from.
+
+            for (int j = 0; j < timesToLoop; j++) {  // same loops without addFirst to determine overhead to subtract
+                for (int k = 0; k < i; k++) {
+                }
+                pushTimeList = new MyStack<Integer>();
+            }
+
+            endTime = System.nanoTime();
+
+            // subtract the over head and determine average time for 'i' calls to get.
+            double totalTime = ((midTime - startTime) - (endTime - midTime)) / timesToLoop;
+            double avgTime = totalTime / i;
+            System.out.println(i + "\t" + totalTime + "\t" + avgTime);     // print results
+
+            if (i == 1000) i = 0;
+        }
     }
 
     static void popTimer() {
-        //TODO: popTimer
+        int timesToLoop = 2500;  // higher number causes more accurate average time, but takes much longer
+        int maxSize = 100000;   // determines right boundary of plot
+        Random rand = new Random(); // used to create random lists
+
+        //print info for the max input size and the number of times looping
+        System.out.println("MaxSize = " + maxSize + ", loops = " + timesToLoop);
+
+        // print column headers for the output data
+        System.out.println("\nsize\ttime\tavg");
+
+        // testing loops
+        for (int i = 0; i <= maxSize; i += 5000) {  // each of these loops accounts for a different input size 'N'
+
+            if (i == 0) i = 1000;// allows i to equal 1000 then 5000 and then even 5000 increments after.
+            // declare necessary variables and lists for testing
+            MyStack<Integer> popTimingList = new MyStack<Integer>();
+            long startTime, midTime, endTime;
+            int[] randNum = new int[i * timesToLoop];
+            long seed = System.currentTimeMillis();
+            rand.setSeed(seed);
+
+            // add random numbers to stack until size equals i, this so the get method can be tested.
+            for (int j = 0; j < i * timesToLoop; j++) {
+                randNum[j] = rand.nextInt(Integer.MAX_VALUE);
+            }
+
+            // this while loop runs for a full second to get things warmed up and running before timing starts
+            startTime = System.nanoTime();
+            while (System.nanoTime() - startTime < 1e9) { //empty block
+            }
+
+            // startTime and testing start here
+            startTime = System.nanoTime();
+            for (int j = 1; j < timesToLoop + 1; j++) {
+                for (int k = 1; k < i + 1; k++) {
+                    popTimingList.pop(); // use remove method first with the list at right N size
+                    popTimingList.push(randNum[j * k]); // add int back, to maintain stack size
+                }
+            }
+
+            midTime = System.nanoTime();   // midTime is set to aid in subtracting overhead
+            for (int j = 1; j < timesToLoop + 1; j++) {
+                for (int k = 1; k < i + 1; k++) {
+                    popTimingList.push(randNum[j * k]); //reinclude all necessary overhead to subtract
+                }
+            }
+
+            endTime = System.nanoTime();
+
+            // subtract the over head and determine average time for 'i' calls to get.
+            double totalTime = ((midTime - startTime) - (endTime - midTime)) / timesToLoop;
+            double avgTime = totalTime / i;
+            System.out.println(i + "\t" + totalTime + "\t" + avgTime);     // print results
+
+            if (i == 1000) i = 0;  // used to allows 1000 to 5000 then even increments of 5000
+        }
     }
 
     static void peekTimer() {
