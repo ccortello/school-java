@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="implemented timing test for MyLinkedList.remove(i)">
+    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="some work done on stack methods timgin analysis">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/Graphs from Excel Data (excluding MyStack)/ArrayList add Growth .png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/Graphs from Excel Data (excluding MyStack)/ArrayList add Total Time .png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/Graphs from Excel Data (excluding MyStack)/ArrayList get Growth .png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/Graphs from Excel Data (excluding MyStack)/ArrayList get Total Time .png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/Graphs from Excel Data (excluding MyStack)/ArrayList remove Growth .png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/Graphs from Excel Data (excluding MyStack)/ArrayList remove Total Time .png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/Data Values for All Necessary Graphs .xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/Graphs from Excel Data (excluding MyStack)/MyLinkedList addFirst Growth .png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/Graphs from Excel Data (excluding MyStack)/MyLinkedList addFirst Total Time .png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/Graphs from Excel Data (excluding MyStack)/MyLinkedList get Growth .png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/Graphs from Excel Data (excluding MyStack)/MyLinkedList get Total Time .png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/Graphs from Excel Data (excluding MyStack)/MyLinkedList remove Growth .png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/Graphs from Excel Data (excluding MyStack)/MyLinkedList remove Total Time .png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTimer_2.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTimer_2.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -81,45 +94,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LinkedStructureTimer_2.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="LinkedStructureTimer_2.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTimer_2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6812428" vertical-offset="462" max-vertical-offset="1819">
-              <caret line="500" column="61" selection-start-line="500" selection-start-column="61" selection-end-line="500" selection-end-column="61" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="988">
+              <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
               <folding>
                 <element signature="docComment;class#LinkedStructureTimer_2#0" expanded="false" />
                 <element signature="docComment;method#main#0;class#LinkedStructureTimer_2#0" expanded="false" />
-                <element signature="method#main#0;class#LinkedStructureTimer_2#0" expanded="true" />
+                <element signature="e#1121#1147#0" expanded="false" />
                 <element signature="docComment;method#addFirstTimer#0;class#LinkedStructureTimer_2#0" expanded="false" />
-                <element signature="e#2125#2187#0" expanded="false" />
+                <element signature="e#2083#2145#0" expanded="false" />
                 <element signature="docComment;method#addTimer#0;class#LinkedStructureTimer_2#0" expanded="false" />
-                <element signature="e#5125#5187#0" expanded="false" />
+                <element signature="e#4993#5055#0" expanded="false" />
                 <element signature="docComment;method#linkedGetTimer#0;class#LinkedStructureTimer_2#0" expanded="false" />
-                <element signature="e#7996#8058#0" expanded="false" />
                 <element signature="docComment;method#arrayGetTimer#0;class#LinkedStructureTimer_2#0" expanded="false" />
-                <element signature="e#20016#20078#0" expanded="false" />
+                <element signature="e#19995#20057#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyStack.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyStack.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1104">
-              <caret line="66" column="47" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="47" />
-              <folding>
-                <element signature="docComment;class#MyStack#0" expanded="false" />
-                <element signature="docComment;method#MyStack#0;class#MyStack#0" expanded="false" />
-                <element signature="docComment;method#clear#0;class#MyStack#0" expanded="false" />
-                <element signature="docComment;method#isEmpty#0;class#MyStack#0" expanded="false" />
-                <element signature="docComment;method#peek#0;class#MyStack#0" expanded="false" />
-                <element signature="docComment;method#pop#0;class#MyStack#0" expanded="false" />
-                <element signature="docComment;method#push#0;class#MyStack#0" expanded="false" />
-                <element signature="docComment;method#size#0;class#MyStack#0" expanded="false" />
-                <element signature="docComment;method#toArray#0;class#MyStack#0" expanded="false" />
-              </folding>
-            </state>
+      <file leaf-file-name="ArrayList remove Growth .png" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/Graphs from Excel Data (excluding MyStack)/ArrayList remove Growth .png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -398,17 +397,17 @@
     <property name="restartRequiresConfirmation" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="junit.framework.TestCase" />
-      <recent name="" />
-      <recent name="groovy.util.GroovyTestCase" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="assignment4" />
       <recent name="assignment3" />
       <recent name="assignment2" />
       <recent name="homework10" />
       <recent name="homework08" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="junit.framework.TestCase" />
+      <recent name="" />
+      <recent name="groovy.util.GroovyTestCase" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="assignment4" />
@@ -538,7 +537,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="CS 2420 - Summer 2014" />
       <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -1670,7 +1675,11 @@
       <created>1403276053063</created>
       <updated>1403276053063</updated>
     </task>
-    <option name="localTasksCounter" value="220" />
+    <task id="LOCAL-00220" summary="some work done on stack methods timgin analysis">
+      <created>1403282873050</created>
+      <updated>1403282873050</updated>
+    </task>
+    <option name="localTasksCounter" value="221" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1707,18 +1716,18 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43037975" sideWeight="0.30104166" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6407982" sideWeight="0.42566845" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40133038" sideWeight="0.28916308" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26940134" sideWeight="0.3696352" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26940134" sideWeight="0.36951873" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31374723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24919786" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17272727" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4345898" sideWeight="0.69895834" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7527716" sideWeight="0.6304813" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1775,7 +1784,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="changed mergeSortRecursive temp arrays size that are passed to be only necessary size for merging the two array portions" />
     <MESSAGE value="added tests" />
     <MESSAGE value="fixed mergsort" />
     <MESSAGE value="finished implementing the tests and added necessary comments" />
@@ -1800,24 +1808,17 @@
     <MESSAGE value="continued timing for 3bi" />
     <MESSAGE value="LinkedStructureTimer_2 is the new class I created, to practice but also I got it working for get(i) pretty good. I still need to implement remove() methods and the stack methods." />
     <MESSAGE value="implemented timing test for MyLinkedList.remove(i)" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented timing test for MyLinkedList.remove(i)" />
+    <MESSAGE value="some work done on stack methods timgin analysis" />
+    <option name="LAST_COMMIT_MESSAGE" value="some work done on stack methods timgin analysis" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTimer.java</url>
-          <line>202</line>
-          <properties />
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="19" />
+      <option name="time" value="21" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1825,20 +1826,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework06/SpecialtySetTrial.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3333334" vertical-offset="1088" max-vertical-offset="1700">
-          <caret line="18" column="36" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySetTrial.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="1054">
-          <caret line="25" column="49" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework08/SpecialtySet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="7735" max-vertical-offset="10438">
@@ -2119,63 +2106,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/RecursiveSortingUtility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1743" max-vertical-offset="9542">
-          <caret line="82" column="48" selection-start-line="82" selection-start-column="48" selection-end-line="82" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTimer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45914844" vertical-offset="0" max-vertical-offset="869">
-          <caret line="166" column="22" selection-start-line="166" selection-start-column="22" selection-end-line="166" selection-end-column="22" />
-          <folding>
-            <element signature="docComment;class#LinkedStructureTimer#0" expanded="false" />
-            <element signature="e#344#367#0" expanded="false" />
-            <element signature="docComment;method#problem3ai#0;class#LinkedStructureTimer#0" expanded="false" />
-            <element signature="e#1430#1490#0" expanded="false" />
-            <element signature="e#2315#2419#0" expanded="false" />
-            <element signature="e#2587#2692#0" expanded="false" />
-            <element signature="e#3079#3137#0" expanded="false" />
-            <element signature="docComment;method#problem3aii#0;class#LinkedStructureTimer#0" expanded="false" />
-            <element signature="e#4344#4404#0" expanded="false" />
-            <element signature="e#5222#5326#0" expanded="false" />
-            <element signature="e#5494#5599#0" expanded="false" />
-            <element signature="e#5983#6041#0" expanded="false" />
-            <element signature="docComment;method#problem3bi#0;class#LinkedStructureTimer#0" expanded="false" />
-            <element signature="e#6565#6674#0" expanded="false" />
-            <element signature="e#7376#7436#0" expanded="false" />
-            <element signature="e#8220#8324#0" expanded="false" />
-            <element signature="e#8492#8597#0" expanded="false" />
-            <element signature="e#8748#8851#0" expanded="false" />
-            <element signature="e#9075#9133#0" expanded="false" />
-            <element signature="docComment;method#problem3bii#0;class#LinkedStructureTimer#0" expanded="false" />
-            <element signature="e#9656#9765#0" expanded="false" />
-            <element signature="e#10461#10521#0" expanded="false" />
-            <element signature="e#11300#11404#0" expanded="false" />
-            <element signature="e#11572#11677#0" expanded="false" />
-            <element signature="e#11828#11931#0" expanded="false" />
-            <element signature="e#12155#12213#0" expanded="false" />
-            <element signature="e#12444#12479#0" expanded="false" />
-            <element signature="docComment;method#problem3ci#0;class#LinkedStructureTimer#0" expanded="false" />
-            <element signature="e#12756#12865#0" expanded="false" />
-            <element signature="e#13567#13627#0" expanded="false" />
-            <element signature="e#14496#14600#0" expanded="false" />
-            <element signature="e#14768#14873#0" expanded="false" />
-            <element signature="e#15366#15424#0" expanded="false" />
-            <element signature="docComment;method#problem3cii#0;class#LinkedStructureTimer#0" expanded="false" />
-            <element signature="e#15950#16059#0" expanded="false" />
-            <element signature="e#16755#16815#0" expanded="false" />
-            <element signature="e#17594#17698#0" expanded="false" />
-            <element signature="e#17866#17971#0" expanded="false" />
-            <element signature="e#18122#18225#0" expanded="false" />
-            <element signature="e#18449#18507#0" expanded="false" />
-            <element signature="e#18738#18773#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/TowersOfHanoi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6628308" vertical-offset="0" max-vertical-offset="869">
@@ -2268,50 +2198,125 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.5408516" vertical-offset="0" max-vertical-offset="4656">
-          <caret line="250" column="5" selection-start-line="250" selection-start-column="5" selection-end-line="250" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyStack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1104">
-          <caret line="66" column="47" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="163" max-vertical-offset="1344">
+          <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
           <folding>
             <element signature="docComment;class#MyStack#0" expanded="false" />
             <element signature="docComment;method#MyStack#0;class#MyStack#0" expanded="false" />
             <element signature="docComment;method#clear#0;class#MyStack#0" expanded="false" />
             <element signature="docComment;method#isEmpty#0;class#MyStack#0" expanded="false" />
             <element signature="docComment;method#peek#0;class#MyStack#0" expanded="false" />
+            <element signature="method#peek#0;class#MyStack#0" expanded="true" />
             <element signature="docComment;method#pop#0;class#MyStack#0" expanded="false" />
+            <element signature="method#pop#0;class#MyStack#0" expanded="true" />
             <element signature="docComment;method#push#0;class#MyStack#0" expanded="false" />
+            <element signature="method#push#0;class#MyStack#0" expanded="true" />
             <element signature="docComment;method#size#0;class#MyStack#0" expanded="false" />
             <element signature="docComment;method#toArray#0;class#MyStack#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTimer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18296893" vertical-offset="1425" max-vertical-offset="2856">
+          <caret line="202" column="13" selection-start-line="202" selection-start-column="13" selection-end-line="202" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_55/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27157652" vertical-offset="8608" max-vertical-offset="13684">
+          <caret line="634" column="0" selection-start-line="634" selection-start-column="0" selection-end-line="634" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="666" max-vertical-offset="1776">
+          <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+          <folding>
+            <element signature="docComment;class#MyLinkedList#0" expanded="false" />
+            <element signature="docComment;method#MyLinkedList#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="docComment;method#addFirst#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="docComment;method#addLast#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="docComment;method#add#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="docComment;method#getFirst#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="docComment;method#getLast#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="docComment;method#get#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="docComment;method#removeFirst#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="docComment;method#removeLast#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="docComment;method#remove#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="docComment;method#remove#1;class#MyLinkedList#0" expanded="false" />
+            <element signature="docComment;method#contains#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="docComment;method#indexOf#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="docComment;method#lastIndexOf#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="docComment;method#size#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="docComment;method#isEmpty#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="docComment;method#clear#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="docComment;method#toArray#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="docComment;class#Node#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="class#Node#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="docComment;method#Node#0;class#Node#0;class#MyLinkedList#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment4/RecursiveSortingUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="632" max-vertical-offset="1488">
+          <caret line="365" column="0" selection-start-line="365" selection-start-column="0" selection-end-line="365" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#RecursiveSortingUtility#0" expanded="false" />
+            <element signature="docComment;method#getMergesortThreshold#0;class#RecursiveSortingUtility#0" expanded="false" />
+            <element signature="docComment;method#setMergeSortThreshold#0;class#RecursiveSortingUtility#0" expanded="false" />
+            <element signature="docComment;method#insertionSortIterative#0;class#RecursiveSortingUtility#0" expanded="false" />
+            <element signature="e#1729#1789#0" expanded="false" />
+            <element signature="docComment;method#mergeSortDriver#0;class#RecursiveSortingUtility#0" expanded="false" />
+            <element signature="docComment;method#mergeSortRecursive#0;class#RecursiveSortingUtility#0" expanded="false" />
+            <element signature="e#3687#3795#0" expanded="false" />
+            <element signature="docComment;method#mergeSortedPortions#0;class#RecursiveSortingUtility#0" expanded="false" />
+            <element signature="docComment;method#quickSortDriver#0;class#RecursiveSortingUtility#0" expanded="false" />
+            <element signature="docComment;method#quickSortRecursive#0;class#RecursiveSortingUtility#0" expanded="false" />
+            <element signature="e#7140#7198#0" expanded="false" />
+            <element signature="docComment;method#goodPivotStrategy#0;class#RecursiveSortingUtility#0" expanded="false" />
+            <element signature="docComment;method#betterPivotStrategy#0;class#RecursiveSortingUtility#0" expanded="false" />
+            <element signature="docComment;method#bestPivotStrategy#0;class#RecursiveSortingUtility#0" expanded="false" />
+            <element signature="e#11086#11146#0" expanded="false" />
+            <element signature="docComment;method#generateBestCase#0;class#RecursiveSortingUtility#0" expanded="false" />
+            <element signature="docComment;method#generateAverageCase#0;class#RecursiveSortingUtility#0" expanded="false" />
+            <element signature="docComment;method#generateWorstCase#0;class#RecursiveSortingUtility#0" expanded="false" />
+            <element signature="docComment;method#swapElements#0;class#RecursiveSortingUtility#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTimer_2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6812428" vertical-offset="462" max-vertical-offset="1819">
-          <caret line="500" column="61" selection-start-line="500" selection-start-column="61" selection-end-line="500" selection-end-column="61" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="988">
+          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
           <folding>
             <element signature="docComment;class#LinkedStructureTimer_2#0" expanded="false" />
             <element signature="docComment;method#main#0;class#LinkedStructureTimer_2#0" expanded="false" />
-            <element signature="method#main#0;class#LinkedStructureTimer_2#0" expanded="true" />
+            <element signature="e#1121#1147#0" expanded="false" />
             <element signature="docComment;method#addFirstTimer#0;class#LinkedStructureTimer_2#0" expanded="false" />
-            <element signature="e#2125#2187#0" expanded="false" />
+            <element signature="e#2083#2145#0" expanded="false" />
             <element signature="docComment;method#addTimer#0;class#LinkedStructureTimer_2#0" expanded="false" />
-            <element signature="e#5125#5187#0" expanded="false" />
+            <element signature="e#4993#5055#0" expanded="false" />
             <element signature="docComment;method#linkedGetTimer#0;class#LinkedStructureTimer_2#0" expanded="false" />
-            <element signature="e#7996#8058#0" expanded="false" />
             <element signature="docComment;method#arrayGetTimer#0;class#LinkedStructureTimer_2#0" expanded="false" />
-            <element signature="e#20016#20078#0" expanded="false" />
+            <element signature="e#19995#20057#0" expanded="false" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/Graphs from Excel Data (excluding MyStack)/ArrayList remove Growth .png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>
