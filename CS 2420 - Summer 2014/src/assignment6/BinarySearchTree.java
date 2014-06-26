@@ -220,12 +220,8 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
             if (item.compareTo(currentNode.getData()) < 0) {
                 if (currentNode.getLeft() == null) // if no left child then the node doesn't exist and cannot be removed
                     return false;
-                if (item.compareTo(currentNode.getLeft().getData()) == 0) {
-                    // if the left child matches the data then store the direction to the node, exit the while loop, and
-                    //  remove the node
-                    direction = -1;
+                if (item.compareTo(currentNode.getLeft().getData()) == 0) // if the left child matches the data then remove the node
                     break;
-                }
                 // if a left subtree exists and the root doesn't match the data then continue iterating down the BST
                 currentNode = currentNode.getLeft();
             }
@@ -233,16 +229,14 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
             else {
                 if (currentNode.getRight() == null) // if no right child then the node doesn't exist and cannot be removed
                     return false;
-                if (item.compareTo(currentNode.getRight().getData()) == 0) {
-                    // if the right child matches the data then store the direction to the node, exit the while loop, and
-                    //  remove the node
-                    direction = 1;
+                if (item.compareTo(currentNode.getRight().getData()) == 0) // if the right child matches the data then store then remove the node
                     break;
-                }
                 // if a right subtree exists and the root doesn't match the data then continue iterating down the BST
                 currentNode = currentNode.getRight();
             }
         }
+        // set the direction according to which node matches the data
+        direction = (item.compareTo(currentNode.getLeft().getData()) == 0) ? -1 : 1;
         // these statements only execute if the correct node was found, in which case the node should be removed
         //  according to the number of children, the size should decrement, and this method should return true.
         currentNode.remove(direction);
