@@ -2,10 +2,7 @@ package assignment6;
 
 import java.io.FileWriter;
 import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.NoSuchElementException;
+import java.util.*;
 
 /**
  * A BST class in which elements are Comparable (necessary for all BSTs) and without duplicates
@@ -374,14 +371,42 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      * @return the list containing the tree elements
      */
     public List<Type> levelOrderBFT() {
-        return null;
+        ArrayList<Type> returnList = new ArrayList<Type>(size);
+        // check if the BST is empty, if so return the empty ArrayList
+        if (isEmpty())
+            return returnList;
+
+        levelOrderDFTRecursive(new LinkedList<BinaryNode>(), root, returnList);
+        return returnList;
+    }
+
+    /**
+     * Uses a queue to recursively add each node in the BST to the return list in a level-order traversal
+     */
+    private void levelOrderDFTRecursive(LinkedList<BinaryNode> queue, BinaryNode n, ArrayList<Type> returnList) {
+        // handle null nodes
+        if (n == null)
+            return;
+
+        // add 'this' object to the return list
+        returnList.add(n.getData());
+
+        // push the children to the queue then use the queue to continue level-order traversal
+        if (n.getLeft() != null)
+            queue.addLast(n.getLeft());
+        if (n.getRight() != null)
+            queue.addLast(n.getRight());
+        levelOrderDFTRecursive(queue, queue.removeFirst(), returnList);
     }
 
     /* These recursive methods are nearly identical, and recursively iterate through the BST in pre-, in-, or post-order */
 
     private void inOrderDFTRecursive(BinaryNode n, ArrayList<Type> returnList) {
+        // handle null node
+        if (n == null)
+            return;
         //first check for leaf node, add to ArrayList if it is a leaf node
-        if (n.numChildren() == 0) {
+        if (n.isLeaf()) {
             returnList.add(n.getData());
             return;
         }
@@ -392,8 +417,11 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
     }
 
     private void preOrderDFTRecursive(BinaryNode n, ArrayList<Type> returnList) {
+        // handle null node
+        if (n == null)
+            return;
         //first check for leaf node, add to ArrayList if it is a leaf node
-        if (n.numChildren() == 0) {
+        if (n.isLeaf()) {
             returnList.add(n.getData());
             return;
         }
@@ -404,8 +432,11 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
     }
 
     private void postOrderDFTRecursive(BinaryNode n, ArrayList<Type> returnList) {
+        // handle null node
+        if (n == null)
+            return;
         //first check for leaf node, add to ArrayList if it is a leaf node
-        if (n.numChildren() == 0) {
+        if (n.isLeaf()) {
             returnList.add(n.getData());
             return;
         }
@@ -414,7 +445,6 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
         postOrderDFTRecursive(n.getRight(), returnList);
         returnList.add(n.getData());
     }
-
 
     /* DOT methods taken from BST.java in the week 6 example package */
     // Driver for writing this tree to a dot file
@@ -655,13 +685,13 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
 
             // implement removal based on the direction and number of children
             if (direction == -1) { // removing the left child
-                if (left.numChildren() == 0)
+                if (left.isLeaf())
                     remove0(direction);
                 else if (left.numChildren() == 1)
                     remove1(direction);
                 else remove2(direction);
             } else { // removing the right child
-                if (right.numChildren() == 0)
+                if (right.isLeaf())
                     remove0(direction);
                 else if (right.numChildren() == 1)
                     remove1(direction);

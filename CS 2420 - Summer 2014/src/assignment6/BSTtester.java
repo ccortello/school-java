@@ -280,11 +280,61 @@ public class BSTtester extends TestCase {
         assertEquals(0, BSTtestList.size());
     }
 
+    /**
+     * Tests toArrayList and inOrderDFT
+     */
     public void testToArrayList() {
-
+        BSTtestList.clear();
+        ArrayList<String> testList = new ArrayList<String>();
+        testList.add("first");
+        testList.add("second");
+        testList.add("third");
+        testList.add("fourth");
+        testList.add("fifth");
+        testList.add("sixth");
+        testList.add("seventh");
+        BSTtestList.addAll(testList);
+        ArrayList<String> correctList = new ArrayList<String>();
+        correctList.add("fifth");
+        correctList.add("first");
+        correctList.add("fourth");
+        correctList.add("second");
+        correctList.add("seventh");
+        correctList.add("sixth");
+        correctList.add("third");
+        assertTrue(correctList.equals(BSTtestList.toArrayList()));
     }
 
     public void testFirst() throws NoSuchElementException {
+        //try-catch blocks to test case of NullPointerException
+        try {
+            BSTtestList.clear();
+            BSTtestList.first();
+        } catch (Exception e) {
+            assertEquals("Tried first with an empty BST", e.getMessage());
+        }
+        // add elements asserting that first updates with each add, the do the same with remove
+        BSTtestList.add("20");
+        assertEquals("20", BSTtestList.first());
+        BSTtestList.add("10");
+        assertEquals("10", BSTtestList.first());
+        BSTtestList.add("15");
+        assertEquals("10", BSTtestList.first());
+        BSTtestList.add("25");
+        assertEquals("10", BSTtestList.first());
+        BSTtestList.add("22");
+        assertEquals("10", BSTtestList.first());
+        BSTtestList.add("06");
+        assertEquals("06", BSTtestList.first());
+        BSTtestList.add("08");
+        assertEquals("06", BSTtestList.first());
+        BSTtestList.add("07");
+        assertEquals("06", BSTtestList.first());
+        BSTtestList.add("05");
+        assertEquals("05", BSTtestList.first());
+    }
+
+    public void testLast() throws NoSuchElementException {
 
         //try-catch blocks to test case of NullPointerException
         try {
@@ -295,19 +345,8 @@ public class BSTtester extends TestCase {
         }
     }
 
-    public void testLast() throws NoSuchElementException {
-
-        //try-catch blocks to test case of NullPointerException
-        try {
-            BSTtestList.add(nullString);
-        }
-        catch (Exception e) {
-            assertEquals("added null!", e.getMessage());
-        }
-    }
-
+    /* implemented in testToArrayList */
     public void testInOrderDFT() {
-
     }
 
     public void testPreOrderDFT() {
