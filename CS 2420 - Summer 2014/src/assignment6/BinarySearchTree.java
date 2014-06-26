@@ -139,7 +139,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      */
     @Override
     public ArrayList<Type> toArrayList() {
-        return null;
+        return ((ArrayList<Type>) inOrderDFT());
     }
 
     /**
@@ -149,9 +149,14 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      */
     @Override
     public Type first() throws NoSuchElementException {
-        if (root == null) // exception for empty set
-            throw new NoSuchElementException("Empty BST, no first element!");
-        else return root.getLeftmostNode().getData(); // return smallest (leftmost) Node's data
+        // throw an exception for an empty set
+        if (root == null)
+            throw new NoSuchElementException("Tried .first with an empty BST!");
+        // if root is smallest then return root's data
+        if (root.getLeft() == null)
+            return root.data;
+            // otherwise find the largest node (rightmost node) and return its data
+        else return root.getLeftmostNode().getData();
     }
 
     /**
