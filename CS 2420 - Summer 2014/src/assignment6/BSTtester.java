@@ -316,13 +316,13 @@ public class BSTtester extends TestCase {
         // add elements asserting that first updates with each add, the do the same with remove
         String[] addList = new String[]{"20", "10", "15", "25", "22", "06", "08", "07", "05"};
         String[] assertAdd = new String[]{"20", "10", "10", "10", "10", "06", "06", "06", "05"};
-        for (int i = 0; i < addList.length - 1; i++) {
+        for (int i = 0; i < addList.length; i++) {
             BSTtestList.add(addList[i]);
             assertEquals(assertAdd[i], BSTtestList.first());
         }
         String[] removeList = new String[]{"15", "06", "22", "05", "20", "07", "08", "10"};
         String[] assertRemove = new String[]{"05", "05", "05", "07", "07", "08", "10", "25"};
-        for (int i = 0; i < removeList.length - 1; i++) {
+        for (int i = 0; i < removeList.length; i++) {
             BSTtestList.remove(removeList[i]);
             assertEquals(assertRemove[i], BSTtestList.first());
         }
