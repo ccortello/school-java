@@ -329,7 +329,8 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      * @return the list containing the tree elements
      */
     public List<Type> inOrderDFT() {
-        return null;
+        ArrayList<Type> returnList = new ArrayList<Type>(this.size);
+        return returnList;
     }
 
     /**
@@ -357,6 +358,20 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      */
     public List<Type> levelOrderBFT() {
         return null;
+    }
+
+    private void inOrderDFTRecursive(BinaryNode n, ArrayList<Type> returnList) {
+        //first check for leaf node, add to ArrayList if it is a leaf node
+        if (n.numChildren() == 0) {
+            returnList.add(n.getData());
+            return;
+        }
+
+        inOrderDFTRecursive(n.getLeft(), returnList);
+
+        returnList.add(n.getData());
+
+        inOrderDFTRecursive(n.getRight(), returnList);
     }
 
 

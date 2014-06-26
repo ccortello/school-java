@@ -67,8 +67,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <breakpoint_rules converted="true" />
     <ui_properties converted="true" />
+    <breakpoint_rules converted="true" />
   </component>
   <component name="ErrorTreeViewConfiguration">
     <option name="autoscrollToSource" value="true" />
@@ -82,35 +82,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BinarySearchTree.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="BinarySearchTree.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BinarySearchTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="531" max-vertical-offset="2040">
-              <caret line="158" column="65" selection-start-line="158" selection-start-column="65" selection-end-line="158" selection-end-column="65" />
+            <state vertical-scroll-proportion="0.44764096" vertical-offset="1267" max-vertical-offset="2568">
+              <caret line="359" column="5" selection-start-line="346" selection-start-column="36" selection-end-line="359" selection-end-column="5" />
               <folding>
                 <element signature="docComment;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#add#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#addAll#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#clear#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#contains#0;class#BinarySearchTree#0" expanded="false" />
-                <element signature="e#5308#5416#0" expanded="false" />
+                <element signature="e#5722#5830#0" expanded="false" />
                 <element signature="docComment;method#containsAll#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#isEmpty#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#remove#0;class#BinarySearchTree#0" expanded="false" />
-                <element signature="e#7783#7892#0" expanded="false" />
-                <element signature="e#8617#8717#0" expanded="false" />
-                <element signature="e#9381#9482#0" expanded="false" />
-                <element signature="e#9807#9911#0" expanded="false" />
                 <element signature="docComment;method#removeAll#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#size#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#toArrayList#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#first#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#last#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#inOrderDFT#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="method#inOrderDFT#0;class#BinarySearchTree#0" expanded="true" />
                 <element signature="docComment;method#preOrderDFT#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#postOrderDFT#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#levelOrderBFT#0;class#BinarySearchTree#0" expanded="false" />
-                <element signature="docComment;method#writeDot#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="method#inOrderDFTRecursive#0;class#BinarySearchTree#0" expanded="true" />
                 <element signature="docComment;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#BinaryNode#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
@@ -130,30 +127,7 @@
                 <element signature="docComment;method#remove#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#remove0#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#remove1#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
-                <element signature="e#23296#23322#0" expanded="false" />
-                <element signature="e#23575#23602#0" expanded="false" />
                 <element signature="docComment;method#remove2#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
-                <element signature="e#24124#24145#0" expanded="false" />
-                <element signature="e#24809#24831#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BSTtester.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46478873" vertical-offset="0" max-vertical-offset="1008">
-              <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
-              <folding>
-                <element signature="docComment;method#setUp#0;class#BSTtester#0" expanded="false" />
-                <element signature="docComment;method#testAdd#0;class#BSTtester#0" expanded="false" />
-                <element signature="docComment;method#testAddAll#0;class#BSTtester#0" expanded="false" />
-                <element signature="docComment;method#testClear#0;class#BSTtester#0" expanded="false" />
-                <element signature="docComment;method#testContains#0;class#BSTtester#0" expanded="false" />
-                <element signature="docComment;method#testContainsAll#0;class#BSTtester#0" expanded="false" />
-                <element signature="docComment;method#testIsEmpty#0;class#BSTtester#0" expanded="false" />
-                <element signature="e#7764#7824#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -230,8 +204,8 @@
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTimer_2.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtimer.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/testBinarySearchTree.java" />
-        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BinarySearchTree.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BinarySearchTree.java" />
       </list>
     </option>
   </component>
@@ -257,7 +231,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="0" />
+    <option name="STATE" value="2" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -272,16 +246,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -312,6 +276,34 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CS 2420 - Summer 2014" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -601,6 +593,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -627,19 +632,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1783,32 +1775,32 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40133038" sideWeight="0.28916308" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26940134" sideWeight="0.36951873" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31374723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24919786" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22103004" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3337029" sideWeight="0.7108369" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33259425" sideWeight="0.7108369" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32705098" sideWeight="0.34438503" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26940134" sideWeight="0.36951873" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5140625" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.14166667" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40133038" sideWeight="0.28916308" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31374723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1827,8 +1819,8 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26940134" sideWeight="0.3696352" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24946351" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -1900,8 +1892,6 @@
             <element signature="docComment;method#testClear#0;class#BSTtester#0" expanded="false" />
             <element signature="docComment;method#testContains#0;class#BSTtester#0" expanded="false" />
             <element signature="docComment;method#testContainsAll#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testIsEmpty#0;class#BSTtester#0" expanded="false" />
-            <element signature="e#7764#7824#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2153,7 +2143,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27617952" vertical-offset="0" max-vertical-offset="2064">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2175,21 +2164,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6962025" vertical-offset="283" max-vertical-offset="1152">
           <caret line="104" column="16" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="16" />
-          <folding>
-            <element signature="docComment;class#SortedSet#0" expanded="false" />
-            <element signature="docComment;method#add#0;class#SortedSet#0" expanded="false" />
-            <element signature="docComment;method#addAll#0;class#SortedSet#0" expanded="false" />
-            <element signature="docComment;method#clear#0;class#SortedSet#0" expanded="false" />
-            <element signature="docComment;method#contains#0;class#SortedSet#0" expanded="false" />
-            <element signature="docComment;method#containsAll#0;class#SortedSet#0" expanded="false" />
-            <element signature="docComment;method#isEmpty#0;class#SortedSet#0" expanded="false" />
-            <element signature="docComment;method#remove#0;class#SortedSet#0" expanded="false" />
-            <element signature="docComment;method#removeAll#0;class#SortedSet#0" expanded="false" />
-            <element signature="docComment;method#size#0;class#SortedSet#0" expanded="false" />
-            <element signature="docComment;method#toArrayList#0;class#SortedSet#0" expanded="false" />
-            <element signature="docComment;method#first#0;class#SortedSet#0" expanded="false" />
-            <element signature="docComment;method#last#0;class#SortedSet#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2197,14 +2171,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4695052" vertical-offset="0" max-vertical-offset="869">
           <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#TreeTraversal#0" expanded="false" />
-            <element signature="docComment;method#inOrderDFT#0;class#TreeTraversal#0" expanded="false" />
-            <element signature="docComment;method#preOrderDFT#0;class#TreeTraversal#0" expanded="false" />
-            <element signature="docComment;method#postOrderDFT#0;class#TreeTraversal#0" expanded="false" />
-            <element signature="docComment;method#levelOrderBFT#0;class#TreeTraversal#0" expanded="false" />
-            <element signature="docComment;method#writeDot#0;class#TreeTraversal#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2212,11 +2178,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33294392" vertical-offset="75" max-vertical-offset="4416">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#generateGraphInDotFile#0;class#GraphUtil#0" expanded="false" />
-            <element signature="method#buildGraphFromDotFile#0;class#GraphUtil#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2224,44 +2185,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.41121495" vertical-offset="4256" max-vertical-offset="5112">
           <caret line="192" column="39" selection-start-line="192" selection-start-column="39" selection-end-line="192" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#Graph#0;class#Graph#0" expanded="false" />
-            <element signature="e#688#689#0" expanded="false" />
-            <element signature="e#721#722#0" expanded="false" />
-            <element signature="e#821#822#0" expanded="false" />
-            <element signature="e#854#855#0" expanded="false" />
-            <element signature="e#975#976#0" expanded="false" />
-            <element signature="e#1011#1012#0" expanded="false" />
-            <element signature="method#addEdgeW#0;class#Graph#0" expanded="false" />
-            <element signature="method#addEdge#0;class#Graph#0" expanded="false" />
-            <element signature="method#Vertex#0;class#Vertex#0;class#Graph#0" expanded="false" />
-            <element signature="e#2658#2659#0" expanded="false" />
-            <element signature="e#2697#2698#0" expanded="false" />
-            <element signature="e#2766#2767#0" expanded="false" />
-            <element signature="e#2813#2814#0" expanded="false" />
-            <element signature="e#2850#2851#0" expanded="false" />
-            <element signature="e#2880#2881#0" expanded="false" />
-            <element signature="e#2926#2927#0" expanded="false" />
-            <element signature="e#2950#2951#0" expanded="false" />
-            <element signature="e#2983#2984#0" expanded="false" />
-            <element signature="e#3003#3004#0" expanded="false" />
-            <element signature="e#3049#3050#0" expanded="false" />
-            <element signature="e#3081#3082#0" expanded="false" />
-            <element signature="e#3116#3117#0" expanded="false" />
-            <element signature="e#3146#3147#0" expanded="false" />
-            <element signature="e#3192#3193#0" expanded="false" />
-            <element signature="e#3221#3222#0" expanded="false" />
-            <element signature="e#3256#3257#0" expanded="false" />
-            <element signature="e#3285#3286#0" expanded="false" />
-            <element signature="method#toString#0;class#Vertex#0;class#Graph#0" expanded="false" />
-            <element signature="e#3623#3624#0" expanded="false" />
-            <element signature="e#3656#3657#0" expanded="false" />
-            <element signature="e#3811#3812#0" expanded="false" />
-            <element signature="e#3837#3838#0" expanded="false" />
-            <element signature="e#3871#3872#0" expanded="false" />
-            <element signature="e#3907#3908#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2269,9 +2192,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.088607594" vertical-offset="67" max-vertical-offset="936">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="class#BSTNode#0;class#BST#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2279,27 +2199,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1435" max-vertical-offset="2304">
           <caret line="241" column="8" selection-start-line="241" selection-start-column="8" selection-end-line="241" selection-end-column="8" />
-          <folding>
-            <element signature="docComment;class#BST#0" expanded="false" />
-            <element signature="e#701#732#0" expanded="false" />
-            <element signature="docComment;class#BinaryNode#0;class#BST#0" expanded="false" />
-            <element signature="docComment;method#BinaryNode#0;class#BinaryNode#0;class#BST#0" expanded="false" />
-            <element signature="docComment;method#BinaryNode#1;class#BinaryNode#0;class#BST#0" expanded="false" />
-            <element signature="docComment;method#BinaryNode#2;class#BinaryNode#0;class#BST#0" expanded="false" />
-            <element signature="docComment;method#getData#0;class#BinaryNode#0;class#BST#0" expanded="false" />
-            <element signature="docComment;method#setData#0;class#BinaryNode#0;class#BST#0" expanded="false" />
-            <element signature="docComment;method#getLeft#0;class#BinaryNode#0;class#BST#0" expanded="false" />
-            <element signature="docComment;method#setLeft#0;class#BinaryNode#0;class#BST#0" expanded="false" />
-            <element signature="docComment;method#getRight#0;class#BinaryNode#0;class#BST#0" expanded="false" />
-            <element signature="docComment;method#setRight#0;class#BinaryNode#0;class#BST#0" expanded="false" />
-            <element signature="docComment;method#getParent#0;class#BinaryNode#0;class#BST#0" expanded="false" />
-            <element signature="docComment;method#setParent#0;class#BinaryNode#0;class#BST#0" expanded="false" />
-            <element signature="docComment;method#numChildren#0;class#BinaryNode#0;class#BST#0" expanded="false" />
-            <element signature="docComment;method#getLeftmostNode#0;class#BinaryNode#0;class#BST#0" expanded="false" />
-            <element signature="docComment;method#getRightmostNode#0;class#BinaryNode#0;class#BST#0" expanded="false" />
-            <element signature="docComment;method#getSuccessor#0;class#BinaryNode#0;class#BST#0" expanded="false" />
-            <element signature="docComment;method#height#0;class#BinaryNode#0;class#BST#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2314,31 +2213,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="1920">
           <caret line="142" column="53" selection-start-line="142" selection-start-column="53" selection-end-line="142" selection-end-column="53" />
-          <folding>
-            <element signature="docComment;class#MyLinkedList#0" expanded="false" />
-            <element signature="docComment;method#MyLinkedList#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="docComment;method#addFirst#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="docComment;method#addLast#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="docComment;method#add#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="docComment;method#getFirst#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="docComment;method#getLast#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#getLast#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="docComment;method#get#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="docComment;method#removeFirst#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="docComment;method#removeLast#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="docComment;method#remove#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="docComment;method#remove#1;class#MyLinkedList#0" expanded="false" />
-            <element signature="docComment;method#contains#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="docComment;method#indexOf#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="docComment;method#lastIndexOf#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="docComment;method#size#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="docComment;method#isEmpty#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="docComment;method#clear#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="docComment;method#toArray#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="docComment;class#Node#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="class#Node#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="docComment;method#Node#0;class#Node#0;class#MyLinkedList#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2346,28 +2220,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30149597" vertical-offset="314" max-vertical-offset="1824">
           <caret line="110" column="60" selection-start-line="110" selection-start-column="60" selection-end-line="110" selection-end-column="60" />
-          <folding>
-            <element signature="docComment;class#LinkedStructureTester#0" expanded="false" />
-            <element signature="docComment;method#testAddFirst#0;class#LinkedStructureTester#0" expanded="false" />
-            <element signature="docComment;method#testAddLast#0;class#LinkedStructureTester#0" expanded="false" />
-            <element signature="docComment;method#testAdd#0;class#LinkedStructureTester#0" expanded="false" />
-            <element signature="e#3364#3440#0" expanded="false" />
-            <element signature="docComment;method#testGetFirst#0;class#LinkedStructureTester#0" expanded="false" />
-            <element signature="docComment;method#testGetLast#0;class#LinkedStructureTester#0" expanded="false" />
-            <element signature="method#testGetLast#0;class#LinkedStructureTester#0" expanded="false" />
-            <element signature="docComment;method#testGet#0;class#LinkedStructureTester#0" expanded="false" />
-            <element signature="docComment;method#testRemoveFirst#0;class#LinkedStructureTester#0" expanded="false" />
-            <element signature="docComment;method#testRemoveLast#0;class#LinkedStructureTester#0" expanded="false" />
-            <element signature="docComment;method#testRemove#0;class#LinkedStructureTester#0" expanded="false" />
-            <element signature="docComment;method#testRemove1#0;class#LinkedStructureTester#0" expanded="false" />
-            <element signature="docComment;method#testContains#0;class#LinkedStructureTester#0" expanded="false" />
-            <element signature="docComment;method#testIndexOf#0;class#LinkedStructureTester#0" expanded="false" />
-            <element signature="docComment;method#testSize#0;class#LinkedStructureTester#0" expanded="false" />
-            <element signature="docComment;method#testIsEmpty#0;class#LinkedStructureTester#0" expanded="false" />
-            <element signature="docComment;method#testClear#0;class#LinkedStructureTester#0" expanded="false" />
-            <element signature="docComment;method#testToArray#0;class#LinkedStructureTester#0" expanded="false" />
-            <element signature="e#15958#16029#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2375,72 +2227,49 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="2328">
           <caret line="124" column="41" selection-start-line="124" selection-start-column="41" selection-end-line="124" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42523363" vertical-offset="980" max-vertical-offset="2112">
+          <caret line="206" column="59" selection-start-line="206" selection-start-column="59" selection-end-line="206" selection-end-column="59" />
           <folding>
-            <element signature="docComment;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="docComment;method#ArrayBasedCollection#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="e#748#835#0" expanded="false" />
-            <element signature="docComment;method#ArrayBasedCollection#1;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="e#1311#1398#0" expanded="false" />
-            <element signature="docComment;method#grow#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="e#1796#1852#0" expanded="false" />
-            <element signature="docComment;method#add#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="docComment;method#addAll#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="docComment;method#clear#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="docComment;method#contains#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="method#contains#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="docComment;method#containsAll#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="method#containsAll#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="docComment;method#isEmpty#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="docComment;method#iterator#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="docComment;method#remove#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="docComment;method#removeAll#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="e#7979#8036#0" expanded="false" />
-            <element signature="docComment;method#retainAll#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="docComment;method#size#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="docComment;method#length#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="docComment;method#toArray#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="docComment;method#toArray#1;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="docComment;method#toSortedList#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="e#10995#11079#0" expanded="false" />
-            <element signature="docComment;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="docComment;method#ArrayBasedIterator#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="docComment;method#hasNext#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="docComment;method#next#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="docComment;method#remove#0;class#ArrayBasedIterator#0;class#ArrayBasedCollection#0" expanded="false" />
-            <element signature="e#13963#14046#0" expanded="false" />
+            <element signature="docComment;method#setUp#0;class#BSTtester#0" expanded="false" />
+            <element signature="docComment;method#testAdd#0;class#BSTtester#0" expanded="false" />
+            <element signature="docComment;method#testAddAll#0;class#BSTtester#0" expanded="false" />
+            <element signature="docComment;method#testClear#0;class#BSTtester#0" expanded="false" />
+            <element signature="docComment;method#testContains#0;class#BSTtester#0" expanded="false" />
+            <element signature="docComment;method#testContainsAll#0;class#BSTtester#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BinarySearchTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="529" max-vertical-offset="2352">
-          <caret line="158" column="65" selection-start-line="158" selection-start-column="65" selection-end-line="158" selection-end-column="65" />
+        <state vertical-scroll-proportion="0.44764096" vertical-offset="1267" max-vertical-offset="2568">
+          <caret line="359" column="5" selection-start-line="346" selection-start-column="36" selection-end-line="359" selection-end-column="5" />
           <folding>
             <element signature="docComment;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#add#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#addAll#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#clear#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#contains#0;class#BinarySearchTree#0" expanded="false" />
-            <element signature="e#5308#5416#0" expanded="false" />
+            <element signature="e#5722#5830#0" expanded="false" />
             <element signature="docComment;method#containsAll#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#isEmpty#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#remove#0;class#BinarySearchTree#0" expanded="false" />
-            <element signature="e#7783#7892#0" expanded="false" />
-            <element signature="e#8617#8717#0" expanded="false" />
-            <element signature="e#9381#9482#0" expanded="false" />
-            <element signature="e#9807#9911#0" expanded="false" />
             <element signature="docComment;method#removeAll#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#size#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#toArrayList#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#first#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#last#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#inOrderDFT#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="method#inOrderDFT#0;class#BinarySearchTree#0" expanded="true" />
             <element signature="docComment;method#preOrderDFT#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#postOrderDFT#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#levelOrderBFT#0;class#BinarySearchTree#0" expanded="false" />
-            <element signature="docComment;method#writeDot#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="method#inOrderDFTRecursive#0;class#BinarySearchTree#0" expanded="true" />
             <element signature="docComment;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#BinaryNode#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
@@ -2460,28 +2289,7 @@
             <element signature="docComment;method#remove#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#remove0#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#remove1#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
-            <element signature="e#23296#23322#0" expanded="false" />
-            <element signature="e#23575#23602#0" expanded="false" />
             <element signature="docComment;method#remove2#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
-            <element signature="e#24124#24145#0" expanded="false" />
-            <element signature="e#24809#24831#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46478873" vertical-offset="0" max-vertical-offset="1008">
-          <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
-          <folding>
-            <element signature="docComment;method#setUp#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testAdd#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testAddAll#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testClear#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testContains#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testContainsAll#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testIsEmpty#0;class#BSTtester#0" expanded="false" />
-            <element signature="e#7764#7824#0" expanded="false" />
           </folding>
         </state>
       </provider>
