@@ -44,7 +44,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      */
     @Override
     public boolean add(Type item) {
-        // throw exception if passsed parameter is null
+        // throw exception if passed parameter is null
         if (item == null)
             throw new NullPointerException("added null!");
 
@@ -57,8 +57,21 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
                 currentNode = currentNode.getLeft();
             else currentNode = currentNode.getRight();
         }
-
-        return false;
+        // if the data is at the current node don't change anything and return false
+        if (item.compareTo(currentNode.getData()) == 0)
+            return false;
+            // implement adding to left of currentNode
+        else if (item.compareTo(currentNode.getData()) < 0) {
+            currentNode.setLeft(new BinaryNode(item));
+            size++;
+            return true;
+        }
+        // implement adding to right of currentNode
+        else {
+            currentNode.setRight(new BinaryNode(item));
+            size++;
+            return true;
+        }
     }
 
     /**
@@ -86,7 +99,9 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      */
     @Override
     public void clear() {
+        // reset fields
         root = null;
+        size = 0;
     }
 
     /**
@@ -173,27 +188,48 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
         // handle null parameter
         if (item == null)
             throw new NullPointerException("Tried .remove with a null parameter!");
-        // if the set is empty return false
+        // if the BST is empty (and the item isn't null) the item cannot exist in the BST, so return false
         if (isEmpty())
             return false;
-        // iterate through BST to find a Node with the specified data
+        // iterate through BST to find a Node with a child containing the specified data (a child is found instead of
+        //  the actual node to remove so that the remove methods can have access to the parent of the node to be
+        //  removed).
         BinaryNode currentNode = root;
-        while (item.compareTo(currentNode.getData()) != 0) {
+        int direction = 0;
+        while (item.compareTo(currentNode.getLeft().getData()) != 0 && item.compareTo(currentNode.getRight().getData()) != 0) {
+            // if the data should be left of the current node check the left child
             if (item.compareTo(currentNode.getData()) < 0) {
-                if (currentNode.getLeft() == null)
+                if (currentNode.getLeft() == null) // if no left child then the node doesn't exist and cannot be removed
                     return false;
+                if (item.compareTo(currentNode.getLeft().getData()) == 0) {
+                    // if the left child matches the data then store the direction to the node, exit the while loop, and
+                    //  remove the node
+                    direction = -1;
+                    break;
+                }
+                // if a left subtree exists and the root doesn't match the data then continue iterating down the BST
                 currentNode = currentNode.getLeft();
-            } else {
-                if (currentNode.getRight() == null)
+            }
+            // if the data should be right of the current node check the right child
+            else {
+                if (currentNode.getRight() == null) // if no right child then the node doesn't exist and cannot be removed
                     return false;
+                if (item.compareTo(currentNode.getRight().getData()) == 0) {
+                    // if the right child matches the data then store the direction to the node, exit the while loop, and
+                    //  remove the node
+                    direction = 1;
+                    break;
+                }
+                // if a right subtree exists and the root doesn't match the data then continue iterating down the BST
                 currentNode = currentNode.getRight();
             }
         }
-        if (currentNode.numChildren() == 0)
-            BinaryNode.remove0(currentNode);
-        else if (currentNode.numChildren() == 1)
-            BinaryNode
-        return false;
+        // TODO: implement removal for each case (different numbers of children nodes)
+        // these statements only execute if the correct node was found, in which case the node should be removed
+        //  according to the number of children, the size should decrement, and this method should return true.
+        BinaryNode.remove(currentNode, direction);
+        size--;
+        return true;
     }
 
     /**
@@ -206,7 +242,19 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      */
     @Override
     public boolean removeAll(Collection<? extends Type> items) {
-        return false;
+        // for empty collections simply return false, as nothing needs to happen and the BST will be unaffected
+        if (items.size() == 0)
+            return false;
+        // store the size in order to check for changes to the BST when returning
+        int size = size();
+        // remove each element in the Collection from the BST, throwing an Exception if any element is null
+        for (Type element : items) {
+            if (element == null)
+                throw new NullPointerException("Tried removeAll with a Collection containing null!");
+            remove(element);
+        }
+        // return true iff at least one element was removed (the size was changed during method execution)
+        return (size != size());
     }
 
     /**
@@ -214,7 +262,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      */
     @Override
     public int size() {
-        return 0;
+        return size;
     }
 
     /**
@@ -521,6 +569,25 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
 
             // return the correct height for this node, being the max height of the subtrees + 1
             return (Math.max(leftHeight, rightHeight) + 1);
+        }
+
+        /**
+         * Removes the child of the passed node according to the passed direction
+         *
+         * @param currentNode the parent of the node to be removed
+         * @param direction   an int indicating which child to remove: -1 for the left, 1 for the right
+         * @throws NoSuchElementException if the node doesn't have the indicated child, or the node is null
+         */
+        public void remove(BinaryNode currentNode, int direction) {
+            if (currentNode == null)
+                throw new NoSuchElementException("Tried BinaryNode.remove with a null node!");
+            if (direction == -1 && currentNode.getLeft() == null)
+                throw new NoSuchElementException("Tried BinaryNode.remove to the left with no left child!");
+            if (direction == 1 && currentNode.getRight() == null)
+                throw new NoSuchElementException("Tried BinaryNode.remove to the right with no right child!");
+            if (direction == -1) {
+
+            }
         }
     }
 }
