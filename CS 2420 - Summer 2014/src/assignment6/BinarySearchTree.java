@@ -478,16 +478,54 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
         if (n.numChildren() == 0)
             return;
 
-        if (n.getLeft() != null) {
-            output.println("\"" + n.getData() + "\"" + " -> " + "\"" + n.getLeft().getData() + "\"");
-        }
-        if (n.getRight() != null) {
-            output.println("\"" + n.getData() + "\"" + " -> " + "\"" + n.getRight().getData() + "\"");
-        }
-        if (n.getLeft() != null)
+        if (n.numChildren() == 2) {
+            output.println(n.getData() + " -> " + n.getLeft().getData());
+            output.println("midInvis [label=\"\",width=.1,style=invis]");
+            output.println(n.getData() + " -> midInvis [style=invis]");
+            output.println(n.getData() + " -> " + n.getRight().getData());
             writeDotRecursive(n.getLeft(), output);
-        if (n.getRight() != null)
             writeDotRecursive(n.getRight(), output);
+
+            return;
+        }
+
+        if (n.numChildren() == 1) {
+            if (n.getLeft() != null) {
+                output.println(n.getData() + " -> " + n.getLeft().getData());
+                output.println("midInvis [label=\"\",width=.1,style=invis]");
+                output.println(n.getData() + " -> midInvis [style=invis]");
+                output.println("rightInvis [label=\"\",width=.1,style=invis]");
+                output.println(n.getData() + " -> rightInvis [style=invis]");
+                writeDotRecursive(n.getLeft(), output);
+                return;
+            } else {
+                output.println("leftInvis [label=\"\",width=.1,style=invis]");
+                output.println(n.getData() + " -> leftInvis [style=invis]");
+                output.println("midInvis [label=\"\",width=.1,style=invis]");
+                output.println(n.getData() + " -> midInvis [style=invis]");
+                output.println(n.getData() + " -> " + n.getRight().getData());
+                writeDotRecursive(n.getRight(), output);
+            }
+        }
+
+//        if (n.getLeft() != null)
+//            writeDotRecursive(n.getLeft(), output);
+//        if (n.getRight() != null)
+//            writeDotRecursive(n.getRight(), output);
+
+//        if (n.numChildren()==0)
+//            return;
+//
+//        if (n.getLeft() != null) {
+//            output.println("\""+n.getData()+"\""+" -> "+"\""+n.getLeft().getData()+"\"");
+//        }
+//        if (n.getRight() != null) {
+//            output.println("\""+n.getData()+"\""+" -> "+"\""+n.getRight().getData()+"\"");
+//        }
+//        if (n.getLeft() != null)
+//            writeDotRecursive(n.getLeft(), output);
+//        if (n.getRight() != null)
+//            writeDotRecursive(n.getRight(), output);
     }
 
     /**
