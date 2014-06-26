@@ -198,6 +198,14 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
         // if the BST is empty (and the item isn't null) the item cannot exist in the BST, so return false
         if (isEmpty())
             return false;
+        // handle removing root by removing root's successor and copying the removed node's data to root
+        if (item.compareTo(root.getData()) == 0) {
+            Type data = root.getSuccessor().getData();
+            remove(data);
+            root.setData(data);
+            size--;
+            return true;
+        }
         // iterate through BST to find a Node with a child containing the specified data (a child is found instead of
         //  the actual node to remove so that the remove methods can have access to the parent of the node to be
         //  removed).
