@@ -56,8 +56,7 @@ public class BSTtester extends TestCase {
         //try-catch blocks to test case of NullPointerException
         try {
             BSTtestList.add(nullString);
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             assertEquals("Tried adding null", e.getMessage());
         }
     }
@@ -104,8 +103,7 @@ public class BSTtester extends TestCase {
         //try-catch blocks to test case of NullPointerException
         try {
             BSTtestList.addAll(nullStrOfStrings);
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             assertEquals("Tried to add a null Collection with addAll", e.getMessage());
         }
     }
@@ -149,8 +147,7 @@ public class BSTtester extends TestCase {
         //try-catch blocks to test case of NullPointerException
         try {
             BSTtestList.contains(nullString);
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             assertEquals("Tried contains with null item", e.getMessage());
         }
     }
@@ -179,22 +176,21 @@ public class BSTtester extends TestCase {
         //try-catch blocks to test case of NullPointerException
         try {
             BSTtestList.containsAll(nullStrOfStrings);
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             assertEquals("Tried contains with null item", e.getMessage());
         }
     }
 
     /* isEmpty is already tested multiple times to work in the above tests. */
-    public void testIsEmpty() {}
+    public void testIsEmpty() {
+    }
 
     public void testRemove() throws NullPointerException {
 
         //try-catch blocks to test case of NullPointerException
         try {
             BSTtestList.add(nullString);
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             assertEquals("Tried adding null", e.getMessage());
         }
 
@@ -224,8 +220,7 @@ public class BSTtester extends TestCase {
         //try-catch blocks to test case of NullPointerException
         try {
             BSTtestList.add(nullString);
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             assertEquals("Tried adding null", e.getMessage());
         }
 
@@ -404,9 +399,5 @@ public class BSTtester extends TestCase {
             correctList.add(correctString);
 
         assertEquals(correctList, BSTtestList.levelOrderBFT());
-    }
-
-    public void testWriteDot() {
-
     }
 }
