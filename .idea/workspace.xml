@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="implemented inOrderDFT">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BinarySearchTree.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BinarySearchTree.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -84,31 +85,31 @@
       <file leaf-file-name="BinarySearchTree.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BinarySearchTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25431532" vertical-offset="1195" max-vertical-offset="2280">
-              <caret line="334" column="30" selection-start-line="334" selection-start-column="30" selection-end-line="334" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.69158876" vertical-offset="1424" max-vertical-offset="2280">
+              <caret line="476" column="86" selection-start-line="476" selection-start-column="86" selection-end-line="476" selection-end-column="86" />
               <folding>
                 <element signature="docComment;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#add#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#addAll#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#clear#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#contains#0;class#BinarySearchTree#0" expanded="false" />
-                <element signature="e#5823#5931#0" expanded="false" />
+                <element signature="e#5722#5830#0" expanded="false" />
                 <element signature="docComment;method#containsAll#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#isEmpty#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#remove#0;class#BinarySearchTree#0" expanded="false" />
-                <element signature="e#8463#8572#0" expanded="false" />
-                <element signature="e#8782#8838#0" expanded="false" />
-                <element signature="e#10672#10776#0" expanded="false" />
+                <element signature="e#8362#8471#0" expanded="false" />
+                <element signature="e#8681#8737#0" expanded="false" />
+                <element signature="e#10571#10675#0" expanded="false" />
                 <element signature="docComment;method#removeAll#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#size#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#toArrayList#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#first#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#last#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#inOrderDFT#0;class#BinarySearchTree#0" expanded="false" />
-                <element signature="e#13915#13921#0" expanded="true" />
                 <element signature="docComment;method#preOrderDFT#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#postOrderDFT#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#levelOrderBFT#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#levelOrderDFTRecursive#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#writeDot#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
@@ -130,8 +131,27 @@
                 <element signature="docComment;method#remove0#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#remove1#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#remove2#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
-                <element signature="e#25327#25348#0" expanded="false" />
-                <element signature="e#26012#26034#0" expanded="false" />
+                <element signature="e#27674#27695#0" expanded="false" />
+                <element signature="e#28359#28381#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BSTtester.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="3288">
+              <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+              <folding>
+                <element signature="docComment;method#setUp#0;class#BSTtester#0" expanded="false" />
+                <element signature="docComment;method#testAdd#0;class#BSTtester#0" expanded="false" />
+                <element signature="docComment;method#testAddAll#0;class#BSTtester#0" expanded="false" />
+                <element signature="docComment;method#testClear#0;class#BSTtester#0" expanded="false" />
+                <element signature="docComment;method#testContains#0;class#BSTtester#0" expanded="false" />
+                <element signature="docComment;method#testContainsAll#0;class#BSTtester#0" expanded="false" />
+                <element signature="method#testRemoveAll#0;class#BSTtester#0" expanded="true" />
+                <element signature="docComment;method#testToArrayList#0;class#BSTtester#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -208,8 +228,8 @@
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTimer_2.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtimer.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/testBinarySearchTree.java" />
-        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BinarySearchTree.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java" />
       </list>
     </option>
   </component>
@@ -250,58 +270,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CS 2420 - Summer 2014" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CS 2420 - Summer 2014" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CS 2420 - Summer 2014" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="examples" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -360,6 +328,58 @@
             <PATH_ELEMENT USER_OBJECT="CS 2420 - Summer 2014">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CS 2420 - Summer 2014" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CS 2420 - Summer 2014" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CS 2420 - Summer 2014" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assignment6" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -446,53 +466,7 @@
       <recent name="C:\Users\Cody\workspace\CS 2420 - Spring 2014\src\homework08" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BSTtester">
-    <configuration default="false" name="LinkedStructureTester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="CS 2420 - Summer 2014" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="assignment5" />
-      <option name="MAIN_CLASS_NAME" value="assignment5.LinkedStructureTester" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="LinkedStructureTester.testGetFirst" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="CS 2420 - Summer 2014" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="assignment5" />
-      <option name="MAIN_CLASS_NAME" value="assignment5.LinkedStructureTester" />
-      <option name="METHOD_NAME" value="testGetFirst" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.BSTtester.testRemoveAll">
     <configuration default="false" name="LinkedStructureTimer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="assignment5.LinkedStructureTimer" />
@@ -565,6 +539,52 @@
       </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="BSTtester.testAddAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="CS 2420 - Summer 2014" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="assignment6" />
+      <option name="MAIN_CLASS_NAME" value="assignment6.BSTtester" />
+      <option name="METHOD_NAME" value="testAddAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="BSTtester.testRemoveAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="CS 2420 - Summer 2014" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="assignment6" />
+      <option name="MAIN_CLASS_NAME" value="assignment6.BSTtester" />
+      <option name="METHOD_NAME" value="testRemoveAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -717,19 +737,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.testBinarySearchTree" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.LinkedStructureTester" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.LinkedStructureTester.testGetFirst" />
-      <item index="3" class="java.lang.String" itemvalue="Application.LinkedStructureTimer" />
-      <item index="4" class="java.lang.String" itemvalue="Application.LinkedStructureTimer_2" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.BSTtester" />
+      <item index="1" class="java.lang.String" itemvalue="Application.LinkedStructureTimer" />
+      <item index="2" class="java.lang.String" itemvalue="Application.LinkedStructureTimer_2" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BSTtester" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BSTtester.testAddAll" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.BSTtester.testRemoveAll" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.BSTtester" />
-        <item index="1" class="java.lang.String" itemvalue="Application.LinkedStructureTimer_2" />
-        <item index="2" class="java.lang.String" itemvalue="Application.LinkedStructureTimer" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.LinkedStructureTester" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.LinkedStructureTester.testGetFirst" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BSTtester.testRemoveAll" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BSTtester.testAddAll" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BSTtester" />
+        <item index="3" class="java.lang.String" itemvalue="Application.LinkedStructureTimer_2" />
+        <item index="4" class="java.lang.String" itemvalue="Application.LinkedStructureTimer" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1742,7 +1762,11 @@
       <created>1403803871202</created>
       <updated>1403803871202</updated>
     </task>
-    <option name="localTasksCounter" value="226" />
+    <task id="LOCAL-00226" summary="implemented inOrderDFT">
+      <created>1403804003300</created>
+      <updated>1403804003300</updated>
+    </task>
+    <option name="localTasksCounter" value="227" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1783,7 +1807,6 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40133038" sideWeight="0.28916308" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26940134" sideWeight="0.36951873" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31374723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24919786" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1797,6 +1820,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32705098" sideWeight="0.34438503" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26940134" sideWeight="0.36951873" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1900,6 +1924,8 @@
             <element signature="docComment;method#testClear#0;class#BSTtester#0" expanded="false" />
             <element signature="docComment;method#testContains#0;class#BSTtester#0" expanded="false" />
             <element signature="docComment;method#testContainsAll#0;class#BSTtester#0" expanded="false" />
+            <element signature="method#testRemoveAll#0;class#BSTtester#0" expanded="true" />
+            <element signature="docComment;method#testToArrayList#0;class#BSTtester#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2147,13 +2173,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/SpellCheckUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27617952" vertical-offset="0" max-vertical-offset="2064">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/SpellChecker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35903338" vertical-offset="0" max-vertical-offset="869">
@@ -2238,10 +2257,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/SpellCheckUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="912">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding>
+            <element signature="docComment;class#SpellCheckUtil#0" expanded="false" />
+            <element signature="docComment;method#SpellCheckUtil#0;class#SpellCheckUtil#0" expanded="false" />
+            <element signature="docComment;method#SpellCheckUtil#1;class#SpellCheckUtil#0" expanded="false" />
+            <element signature="docComment;method#SpellCheckUtil#2;class#SpellCheckUtil#0" expanded="false" />
+            <element signature="docComment;method#addToDictionary#0;class#SpellCheckUtil#0" expanded="false" />
+            <element signature="docComment;method#removeFromDictionary#0;class#SpellCheckUtil#0" expanded="false" />
+            <element signature="docComment;method#spellCheck#0;class#SpellCheckUtil#0" expanded="false" />
+            <element signature="docComment;method#buildDictionary#0;class#SpellCheckUtil#0" expanded="false" />
+            <element signature="docComment;method#readFromFile#0;class#SpellCheckUtil#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42523363" vertical-offset="980" max-vertical-offset="2112">
-          <caret line="206" column="59" selection-start-line="206" selection-start-column="59" selection-end-line="206" selection-end-column="59" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="3288">
+          <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
           <folding>
             <element signature="docComment;method#setUp#0;class#BSTtester#0" expanded="false" />
             <element signature="docComment;method#testAdd#0;class#BSTtester#0" expanded="false" />
@@ -2249,37 +2286,39 @@
             <element signature="docComment;method#testClear#0;class#BSTtester#0" expanded="false" />
             <element signature="docComment;method#testContains#0;class#BSTtester#0" expanded="false" />
             <element signature="docComment;method#testContainsAll#0;class#BSTtester#0" expanded="false" />
+            <element signature="method#testRemoveAll#0;class#BSTtester#0" expanded="true" />
+            <element signature="docComment;method#testToArrayList#0;class#BSTtester#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BinarySearchTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25431532" vertical-offset="1195" max-vertical-offset="2280">
-          <caret line="334" column="30" selection-start-line="334" selection-start-column="30" selection-end-line="334" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.69158876" vertical-offset="1424" max-vertical-offset="2280">
+          <caret line="476" column="86" selection-start-line="476" selection-start-column="86" selection-end-line="476" selection-end-column="86" />
           <folding>
             <element signature="docComment;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#add#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#addAll#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#clear#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#contains#0;class#BinarySearchTree#0" expanded="false" />
-            <element signature="e#5823#5931#0" expanded="false" />
+            <element signature="e#5722#5830#0" expanded="false" />
             <element signature="docComment;method#containsAll#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#isEmpty#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#remove#0;class#BinarySearchTree#0" expanded="false" />
-            <element signature="e#8463#8572#0" expanded="false" />
-            <element signature="e#8782#8838#0" expanded="false" />
-            <element signature="e#10672#10776#0" expanded="false" />
+            <element signature="e#8362#8471#0" expanded="false" />
+            <element signature="e#8681#8737#0" expanded="false" />
+            <element signature="e#10571#10675#0" expanded="false" />
             <element signature="docComment;method#removeAll#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#size#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#toArrayList#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#first#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#last#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#inOrderDFT#0;class#BinarySearchTree#0" expanded="false" />
-            <element signature="e#13915#13921#0" expanded="true" />
             <element signature="docComment;method#preOrderDFT#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#postOrderDFT#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#levelOrderBFT#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#levelOrderDFTRecursive#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#writeDot#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
@@ -2301,8 +2340,8 @@
             <element signature="docComment;method#remove0#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#remove1#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#remove2#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
-            <element signature="e#25327#25348#0" expanded="false" />
-            <element signature="e#26012#26034#0" expanded="false" />
+            <element signature="e#27674#27695#0" expanded="false" />
+            <element signature="e#28359#28381#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -94,6 +94,10 @@ public class BSTtester extends TestCase {
         assertTrue(BSTtestList.contains("3rd"));
         assertTrue(BSTtestList.contains("4th"));
         assertTrue(BSTtestList.containsAll(arrayListTest));
+
+        // create quick DOT file of testList
+        BSTtestList.writeDot("addAllGraph.dot");
+
         // assert the size (number of elements) should only be 4
         assertEquals(4, BSTtestList.size());
 
@@ -238,6 +242,10 @@ public class BSTtester extends TestCase {
         testList.add("sixth");
         testList.add("seventh");
         BSTtestList.addAll(testList);
+
+        // create quick DOT file of testList
+        BSTtestList.writeDot("removeAllGraph.dot");
+
         for (String element : testList)
             assertEquals(true, BSTtestList.containsAll(testList));
         BSTtestList.removeAll(testList);

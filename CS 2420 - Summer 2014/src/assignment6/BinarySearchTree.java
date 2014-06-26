@@ -462,7 +462,6 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
 
             // Set up the dot graph and properties
             output.println("digraph BST {");
-            output.println("node [shape=record]");
 
             if (root != null)
                 writeDotRecursive(root, output);
@@ -476,22 +475,19 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
 
     // Recursive method for writing the tree to a dot file
     private void writeDotRecursive(BinaryNode n, PrintWriter output) throws Exception {
-        output.println(n.data + "[label=\"<L> |<D> " + n.data + "|<R> \"]");
+        if (n.numChildren() == 0)
+            return;
 
-        if (n.left != null) {
-            // write the left subtree
-            writeDotRecursive(n.left, output);
-
-            // then make a link between n and the left subtree
-            output.println(n.data + ":L -> " + n.left.data + ":D");
+        if (n.getLeft() != null) {
+            output.println("\"" + n.getData() + "\"" + " -> " + "\"" + n.getLeft().getData() + "\"");
         }
-        if (n.right != null) {
-            // write the left subtree
-            writeDotRecursive(n.right, output);
-
-            // then make a link between n and the right subtree
-            output.println(n.data + ":R -> " + n.right.data + ":D");
+        if (n.getRight() != null) {
+            output.println("\"" + n.getData() + "\"" + " -> " + "\"" + n.getRight().getData() + "\"");
         }
+        if (n.getLeft() != null)
+            writeDotRecursive(n.getLeft(), output);
+        if (n.getRight() != null)
+            writeDotRecursive(n.getRight(), output);
     }
 
     /**
