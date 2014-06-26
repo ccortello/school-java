@@ -377,6 +377,8 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
         return null;
     }
 
+    /* These recursive methods are nearly identical, and recursively iterate through the BST in pre-, in-, or post-order */
+
     private void inOrderDFTRecursive(BinaryNode n, ArrayList<Type> returnList) {
         //first check for leaf node, add to ArrayList if it is a leaf node
         if (n.numChildren() == 0) {
