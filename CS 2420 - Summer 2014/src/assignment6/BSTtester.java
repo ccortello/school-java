@@ -403,7 +403,7 @@ public class BSTtester extends TestCase {
         for (String correctString : correctArray)
             correctList.add(correctString);
 
-        assertEquals(correctList, BSTtestList.preOrderDFT());
+        assertEquals(correctList, BSTtestList.levelOrderBFT());
     }
 
     public void testWriteDot() {
