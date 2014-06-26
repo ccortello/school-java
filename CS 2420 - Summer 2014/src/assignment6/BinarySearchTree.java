@@ -48,6 +48,13 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
         if (item == null)
             throw new NullPointerException("added null!");
 
+        // handle adding to null set - update root and increment size
+        if (size == 0) {
+            root = new BinaryNode(item);
+            size++;
+            return true;
+        }
+
         // find the Node where the data should be added
         BinaryNode currentNode = root;
         while (!currentNode.isLeaf()) {
@@ -227,7 +234,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
         // these statements only execute if the correct node was found, in which case the node should be removed
         //  according to the number of children, the size should decrement, and this method should return true.
         //Todo: fix error in statement below
-//        BinaryNode.remove(currentNode, direction);
+        BinaryNode.remove(currentNode, direction);
         size--;
         return true;
     }
