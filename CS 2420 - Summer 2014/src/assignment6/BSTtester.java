@@ -195,6 +195,8 @@ public class BSTtester extends TestCase {
         // add items, assert that the BST contains them, then remove the items and assert that the BST doesn't contain them
         BSTtestList.clear();
         ArrayList<String> testList = new ArrayList<String>();
+        /* this tree tests every remove scenario: removing a leaf, removing a node with one child, removing a node with
+           two children, removing root in each of those cases, and removing every element in a tree */
         testList.add("first");
         testList.add("second");
         testList.add("third");
@@ -217,11 +219,63 @@ public class BSTtester extends TestCase {
         try {
             BSTtestList.add(nullString);
         } catch (Exception e) {
-            assertEquals("added null!", e.getMessage());
+            assertEquals("Tried adding null", e.getMessage());
         }
+
+        // add items, assert that the BST contains them, then remove the items and assert that the BST doesn't contain them
+        BSTtestList.clear();
+        ArrayList<String> testList = new ArrayList<String>();
+        /* this tree tests every remove scenario: removing a leaf, removing a node with one child, removing a node with
+           two children, removing root in each of those cases, and removing every element in a tree */
+        testList.add("first");
+        testList.add("second");
+        testList.add("third");
+        testList.add("fourth");
+        testList.add("fifth");
+        testList.add("sixth");
+        testList.add("seventh");
+        BSTtestList.addAll(testList);
+        for (String element : testList)
+            assertEquals(true, BSTtestList.containsAll(testList));
+        BSTtestList.removeAll(testList);
+        for (String element : testList)
+            assertEquals(false, BSTtestList.contains(element));
     }
 
     public void testSize() {
+        // add elements asserting that size updates with each add, the do the same with remove
+        BSTtestList.clear();
+        assertEquals(0, BSTtestList.size());
+        BSTtestList.add("first");
+        assertEquals(1, BSTtestList.size());
+        BSTtestList.add("second");
+        assertEquals(2, BSTtestList.size());
+        BSTtestList.add("third");
+        assertEquals(3, BSTtestList.size());
+        BSTtestList.add("fourth");
+        assertEquals(4, BSTtestList.size());
+        BSTtestList.add("fifth");
+        assertEquals(5, BSTtestList.size());
+        BSTtestList.add("sixth");
+        assertEquals(6, BSTtestList.size());
+        BSTtestList.add("seventh");
+        assertEquals(7, BSTtestList.size());
+
+        BSTtestList.remove("third");
+        assertEquals(6, BSTtestList.size());
+        BSTtestList.remove("first");
+        assertEquals(5, BSTtestList.size());
+        BSTtestList.remove("second");
+        assertEquals(4, BSTtestList.size());
+        BSTtestList.remove("seventh");
+        assertEquals(3, BSTtestList.size());
+        BSTtestList.remove("fourth");
+        assertEquals(2, BSTtestList.size());
+        BSTtestList.remove("sixth");
+        assertEquals(1, BSTtestList.size());
+        BSTtestList.remove("fifth");
+        assertEquals(0, BSTtestList.size());
+
 
     }
 
@@ -235,7 +289,7 @@ public class BSTtester extends TestCase {
         try {
             BSTtestList.add(nullString);
         } catch (Exception e) {
-            assertEquals("added null!", e.getMessage());
+            assertEquals("Tried adding null", e.getMessage());
         }
     }
 

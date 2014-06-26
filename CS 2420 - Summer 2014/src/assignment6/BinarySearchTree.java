@@ -202,19 +202,30 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
         // if the BST is empty (and the item isn't null) the item cannot exist in the BST, so return false
         if (isEmpty())
             return false;
+        // handle removing final node - reset the BST and return
+        if (size == 1 && item.compareTo(root.getData()) == 0) {
+            clear();
+            return true;
+        }
         // handle removing root by removing root's successor and copying the removed node's data to root
         if (item.compareTo(root.getData()) == 0) {
             Type data = root.getSuccessor().getData();
             remove(data);
             root.setData(data);
-            size--;
             return true;
         }
         // iterate through BST to find a Node with a child containing the specified data (a child is found instead of
         //  the actual node to remove so that the remove methods can have access to the parent of the node to be
         //  removed).
         BinaryNode currentNode = root;
-        while (item.compareTo(currentNode.getLeft().getData()) != 0 && item.compareTo(currentNode.getRight().getData()) != 0) {
+        while (true) {
+            // check while loop condition here to avoid null pointer
+            // if either child node matches the data we're looking for stop looping and remove the node
+            if (currentNode.getLeft() != null && item.compareTo(currentNode.getLeft().getData()) == 0)
+                break;
+            if (currentNode.getRight() != null && item.compareTo(currentNode.getRight().getData()) == 0)
+                break;
+
             // if the data should be left of the current node check the left child
             if (item.compareTo(currentNode.getData()) < 0) {
                 if (currentNode.getLeft() == null) // if no left child then the node doesn't exist and cannot be removed
@@ -235,7 +246,8 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
             }
         }
         // set the direction according to which node matches the data
-        int direction = (item.compareTo(currentNode.getLeft().getData()) == 0) ? -1 : 1;
+        int direction = (currentNode.getLeft() != null && item.compareTo(currentNode.getLeft().getData()) == 0) ? -1 : 1;
+
         // these statements only execute if the correct node was found, in which case the node should be removed
         //  according to the number of children, the size should decrement, and this method should return true.
         currentNode.remove(direction);
