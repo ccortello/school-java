@@ -59,9 +59,15 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
         while (!currentNode.isLeaf()) {
             if (currentNode.data.equals(item))
                 return false;
-            else if (item.compareTo(currentNode.getData()) < 0)
-                currentNode = currentNode.getLeft();
-            else currentNode = currentNode.getRight();
+            else if (item.compareTo(currentNode.getData()) < 0) {
+                if (currentNode.getLeft() != null)
+                    currentNode = currentNode.getLeft();
+                else break;
+            } else {
+                if (currentNode.getRight() != null)
+                    currentNode = currentNode.getRight();
+                else break;
+            }
         }
         // if the data is at the current node don't change anything and return false
         if (item.compareTo(currentNode.getData()) == 0)
