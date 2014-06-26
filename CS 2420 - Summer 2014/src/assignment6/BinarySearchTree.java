@@ -214,7 +214,6 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
         //  the actual node to remove so that the remove methods can have access to the parent of the node to be
         //  removed).
         BinaryNode currentNode = root;
-        int direction = 0;
         while (item.compareTo(currentNode.getLeft().getData()) != 0 && item.compareTo(currentNode.getRight().getData()) != 0) {
             // if the data should be left of the current node check the left child
             if (item.compareTo(currentNode.getData()) < 0) {
@@ -236,7 +235,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
             }
         }
         // set the direction according to which node matches the data
-        direction = (item.compareTo(currentNode.getLeft().getData()) == 0) ? -1 : 1;
+        int direction = (item.compareTo(currentNode.getLeft().getData()) == 0) ? -1 : 1;
         // these statements only execute if the correct node was found, in which case the node should be removed
         //  according to the number of children, the size should decrement, and this method should return true.
         currentNode.remove(direction);
