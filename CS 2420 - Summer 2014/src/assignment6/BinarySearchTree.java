@@ -342,24 +342,6 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
         }
 
         /**
-         * Getter method.
-         *
-         * @return the parent of this node.
-         */
-        public BinaryNode getParent() {
-            return parent;
-        }
-
-        /**
-         * Setter method.
-         *
-         * @param _parent - the parent node to be set.
-         */
-        public void setParent(BinaryNode _parent) {
-            parent = _parent;
-        }
-
-        /**
          * Number of children Use this to help figure out which BST deletion case to perform
          *
          * @return The number of children of this node
@@ -383,8 +365,11 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
             if (getLeft() == null)
                 return this; // returns "this" node
 
-            // FILL IN - do not return null
-            return null;
+            // find leftmost Node
+            BinaryNode returnNode = this.getLeft();
+            while (returnNode.getLeft() != null)
+                returnNode = returnNode.getLeft();
+            return returnNode;
         }
 
         /**
@@ -395,8 +380,11 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
             if (getRight() == null)
                 return this; // returns "this" node
 
-            // FILL IN - do not return null
-            return null;
+            // find rightmost Node
+            BinaryNode returnNode = this.getRight();
+            while (returnNode.getRight() != null)
+                returnNode = returnNode.getRight();
+            return returnNode;
         }
 
         /**
