@@ -377,6 +377,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
          * This method applies to binary search trees only (not general binary trees).
          *
          * @return The successor of this node.
+         * @throws NoSuchElementException if the node has no successor (is a leaf node)
          * <p/>
          * The successor is a node which can replace this node in a case-3 BST deletion. It is either the smallest node
          * in the right subtree, or the largest node in the left subtree.
