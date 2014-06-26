@@ -1,5 +1,7 @@
 package assignment6;
 
+import java.io.FileWriter;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -18,6 +20,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
     public BinarySearchTree() {
         root = null;
     }
+
     /**
      * Ensures that this set contains the specified item.
      *
@@ -190,6 +193,10 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
         return null;
     }
 
+
+    /* DOT methods taken from BST.java in the week 6 example package */
+    // Driver for writing this tree to a dot file
+
     /**
      * Creates a file with .dot extension to contain information about the tree The format must be readable by the DOT
      * tool use by graphviz.
@@ -198,7 +205,42 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      */
     @Override
     public void writeDot(String filename) {
+        try {
+            // PrintWriter(FileWriter) will write output to a file
+            PrintWriter output = new PrintWriter(new FileWriter(filename));
 
+            // Set up the dot graph and properties
+            output.println("digraph BST {");
+            output.println("node [shape=record]");
+
+            if (root != null)
+                writeDotRecursive(root, output);
+            // Close the graph
+            output.println("}");
+            output.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    // Recursive method for writing the tree to a dot file
+    private void writeDotRecursive(BinaryNode n, PrintWriter output) throws Exception {
+        output.println(n.data + "[label=\"<L> |<D> " + n.data + "|<R> \"]");
+
+        if (n.left != null) {
+            // write the left subtree
+            writeDotRecursive(n.left, output);
+
+            // then make a link between n and the left subtree
+            output.println(n.data + ":L -> " + n.left.data + ":D");
+        }
+        if (n.right != null) {
+            // write the left subtree
+            writeDotRecursive(n.right, output);
+
+            // then make a link between n and the right subtree
+            output.println(n.data + ":R -> " + n.right.data + ":D");
+        }
     }
 
     /**
@@ -378,7 +420,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
          */
         public int height() {
             // FILL IN - do not return -1
-            return - 1;
+            return -1;
         }
     }
 }

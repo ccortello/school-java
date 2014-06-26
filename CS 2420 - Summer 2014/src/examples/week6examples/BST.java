@@ -83,8 +83,7 @@ public class BST {
         }
     }
 
-
-    // Recursive method for writing the tree to  a dot file
+    // Recursive method for writing the tree to a dot file
     private void writeDotRecursive(BSTNode n, PrintWriter output) throws Exception {
         output.println(n.data + "[label=\"<L> |<D> " + n.data + "|<R> \"]");
 
