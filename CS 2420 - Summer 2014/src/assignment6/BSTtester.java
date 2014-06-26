@@ -5,8 +5,9 @@ import junit.framework.TestCase;
 import java.util.ArrayList;
 
 public class BSTtester extends TestCase {
-    // null string reference to test case of NullPointer Exception
+    // null string reference to test case of NullPointer Exception, both item and array
     String nullString;
+    ArrayList<String> nullStrOfStrings = new ArrayList<String>();
     // non-null BinarySearchTree reference to run other various test on
     BinarySearchTree<String> BSTtestList = new BinarySearchTree<String>();
     // BinarySearchTree object used to test addAll, removeAll, containsAll etc.
@@ -56,7 +57,7 @@ public class BSTtester extends TestCase {
             BSTtestList.add(nullString);
         }
         catch (Exception e) {
-            assertEquals("added null!", e.getMessage());
+            assertEquals("Tried adding null", e.getMessage());
         }
     }
 
@@ -80,20 +81,27 @@ public class BSTtester extends TestCase {
         assertTrue(BSTtestList.containsAll(arrayListTest));
         // add to arrayListTest, to test that contains all then return false
         arrayListTest.add("4th");
+        // assert that BSTtestList no longer contains all of arrayListTest
         assertFalse(BSTtestList.containsAll(arrayListTest));
-        // assert addAll with arrayListTest returns true, because "4th" is added
-        assertTrue(BSTtestList.containsAll(arrayListTest));
+        // assert addAll with arrayListTest returns true, because "4th"  now is added
+        assertTrue(BSTtestList.addAll(arrayListTest));
         // assert addAll now returns false with arrayListTest because nothing is added
-        assertFalse(BSTtestList.containsAll(arrayListTest));
+        assertFalse(BSTtestList.addAll(arrayListTest));
+        // assert that proper elements are present
+        assertTrue(BSTtestList.contains("1st"));
+        assertTrue(BSTtestList.contains("2nd"));
+        assertTrue(BSTtestList.contains("3rd"));
+        assertTrue(BSTtestList.contains("4th"));
+        assertTrue(BSTtestList.containsAll(arrayListTest));
         // assert the size (number of elements) should only be 4
         assertEquals(4, BSTtestList.size());
 
         //try-catch blocks to test case of NullPointerException
         try {
-            BSTtestList.add(nullString);
+            BSTtestList.addAll(nullStrOfStrings);
         }
         catch (Exception e) {
-            assertEquals("Tried to add null with .addAll", e.getMessage());
+            assertEquals("Tried to add a null Collection with addAll", e.getMessage());
         }
     }
 
@@ -124,34 +132,50 @@ public class BSTtester extends TestCase {
     }
 
     /**
-     * Test the case of NullPointerException for the contains method. Contains method is already test multiple times, in
-     * the tests above, to work.
+     * Test the case of NullPointerException for the contains method. Test if BSTtestList is empty returns false.
      *
      * @throws NullPointerException
      */
     public void testContains() throws NullPointerException {
+        // assert returns false when contains is used on an empty BinarySearchTree
+        assertFalse(BSTtestList.contains("1st"));
+        // add to BSTtestList so its not empty, assert return 'true' that it was indeed changed.
+        assertTrue(BSTtestList.add("1st"));
         //try-catch blocks to test case of NullPointerException
         try {
-            BSTtestList.add(nullString);
+            BSTtestList.contains(nullString);
         }
         catch (Exception e) {
-            assertEquals("Tried .contains with 'null'", e.getMessage());
+            assertEquals("Tried contains with null item", e.getMessage());
         }
     }
 
     /**
-     * Test the case of NullPointerException for the containsAll method. ContainsAll method is already tested in the
-     * addAll test above to work.
-     *
+     * Test the case of NullPointerException for the containsAll method. containsAll method is re-tested as it is in
+     * the addAll method test
      * @throws NullPointerException
      */
     public void testContainsAll() throws NullPointerException {
+        // first assert returns false if this BinarySearchTree is empty when calling contains all.
+        assertFalse(BSTtestList.containsAll(arrayListTest));
+        // add to BSTtestList so its not empty, assert return 'true' that it was indeed changed.
+        assertTrue(BSTtestList.addAll(arrayListTest));
+        // assert that all items added from arrayListTest are contained in BSTtestList with containsAll
+        assertTrue(BSTtestList.containsAll(arrayListTest));
+        arrayListTest.add("4th");
+        assertTrue(BSTtestList.addAll(arrayListTest));
+        assertTrue(BSTtestList.contains("1st"));
+        assertTrue(BSTtestList.contains("2nd"));
+        assertTrue(BSTtestList.contains("3rd"));
+        assertTrue(BSTtestList.contains("4th"));
+        assertTrue(BSTtestList.containsAll(arrayListTest));
+
         //try-catch blocks to test case of NullPointerException
         try {
-            BSTtestList.add(nullString);
+            BSTtestList.containsAll(nullStrOfStrings);
         }
         catch (Exception e) {
-            assertEquals("Tried to use .containsAll with a Collection containing 'null'", e.getMessage());
+            assertEquals("Tried contains with null item", e.getMessage());
         }
     }
 

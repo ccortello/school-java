@@ -120,10 +120,11 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
     public boolean contains(Type item) {
         // handle null parameter
         if (item == null)
-            throw new NullPointerException("Tried contains with null");
+            throw new NullPointerException("Tried contains with null item");
         // an empty set cannot contain any certain item - return false
         if (isEmpty())
             return false;
+
         // search the BST for a Node containing the passed data
         BinaryNode currentNode = root; // start from root
         while (!currentNode.isLeaf()) {
@@ -162,6 +163,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
         // an empty BST cannot contain any specific item - return false
         if (isEmpty())
             return false;
+
         // check if each element in the collection is found in the BST. If not return false
         for (Type element : items)
             if (!contains(element)) // return false if the element isn't found in the BST
