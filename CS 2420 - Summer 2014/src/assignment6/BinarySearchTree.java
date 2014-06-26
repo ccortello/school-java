@@ -42,7 +42,6 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      * inserted); otherwise, returns false
      * @throws NullPointerException if the item is null
      */
-    @Override
     public boolean add(Type item) {
         // throw exception if passed parameter is null
         if (item == null)
@@ -104,7 +103,6 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
     /**
      * Removes all items from this set. The set will be empty after this method call.
      */
-    @Override
     public void clear() {
         // reset fields
         root = null;
@@ -118,7 +116,6 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      * @return true if there is an item in this set that is equal to the input item; otherwise, returns false
      * @throws NullPointerException if the item is null
      */
-    @Override
     public boolean contains(Type item) {
         // handle null parameter
         if (item == null)
@@ -156,7 +153,6 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      * otherwise, returns false
      * @throws NullPointerException if any of the items is null
      */
-    @Override
     public boolean containsAll(Collection<? extends Type> items) {
         // every BST contains an empty collection, so if one is passed return true
         if (items.size() == 0)
@@ -177,7 +173,6 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
     /**
      * Returns true if this set contains no items.
      */
-    @Override
     public boolean isEmpty() {
         return (root == null);
     }
@@ -190,7 +185,6 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      * removed); otherwise, returns false
      * @throws NullPointerException if the item is null
      */
-    @Override
     public boolean remove(Type item) {
         // handle null parameter
         if (item == null)
@@ -241,7 +235,6 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
         }
         // these statements only execute if the correct node was found, in which case the node should be removed
         //  according to the number of children, the size should decrement, and this method should return true.
-        //Todo: fix error in statement below
         currentNode.remove(direction);
         size--;
         return true;
@@ -255,7 +248,6 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      * was actually removed); otherwise, returns false
      * @throws NullPointerException if any of the items is null
      */
-    @Override
     public boolean removeAll(Collection<? extends Type> items) {
         // for empty collections simply return false, as nothing needs to happen and the BST will be unaffected
         if (items.size() == 0)
@@ -275,7 +267,6 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
     /**
      * Returns the number of items in this set.
      */
-    @Override
     public int size() {
         return size;
     }
@@ -284,7 +275,6 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      * Returns an ArrayList containing all of the items in this set, in sorted order (equivalent to an in-order
      * depth-first-traversal)
      */
-    @Override
     public ArrayList<Type> toArrayList() {
         return new ArrayList<Type>(inOrderDFT());
     }
@@ -294,7 +284,6 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      *
      * @throws java.util.NoSuchElementException if the set is empty
      */
-    @Override
     public Type first() throws NoSuchElementException {
         // throw an exception for an empty set
         if (root == null)
@@ -311,7 +300,6 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      *
      * @throws java.util.NoSuchElementException if the set is empty
      */
-    @Override
     public Type last() throws NoSuchElementException {
         // throw an exception for an empty set
         if (root == null)
@@ -328,7 +316,6 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      *
      * @return the list containing the tree elements
      */
-    @Override
     public List<Type> inOrderDFT() {
         return null;
     }
@@ -338,7 +325,6 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      *
      * @return the list containing the tree elements
      */
-    @Override
     public List<Type> preOrderDFT() {
         return null;
     }
@@ -348,7 +334,6 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      *
      * @return the list containing the tree elements
      */
-    @Override
     public List<Type> postOrderDFT() {
         return null;
     }
@@ -358,7 +343,6 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      *
      * @return the list containing the tree elements
      */
-    @Override
     public List<Type> levelOrderBFT() {
         return null;
     }
@@ -373,7 +357,6 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      *
      * @param filename - file containing the DOT formated data
      */
-    @Override
     public void writeDot(String filename) {
         try {
             // PrintWriter(FileWriter) will write output to a file
@@ -590,7 +573,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
         /**
          * Removes the child of the this node according to the passed direction
          *
-         * @param direction   an int indicating which child to remove: -1 for the left, 1 for the right
+         * @param direction an int indicating which child to remove: -1 for the left, 1 for the right
          * @throws NoSuchElementException if the node doesn't have the indicated child, or the node is null
          */
         public void remove(int direction) {
@@ -623,7 +606,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
         /**
          * Removes a node with no children
          *
-         * @param direction   an int indicating which child to remove: -1 for the left, 1 for the right
+         * @param direction an int indicating which child to remove: -1 for the left, 1 for the right
          */
         private void remove0(int direction) {
             if (direction == -1) // removing the left child
@@ -635,7 +618,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
         /**
          * Removes a node with one child
          *
-         * @param direction   an int indicating which child to remove: -1 for the left, 1 for the right
+         * @param direction an int indicating which child to remove: -1 for the left, 1 for the right
          */
         private void remove1(int direction) {
             if (direction == -1) { // removing the left child
@@ -654,7 +637,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
         /**
          * Removes a node with two children
          *
-         * @param direction   an int indicating which child to remove: -1 for the left, 1 for the right
+         * @param direction an int indicating which child to remove: -1 for the left, 1 for the right
          */
         private void remove2(int direction) {
             //Todo: implement remove2
