@@ -45,7 +45,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
     public boolean add(Type item) {
         // throw exception if passed parameter is null
         if (item == null)
-            throw new NullPointerException("added null!");
+            throw new NullPointerException("Tried adding null");
 
         // handle adding to null set - update root and increment size
         if (size == 0) {
@@ -91,7 +91,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
     public boolean addAll(Collection<? extends Type> items) {
         // handle adding null
         if (items == null)
-            throw new NullPointerException("Tried to add null with .addAll");
+            throw new NullPointerException("Tried to add null with addAll");
         // store the current size in order to check for changes to the set when this method returns
         int size = this.size();
         // add each element
@@ -119,7 +119,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
     public boolean contains(Type item) {
         // handle null parameter
         if (item == null)
-            throw new NullPointerException("Tried .contains with 'null'");
+            throw new NullPointerException("Tried contains with null");
         // an empty set cannot contain any certain item - return false
         if (isEmpty())
             return false;
@@ -162,7 +162,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
         for (Type element : items) {
             // throw an Exception if any element is null
             if (element == null)
-                throw new NullPointerException("Tried to use .containsAll with a Collection containing 'null'");
+                throw new NullPointerException("Tried to use containsAll with a Collection containing null");
             // return false if the element isn't found in the BST
             if (!contains(element))
                 return false;
@@ -189,7 +189,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
     public boolean remove(Type item) {
         // handle null parameter
         if (item == null)
-            throw new NullPointerException("Tried .remove with a null parameter!");
+            throw new NullPointerException("Tried remove with null");
         // if the BST is empty (and the item isn't null) the item cannot exist in the BST, so return false
         if (isEmpty())
             return false;
@@ -288,7 +288,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
     public Type first() throws NoSuchElementException {
         // throw an exception for an empty set
         if (root == null)
-            throw new NoSuchElementException("Tried .first with an empty BST!");
+            throw new NoSuchElementException("Tried first with an empty BST");
         // if root is smallest then return root's data
         if (root.getLeft() == null)
             return root.data;
@@ -304,7 +304,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
     public Type last() throws NoSuchElementException {
         // throw an exception for an empty set
         if (root == null)
-            throw new NoSuchElementException("Tried .last with an empty BST!");
+            throw new NoSuchElementException("Tried last with an empty BST");
         // if root is biggest then return root's data
         if (root.getRight() == null)
             return root.data;
