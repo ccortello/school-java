@@ -3,9 +3,10 @@ package assignment6;
 import junit.framework.TestCase;
 
 import java.util.ArrayList;
+import java.util.NoSuchElementException;
 
 public class BSTtester extends TestCase {
-    // null string reference to test case of NullPointer Exception, both item and array
+    // null string reference to test case of NullPointerException, both item and array
     String nullString;
     ArrayList<String> nullStrOfStrings = new ArrayList<String>();
     // non-null BinarySearchTree reference to run other various test on
@@ -179,80 +180,92 @@ public class BSTtester extends TestCase {
         }
     }
 
-    /**
-     * isEmpty is already tested multiple times to work in the above tests.
-     */
+    /* isEmpty is already tested multiple times to work in the above tests. */
     public void testIsEmpty() {}
 
-//    public void testRemove() throws NullPointerException {
-//
-//        //try-catch blocks to test case of NullPointerException
-//        try {
-//            BSTtestList.add(nullString);
-//        }
-//        catch (Exception e) {
-//            assertEquals("added null!", e.getMessage());
-//        }
-//    }
-//
-//    public void testRemoveAll() throws NullPointerException {
-//
-//        //try-catch blocks to test case of NullPointerException
-//        try {
-//            BSTtestList.add(nullString);
-//        }
-//        catch (Exception e) {
-//            assertEquals("added null!", e.getMessage());
-//        }
-//    }
-//
-//    public void testSize() {
-//
-//    }
-//
-//    public void testToArrayList() {
-//
-//    }
-//
-//    public void testFirst() throws NoSuchElementException {
-//
-//        //try-catch blocks to test case of NullPointerException
-//        try {
-//            BSTtestList.add(nullString);
-//        }
-//        catch (Exception e) {
-//            assertEquals("added null!", e.getMessage());
-//        }
-//    }
-//
-//    public void testLast() throws NoSuchElementException {
-//
-//        //try-catch blocks to test case of NullPointerException
-//        try {
-//            BSTtestList.add(nullString);
-//        }
-//        catch (Exception e) {
-//            assertEquals("added null!", e.getMessage());
-//        }
-//    }
-//
-//    public void testInOrderDFT() {
-//
-//    }
-//
-//    public void testPreOrderDFT() {
-//
-//    }
-//
-//    public void testPostOrderDFT() {
-//
-//    }
-//
-//    public void testLevelOrderBFT() {
-//
-//    }
-//
-//    public void testWriteDot() {
-//
-//    }
+    public void testRemove() throws NullPointerException {
+
+        //try-catch blocks to test case of NullPointerException
+        try {
+            BSTtestList.add(nullString);
+        } catch (Exception e) {
+            assertEquals("Tried adding null", e.getMessage());
+        }
+
+        // add items, assert that the BST contains them, then remove the items and assert that the BST doesn't contain them
+        BSTtestList.clear();
+        ArrayList<String> testList = new ArrayList<String>();
+        testList.add("first");
+        testList.add("second");
+        testList.add("third");
+        testList.add("fourth");
+        testList.add("fifth");
+        testList.add("sixth");
+        testList.add("seventh");
+        BSTtestList.addAll(testList);
+        for (String element : testList)
+            assertEquals(true, BSTtestList.containsAll(testList));
+        for (String element : testList) {
+            BSTtestList.remove(element);
+            assertEquals(false, BSTtestList.contains(element));
+        }
+    }
+
+    public void testRemoveAll() throws NullPointerException {
+
+        //try-catch blocks to test case of NullPointerException
+        try {
+            BSTtestList.add(nullString);
+        } catch (Exception e) {
+            assertEquals("added null!", e.getMessage());
+        }
+    }
+
+    public void testSize() {
+
+    }
+
+    public void testToArrayList() {
+
+    }
+
+    public void testFirst() throws NoSuchElementException {
+
+        //try-catch blocks to test case of NullPointerException
+        try {
+            BSTtestList.add(nullString);
+        } catch (Exception e) {
+            assertEquals("added null!", e.getMessage());
+        }
+    }
+
+    public void testLast() throws NoSuchElementException {
+
+        //try-catch blocks to test case of NullPointerException
+        try {
+            BSTtestList.add(nullString);
+        } catch (Exception e) {
+            assertEquals("added null!", e.getMessage());
+        }
+    }
+
+    public void testInOrderDFT() {
+
+    }
+
+    public void testPreOrderDFT() {
+
+    }
+
+    public void testPostOrderDFT() {
+
+    }
+
+    public void testLevelOrderBFT() {
+
+    }
+
+    public void testWriteDot() {
+
+    }
 }
