@@ -329,9 +329,9 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      * @return the list containing the tree elements
      */
     public List<Type> inOrderDFT() {
-        ArrayList<Type> returnList = new ArrayList<Type>(this.size);
-        // check if this.object is empty, if so return empty list
-        if (this.root == null)
+        ArrayList<Type> returnList = new ArrayList<Type>(size);
+        // check if the BST is empty, if so return the empty ArrayList
+        if (isEmpty())
             return returnList;
 
         inOrderDFTRecursive(root, returnList);
@@ -344,7 +344,13 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      * @return the list containing the tree elements
      */
     public List<Type> preOrderDFT() {
-        return null;
+        ArrayList<Type> returnList = new ArrayList<Type>(size);
+        // check if the BST is empty, if so return the empty ArrayList
+        if (isEmpty())
+            return returnList;
+
+        preOrderDFTRecursive(root, returnList);
+        return returnList;
     }
 
     /**
@@ -353,7 +359,13 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      * @return the list containing the tree elements
      */
     public List<Type> postOrderDFT() {
-        return null;
+        ArrayList<Type> returnList = new ArrayList<Type>(size);
+        // check if the BST is empty, if so return the empty ArrayList
+        if (isEmpty())
+            return returnList;
+
+        postOrderDFTRecursive(root, returnList);
+        return returnList;
     }
 
     /**
@@ -373,10 +385,32 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
         }
 
         inOrderDFTRecursive(n.getLeft(), returnList);
+        returnList.add(n.getData());
+        inOrderDFTRecursive(n.getRight(), returnList);
+    }
+
+    private void preOrderDFTRecursive(BinaryNode n, ArrayList<Type> returnList) {
+        //first check for leaf node, add to ArrayList if it is a leaf node
+        if (n.numChildren() == 0) {
+            returnList.add(n.getData());
+            return;
+        }
 
         returnList.add(n.getData());
+        preOrderDFTRecursive(n.getLeft(), returnList);
+        preOrderDFTRecursive(n.getRight(), returnList);
+    }
 
-        inOrderDFTRecursive(n.getRight(), returnList);
+    private void postOrderDFTRecursive(BinaryNode n, ArrayList<Type> returnList) {
+        //first check for leaf node, add to ArrayList if it is a leaf node
+        if (n.numChildren() == 0) {
+            returnList.add(n.getData());
+            return;
+        }
+
+        postOrderDFTRecursive(n.getLeft(), returnList);
+        postOrderDFTRecursive(n.getRight(), returnList);
+        returnList.add(n.getData());
     }
 
 
