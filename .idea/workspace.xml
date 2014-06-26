@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="updates">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java" />
+    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="implemented inOrderDFT">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BinarySearchTree.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BinarySearchTree.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -85,29 +84,32 @@
       <file leaf-file-name="BinarySearchTree.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BinarySearchTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44764096" vertical-offset="1267" max-vertical-offset="2568">
-              <caret line="359" column="5" selection-start-line="346" selection-start-column="36" selection-end-line="359" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.25431532" vertical-offset="1195" max-vertical-offset="2280">
+              <caret line="334" column="30" selection-start-line="334" selection-start-column="30" selection-end-line="334" selection-end-column="30" />
               <folding>
                 <element signature="docComment;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#add#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#addAll#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#clear#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#contains#0;class#BinarySearchTree#0" expanded="false" />
-                <element signature="e#5722#5830#0" expanded="false" />
+                <element signature="e#5823#5931#0" expanded="false" />
                 <element signature="docComment;method#containsAll#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#isEmpty#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#remove#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="e#8463#8572#0" expanded="false" />
+                <element signature="e#8782#8838#0" expanded="false" />
+                <element signature="e#10672#10776#0" expanded="false" />
                 <element signature="docComment;method#removeAll#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#size#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#toArrayList#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#first#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#last#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#inOrderDFT#0;class#BinarySearchTree#0" expanded="false" />
-                <element signature="method#inOrderDFT#0;class#BinarySearchTree#0" expanded="true" />
+                <element signature="e#13915#13921#0" expanded="true" />
                 <element signature="docComment;method#preOrderDFT#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#postOrderDFT#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#levelOrderBFT#0;class#BinarySearchTree#0" expanded="false" />
-                <element signature="method#inOrderDFTRecursive#0;class#BinarySearchTree#0" expanded="true" />
+                <element signature="docComment;method#writeDot#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#BinaryNode#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
@@ -128,6 +130,8 @@
                 <element signature="docComment;method#remove0#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#remove1#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#remove2#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="e#25327#25348#0" expanded="false" />
+                <element signature="e#26012#26034#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -1734,7 +1738,11 @@
       <created>1403759847638</created>
       <updated>1403759847638</updated>
     </task>
-    <option name="localTasksCounter" value="225" />
+    <task id="LOCAL-00225" summary="implemented inOrderDFT">
+      <created>1403803871202</created>
+      <updated>1403803871202</updated>
+    </task>
+    <option name="localTasksCounter" value="226" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1775,6 +1783,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40133038" sideWeight="0.28916308" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26940134" sideWeight="0.36951873" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31374723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24919786" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1788,7 +1797,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32705098" sideWeight="0.34438503" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26940134" sideWeight="0.36951873" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1839,7 +1847,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="changes to TowersOfHanoi" />
     <MESSAGE value="updated removeLast()" />
     <MESSAGE value="implemented the rest of the JUnit tests" />
     <MESSAGE value="copied some of my implementations over" />
@@ -1864,7 +1871,8 @@
     <MESSAGE value="added BinaryNode class" />
     <MESSAGE value="added  BSTtester implementations for add to isEmtpy methods" />
     <MESSAGE value="updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="updates" />
+    <MESSAGE value="implemented inOrderDFT" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented inOrderDFT" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -2247,29 +2255,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BinarySearchTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44764096" vertical-offset="1267" max-vertical-offset="2568">
-          <caret line="359" column="5" selection-start-line="346" selection-start-column="36" selection-end-line="359" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.25431532" vertical-offset="1195" max-vertical-offset="2280">
+          <caret line="334" column="30" selection-start-line="334" selection-start-column="30" selection-end-line="334" selection-end-column="30" />
           <folding>
             <element signature="docComment;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#add#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#addAll#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#clear#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#contains#0;class#BinarySearchTree#0" expanded="false" />
-            <element signature="e#5722#5830#0" expanded="false" />
+            <element signature="e#5823#5931#0" expanded="false" />
             <element signature="docComment;method#containsAll#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#isEmpty#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#remove#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="e#8463#8572#0" expanded="false" />
+            <element signature="e#8782#8838#0" expanded="false" />
+            <element signature="e#10672#10776#0" expanded="false" />
             <element signature="docComment;method#removeAll#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#size#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#toArrayList#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#first#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#last#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#inOrderDFT#0;class#BinarySearchTree#0" expanded="false" />
-            <element signature="method#inOrderDFT#0;class#BinarySearchTree#0" expanded="true" />
+            <element signature="e#13915#13921#0" expanded="true" />
             <element signature="docComment;method#preOrderDFT#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#postOrderDFT#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#levelOrderBFT#0;class#BinarySearchTree#0" expanded="false" />
-            <element signature="method#inOrderDFTRecursive#0;class#BinarySearchTree#0" expanded="true" />
+            <element signature="docComment;method#writeDot#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#BinaryNode#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
@@ -2290,6 +2301,8 @@
             <element signature="docComment;method#remove0#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#remove1#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#remove2#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="e#25327#25348#0" expanded="false" />
+            <element signature="e#26012#26034#0" expanded="false" />
           </folding>
         </state>
       </provider>

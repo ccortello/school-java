@@ -330,6 +330,11 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      */
     public List<Type> inOrderDFT() {
         ArrayList<Type> returnList = new ArrayList<Type>(this.size);
+        // check if this.object is empty, if so return empty list
+        if (this.root == null)
+            return returnList;
+
+        inOrderDFTRecursive(root, returnList);
         return returnList;
     }
 
