@@ -337,16 +337,16 @@ public class BSTtester extends TestCase {
             assertEquals("Tried last with an empty BST", e.getMessage());
         }
         // add elements asserting that first updates with each add, the do the same with remove
-        String[] addList = new String[]{"20", "10", "40", "30", "50", "65", "45", "35", "70"};
+        String[] addArray = new String[]{"20", "10", "40", "30", "50", "65", "45", "35", "70"};
         String[] assertAdd = new String[]{"20", "20", "40", "40", "50", "65", "65", "65", "70"};
-        for (int i = 0; i < addList.length; i++) {
-            BSTtestList.add(addList[i]);
+        for (int i = 0; i < addArray.length; i++) {
+            BSTtestList.add(addArray[i]);
             assertEquals(assertAdd[i], BSTtestList.last());
         }
-        String[] removeList = new String[]{"65", "50", "35", "70", "40", "45", "20", "30"};
+        String[] removeArray = new String[]{"65", "50", "35", "70", "40", "45", "20", "30"};
         String[] assertRemove = new String[]{"70", "70", "70", "45", "45", "30", "30", "10"};
-        for (int i = 0; i < removeList.length; i++) {
-            BSTtestList.remove(removeList[i]);
+        for (int i = 0; i < removeArray.length; i++) {
+            BSTtestList.remove(removeArray[i]);
             assertEquals(assertRemove[i], BSTtestList.last());
         }
     }
@@ -355,16 +355,47 @@ public class BSTtester extends TestCase {
     public void testInOrderDFT() {
     }
 
+    /* for each traversal the same tree is substantiated and checked against the expected output for that traversal */
     public void testPreOrderDFT() {
+        BSTtestList.clear();
+        String[] addArray = new String[]{"20", "10", "40", "30", "50", "65", "45", "35", "70"};
+        for (String addString : addArray)
+            BSTtestList.add(addString);
 
+        String[] correctArray = new String[]{"20", "10", "40", "30", "35", "50", "45", "65", "70"};
+        ArrayList<String> correctList = new ArrayList<String>();
+        for (String correctString : correctArray)
+            correctList.add(correctString);
+
+        assertEquals(correctList, BSTtestList.preOrderDFT());
     }
 
     public void testPostOrderDFT() {
+        BSTtestList.clear();
+        String[] addArray = new String[]{"20", "10", "40", "30", "50", "65", "45", "35", "70"};
+        for (String addString : addArray)
+            BSTtestList.add(addString);
 
+        String[] correctArray = new String[]{"10", "35", "30", "45", "70", "65", "50", "40", "20"};
+        ArrayList<String> correctList = new ArrayList<String>();
+        for (String correctString : correctArray)
+            correctList.add(correctString);
+
+        assertEquals(correctList, BSTtestList.postOrderDFT());
     }
 
     public void testLevelOrderBFT() {
+        BSTtestList.clear();
+        String[] addArray = new String[]{"20", "10", "40", "30", "50", "65", "45", "35", "70"};
+        for (String addString : addArray)
+            BSTtestList.add(addString);
 
+        String[] correctArray = new String[]{"20", "10", "40", "30", "50", "35", "45", "65", "70"};
+        ArrayList<String> correctList = new ArrayList<String>();
+        for (String correctString : correctArray)
+            correctList.add(correctString);
+
+        assertEquals(correctList, BSTtestList.preOrderDFT());
     }
 
     public void testWriteDot() {
