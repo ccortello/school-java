@@ -5,13 +5,13 @@ import junit.framework.TestCase;
 import java.util.ArrayList;
 
 public class BSTtester extends TestCase {
-    // null BinarySearchTree reference for testing NullPointerException
-    BinarySearchTree<String> BSTtestNull;
+    // null string reference to test case of NullPointer Exception
+    String nullString;
     // non-null BinarySearchTree reference to run other various test on
     BinarySearchTree<String> BSTtestList = new BinarySearchTree<String>();
     // BinarySearchTree object used to test addAll, removeAll, containsAll etc.
     ArrayList<String> arrayListTest = new ArrayList<String>(3);
-    ;
+
 
     /**
      * Sets up various objects and arrays, as well as BinarySearchTree objects to test
@@ -53,7 +53,7 @@ public class BSTtester extends TestCase {
 
         //try-catch blocks to test case of NullPointerException
         try {
-            BSTtestNull.add("null");
+            BSTtestList.add(nullString);
         }
         catch (Exception e) {
             assertEquals("added null!", e.getMessage());
@@ -90,7 +90,7 @@ public class BSTtester extends TestCase {
 
         //try-catch blocks to test case of NullPointerException
         try {
-            BSTtestNull.add("null");
+            BSTtestList.add(nullString);
         }
         catch (Exception e) {
             assertEquals("Tried to add null with .addAll", e.getMessage());
@@ -132,10 +132,10 @@ public class BSTtester extends TestCase {
     public void testContains() throws NullPointerException {
         //try-catch blocks to test case of NullPointerException
         try {
-            BSTtestNull.add("null");
+            BSTtestList.add(nullString);
         }
         catch (Exception e) {
-            assertEquals("", e.getMessage());
+            assertEquals("Tried .contains with 'null'", e.getMessage());
         }
     }
 
@@ -148,10 +148,10 @@ public class BSTtester extends TestCase {
     public void testContainsAll() throws NullPointerException {
         //try-catch blocks to test case of NullPointerException
         try {
-            BSTtestNull.add("null");
+            BSTtestList.add(nullString);
         }
         catch (Exception e) {
-            assertEquals("added null!", e.getMessage());
+            assertEquals("Tried to use .containsAll with a Collection containing 'null'", e.getMessage());
         }
     }
 
@@ -164,7 +164,7 @@ public class BSTtester extends TestCase {
 //
 //        //try-catch blocks to test case of NullPointerException
 //        try {
-//            BSTtestNull.add("null");
+//            BSTtestList.add(nullString);
 //        }
 //        catch (Exception e) {
 //            assertEquals("added null!", e.getMessage());
@@ -175,7 +175,7 @@ public class BSTtester extends TestCase {
 //
 //        //try-catch blocks to test case of NullPointerException
 //        try {
-//            BSTtestNull.add("null");
+//            BSTtestList.add(nullString);
 //        }
 //        catch (Exception e) {
 //            assertEquals("added null!", e.getMessage());
@@ -194,7 +194,7 @@ public class BSTtester extends TestCase {
 //
 //        //try-catch blocks to test case of NullPointerException
 //        try {
-//            BSTtestNull.add("null");
+//            BSTtestList.add(nullString);
 //        }
 //        catch (Exception e) {
 //            assertEquals("added null!", e.getMessage());
@@ -205,7 +205,7 @@ public class BSTtester extends TestCase {
 //
 //        //try-catch blocks to test case of NullPointerException
 //        try {
-//            BSTtestNull.add("null");
+//            BSTtestList.add(nullString);
 //        }
 //        catch (Exception e) {
 //            assertEquals("added null!", e.getMessage());

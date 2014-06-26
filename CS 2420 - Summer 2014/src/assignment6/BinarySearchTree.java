@@ -90,7 +90,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      */
     public boolean addAll(Collection<? extends Type> items) {
         // handle adding null
-        if (items.contains(null))
+        if (items == null)
             throw new NullPointerException("Tried to add null with .addAll");
         // store the current size in order to check for changes to the set when this method returns
         int size = this.size();
