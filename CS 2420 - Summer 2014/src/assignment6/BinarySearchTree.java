@@ -257,12 +257,6 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
 
         BinaryNode right;
 
-        // Adding a parent reference breaks the definition of a tree,
-        // but some people find it makes BST management easier.
-        // If you choose to use them, remember to update parent pointers
-        // when adding/removing nodes!
-        BinaryNode parent;
-
         /**
          * Construct a new node with known children
          */
@@ -277,14 +271,6 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
          */
         public BinaryNode(Type _data) {
             this(_data, null, null);
-        }
-
-        /**
-         * Construct a new node with a known parent
-         */
-        public BinaryNode(Type _data, BinaryNode _parent) {
-            this(_data, null, null);
-            parent = _parent;
         }
 
         /**
@@ -395,9 +381,14 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
          * The successor is a node which can replace this node in a case-3 BST deletion. It is either the smallest node
          * in the right subtree, or the largest node in the left subtree.
          */
-        public BinaryNode getSuccessor() {
-            // FILL IN - do not return null
-            return null;
+        public BinaryNode getSuccessor() throws NoSuchElementException {
+            // throw an exception if no successor exists (in case of a leaf node)
+            if (this.numChildren() == 0)
+                throw new NoSuchElementException("Attempted .getSuccessor on a leaf node!");
+            if (this.getRight() != null)
+                return this.getRight().getLeftmostNode();
+            else
+                return this.getLeft().getRightmostNode();
         }
 
         /**
@@ -407,8 +398,16 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
          * The height of a tree with more than one node is the greater of its two subtrees' heights, plus 1
          */
         public int height() {
-            // FILL IN - do not return -1
-            return -1;
+            // handle base case of recursion
+            if (this.numChildren() == 0)
+                return 0;
+
+            // find height of left subtree and right subtree, where a null subtree is of height 0)
+            int leftHeight = (this.getLeft() == null) ? 0 : this.getLeft().height();
+            int rightHeight = (this.getRight() == null) ? 0 : this.getRight().height();
+
+            // return the correct height for this node, being the max height of the subtrees + 1
+            return (Math.max(leftHeight, rightHeight) + 1);
         }
     }
 }
