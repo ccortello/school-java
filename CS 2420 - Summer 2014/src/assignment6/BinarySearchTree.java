@@ -621,17 +621,9 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
          * @param direction an int indicating which child to remove: -1 for the left, 1 for the right
          */
         private void remove1(int direction) {
-            if (direction == -1) { // removing the left child
-                // find which subtree needs to replace the removed node and replace the node with the subtree
-                if (left.left != null)
-                    setLeft(left.left);
-                else setLeft(left.right);
-            } else { // removing the right child
-                // find which subtree needs to replace the removed node and replace the node with the subtree
-                if (right.left != null)
-                    setLeft(right.left);
-                else setLeft(right.right);
-            }
+            // to remove a node with one child simply set the correct to the non-null subtree
+            if (direction == -1) left = (left.left != null) ? left.left : left.right;
+            else right = (right.left != null) ? right.left : right.right;
         }
 
         /**
