@@ -18,7 +18,15 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
 
     // creates an empty BST
     public BinarySearchTree() {
-        root = null;
+    }
+
+    // create a BST with an initial Node
+    public BinarySearchTree(Type element) {
+        root = new BinaryNode(element);
+    }
+
+    public BinarySearchTree(ArrayList<Type> inList) {
+        this.addAll(inList);
     }
 
     /**
@@ -31,6 +39,9 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      */
     @Override
     public boolean add(Type item) {
+        if (item == null)
+            throw new NullPointerException("added null!");
+        else
         return false;
     }
 
@@ -150,7 +161,14 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      */
     @Override
     public Type last() throws NoSuchElementException {
-        return null;
+        // throw an exception for an empty set
+        if (root == null)
+            throw new NoSuchElementException("Tried .last with an empty BST!");
+        // if root is biggest then return root's data
+        if (root.getRight() == null)
+            return root.data;
+            // otherwise find the largest node (rightmost node) and return its data
+        else return root.getRightmostNode().getData();
     }
 
     /**
@@ -251,11 +269,8 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      */
     private class BinaryNode {
         // Since the outer BST class declares <Type>, we can use it here without redeclaring it for BinaryNode
-        Type data;
-
-        BinaryNode left;
-
-        BinaryNode right;
+        private Type data;
+        private BinaryNode left, right;
 
         /**
          * Construct a new node with known children
