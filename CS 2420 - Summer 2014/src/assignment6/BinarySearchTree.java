@@ -25,8 +25,9 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
         root = new BinaryNode(element);
     }
 
-    public BinarySearchTree(ArrayList<Type> inList) {
-        this.addAll(inList);
+    // create a BST from a Collection
+    public BinarySearchTree(Collection<? extends Type> items) {
+        this.addAll(items);
     }
 
     /**
@@ -39,9 +40,20 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      */
     @Override
     public boolean add(Type item) {
+        // throw exception if passsed parameter is null
         if (item == null)
             throw new NullPointerException("added null!");
-        else
+
+        // find the Node where the data should be added
+        BinaryNode currentNode = root;
+        while (!currentNode.isLeaf()) {
+            if (currentNode.data.equals(item))
+                return false;
+            else if (item.compareTo(currentNode.getData()) < 0)
+                currentNode = currentNode.getLeft();
+            else currentNode = currentNode.getRight();
+        }
+
         return false;
     }
 
@@ -53,9 +65,16 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      * was actually inserted); otherwise, returns false
      * @throws NullPointerException if any of the items is null
      */
-    @Override
     public boolean addAll(Collection<? extends Type> items) {
-        return false;
+        // handle adding null
+        if (items.contains(null))
+            throw new NullPointerException("Tried to add null with .addAll");
+        // store the current size in order to check for changes to the set when this method returns
+        int size = this.size();
+        // add each element
+        for (Type element : items)
+            add(element);
+        return (this.size() != size);
     }
 
     /**
@@ -63,7 +82,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      */
     @Override
     public void clear() {
-
+        root = null;
     }
 
     /**
@@ -364,6 +383,14 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
         }
 
         /**
+         * Returns true iff the BinaryNode is a leaf node (has no children)
+         * @return a boolean indicating if the node is a leaf or not
+         */
+        public boolean isLeaf() {
+            return (numChildren() == 0);
+        }
+
+        /**
          * @return The leftmost node in the binary tree rooted at this node.
          */
         public BinaryNode getLeftmostNode() {
@@ -404,7 +431,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
          */
         public BinaryNode getSuccessor() throws NoSuchElementException {
             // throw an exception if no successor exists (in case of a leaf node)
-            if (this.numChildren() == 0)
+            if (isLeaf())
                 throw new NoSuchElementException("Attempted .getSuccessor on a leaf node!");
             if (this.getRight() != null)
                 return this.getRight().getLeftmostNode();
@@ -420,7 +447,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
          */
         public int height() {
             // handle base case of recursion
-            if (this.numChildren() == 0)
+            if (isLeaf())
                 return 0;
 
             // find height of left subtree and right subtree, where a null subtree is of height 0)
