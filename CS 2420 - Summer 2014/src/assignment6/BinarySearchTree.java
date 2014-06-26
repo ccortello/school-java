@@ -637,18 +637,33 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
          * @param direction an int indicating which child to remove: -1 for the left, 1 for the right
          */
         private void remove2(int direction) {
-            // if the right node has no left children then it is the successor - copy its data and remove it
-            if (right.left == null) {
-                data = right.data;
-                this.remove(1);
-                return;
+            if (direction == -1) { // removing left node
+                // if the right node has no left children then it is the successor - copy its data and remove it
+                if (left.right.left == null) {
+                    left.data = left.right.data;
+                    left.remove(1);
+                    return;
+                }
+                // otherwise find the parent of the successor then copy the successor's data and remove it
+                BinaryNode parentNode = left.right;
+                while (parentNode.left.left != null)
+                    parentNode = parentNode.left;
+                left.data = parentNode.left.data;
+                parentNode.remove(-1);
+            } else { // removing right node
+                // if the right node has no left children then it is the successor - copy its data and remove it
+                if (right.right.left == null) {
+                    right.data = right.right.data;
+                    right.remove(1);
+                    return;
+                }
+                // otherwise find the parent of the successor then copy the successor's data and remove it
+                BinaryNode parentNode = right.right;
+                while (parentNode.left.left != null)
+                    parentNode = parentNode.left;
+                right.data = parentNode.left.data;
+                parentNode.remove(-1);
             }
-            // otherwise find the parent of the successor then copy the successor's data and remove it
-            BinaryNode parentNode = right;
-            while (parentNode.left.left != null)
-                parentNode = parentNode.left;
-            data = parentNode.left.data;
-            parentNode.remove(-1);
         }
     }
 }
