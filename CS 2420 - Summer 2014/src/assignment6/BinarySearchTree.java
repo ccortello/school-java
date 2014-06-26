@@ -4,6 +4,7 @@ package assignment6;
  * @author Cody Cortello
  * @author Casey Nordgran
  */
-public class BinarySearchTree {
+public class BinarySearchTree<T extends Comparable> {
     //TODO:
+
 }
