@@ -579,15 +579,75 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
          * @throws NoSuchElementException if the node doesn't have the indicated child, or the node is null
          */
         public void remove(BinaryNode currentNode, int direction) {
+            // throw Exceptions for every invalid removal case, with a message as appropriate
             if (currentNode == null)
                 throw new NoSuchElementException("Tried BinaryNode.remove with a null node!");
+            if (direction != -1 && direction != 1)
+                throw new NoSuchElementException("Tried BinaryNode.remove with the invalid direction " + direction + "!");
             if (direction == -1 && currentNode.getLeft() == null)
                 throw new NoSuchElementException("Tried BinaryNode.remove to the left with no left child!");
             if (direction == 1 && currentNode.getRight() == null)
                 throw new NoSuchElementException("Tried BinaryNode.remove to the right with no right child!");
-            if (direction == -1) {
 
+            // implement removal based on the direction and number of children
+            if (direction == -1) { // removing the left child
+                if (currentNode.getLeft().numChildren() == 0)
+                    remove0(currentNode, direction);
+                else if (currentNode.getLeft().numChildren() == 1)
+                    remove1(currentNode, direction);
+                else remove2(currentNode, direction);
+            } else { // removing the right child
+                if (currentNode.getRight().numChildren() == 0)
+                    remove0(currentNode, direction);
+                else if (currentNode.getRight().numChildren() == 1)
+                    remove1(currentNode, direction);
+                else remove2(currentNode, direction);
             }
+        }
+
+        /* Remove methods for each possible number of children. Note that input validation happens in the remove method above */
+
+        /**
+         * Removes a node with no children
+         *
+         * @param currentNode the parent of the node to be removed
+         * @param direction   an int indicating which child to remove: -1 for the left, 1 for the right
+         */
+        private void remove0(BinaryNode currentNode, int direction) {
+            if (direction == -1) // removing the left child
+                currentNode.setLeft(null);
+            else // removing the right child
+                currentNode.setRight(null);
+        }
+
+        /**
+         * Removes a node with one child
+         *
+         * @param currentNode the parent of the node to be removed
+         * @param direction   an int indicating which child to remove: -1 for the left, 1 for the right
+         */
+        private void remove1(BinaryNode currentNode, int direction) {
+            if (direction == -1) { // removing the left child
+                // find which subtree needs to replace the removed node and replace the node with the subtree
+                if (currentNode.getLeft().getLeft() != null)
+                    currentNode.setLeft(currentNode.getLeft().getLeft());
+                else currentNode.setLeft(currentNode.getLeft().getRight());
+            } else { // removing the right child
+                // find which subtree needs to replace the removed node and replace the node with the subtree
+                if (currentNode.getRight().getLeft() != null)
+                    currentNode.setLeft(currentNode.getRight().getLeft());
+                else currentNode.setLeft(currentNode.getRight().getRight());
+            }
+        }
+
+        /**
+         * Removes a node with two children
+         *
+         * @param currentNode the parent of the node to be removed
+         * @param direction   an int indicating which child to remove: -1 for the left, 1 for the right
+         */
+        private void remove2(BinaryNode currentNode, int direction) {
+
         }
     }
 }
