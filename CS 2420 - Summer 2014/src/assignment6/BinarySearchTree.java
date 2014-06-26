@@ -158,15 +158,16 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
         // every BST contains an empty collection, so if one is passed return true
         if (items.size() == 0)
             return true;
+        // throw an Exception if any element is null
+        if (items.contains(null))
+            throw new NullPointerException("Tried to use containsAll with a Collection containing null");
+        // an empty BST cannot contain any specific item - return false
+        if (isEmpty())
+            return false;
         // check if each element in the collection is found in the BST. If not return false
-        for (Type element : items) {
-            // throw an Exception if any element is null
-            if (element == null)
-                throw new NullPointerException("Tried to use containsAll with a Collection containing null");
-            // return false if the element isn't found in the BST
-            if (!contains(element))
+        for (Type element : items)
+            if (!contains(element)) // return false if the element isn't found in the BST
                 return false;
-        }
         // return true iff every element in the passed collection was found in the BST
         return true;
     }
