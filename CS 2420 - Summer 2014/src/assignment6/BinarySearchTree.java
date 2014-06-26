@@ -57,13 +57,15 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
         // find the Node where the data should be added
         BinaryNode currentNode = root;
         while (!currentNode.isLeaf()) {
+            // if the node is found don't change the BST and return false
             if (currentNode.data.equals(item))
                 return false;
+                // if the item should go to the left either change the current node to the left subtree or create a left node
             else if (item.compareTo(currentNode.getData()) < 0) {
                 if (currentNode.getLeft() != null)
                     currentNode = currentNode.getLeft();
                 else break;
-            } else {
+            } else {// if the item should go to the right either change the current node to the right subtree or create a right node
                 if (currentNode.getRight() != null)
                     currentNode = currentNode.getRight();
                 else break;
