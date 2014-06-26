@@ -226,7 +226,8 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
         }
         // these statements only execute if the correct node was found, in which case the node should be removed
         //  according to the number of children, the size should decrement, and this method should return true.
-        BinaryNode.remove(currentNode, direction);
+        //Todo: fix error in statement below
+//        BinaryNode.remove(currentNode, direction);
         size--;
         return true;
     }
