@@ -15,18 +15,22 @@ import java.util.NoSuchElementException;
  */
 public class BinarySearchTree<Type extends Comparable<? super Type>> implements SortedSet<Type>, TreeTraversal<Type> {
     private BinaryNode root;
+    private int size;
 
     // creates an empty BST
     public BinarySearchTree() {
+        size = 0;
     }
 
     // create a BST with an initial Node
     public BinarySearchTree(Type element) {
         root = new BinaryNode(element);
+        size = 1;
     }
 
     // create a BST from a Collection
     public BinarySearchTree(Collection<? extends Type> items) {
+        size = 0;
         this.addAll(items);
     }
 
@@ -94,7 +98,32 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      */
     @Override
     public boolean contains(Type item) {
-        return false;
+        // handle null parameter
+        if (item == null)
+            throw new NullPointerException("Tried .contains with 'null'");
+        else {
+            // search the BST for a Node containing the passed data
+            BinaryNode currentNode = root; // start from root
+            while (!currentNode.isLeaf()) {
+                Type data = currentNode.getData();
+                /* the if and if else statements that follow simply compare item against the data in the current node
+                   and either change the node to iterate further down the BST or return as appropriate */
+                if (item.compareTo(data) == 0)
+                    return true;
+                else if (item.compareTo(data) < 0) {
+                    if (currentNode.getLeft() == null)
+                        return false;
+                    currentNode = currentNode.getLeft();
+                } else {
+                    if (currentNode.getRight() == null)
+                        return false;
+                    currentNode = currentNode.getRight();
+                }
+            }
+            // this statement is only reached when the while loop hits a leaf node, in which case only the currentNode's
+            //  data has to be checked
+            return (item.compareTo(currentNode.getData()) == 0);
+        }
     }
 
     /**
@@ -107,7 +136,20 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      */
     @Override
     public boolean containsAll(Collection<? extends Type> items) {
-        return false;
+        // every BST contains an empty collection, so if one is passed return true
+        if (items.size() == 0)
+            return true;
+        // check if each element in the collection is found in the BST. If not return false
+        for (Type element : items) {
+            // throw an Exception if any element is null
+            if (element == null)
+                throw new NullPointerException("Tried to use .containsAll with a Collection containing 'null'");
+            // return false if the element isn't found in the BST
+            if (!contains(element))
+                return false;
+        }
+        // return true iff every element in the passed collection was found in the BST
+        return true;
     }
 
     /**
@@ -115,7 +157,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      */
     @Override
     public boolean isEmpty() {
-        return false;
+        return (root == null);
     }
 
     /**
@@ -158,7 +200,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      */
     @Override
     public ArrayList<Type> toArrayList() {
-        return ((ArrayList<Type>) inOrderDFT());
+        return new ArrayList<Type>(inOrderDFT());
     }
 
     /**
