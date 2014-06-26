@@ -507,13 +507,13 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
          */
         public BinaryNode getLeftmostNode() {
             // Base case, done for you
-            if (getLeft() == null)
+            if (left == null)
                 return this; // returns "this" node
 
             // find leftmost Node
             BinaryNode returnNode = this.getLeft();
-            while (returnNode.getLeft() != null)
-                returnNode = returnNode.getLeft();
+            while (returnNode.left != null)
+                returnNode = returnNode.left;
             return returnNode;
         }
 
@@ -545,10 +545,10 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
             // throw an exception if no successor exists (in case of a leaf node)
             if (isLeaf())
                 throw new NoSuchElementException("Attempted .getSuccessor on a leaf node!");
-            if (this.getRight() != null)
-                return this.getRight().getLeftmostNode();
+            if (right != null)
+                return right.getLeftmostNode();
             else
-                return this.getLeft().getRightmostNode();
+                return left.getRightmostNode();
         }
 
         /**
@@ -563,8 +563,8 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
                 return 0;
 
             // find height of left subtree and right subtree, where a null subtree is of height 0)
-            int leftHeight = (this.getLeft() == null) ? 0 : this.getLeft().height();
-            int rightHeight = (this.getRight() == null) ? 0 : this.getRight().height();
+            int leftHeight = (left == null) ? 0 : left.height();
+            int rightHeight = (right == null) ? 0 : right.height();
 
             // return the correct height for this node, being the max height of the subtrees + 1
             return (Math.max(leftHeight, rightHeight) + 1);
@@ -580,22 +580,22 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
             // throw Exceptions for every invalid removal case, with a message as appropriate
             if (direction != -1 && direction != 1)
                 throw new NoSuchElementException("Tried BinaryNode.remove with the invalid direction " + direction + "!");
-            if (direction == -1 && getLeft() == null)
+            if (direction == -1 && left == null)
                 throw new NoSuchElementException("Tried BinaryNode.remove to the left with no left child!");
-            if (direction == 1 && getRight() == null)
+            if (direction == 1 && right == null)
                 throw new NoSuchElementException("Tried BinaryNode.remove to the right with no right child!");
 
             // implement removal based on the direction and number of children
             if (direction == -1) { // removing the left child
-                if (getLeft().numChildren() == 0)
+                if (left.numChildren() == 0)
                     remove0(direction);
-                else if (getLeft().numChildren() == 1)
+                else if (left.numChildren() == 1)
                     remove1(direction);
                 else remove2(direction);
             } else { // removing the right child
-                if (getRight().numChildren() == 0)
+                if (right.numChildren() == 0)
                     remove0(direction);
-                else if (getRight().numChildren() == 1)
+                else if (right.numChildren() == 1)
                     remove1(direction);
                 else remove2(direction);
             }
@@ -610,9 +610,9 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
          */
         private void remove0(int direction) {
             if (direction == -1) // removing the left child
-                setLeft(null);
+                left = null;
             else // removing the right child
-                setRight(null);
+                right = null;
         }
 
         /**
@@ -623,14 +623,14 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
         private void remove1(int direction) {
             if (direction == -1) { // removing the left child
                 // find which subtree needs to replace the removed node and replace the node with the subtree
-                if (getLeft().getLeft() != null)
-                    setLeft(getLeft().getLeft());
-                else setLeft(getLeft().getRight());
+                if (left.left != null)
+                    setLeft(left.left);
+                else setLeft(left.right);
             } else { // removing the right child
                 // find which subtree needs to replace the removed node and replace the node with the subtree
-                if (getRight().getLeft() != null)
-                    setLeft(getRight().getLeft());
-                else setLeft(getRight().getRight());
+                if (right.left != null)
+                    setLeft(right.left);
+                else setLeft(right.right);
             }
         }
 
@@ -640,7 +640,18 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
          * @param direction an int indicating which child to remove: -1 for the left, 1 for the right
          */
         private void remove2(int direction) {
-            //Todo: implement remove2
+            // if the right node has no left children then it is the successor - copy its data and remove it
+            if (right.left == null) {
+                data = right.data;
+                this.remove(1);
+                return;
+            }
+            // otherwise find the parent of the successor then copy the successor's data and remove it
+            BinaryNode parentNode = right;
+            while (parentNode.left.left != null)
+                parentNode = parentNode.left;
+            data = parentNode.left.data;
+            parentNode.remove(-1);
         }
     }
 }
