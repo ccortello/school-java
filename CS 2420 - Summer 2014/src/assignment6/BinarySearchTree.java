@@ -35,6 +35,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      * Ensures that this set contains the specified item.
      *
      * @param item - the item whose presence is ensured in this set
+     *
      * @return true if this set changed as a result of this method call (that is, if the input item was actually
      * inserted); otherwise, returns false
      * @throws NullPointerException if the item is null
@@ -53,7 +54,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
 
         // find the Node where the data should be added
         BinaryNode currentNode = root;
-        while (!currentNode.isLeaf()) {
+        while (! currentNode.isLeaf()) {
             // if the node is found don't change the BST and return false
             if (currentNode.data.equals(item))
                 return false;
@@ -89,6 +90,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      * Ensures that this set contains all items in the specified collection.
      *
      * @param items - the collection of items whose presence is ensured in this set
+     *
      * @return true if this set changed as a result of this method call (that is, if any item in the input collection
      * was actually inserted); otherwise, returns false
      * @throws NullPointerException if any of the items is null
@@ -119,6 +121,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      * Determines if there is an item in this set that is equal to the specified item.
      *
      * @param item - the item sought in this set
+     *
      * @return true if there is an item in this set that is equal to the input item; otherwise, returns false
      * @throws NullPointerException if the item is null
      */
@@ -132,7 +135,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
 
         // search the BST for a Node containing the passed data
         BinaryNode currentNode = root; // start from root
-        while (!currentNode.isLeaf()) {
+        while (! currentNode.isLeaf()) {
             Type data = currentNode.getData();
                 /* the if and if else statements that follow simply compare item against the data in the current node
                    and either change the node to iterate further down the BST or return as appropriate */
@@ -157,6 +160,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      * Determines if for each item in the specified collection, there is an item in this set that is equal to it.
      *
      * @param items - the collection of items sought in this set
+     *
      * @return true if for each item in the specified collection, there is an item in this set that is equal to it;
      * otherwise, returns false
      * @throws NullPointerException if any of the items is null
@@ -171,7 +175,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
 
         // check if each element in the collection is found in the BST. If not return false
         for (Type element : items)
-            if (!contains(element)) // return false if the element isn't found in the BST
+            if (! contains(element)) // return false if the element isn't found in the BST
                 return false;
         // return true iff every element in the passed collection was found in the BST
         return true;
@@ -188,6 +192,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      * Ensures that this set does not contain the specified item.
      *
      * @param item - the item whose absence is ensured in this set
+     *
      * @return true if this set changed as a result of this method call (that is, if the input item was actually
      * removed); otherwise, returns false
      * @throws NullPointerException if the item is null
@@ -243,7 +248,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
             }
         }
         // set the direction according to which node matches the data
-        int direction = (currentNode.getLeft() != null && item.compareTo(currentNode.getLeft().getData()) == 0) ? -1 : 1;
+        int direction = (currentNode.getLeft() != null && item.compareTo(currentNode.getLeft().getData()) == 0) ? - 1 : 1;
 
         // these statements only execute if the correct node was found, in which case the node should be removed
         //  according to the number of children, the size should decrement, and this method should return true.
@@ -256,6 +261,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      * Ensures that this set does not contain any of the items in the specified collection.
      *
      * @param items - the collection of items whose absence is ensured in this set
+     *
      * @return true if this set changed as a result of this method call (that is, if any item in the input collection
      * was actually removed); otherwise, returns false
      * @throws NullPointerException if any of the items is null
@@ -469,7 +475,8 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
             // Close the graph
             output.println("}");
             output.close();
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -671,8 +678,9 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
          * @return The successor of this node.
          * @throws NoSuchElementException if the node has no successor (is a leaf node)
          *                                <p/>
-         *                                The successor is a node which can replace this node in a case-3 BST deletion. It is either the smallest node
-         *                                in the right subtree, or the largest node in the left subtree.
+         *                                The successor is a node which can replace this node in a case-3 BST deletion.
+         *                                It is either the smallest node in the right subtree, or the largest node in
+         *                                the left subtree.
          */
         public BinaryNode getSuccessor() throws NoSuchElementException {
             // throw an exception if no successor exists (in case of a leaf node)
@@ -707,19 +715,20 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
          * Removes the child of the this node according to the passed direction
          *
          * @param direction an int indicating which child to remove: -1 for the left, 1 for the right
+         *
          * @throws NoSuchElementException if the node doesn't have the indicated child, or the node is null
          */
         public void remove(int direction) {
             // throw Exceptions for every invalid removal case, with a message as appropriate
-            if (direction != -1 && direction != 1)
+            if (direction != - 1 && direction != 1)
                 throw new NoSuchElementException("Tried BinaryNode.remove with the invalid direction " + direction + "!");
-            if (direction == -1 && left == null)
+            if (direction == - 1 && left == null)
                 throw new NoSuchElementException("Tried BinaryNode.remove to the left with no left child!");
             if (direction == 1 && right == null)
                 throw new NoSuchElementException("Tried BinaryNode.remove to the right with no right child!");
 
             // implement removal based on the direction and number of children
-            if (direction == -1) { // removing the left child
+            if (direction == - 1) { // removing the left child
                 if (left.isLeaf())
                     remove0(direction);
                 else if (left.numChildren() == 1)
@@ -742,7 +751,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
          * @param direction an int indicating which child to remove: -1 for the left, 1 for the right
          */
         private void remove0(int direction) {
-            if (direction == -1) // removing the left child
+            if (direction == - 1) // removing the left child
                 left = null;
             else // removing the right child
                 right = null;
@@ -755,7 +764,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
          */
         private void remove1(int direction) {
             // to remove a node with one child simply set the correct to the non-null subtree
-            if (direction == -1) left = (left.left != null) ? left.left : left.right;
+            if (direction == - 1) left = (left.left != null) ? left.left : left.right;
             else right = (right.left != null) ? right.left : right.right;
         }
 
@@ -765,7 +774,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
          * @param direction an int indicating which child to remove: -1 for the left, 1 for the right
          */
         private void remove2(int direction) {
-            if (direction == -1) { // removing left node
+            if (direction == - 1) { // removing left node
                 // if the right node has no left children then it is the successor - copy its data and remove it
                 if (left.right.left == null) {
                     left.data = left.right.data;
@@ -777,7 +786,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
                 while (parentNode.left.left != null)
                     parentNode = parentNode.left;
                 left.data = parentNode.left.data;
-                parentNode.remove(-1);
+                parentNode.remove(- 1);
             } else { // removing right node
                 // if the right node has no left children then it is the successor - copy its data and remove it
                 if (right.right.left == null) {
@@ -790,7 +799,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
                 while (parentNode.left.left != null)
                     parentNode = parentNode.left;
                 right.data = parentNode.left.data;
-                parentNode.remove(-1);
+                parentNode.remove(- 1);
             }
         }
     }

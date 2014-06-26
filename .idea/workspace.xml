@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="finished all tests, working!!">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BinarySearchTree.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BinarySearchTree.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -66,8 +66,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties converted="true" />
     <breakpoint_rules converted="true" />
+    <ui_properties converted="true" />
   </component>
   <component name="ErrorTreeViewConfiguration">
     <option name="autoscrollToSource" value="true" />
@@ -81,35 +81,76 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BinarySearchTree.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="BinarySearchTree.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BinarySearchTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2850" max-vertical-offset="5899">
-              <caret line="398" column="29" selection-start-line="398" selection-start-column="29" selection-end-line="398" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.7757009" vertical-offset="1352" max-vertical-offset="2280">
+              <caret line="477" column="86" selection-start-line="477" selection-start-column="86" selection-end-line="477" selection-end-column="86" />
               <folding>
-                <element signature="method#preOrderDFT#0;class#BinarySearchTree#0" expanded="true" />
-                <element signature="e#14261#14267#0" expanded="true" />
-                <element signature="method#levelOrderBFT#0;class#BinarySearchTree#0" expanded="true" />
+                <element signature="docComment;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#add#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#addAll#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#clear#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#contains#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="e#5722#5830#0" expanded="false" />
+                <element signature="docComment;method#containsAll#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#isEmpty#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#remove#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="e#8362#8471#0" expanded="false" />
+                <element signature="e#8681#8737#0" expanded="false" />
+                <element signature="e#10571#10675#0" expanded="false" />
+                <element signature="docComment;method#removeAll#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#size#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#toArrayList#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#first#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#last#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#inOrderDFT#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#preOrderDFT#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#postOrderDFT#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#levelOrderBFT#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#levelOrderDFTRecursive#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#writeDot#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="e#20355#20389#0" expanded="false" />
+                <element signature="docComment;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#BinaryNode#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#BinaryNode#1;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#getData#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#setData#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#getLeft#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#setLeft#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#getRight#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#setRight#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#numChildren#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#isLeaf#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#getLeftmostNode#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#getRightmostNode#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#getSuccessor#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#height#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#remove#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#remove0#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#remove1#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="docComment;method#remove2#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="e#29476#29497#0" expanded="false" />
+                <element signature="e#30161#30183#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BSTtester.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BSTtester.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8706522" vertical-offset="1120" max-vertical-offset="2040">
-              <caret line="406" column="5" selection-start-line="406" selection-start-column="5" selection-end-line="406" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1962" max-vertical-offset="2856">
+              <caret line="402" column="1" selection-start-line="402" selection-start-column="1" selection-end-line="402" selection-end-column="1" />
               <folding>
                 <element signature="docComment;method#testAdd#0;class#BSTtester#0" expanded="false" />
                 <element signature="docComment;method#testAddAll#0;class#BSTtester#0" expanded="false" />
                 <element signature="docComment;method#testClear#0;class#BSTtester#0" expanded="false" />
                 <element signature="docComment;method#testContains#0;class#BSTtester#0" expanded="false" />
                 <element signature="method#testContainsAll#0;class#BSTtester#0" expanded="true" />
-                <element signature="e#9650#9658#0" expanded="true" />
                 <element signature="method#testPostOrderDFT#0;class#BSTtester#0" expanded="true" />
                 <element signature="method#testLevelOrderBFT#0;class#BSTtester#0" expanded="true" />
-                <element signature="e#16696#16704#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -186,8 +227,8 @@
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTimer_2.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtimer.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/testBinarySearchTree.java" />
-        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BinarySearchTree.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BinarySearchTree.java" />
       </list>
     </option>
   </component>
@@ -195,10 +236,10 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1932" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -228,12 +269,54 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
+      <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CS 2420 - Summer 2014" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CS 2420 - Summer 2014" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CS 2420 - Summer 2014" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assignment6" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -290,36 +373,12 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane">
+      <pane id="PackagesPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CS 2420 - Summer 2014" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CS 2420 - Summer 2014" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -533,16 +592,6 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
-      <module name="" />
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="depsClasspath" value="false" />
-      <setting name="passParentEnv" value="true" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <setting name="launchBrowser" value="false" />
-      <method />
-    </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -572,55 +621,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
-      <option name="BCName" value="" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="moduleName" value="" />
-      <option name="trusted" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="myFilePath" />
-      <option name="GLUE" />
-      <option name="myNameFilter" />
-      <option name="myGeneratedName" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -647,6 +647,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -683,41 +696,6 @@
       </option>
       <envs />
       <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
-      <option name="BCName" value="" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="" />
-      <option name="overriddenMainClass" value="" />
-      <option name="overriddenOutputFileName" value="" />
-      <option name="overrideMainClass" value="false" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
       <method />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -1816,8 +1794,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1932" height="1050" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5140625" order="8" side_tool="false" content_ui="tabs" />
@@ -1825,37 +1803,37 @@
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.14166667" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46624473" sideWeight="0.37395832" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40133038" sideWeight="0.28916308" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26940134" sideWeight="0.36951873" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31374723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24919786" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22083333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22049356" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46624473" sideWeight="0.6255208" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32705098" sideWeight="0.34438503" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26940134" sideWeight="0.36951873" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5140625" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.14166667" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40133038" sideWeight="0.28916308" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31374723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1874,8 +1852,8 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26940134" sideWeight="0.36951873" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24919786" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -1941,9 +1919,52 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13056">
           <caret line="158" column="64" selection-start-line="158" selection-start-column="64" selection-end-line="158" selection-end-column="64" />
           <folding>
-            <element signature="method#preOrderDFT#0;class#BinarySearchTree#0" expanded="true" />
-            <element signature="e#14261#14267#0" expanded="true" />
-            <element signature="method#levelOrderBFT#0;class#BinarySearchTree#0" expanded="true" />
+            <element signature="docComment;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#add#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#addAll#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#clear#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#contains#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="e#5722#5830#0" expanded="false" />
+            <element signature="docComment;method#containsAll#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#isEmpty#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#remove#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="e#8362#8471#0" expanded="false" />
+            <element signature="e#8681#8737#0" expanded="false" />
+            <element signature="e#10571#10675#0" expanded="false" />
+            <element signature="docComment;method#removeAll#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#size#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#toArrayList#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#first#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#last#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#inOrderDFT#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#preOrderDFT#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#postOrderDFT#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#levelOrderBFT#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#levelOrderDFTRecursive#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#writeDot#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="e#20355#20389#0" expanded="false" />
+            <element signature="docComment;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#BinaryNode#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#BinaryNode#1;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#getData#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#setData#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#getLeft#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#setLeft#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#getRight#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#setRight#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#numChildren#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#isLeaf#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#getLeftmostNode#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#getRightmostNode#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#getSuccessor#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#height#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#remove#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#remove0#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#remove1#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#remove2#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="e#29476#29497#0" expanded="false" />
+            <element signature="e#30161#30183#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1958,10 +1979,8 @@
             <element signature="docComment;method#testClear#0;class#BSTtester#0" expanded="false" />
             <element signature="docComment;method#testContains#0;class#BSTtester#0" expanded="false" />
             <element signature="method#testContainsAll#0;class#BSTtester#0" expanded="true" />
-            <element signature="e#9650#9658#0" expanded="true" />
             <element signature="method#testPostOrderDFT#0;class#BSTtester#0" expanded="true" />
             <element signature="method#testLevelOrderBFT#0;class#BSTtester#0" expanded="true" />
-            <element signature="e#16696#16704#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1976,10 +1995,8 @@
             <element signature="docComment;method#testClear#0;class#BSTtester#0" expanded="false" />
             <element signature="docComment;method#testContains#0;class#BSTtester#0" expanded="false" />
             <element signature="method#testContainsAll#0;class#BSTtester#0" expanded="true" />
-            <element signature="e#9650#9658#0" expanded="true" />
             <element signature="method#testPostOrderDFT#0;class#BSTtester#0" expanded="true" />
             <element signature="method#testLevelOrderBFT#0;class#BSTtester#0" expanded="true" />
-            <element signature="e#16696#16704#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2306,32 +2323,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BinarySearchTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2850" max-vertical-offset="5899">
-          <caret line="398" column="29" selection-start-line="398" selection-start-column="29" selection-end-line="398" selection-end-column="29" />
-          <folding>
-            <element signature="method#preOrderDFT#0;class#BinarySearchTree#0" expanded="true" />
-            <element signature="e#14261#14267#0" expanded="true" />
-            <element signature="method#levelOrderBFT#0;class#BinarySearchTree#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8706522" vertical-offset="1120" max-vertical-offset="2040">
-          <caret line="406" column="5" selection-start-line="406" selection-start-column="5" selection-end-line="406" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1962" max-vertical-offset="2856">
+          <caret line="402" column="1" selection-start-line="402" selection-start-column="1" selection-end-line="402" selection-end-column="1" />
           <folding>
             <element signature="docComment;method#testAdd#0;class#BSTtester#0" expanded="false" />
             <element signature="docComment;method#testAddAll#0;class#BSTtester#0" expanded="false" />
             <element signature="docComment;method#testClear#0;class#BSTtester#0" expanded="false" />
             <element signature="docComment;method#testContains#0;class#BSTtester#0" expanded="false" />
             <element signature="method#testContainsAll#0;class#BSTtester#0" expanded="true" />
-            <element signature="e#9650#9658#0" expanded="true" />
             <element signature="method#testPostOrderDFT#0;class#BSTtester#0" expanded="true" />
             <element signature="method#testLevelOrderBFT#0;class#BSTtester#0" expanded="true" />
-            <element signature="e#16696#16704#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BinarySearchTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7757009" vertical-offset="1352" max-vertical-offset="2280">
+          <caret line="477" column="86" selection-start-line="477" selection-start-column="86" selection-end-line="477" selection-end-column="86" />
+          <folding>
+            <element signature="docComment;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#add#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#addAll#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#clear#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#contains#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="e#5722#5830#0" expanded="false" />
+            <element signature="docComment;method#containsAll#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#isEmpty#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#remove#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="e#8362#8471#0" expanded="false" />
+            <element signature="e#8681#8737#0" expanded="false" />
+            <element signature="e#10571#10675#0" expanded="false" />
+            <element signature="docComment;method#removeAll#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#size#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#toArrayList#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#first#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#last#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#inOrderDFT#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#preOrderDFT#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#postOrderDFT#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#levelOrderBFT#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#levelOrderDFTRecursive#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#writeDot#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="e#20355#20389#0" expanded="false" />
+            <element signature="docComment;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#BinaryNode#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#BinaryNode#1;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#getData#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#setData#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#getLeft#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#setLeft#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#getRight#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#setRight#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#numChildren#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#isLeaf#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#getLeftmostNode#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#getRightmostNode#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#getSuccessor#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#height#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#remove#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#remove0#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#remove1#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="docComment;method#remove2#0;class#BinaryNode#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="e#29476#29497#0" expanded="false" />
+            <element signature="e#30161#30183#0" expanded="false" />
           </folding>
         </state>
       </provider>
