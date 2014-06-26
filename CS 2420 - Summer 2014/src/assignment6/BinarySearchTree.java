@@ -224,7 +224,6 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
                 currentNode = currentNode.getRight();
             }
         }
-        // TODO: implement removal for each case (different numbers of children nodes)
         // these statements only execute if the correct node was found, in which case the node should be removed
         //  according to the number of children, the size should decrement, and this method should return true.
         BinaryNode.remove(currentNode, direction);
@@ -497,6 +496,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
 
         /**
          * Returns true iff the BinaryNode is a leaf node (has no children)
+         *
          * @return a boolean indicating if the node is a leaf or not
          */
         public boolean isLeaf() {
@@ -538,9 +538,9 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
          *
          * @return The successor of this node.
          * @throws NoSuchElementException if the node has no successor (is a leaf node)
-         * <p/>
-         * The successor is a node which can replace this node in a case-3 BST deletion. It is either the smallest node
-         * in the right subtree, or the largest node in the left subtree.
+         *                                <p/>
+         *                                The successor is a node which can replace this node in a case-3 BST deletion. It is either the smallest node
+         *                                in the right subtree, or the largest node in the left subtree.
          */
         public BinaryNode getSuccessor() throws NoSuchElementException {
             // throw an exception if no successor exists (in case of a leaf node)
