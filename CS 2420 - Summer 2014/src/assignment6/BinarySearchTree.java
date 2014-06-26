@@ -170,6 +170,29 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      */
     @Override
     public boolean remove(Type item) {
+        // handle null parameter
+        if (item == null)
+            throw new NullPointerException("Tried .remove with a null parameter!");
+        // if the set is empty return false
+        if (isEmpty())
+            return false;
+        // iterate through BST to find a Node with the specified data
+        BinaryNode currentNode = root;
+        while (item.compareTo(currentNode.getData()) != 0) {
+            if (item.compareTo(currentNode.getData()) < 0) {
+                if (currentNode.getLeft() == null)
+                    return false;
+                currentNode = currentNode.getLeft();
+            } else {
+                if (currentNode.getRight() == null)
+                    return false;
+                currentNode = currentNode.getRight();
+            }
+        }
+        if (currentNode.numChildren() == 0)
+            BinaryNode.remove0(currentNode);
+        else if (currentNode.numChildren() == 1)
+            BinaryNode
         return false;
     }
 
