@@ -648,7 +648,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
          * @param direction   an int indicating which child to remove: -1 for the left, 1 for the right
          */
         private void remove2(BinaryNode currentNode, int direction) {
-
+            //Todo: implement remove2
         }
     }
 }
