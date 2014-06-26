@@ -91,12 +91,13 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
     public boolean addAll(Collection<? extends Type> items) {
         // handle adding null
         if (items == null)
-            throw new NullPointerException("Tried to add null with addAll");
+            throw new NullPointerException("Tried to add a null Collection with addAll");
         // store the current size in order to check for changes to the set when this method returns
         int size = this.size();
         // add each element
         for (Type element : items)
             add(element);
+        // return a boolean iff the BST was changed (if the size was changed)
         return (this.size() != size);
     }
 
@@ -158,9 +159,6 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
         // every BST contains an empty collection, so if one is passed return true
         if (items.size() == 0)
             return true;
-        // throw an Exception if any element is null
-        if (items.contains(null))
-            throw new NullPointerException("Tried to use containsAll with a Collection containing null");
         // an empty BST cannot contain any specific item - return false
         if (isEmpty())
             return false;
@@ -257,11 +255,8 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
         // store the size in order to check for changes to the BST when returning
         int size = size();
         // remove each element in the Collection from the BST, throwing an Exception if any element is null
-        for (Type element : items) {
-            if (element == null)
-                throw new NullPointerException("Tried removeAll with a Collection containing null!");
+        for (Type element : items)
             remove(element);
-        }
         // return true iff at least one element was removed (the size was changed during method execution)
         return (size != size());
     }
