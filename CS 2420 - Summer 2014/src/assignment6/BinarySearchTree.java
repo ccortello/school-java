@@ -120,29 +120,30 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
         // handle null parameter
         if (item == null)
             throw new NullPointerException("Tried .contains with 'null'");
-        else {
-            // search the BST for a Node containing the passed data
-            BinaryNode currentNode = root; // start from root
-            while (!currentNode.isLeaf()) {
-                Type data = currentNode.getData();
+        // an empty set cannot contain any certain item - return false
+        if (isEmpty())
+            return false;
+        // search the BST for a Node containing the passed data
+        BinaryNode currentNode = root; // start from root
+        while (!currentNode.isLeaf()) {
+            Type data = currentNode.getData();
                 /* the if and if else statements that follow simply compare item against the data in the current node
                    and either change the node to iterate further down the BST or return as appropriate */
-                if (item.compareTo(data) == 0)
-                    return true;
-                else if (item.compareTo(data) < 0) {
-                    if (currentNode.getLeft() == null)
-                        return false;
-                    currentNode = currentNode.getLeft();
-                } else {
-                    if (currentNode.getRight() == null)
-                        return false;
-                    currentNode = currentNode.getRight();
-                }
+            if (item.compareTo(data) == 0)
+                return true;
+            else if (item.compareTo(data) < 0) {
+                if (currentNode.getLeft() == null)
+                    return false;
+                currentNode = currentNode.getLeft();
+            } else {
+                if (currentNode.getRight() == null)
+                    return false;
+                currentNode = currentNode.getRight();
             }
-            // this statement is only reached when the while loop hits a leaf node, in which case only the currentNode's
-            //  data has to be checked
-            return (item.compareTo(currentNode.getData()) == 0);
         }
+        // this statement is only reached when the while loop hits a leaf node, in which case only the currentNode's
+        //  data has to be checked
+        return (item.compareTo(currentNode.getData()) == 0);
     }
 
     /**
