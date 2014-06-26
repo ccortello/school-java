@@ -12,7 +12,12 @@ import java.util.NoSuchElementException;
  * @author Casey Nordgran
  */
 public class BinarySearchTree<Type extends Comparable<? super Type>> implements SortedSet<Type>, TreeTraversal<Type> {
+    private BinaryNode root;
 
+    // creates an empty BST
+    public BinarySearchTree() {
+        root = null;
+    }
     /**
      * Ensures that this set contains the specified item.
      *
@@ -115,7 +120,8 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
     }
 
     /**
-     * Returns an ArrayList containing all of the items in this set, in sorted order.
+     * Returns an ArrayList containing all of the items in this set, in sorted order (equivalent to an in-order
+     * depth-first-traversal)
      */
     @Override
     public ArrayList<Type> toArrayList() {
@@ -129,7 +135,9 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      */
     @Override
     public Type first() throws NoSuchElementException {
-        return null;
+        if (root == null) // exception for empty set
+            throw new NoSuchElementException("Empty BST, no first element!");
+        else return root.getLeftmostNode().getData(); // return smallest (leftmost) Node's data
     }
 
     /**
