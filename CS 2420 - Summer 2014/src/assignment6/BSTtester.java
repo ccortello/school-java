@@ -329,13 +329,25 @@ public class BSTtester extends TestCase {
     }
 
     public void testLast() throws NoSuchElementException {
-
         //try-catch blocks to test case of NullPointerException
         try {
-            BSTtestList.add(nullString);
+            BSTtestList.clear();
+            BSTtestList.last();
+        } catch (Exception e) {
+            assertEquals("Tried last with an empty BST", e.getMessage());
         }
-        catch (Exception e) {
-            assertEquals("Tried adding null", e.getMessage());
+        // add elements asserting that first updates with each add, the do the same with remove
+        String[] addList = new String[]{"20", "10", "40", "30", "50", "65", "45", "35", "70"};
+        String[] assertAdd = new String[]{"20", "20", "40", "40", "50", "65", "65", "65", "70"};
+        for (int i = 0; i < addList.length; i++) {
+            BSTtestList.add(addList[i]);
+            assertEquals(assertAdd[i], BSTtestList.last());
+        }
+        String[] removeList = new String[]{"65", "50", "35", "70", "40", "45", "20", "30"};
+        String[] assertRemove = new String[]{"70", "70", "70", "45", "45", "30", "30", "10"};
+        for (int i = 0; i < removeList.length; i++) {
+            BSTtestList.remove(removeList[i]);
+            assertEquals(assertRemove[i], BSTtestList.last());
         }
     }
 
