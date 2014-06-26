@@ -396,7 +396,8 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
             queue.addLast(n.getLeft());
         if (n.getRight() != null)
             queue.addLast(n.getRight());
-        levelOrderDFTRecursive(queue, queue.removeFirst(), returnList);
+        if (queue.size() != 0)
+            levelOrderDFTRecursive(queue, queue.removeFirst(), returnList);
     }
 
     /* These recursive methods are nearly identical, and recursively iterate through the BST in pre-, in-, or post-order */
