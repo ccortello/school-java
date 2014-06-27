@@ -1,0 +1,39 @@
+strict digraph BST{
+
+
+center=true
+ranksep=.4
+outputorder="nodefirst"
+packmode="node"
+pack=true
+spline="true"
+edge[weight=10]
+ratio=0.5
+node[ordering=out]
+i -> d
+D4 [label="", shape=ellipse, style=invis]
+i -> D4 [weight=100, style=invis]
+i -> j
+{rank=same; "d" "D4" "j" }
+d -> b
+D3 [label="", shape=ellipse, style=invis]
+d -> D3 [weight=100, style=invis]
+d -> f
+{rank=same; "b" "D3" "f" }
+b -> a
+D1 [label="", shape=ellipse, style=invis]
+b -> D1 [weight=100, style=invis]
+b -> c
+{rank=same; "a" "D1" "c" }
+f -> e
+D2 [label="", shape=ellipse, style=invis]
+f -> D2 [weight=100, style=invis]
+f -> h
+{rank=same; "e" "D2" "h" }
+h -> g
+D1 [label="", shape=ellipse, style=invis]
+h -> D1 [weight=100, style=invis]
+DD1 [label="", shape=ellipse, style=invis]
+h -> DD1 [style=invis]
+{rank=same; "g" "D1" "DD1" }
+}

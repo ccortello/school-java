@@ -190,6 +190,12 @@ public class BSTtester extends TestCase {
     public void testIsEmpty() {
     }
 
+    /**
+     * First test case of NullPointerException, than adds multiple items to list and tests remove method by the removing
+     * them and asserting the changes that should be made.
+     *
+     * @throws NullPointerException
+     */
     public void testRemove() throws NullPointerException {
 
         //try-catch blocks to test case of NullPointerException
@@ -221,6 +227,11 @@ public class BSTtester extends TestCase {
         }
     }
 
+    /**
+     * Similar to test for the remove method only this time passes the whole array of items to be removed
+     * and asserts the correct changes were made.
+     * @throws NullPointerException
+     */
     public void testRemoveAll() throws NullPointerException {
 
         //try-catch blocks to test case of NullPointerException
@@ -255,6 +266,10 @@ public class BSTtester extends TestCase {
             assertEquals(false, BSTtestList.contains(element));
     }
 
+    /**
+     * continually adds multiple items, then removes multiple items, and at each add or remove call, the size is
+     * checked to assert that it is correct and updating as it should.
+     */
     public void testSize() {
         // add elements asserting that size updates with each add, the do the same with remove
         BSTtestList.clear();
@@ -295,6 +310,15 @@ public class BSTtester extends TestCase {
      */
     public void testToArrayList() {
         BSTtestList.clear();
+        // first assert that BSTtestList is indeed empty
+        assertTrue(BSTtestList.isEmpty());
+        // test case that passing empty BST returns an empty list instead of throwing an exception
+        ArrayList testEmpty = BSTtestList.toArrayList();
+        // first assert testEmpty is not null
+        assertFalse(testEmpty == null);
+        // now assert that testEmpty ArrayList is a reference to an 'empty' arraylist
+        assertTrue(testEmpty.isEmpty());
+        // add items to testList
         ArrayList<String> testList = new ArrayList<String>();
         testList.add("first");
         testList.add("second");
@@ -303,7 +327,9 @@ public class BSTtester extends TestCase {
         testList.add("fifth");
         testList.add("sixth");
         testList.add("seventh");
+        // add all items now to BSTtestList to be converted back to ArrayList as sorted list and returned
         BSTtestList.addAll(testList);
+        // list holding correct order of sorting to test against.
         ArrayList<String> correctList = new ArrayList<String>();
         correctList.add("fifth");
         correctList.add("first");
@@ -312,6 +338,7 @@ public class BSTtester extends TestCase {
         correctList.add("seventh");
         correctList.add("sixth");
         correctList.add("third");
+        // assert returned arraylist is equal to the known correct sorted list
         assertTrue(correctList.equals(BSTtestList.toArrayList()));
     }
 
@@ -363,7 +390,9 @@ public class BSTtester extends TestCase {
         }
     }
 
-    /* implemented in testToArrayList */
+    /**
+     * empty test method because inOrderDFT is already invoked and tested in the testToArrayList method
+     */
     public void testInOrderDFT() {
     }
 
@@ -410,32 +439,12 @@ public class BSTtester extends TestCase {
         assertEquals(correctList, BSTtestList.levelOrderBFT());
     }
 
+    /**
+     * test the writeDot method which creates a graph representation of this BST in a .dot file to be used with
+     * the graphviz software tool.
+     */
     public void testWriteDot() {
-        ArrayList<Integer> lrgList = new ArrayList<Integer>(15);
-        for (int i = 1; i <= 15; i++) {
-            lrgList.add(i);
-        }
-
-//        Random rand = new Random(12349879102366254L);
-        Random rand = new Random(System.currentTimeMillis());
-
-        for (int i = 0; i < 500; i++) {
-            int left = rand.nextInt(15);
-            int right = rand.nextInt(15);
-//            int right = (int) (Math.random() * 20);
-            // stored copy of left indexed element to temp
-            Integer temp = lrgList.get(left);
-            // reassign left indexed element to a copy of the the right indexed element
-            lrgList.set(left, lrgList.get(right));
-            // replace right indexed element with previous value of left index stored in temp
-            lrgList.set(right, temp);
-        }
-
-        BinarySearchTree<Integer> dotList2 = new BinarySearchTree<Integer>(lrgList);
-        assertTrue(dotList2.containsAll(lrgList));
-
-        dotList2.writeDot("writeDotTest2.dot");
-
+        // initialize new ArrayList to add and store the letters in the order shown.
         ArrayList<String> letters = new ArrayList<String>();
         letters.add("i");
         letters.add("d");
@@ -447,10 +456,42 @@ public class BSTtester extends TestCase {
         letters.add("e");
         letters.add("h");
         letters.add("g");
-
+        // create new BinarySearchTree 'dotList' and all the letters, occurs in the same order as above
         BinarySearchTree<String> dotList = new BinarySearchTree<String>(letters);
+        // assert that all the strings in 'letter' are also now in dotList
         assertTrue(dotList.containsAll(letters));
+        // creates a dot file graph representing dotList, proper function will put the new file in this workspace dir.
+        dotList.writeDot("writeDotTest_letters.dot");
 
-        dotList.writeDot("writeDotTest.dot");
+        //--------------------------------------------------------------------
+        /*tested a second time with a slightly larger list of Integers
+            first create list from 1 to desired size*/
+        ArrayList<Integer> lrgList = new ArrayList<Integer>(15);
+        for (int i = 1; i <= 15; i++) {
+            lrgList.add(i);
+        }
+
+        // new random object to create random numbers, uncomment chosen seed method to use and comment out other
+//        Random rand = new Random(12349879102366254L);
+        Random rand = new Random(System.currentTimeMillis());
+
+        // perform swaps of two elements at two random index chosen, loops 500 times to ensure good permutation
+        for (int i = 0; i < 500; i++) {
+            int left = rand.nextInt(15);
+            int right = rand.nextInt(15);
+            // stored copy of left indexed element to temp
+            Integer temp = lrgList.get(left);
+            // reassign left indexed element to a copy of the the right indexed element
+            lrgList.set(left, lrgList.get(right));
+            // replace right indexed element with previous value of left index stored in temp
+            lrgList.set(right, temp);
+        }
+
+        // create new BinarySearchTree 'dotList2' with the random permuted list if Integers
+        BinarySearchTree<Integer> dotList2 = new BinarySearchTree<Integer>(lrgList);
+        // assert that all the Integers in lrgList are now in dotList2 as well
+        assertTrue(dotList2.containsAll(lrgList));
+        // creates a dot file graph representing dotList2, proper function will put the new file in this workspace dir.
+        dotList2.writeDot("writeDotTest_integers.dot");
     }
 }

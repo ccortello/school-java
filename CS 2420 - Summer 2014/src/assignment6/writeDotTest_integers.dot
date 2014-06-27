@@ -1,0 +1,69 @@
+strict digraph BST{
+
+
+center=true
+ranksep=.4
+outputorder="nodefirst"
+packmode="node"
+pack=true
+spline="true"
+edge[weight=10]
+ratio=0.5
+node[ordering=out]
+12 -> 10
+D7 [label="", shape=ellipse, style=invis]
+12 -> D7 [weight=100, style=invis]
+12 -> 15
+{rank=same; "10" "D7" "15" }
+10 -> 1
+D6 [label="", shape=ellipse, style=invis]
+10 -> D6 [weight=100, style=invis]
+10 -> 11
+{rank=same; "1" "D6" "11" }
+D5 [label="", shape=ellipse, style=invis]
+1 -> D5 [style=invis]
+DD5 [label="", shape=ellipse, style=invis]
+1 -> DD5 [weight=100, style=invis]
+1 -> 9
+{rank=same; "D5" "DD5" "9" }
+9 -> 4
+D4 [label="", shape=ellipse, style=invis]
+9 -> D4 [weight=100, style=invis]
+DD4 [label="", shape=ellipse, style=invis]
+9 -> DD4 [style=invis]
+{rank=same; "4" "D4" "DD4" }
+4 -> 3
+D3 [label="", shape=ellipse, style=invis]
+4 -> D3 [weight=100, style=invis]
+4 -> 8
+{rank=same; "3" "D3" "8" }
+3 -> 2
+D1 [label="", shape=ellipse, style=invis]
+3 -> D1 [weight=100, style=invis]
+DD1 [label="", shape=ellipse, style=invis]
+3 -> DD1 [style=invis]
+{rank=same; "2" "D1" "DD1" }
+8 -> 6
+D2 [label="", shape=ellipse, style=invis]
+8 -> D2 [weight=100, style=invis]
+DD2 [label="", shape=ellipse, style=invis]
+8 -> DD2 [style=invis]
+{rank=same; "6" "D2" "DD2" }
+6 -> 5
+D1 [label="", shape=ellipse, style=invis]
+6 -> D1 [weight=100, style=invis]
+6 -> 7
+{rank=same; "5" "D1" "7" }
+15 -> 13
+D2 [label="", shape=ellipse, style=invis]
+15 -> D2 [weight=100, style=invis]
+DD2 [label="", shape=ellipse, style=invis]
+15 -> DD2 [style=invis]
+{rank=same; "13" "D2" "DD2" }
+D1 [label="", shape=ellipse, style=invis]
+13 -> D1 [style=invis]
+DD1 [label="", shape=ellipse, style=invis]
+13 -> DD1 [weight=100, style=invis]
+13 -> 14
+{rank=same; "D1" "DD1" "14" }
+}
