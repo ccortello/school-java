@@ -96,9 +96,6 @@ public class BSTtester extends TestCase {
         assertTrue(BSTtestList.contains("4th"));
         assertTrue(BSTtestList.containsAll(arrayListTest));
 
-        // create quick DOT file of testList
-        BSTtestList.writeDot("addAll.dot");
-
         // assert the size (number of elements) should only be 4
         assertEquals(4, BSTtestList.size());
 
@@ -228,8 +225,9 @@ public class BSTtester extends TestCase {
     }
 
     /**
-     * Similar to test for the remove method only this time passes the whole array of items to be removed
-     * and asserts the correct changes were made.
+     * Similar to test for the remove method only this time passes the whole array of items to be removed and asserts
+     * the correct changes were made.
+     *
      * @throws NullPointerException
      */
     public void testRemoveAll() throws NullPointerException {
@@ -256,9 +254,6 @@ public class BSTtester extends TestCase {
         testList.add("seventh");
         BSTtestList.addAll(testList);
 
-        // create quick DOT file of testList
-        BSTtestList.writeDot("removeAll.dot");
-
         for (String element : testList)
             assertEquals(true, BSTtestList.containsAll(testList));
         BSTtestList.removeAll(testList);
@@ -267,8 +262,8 @@ public class BSTtester extends TestCase {
     }
 
     /**
-     * continually adds multiple items, then removes multiple items, and at each add or remove call, the size is
-     * checked to assert that it is correct and updating as it should.
+     * continually adds multiple items, then removes multiple items, and at each add or remove call, the size is checked
+     * to assert that it is correct and updating as it should.
      */
     public void testSize() {
         // add elements asserting that size updates with each add, the do the same with remove
@@ -440,8 +435,8 @@ public class BSTtester extends TestCase {
     }
 
     /**
-     * test the writeDot method which creates a graph representation of this BST in a .dot file to be used with
-     * the graphviz software tool.
+     * test the writeDot method which creates a graph representation of this BST in a .dot file to be used with the
+     * graphviz software tool.
      */
     public void testWriteDot() {
         // initialize new ArrayList to add and store the letters in the order shown.

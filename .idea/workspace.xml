@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="added comments">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/writeDotTest_integers.dot.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/writeDotTest_letters.dot.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/linkedListAnalysis.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/writeDotTest_integers.dot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/writeDotTest_letters.dot" />
+    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="commented writeDot method, added created .dot Files and their graphs. Also, added the .m MATLAB script I used to create the timing plots quickly">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -86,40 +81,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SortedSet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/SortedSet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1440">
-              <caret line="67" column="4" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
-              <folding>
-                <element signature="docComment;class#SortedSet#0" expanded="false" />
-                <element signature="docComment;method#add#0;class#SortedSet#0" expanded="false" />
-                <element signature="docComment;method#addAll#0;class#SortedSet#0" expanded="false" />
-                <element signature="docComment;method#clear#0;class#SortedSet#0" expanded="false" />
-                <element signature="docComment;method#contains#0;class#SortedSet#0" expanded="false" />
-                <element signature="docComment;method#containsAll#0;class#SortedSet#0" expanded="false" />
-                <element signature="docComment;method#isEmpty#0;class#SortedSet#0" expanded="false" />
-                <element signature="docComment;method#remove#0;class#SortedSet#0" expanded="false" />
-                <element signature="docComment;method#removeAll#0;class#SortedSet#0" expanded="false" />
-                <element signature="docComment;method#size#0;class#SortedSet#0" expanded="false" />
-                <element signature="docComment;method#toArrayList#0;class#SortedSet#0" expanded="false" />
-                <element signature="docComment;method#first#0;class#SortedSet#0" expanded="false" />
-                <element signature="docComment;method#last#0;class#SortedSet#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TreeTraversal.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/TreeTraversal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="884">
-              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BinarySearchTree.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BinarySearchTree.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -199,12 +160,13 @@
       <file leaf-file-name="BSTtester.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.6013987" vertical-offset="0" max-vertical-offset="2100">
-              <caret line="444" column="31" selection-start-line="444" selection-start-column="31" selection-end-line="444" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.66588783" vertical-offset="2430" max-vertical-offset="4110">
+              <caret line="254" column="0" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
               <folding>
                 <element signature="docComment;method#setUp#0;class#BSTtester#0" expanded="false" />
                 <element signature="docComment;method#testAdd#0;class#BSTtester#0" expanded="false" />
                 <element signature="docComment;method#testAddAll#0;class#BSTtester#0" expanded="false" />
+                <element signature="method#testAddAll#0;class#BSTtester#0" expanded="true" />
                 <element signature="docComment;method#testClear#0;class#BSTtester#0" expanded="false" />
                 <element signature="docComment;method#testContains#0;class#BSTtester#0" expanded="false" />
                 <element signature="docComment;method#testContainsAll#0;class#BSTtester#0" expanded="false" />
@@ -214,7 +176,7 @@
                 <element signature="docComment;method#testToArrayList#0;class#BSTtester#0" expanded="false" />
                 <element signature="docComment;method#testInOrderDFT#0;class#BSTtester#0" expanded="false" />
                 <element signature="docComment;method#testWriteDot#0;class#BSTtester#0" expanded="false" />
-                <element signature="e#19826#19930#0" expanded="false" />
+                <element signature="e#19650#19754#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -539,7 +501,7 @@
       <recent name="C:\Users\Cody\workspace\CS 2420 - Spring 2014\src\homework08" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BSTtester.testWriteDot">
+  <component name="RunManager" selected="JUnit.BSTtester">
     <configuration default="false" name="BSTtester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="CS 2420 - Summer 2014" />
@@ -817,11 +779,11 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.BSTtester.testWriteDot" />
-        <item index="1" class="java.lang.String" itemvalue="Application.BSTDemo" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.BSTtester.testRemoveAll" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.BSTtester.testLevelOrderBFT" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BSTtester" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BSTtester" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BSTtester.testWriteDot" />
+        <item index="2" class="java.lang.String" itemvalue="Application.BSTDemo" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.BSTtester.testRemoveAll" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.BSTtester.testLevelOrderBFT" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1855,7 +1817,11 @@
       <created>1403909696750</created>
       <updated>1403909696750</updated>
     </task>
-    <option name="localTasksCounter" value="231" />
+    <task id="LOCAL-00231" summary="commented writeDot method, added created .dot Files and their graphs. Also, added the .m MATLAB script I used to create the timing plots quickly">
+      <created>1403912473917</created>
+      <updated>1403912473917</updated>
+    </task>
+    <option name="localTasksCounter" value="232" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1903,7 +1869,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1416309" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15631929" sideWeight="0.6255208" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5399113" sideWeight="0.6255208" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1960,7 +1926,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="implemented the rest of the JUnit tests" />
     <MESSAGE value="copied some of my implementations over" />
     <MESSAGE value="added exceptions testing for the necessary methods in LinkedStructureTester" />
     <MESSAGE value="small changes" />
@@ -1985,7 +1950,8 @@
     <MESSAGE value="changes to writeDotRecursive" />
     <MESSAGE value="update" />
     <MESSAGE value="added comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="added comments" />
+    <MESSAGE value="commented writeDot method, added created .dot Files and their graphs. Also, added the .m MATLAB script I used to create the timing plots quickly" />
+    <option name="LAST_COMMIT_MESSAGE" value="commented writeDot method, added created .dot Files and their graphs. Also, added the .m MATLAB script I used to create the timing plots quickly" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -2418,12 +2384,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.6013987" vertical-offset="0" max-vertical-offset="2100">
-          <caret line="444" column="31" selection-start-line="444" selection-start-column="31" selection-end-line="444" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.66588783" vertical-offset="2430" max-vertical-offset="4110">
+          <caret line="254" column="0" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
           <folding>
             <element signature="docComment;method#setUp#0;class#BSTtester#0" expanded="false" />
             <element signature="docComment;method#testAdd#0;class#BSTtester#0" expanded="false" />
             <element signature="docComment;method#testAddAll#0;class#BSTtester#0" expanded="false" />
+            <element signature="method#testAddAll#0;class#BSTtester#0" expanded="true" />
             <element signature="docComment;method#testClear#0;class#BSTtester#0" expanded="false" />
             <element signature="docComment;method#testContains#0;class#BSTtester#0" expanded="false" />
             <element signature="docComment;method#testContainsAll#0;class#BSTtester#0" expanded="false" />
@@ -2433,7 +2400,7 @@
             <element signature="docComment;method#testToArrayList#0;class#BSTtester#0" expanded="false" />
             <element signature="docComment;method#testInOrderDFT#0;class#BSTtester#0" expanded="false" />
             <element signature="docComment;method#testWriteDot#0;class#BSTtester#0" expanded="false" />
-            <element signature="e#19826#19930#0" expanded="false" />
+            <element signature="e#19650#19754#0" expanded="false" />
           </folding>
         </state>
       </provider>
