@@ -407,7 +407,6 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
     }
 
     /* These recursive methods are nearly identical, and recursively iterate through the BST in pre-, in-, or post-order */
-
     private void inOrderDFTRecursive(BinaryNode n, ArrayList<Type> returnList) {
         // handle null node
         if (n == null)
@@ -467,23 +466,22 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
             // PrintWriter(FileWriter) will write output to a file
             PrintWriter output = new PrintWriter(new FileWriter(filename));
 
-            // Set up the dot graph and properties
+            // print header to graph and set 'strict' which does not allow more than 1 edge between the two same vertices
             output.println("strict digraph BST{\n\n");
             // set attributes
-            output.println("center=true");
-            output.println("ranksep=.4");
-//            output.println("nodesep=0.45");
-            output.println("outputorder=\"nodefirst\"");
-            output.println("packmode=\"node\"");
+            output.println("center=true");  // centers the graph
+            output.println("ranksep=.4");   // sets distance between levels to 0.4"
+//            output.println("nodesep=0.45");   // sets distance between nodes on the same level, uncomment as desired
+            output.println("outputorder=\"nodefirst\""); // causes nodes to be set first on graph, helps with overlap
+            output.println("packmode=\"node\"");  // acts similar to outputorder above
             output.println("pack=true");
-            output.println("spline=\"true\"");
-            output.println("edge[weight=10]");
+            output.println("spline=\"true\"");  // stile of connections (edges) between vertices
+            output.println("edge[weight=10]");  // sets default edge weight, which determines straightness, shortness and other
 
-            //find good ratio for the output image
-//            double ratioVal = (2 * this.root.height()) / this.size;
-            output.println("ratio=0.5");
-            output.println("node[ordering=out]");
+            output.println("ratio=0.5"); // sets image ratio (image height/width), 0.5 seems to work good
+            output.println("node[ordering=out]"); // tells dot.exe to keep the left to right child node ordering as in file
 
+            // if the BST is not null, call the recursive method to create the .dot file
             if (root != null)
                 writeDotRecursive(root, output);
             // Close the graph
@@ -495,61 +493,66 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
         }
     }
 
-    // Recursive method for writing the tree to a dot file
+    // Recursive method that writeDot() driver method calls for writing the tree to a dot file
     private void writeDotRecursive(BinaryNode n, PrintWriter output) throws Exception {
+        // if the passed BinaryNode is null, return
         if (n == null)
             return;
 
-        // set data values to easier to work with variables
+        // set data values to variables so it's easier to work with
         Integer nHeight = n.height();
         String nData = "" + n.getData() + "";
         String invisData = "D" + nHeight.toString();   // these two variables are invisible nodes to format graph
-        String invisData2 = "DD" + nHeight.toString();
+        String invisData2 = "DD" + nHeight.toString(); // they are put between or inplace of left and right
         String getL = null, getR = null;
-        if (n.getLeft() != null)
+        if (n.getLeft() != null)      // adds left and right data to easier variables if they are not null
             getL = "" + n.getLeft().getData() + "";
         if (n.getRight() != null)
             getR = "" + n.getRight().getData() + "";
 
-
         /*following 3 if-statements for cases of numChildren = 0, 1, or 2. This allows formatting so that
         if there is only 1 child, the edge will not point straight down but still show left or right*/
         if (n.getLeft() != null && n.getRight() != null) {
+            // if both right and left have data, prints node connections first, then calls recursive methods
             output.println(nData + " -> " + getL);
-            output.println(invisData + " [label=\"\", shape=ellipse, style=invis]");
+            output.println(invisData + " [label=\"\", shape=ellipse, style=invis]"); //sets blank label and style invisible
             output.println(nData + " -> " + invisData + " [weight=100, style=invis]"); // high weight so edges go left and right
             output.println(nData + " -> " + getR);
-
+            // tells dot.exe that these 3 nodes belong on the same level or rank
             output.println("{rank=same; \"" + getL + "\" \"" + invisData + "\" \"" + getR + "\" }");
 
-
+            // call recursive methods once node connections are printed to file
             writeDotRecursive(n.getLeft(), output);
             writeDotRecursive(n.getRight(), output);
             return;
         }
 
         if (n.getLeft() != null && n.getRight() == null) {
+            // if only the left node has data, sets middle and right nodes to invisible nodes.
             output.println(nData + " -> " + getL);
             output.println(invisData + " [label=\"\", shape=ellipse, style=invis]");
             output.println(nData + " -> " + invisData + " [weight=100, style=invis]");
             output.println(invisData2 + " [label=\"\", shape=ellipse, style=invis]");
             output.println(nData + " -> " + invisData2 + " [style=invis]");
-
+            // tells dot.exe that these 3 nodes belong on the same level or rank
             output.println("{rank=same; \"" + getL + "\" \"" + invisData + "\" \"" + invisData2 + "\" }");
 
+            // call recursive method once node connections are printed to file
             writeDotRecursive(n.getLeft(), output);
             return;
         }
 
         if (n.getLeft() == null && n.getRight() != null) {
+            // if only right has data, sets left and middle nodes to invisible nodes.
             output.println(invisData + " [label=\"\", shape=ellipse, style=invis]");
             output.println(nData + " -> " + invisData + " [style=invis]");
             output.println(invisData2 + " [label=\"\", shape=ellipse, style=invis]");
             output.println(nData + " -> " + invisData2 + " [weight=100, style=invis]");
             output.println(nData + " -> " + getR);
-
+            // tells dot.exe that these 3 nodes belong on the same level or rank
             output.println("{rank=same; \"" + invisData + "\" \"" + invisData2 + "\" \"" + getR + "\" }");
 
+            // call recursive method once node connections are printed to file
             writeDotRecursive(n.getRight(), output);
             return;
         }
@@ -557,10 +560,8 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
 
 
     /**
-     * Represents a general binary tree node. Each binary node contains data, a left child, and a right child, and a
-     * parent.
-     * <p/>
-     * This would make a good node class for a BinarySearchTree implementation
+     * Represents a general binary tree node. Each binary node contains data, a left child, and a right child
+     *
      */
     private class BinaryNode {
         // Since the outer BST class declares <Type>, we can use it here without redeclaring it for BinaryNode
