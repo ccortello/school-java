@@ -468,7 +468,21 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
             PrintWriter output = new PrintWriter(new FileWriter(filename));
 
             // Set up the dot graph and properties
-            output.println("digraph BST {");
+            output.println("strict digraph BST{\n\n");
+            // set attributes
+            output.println("center=true");
+            output.println("ranksep=.4");
+//            output.println("nodesep=0.45");
+            output.println("outputorder=\"nodefirst\"");
+            output.println("packmode=\"node\"");
+            output.println("pack=true");
+            output.println("spline=\"true\"");
+            output.println("edge[weight=10]");
+
+            //find good ratio for the output image
+//            double ratioVal = (2 * this.root.height()) / this.size;
+            output.println("ratio=0.5");
+            output.println("node[ordering=out]");
 
             if (root != null)
                 writeDotRecursive(root, output);
@@ -483,58 +497,64 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
 
     // Recursive method for writing the tree to a dot file
     private void writeDotRecursive(BinaryNode n, PrintWriter output) throws Exception {
-        if (n.numChildren() == 0)
+        if (n == null)
             return;
 
-        if (n.numChildren() == 2) {
-            output.println(n.getData() + " -> " + n.getLeft().getData());
-            output.println("midInvis [label=\"\",width=.1,style=invis]");
-            output.println(n.getData() + " -> midInvis [style=invis]");
-            output.println(n.getData() + " -> " + n.getRight().getData());
+        // set data values to easier to work with variables
+        Integer nHeight = n.height();
+        String nData = "" + n.getData() + "";
+        String invisData = "D" + nHeight.toString();   // these two variables are invisible nodes to format graph
+        String invisData2 = "DD" + nHeight.toString();
+        String getL = null, getR = null;
+        if (n.getLeft() != null)
+            getL = "" + n.getLeft().getData() + "";
+        if (n.getRight() != null)
+            getR = "" + n.getRight().getData() + "";
+
+
+        /*following 3 if-statements for cases of numChildren = 0, 1, or 2. This allows formatting so that
+        if there is only 1 child, the edge will not point straight down but still show left or right*/
+        if (n.getLeft() != null && n.getRight() != null) {
+            output.println(nData + " -> " + getL);
+            output.println(invisData + " [label=\"\", shape=ellipse, style=invis]");
+            output.println(nData + " -> " + invisData + " [weight=100, style=invis]"); // high weight so edges go left and right
+            output.println(nData + " -> " + getR);
+
+            output.println("{rank=same; \"" + getL + "\" \"" + invisData + "\" \"" + getR + "\" }");
+
+
             writeDotRecursive(n.getLeft(), output);
             writeDotRecursive(n.getRight(), output);
-
             return;
         }
 
-        if (n.numChildren() == 1) {
-            if (n.getLeft() != null) {
-                output.println(n.getData() + " -> " + n.getLeft().getData());
-                output.println("midInvis [label=\"\",width=.1,style=invis]");
-                output.println(n.getData() + " -> midInvis [style=invis]");
-                output.println("rightInvis [label=\"\",width=.1,style=invis]");
-                output.println(n.getData() + " -> rightInvis [style=invis]");
-                writeDotRecursive(n.getLeft(), output);
-                return;
-            } else {
-                output.println("leftInvis [label=\"\",width=.1,style=invis]");
-                output.println(n.getData() + " -> leftInvis [style=invis]");
-                output.println("midInvis [label=\"\",width=.1,style=invis]");
-                output.println(n.getData() + " -> midInvis [style=invis]");
-                output.println(n.getData() + " -> " + n.getRight().getData());
-                writeDotRecursive(n.getRight(), output);
-            }
+        if (n.getLeft() != null && n.getRight() == null) {
+            output.println(nData + " -> " + getL);
+            output.println(invisData + " [label=\"\", shape=ellipse, style=invis]");
+            output.println(nData + " -> " + invisData + " [weight=100, style=invis]");
+            output.println(invisData2 + " [label=\"\", shape=ellipse, style=invis]");
+            output.println(nData + " -> " + invisData2 + " [style=invis]");
+
+            output.println("{rank=same; \"" + getL + "\" \"" + invisData + "\" \"" + invisData2 + "\" }");
+
+            writeDotRecursive(n.getLeft(), output);
+            return;
         }
 
-//        if (n.getLeft() != null)
-//            writeDotRecursive(n.getLeft(), output);
-//        if (n.getRight() != null)
-//            writeDotRecursive(n.getRight(), output);
+        if (n.getLeft() == null && n.getRight() != null) {
+            output.println(invisData + " [label=\"\", shape=ellipse, style=invis]");
+            output.println(nData + " -> " + invisData + " [style=invis]");
+            output.println(invisData2 + " [label=\"\", shape=ellipse, style=invis]");
+            output.println(nData + " -> " + invisData2 + " [weight=100, style=invis]");
+            output.println(nData + " -> " + getR);
 
-//        if (n.numChildren()==0)
-//            return;
-//
-//        if (n.getLeft() != null) {
-//            output.println("\""+n.getData()+"\""+" -> "+"\""+n.getLeft().getData()+"\"");
-//        }
-//        if (n.getRight() != null) {
-//            output.println("\""+n.getData()+"\""+" -> "+"\""+n.getRight().getData()+"\"");
-//        }
-//        if (n.getLeft() != null)
-//            writeDotRecursive(n.getLeft(), output);
-//        if (n.getRight() != null)
-//            writeDotRecursive(n.getRight(), output);
+            output.println("{rank=same; \"" + invisData + "\" \"" + invisData2 + "\" \"" + getR + "\" }");
+
+            writeDotRecursive(n.getRight(), output);
+            return;
+        }
     }
+
 
     /**
      * Represents a general binary tree node. Each binary node contains data, a left child, and a right child, and a

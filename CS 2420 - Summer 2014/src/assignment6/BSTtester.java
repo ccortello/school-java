@@ -4,6 +4,7 @@ import junit.framework.TestCase;
 
 import java.util.ArrayList;
 import java.util.NoSuchElementException;
+import java.util.Random;
 
 public class BSTtester extends TestCase {
     // null string reference to test case of NullPointerException, both item and array
@@ -56,7 +57,8 @@ public class BSTtester extends TestCase {
         //try-catch blocks to test case of NullPointerException
         try {
             BSTtestList.add(nullString);
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
             assertEquals("Tried adding null", e.getMessage());
         }
     }
@@ -95,7 +97,7 @@ public class BSTtester extends TestCase {
         assertTrue(BSTtestList.containsAll(arrayListTest));
 
         // create quick DOT file of testList
-        BSTtestList.writeDot("addAllGraph.dot");
+        BSTtestList.writeDot("addAll.dot");
 
         // assert the size (number of elements) should only be 4
         assertEquals(4, BSTtestList.size());
@@ -103,7 +105,8 @@ public class BSTtester extends TestCase {
         //try-catch blocks to test case of NullPointerException
         try {
             BSTtestList.addAll(nullStrOfStrings);
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
             assertEquals("Tried to add a null Collection with addAll", e.getMessage());
         }
     }
@@ -147,7 +150,8 @@ public class BSTtester extends TestCase {
         //try-catch blocks to test case of NullPointerException
         try {
             BSTtestList.contains(nullString);
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
             assertEquals("Tried contains with null item", e.getMessage());
         }
     }
@@ -176,7 +180,8 @@ public class BSTtester extends TestCase {
         //try-catch blocks to test case of NullPointerException
         try {
             BSTtestList.containsAll(nullStrOfStrings);
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
             assertEquals("Tried contains with null item", e.getMessage());
         }
     }
@@ -190,7 +195,8 @@ public class BSTtester extends TestCase {
         //try-catch blocks to test case of NullPointerException
         try {
             BSTtestList.add(nullString);
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
             assertEquals("Tried adding null", e.getMessage());
         }
 
@@ -220,7 +226,8 @@ public class BSTtester extends TestCase {
         //try-catch blocks to test case of NullPointerException
         try {
             BSTtestList.add(nullString);
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
             assertEquals("Tried adding null", e.getMessage());
         }
 
@@ -239,7 +246,7 @@ public class BSTtester extends TestCase {
         BSTtestList.addAll(testList);
 
         // create quick DOT file of testList
-        BSTtestList.writeDot("removeAllGraph.dot");
+        BSTtestList.writeDot("removeAll.dot");
 
         for (String element : testList)
             assertEquals(true, BSTtestList.containsAll(testList));
@@ -313,7 +320,8 @@ public class BSTtester extends TestCase {
         try {
             BSTtestList.clear();
             BSTtestList.first();
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
             assertEquals("Tried first with an empty BST", e.getMessage());
         }
         // add elements asserting that first updates with each add, the do the same with remove
@@ -336,7 +344,8 @@ public class BSTtester extends TestCase {
         try {
             BSTtestList.clear();
             BSTtestList.last();
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
             assertEquals("Tried last with an empty BST", e.getMessage());
         }
         // add elements asserting that first updates with each add, the do the same with remove
@@ -399,5 +408,49 @@ public class BSTtester extends TestCase {
             correctList.add(correctString);
 
         assertEquals(correctList, BSTtestList.levelOrderBFT());
+    }
+
+    public void testWriteDot() {
+        ArrayList<Integer> lrgList = new ArrayList<Integer>(15);
+        for (int i = 1; i <= 15; i++) {
+            lrgList.add(i);
+        }
+
+//        Random rand = new Random(12349879102366254L);
+        Random rand = new Random(System.currentTimeMillis());
+
+        for (int i = 0; i < 500; i++) {
+            int left = rand.nextInt(15);
+            int right = rand.nextInt(15);
+//            int right = (int) (Math.random() * 20);
+            // stored copy of left indexed element to temp
+            Integer temp = lrgList.get(left);
+            // reassign left indexed element to a copy of the the right indexed element
+            lrgList.set(left, lrgList.get(right));
+            // replace right indexed element with previous value of left index stored in temp
+            lrgList.set(right, temp);
+        }
+
+        BinarySearchTree<Integer> dotList2 = new BinarySearchTree<Integer>(lrgList);
+        assertTrue(dotList2.containsAll(lrgList));
+
+        dotList2.writeDot("writeDotTest2.dot");
+
+        ArrayList<String> letters = new ArrayList<String>();
+        letters.add("i");
+        letters.add("d");
+        letters.add("j");
+        letters.add("b");
+        letters.add("f");
+        letters.add("a");
+        letters.add("c");
+        letters.add("e");
+        letters.add("h");
+        letters.add("g");
+
+        BinarySearchTree<String> dotList = new BinarySearchTree<String>(letters);
+        assertTrue(dotList.containsAll(letters));
+
+        dotList.writeDot("writeDotTest.dot");
     }
 }
