@@ -17,52 +17,50 @@ public class BSTtimer {
 
     void problem3i() {
         int timesToLoop = 20;  // higher number causes more accurate average time, but takes much longer
-        int[] sizes = new int[]{100, 1000, 2000, 4000, 8000};
+        int[] sizes = new int[]{100, 1000, 2000, 4000, 8000, 10000, 20000, 50000, 100000};
+        long startTime, midTime, endTime;
+
         Random rand = new Random(); // used to create random lists
-        MyStack<Integer> peekTimingList;
+        long seed = 783789742385993847L;
+        rand.setSeed(seed);
 
         //print info for the max input size and the number of times looping, as well as column headers for results
-        System.out.println("MaxSize = " + maxSize + ", loops = " + timesToLoop + "\n\nsize\ttime\tavgTime");
+        System.out.println("Sizes = " + sizes + ", loops = " + timesToLoop + "\n\nsize\ttime\tavgTime");
 
-        // testing loops
+        // loop through each array size
         for (int size : sizes) {  // each of these loops accounts for a different input size 'N'
 
-            if (i == 0) i = 1000;// allows i to equal 1000 then 5000 and then even 5000 increments after.
             // declare necessary variables and lists for testing
-            peekTimingList = new MyStack<Integer>();
-            long startTime, midTime, endTime;
-            long seed = System.currentTimeMillis();
-            rand.setSeed(seed);
+            BinarySearchTree<Integer> testBST = new BinarySearchTree<Integer>(size);
+            int[] addArray = new int[size];
+            for (int i : addArray)
+                addArray[i] = i;
 
-            for (int j = 0; j < i; j++) {
-                peekTimingList.push(rand.nextInt());
-            }
-
-            // this while loop runs for a full second to get things warmed up and running before timing starts
             startTime = System.nanoTime();
+            // this while loop runs for a full second to get things warmed up and running before timing starts
             while (System.nanoTime() - startTime < 1e9) {
             }
 
-            // startTime and testing start here
+            // start the tests
             startTime = System.nanoTime();
             for (int j = 0; j < timesToLoop; j++) {
-                for (int k = 0; k < i; k++) {
-                    peekTimingList.peek();
-                }
+                for (int addInt : addArray) // add each integer from the array
+                    testBST.add(addInt);
+                testBST = new BinarySearchTree<Integer>(size); // then reset the BST for the next loop
             }
-            midTime = System.nanoTime();   // midTime is set to aid in subtracting overhead
+
+            // find the testing overhead (operations separate from the one being tested)
+            midTime = System.nanoTime();
             for (int j = 0; j < timesToLoop; j++) {
-                for (int k = 0; k < i; k++) {
-                }
+                testBST = new BinarySearchTree<Integer>(size);
             }
+
             endTime = System.nanoTime();
 
             // subtract the over head and determine average time for 'i' calls to get.
             double totalTime = ((midTime - startTime) - (endTime - midTime)) / timesToLoop;
-            double avgTime = totalTime / i;
-            System.out.println(i + "\t" + totalTime + "\t" + avgTime);     // print results
-
-            if (i == 1000) i = 0;  // used to allows 1000 to 5000 then even increments of 5000
+            double avgTime = totalTime / size;
+            System.out.println(size + "\t" + totalTime + "\t" + avgTime);     // print results
         }
     }
 }
