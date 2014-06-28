@@ -14,8 +14,8 @@ public class BSTtimer {
 
     BSTtimer() {
 //        BSTAscendingAdd();
-        BSTRandomAdd();
-//        TreeSetRandomAdd();
+//        BSTRandomAdd();
+        TreeSetRandomAdd();
     }
 
     void BSTAscendingAdd() {
