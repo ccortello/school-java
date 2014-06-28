@@ -19,17 +19,31 @@ public class SpellChecker {
         File document = null;
         String option = "";
 
-        //TODO: Check parameter size according to the handout
+        //DO: Check parameter size according to the handout
+        if (args.length < 2 || args.length > 3) {
+            System.out.println("Incorrect number of arguments!");
+            return;
+        }
 
-        //TODO: Instantiate the dictionary File object using args[0]
+        //DO: Instantiate the dictionary File object using args[0]
+        dictionary = new File(args[0]);
 
-        //TODO: Check to see if this dictionary file is a normal file
+        //DO: Check to see if this dictionary file is a normal file
         //Use the File class isFile() method
+        if (! dictionary.isFile()) {
+            System.out.println("Unable to use the dictionary file!");
+            return;
+        }
 
-        //TODO: Instantiate the document File object using args[1]
+        //DO: Instantiate the document File object using args[1]
+        document = new File(args[1]);
 
-        //TODO: Check to see if this document file is a normal file
+        //DO: Check to see if this document file is a normal file
         //Use the File class isFile() method
+        if (! document.isFile()) {
+            System.out.println("Unable to use the document file!");
+            return;
+        }
 
         // If a third parameter was passed for the options, check its validity
         if (args.length == 3)
@@ -57,7 +71,10 @@ public class SpellChecker {
             System.out.println("\nThere are " + misspelledWords.size() + " misspelled words in file " + doc + ".");
 
             if (option.equals("-p")) {
-                //TODO: Print every misspelled word on a new line
+                //DO: Print every misspelled word on a new line
+                for (String word : misspelledWords)
+                    System.out.println(word);
+
             } else if (option.equals("-f"))
                 try {
                     FileWriter writer = new FileWriter("misspelled.txt");
