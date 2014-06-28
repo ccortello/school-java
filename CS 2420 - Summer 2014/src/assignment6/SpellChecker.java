@@ -79,9 +79,12 @@ public class SpellChecker {
                 try {
                     FileWriter writer = new FileWriter("misspelled.txt");
 
-                    //TODO: Put every misspelled word on a new line in the misspelled.txt file
+                    // write each misspelled word to the output
+                    for (String word : misspelledWords)
+                        writer.write(word + "\n");
 
-                    //TODO: Make sure to close the "writer" file you just populated.
+                    // close the file writer
+                    writer.close();
 
                     System.out.println("Please see misspelled.txt for a list of the words.");
                 }
