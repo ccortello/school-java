@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="commented writeDot method, added created .dot Files and their graphs. Also, added the .m MATLAB script I used to create the timing plots quickly">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java" />
+    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="update">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/SpellCheckUtil.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/SpellCheckUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -84,14 +84,15 @@
       <file leaf-file-name="BinarySearchTree.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BinarySearchTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1524" max-vertical-offset="3230">
-              <caret line="463" column="42" selection-start-line="463" selection-start-column="42" selection-end-line="463" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="912" max-vertical-offset="4182">
+              <caret line="127" column="39" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
               <folding>
                 <element signature="docComment;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#add#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#addAll#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#clear#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#contains#0;class#BinarySearchTree#0" expanded="false" />
+                <element signature="method#contains#0;class#BinarySearchTree#0" expanded="true" />
                 <element signature="e#5745#5853#0" expanded="false" />
                 <element signature="docComment;method#containsAll#0;class#BinarySearchTree#0" expanded="false" />
                 <element signature="docComment;method#isEmpty#0;class#BinarySearchTree#0" expanded="false" />
@@ -137,12 +138,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpellCheckUtil.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SpellCheckUtil.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/SpellCheckUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="2261">
-              <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
-              <folding />
+            <state vertical-scroll-proportion="0.82853854" vertical-offset="0" max-vertical-offset="1140">
+              <caret line="68" column="54" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
+              <folding>
+                <element signature="docComment;class#SpellCheckUtil#0" expanded="false" />
+                <element signature="docComment;method#SpellCheckUtil#0;class#SpellCheckUtil#0" expanded="false" />
+                <element signature="docComment;method#SpellCheckUtil#1;class#SpellCheckUtil#0" expanded="false" />
+                <element signature="docComment;method#SpellCheckUtil#2;class#SpellCheckUtil#0" expanded="false" />
+                <element signature="docComment;method#addToDictionary#0;class#SpellCheckUtil#0" expanded="false" />
+                <element signature="docComment;method#removeFromDictionary#0;class#SpellCheckUtil#0" expanded="false" />
+                <element signature="docComment;method#spellCheck#0;class#SpellCheckUtil#0" expanded="false" />
+                <element signature="docComment;method#buildDictionary#0;class#SpellCheckUtil#0" expanded="false" />
+                <element signature="docComment;method#readFromFile#0;class#SpellCheckUtil#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -150,43 +161,8 @@
       <file leaf-file-name="SpellChecker.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/SpellChecker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="782" max-vertical-offset="1445">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
               <caret line="46" column="74" selection-start-line="46" selection-start-column="74" selection-end-line="46" selection-end-column="74" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BSTtester.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.66588783" vertical-offset="2430" max-vertical-offset="4110">
-              <caret line="254" column="0" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
-              <folding>
-                <element signature="docComment;method#setUp#0;class#BSTtester#0" expanded="false" />
-                <element signature="docComment;method#testAdd#0;class#BSTtester#0" expanded="false" />
-                <element signature="docComment;method#testAddAll#0;class#BSTtester#0" expanded="false" />
-                <element signature="method#testAddAll#0;class#BSTtester#0" expanded="true" />
-                <element signature="docComment;method#testClear#0;class#BSTtester#0" expanded="false" />
-                <element signature="docComment;method#testContains#0;class#BSTtester#0" expanded="false" />
-                <element signature="docComment;method#testContainsAll#0;class#BSTtester#0" expanded="false" />
-                <element signature="docComment;method#testRemove#0;class#BSTtester#0" expanded="false" />
-                <element signature="docComment;method#testRemoveAll#0;class#BSTtester#0" expanded="false" />
-                <element signature="docComment;method#testSize#0;class#BSTtester#0" expanded="false" />
-                <element signature="docComment;method#testToArrayList#0;class#BSTtester#0" expanded="false" />
-                <element signature="docComment;method#testInOrderDFT#0;class#BSTtester#0" expanded="false" />
-                <element signature="docComment;method#testWriteDot#0;class#BSTtester#0" expanded="false" />
-                <element signature="e#19650#19754#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BSTtimer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtimer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="255">
-              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -214,7 +190,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanTools.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanToken.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/Test.txt" />
         <option value="$PROJECT_DIR$/Yankee output.txt" />
@@ -265,6 +240,7 @@
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/testBinarySearchTree.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BinarySearchTree.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/SpellCheckUtil.java" />
       </list>
     </option>
   </component>
@@ -1821,7 +1797,11 @@
       <created>1403912473917</created>
       <updated>1403912473917</updated>
     </task>
-    <option name="localTasksCounter" value="232" />
+    <task id="LOCAL-00232" summary="update">
+      <created>1403912793511</created>
+      <updated>1403912793511</updated>
+    </task>
+    <option name="localTasksCounter" value="233" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1948,10 +1928,10 @@
     <MESSAGE value="updates" />
     <MESSAGE value="finished all tests, working!!" />
     <MESSAGE value="changes to writeDotRecursive" />
-    <MESSAGE value="update" />
     <MESSAGE value="added comments" />
     <MESSAGE value="commented writeDot method, added created .dot Files and their graphs. Also, added the .m MATLAB script I used to create the timing plots quickly" />
-    <option name="LAST_COMMIT_MESSAGE" value="commented writeDot method, added created .dot Files and their graphs. Also, added the .m MATLAB script I used to create the timing plots quickly" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -2290,22 +2270,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/SpellCheckUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="33" max-vertical-offset="1140">
-          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/SpellChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="621">
-          <caret line="46" column="74" selection-start-line="46" selection-start-column="74" selection-end-line="46" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/SortedSet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1440">
@@ -2328,16 +2292,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66588783" vertical-offset="2430" max-vertical-offset="4110">
+          <caret line="255" column="0" selection-start-line="255" selection-start-column="0" selection-end-line="255" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;method#setUp#0;class#BSTtester#0" expanded="false" />
+            <element signature="docComment;method#testAdd#0;class#BSTtester#0" expanded="false" />
+            <element signature="docComment;method#testAddAll#0;class#BSTtester#0" expanded="false" />
+            <element signature="method#testAddAll#0;class#BSTtester#0" expanded="true" />
+            <element signature="docComment;method#testClear#0;class#BSTtester#0" expanded="false" />
+            <element signature="docComment;method#testContains#0;class#BSTtester#0" expanded="false" />
+            <element signature="docComment;method#testContainsAll#0;class#BSTtester#0" expanded="false" />
+            <element signature="docComment;method#testRemove#0;class#BSTtester#0" expanded="false" />
+            <element signature="docComment;method#testRemoveAll#0;class#BSTtester#0" expanded="false" />
+            <element signature="docComment;method#testSize#0;class#BSTtester#0" expanded="false" />
+            <element signature="docComment;method#testToArrayList#0;class#BSTtester#0" expanded="false" />
+            <element signature="docComment;method#testInOrderDFT#0;class#BSTtester#0" expanded="false" />
+            <element signature="docComment;method#testWriteDot#0;class#BSTtester#0" expanded="false" />
+            <element signature="e#19657#19761#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/SpellChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="621">
+          <caret line="46" column="74" selection-start-line="46" selection-start-column="74" selection-end-line="46" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BinarySearchTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1830" max-vertical-offset="3230">
-          <caret line="463" column="42" selection-start-line="463" selection-start-column="42" selection-end-line="463" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="912" max-vertical-offset="4182">
+          <caret line="127" column="39" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
           <folding>
             <element signature="docComment;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#add#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#addAll#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#clear#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#contains#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="method#contains#0;class#BinarySearchTree#0" expanded="true" />
             <element signature="e#5745#5853#0" expanded="false" />
             <element signature="docComment;method#containsAll#0;class#BinarySearchTree#0" expanded="false" />
             <element signature="docComment;method#isEmpty#0;class#BinarySearchTree#0" expanded="false" />
@@ -2382,25 +2378,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java">
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/SpellCheckUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66588783" vertical-offset="2430" max-vertical-offset="4110">
-          <caret line="254" column="0" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.82853854" vertical-offset="0" max-vertical-offset="1140">
+          <caret line="68" column="54" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
           <folding>
-            <element signature="docComment;method#setUp#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testAdd#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testAddAll#0;class#BSTtester#0" expanded="false" />
-            <element signature="method#testAddAll#0;class#BSTtester#0" expanded="true" />
-            <element signature="docComment;method#testClear#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testContains#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testContainsAll#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testRemove#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testRemoveAll#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testSize#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testToArrayList#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testInOrderDFT#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testWriteDot#0;class#BSTtester#0" expanded="false" />
-            <element signature="e#19650#19754#0" expanded="false" />
+            <element signature="docComment;class#SpellCheckUtil#0" expanded="false" />
+            <element signature="docComment;method#SpellCheckUtil#0;class#SpellCheckUtil#0" expanded="false" />
+            <element signature="docComment;method#SpellCheckUtil#1;class#SpellCheckUtil#0" expanded="false" />
+            <element signature="docComment;method#SpellCheckUtil#2;class#SpellCheckUtil#0" expanded="false" />
+            <element signature="docComment;method#addToDictionary#0;class#SpellCheckUtil#0" expanded="false" />
+            <element signature="docComment;method#removeFromDictionary#0;class#SpellCheckUtil#0" expanded="false" />
+            <element signature="docComment;method#spellCheck#0;class#SpellCheckUtil#0" expanded="false" />
+            <element signature="docComment;method#buildDictionary#0;class#SpellCheckUtil#0" expanded="false" />
+            <element signature="docComment;method#readFromFile#0;class#SpellCheckUtil#0" expanded="false" />
           </folding>
         </state>
       </provider>
