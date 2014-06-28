@@ -14,12 +14,12 @@ public class BSTtimer {
 
     BSTtimer() {
 //        BSTAscendingAdd();
-//        BSTRandomAdd();
-        TreeSetRandomAdd();
+        BSTRandomAdd();
+//        TreeSetRandomAdd();
     }
 
     void BSTAscendingAdd() {
-        int timesToLoop = 100;  // higher number causes more accurate average time
+        int timesToLoop = 50;  // higher number causes more accurate average time
         int maxSize = 100000;   // determines right boundary of plot
         Random rand = new Random(); // used to create random lists
 
@@ -66,7 +66,7 @@ public class BSTtimer {
     }
 
     void BSTRandomAdd() {
-        int timesToLoop = 1000;  // higher number causes more accurate average time
+        int timesToLoop = 50;  // higher number causes more accurate average time
         int maxSize = 100000;   // determines right boundary of plot
         Random rand = new Random(); // used to create random lists
 
@@ -74,11 +74,10 @@ public class BSTtimer {
         System.out.println("MaxSize = " + maxSize + ", loops = " + timesToLoop + "\n\nsize\ttime\tavg");
 
         // testing loop
-        for (int i = 0; i <= maxSize; i += 5000) {   // each of these loops accounts for a different input size 'N'
+        for (int i = 1000; i <= maxSize; i += 1000) {   // each of these loops accounts for a different input size 'N'
 
             // declare necessary variables and lists for testing
             // allows i to equal 1000 then 5000 and then even 5000 increments after.
-            if (i == 0) i = 1000;
 
             ArrayList<Integer> intList = new ArrayList<Integer>(i);
             BinarySearchTree<Integer> randListBST = new BinarySearchTree<Integer>();
@@ -128,13 +127,11 @@ public class BSTtimer {
             double totalTime = ((midTime - startTime) - (endTime - midTime)) / timesToLoop;
             double avgTime = totalTime / i;
             System.out.println(i + "\t" + totalTime + "\t" + avgTime);     // print results
-
-            if (i == 1000) i = 0;
         }
     }
 
     void TreeSetRandomAdd() {
-        int timesToLoop = 1000;  // higher number causes more accurate average time
+        int timesToLoop = 50;  // higher number causes more accurate average time
         int maxSize = 100000;   // determines right boundary of plot
         Random rand = new Random(); // used to create random lists
 
@@ -142,11 +139,10 @@ public class BSTtimer {
         System.out.println("MaxSize = " + maxSize + ", loops = " + timesToLoop + "\n\nsize\ttime\tavg");
 
         // testing loop
-        for (int i = 0; i <= maxSize; i += 5000) {   // each of these loops accounts for a different input size 'N'
+        for (int i = 1000; i <= maxSize; i += 1000) {   // each of these loops accounts for a different input size 'N'
 
             // declare necessary variables and lists for testing
             // allows i to equal 1000 then 5000 and then even 5000 increments after.
-            if (i == 0) i = 1000;
 
             ArrayList<Integer> intList = new ArrayList<Integer>(i);
             ArrayList<Integer> tempList = new ArrayList<Integer>(i);
@@ -197,8 +193,6 @@ public class BSTtimer {
             double totalTime = ((midTime - startTime) - (endTime - midTime)) / timesToLoop;
             double avgTime = totalTime / i;
             System.out.println(i + "\t" + totalTime + "\t" + avgTime);     // print results
-
-            if (i == 1000) i = 0;
         }
     }
 
