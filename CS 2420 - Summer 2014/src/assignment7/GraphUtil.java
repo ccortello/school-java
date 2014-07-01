@@ -2,6 +2,7 @@ package assignment7;
 
 import java.io.File;
 import java.io.PrintWriter;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
@@ -26,16 +27,56 @@ public class GraphUtil {
      * (See Lecture 18 for the algorithm.)
      *
      * @param graph - The graph object to be traversed
-     * @param start - Name of the starting vertex in the path
-     * @param goal  - Name of the ending vertex in the path
+     * @param startName - Name of the starting vertex in the path
+     * @param goalName  - Name of the ending vertex in the path
      * @return a list of the vertices that make up a path path from the vertex with the name startName (inclusive)
      * to the ending vertex with the name goalName (inclusive)
      * @throws UnsupportedOperationException if there are no vertices in the graph with the names startName or goalName
      */
     public static List<String> depthFirstSearch(Graph graph, String startName, String goalName) {
-        // TODO
+        // check that the correct vertices exist in the graph. If not, throw an exception
+        if (!graph.getVertices().containsKey(startName))
+            throw new UnsupportedOperationException("DFS: the start vertex doesn't exist");
+        if (!graph.getVertices().containsKey(goalName))
+            throw new UnsupportedOperationException("DFS: the goal vertex doesn't exist");
 
-        return null;
+        // use this method as a driver method
+        Vertex currentVertex = DFS(graph, startName, goalName);
+
+        // create path list and return it
+        LinkedList<String> path = new LinkedList<String>();
+        while (currentVertex.getCameFrom() != null) {
+            path.addFirst(currentVertex.getName());
+            currentVertex = currentVertex.getCameFrom();
+        }
+        return path;
+    }
+
+    /**
+     * The recursive method for depthFirstSearch
+     *
+     * @param graph - The graph object to be traversed
+     * @param currentName - Name of the current vertex in the path
+     * @param goalName  - Name of the ending vertex in the path
+     * @return a list of the vertices that make up a path path from the vertex with the name startName (inclusive)
+     * to the ending vertex with the name goalName (inclusive)
+     */
+    private static Vertex DFS(Graph graph, String currentName, String goalName) {
+        // check for completion
+        if (currentName.equals(goalName))
+            return graph.getVertices().get(currentName);
+
+        // get the edges connected to this node to iterate through
+        Vertex currentVertex = graph.getVertices().get(currentName);
+        LinkedList<Edge> currentNeighbors = currentVertex.getEdges();
+
+        // set this vertex as visited to prevent cycling
+        currentVertex.setVisited(true);
+
+        // for each neighbor rerun the recursion at that neighbor
+        for (Edge currentNeighbor : currentNeighbors) {
+
+        }
     }
 
     /**
