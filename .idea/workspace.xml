@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="timing implementation">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtimer.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtimer.java" />
+    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="finished assignment6!!">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/Edge.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/Graph.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphTool.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/Vertex.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/package-info.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -81,17 +86,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BSTtimer.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BSTtimer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtimer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.1214954" vertical-offset="1350" max-vertical-offset="2610">
-              <caret line="69" column="30" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="4471" max-vertical-offset="4777">
+              <caret line="263" column="7" selection-start-line="263" selection-start-column="7" selection-end-line="263" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BSTtester.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1207">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
-                <element signature="docComment;class#BSTtimer#0" expanded="false" />
-                <element signature="e#313#337#0" expanded="false" />
-                <element signature="e#3217#3279#0" expanded="false" />
-                <element signature="e#5597#5627#0" expanded="false" />
+                <element signature="e#357#365#0" expanded="true" />
+                <element signature="e#504#512#0" expanded="true" />
+                <element signature="e#647#655#0" expanded="true" />
+                <element signature="docComment;method#setUp#0;class#BSTtester#0" expanded="false" />
+                <element signature="docComment;method#testAdd#0;class#BSTtester#0" expanded="false" />
+                <element signature="docComment;method#testAddAll#0;class#BSTtester#0" expanded="false" />
+                <element signature="docComment;method#testClear#0;class#BSTtester#0" expanded="false" />
+                <element signature="docComment;method#testContains#0;class#BSTtester#0" expanded="false" />
+                <element signature="docComment;method#testContainsAll#0;class#BSTtester#0" expanded="false" />
+                <element signature="method#testIsEmpty#0;class#BSTtester#0" expanded="true" />
+                <element signature="docComment;method#testRemove#0;class#BSTtester#0" expanded="false" />
+                <element signature="e#8564#8572#0" expanded="true" />
+                <element signature="docComment;method#testRemoveAll#0;class#BSTtester#0" expanded="false" />
+                <element signature="e#10039#10047#0" expanded="true" />
+                <element signature="docComment;method#testSize#0;class#BSTtester#0" expanded="false" />
+                <element signature="docComment;method#testToArrayList#0;class#BSTtester#0" expanded="false" />
+                <element signature="e#13007#13015#0" expanded="true" />
+                <element signature="e#13503#13511#0" expanded="true" />
+                <element signature="docComment;method#testInOrderDFT#0;class#BSTtester#0" expanded="false" />
+                <element signature="e#16885#16893#0" expanded="true" />
+                <element signature="e#17459#17467#0" expanded="true" />
+                <element signature="e#18035#18043#0" expanded="true" />
+                <element signature="docComment;method#testWriteDot#0;class#BSTtester#0" expanded="false" />
+                <element signature="e#18543#18551#0" expanded="true" />
+                <element signature="e#18982#18990#0" expanded="true" />
+                <element signature="e#19555#19564#0" expanded="true" />
+                <element signature="e#19657#19761#0" expanded="false" />
+                <element signature="e#20660#20669#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GraphUtil.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.29565218" vertical-offset="0" max-vertical-offset="1870">
+              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -99,7 +148,7 @@
       <file leaf-file-name="BinarySearchTree.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BinarySearchTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3720" max-vertical-offset="24720">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2108" max-vertical-offset="14008">
               <caret line="124" column="39" selection-start-line="124" selection-start-column="39" selection-end-line="124" selection-end-column="39" />
               <folding />
             </state>
@@ -128,7 +177,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/Test.txt" />
         <option value="$PROJECT_DIR$/Yankee output.txt" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/Yankee.txt" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanCompressor.java" />
@@ -175,10 +223,11 @@
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTimer_2.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/testBinarySearchTree.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BinarySearchTree.java" />
-        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/SpellCheckUtil.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/SpellChecker.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtimer.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtil.java" />
       </list>
     </option>
   </component>
@@ -186,10 +235,10 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1932" />
-    <option name="height" value="1050" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -219,12 +268,54 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
+      <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CS 2420 - Summer 2014" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CS 2420 - Summer 2014" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CS 2420 - Summer 2014" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assignment7" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -281,54 +372,12 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane">
+      <pane id="PackagesPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CS 2420 - Summer 2014" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CS 2420 - Summer 2014" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CS 2420 - Summer 2014" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assignment6" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -401,18 +450,18 @@
       <recent name="homework07" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment7" />
       <recent name="C:\Users\Casey\Documents\GitHub_Clones\school-java\CS 2420 - Summer 2014\src\assignment6" />
       <recent name="C:\Users\Casey\Documents\IntelliJ_Projects\school-java\CS 2420 - Summer 2014\src\assignment5" />
       <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment3" />
       <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment2" />
-      <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\examples" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment6\Cody's Analysis" />
+      <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment6" />
       <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment2" />
       <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014" />
       <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src" />
-      <recent name="C:\Users\Cody\workspace\CS 2420 - Spring 2014\src\lab09" />
-      <recent name="C:\Users\Cody\workspace\CS 2420 - Spring 2014\src\homework08" />
     </key>
   </component>
   <component name="RunManager" selected="Application.BSTtimer">
@@ -519,6 +568,16 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -546,6 +605,23 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -587,6 +663,25 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -643,6 +738,41 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
       <method />
     </configuration>
     <configuration default="false" name="testBinarySearchTree" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
@@ -793,6 +923,8 @@
       <workItem from="1402495988863" duration="2611000" />
       <workItem from="1403152972415" duration="2862000" />
       <workItem from="1403808784363" duration="1005000" />
+      <workItem from="1403928081235" duration="4917000" />
+      <workItem from="1404240149456" duration="640000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -1734,11 +1866,35 @@
       <created>1403924128357</created>
       <updated>1403924128357</updated>
     </task>
-    <option name="localTasksCounter" value="236" />
+    <task id="LOCAL-00236" summary="timing implementation">
+      <created>1403928993037</created>
+      <updated>1403928993037</updated>
+    </task>
+    <task id="LOCAL-00237" summary="timing implementation">
+      <created>1403929359466</created>
+      <updated>1403929359466</updated>
+    </task>
+    <task id="LOCAL-00238" summary="timing implementation">
+      <created>1403931007760</created>
+      <updated>1403931007760</updated>
+    </task>
+    <task id="LOCAL-00239" summary="finished assignment6!!">
+      <created>1403933341541</created>
+      <updated>1403933341541</updated>
+    </task>
+    <task id="LOCAL-00240" summary="finished assignment6!!">
+      <created>1403933574188</created>
+      <updated>1403933574188</updated>
+    </task>
+    <task id="LOCAL-00241" summary="finished assignment6!!">
+      <created>1403933611796</created>
+      <updated>1403933611796</updated>
+    </task>
+    <option name="localTasksCounter" value="242" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="278540000" />
+    <option name="totallyTimeSpent" value="284097000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1761,8 +1917,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1932" height="1050" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5140625" order="8" side_tool="false" content_ui="tabs" />
@@ -1770,22 +1926,22 @@
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.14166667" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46624473" sideWeight="0.37395832" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40133038" sideWeight="0.28916308" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26940134" sideWeight="0.36951873" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26898733" sideWeight="0.36927083" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31374723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24892704" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1416309" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38691795" sideWeight="0.6255208" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14114584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38607594" sideWeight="0.63072914" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1839,7 +1995,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="different addFirst Test" />
     <MESSAGE value="changes" />
     <MESSAGE value="made prob3a seeded" />
     <MESSAGE value="initialized problem3b1 and problem3bii (headers)" />
@@ -1864,7 +2019,8 @@
     <MESSAGE value="implemented all necessary methods in SpellCheckUtil" />
     <MESSAGE value="implemented some TODO's in SpellChecker" />
     <MESSAGE value="timing implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="timing implementation" />
+    <MESSAGE value="finished assignment6!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished assignment6!!" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1873,7 +2029,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="23" />
+      <option name="time" value="24" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1881,20 +2037,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanCompressor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3814" max-vertical-offset="7794">
-          <caret line="291" column="13" selection-start-line="291" selection-start-column="13" selection-end-line="292" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment1/Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18695652" vertical-offset="202" max-vertical-offset="1122">
@@ -2177,7 +2319,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
           <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2185,43 +2326,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1440">
           <caret line="67" column="4" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
-          <folding>
-            <element signature="docComment;class#SortedSet#0" expanded="false" />
-            <element signature="docComment;method#add#0;class#SortedSet#0" expanded="false" />
-            <element signature="docComment;method#addAll#0;class#SortedSet#0" expanded="false" />
-            <element signature="docComment;method#clear#0;class#SortedSet#0" expanded="false" />
-            <element signature="docComment;method#contains#0;class#SortedSet#0" expanded="false" />
-            <element signature="docComment;method#containsAll#0;class#SortedSet#0" expanded="false" />
-            <element signature="docComment;method#isEmpty#0;class#SortedSet#0" expanded="false" />
-            <element signature="docComment;method#remove#0;class#SortedSet#0" expanded="false" />
-            <element signature="docComment;method#removeAll#0;class#SortedSet#0" expanded="false" />
-            <element signature="docComment;method#size#0;class#SortedSet#0" expanded="false" />
-            <element signature="docComment;method#toArrayList#0;class#SortedSet#0" expanded="false" />
-            <element signature="docComment;method#first#0;class#SortedSet#0" expanded="false" />
-            <element signature="docComment;method#last#0;class#SortedSet#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3668225" vertical-offset="0" max-vertical-offset="2100">
-          <caret line="232" column="60" selection-start-line="232" selection-start-column="60" selection-end-line="232" selection-end-column="60" />
-          <folding>
-            <element signature="docComment;method#setUp#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testAdd#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testAddAll#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testClear#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testContains#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testContainsAll#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testRemove#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testRemoveAll#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testSize#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testToArrayList#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testInOrderDFT#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testWriteDot#0;class#BSTtester#0" expanded="false" />
-            <element signature="e#19657#19761#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2229,11 +2333,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27617952" vertical-offset="0" max-vertical-offset="1680">
           <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-          <folding>
-            <element signature="docComment;class#SpellChecker#0" expanded="false" />
-            <element signature="e#909#968#0" expanded="false" />
-            <element signature="e#1264#1321#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2241,17 +2340,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5178366" vertical-offset="270" max-vertical-offset="1140">
           <caret line="68" column="54" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
-          <folding>
-            <element signature="docComment;class#SpellCheckUtil#0" expanded="false" />
-            <element signature="docComment;method#SpellCheckUtil#0;class#SpellCheckUtil#0" expanded="false" />
-            <element signature="docComment;method#SpellCheckUtil#1;class#SpellCheckUtil#0" expanded="false" />
-            <element signature="docComment;method#SpellCheckUtil#2;class#SpellCheckUtil#0" expanded="false" />
-            <element signature="docComment;method#addToDictionary#0;class#SpellCheckUtil#0" expanded="false" />
-            <element signature="docComment;method#removeFromDictionary#0;class#SpellCheckUtil#0" expanded="false" />
-            <element signature="docComment;method#spellCheck#0;class#SpellCheckUtil#0" expanded="false" />
-            <element signature="docComment;method#buildDictionary#0;class#SpellCheckUtil#0" expanded="false" />
-            <element signature="docComment;method#readFromFile#0;class#SpellCheckUtil#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2259,10 +2347,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7196262" vertical-offset="4544" max-vertical-offset="5400">
           <caret line="363" column="5" selection-start-line="356" selection-start-column="4" selection-end-line="363" selection-end-column="5" />
-          <folding>
-            <element signature="method#generateAverageCase#0;class#RecursiveSortingUtility#0" expanded="false" />
-            <element signature="method#swapElements#0;class#RecursiveSortingUtility#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2278,32 +2362,67 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1501" max-vertical-offset="2790">
           <caret line="491" column="55" selection-start-line="491" selection-start-column="55" selection-end-line="491" selection-end-column="55" />
-          <folding>
-            <element signature="docComment;class#LinkedStructureTimer#0" expanded="false" />
-            <element signature="docComment;method#main#0;class#LinkedStructureTimer#0" expanded="false" />
-            <element signature="e#1184#1210#0" expanded="false" />
-            <element signature="e#1259#1285#0" expanded="false" />
-            <element signature="docComment;method#addFirstTimer#0;class#LinkedStructureTimer#0" expanded="false" />
-            <element signature="e#2137#2199#0" expanded="false" />
-            <element signature="docComment;method#addTimer#0;class#LinkedStructureTimer#0" expanded="false" />
-            <element signature="e#5040#5102#0" expanded="false" />
-            <element signature="docComment;method#linkedGetTimer#0;class#LinkedStructureTimer#0" expanded="false" />
-            <element signature="docComment;method#arrayGetTimer#0;class#LinkedStructureTimer#0" expanded="false" />
-            <element signature="e#20006#20068#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtimer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1214954" vertical-offset="1350" max-vertical-offset="2610">
-          <caret line="69" column="30" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+          <caret line="263" column="7" selection-start-line="263" selection-start-column="7" selection-end-line="263" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.055434782" vertical-offset="0" max-vertical-offset="920">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1207">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <element signature="docComment;class#BSTtimer#0" expanded="false" />
-            <element signature="e#313#337#0" expanded="false" />
-            <element signature="e#3217#3279#0" expanded="false" />
-            <element signature="e#5597#5627#0" expanded="false" />
+            <element signature="e#357#365#0" expanded="true" />
+            <element signature="e#504#512#0" expanded="true" />
+            <element signature="e#647#655#0" expanded="true" />
+            <element signature="docComment;method#setUp#0;class#BSTtester#0" expanded="false" />
+            <element signature="docComment;method#testAdd#0;class#BSTtester#0" expanded="false" />
+            <element signature="docComment;method#testAddAll#0;class#BSTtester#0" expanded="false" />
+            <element signature="docComment;method#testClear#0;class#BSTtester#0" expanded="false" />
+            <element signature="docComment;method#testContains#0;class#BSTtester#0" expanded="false" />
+            <element signature="docComment;method#testContainsAll#0;class#BSTtester#0" expanded="false" />
+            <element signature="method#testIsEmpty#0;class#BSTtester#0" expanded="true" />
+            <element signature="docComment;method#testRemove#0;class#BSTtester#0" expanded="false" />
+            <element signature="e#8564#8572#0" expanded="true" />
+            <element signature="docComment;method#testRemoveAll#0;class#BSTtester#0" expanded="false" />
+            <element signature="e#10039#10047#0" expanded="true" />
+            <element signature="docComment;method#testSize#0;class#BSTtester#0" expanded="false" />
+            <element signature="docComment;method#testToArrayList#0;class#BSTtester#0" expanded="false" />
+            <element signature="e#13007#13015#0" expanded="true" />
+            <element signature="e#13503#13511#0" expanded="true" />
+            <element signature="docComment;method#testInOrderDFT#0;class#BSTtester#0" expanded="false" />
+            <element signature="e#16885#16893#0" expanded="true" />
+            <element signature="e#17459#17467#0" expanded="true" />
+            <element signature="e#18035#18043#0" expanded="true" />
+            <element signature="docComment;method#testWriteDot#0;class#BSTtester#0" expanded="false" />
+            <element signature="e#18543#18551#0" expanded="true" />
+            <element signature="e#18982#18990#0" expanded="true" />
+            <element signature="e#19555#19564#0" expanded="true" />
+            <element signature="e#19657#19761#0" expanded="false" />
+            <element signature="e#20660#20669#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29565218" vertical-offset="0" max-vertical-offset="1870">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
