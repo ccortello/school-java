@@ -75,7 +75,11 @@ public class GraphUtil {
 
         // for each neighbor rerun the recursion at that neighbor
         for (Edge currentNeighbor : currentNeighbors) {
-
+            Vertex nextVertex = currentNeighbor.getOtherVertex();
+            if (nextVertex.getVisited()) // if a node has been visited skip it
+                continue;
+            nextVertex.setCameFrom(currentVertex);
+            DFS(graph, nextVertex.getName(), goalName);
         }
     }
 

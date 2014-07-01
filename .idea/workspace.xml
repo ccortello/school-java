@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="dowloaded files for assignent7">
+    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="started DFS">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtil.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -84,12 +84,12 @@
       <file leaf-file-name="GraphUtil.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.110869564" vertical-offset="816" max-vertical-offset="5338">
-              <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.60978264" vertical-offset="816" max-vertical-offset="5457">
+              <caret line="81" column="55" selection-start-line="81" selection-start-column="55" selection-end-line="81" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2154#2162#0" expanded="true" />
-                <element signature="method#DFS#0;class#GraphUtil#0" expanded="true" />
+                <element signature="method#depthFirstSearch#0;class#GraphUtil#0" expanded="true" />
+                <element signature="e#2237#2245#0" expanded="true" />
                 <element signature="method#breadthFirstSearch#0;class#GraphUtil#0" expanded="true" />
                 <element signature="method#dijkstrasShortestPath#0;class#GraphUtil#0" expanded="true" />
                 <element signature="method#topologicalSort#0;class#GraphUtil#0" expanded="true" />
@@ -870,7 +870,7 @@
       <workItem from="1403808784363" duration="1005000" />
       <workItem from="1403928081235" duration="4917000" />
       <workItem from="1404240149456" duration="678000" />
-      <workItem from="1404240947185" duration="2263000" />
+      <workItem from="1404240947185" duration="2449000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -1840,11 +1840,15 @@
       <created>1404240824809</created>
       <updated>1404240824809</updated>
     </task>
-    <option name="localTasksCounter" value="243" />
+    <task id="LOCAL-00243" summary="started DFS">
+      <created>1404243231370</created>
+      <updated>1404243231370</updated>
+    </task>
+    <option name="localTasksCounter" value="244" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="286398000" />
+    <option name="totallyTimeSpent" value="286584000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1884,6 +1888,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40133038" sideWeight="0.28916308" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26898733" sideWeight="0.36927083" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31374723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24892704" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1896,7 +1901,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32705098" sideWeight="0.34438503" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26898733" sideWeight="0.36927083" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1945,7 +1949,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="made prob3a seeded" />
     <MESSAGE value="initialized problem3b1 and problem3bii (headers)" />
     <MESSAGE value="working on 3bi and 3bii" />
     <MESSAGE value="removed timesToLoop from prob3a" />
@@ -1970,7 +1973,8 @@
     <MESSAGE value="timing implementation" />
     <MESSAGE value="finished assignment6!!" />
     <MESSAGE value="dowloaded files for assignent7" />
-    <option name="LAST_COMMIT_MESSAGE" value="dowloaded files for assignent7" />
+    <MESSAGE value="started DFS" />
+    <option name="LAST_COMMIT_MESSAGE" value="started DFS" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -2363,12 +2367,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.110869564" vertical-offset="816" max-vertical-offset="5338">
-          <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.60978264" vertical-offset="816" max-vertical-offset="5457">
+          <caret line="81" column="55" selection-start-line="81" selection-start-column="55" selection-end-line="81" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2154#2162#0" expanded="true" />
-            <element signature="method#DFS#0;class#GraphUtil#0" expanded="true" />
+            <element signature="method#depthFirstSearch#0;class#GraphUtil#0" expanded="true" />
+            <element signature="e#2237#2245#0" expanded="true" />
             <element signature="method#breadthFirstSearch#0;class#GraphUtil#0" expanded="true" />
             <element signature="method#dijkstrasShortestPath#0;class#GraphUtil#0" expanded="true" />
             <element signature="method#topologicalSort#0;class#GraphUtil#0" expanded="true" />
