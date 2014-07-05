@@ -289,14 +289,27 @@ public class GraphUtil {
                 Edge neighborEdge = edgeIterator.next();
                 Vertex neighborVertex = neighborEdge.getOtherVertex();
 
-                // set the running cost and cameFrom iff the newfound path to that vertex is shorter
+                // set the running cost and cameFrom iff the vertex hasn't been visited or the new path to that vertex is shorter
                 int newCost = currentVertex.getCostFromStart() + neighborEdge.getWeight();
-                if (neighborVertex.getCostFromStart() > newCost) {
-
+                if (!neighborVertex.getVisited() || neighborVertex.getCostFromStart() > newCost) {
+                    neighborVertex.setCostFromStart(newCost);
+                    neighborVertex.setVisited(true);
+                    neighborVertex.setCameFrom(currentVertex);
+                    if (queue.contains(neighborVertex)) // update the vertex if it's in the queue
+                        queue.remove(neighborVertex);
+                    queue.add(neighborVertex);
                 }
             }
         }
-
+        // construct the paths from the goal vertex backwards
+        LinkedList<String> path = new LinkedList<String>();
+        path.add(goalName);
+        Vertex currentVertex = vertices.get(goalName);
+        while (currentVertex.getCameFrom() != null) {
+            path.addFirst(currentVertex.getCameFrom().getName());
+            currentVertex = currentVertex.getCameFrom();
+        }
+        return path;
     }
 
     /**
