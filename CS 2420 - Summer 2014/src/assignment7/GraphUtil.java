@@ -114,7 +114,7 @@ public class GraphUtil {
         depthFirstSearchRecursive(startVertex, goalVertex);
 
         //after recursive call, if goal vertex has not been visited, state no path found and return empty list
-        if (goalVertex.getVisited() == false) {
+        if (!goalVertex.getVisited()) {
             System.out.println("There was no path found from the vertex " + startName + " to the vertex " + goalName + "!");
             return path;
         }
@@ -124,7 +124,7 @@ public class GraphUtil {
 
         // first add the goalVertex before looping
         reversePath.add(goalVertex.getName());
-        // continuos loop until goalVertex equal startVertex
+        // continuous loop until goalVertex equal startVertex
         while (! goalVertex.equals(startVertex)) {
             reversePath.addLast(goalVertex.getCameFrom().getName());
             goalVertex = goalVertex.getCameFrom();
@@ -269,10 +269,34 @@ public class GraphUtil {
      * @throws UnsupportedOperationException if the graph is not weighted, or there are no vertices in the graph
      *                                       with the names startName or goalName
      */
-    public static List<String> dijkstrasShortestPath(Graph graph, String startName, String goalName) {
-        // TODO
+    public static List<String> dijkstrasShortestPath(Graph graph, String startName, String goalName) throws UnsupportedOperationException {
+        // make sure the graph given is a supported type (positive weighted)
+        if (!graph.getWeighted())
+            throw new UnsupportedOperationException("Graph needs to be weighted for Dijkstra's algorithm!");
+        // implement the algorithm with a priority queue
+        HashMap<String, Vertex> vertices = graph.getVertices();
+        PriorityQueue<Vertex> queue = new PriorityQueue<Vertex>();
+        Vertex startVertex = vertices.get(startName);
+        startVertex.setCostFromStart(0);
+        queue.add(startVertex);
+        while (queue.size() != 0) {
+            Vertex currentVertex = queue.poll();
+            currentVertex.setVisited(true);
 
-        return null;
+            // iterate through neighbor vertices and set fields appropriately
+            Iterator<Edge> edgeIterator = currentVertex.edges();
+            while (edgeIterator.hasNext()) {
+                Edge neighborEdge = edgeIterator.next();
+                Vertex neighborVertex = neighborEdge.getOtherVertex();
+
+                // set the running cost and cameFrom iff the newfound path to that vertex is shorter
+                int newCost = currentVertex.getCostFromStart() + neighborEdge.getWeight();
+                if (neighborVertex.getCostFromStart() > newCost) {
+
+                }
+            }
+        }
+
     }
 
     /**
