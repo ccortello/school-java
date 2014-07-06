@@ -15,7 +15,7 @@ public class GraphUtilTimer {
 
     GraphUtilTimer() {
         BFStimer();
-//        DFStimer();
+        DFStimer();
 //        dijkstrasTimer();
 //        topologicalSortTimer();
     }
@@ -164,6 +164,92 @@ public class GraphUtilTimer {
             System.out.println(i + "\t" + totalTime + "\t" + avgTime);     // print results
 
             if (i == 100) i = 0;
+        }
+    }
+
+    void dijkstrasTimer() {
+        int timesToLoop = 500;  // higher number causes more accurate average time
+        int[] sizes = new int[]{5, 10, 20, 50, 100, 200, 500, 1000};
+        Random rand = new Random(656794684984L); // used to create random lists
+
+        //print info for the max input size and the number of times looping, as well as column headers for results
+        System.out.println("Dijkstra's, loops = " + timesToLoop + "\n\nsize\ttime\tavg");
+
+        // testing loop
+        for (int size : sizes) {   // each of these loops accounts for a different input size 'N'
+
+//            BinarySearchTree<Integer> randListBST;
+            long startTime, midTime, endTime;
+            Graph testGraph;
+
+            // let a while loop run for a full second to get things spooled up.
+            startTime = System.nanoTime();
+            while (System.nanoTime() - startTime < 1e9) { //empty block
+            }
+
+            // startTime and testing start here.
+            startTime = System.nanoTime();
+            for (int j = 0; j < timesToLoop; j++) {
+                try {
+                    testGraph = GraphUtil.buildGraphFromDotFile(size + ",2dacw.dot");
+                    GraphUtil.dijkstrasShortestPath(testGraph, "v" + (rand.nextInt(size)), "v" + (rand.nextInt(size)));
+                } catch (Exception e) {
+                }
+            }
+
+            midTime = System.nanoTime();
+            for (int j = 0; j < timesToLoop; j++) {
+                testGraph = GraphUtil.buildGraphFromDotFile(size + ",2dacw.dot");
+            }
+            endTime = System.nanoTime();
+
+            // subtract the over head and determine average time for 'i' calls to get.
+            double totalTime = ((midTime - startTime) - (endTime - midTime)) / timesToLoop;
+            double avgTime = totalTime / 10;
+            System.out.println(size + "\t" + totalTime + "\t" + avgTime);     // print results
+        }
+    }
+
+    void topologicalSortTimer() {
+        int timesToLoop = 500;  // higher number causes more accurate average time
+        int[] sizes = new int[]{5, 10, 20, 50, 100, 200, 500, 1000};
+        Random rand = new Random(656794684984L); // used to create random lists
+
+        //print info for the max input size and the number of times looping, as well as column headers for results
+        System.out.println("Topological sort, loops = " + timesToLoop + "\n\nsize\ttime\tavg");
+
+        // testing loop
+        for (int size : sizes) {   // each of these loops accounts for a different input size 'N'
+
+//            BinarySearchTree<Integer> randListBST;
+            long startTime, midTime, endTime;
+            Graph testGraph;
+
+            // let a while loop run for a full second to get things spooled up.
+            startTime = System.nanoTime();
+            while (System.nanoTime() - startTime < 1e9) { //empty block
+            }
+
+            // startTime and testing start here.
+            startTime = System.nanoTime();
+            for (int j = 0; j < timesToLoop; j++) {
+                try {
+                    testGraph = GraphUtil.buildGraphFromDotFile(size + ",2dacw.dot");
+                    GraphUtil.topologicalSort(testGraph);
+                } catch (Exception e) {
+                }
+            }
+
+            midTime = System.nanoTime();
+            for (int j = 0; j < timesToLoop; j++) {
+                testGraph = GraphUtil.buildGraphFromDotFile(size + ",2dacw.dot");
+            }
+            endTime = System.nanoTime();
+
+            // subtract the over head and determine average time for 'i' calls to get.
+            double totalTime = ((midTime - startTime) - (endTime - midTime)) / timesToLoop;
+            double avgTime = totalTime / 10;
+            System.out.println(size + "\t" + totalTime + "\t" + avgTime);     // print results
         }
     }
 }
