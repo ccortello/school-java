@@ -19,7 +19,7 @@ public class GraphUtilTimer {
     }
 
     void BFStimer() {
-        int timesToLoop = 50;  // higher number causes more accurate average time
+        int timesToLoop = 5000;  // higher number causes more accurate average time
         int[] sizes = new int[]{5, 10, 20, 50, 100, 200, 500};
         Random rand = new Random(656794684984L); // used to create random lists
 
@@ -28,12 +28,10 @@ public class GraphUtilTimer {
 
         // testing loop
         for (int size : sizes) {   // each of these loops accounts for a different input size 'N'
-            Graph testGraph;
 
 //            BinarySearchTree<Integer> randListBST;
             long startTime, midTime, endTime;
-            long seed = 6565456165L;
-            rand.setSeed(seed);
+            Graph testGraph;
 
             // let a while loop run for a full second to get things spooled up.
             startTime = System.nanoTime();
@@ -42,14 +40,12 @@ public class GraphUtilTimer {
 
             // startTime and testing start here.
             startTime = System.nanoTime();
-            rand.setSeed(seed);
             for (int j = 0; j < timesToLoop; j++) {
                 testGraph = GraphUtil.buildGraphFromDotFile(size + ",2udacuw.dot");
                 GraphUtil.breadthFirstSearch(testGraph, "v0", "v" + (size - 1));
             }
 
             midTime = System.nanoTime();
-            rand.setSeed(seed);
             for (int j = 0; j < timesToLoop; j++) {
                 testGraph = GraphUtil.buildGraphFromDotFile(size + ",2udacuw.dot");
             }
