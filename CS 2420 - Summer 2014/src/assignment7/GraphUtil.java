@@ -325,12 +325,37 @@ public class GraphUtil {
         if (! graph.getDirected() || isCyclic(graph))
             throw new UnsupportedOperationException("You cannot perform topological sort on an undirected or cyclic graph!");
 
-        //get copy of HashMap to perform topologicalSort, this does not change original graphs HashMap values.
+        // get copy of HashMap to perform topologicalSort, this does not change original graphs HashMap values.
         HashMap<String,Vertex> map = new HashMap<String,Vertex>(graph.getVertices());
+        // Collection of vertices to sort through
+        Collection<Vertex> vertices = map.values();
 
+        // queue to traverse through vertices with different levels of inDegree value
+        Queue<Vertex> Q = new LinkedList<Vertex>();
+        // ArrayList to hold sorted vertex names, size is initialized to amount of vertices.
+        ArrayList<String> sortedNames = new ArrayList<String>(vertices.size());
 
+        // enque the first vertices with inDegree of 0 to Queue.
+        for (Vertex vertex : vertices)
+            if (vertex.getInDegree() == 0)
+                Q.add(vertex);
 
-        return null;
+        //most recent vertex removed from the Q
+        Vertex currentVertex;
+        // perform topological sort algorithm until the queue is empty, as shown in lecture 19
+        while (! Q.isEmpty()) {
+            currentVertex = Q.remove();
+            sortedNames.add(currentVertex.getName());
+            LinkedList<Edge> currentEdges = currentVertex.getEdges();
+            // decrement all neighbors inDegree by 1, if any neighbor now has inDegree of 0, enqueue
+            for (Edge e : currentEdges) {
+                e.getOtherVertex().decInDegree();
+                if (e.getOtherVertex().getInDegree() == 0)
+                    Q.add(e.getOtherVertex());
+            }
+        }
+        // topological sort is done and return sortedNames list.
+        return sortedNames;
     }
 
     /**
