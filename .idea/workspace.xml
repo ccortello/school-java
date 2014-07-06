@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="timing sucks">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtil.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtilTester.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtilTester.java" />
+    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="update">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtilTimer.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtilTimer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -83,34 +81,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GraphUtilTimer.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="GraphUtilTimer.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtilTimer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1364" max-vertical-offset="3146">
-              <caret line="62" column="28" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
-              <folding />
+            <state vertical-scroll-proportion="0.17721519" vertical-offset="66" max-vertical-offset="2024">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding>
+                <element signature="docComment;class#GraphUtilTimer#0" expanded="false" />
+                <element signature="e#311#332#0" expanded="false" />
+                <element signature="e#1753#1793#0" expanded="false" />
+                <element signature="e#2913#2965#0" expanded="false" />
+                <element signature="method#BFStimer#0;class#GraphUtilTimer#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GraphUtil.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GraphUtil.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.12850468" vertical-offset="1056" max-vertical-offset="2508">
-              <caret line="345" column="19" selection-start-line="345" selection-start-column="19" selection-end-line="345" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2310" max-vertical-offset="3894">
+              <caret line="173" column="24" selection-start-line="173" selection-start-column="24" selection-end-line="173" selection-end-column="24" />
               <folding>
                 <element signature="docComment;class#GraphUtil#0" expanded="false" />
                 <element signature="docComment;method#depthFirstSearch#0;class#GraphUtil#0" expanded="false" />
+                <element signature="method#depthFirstSearch#0;class#GraphUtil#0" expanded="true" />
                 <element signature="docComment;method#depthFirstSearchRecursive#0;class#GraphUtil#0" expanded="false" />
+                <element signature="method#depthFirstSearchRecursive#0;class#GraphUtil#0" expanded="true" />
                 <element signature="docComment;method#breadthFirstSearch#0;class#GraphUtil#0" expanded="false" />
-                <element signature="class#6609:6641" expanded="false" />
+                <element signature="class#6615:6647" expanded="false" />
                 <element signature="docComment;method#dijkstrasShortestPath#0;class#GraphUtil#0" expanded="false" />
                 <element signature="docComment;method#topologicalSort#0;class#GraphUtil#0" expanded="false" />
                 <element signature="docComment;method#generateGraphInDotFile#0;class#GraphUtil#0" expanded="false" />
                 <element signature="docComment;method#buildGraphFromDotFile#0;class#GraphUtil#0" expanded="false" />
                 <element signature="docComment;method#isCyclic#0;class#GraphUtil#0" expanded="false" />
                 <element signature="docComment;method#hasPath#0;class#GraphUtil#0" expanded="false" />
-                <element signature="class#23694:23726" expanded="false" />
+                <element signature="class#23801:23833" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -129,8 +135,8 @@
       <file leaf-file-name="GraphUtilTester.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtilTester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="1430">
-              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440">
+              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -411,17 +417,17 @@
     <property name="restartRequiresConfirmation" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="junit.framework.TestCase" />
+      <recent name="" />
+      <recent name="groovy.util.GroovyTestCase" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="assignment6" />
       <recent name="assignment4" />
       <recent name="assignment3" />
       <recent name="assignment2" />
       <recent name="homework10" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="junit.framework.TestCase" />
-      <recent name="" />
-      <recent name="groovy.util.GroovyTestCase" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="assignment7" />
@@ -431,8 +437,8 @@
       <recent name="homework08" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Cody\Java\school-java" />
       <recent name="C:\Users\Casey\Documents\GitHub_Clones\school-java\CS 2420 - Summer 2014\src\assignment7" />
+      <recent name="C:\Users\Cody\Java\school-java" />
       <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment7" />
       <recent name="C:\Users\Casey\Documents\GitHub_Clones\school-java\CS 2420 - Summer 2014\src\assignment6" />
       <recent name="C:\Users\Casey\Documents\IntelliJ_Projects\school-java\CS 2420 - Summer 2014\src\assignment5" />
@@ -724,9 +730,9 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.GraphUtilTimer" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.GraphUtilTester.testDepthFirstSearch" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.GraphUtilTester" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.GraphUtilTester.testBreadthFirstSearch" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.GraphUtilTester.testBreadthFirstSearch" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.GraphUtilTester.testDepthFirstSearch" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.GraphUtilTester" />
         <item index="4" class="java.lang.String" itemvalue="Application.BSTtimer" />
       </list>
     </recent_temporary>
@@ -1861,7 +1867,15 @@
       <created>1404621284268</created>
       <updated>1404621284268</updated>
     </task>
-    <option name="localTasksCounter" value="254" />
+    <task id="LOCAL-00254" summary="timing sucks">
+      <created>1404659464866</created>
+      <updated>1404659464866</updated>
+    </task>
+    <task id="LOCAL-00255" summary="update">
+      <created>1404667071208</created>
+      <updated>1404667071209</updated>
+    </task>
+    <option name="localTasksCounter" value="256" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1902,12 +1916,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40133038" sideWeight="0.28916308" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2660754" sideWeight="0.36927083" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31374723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24892704" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13957219" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13957219" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41796008" sideWeight="0.52566844" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
@@ -1917,7 +1932,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32705098" sideWeight="0.34438503" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2660754" sideWeight="0.36927083" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1948,7 +1962,6 @@
     <MESSAGE value="changes to writeDotRecursive" />
     <MESSAGE value="added comments" />
     <MESSAGE value="commented writeDot method, added created .dot Files and their graphs. Also, added the .m MATLAB script I used to create the timing plots quickly" />
-    <MESSAGE value="update" />
     <MESSAGE value="implemented all necessary methods in SpellCheckUtil" />
     <MESSAGE value="implemented some TODO's in SpellChecker" />
     <MESSAGE value="timing implementation" />
@@ -1961,7 +1974,8 @@
     <MESSAGE value="added isCyclic( ) and hasPath( ) methods.   isCyclic( ) uses hasPath( ), and isCyclic is used in topologicalSort to throw an error if the graph is cyclic." />
     <MESSAGE value="more timing..." />
     <MESSAGE value="timing sucks" />
-    <option name="LAST_COMMIT_MESSAGE" value="timing sucks" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1988,7 +2002,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="775" max-vertical-offset="1625">
           <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
-          <folding />
+          <folding>
+            <element signature="docComment;class#GraphUtilTimer#0" expanded="false" />
+            <element signature="e#311#332#0" expanded="false" />
+            <element signature="e#1753#1793#0" expanded="false" />
+            <element signature="e#2913#2965#0" expanded="false" />
+            <element signature="method#BFStimer#0;class#GraphUtilTimer#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2344,37 +2364,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtilTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtilTimer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="1738">
-          <caret line="62" column="28" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12850468" vertical-offset="1056" max-vertical-offset="2508">
-          <caret line="345" column="19" selection-start-line="345" selection-start-column="19" selection-end-line="345" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2310" max-vertical-offset="3894">
+          <caret line="173" column="24" selection-start-line="173" selection-start-column="24" selection-end-line="173" selection-end-column="24" />
           <folding>
             <element signature="docComment;class#GraphUtil#0" expanded="false" />
             <element signature="docComment;method#depthFirstSearch#0;class#GraphUtil#0" expanded="false" />
+            <element signature="method#depthFirstSearch#0;class#GraphUtil#0" expanded="true" />
             <element signature="docComment;method#depthFirstSearchRecursive#0;class#GraphUtil#0" expanded="false" />
+            <element signature="method#depthFirstSearchRecursive#0;class#GraphUtil#0" expanded="true" />
             <element signature="docComment;method#breadthFirstSearch#0;class#GraphUtil#0" expanded="false" />
-            <element signature="class#6609:6641" expanded="false" />
+            <element signature="class#6615:6647" expanded="false" />
             <element signature="docComment;method#dijkstrasShortestPath#0;class#GraphUtil#0" expanded="false" />
             <element signature="docComment;method#topologicalSort#0;class#GraphUtil#0" expanded="false" />
             <element signature="docComment;method#generateGraphInDotFile#0;class#GraphUtil#0" expanded="false" />
             <element signature="docComment;method#buildGraphFromDotFile#0;class#GraphUtil#0" expanded="false" />
             <element signature="docComment;method#isCyclic#0;class#GraphUtil#0" expanded="false" />
             <element signature="docComment;method#hasPath#0;class#GraphUtil#0" expanded="false" />
-            <element signature="class#23694:23726" expanded="false" />
+            <element signature="class#23801:23833" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtilTimer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17721519" vertical-offset="66" max-vertical-offset="2024">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#GraphUtilTimer#0" expanded="false" />
+            <element signature="e#311#332#0" expanded="false" />
+            <element signature="e#1753#1793#0" expanded="false" />
+            <element signature="e#2913#2965#0" expanded="false" />
+            <element signature="method#BFStimer#0;class#GraphUtilTimer#0" expanded="true" />
           </folding>
         </state>
       </provider>

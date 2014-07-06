@@ -96,7 +96,7 @@ public class GraphUtil {
         Vertex nextVertex;
 
         //while there are more edges to iterate through & the goal vertex hasn't been visited, call recursive method
-        while (currentEdges.hasNext() && goalVertex.getVisited() == false) {
+        while (currentEdges.hasNext()/* && goalVertex.getVisited() == false*/) {
             //set this edge to next edge that the iterator returns
             nextEdge = currentEdges.next();
             if (nextEdge.getOtherVertex().getVisited() == false) {     //if the edge points to an unvisited vertex,
@@ -137,7 +137,7 @@ public class GraphUtil {
         };
 
         // current vertex, most recently dequeued from list, beginning vertex obtained from map, and neighbor vertex
-        Vertex current, neighbor, start = map.get(startName), goal = map.get(goalName);
+        Vertex current, neighbor, start = map.get(startName), goal = map.get(goalName), finalVertex = map.get(startName);
 
         // set start vertex as visited and enque on to queue
         start.setVisited(true);
@@ -150,7 +150,7 @@ public class GraphUtil {
             current = Q.removeFirst();
             //check if current is equal to goal, if so break from while loop, if not iterate through neighbors
             if (current.equals(goal))
-                break;
+                finalVertex = current;
             // get iterator to traverse neighboring edges
             Iterator<Edge> itr = current.edges();
 
@@ -169,8 +169,8 @@ public class GraphUtil {
 
         /*check if Q emptied and goal was never reached, meaning there was no path from start to goal
         state this and return the empty list.*/
-        if (!current.equals(goal)) {
-            System.out.println("There was no path found from the vertex " + startName + " to the vertex " + goalName + "!");
+        if (! finalVertex.equals(goal)) {
+//            System.out.println("There was no path found from the vertex " + startName + " to the vertex " + goalName + "!");
             return path;
         }
 
@@ -178,11 +178,11 @@ public class GraphUtil {
         LinkedList<String> reversePath = new LinkedList<String>();
 
         // first add the goal before looping
-        reversePath.addFirst(goal.getName());
-        // continuous loop until goal equal startVertex
-        while (!goal.equals(start)) {
-            reversePath.addLast(goal.getCameFrom().getName());
-            goal = goal.getCameFrom();
+        reversePath.addFirst(finalVertex.getName());
+        // continuous loop until finalVertex equals startVertex
+        while (! finalVertex.equals(start)) {
+            reversePath.addLast(finalVertex.getCameFrom().getName());
+            finalVertex = finalVertex.getCameFrom();
         }
 
         // remove last items adding to path
