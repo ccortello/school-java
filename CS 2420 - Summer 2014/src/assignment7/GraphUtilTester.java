@@ -43,7 +43,18 @@ public class GraphUtilTester extends TestCase {
     }
 
     public void testTopologicalSort() throws Exception {
+        // first try it on the school course graph provided on moodle
+        Graph examplegraph7 = GraphUtil.buildGraphFromDotFile("examplegraph7.dot");
+        System.out.println("--------------------------------------------------------------------------");
+        System.out.println("Using topologicalSort on examplegraph6 to produce a sorted list of the it's vertices");
+        System.out.println("\tThe sorted List is: " + GraphUtil.topologicalSort(examplegraph7));
+        System.out.println("--------------------------------------------------------------------------");
 
+        Graph topoTestGraph = GraphUtil.buildGraphFromDotFile("topoTest.dot");
+        System.out.println("--------------------------------------------------------------------------");
+        System.out.println("Using topologicalSort on topoTest graph to produce a sorted list of the it's vertices");
+        System.out.println("\tThe sorted List is: " + GraphUtil.topologicalSort(topoTestGraph));
+        System.out.println("--------------------------------------------------------------------------");
     }
 
     public void testGenerateGraphInDotFile() throws Exception {
