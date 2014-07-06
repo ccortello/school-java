@@ -20,14 +20,15 @@ public class GraphUtilTimer {
 
     void BFStimer() {
         int timesToLoop = 50;  // higher number causes more accurate average time
-        int maxSize = 200;   // determines right boundary of plot
+        int[] sizes = new int[]{5, 10, 20, 50, 100, 200, 500};
         Random rand = new Random(656794684984L); // used to create random lists
 
         //print info for the max input size and the number of times looping, as well as column headers for results
-        System.out.println("MaxSize = " + maxSize + ", loops = " + timesToLoop + "\n\nsize\ttime\tavg");
+        System.out.println("MaxSize = " + sizes[sizes.length - 1] + ", loops = " + timesToLoop + "\n\nsize\ttime\tavg");
 
         // testing loop
-        for (int i = 3; i <= maxSize; i += 10) {   // each of these loops accounts for a different input size 'N'
+        for (int size : sizes) {   // each of these loops accounts for a different input size 'N'
+            Graph testGraph;
 
 //            BinarySearchTree<Integer> randListBST;
             long startTime, midTime, endTime;
@@ -43,27 +44,21 @@ public class GraphUtilTimer {
             startTime = System.nanoTime();
             rand.setSeed(seed);
             for (int j = 0; j < timesToLoop; j++) {
-                GraphUtil.generateGraphInDotFile("testGraph.dot", i, 3, false, true, false);
-                Graph testGraph = GraphUtil.buildGraphFromDotFile("testGraph.dot");
-                for (int k = 0; k < 20; k++) {
-                    GraphUtil.breadthFirstSearch(testGraph, "v0", "v" + (i - 1));
-                }
+                testGraph = GraphUtil.buildGraphFromDotFile(size + ",2udacuw.dot");
+                GraphUtil.breadthFirstSearch(testGraph, "v0", "v" + (size - 1));
             }
 
             midTime = System.nanoTime();
             rand.setSeed(seed);
             for (int j = 0; j < timesToLoop; j++) {
-                GraphUtil.generateGraphInDotFile("testGraph.dot", i, 3, false, true, false);
-                Graph testGraph = GraphUtil.buildGraphFromDotFile("testGraph.dot");
-                for (int k = 0; k < i; k++) {
-                }
+                testGraph = GraphUtil.buildGraphFromDotFile(size + ",2udacuw.dot");
             }
             endTime = System.nanoTime();
 
             // subtract the over head and determine average time for 'i' calls to get.
             double totalTime = ((midTime - startTime) - (endTime - midTime)) / timesToLoop;
-            double avgTime = totalTime / i;
-            System.out.println(i + "\t" + totalTime + "\t" + avgTime);     // print results
+            double avgTime = totalTime / size;
+            System.out.println(size + "\t" + totalTime + "\t" + avgTime);     // print results
         }
     }
 }

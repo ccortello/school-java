@@ -19,77 +19,15 @@ import java.util.*;
  * @author Casey Nordgran
  */
 public class GraphUtil {
-
-//    /**
-//     * Performs a depth-first search of a graph to determine a path from a start vertex to an goal vertex.
-//     * (See Lecture 18 for the algorithm.)
-//     *
-//     * @param graph - The graph object to be traversed
-//     * @param startName - Name of the starting vertex in the path
-//     * @param goalName  - Name of the ending vertex in the path
-//     * @return a list of the vertices that make up a path path from the vertex with the name startName (inclusive)
-//     * to the ending vertex with the name goalName (inclusive)
-//     * @throws UnsupportedOperationException if there are no vertices in the graph with the names startName or goalName
-//     */
-//    public static List<String> depthFirstSearch(Graph graph, String startName, String goalName) {
-//        // check that the correct vertices exist in the graph. If not, throw an exception
-//        if (!graph.getVertices().containsKey(startName))
-//            throw new UnsupportedOperationException("DFS: the start vertex doesn't exist");
-//        if (!graph.getVertices().containsKey(goalName))
-//            throw new UnsupportedOperationException("DFS: the goal vertex doesn't exist");
-//
-//        // use this method as a driver method
-//        Vertex currentVertex = DFS(graph, startName, goalName);
-//
-//        // create path list and return it
-//        LinkedList<String> path = new LinkedList<String>();
-//        while (currentVertex.getCameFrom() != null) {
-//            path.addFirst(currentVertex.getName());
-//            currentVertex = currentVertex.getCameFrom();
-//        }
-//        return path;
-//    }
-//
-//    /**
-//     * The recursive method for depthFirstSearch
-//     *
-//     * @param graph - The graph object to be traversed
-//     * @param currentName - Name of the current vertex in the path
-//     * @param goalName  - Name of the ending vertex in the path
-//     * @return a list of the vertices that make up a path path from the vertex with the name startName (inclusive)
-//     * to the ending vertex with the name goalName (inclusive)
-//     */
-//    private static Vertex DFS(Graph graph, String currentName, String goalName) {
-//        // check for completion
-//        if (currentName.equals(goalName))
-//            return graph.getVertices().get(currentName);
-//
-//        // get the edges connected to this node to iterate through
-//        Vertex currentVertex = graph.getVertices().get(currentName);
-//        LinkedList<Edge> currentNeighbors = currentVertex.getEdges();
-//
-//        // set this vertex as visited to prevent cycling
-//        currentVertex.setVisited(true);
-//
-//        // for each neighbor rerun the recursion at that neighbor
-//        for (Edge currentNeighbor : currentNeighbors) {
-//            Vertex nextVertex = currentNeighbor.getOtherVertex();
-//            if (nextVertex.getVisited()) // if a node has been visited skip it
-//                continue;
-//            nextVertex.setCameFrom(currentVertex);
-//            DFS(graph, nextVertex.getName(), goalName);
-//        }
-//    }
-
     /**
      * Performs a depth-first search of a graph to determine a path from a start vertex to an goal vertex.
      * (See Lecture 18 for the algorithm.)
      *
-     * @param graph - The graph object to be traversed
+     * @param graph     - The graph object to be traversed
      * @param startName - Name of the starting vertex in the path
      * @param goalName  - Name of the ending vertex in the path
      * @return a list of the vertices that make up a path path from the vertex with the name startName (inclusive)
-     *         to the ending vertex with the name goalName (inclusive)
+     * to the ending vertex with the name goalName (inclusive)
      * @throws UnsupportedOperationException if there are no vertices in the graph with the names startName or goalName
      */
     public static List<String> depthFirstSearch(Graph graph, String startName, String goalName) {
@@ -97,10 +35,10 @@ public class GraphUtil {
         ArrayList<String> path = new ArrayList<String>();
 
         // copy of this graphs HashMap so the original field values of the vertices are not changed.
-        HashMap<String,Vertex> map = new HashMap<String,Vertex>(graph.getVertices());
+        HashMap<String, Vertex> map = new HashMap<String, Vertex>(graph.getVertices());
 
         // throw exception of startName and goalName are not associated with any vertices the HashMap
-        if (! (map.containsKey(startName)) || ! (map.containsKey(goalName)))
+        if (!(map.containsKey(startName)) || !(map.containsKey(goalName)))
             throw new UnsupportedOperationException("The startName or goalName do not exist!");
 
         // store vertex at startName & goalName to pass to depthFirstSearchRecursive
@@ -125,13 +63,13 @@ public class GraphUtil {
         // first add the goalVertex before looping
         reversePath.add(goalVertex.getName());
         // continuous loop until goalVertex equal startVertex
-        while (! goalVertex.equals(startVertex)) {
+        while (!goalVertex.equals(startVertex)) {
             reversePath.addLast(goalVertex.getCameFrom().getName());
             goalVertex = goalVertex.getCameFrom();
         }
 
         // remove last items adding to path
-        while (! reversePath.isEmpty())
+        while (!reversePath.isEmpty())
             path.add(reversePath.removeLast());
 
         //return completed array list
@@ -177,7 +115,7 @@ public class GraphUtil {
      * Performs a breadth-first search on a graph to determine the shortest path from a start vertex to an goal vertex.
      * (See Lecture 18 for the algorithm.)
      *
-     * @param graph - The graph object to be traversed
+     * @param graph     - The graph object to be traversed
      * @param startName - Name of the starting vertex in the path
      * @param goalName  - Name of the ending vertex in the path
      * @return a list of the vertices that make up the shortest path from the vertex with the name startName (inclusive)
@@ -189,13 +127,14 @@ public class GraphUtil {
         ArrayList<String> path = new ArrayList<String>();
 
         // get graph HashMap to access the vertices by name
-        HashMap<String,Vertex> map = new HashMap<String,Vertex>(graph.getVertices());
+        HashMap<String, Vertex> map = new HashMap<String, Vertex>(graph.getVertices());
         // throw exception of startName and goalName are not associated with any vertices the HashMap
-        if (! (map.containsKey(startName)) || ! (map.containsKey(goalName)))
+        if (!(map.containsKey(startName)) || !(map.containsKey(goalName)))
             throw new UnsupportedOperationException("The startName or goalName do not exist!");
 
         // queue to traverse through and visit neighbors breadth first,implemented with LinkedList
-        LinkedList<Vertex> Q = new LinkedList<Vertex>() {};
+        LinkedList<Vertex> Q = new LinkedList<Vertex>() {
+        };
 
         // current vertex, most recently dequeued from list, beginning vertex obtained from map, and neighbor vertex
         Vertex current, neighbor, start = map.get(startName), goal = map.get(goalName);
@@ -207,7 +146,7 @@ public class GraphUtil {
         current = start;
 
         // keep visiting neighbors while the queue is not empty
-        while (! Q.isEmpty()) {
+        while (!Q.isEmpty()) {
             current = Q.removeFirst();
             //check if current is equal to goal, if so break from while loop, if not iterate through neighbors
             if (current.equals(goal))
@@ -220,7 +159,7 @@ public class GraphUtil {
                 // set neighbor to next pointed to vertex
                 neighbor = itr.next().getOtherVertex();
                 // if pointed to vertex is unvisited, visit it update cameFrom, and enque to queue
-                if (! neighbor.getVisited()) {
+                if (!neighbor.getVisited()) {
                     neighbor.setCameFrom(current);
                     neighbor.setVisited(true);
                     Q.addLast(neighbor);
@@ -230,7 +169,7 @@ public class GraphUtil {
 
         /*check if Q emptied and goal was never reached, meaning there was no path from start to goal
         state this and return the empty list.*/
-        if (! current.equals(goal)) {
+        if (!current.equals(goal)) {
             System.out.println("There was no path found from the vertex " + startName + " to the vertex " + goalName + "!");
             return path;
         }
@@ -241,13 +180,13 @@ public class GraphUtil {
         // first add the goal before looping
         reversePath.addFirst(goal.getName());
         // continuous loop until goal equal startVertex
-        while (! goal.equals(start)) {
+        while (!goal.equals(start)) {
             reversePath.addLast(goal.getCameFrom().getName());
             goal = goal.getCameFrom();
         }
 
         // remove last items adding to path
-        while (! reversePath.isEmpty())
+        while (!reversePath.isEmpty())
             path.add(reversePath.removeLast());
 
         //return completed array list
@@ -261,7 +200,7 @@ public class GraphUtil {
      * Uses Java's PriorityQueue class to find the "unvisited vertex with smallest distance from start".
      * See the API for PriorityQueue, and ask the course staff if you need help.
      *
-     * @param graph - The graph object to be traversed
+     * @param graph     - The graph object to be traversed
      * @param startName - Name of the starting vertex in the path
      * @param goalName  - Name of the ending vertex in the path
      * @return a list of the vertices that make up the cheapest path from the starting vertex (inclusive) to the
@@ -326,11 +265,11 @@ public class GraphUtil {
      */
     public static List<String> topologicalSort(Graph graph) {
         //first check that the specified graph is directed & acyclic, if not throw exception.
-        if (! graph.getDirected() || isCyclic(graph))
+        if (!graph.getDirected() || isCyclic(graph))
             throw new UnsupportedOperationException("You cannot perform topological sort on an undirected or cyclic graph!");
 
         // get copy of HashMap to perform topologicalSort, this does not change original graphs HashMap values.
-        HashMap<String,Vertex> map = new HashMap<String,Vertex>(graph.getVertices());
+        HashMap<String, Vertex> map = new HashMap<String, Vertex>(graph.getVertices());
         // Collection of vertices to sort through
         Collection<Vertex> vertices = map.values();
 
@@ -347,7 +286,7 @@ public class GraphUtil {
         //most recent vertex removed from the Q
         Vertex currentVertex;
         // perform topological sort algorithm until the queue is empty, as shown in lecture 19
-        while (! Q.isEmpty()) {
+        while (!Q.isEmpty()) {
             currentVertex = Q.remove();
             sortedNames.add(currentVertex.getName());
             LinkedList<Edge> currentEdges = currentVertex.getEdges();
@@ -550,7 +489,7 @@ public class GraphUtil {
     public static boolean isCyclic(Graph graph) {
 
         // create copy of this graphs HashMap
-        HashMap<String,Vertex> map = new HashMap<String,Vertex>(graph.getVertices());
+        HashMap<String, Vertex> map = new HashMap<String, Vertex>(graph.getVertices());
 
         // array list to hold all the vertices in this graph, used as starting vertices.
         Collection<Vertex> allVertices = map.values();
@@ -592,13 +531,14 @@ public class GraphUtil {
      */
     public static boolean hasPath(Graph graph, String startName, String goalName) {
         // get graph HashMap to access the vertices by name
-        HashMap<String,Vertex> map = new HashMap<String,Vertex>(graph.getVertices());
+        HashMap<String, Vertex> map = new HashMap<String, Vertex>(graph.getVertices());
         // throw exception of startName and goalName are not associated with any vertices the HashMap
-        if (! (map.containsKey(startName)) || ! (map.containsKey(goalName)))
+        if (!(map.containsKey(startName)) || !(map.containsKey(goalName)))
             throw new UnsupportedOperationException("The startName or goalName do not exist!");
 
         // queue to traverse through and visit neighbors breadth first,implemented with LinkedList
-        LinkedList<Vertex> Q = new LinkedList<Vertex>() {};
+        LinkedList<Vertex> Q = new LinkedList<Vertex>() {
+        };
 
         // current vertex, most recently dequeued from list, beginning vertex obtained from map, and neighbor vertex
         Vertex current, neighbor, start = map.get(startName), goal = map.get(goalName);
@@ -610,7 +550,7 @@ public class GraphUtil {
         current = start;
 
         // keep visiting neighbors while the queue is not empty
-        while (! Q.isEmpty()) {
+        while (!Q.isEmpty()) {
             current = Q.removeFirst();
             //check if current is equal to goal, if so break from while loop, if not iterate through neighbors
             if (current.equals(goal))
@@ -623,7 +563,7 @@ public class GraphUtil {
                 // set neighbor to next pointed to vertex
                 neighbor = itr.next().getOtherVertex();
                 // if pointed to vertex is unvisited, visit it update cameFrom, and enque to queue
-                if (! neighbor.getVisited()) {
+                if (!neighbor.getVisited()) {
                     neighbor.setCameFrom(current);
                     neighbor.setVisited(true);
                     Q.addLast(neighbor);
@@ -632,7 +572,7 @@ public class GraphUtil {
         }
 
         //check if Q emptied and goal was never reached, meaning there was no path from start to goal and return false;
-        if (! current.equals(goal))
+        if (!current.equals(goal))
             return false;
 
         // if current vertex equals the goal vertex than there is a path.
