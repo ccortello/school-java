@@ -96,8 +96,8 @@ public class GraphUtil {
         //ArrayList to hold vertices in path in the correct order from startVertex to goalVertex
         ArrayList<String> path = new ArrayList<String>();
 
-        // declare and instantiate a HashMap of this graphs vertices.
-        HashMap<String,Vertex> map = graph.getVertices();
+        // copy of this graphs HashMap so the original field values of the vertices are not changed.
+        HashMap<String,Vertex> map = new HashMap<String,Vertex>(graph.getVertices());
 
         // throw exception of startName and goalName are not associated with any vertices the HashMap
         if (! (map.containsKey(startName)) || ! (map.containsKey(goalName)))
@@ -189,7 +189,7 @@ public class GraphUtil {
         ArrayList<String> path = new ArrayList<String>();
 
         // get graph HashMap to access the vertices by name
-        HashMap<String,Vertex> map = graph.getVertices();
+        HashMap<String,Vertex> map = new HashMap<String,Vertex>(graph.getVertices());
         // throw exception of startName and goalName are not associated with any vertices the HashMap
         if (! (map.containsKey(startName)) || ! (map.containsKey(goalName)))
             throw new UnsupportedOperationException("The startName or goalName do not exist!");
@@ -321,7 +321,14 @@ public class GraphUtil {
      * @throws UnsupportedOperationException if the graph is undirected, or it is cyclic.
      */
     public static List<String> topologicalSort(Graph graph) {
-        // TODO
+        //first check that the specified graph is directed & acyclic, if not throw exception.
+        if (! graph.getDirected() || isCyclic(graph))
+            throw new UnsupportedOperationException("You cannot perform topological sort on an undirected or cyclic graph!");
+
+        //get copy of HashMap to perform topologicalSort, this does not change original graphs HashMap values.
+        HashMap<String,Vertex> map = new HashMap<String,Vertex>(graph.getVertices());
+
+
 
         return null;
     }
@@ -503,5 +510,108 @@ public class GraphUtil {
         }
 
         return g;
+    }
+
+    /**
+     * Determines if the specified graph is cyclic or not.
+     *
+     * @return true if the specified graph is cyclic, otherwise false.
+     */
+    public static boolean isCyclic(Graph graph) {
+        // returned variable if this graph is cyclic or not, default is false.
+        boolean cyclic = false;
+
+        // create copy of this graphs HashMap
+        HashMap<String,Vertex> map = new HashMap<String,Vertex>(graph.getVertices());
+
+        // array list to hold all the vertices in this graph, used as starting vertices.
+        Collection<Vertex> allVertices = map.values();
+        // amount of vertices in this graph.
+        int vAmount = allVertices.size();
+
+        // array list matrix to hold lists of neighbors for each starting vertex
+        ArrayList<Vertex>[] neighbors = new ArrayList[vAmount];
+        // initiate each column to contain an empty ArrayList so that no columns are null.
+        for (int i = 0; i < vAmount; i++)
+            neighbors[i] = new ArrayList<Vertex>();
+
+        int index = 0;
+        // fill neighbors matrix
+        for (Vertex vertex : allVertices) {
+            LinkedList<Edge> neighborItr = vertex.getEdges();
+            for (Edge edge : neighborItr)
+                neighbors[index].add(edge.getOtherVertex());
+            index++;
+        }
+
+        // check if there are any paths from each vertexes neighbor back to that vertex.
+        index = 0;
+        for (Vertex vertex : allVertices) {
+            for (Vertex neighbor : neighbors[index]) {
+                if (hasPath(graph, vertex.getName(), neighbor.getName())) ;
+                {
+                    cyclic = true;
+                    return cyclic;
+                }
+            }
+            index++;
+        }
+        // no paths found, return cyclic value (default false)
+        return cyclic;
+    }
+
+    /**
+     * Determines whether there is a path between the specified start and goal vertices in the specified graph.
+     *
+     * @return true if there is a path between the specified start and goal vertices in the specified graph, otherwise
+     * false.
+     */
+    public static boolean hasPath(Graph graph, String startName, String goalName) {
+        // get graph HashMap to access the vertices by name
+        HashMap<String,Vertex> map = new HashMap<String,Vertex>(graph.getVertices());
+        // throw exception of startName and goalName are not associated with any vertices the HashMap
+        if (! (map.containsKey(startName)) || ! (map.containsKey(goalName)))
+            throw new UnsupportedOperationException("The startName or goalName do not exist!");
+
+        // queue to traverse through and visit neighbors breadth first,implemented with LinkedList
+        LinkedList<Vertex> Q = new LinkedList<Vertex>() {};
+
+        // current vertex, most recently dequeued from list, beginning vertex obtained from map, and neighbor vertex
+        Vertex current, neighbor, start = map.get(startName), goal = map.get(goalName);
+
+        // set start vertex as visited and enque on to queue
+        start.setVisited(true);
+        Q.add(start);
+        // set current to start node at first to avoid
+        current = start;
+
+        // keep visiting neighbors while the queue is not empty
+        while (! Q.isEmpty()) {
+            current = Q.removeFirst();
+            //check if current is equal to goal, if so break from while loop, if not iterate through neighbors
+            if (current.equals(goal))
+                break;
+            // get iterator to traverse neighboring edges
+            Iterator<Edge> itr = current.edges();
+
+            // iterate each neighbor, through the edges, if unvisited, then visit it and enque it
+            while (itr.hasNext()) {
+                // set neighbor to next pointed to vertex
+                neighbor = itr.next().getOtherVertex();
+                // if pointed to vertex is unvisited, visit it update cameFrom, and enque to queue
+                if (! neighbor.getVisited()) {
+                    neighbor.setCameFrom(current);
+                    neighbor.setVisited(true);
+                    Q.addLast(neighbor);
+                }
+            }
+        }
+
+        //check if Q emptied and goal was never reached, meaning there was no path from start to goal and return false;
+        if (! current.equals(goal))
+            return false;
+
+        // if current vertex equals the goal vertex than there is a path.
+        return true;
     }
 }
