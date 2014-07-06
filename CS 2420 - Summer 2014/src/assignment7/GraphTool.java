@@ -102,7 +102,7 @@ public class GraphTool {
                 return;
             }
         } else {
-            System.out.println("Invalid graph oprtation request argument: " + args[1] + "\n");
+            System.out.println("Invalid graph opertation request argument: " + args[1] + "\n");
             return;
         }
     }

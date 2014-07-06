@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="implementing dijkstra's =)">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtil.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtil.java" />
+    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="first full dijkstra's implementation">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphTool.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphTool.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtilTester.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtilTester.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -84,20 +85,30 @@
       <file leaf-file-name="GraphUtil.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="2176">
-              <caret line="311" column="20" selection-start-line="311" selection-start-column="20" selection-end-line="311" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+              <caret line="271" column="138" selection-start-line="271" selection-start-column="138" selection-end-line="271" selection-end-column="138" />
               <folding>
                 <element signature="docComment;class#GraphUtil#0" expanded="false" />
                 <element signature="e#813#822#0" expanded="false" />
                 <element signature="docComment;method#depthFirstSearch#0;class#GraphUtil#0" expanded="false" />
                 <element signature="docComment;method#depthFirstSearchRecursive#0;class#GraphUtil#0" expanded="false" />
-                <element signature="method#depthFirstSearchRecursive#0;class#GraphUtil#0" expanded="true" />
                 <element signature="docComment;method#breadthFirstSearch#0;class#GraphUtil#0" expanded="false" />
-                <element signature="e#13562#13570#0" expanded="true" />
-                <element signature="e#14997#15005#0" expanded="true" />
-                <element signature="method#topologicalSort#0;class#GraphUtil#0" expanded="true" />
+                <element signature="docComment;method#dijkstrasShortestPath#0;class#GraphUtil#0" expanded="false" />
+                <element signature="docComment;method#topologicalSort#0;class#GraphUtil#0" expanded="false" />
                 <element signature="docComment;method#generateGraphInDotFile#0;class#GraphUtil#0" expanded="false" />
                 <element signature="docComment;method#buildGraphFromDotFile#0;class#GraphUtil#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GraphTool.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphTool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="372" max-vertical-offset="1955">
+              <caret line="103" column="9" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
+              <folding>
+                <element signature="method#main#0;class#GraphTool#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,20 +121,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="examplegraph8.jpg" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/examplegraph8.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Vertex.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Vertex.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/Vertex.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="3332">
-              <caret line="63" column="26" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.49837133" vertical-offset="119" max-vertical-offset="3332">
+              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
               <folding>
-                <element signature="method#Vertex#0;class#Vertex#0" expanded="true" />
                 <element signature="method#addEdge#0;class#Vertex#0" expanded="true" />
                 <element signature="method#addEdgeWeighted#0;class#Vertex#0" expanded="true" />
                 <element signature="method#equals#0;class#Vertex#0" expanded="true" />
@@ -156,7 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/Yankee.txt" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanCompressor.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework10/HuffmanTester.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Spring 2014/src/homework02/Matrix.java" />
@@ -205,8 +207,9 @@
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/SpellChecker.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtimer.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BSTtester.java" />
-        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtilTester.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtil.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtilTester.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphTool.java" />
       </list>
     </option>
   </component>
@@ -918,7 +921,7 @@
       <workItem from="1404240149456" duration="678000" />
       <workItem from="1404240947185" duration="2449000" />
       <workItem from="1404588445161" duration="805000" />
-      <workItem from="1404602150645" duration="2533000" />
+      <workItem from="1404602150645" duration="4833000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -1908,11 +1911,15 @@
       <created>1404603342833</created>
       <updated>1404603342833</updated>
     </task>
-    <option name="localTasksCounter" value="248" />
+    <task id="LOCAL-00248" summary="first full dijkstra's implementation">
+      <created>1404604740033</created>
+      <updated>1404604740033</updated>
+    </task>
+    <option name="localTasksCounter" value="249" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="289922000" />
+    <option name="totallyTimeSpent" value="292222000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1936,7 +1943,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5140625" order="8" side_tool="false" content_ui="tabs" />
@@ -1958,8 +1965,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.140625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46585903" sideWeight="0.80686694" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.140625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3227848" sideWeight="0.80686694" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1983,7 +1990,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="working on 3bi, set fields" />
     <MESSAGE value="updated tests for 3bi" />
     <MESSAGE value="removed prob3, continued updated timing for 3bi" />
     <MESSAGE value="continued timing for 3bi" />
@@ -2008,7 +2014,8 @@
     <MESSAGE value="implemented depthFirstSearch method, added test class to test it and it works great!!" />
     <MESSAGE value="implemented breadthFirstSearch method, added tests for i in GraphUtilTester. Everything works as it should, and tests pass!!" />
     <MESSAGE value="implementing dijkstra's =)" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementing dijkstra's =)" />
+    <MESSAGE value="first full dijkstra's implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="first full dijkstra's implementation" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -2317,26 +2324,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphTool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/Edge.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtilTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30857143" vertical-offset="0" max-vertical-offset="875">
-          <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2367,37 +2358,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/Vertex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="3332">
-          <caret line="63" column="26" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
-          <folding>
-            <element signature="method#Vertex#0;class#Vertex#0" expanded="true" />
-            <element signature="method#addEdge#0;class#Vertex#0" expanded="true" />
-            <element signature="method#addEdgeWeighted#0;class#Vertex#0" expanded="true" />
-            <element signature="method#equals#0;class#Vertex#0" expanded="true" />
-            <element signature="method#toString#0;class#Vertex#0" expanded="true" />
-            <element signature="method#compareTo#0;class#Vertex#0" expanded="true" />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/examplegraph8.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="2176">
-          <caret line="311" column="20" selection-start-line="311" selection-start-column="20" selection-end-line="311" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+          <caret line="271" column="138" selection-start-line="271" selection-start-column="138" selection-end-line="271" selection-end-column="138" />
           <folding>
             <element signature="docComment;class#GraphUtil#0" expanded="false" />
             <element signature="e#813#822#0" expanded="false" />
             <element signature="docComment;method#depthFirstSearch#0;class#GraphUtil#0" expanded="false" />
             <element signature="docComment;method#depthFirstSearchRecursive#0;class#GraphUtil#0" expanded="false" />
-            <element signature="method#depthFirstSearchRecursive#0;class#GraphUtil#0" expanded="true" />
             <element signature="docComment;method#breadthFirstSearch#0;class#GraphUtil#0" expanded="false" />
-            <element signature="e#13562#13570#0" expanded="true" />
-            <element signature="e#14997#15005#0" expanded="true" />
-            <element signature="method#topologicalSort#0;class#GraphUtil#0" expanded="true" />
+            <element signature="docComment;method#dijkstrasShortestPath#0;class#GraphUtil#0" expanded="false" />
+            <element signature="docComment;method#topologicalSort#0;class#GraphUtil#0" expanded="false" />
             <element signature="docComment;method#generateGraphInDotFile#0;class#GraphUtil#0" expanded="false" />
             <element signature="docComment;method#buildGraphFromDotFile#0;class#GraphUtil#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="372" max-vertical-offset="1955">
+          <caret line="103" column="9" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
+          <folding>
+            <element signature="method#main#0;class#GraphTool#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2407,9 +2396,18 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examplegraph8.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/Vertex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49837133" vertical-offset="119" max-vertical-offset="3332">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding>
+            <element signature="method#addEdge#0;class#Vertex#0" expanded="true" />
+            <element signature="method#addEdgeWeighted#0;class#Vertex#0" expanded="true" />
+            <element signature="method#equals#0;class#Vertex#0" expanded="true" />
+            <element signature="method#toString#0;class#Vertex#0" expanded="true" />
+            <element signature="method#compareTo#0;class#Vertex#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>
