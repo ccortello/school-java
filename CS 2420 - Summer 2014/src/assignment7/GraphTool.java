@@ -95,15 +95,12 @@ public class GraphTool {
 
             if (valid) {
                 GraphUtil.generateGraphInDotFile(args[0], vertices, density, directed, cyclic, weighted);
-                System.out.println("Succesfull random graph generation with " + vertices + " vertices.\n");
-                return;
+                System.out.println("Successful random graph generation with " + vertices + " vertices.\n");
             } else {
                 System.out.println("Invalid options for random graph generator arguments!\n");
-                return;
             }
         } else {
-            System.out.println("Invalid graph opertation request argument: " + args[1] + "\n");
-            return;
+            System.out.println("Invalid graph operation request argument: " + args[1] + "\n");
         }
     }
 }

@@ -239,8 +239,8 @@ public class GraphUtil {
         LinkedList<String> reversePath = new LinkedList<String>();
 
         // first add the goal before looping
-        reversePath.add(goal.getName());
-        // continuos loop until goal equal startVertex
+        reversePath.addFirst(goal.getName());
+        // continuous loop until goal equal startVertex
         while (! goal.equals(start)) {
             reversePath.addLast(goal.getCameFrom().getName());
             goal = goal.getCameFrom();
