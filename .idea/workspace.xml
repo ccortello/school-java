@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="added isCyclic( ) and hasPath( ) methods.   isCyclic( ) uses hasPath( ), and isCyclic is used in topologicalSort to throw an error if the graph is cyclic.">
+    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="finished topogicalSort">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtil.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -84,8 +84,8 @@
       <file leaf-file-name="GraphUtil.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.81206495" vertical-offset="0" max-vertical-offset="1025">
-              <caret line="538" column="5" selection-start-line="538" selection-start-column="5" selection-end-line="538" selection-end-column="5" />
+            <state vertical-scroll-proportion="-1.0591648" vertical-offset="2063" max-vertical-offset="2925">
+              <caret line="392" column="28" selection-start-line="392" selection-start-column="28" selection-end-line="392" selection-end-column="28" />
               <folding>
                 <element signature="docComment;class#GraphUtil#0" expanded="false" />
                 <element signature="e#813#822#0" expanded="false" />
@@ -94,12 +94,26 @@
                 <element signature="docComment;method#breadthFirstSearch#0;class#GraphUtil#0" expanded="false" />
                 <element signature="docComment;method#dijkstrasShortestPath#0;class#GraphUtil#0" expanded="false" />
                 <element signature="docComment;method#topologicalSort#0;class#GraphUtil#0" expanded="false" />
-                <element signature="e#16521#16529#0" expanded="true" />
-                <element signature="e#16679#16687#0" expanded="true" />
                 <element signature="docComment;method#generateGraphInDotFile#0;class#GraphUtil#0" expanded="false" />
                 <element signature="docComment;method#buildGraphFromDotFile#0;class#GraphUtil#0" expanded="false" />
                 <element signature="docComment;method#isCyclic#0;class#GraphUtil#0" expanded="false" />
                 <element signature="docComment;method#hasPath#0;class#GraphUtil#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GraphTool.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphTool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="2325">
+              <caret line="41" column="52" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
+              <folding>
+                <element signature="docComment;class#GraphTool#0" expanded="false" />
+                <element signature="docComment;method#main#0;class#GraphTool#0" expanded="false" />
+                <element signature="method#main#0;class#GraphTool#0" expanded="true" />
+                <element signature="docComment;method#run_graph_ops#0;class#GraphTool#0" expanded="false" />
+                <element signature="method#run_graph_ops#0;class#GraphTool#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1810,7 +1824,11 @@
       <created>1404605605896</created>
       <updated>1404605605896</updated>
     </task>
-    <option name="localTasksCounter" value="251" />
+    <task id="LOCAL-00251" summary="finished topogicalSort">
+      <created>1404610137493</created>
+      <updated>1404610137493</updated>
+    </task>
+    <option name="localTasksCounter" value="252" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1885,7 +1903,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="updated tests for 3bi" />
     <MESSAGE value="removed prob3, continued updated timing for 3bi" />
     <MESSAGE value="continued timing for 3bi" />
     <MESSAGE value="LinkedStructureTimer_2 is the new class I created, to practice but also I got it working for get(i) pretty good. I still need to implement remove() methods and the stack methods." />
@@ -1910,7 +1927,8 @@
     <MESSAGE value="implemented breadthFirstSearch method, added tests for i in GraphUtilTester. Everything works as it should, and tests pass!!" />
     <MESSAGE value="implementing dijkstra's =)" />
     <MESSAGE value="added isCyclic( ) and hasPath( ) methods.   isCyclic( ) uses hasPath( ), and isCyclic is used in topologicalSort to throw an error if the graph is cyclic." />
-    <option name="LAST_COMMIT_MESSAGE" value="added isCyclic( ) and hasPath( ) methods.   isCyclic( ) uses hasPath( ), and isCyclic is used in topologicalSort to throw an error if the graph is cyclic." />
+    <MESSAGE value="finished topogicalSort" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished topogicalSort" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -2263,18 +2281,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphTool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14285715" vertical-offset="0" max-vertical-offset="875">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-          <folding>
-            <element signature="docComment;class#GraphTool#0" expanded="false" />
-            <element signature="docComment;method#main#0;class#GraphTool#0" expanded="false" />
-            <element signature="docComment;method#run_graph_ops#0;class#GraphTool#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/Vertex.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.82857144" vertical-offset="0" max-vertical-offset="1875">
@@ -2311,10 +2317,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="2325">
+          <caret line="41" column="52" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
+          <folding>
+            <element signature="docComment;class#GraphTool#0" expanded="false" />
+            <element signature="docComment;method#main#0;class#GraphTool#0" expanded="false" />
+            <element signature="method#main#0;class#GraphTool#0" expanded="true" />
+            <element signature="docComment;method#run_graph_ops#0;class#GraphTool#0" expanded="false" />
+            <element signature="method#run_graph_ops#0;class#GraphTool#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.81206495" vertical-offset="0" max-vertical-offset="1025">
-          <caret line="538" column="5" selection-start-line="538" selection-start-column="5" selection-end-line="538" selection-end-column="5" />
+        <state vertical-scroll-proportion="-1.0591648" vertical-offset="2063" max-vertical-offset="2925">
+          <caret line="392" column="28" selection-start-line="392" selection-start-column="28" selection-end-line="392" selection-end-column="28" />
           <folding>
             <element signature="docComment;class#GraphUtil#0" expanded="false" />
             <element signature="e#813#822#0" expanded="false" />
@@ -2323,8 +2343,6 @@
             <element signature="docComment;method#breadthFirstSearch#0;class#GraphUtil#0" expanded="false" />
             <element signature="docComment;method#dijkstrasShortestPath#0;class#GraphUtil#0" expanded="false" />
             <element signature="docComment;method#topologicalSort#0;class#GraphUtil#0" expanded="false" />
-            <element signature="e#16521#16529#0" expanded="true" />
-            <element signature="e#16679#16687#0" expanded="true" />
             <element signature="docComment;method#generateGraphInDotFile#0;class#GraphUtil#0" expanded="false" />
             <element signature="docComment;method#buildGraphFromDotFile#0;class#GraphUtil#0" expanded="false" />
             <element signature="docComment;method#isCyclic#0;class#GraphUtil#0" expanded="false" />

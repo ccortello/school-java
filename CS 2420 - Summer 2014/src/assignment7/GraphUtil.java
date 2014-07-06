@@ -390,6 +390,7 @@ public class GraphUtil {
         }
 
         out.println("graph G {");
+        out.println("dpi=300");
 
         for (int i = 0; i < vertexCount; i++)
             vertex[i] = new Vertex("v" + i);
