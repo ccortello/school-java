@@ -239,8 +239,8 @@ public class GraphUtil {
         LinkedList<String> reversePath = new LinkedList<String>();
 
         // first add the goal before looping
-        reversePath.add(goal.getName());
-        // continuos loop until goal equal startVertex
+        reversePath.addFirst(goal.getName());
+        // continuous loop until goal equal startVertex
         while (! goal.equals(start)) {
             reversePath.addLast(goal.getCameFrom().getName());
             goal = goal.getCameFrom();
@@ -275,6 +275,10 @@ public class GraphUtil {
             throw new UnsupportedOperationException("Graph needs to be weighted for Dijkstra's algorithm!");
         // implement the algorithm with a priority queue
         HashMap<String, Vertex> vertices = graph.getVertices();
+        if (!vertices.containsKey(startName))
+            throw new UnsupportedOperationException("Dijkstra's: the start vertex " + vertices.get(startName) + " was not found!");
+        if (!vertices.containsKey(goalName))
+            throw new UnsupportedOperationException("Dijkstra's: the goal vertex " + vertices.get(goalName) + " was not found!");
         PriorityQueue<Vertex> queue = new PriorityQueue<Vertex>();
         Vertex startVertex = vertices.get(startName);
         startVertex.setCostFromStart(0);
@@ -544,8 +548,6 @@ public class GraphUtil {
      * @return true if the specified graph is cyclic, otherwise false.
      */
     public static boolean isCyclic(Graph graph) {
-        // returned variable if this graph is cyclic or not, default is false.
-        boolean cyclic = false;
 
         // create copy of this graphs HashMap
         HashMap<String,Vertex> map = new HashMap<String,Vertex>(graph.getVertices());
@@ -573,17 +575,13 @@ public class GraphUtil {
         // check if there are any paths from each vertexes neighbor back to that vertex.
         index = 0;
         for (Vertex vertex : allVertices) {
-            for (Vertex neighbor : neighbors[index]) {
-                if (hasPath(graph, vertex.getName(), neighbor.getName())) ;
-                {
-                    cyclic = true;
-                    return cyclic;
-                }
-            }
+            for (Vertex neighbor : neighbors[index])
+                if (hasPath(graph, vertex.getName(), neighbor.getName()))
+                    return true;
             index++;
         }
         // no paths found, return cyclic value (default false)
-        return cyclic;
+        return false;
     }
 
     /**
