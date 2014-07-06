@@ -20,46 +20,6 @@ public class GraphUtilTimer {
 //        topologicalSortTimer();
     }
 
-//    void BFStimer() {
-//        int timesToLoop = 5000;  // higher number causes more accurate average time
-//        int[] sizes = new int[]{5, 10, 20, 50, 100, 200, 500};
-//        Random rand = new Random(656794684984L); // used to create random lists
-//
-//        //print info for the max input size and the number of times looping, as well as column headers for results
-//        System.out.println("MaxSize = " + sizes[sizes.length - 1] + ", loops = " + timesToLoop + "\n\nsize\ttime\tavg");
-//
-//        // testing loop
-//        for (int size : sizes) {   // each of these loops accounts for a different input size 'N'
-//
-////            BinarySearchTree<Integer> randListBST;
-//            long startTime, midTime, endTime;
-//            Graph testGraph;
-//
-//            // let a while loop run for a full second to get things spooled up.
-//            startTime = System.nanoTime();
-//            while (System.nanoTime() - startTime < 1e9) { //empty block
-//            }
-//
-//            // startTime and testing start here.
-//            startTime = System.nanoTime();
-//            for (int j = 0; j < timesToLoop; j++) {
-//                testGraph = GraphUtil.buildGraphFromDotFile(size + ",2udacuw.dot");
-//                GraphUtil.breadthFirstSearch(testGraph, "v0", "v" + (size - 1));
-//            }
-//
-//            midTime = System.nanoTime();
-//            for (int j = 0; j < timesToLoop; j++) {
-//                testGraph = GraphUtil.buildGraphFromDotFile(size + ",2udacuw.dot");
-//            }
-//            endTime = System.nanoTime();
-//
-//            // subtract the over head and determine average time for 'i' calls to get.
-//            double totalTime = ((midTime - startTime) - (endTime - midTime)) / timesToLoop;
-//            double avgTime = totalTime / size;
-//            System.out.println(size + "\t" + totalTime + "\t" + avgTime);     // print results
-//        }
-//    }
-
     void DFStimer() {
         int timesToLoop = 20;  // higher number causes more accurate average time, but takes much longer
         int maxSize = 20000;   // determines right boundary of plot
@@ -145,6 +105,7 @@ public class GraphUtilTimer {
 
         // testing loop
         for (int i = 0; i <= maxSize; i += 1000) {
+            //this allows to have the first data be 100, but then go in increments of 1000 and ending at 10000
             if (i == 0) i = 100;
             long startTime, midTime, endTime;
             long seed = System.currentTimeMillis();
@@ -159,13 +120,18 @@ public class GraphUtilTimer {
             startTime = System.nanoTime();
             rand.setSeed(seed);
             for (int j = 0; j < timesToLoop; j++) {
+                // create the dot file with specified parameters
                 GraphUtil.generateGraphInDotFile("testGraph.dot", i, 2, false, true, false);
+                // create the graph from the dot file
                 Graph testGraph = GraphUtil.buildGraphFromDotFile("testGraph.dot");
+                // hashmap to verify key names are in the graph
                 HashMap<String,Vertex> keys = testGraph.getVertices();
                 for (int k = 0; k < 5; k++) {
+                    // rebuild the graph each loop
                     testGraph = GraphUtil.buildGraphFromDotFile("testGraph.dot");
                     name1 = "v";
                     name2 = "v";
+                    // though same graph use different random key names
                     while (! keys.containsKey(name1))
                         name1 = "v" + (i - rand.nextInt(i));
                     while (! keys.containsKey(name2))
@@ -173,7 +139,7 @@ public class GraphUtilTimer {
                     names = GraphUtil.breadthFirstSearch(testGraph, name1, name2);
                 }
             }
-
+            // take the middle time, then run it all over again with out breadthFirstSearch to determine overhead
             midTime = System.nanoTime();
             rand.setSeed(seed);
             for (int j = 0; j < timesToLoop; j++) {
@@ -193,6 +159,7 @@ public class GraphUtilTimer {
 
             // subtract the over head and determine average time for 'i' calls to get.
             double totalTime = ((midTime - startTime) - (endTime - midTime)) / timesToLoop;
+            // this is the avg time per use of breadthFirstSearch call
             double avgTime = totalTime / 5;
             System.out.println(i + "\t" + totalTime + "\t" + avgTime);     // print results
 
