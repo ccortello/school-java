@@ -42,30 +42,30 @@ public class GraphUtil {
             throw new UnsupportedOperationException("The startName or goalName do not exist!");
 
         // store vertex at startName & goalName to pass to depthFirstSearchRecursive
-        Vertex startVertex = map.get(startName);
-        Vertex goalVertex = map.get(goalName);
+        Vertex start = map.get(startName);
+        Vertex goal = map.get(goalName);
 
         // set start vertex to visited to avoid cycles
-        startVertex.setVisited(true);
+        start.setVisited(true);
 
         // call recursive method
-        depthFirstSearchRecursive(startVertex, goalVertex);
+        depthFirstSearchRecursive(start, goal);
 
         //after recursive call, if goal vertex has not been visited, state no path found and return empty list
-        if (!goalVertex.getVisited()) {
-            System.out.println("There was no path found from the vertex " + startName + " to the vertex " + goalName + "!");
+        if (! goal.getVisited()) {
+//            System.out.println("There was no path found from the vertex " + startName + " to the vertex " + goalName + "!");
             return path;
         }
 
         //LinkedList to hold the vertex names of the found path in reverse
         LinkedList<String> reversePath = new LinkedList<String>();
 
-        // first add the goalVertex before looping
-        reversePath.add(goalVertex.getName());
-        // continuous loop until goalVertex equal startVertex
-        while (!goalVertex.equals(startVertex)) {
-            reversePath.addLast(goalVertex.getCameFrom().getName());
-            goalVertex = goalVertex.getCameFrom();
+        // first add the goal before looping
+        reversePath.add(goal.getName());
+        // continuous loop until goal equal startVertex
+        while (! goal.getName().equals(startName)) {
+            reversePath.addLast(goal.getCameFrom().getName());
+            goal = goal.getCameFrom();
         }
 
         // remove last items adding to path
@@ -91,16 +91,16 @@ public class GraphUtil {
         Iterator<Edge> currentEdges = currentVertex.edges();
 
         // edge to hold the current edge that the iterator returned
-        Edge thisEdge;
+        Edge nextEdge;
         // next vertex to visit
         Vertex nextVertex;
 
         //while there are more edges to iterate through & the goal vertex hasn't been visited, call recursive method
         while (currentEdges.hasNext() && goalVertex.getVisited() == false) {
             //set this edge to next edge that the iterator returns
-            thisEdge = currentEdges.next();
-            if (thisEdge.getOtherVertex().getVisited() == false) {     //if the edge points to an unvisited vertex,
-                nextVertex = thisEdge.getOtherVertex();             //visit vertex with recursive method
+            nextEdge = currentEdges.next();
+            if (nextEdge.getOtherVertex().getVisited() == false) {     //if the edge points to an unvisited vertex,
+                nextVertex = nextEdge.getOtherVertex();             //visit vertex with recursive method
                 nextVertex.setVisited(true);
                 nextVertex.setCameFrom(currentVertex);
                 // call recursive method
