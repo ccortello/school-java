@@ -2,6 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="timing sucks">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/10,2udacuw.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/100,2udacuw.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20,2udacuw.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/200,2udacuw.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/5,2udacuw.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/50,2udacuw.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/500,2udacuw.dot" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtilTimer.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtilTimer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -91,23 +98,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="5,2udacuw.dot" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/5,2udacuw.dot">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="GraphUtilTimer.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtilTimer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4697286" vertical-offset="302" max-vertical-offset="1105">
-              <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.73913044" vertical-offset="0" max-vertical-offset="3162">
+              <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
               <folding>
+                <element signature="e#180#181#0" expanded="true" />
+                <element signature="e#216#217#0" expanded="true" />
                 <element signature="method#GraphUtilTimer#0;class#GraphUtilTimer#0" expanded="true" />
+                <element signature="method#DFStimer#0;class#GraphUtilTimer#0" expanded="true" />
+                <element signature="method#dijkstrasTimer#0;class#GraphUtilTimer#0" expanded="true" />
+                <element signature="method#topologicalSortTimer#0;class#GraphUtilTimer#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -415,11 +417,11 @@
       <recent name="C:\Users\Casey\Documents\IntelliJ_Projects\school-java\CS 2420 - Summer 2014\src\assignment5" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Cody\Java\school-java" />
       <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment6\Cody's Analysis" />
       <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment6" />
       <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment2" />
       <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014" />
-      <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src" />
     </key>
   </component>
   <component name="RunManager" selected="Application.GraphUtilTimer">
@@ -905,7 +907,7 @@
       <workItem from="1404602150645" duration="2533000" />
       <workItem from="1404616335265" duration="3051000" />
       <workItem from="1404619680623" duration="1000" />
-      <workItem from="1404619689889" duration="2093000" />
+      <workItem from="1404619689889" duration="5564000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -1919,11 +1921,15 @@
       <created>1404621284268</created>
       <updated>1404621284268</updated>
     </task>
-    <option name="localTasksCounter" value="254" />
+    <task id="LOCAL-00254" summary="timing sucks">
+      <created>1404621936443</created>
+      <updated>1404621936443</updated>
+    </task>
+    <option name="localTasksCounter" value="255" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="295067000" />
+    <option name="totallyTimeSpent" value="298538000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1970,7 +1976,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14010416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46518987" sideWeight="0.63072914" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26687765" sideWeight="0.63072914" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -2036,13 +2042,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/OurLibraryGenericTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.6282895" vertical-offset="0" max-vertical-offset="1700">
-          <caret line="98" column="1" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2130" max-vertical-offset="2618">
@@ -2395,14 +2394,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/5,2udacuw.dot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="920">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphTool.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1717">
@@ -2413,10 +2404,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtilTimer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4697286" vertical-offset="302" max-vertical-offset="1105">
-          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.73913044" vertical-offset="0" max-vertical-offset="3162">
+          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
           <folding>
+            <element signature="e#180#181#0" expanded="true" />
+            <element signature="e#216#217#0" expanded="true" />
             <element signature="method#GraphUtilTimer#0;class#GraphUtilTimer#0" expanded="true" />
+            <element signature="method#DFStimer#0;class#GraphUtilTimer#0" expanded="true" />
+            <element signature="method#dijkstrasTimer#0;class#GraphUtilTimer#0" expanded="true" />
+            <element signature="method#topologicalSortTimer#0;class#GraphUtilTimer#0" expanded="true" />
           </folding>
         </state>
       </provider>
