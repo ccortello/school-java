@@ -80,6 +80,14 @@ public abstract class HashTable implements Set<String> {
     }
 
     /**
+     * Function returns the current fraction of the HashTable that is filled, called the load factor or (lambda)
+     * @return the load factor lambda of the current table
+     */
+    public double getLamda() {
+        return ((double) size) / capacity;
+    }
+
+    /**
      * Returns the first prime integer greater than or equal to the passed integer
      */
     public int nextPrime(int number) {

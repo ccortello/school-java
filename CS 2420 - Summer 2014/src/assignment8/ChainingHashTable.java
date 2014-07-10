@@ -13,8 +13,6 @@ public class ChainingHashTable extends HashTable {
     // underlying data structure for ChainingHashTable, uses seperate chaining to avoid collisions
     private LinkedList<String>[] storage;
 
-    // stores the number of non-empty lists, used to determine lambda
-    int M;
 
     /**
      * Constructor for the ChainingHashTable class that uses separate chaining as the method to resolve collisions.
@@ -33,7 +31,6 @@ public class ChainingHashTable extends HashTable {
         this.capacity = capacity;
         size = 0;
         collisions = 0;
-        M = 0;
     }
 
     /**
@@ -56,9 +53,8 @@ public class ChainingHashTable extends HashTable {
         if (! storage[index].isEmpty())
             collisions++;
         else
-            M++;
-        // specified item is not contained in the LinkedList at this index, add specified item and return true.
-        storage[index].add(item);
+            // specified item is not contained in the LinkedList at this index, add specified item and return true.
+            storage[index].add(item);
         // increase size
         size++;
         return true;
@@ -94,16 +90,6 @@ public class ChainingHashTable extends HashTable {
         // set everything to zero & create new empty array for the variable 'storage'
         size = 0;
         collisions = 0;
-        M = 0;
         storage = (LinkedList<String>[]) new LinkedList[capacity];
-    }
-
-    /**
-     * Function returns the average length of the LinkedLists in the HashTable
-     *
-     * @return the load factor lambda of the current table, N/M which is current size over number of non-empty lists
-     */
-    public double getLamda() {
-        return ((double) size) / M;
     }
 }

@@ -107,12 +107,4 @@ public class ProbingHashTable extends HashTable {
         clear();
         addAll(tableCopy);
     }
-
-    /**
-     * Function returns the current fraction of the HashTable that is filled, called the load factor or (lambda)
-     * @return the load factor lambda of the current table
-     */
-    public double getLamda() {
-        return ((double) size) / capacity;
-    }
 }
