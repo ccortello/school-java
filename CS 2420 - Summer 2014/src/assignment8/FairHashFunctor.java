@@ -1,8 +1,8 @@
 package assignment8;
 
 /**
- * A fair hashing algorithm for String objects which sums the ASCII int equivalent
- * of the characters in the String
+ * A fair hashing algorithm for String objects which sums the ASCII int equivalent of the characters in the String and
+ * then multiplies that sum by the String length.
  *
  * @author Cody Cortello
  * @author Casey Nordgran
@@ -12,6 +12,6 @@ public class FairHashFunctor implements HashFunctor {
         int asciiSum = 0;
         for (int i = 0; i < item.length(); i++)
             asciiSum += item.charAt(i);
-        return asciiSum;
+        return asciiSum * item.length();
     }
 }
