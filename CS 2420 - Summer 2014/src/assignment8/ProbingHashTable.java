@@ -101,10 +101,11 @@ public class ProbingHashTable extends HashTable {
         // determine initial index to check in array using this HashTables capacity, also assert it's positive.
         int currentIndex = Math.abs(hash % capacity);
         // avoid skipping first index by evaluating at currentIndex once before the for loop.
-        if (table[currentIndex].equals(item))
-            return true;
         if (table[currentIndex] == null)
             return false;
+        if (table[currentIndex].equals(item))
+            return true;
+
 
         // if neither condition above occurred, keep checking in for-loop while updating currentIndex
         for (int i = 0; i < capacity; i++) {

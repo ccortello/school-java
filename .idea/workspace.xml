@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="improved quadratic probing implementation thats less complex in running time, used it from textbook. Also eliminated call to contains() in add method to decrease run time since add and contains have to do the same thing anyway">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/SpellCheckUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/SpellChecker.java" />
+    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="added SpellChecker &amp; SpellCheckerUtil to assignment 8 and made the necessary changes to them.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ChainingHashTable.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ChainingHashTable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ProbingHashTable.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ProbingHashTable.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -82,12 +82,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ChainingHashTable.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ChainingHashTable.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ChainingHashTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="696" max-vertical-offset="3915">
-              <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
-              <folding />
+            <state vertical-scroll-proportion="0.5420561" vertical-offset="406" max-vertical-offset="1972">
+              <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+              <folding>
+                <element signature="docComment;class#ChainingHashTable#0" expanded="false" />
+                <element signature="docComment;method#ChainingHashTable#0;class#ChainingHashTable#0" expanded="false" />
+                <element signature="docComment;method#setLambdaMAX#0;class#ChainingHashTable#0" expanded="false" />
+                <element signature="docComment;method#add#0;class#ChainingHashTable#0" expanded="false" />
+                <element signature="docComment;method#clear#0;class#ChainingHashTable#0" expanded="false" />
+                <element signature="docComment;method#rehash#0;class#ChainingHashTable#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -95,18 +102,25 @@
       <file leaf-file-name="ProbingHashTable.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ProbingHashTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3973" max-vertical-offset="4437">
-              <caret line="137" column="25" selection-start-line="137" selection-start-column="25" selection-end-line="137" selection-end-column="25" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="174" max-vertical-offset="1740">
+              <caret line="104" column="25" selection-start-line="104" selection-start-column="25" selection-end-line="104" selection-end-column="25" />
+              <folding>
+                <element signature="docComment;class#ProbingHashTable#0" expanded="false" />
+                <element signature="docComment;method#ProbingHashTable#0;class#ProbingHashTable#0" expanded="false" />
+                <element signature="docComment;method#add#0;class#ProbingHashTable#0" expanded="false" />
+                <element signature="docComment;method#contains#0;class#ProbingHashTable#0" expanded="false" />
+                <element signature="docComment;method#clear#0;class#ProbingHashTable#0" expanded="false" />
+                <element signature="docComment;method#rehash#0;class#ProbingHashTable#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpellCheckUtil.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SpellCheckUtil.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/SpellCheckUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28423476" vertical-offset="14" max-vertical-offset="1015">
-              <caret line="20" column="71" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="71" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="14" max-vertical-offset="1015">
+              <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
               <folding>
                 <element signature="docComment;class#SpellCheckUtil#0" expanded="false" />
                 <element signature="docComment;method#SpellCheckUtil#0;class#SpellCheckUtil#0" expanded="false" />
@@ -213,9 +227,9 @@
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTable.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/BadHashFunctor.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/FairHashFunctor.java" />
-        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ChainingHashTable.java" />
-        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ProbingHashTable.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/SpellCheckUtil.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ProbingHashTable.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ChainingHashTable.java" />
       </list>
     </option>
   </component>
@@ -1952,7 +1966,11 @@
       <created>1405030789145</created>
       <updated>1405030789145</updated>
     </task>
-    <option name="localTasksCounter" value="273" />
+    <task id="LOCAL-00273" summary="added SpellChecker &amp; SpellCheckerUtil to assignment 8 and made the necessary changes to them.">
+      <created>1405032924808</created>
+      <updated>1405032924809</updated>
+    </task>
+    <option name="localTasksCounter" value="274" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1993,6 +2011,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40133038" sideWeight="0.28916308" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26496673" sideWeight="0.36927083" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31374723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24892704" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -2006,7 +2025,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32594234" sideWeight="0.34438503" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26496673" sideWeight="0.36927083" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2027,7 +2045,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="finished all tests, working!!" />
     <MESSAGE value="changes to writeDotRecursive" />
     <MESSAGE value="added comments" />
     <MESSAGE value="commented writeDot method, added created .dot Files and their graphs. Also, added the .m MATLAB script I used to create the timing plots quickly" />
@@ -2052,7 +2069,8 @@
     <MESSAGE value="implemented rehash in ChainingHashTable and also added max lambda member variable in ChainingHashTable" />
     <MESSAGE value="updated fairHashFunctor because he asked us in the lecture to do something more than just sum the char, so I multiplied sum by item.length() as well" />
     <MESSAGE value="improved quadratic probing implementation thats less complex in running time, used it from textbook. Also eliminated call to contains() in add method to decrease run time since add and contains have to do the same thing anyway" />
-    <option name="LAST_COMMIT_MESSAGE" value="improved quadratic probing implementation thats less complex in running time, used it from textbook. Also eliminated call to contains() in add method to decrease run time since add and contains have to do the same thing anyway" />
+    <MESSAGE value="added SpellChecker &amp; SpellCheckerUtil to assignment 8 and made the necessary changes to them." />
+    <option name="LAST_COMMIT_MESSAGE" value="added SpellChecker &amp; SpellCheckerUtil to assignment 8 and made the necessary changes to them." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -2402,22 +2420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ChainingHashTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="1160">
-          <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ProbingHashTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="841">
-          <caret line="137" column="25" selection-start-line="137" selection-start-column="25" selection-end-line="137" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1305">
@@ -2440,8 +2442,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/SpellCheckUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28423476" vertical-offset="14" max-vertical-offset="1015">
-          <caret line="20" column="71" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="71" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="14" max-vertical-offset="1015">
+          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
           <folding>
             <element signature="docComment;class#SpellCheckUtil#0" expanded="false" />
             <element signature="docComment;method#SpellCheckUtil#0;class#SpellCheckUtil#0" expanded="false" />
@@ -2451,6 +2453,36 @@
             <element signature="docComment;method#spellCheck#0;class#SpellCheckUtil#0" expanded="false" />
             <element signature="docComment;method#buildDictionary#0;class#SpellCheckUtil#0" expanded="false" />
             <element signature="docComment;method#readFromFile#0;class#SpellCheckUtil#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ProbingHashTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="174" max-vertical-offset="1740">
+          <caret line="104" column="25" selection-start-line="104" selection-start-column="25" selection-end-line="104" selection-end-column="25" />
+          <folding>
+            <element signature="docComment;class#ProbingHashTable#0" expanded="false" />
+            <element signature="docComment;method#ProbingHashTable#0;class#ProbingHashTable#0" expanded="false" />
+            <element signature="docComment;method#add#0;class#ProbingHashTable#0" expanded="false" />
+            <element signature="docComment;method#contains#0;class#ProbingHashTable#0" expanded="false" />
+            <element signature="docComment;method#clear#0;class#ProbingHashTable#0" expanded="false" />
+            <element signature="docComment;method#rehash#0;class#ProbingHashTable#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ChainingHashTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5420561" vertical-offset="406" max-vertical-offset="1972">
+          <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+          <folding>
+            <element signature="docComment;class#ChainingHashTable#0" expanded="false" />
+            <element signature="docComment;method#ChainingHashTable#0;class#ChainingHashTable#0" expanded="false" />
+            <element signature="docComment;method#setLambdaMAX#0;class#ChainingHashTable#0" expanded="false" />
+            <element signature="docComment;method#add#0;class#ChainingHashTable#0" expanded="false" />
+            <element signature="docComment;method#clear#0;class#ChainingHashTable#0" expanded="false" />
+            <element signature="docComment;method#rehash#0;class#ChainingHashTable#0" expanded="false" />
           </folding>
         </state>
       </provider>

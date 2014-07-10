@@ -55,12 +55,15 @@ public class ChainingHashTable extends HashTable {
         int hashCode = hasher.hash(item);
         // use the item's hashcode and array size to determine the index or list to add item (asserts positive)
         int index = Math.abs(hashCode % capacity);
-        // check that String item is not already contained in the LinkedList at this index, if so return false.
-        if (storage[index].contains(item))
-            return false;
+
         // first check if the LinkedList is empty, if not increment collisions
-        if (! storage[index].isEmpty())
+        if (! storage[index].isEmpty()) {
+            // check that String item is not already contained in the LinkedList at this index, if so return false.
+            if (storage[index].contains(item))
+                return false;
             collisions++;
+        }
+
         // specified item is not contained in the LinkedList at this index, add specified item
         storage[index].add(item);
         // increase size, return true.
