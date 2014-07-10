@@ -45,7 +45,7 @@ public class TowersOfHanoi {
             TowersOfHanoi myTowers = null;
 
             try {
-                numDiscs = Integer.parseInt(args[0]); // Ensure valid integer argument
+                numDiscs = Integer.parseInt(args[0]); // Ensure used integer argument
             } catch (Exception e) {
                 System.out.println("\nInvalid number of discs argument!\n");
                 return;

@@ -26,7 +26,7 @@ public class GraphTool {
     }
 
     /**
-     * Responsible for checking user arguments and making sure the user command is valid
+     * Responsible for checking user arguments and making sure the user command is used
      * According to the user's command arguments runs the appropriate graph operation
      * <p/>
      * Accepts the following command parameters together:

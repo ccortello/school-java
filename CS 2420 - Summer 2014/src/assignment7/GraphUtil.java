@@ -12,7 +12,7 @@ import java.util.*;
  * Dijkstra's cheapest path routine - to find the cheapest path between two vertices in a graph
  * Topological sort - to produce a topologically sorted list of all vertices in a graph
  * Generating random graphs routine - to generate parameterized random graph for testing
- * Building graphs from file routine - to create and build a graph object from a valid dot file
+ * Building graphs from file routine - to create and build a graph object from a used dot file
  *
  * @author Paymon Saebi
  * @author Cody Cortello
@@ -52,7 +52,7 @@ public class GraphUtil {
         depthFirstSearchRecursive(start, goal);
 
         //after recursive call, if goal vertex has not been visited, state no path found and return empty list
-        if (! goal.getVisited()) {
+        if (!goal.getVisited()) {
 //            System.out.println("There was no path found from the vertex " + startName + " to the vertex " + goalName + "!");
             return path;
         }
@@ -63,7 +63,7 @@ public class GraphUtil {
         // first add the goal before looping
         reversePath.add(goal.getName());
         // continuous loop until goal equal startVertex
-        while (! goal.getName().equals(startName)) {
+        while (!goal.getName().equals(startName)) {
             reversePath.addLast(goal.getCameFrom().getName());
             goal = goal.getCameFrom();
         }
@@ -169,7 +169,7 @@ public class GraphUtil {
 
         /*check if Q emptied and goal was never reached, meaning there was no path from start to goal
         state this and return the empty list.*/
-        if (! finalVertex.equals(goal)) {
+        if (!finalVertex.equals(goal)) {
 //            System.out.println("There was no path found from the vertex " + startName + " to the vertex " + goalName + "!");
             return path;
         }
@@ -180,7 +180,7 @@ public class GraphUtil {
         // first add the goal before looping
         reversePath.addFirst(finalVertex.getName());
         // continuous loop until finalVertex equals startVertex
-        while (! finalVertex.equals(start)) {
+        while (!finalVertex.equals(start)) {
             reversePath.addLast(finalVertex.getCameFrom().getName());
             finalVertex = finalVertex.getCameFrom();
         }
@@ -305,7 +305,7 @@ public class GraphUtil {
      * Builds a graph according to the edges specified in the given DOT file (e.g., "a -- b" or "a -> b").
      * Accepts directed ("digraph") or undirected ("graph") graphs.
      * <p/>
-     * Accepts many valid DOT files (see examples posted with assignment).
+     * Accepts many used DOT files (see examples posted with assignment).
      * --accepts \\-style comments
      * --accepts one edge per line or edges terminated with ;\
      * --accepts label attributes (e.g., [label = "a label"]) for weights
@@ -394,7 +394,7 @@ public class GraphUtil {
      * Builds a graph according to the edges specified in the given DOT file (e.g., "a -- b" or "a -> b").
      * Accepts directed ("digraph") or undirected ("graph") graphs.
      * <p/>
-     * Accepts many valid DOT files (see examples posted with assignment).
+     * Accepts many used DOT files (see examples posted with assignment).
      * --accepts \\-style comments
      * --accepts one edge per line or edges terminated with ;
      * --does not accept attributes in [] (e.g., [label = "a label"])

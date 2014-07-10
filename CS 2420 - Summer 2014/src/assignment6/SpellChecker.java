@@ -9,7 +9,7 @@ import java.util.List;
  * Driver class for the spell checking utility.
  * <p/>
  * This class contains a main method which provides a command-line interface specific to the spell checking utility. The
- * interface must not run the spell checker unless the user input parameters are valid.
+ * interface must not run the spell checker unless the user input parameters are used.
  *
  * @author Paymon Saebi
  */
@@ -30,7 +30,7 @@ public class SpellChecker {
 
         //DO: Check to see if this dictionary file is a normal file
         //Use the File class isFile() method
-        if (! dictionary.isFile()) {
+        if (!dictionary.isFile()) {
             System.out.println("Unable to use the dictionary file!");
             return;
         }
@@ -40,7 +40,7 @@ public class SpellChecker {
 
         //DO: Check to see if this document file is a normal file
         //Use the File class isFile() method
-        if (! document.isFile()) {
+        if (!document.isFile()) {
             System.out.println("Unable to use the document file!");
             return;
         }
@@ -87,8 +87,7 @@ public class SpellChecker {
                     writer.close();
 
                     System.out.println("Please see misspelled.txt for a list of the words.");
-                }
-                catch (IOException e) {
+                } catch (IOException e) {
                     System.out.println("Unable to create a file for the misspelled words!");
                     return;
                 }

@@ -130,7 +130,7 @@ public class RecursiveSortingTester extends TestCase {
     public void testBetterPivotStrategy() throws Exception {
         // store the returned random index
         int pivotIndex = RecursiveSortingUtility.betterPivotStrategy(pivotStrategyList, 0, pivotStrategyList.size() - 1);
-        // assert valid pivotIndex, test that pivotStrategyList contains element at pivotIndex of 'arr' array
+        // assert used pivotIndex, test that pivotStrategyList contains element at pivotIndex of 'arr' array
         assertTrue(pivotStrategyList.contains((Integer) arr[pivotIndex]));
     }
 
@@ -245,7 +245,6 @@ public class RecursiveSortingTester extends TestCase {
      *
      * @param list list to be sorted and count the number of inversions
      * @param <T>  generic type of ArrayList that must extend Comparable
-     *
      * @return integer amount of the inversions in the passed ArrayList before it is sorted.
      */
     public static <T extends Comparable<? super T>> int inversionCounter(ArrayList<T> list) {

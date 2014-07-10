@@ -213,7 +213,6 @@ public class RecursiveSortingUtility {
      * @param list  - input ArrayList of T objects that must have a Comparable implementation
      * @param start - start index of the subarray  of objects
      * @param end   - end index of the subarray  of objects
-     *
      * @return pivot index which is the middle index between the start and end indexes
      */
     public static <T extends Comparable<? super T>> int goodPivotStrategy(ArrayList<T> list, int start, int end) {
@@ -227,11 +226,10 @@ public class RecursiveSortingUtility {
      * @param list  - input ArrayList of T objects that must have a Comparable implementation
      * @param start - start index of the subarray  of objects
      * @param end   - end index of the subarray  of objects
-     *
      * @return random index as the pivot index, chosen between the index range from the start to end index.
      */
     public static <T extends Comparable<? super T>> int betterPivotStrategy(ArrayList<T> list, int start, int end) {
-        // determine range of index values to generate a random index that is valid
+        // determine range of index values to generate a random index that is used
         int range = (end - start) + 1;
         // returns random index as pivot index, return value falling between start and end indexes.
         return (int) ((Math.random() * range) + start);
@@ -243,14 +241,13 @@ public class RecursiveSortingUtility {
      * @param list  - input ArrayList of T objects that must have a Comparable implementation
      * @param start - start index of the subarray  of objects
      * @param end   - end index of the subarray  of objects
-     *
      * @return Pivot index. Three random non-repeating indexes are generated and the returned index is the median valued
      * element of the three elements at those indices.
      */
     public static <T extends Comparable<? super T>> int bestPivotStrategy(ArrayList<T> list, int start, int end) {
         // declare 3 int variables to hold the 3 random indices
         int a, b, c;
-        // determine range of indexes available for valid index generation
+        // determine range of indexes available for used index generation
         int range = (end - start) + 1;
 
         // to handle cases of array partitions of 3 elements or less
@@ -264,7 +261,7 @@ public class RecursiveSortingUtility {
             c = end;
         }
 
-        // assign first random index in valid index range to 'a'
+        // assign first random index in used index range to 'a'
         a = ((int) (Math.random() * range) + start);
 
         // continue assigning a random index to 'b' until a non duplicate of 'a' is assigned.
@@ -299,7 +296,6 @@ public class RecursiveSortingUtility {
      * Generates an ArrayList of ints from 1 to size in ascending order
      *
      * @param size size of the returned ArrayList
-     *
      * @return an ArrayList of integers in sorted, ascending order, of all values from 1 to 'size'
      */
     public static ArrayList<Integer> generateBestCase(int size) {
@@ -316,7 +312,6 @@ public class RecursiveSortingUtility {
      * Generates an ArrayList of ints from 1 to size in random order
      *
      * @param size the size of the returned ArrayList
-     *
      * @return An ArrayList of random integers  valued from 1 to 'size' in permuted order
      */
     public static ArrayList<Integer> generateAverageCase(int size) {
@@ -334,7 +329,6 @@ public class RecursiveSortingUtility {
      * Generates an ArrayList of ints from 1 to size in ascending order
      *
      * @param size the size of the returned ArrayList
-     *
      * @return An ArrayList of all the integers from 'size' to 1 in descending order.
      */
     public static ArrayList<Integer> generateWorstCase(int size) {

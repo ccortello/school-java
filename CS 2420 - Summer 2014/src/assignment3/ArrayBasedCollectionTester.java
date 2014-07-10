@@ -127,7 +127,7 @@ public class ArrayBasedCollectionTester extends TestCase {
     }
 
     public void testIterator() throws Exception {
-        // this arrayTest has no "assertEquals," but instead uses a foreach loop to show that the iterator implementation is valid
+        // this arrayTest has no "assertEquals," but instead uses a foreach loop to show that the iterator implementation is used
         testCollectionIterator.add("first");
         testCollectionIterator.add("second");
         testCollectionIterator.add("third");

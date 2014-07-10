@@ -18,7 +18,7 @@ public class GraphUtil {
      * Builds a graph according to the edges specified in the given DOT file (e.g., "a -- b" or "a -> b").
      * Accepts directed ("digraph") or undirected ("graph") graphs.
      * <p/>
-     * Accepts many valid DOT files (see examples posted with assignment).
+     * Accepts many used DOT files (see examples posted with assignment).
      * --accepts \\-style comments
      * --accepts one edge per line or edges terminated with ;\
      * --accepts label attributes (e.g., [label = "a label"]) for weights
@@ -70,7 +70,7 @@ public class GraphUtil {
     /**
      * Builds a graph according to the edges specified in the given DOT file (e.g., "a -- b" or "a -> b"). Accepts directed ("digraph") or undirected ("graph") graphs.
      * <p/>
-     * Accepts many valid DOT files (see examples posted with assignment). --accepts \\-style comments --accepts one edge per line or edges terminated with ; --does not accept
+     * Accepts many used DOT files (see examples posted with assignment). --accepts \\-style comments --accepts one edge per line or edges terminated with ; --does not accept
      * attributes in [] (e.g., [label = "a label"])
      *
      * @param filename - name of the DOT file
