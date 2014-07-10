@@ -13,6 +13,14 @@ public class ProbingHashTable extends HashTable {
      */
     public ProbingHashTable(int capacity, HashFunctor functor) {
 
+        // find a prime number to use for the capacity
+        int correctCapacity = nextPrime(capacity);
+
+        // initialize the object fields appropriately
+        this.capacity = correctCapacity;
+        this.table = new String[correctCapacity];
+        this.valid = new boolean[correctCapacity];
+        this.functor = functor;
     }
 
     /**
@@ -23,14 +31,25 @@ public class ProbingHashTable extends HashTable {
      * if the input item was actually inserted); otherwise, returns false
      */
     public boolean add(String item) {
-        return false;
-    }
+        // don't add the item if it already exists in the table
+        if (this.contains(item))
+            return false;
 
-    /**
-     * Removes all items from this set. The set will be empty after this method call.
-     */
-    public void clear() {
+        // use quadratic probing to check for a valid add location (either empty or deleted)
+        int hash = functor.hash(item);
+        for (int i = 0; i < capacity; i++) {
+            int currentIndex = hash + i ^ 2; // compute the next location to check
+            if (valid[currentIndex]) { // if the location can be used add the item
+                table[currentIndex] = item;
+                valid[currentIndex] = false;
+                size++;
+            }
+        }
 
+        // resize the table if the load factor has become too large
+        if (getLamda() > 0.5)
+            rehash();
+        return true;
     }
 
     /**
@@ -41,16 +60,44 @@ public class ProbingHashTable extends HashTable {
      * item; otherwise, returns false
      */
     public boolean contains(String item) {
+        // use quadratic probing to check for a valid add location (either empty or deleted)
+        int hash = functor.hash(item);
+        for (int i = 0; i < capacity; i++) {
+            int currentIndex = hash + i ^ 2;
+            if (table[currentIndex].equals(item) || valid[currentIndex]) // if the item is found or could be added
+                return true;
+        }
         return false;
     }
 
-    /* advised helper methods - not necessary, but recommended */
-
+    /**
+     * Returns the first prime integer greater than or equal to the passed integer
+     */
     private int nextPrime(int number) {
-        return 0;
+        // copy the number so we don't affect the parameter
+        int n = number;
+
+        // make n odd if it's not
+        if (n % 2 == 0)
+            n++;
+
+        // increase n until a prime number is found
+        while (!isPrime(n))
+            n += 2;
+
+        return n;
     }
 
+    /**
+     * Returns true iff the passed int is prime
+     */
     private boolean isPrime(int number) {
-        return false;
+        // test each odd integer smaller than sqrt(number) to see if it's a factor
+        for (int test = 3; test < Math.sqrt(number) + 1; test += 2)
+            if (number % test == 0)
+                return false;
+
+        // if no factor was found the number is prime
+        return true;
     }
 }

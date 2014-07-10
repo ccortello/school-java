@@ -18,9 +18,10 @@ public abstract class HashTable implements Set<String> {
      * your ChainingHashTable (such as, say, a size variable) probably belong here in
      * the parent class. Should the variable(s) be public, private, or protected?
      */
-    private int size, capacity, collisions;
-    private String[] table;
-    private boolean[] deleted;
+    protected int size, capacity, collisions;
+    protected String[] table;
+    protected boolean[] valid;
+    protected HashFunctor functor;
 
     /**
      * Ensures that this set contains all items in the specified collection.
@@ -70,10 +71,10 @@ public abstract class HashTable implements Set<String> {
      * Double the size and add each element again
      */
     public void rehash() {
-        // copy all existing elements (which shouldn't be deleted) in the table to a new list
+        // copy all existing elements (which shouldn't be valid) in the table to a new list
         LinkedList<String> tableCopy = new LinkedList<String>();
         for (int i = 0; i < table.length; i++)
-            if (table[i] != null && !deleted[i])
+            if (table[i] != null && !valid[i])
                 tableCopy.add(table[i]);
 
         // increase the capacity of the table, clear all elements, then rehash them back in
@@ -103,6 +104,6 @@ public abstract class HashTable implements Set<String> {
         size = 0;
         collisions = 0;
         table = new String[capacity];
-        deleted = new boolean[capacity];
+        valid = new boolean[capacity];
     }
 }
