@@ -80,7 +80,9 @@ public abstract class HashTable implements Set<String> {
     }
 
     /**
-     * Function returns the current fraction of the HashTable that is filled, called the load factor or (lambda)
+     * Function returns the current fraction of the HashTable that is filled if it is a probing HashTable,
+     * or returns the average LinkedList length if it is a separate chaining HashTable.
+     *
      * @return the load factor lambda of the current table
      */
     public double getLamda() {
