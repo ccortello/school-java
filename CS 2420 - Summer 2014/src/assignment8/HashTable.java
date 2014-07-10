@@ -1,6 +1,7 @@
 package assignment8;
 
 import java.util.Collection;
+import java.util.LinkedList;
 
 /**
  * An abstract class facilitating the implementation of a concrete hash table.
@@ -17,7 +18,9 @@ public abstract class HashTable implements Set<String> {
      * your ChainingHashTable (such as, say, a size variable) probably belong here in
      * the parent class. Should the variable(s) be public, private, or protected?
      */
-    //TODO
+    public int size;
+    public int capacity;
+    private String[] table;
 
     /**
      *
@@ -46,15 +49,24 @@ public abstract class HashTable implements Set<String> {
     /**
      *
      */
-    public final int size() {
-        //TODO
-        return 0;
-    }
+    public final int size() {return size;}
 
     /* advised helper methods - not necessary, but recommended */
 
+    /**
+     * Double the size and add each element again
+     */
     public void rehash() {
+        // copy all existing elements in the table to a new list
+        LinkedList<String> tableCopy = new LinkedList<String>();
+        for (String s : table)
+            if (s != null)
+                tableCopy.add(s);
 
+        // increase the capacity of the table, clear all elements, then rehash them back in
+        capacity *= 2;
+        clear();
+        addAll(tableCopy);
     }
 
     public double getLamda() {
@@ -63,5 +75,13 @@ public abstract class HashTable implements Set<String> {
 
     public int getCollisions() {
         return 0;
+    }
+
+    /**
+     * Clear all elements in the table
+     */
+    public void clear() {
+        size = 0;
+        table = new String[capacity];
     }
 }
