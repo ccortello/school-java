@@ -2,62 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="update">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/graphData.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Assignment8_Analysis.rtf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashFunctor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Set.java" />
-      <change type="DELETED" beforePath="C:\Users\Cody\Java\school-java\10,2dacw.dot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cody\Java\school-java\10,2udacuw.dot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cody\Java\school-java\100,2dacw.dot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cody\Java\school-java\100,2udacuw.dot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cody\Java\school-java\1000,2dacw.dot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cody\Java\school-java\20,2dacw.dot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cody\Java\school-java\20,2udacuw.dot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cody\Java\school-java\200,2dacw.dot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cody\Java\school-java\200,2udacuw.dot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cody\Java\school-java\5,2dacw.dot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cody\Java\school-java\5,2udacuw.dot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cody\Java\school-java\50,2dacw.dot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cody\Java\school-java\50,2udacuw.dot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cody\Java\school-java\500,2dacw.dot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cody\Java\school-java\500,2udacuw.dot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment7\graphData.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cody\Java\school-java\exampleGraph9.dot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cody\Java\school-java\examplegraph6.dot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cody\Java\school-java\examplegraph6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cody\Java\school-java\examplegraph7.dot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cody\Java\school-java\examplegraph8.dot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cody\Java\school-java\examplegraph8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cody\Java\school-java\hugeDirectedAcyclicWeighted.dot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cody\Java\school-java\topoTest.dot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cody\Java\school-java\topoTest.dot.jpg" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Cody\Java\school-java\10,2dacw.dot" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/10,2dacw.dot" />
-      <change type="MOVED" beforePath="C:\Users\Cody\Java\school-java\10,2udacuw.dot" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/10,2udacuw.dot" />
-      <change type="MOVED" beforePath="C:\Users\Cody\Java\school-java\100,2dacw.dot" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/100,2dacw.dot" />
-      <change type="MOVED" beforePath="C:\Users\Cody\Java\school-java\100,2udacuw.dot" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/100,2udacuw.dot" />
-      <change type="MOVED" beforePath="C:\Users\Cody\Java\school-java\1000,2dacw.dot" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/1000,2dacw.dot" />
-      <change type="MOVED" beforePath="C:\Users\Cody\Java\school-java\20,2dacw.dot" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/20,2dacw.dot" />
-      <change type="MOVED" beforePath="C:\Users\Cody\Java\school-java\20,2udacuw.dot" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/20,2udacuw.dot" />
-      <change type="MOVED" beforePath="C:\Users\Cody\Java\school-java\200,2dacw.dot" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/200,2dacw.dot" />
-      <change type="MOVED" beforePath="C:\Users\Cody\Java\school-java\200,2udacuw.dot" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/200,2udacuw.dot" />
-      <change type="MOVED" beforePath="C:\Users\Cody\Java\school-java\5,2dacw.dot" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/5,2dacw.dot" />
-      <change type="MOVED" beforePath="C:\Users\Cody\Java\school-java\5,2udacuw.dot" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/5,2udacuw.dot" />
-      <change type="MOVED" beforePath="C:\Users\Cody\Java\school-java\50,2dacw.dot" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/50,2dacw.dot" />
-      <change type="MOVED" beforePath="C:\Users\Cody\Java\school-java\50,2udacuw.dot" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/50,2udacuw.dot" />
-      <change type="MOVED" beforePath="C:\Users\Cody\Java\school-java\500,2dacw.dot" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/500,2dacw.dot" />
-      <change type="MOVED" beforePath="C:\Users\Cody\Java\school-java\500,2udacuw.dot" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/500,2udacuw.dot" />
-      <change type="MOVED" beforePath="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment7\BFS_2n.png" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/BFS_2n.png" />
-      <change type="MOVED" beforePath="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment7\BFS_3n.png" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/BFS_3n.png" />
-      <change type="MOVED" beforePath="C:\Users\Cody\Java\school-java\exampleGraph9.dot" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/exampleGraph9.dot" />
-      <change type="MOVED" beforePath="C:\Users\Cody\Java\school-java\examplegraph6.dot" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/examplegraph6.dot" />
-      <change type="MOVED" beforePath="C:\Users\Cody\Java\school-java\examplegraph6.jpg" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/examplegraph6.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Cody\Java\school-java\examplegraph7.dot" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/examplegraph7.dot" />
-      <change type="MOVED" beforePath="C:\Users\Cody\Java\school-java\examplegraph8.dot" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/examplegraph8.dot" />
-      <change type="MOVED" beforePath="C:\Users\Cody\Java\school-java\examplegraph8.jpg" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/examplegraph8.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Cody\Java\school-java\hugeDirectedAcyclicWeighted.dot" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/hugeDirectedAcyclicWeighted.dot" />
-      <change type="MOVED" beforePath="C:\Users\Cody\Java\school-java\topoTest.dot" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/topoTest.dot" />
-      <change type="MOVED" beforePath="C:\Users\Cody\Java\school-java\topoTest.dot.jpg" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/topoTest.dot.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/graphData.xlsx" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/graphData.xlsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -121,8 +66,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <breakpoint_rules converted="true" />
     <ui_properties converted="true" />
+    <breakpoint_rules converted="true" />
   </component>
   <component name="ErrorTreeViewConfiguration">
     <option name="autoscrollToSource" value="true" />
@@ -136,29 +81,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GraphUtilTimer.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="GraphUtilTimer.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtilTimer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="559" max-vertical-offset="1479">
-              <caret line="89" column="86" selection-start-line="22" selection-start-column="20" selection-end-line="89" selection-end-column="86" />
+            <state vertical-scroll-proportion="0.48101267" vertical-offset="0" max-vertical-offset="869">
+              <caret line="255" column="0" selection-start-line="255" selection-start-column="0" selection-end-line="255" selection-end-column="0" />
               <folding>
                 <element signature="docComment;class#GraphUtilTimer#0" expanded="false" />
-                <element signature="method#GraphUtilTimer#0;class#GraphUtilTimer#0" expanded="true" />
-                <element signature="e#1751#1791#0" expanded="false" />
-                <element signature="e#2911#2963#0" expanded="false" />
-                <element signature="e#8082#8144#0" expanded="false" />
-                <element signature="e#10035#10097#0" expanded="false" />
+                <element signature="e#331#358#0" expanded="false" />
+                <element signature="e#8324#8386#0" expanded="false" />
+                <element signature="e#10277#10339#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Set.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Set.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1207">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -166,7 +99,7 @@
       <file leaf-file-name="GraphUtil.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2941" max-vertical-offset="9962">
+            <state vertical-scroll-proportion="0.0" vertical-offset="3806" max-vertical-offset="12892">
               <caret line="173" column="24" selection-start-line="173" selection-start-column="24" selection-end-line="173" selection-end-column="24" />
               <folding />
             </state>
@@ -176,7 +109,7 @@
       <file leaf-file-name="Graph.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/Graph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1190" max-vertical-offset="2414">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1540" max-vertical-offset="3124">
               <caret line="70" column="11" selection-start-line="70" selection-start-column="11" selection-end-line="70" selection-end-column="34" />
               <folding />
             </state>
@@ -186,7 +119,7 @@
       <file leaf-file-name="GraphUtilTester.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtilTester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="1088">
+            <state vertical-scroll-proportion="0.0" vertical-offset="440" max-vertical-offset="1408">
               <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
               <folding />
             </state>
@@ -273,10 +206,10 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -306,58 +239,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Default">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="CS 2420 - Summer 2014">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="CS 2420 - Summer 2014">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Problems">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="CS 2420 - Summer 2014">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="CS 2420 - Summer 2014">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -414,8 +295,60 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assignment8" />
+              <option name="myItemId" value="assignment7" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="CS 2420 - Summer 2014">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="CS 2420 - Summer 2014">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Problems">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="CS 2420 - Summer 2014">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="CS 2420 - Summer 2014">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -468,17 +401,17 @@
     <property name="restartRequiresConfirmation" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="junit.framework.TestCase" />
-      <recent name="" />
-      <recent name="groovy.util.GroovyTestCase" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="assignment6" />
       <recent name="assignment4" />
       <recent name="assignment3" />
       <recent name="assignment2" />
       <recent name="homework10" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="junit.framework.TestCase" />
+      <recent name="" />
+      <recent name="groovy.util.GroovyTestCase" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="assignment7" />
@@ -488,18 +421,18 @@
       <recent name="homework08" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment8" />
-      <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment7" />
       <recent name="C:\Users\Casey\Documents\GitHub_Clones\school-java\CS 2420 - Summer 2014\src\assignment7" />
       <recent name="C:\Users\Cody\Java\school-java" />
+      <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment7" />
       <recent name="C:\Users\Casey\Documents\GitHub_Clones\school-java\CS 2420 - Summer 2014\src\assignment6" />
+      <recent name="C:\Users\Casey\Documents\IntelliJ_Projects\school-java\CS 2420 - Summer 2014\src\assignment5" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment7\GraphsPlusData" />
-      <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment8" />
       <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment6\Cody's Analysis" />
       <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment6" />
       <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment2" />
+      <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014" />
+      <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src" />
     </key>
   </component>
   <component name="RunManager" selected="Application.GraphUtilTimer">
@@ -623,16 +556,6 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
-      <module name="" />
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="depsClasspath" value="false" />
-      <setting name="passParentEnv" value="true" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <setting name="launchBrowser" value="false" />
-      <method />
-    </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -662,21 +585,17 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
-      <option name="BCName" value="" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="moduleName" value="" />
-      <option name="trusted" value="true" />
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -705,38 +624,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="myFilePath" />
-      <option name="GLUE" />
-      <option name="myNameFilter" />
-      <option name="myGeneratedName" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -793,41 +680,6 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
-      <option name="BCName" value="" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="" />
-      <option name="overriddenMainClass" value="" />
-      <option name="overriddenOutputFileName" value="" />
-      <option name="overrideMainClass" value="false" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
       <method />
     </configuration>
     <configuration default="false" name="testBinarySearchTree" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
@@ -986,8 +838,6 @@
       <workItem from="1404616335265" duration="3051000" />
       <workItem from="1404619680623" duration="1000" />
       <workItem from="1404619689889" duration="2093000" />
-      <workItem from="1404667828141" duration="1301000" />
-      <workItem from="1404960323807" duration="322000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -2010,18 +1860,18 @@
       <updated>1404667071209</updated>
     </task>
     <task id="LOCAL-00256" summary="update">
-      <created>1404667942641</created>
-      <updated>1404667942641</updated>
+      <created>1404667458212</created>
+      <updated>1404667458212</updated>
     </task>
     <task id="LOCAL-00257" summary="update">
-      <created>1404668351985</created>
-      <updated>1404668351985</updated>
+      <created>1404668901608</created>
+      <updated>1404668901608</updated>
     </task>
     <option name="localTasksCounter" value="258" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="296690000" />
+    <option name="totallyTimeSpent" value="295067000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -2044,8 +1894,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5140625" order="8" side_tool="false" content_ui="tabs" />
@@ -2053,27 +1903,27 @@
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.14166667" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41796008" sideWeight="0.47433156" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40133038" sideWeight="0.28916308" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2660754" sideWeight="0.36927083" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31374723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24892704" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1390625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4177215" sideWeight="0.52566844" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13957219" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41796008" sideWeight="0.52566844" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32705098" sideWeight="0.34438503" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2660754" sideWeight="0.36927083" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2140,6 +1990,33 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtilTimer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="775" max-vertical-offset="1625">
+          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+          <folding>
+            <element signature="docComment;class#GraphUtilTimer#0" expanded="false" />
+            <element signature="e#331#358#0" expanded="false" />
+            <element signature="e#8324#8386#0" expanded="false" />
+            <element signature="e#10277#10339#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/OurLibraryGenericTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.6282895" vertical-offset="0" max-vertical-offset="1700">
+          <caret line="98" column="1" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2130" max-vertical-offset="2618">
+          <caret line="72" column="11" selection-start-line="72" selection-start-column="11" selection-end-line="72" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Spring 2014/src/lab01/CoinFlipExperiment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1224">
@@ -2401,15 +2278,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6108696" vertical-offset="5847" max-vertical-offset="8160">
           <caret line="568" column="13" selection-start-line="568" selection-start-column="13" selection-end-line="568" selection-end-column="13" />
+          <folding>
+            <element signature="method#poll#0;class#PriorityQueue#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/examplegraph8.jpg">
+    <entry file="file://$PROJECT_DIR$/examplegraph8.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/examplegraph6.jpg">
+    <entry file="file://$PROJECT_DIR$/examplegraph6.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -2418,10 +2298,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.82857144" vertical-offset="0" max-vertical-offset="1875">
           <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
+          <folding>
+            <element signature="docComment;class#Vertex#0" expanded="false" />
+            <element signature="docComment;method#Vertex#0;class#Vertex#0" expanded="false" />
+            <element signature="docComment;method#addEdge#0;class#Vertex#0" expanded="false" />
+            <element signature="docComment;method#addEdgeWeighted#0;class#Vertex#0" expanded="false" />
+            <element signature="docComment;method#edges#0;class#Vertex#0" expanded="false" />
+            <element signature="docComment;method#getEdges#0;class#Vertex#0" expanded="false" />
+            <element signature="docComment;method#getName#0;class#Vertex#0" expanded="false" />
+            <element signature="docComment;method#setVisited#0;class#Vertex#0" expanded="false" />
+            <element signature="docComment;method#getVisited#0;class#Vertex#0" expanded="false" />
+            <element signature="docComment;method#setCameFrom#0;class#Vertex#0" expanded="false" />
+            <element signature="docComment;method#getCameFrom#0;class#Vertex#0" expanded="false" />
+            <element signature="docComment;method#setCostFromStart#0;class#Vertex#0" expanded="false" />
+            <element signature="docComment;method#getCostFromStart#0;class#Vertex#0" expanded="false" />
+            <element signature="docComment;method#getInDegree#0;class#Vertex#0" expanded="false" />
+            <element signature="docComment;method#decInDegree#0;class#Vertex#0" expanded="false" />
+            <element signature="docComment;method#incInDegree#0;class#Vertex#0" expanded="false" />
+            <element signature="docComment;method#equals#0;class#Vertex#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#Vertex#0" expanded="false" />
+            <element signature="docComment;method#compareTo#0;class#Vertex#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/5,2udacuw.dot">
+    <entry file="file://$PROJECT_DIR$/5,2udacuw.dot">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="920">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -2432,6 +2333,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1717">
           <caret line="53" column="2" selection-start-line="53" selection-start-column="2" selection-end-line="53" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2467,36 +2369,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/BFS_3n.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphsPlusData/BFS_2n.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtilTimer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="559" max-vertical-offset="1479">
-          <caret line="89" column="86" selection-start-line="22" selection-start-column="20" selection-end-line="89" selection-end-column="86" />
+        <state vertical-scroll-proportion="0.48101267" vertical-offset="0" max-vertical-offset="869">
+          <caret line="255" column="0" selection-start-line="255" selection-start-column="0" selection-end-line="255" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#GraphUtilTimer#0" expanded="false" />
-            <element signature="method#GraphUtilTimer#0;class#GraphUtilTimer#0" expanded="true" />
-            <element signature="e#1751#1791#0" expanded="false" />
-            <element signature="e#2911#2963#0" expanded="false" />
-            <element signature="e#8082#8144#0" expanded="false" />
-            <element signature="e#10035#10097#0" expanded="false" />
+            <element signature="e#331#358#0" expanded="false" />
+            <element signature="e#8324#8386#0" expanded="false" />
+            <element signature="e#10277#10339#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Set.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1207">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

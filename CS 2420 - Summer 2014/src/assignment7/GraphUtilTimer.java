@@ -21,76 +21,75 @@ public class GraphUtilTimer {
     }
 
     void DFStimer() {
-        int timesToLoop = 20;  // higher number causes more accurate average time, but takes much longer
-        int maxSize = 20000;   // determines right boundary of plot
-
+        int timesToLoop = 100;  // higher number causes more accurate average time
+        int maxSize = 10000;   // determines right boundary of plot
+        Random rand = new Random(656794684984L); // used to create random lists
+        List<String> names;
+        String name1, name2;
         //print info for the max input size and the number of times looping, as well as column headers for results
-        System.out.println("MaxSize = " + maxSize + ", loops = " + timesToLoop + "\n\nsize\ttime");
+        System.out.println("MaxSize = " + maxSize + ", loops = " + timesToLoop + "\n\nsize\ttime\tavg");
 
-        // testing loops,each of these loops accounts for a different input size 'N'
-        for (int i = 2000; i <= maxSize; i += 2000) {
-            String name1, name2;
+        // testing loop
+        for (int i = 0; i <= maxSize; i += 1000) {
+            //this allows to have the first data be 100, but then go in increments of 1000 and ending at 10000
+            if (i == 0) i = 100;
             long startTime, midTime, endTime;
-            Graph testGraph;
-            HashMap<String,Vertex> map;
-            int toAdd;
+            long seed = System.currentTimeMillis();
+            rand.setSeed(seed);
 
-            // this while loop runs for a full second to get things warmed up and running before timing starts
+            // let a while loop run for a full second to get things spooled up.
             startTime = System.nanoTime();
-            while (System.nanoTime() - startTime < 1e9) {/*empty*/}
-
-            // startTime and testing start here
-            startTime = System.nanoTime();
-            for (int j = 0; j < timesToLoop; j++) {
-                GraphUtil.generateGraphInDotFile("testGraph2.dot", i, 2, false, true, false);
-                for (int k = 0; k < 5; k++) {
-                    testGraph = GraphUtil.buildGraphFromDotFile("testGraph2.dot");
-                    System.nanoTime();
-//                    System.nanoTime();
-//                    map = testGraph.getVertices();
-//                    name1 = "v"; name2 = "v";
-//                    toAdd = 0;
-//                    while (! map.containsKey(name1))
-//                        name1 = "v" + toAdd++;
-//                    toAdd = i;
-//                    while (! map.containsKey(name2) || name1 == name2)
-//                        name2 = "v" + toAdd--;
-                    try {
-                        GraphUtil.depthFirstSearch(testGraph, "v" + ((int) (Math.random() * 10)), "v" + (i - ((int) (Math.random() * 10))));
-                    }
-                    catch (Exception e) {
-                        continue;
-                    }
-                }
+            while (System.nanoTime() - startTime < 1e9) { //empty block
             }
 
-            midTime = System.nanoTime();   // midTime is set to aid in subtracting overhead
+            // startTime and testing start here.
+            startTime = System.nanoTime();
+            rand.setSeed(seed);
             for (int j = 0; j < timesToLoop; j++) {
-                GraphUtil.generateGraphInDotFile("testGraph2.dot", i, 2, false, true, false);
+                // create the dot file with specified parameters
+                GraphUtil.generateGraphInDotFile("testGraph.dot", i, 3, false, true, false);
+                // create the graph from the dot file
+                Graph testGraph = GraphUtil.buildGraphFromDotFile("testGraph.dot");
+                // hashmap to verify key names are in the graph
+                HashMap<String,Vertex> keys = testGraph.getVertices();
                 for (int k = 0; k < 5; k++) {
-                    testGraph = GraphUtil.buildGraphFromDotFile("testGraph2.dot");
-                    System.nanoTime();
-//                    map = testGraph.getVertices();
-//                    name1 = "v"; name2 = "v";
-//                    toAdd = 0;
-//                    while (! map.containsKey(name1))
-//                        name1 = "v" + toAdd++;
-//                    toAdd = i;
-//                    while (! map.containsKey(name2) || name1 == name2)
-//                        name2 = "v" + toAdd--;System.nanoTime();
-                    try {
-                    }
-                    catch (Exception e) {
-                        continue;
-                    }
+                    // rebuild the graph each loop
+                    testGraph = GraphUtil.buildGraphFromDotFile("testGraph.dot");
+                    name1 = "v";
+                    name2 = "v";
+                    // though same graph use different random key names
+                    while (! keys.containsKey(name1))
+                        name1 = "v" + (i - rand.nextInt(i));
+                    while (! keys.containsKey(name2))
+                        name2 = "v" + (i - rand.nextInt(i));
+                    names = GraphUtil.depthFirstSearch(testGraph, name1, name2);
+                }
+            }
+            // take the middle time, then run it all over again with out breadthFirstSearch to determine overhead
+            midTime = System.nanoTime();
+            rand.setSeed(seed);
+            for (int j = 0; j < timesToLoop; j++) {
+                GraphUtil.generateGraphInDotFile("testGraph.dot", i, 3, false, true, false);
+                Graph testGraph = GraphUtil.buildGraphFromDotFile("testGraph.dot");
+                HashMap<String,Vertex> keys = testGraph.getVertices();
+                for (int k = 0; k < 5; k++) {
+                    name1 = "v";
+                    name2 = "v";
+                    while (! keys.containsKey(name1))
+                        name1 = "v" + (i - rand.nextInt(i));
+                    while (! keys.containsKey(name2))
+                        name2 = "v" + (i - rand.nextInt(i));
                 }
             }
             endTime = System.nanoTime();
 
             // subtract the over head and determine average time for 'i' calls to get.
             double totalTime = ((midTime - startTime) - (endTime - midTime)) / timesToLoop;
-            double avgTime = totalTime / 10;
-            System.out.println(i + "\t" + avgTime);     // print results
+            // this is the avg time per use of breadthFirstSearch call
+            double avgTime = totalTime / 5;
+            System.out.println(i + "\t" + totalTime + "\t" + avgTime);     // print results
+
+            if (i == 100) i = 0;
         }
     }
 
