@@ -1,7 +1,5 @@
 package assignment8;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collection;
 
 /**
@@ -20,8 +18,7 @@ public abstract class HashTable implements Set<String> {
      * the parent class. Should the variable(s) be public, private, or protected?
      */
     protected int size, capacity, collisions;
-    protected String[] table;
-    protected HashFunctor functor;
+    protected HashFunctor hasher;
 
     /**
      * Ensures that this set contains all items in the specified collection.
@@ -68,23 +65,11 @@ public abstract class HashTable implements Set<String> {
     /* advised helper methods - not necessary, but recommended */
 
     /**
-     * Double the size and add each element again
+     * Function which returns the current capacity of this HashTable
+     * @return
      */
-    public void rehash() {
-        // copy all existing elements (which shouldn't be used) in the table to a new list
-        ArrayList<String> tableCopy = new ArrayList<String>(Arrays.asList(table));
-
-        // increase the capacity of the table, clear all elements, then rehash them back in
-        capacity *= 2;
-        clear();
-        addAll(tableCopy);
-    }
-
-    /**
-     * @return the load factor lambda of the current table
-     */
-    public double getLamda() {
-        return ((double) capacity) / size;
+    public int getCapacity() {
+        return capacity;
     }
 
     /**
@@ -95,11 +80,33 @@ public abstract class HashTable implements Set<String> {
     }
 
     /**
-     * Clear all elements in the table
+     * Returns the first prime integer greater than or equal to the passed integer
      */
-    public void clear() {
-        size = 0;
-        collisions = 0;
-        table = new String[capacity];
+    public int nextPrime(int number) {
+        // copy the number so we don't affect the parameter
+        int n = number;
+
+        // make n odd if it's not
+        if (n % 2 == 0)
+            n++;
+
+        // increase n until a prime number is found
+        while (! isPrime(n))
+            n += 2;
+
+        return n;
+    }
+
+    /**
+     * Returns true iff the passed int is prime
+     */
+    public boolean isPrime(int number) {
+        // test each odd integer smaller than sqrt(number) to see if it's a factor
+        for (int test = 3; test < Math.sqrt(number) + 1; test += 2)
+            if (number % test == 0)
+                return false;
+
+        // if no factor was found the number is prime
+        return true;
     }
 }

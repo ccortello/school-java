@@ -1,5 +1,8 @@
 package assignment8;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 /**
  * An open-addressed HashTable implementation which uses quadratic probing to resolve collisions
  * and doesn't allow for duplicate items
@@ -8,6 +11,8 @@ package assignment8;
  * @author Casey Nordgran
  */
 public class ProbingHashTable extends HashTable {
+    private String[] table;
+
     /**
      * Constructs a HashTable with a given capacity and using a particular hash
      * function.
@@ -24,7 +29,7 @@ public class ProbingHashTable extends HashTable {
         this.collisions = 0;
         this.capacity = correctCapacity;
         this.table = new String[correctCapacity];
-        this.functor = functor;
+        hasher = functor;
     }
 
     /**
@@ -40,7 +45,7 @@ public class ProbingHashTable extends HashTable {
             return false;
 
         // use quadratic probing to check for a used add location (either empty or deleted)
-        int hash = functor.hash(item);
+        int hash = hasher.hash(item);
         for (int i = 0; i < (capacity / 2) + 1; i++) {
             int currentIndex = hash + i ^ 2; // compute the next location to check
             if (table[currentIndex] == null) { // if the location can be used add the item and quit checking locations
@@ -70,7 +75,7 @@ public class ProbingHashTable extends HashTable {
             return true; // return true so the caller doesn't try to change the table
 
         // use quadratic probing to check for the item
-        int hash = functor.hash(item);
+        int hash = hasher.hash(item);
         for (int i = 0; i < (capacity / 2) + 1; i++) {
             int currentIndex = hash + i ^ 2;
             if (table[currentIndex] == null) // if the location is empty the item hasn't been added
@@ -82,33 +87,32 @@ public class ProbingHashTable extends HashTable {
     }
 
     /**
-     * Returns the first prime integer greater than or equal to the passed integer
+     * Clear all elements in the ProbingHashTable
      */
-    private int nextPrime(int number) {
-        // copy the number so we don't affect the parameter
-        int n = number;
-
-        // make n odd if it's not
-        if (n % 2 == 0)
-            n++;
-
-        // increase n until a prime number is found
-        while (!isPrime(n))
-            n += 2;
-
-        return n;
+    public void clear() {
+        size = 0;
+        collisions = 0;
+        table = new String[capacity];
     }
 
     /**
-     * Returns true iff the passed int is prime
+     * Double the size and add each element again
      */
-    private boolean isPrime(int number) {
-        // test each odd integer smaller than sqrt(number) to see if it's a factor
-        for (int test = 3; test < Math.sqrt(number) + 1; test += 2)
-            if (number % test == 0)
-                return false;
+    public void rehash() {
+        // copy all existing elements (which shouldn't be used) in the table to a new list
+        ArrayList<String> tableCopy = new ArrayList<String>(Arrays.asList(table));
 
-        // if no factor was found the number is prime
-        return true;
+        // increase the capacity of the table, clear all elements, then rehash them back in
+        capacity *= 2;
+        clear();
+        addAll(tableCopy);
+    }
+
+    /**
+     * Function returns the current fraction of the HashTable that is filled, called the load factor or (lambda)
+     * @return the load factor lambda of the current table
+     */
+    public double getLamda() {
+        return ((double) size) / capacity;
     }
 }
