@@ -32,7 +32,7 @@ public class ChainingHashTable extends HashTable {
         size = 0;
         collisions = 0;
         // default load factor threshold which determines when ChainingHashTable reHashes
-        lambda_MAX = 2.0;
+        lambda_MAX = 3.0;
     }
 
     /**

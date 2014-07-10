@@ -32,30 +32,48 @@ public class ProbingHashTable extends HashTable {
     }
 
     /**
-     * Ensures that this set contains the specified item.
+     * Ensures that this set contains the specified item. add is guaranteed to find an empty spot to add if
+     * capacity is prime and lambda < 0.5. With these to constraints enforced, int 'i' will never reach (capacity-1)
      *
      * @param item - the item whose presence is ensured in this set
      * @return true if this set changed as a result of this method call (that is,
      * if the input item was actually inserted); otherwise, returns false
      */
     public boolean add(String item) {
-        // don't add the item if it already exists in the table
-        if (this.contains(item))
-            return false;
-
-        // use quadratic probing to check for a used add location (either empty or deleted)
+        // return integer using the HashFunctor with specified item.
         int hash = hasher.hash(item);
-        for (int i = 0; i < (capacity / 2) + 1; i++) {
-            int currentIndex = hash + i ^ 2; // compute the next location to check
-            if (table[currentIndex] == null) { // if the location can be used add the item and quit checking locations
+        // determine initial index to add to array using this HashTables capacity, also assert it's positive.
+        int currentIndex = Math.abs(hash % capacity);
+        // checking the initial currentIndex the first time outside for loop to avoid skipping the first index.
+        if (table[currentIndex] == null) {
+            table[currentIndex] = item;  // item is added if the index points to empty spot.
+            size++;
+            // resize the table if the load factor has become too large
+            if (getLamda() > 0.5)
+                rehash();
+            return true;
+        }
+        // check if element at currentIndex equals 'item', if so, return false because duplicates are not allowed.
+        if (table[currentIndex].equals(item))
+            return false;
+        collisions++; // if the item cannot be added at the location it's a collision
+
+        // now perform the same previous steps as necessary in for loop, updating currentIndex as needed.
+        for (int i = 0; i < capacity; i++) {
+            // theorem 20.5 is used from textbook to update quadratic probe with less complexity than H+i^2
+            currentIndex = currentIndex + 2 * i - 1;
+            //account for wrap around
+            if (currentIndex >= capacity)
+                currentIndex = currentIndex - capacity;
+            if (table[currentIndex] == null) {
                 table[currentIndex] = item;
                 size++;
                 break;
             }
-            collisions++; // if the item cannot be added at the location it's a collision
+            if (table[currentIndex].equals(item))
+                return false;
+            collisions++;
         }
-
-        // resize the table if the load factor has become too large
         if (getLamda() > 0.5)
             rehash();
         return true;
