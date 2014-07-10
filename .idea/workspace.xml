@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="improved quadratic probing implementation thats less complex in running time, used it from textbook. Also eliminated call to contains() in add method to decrease run time since add and contains have to do the same thing anyway">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ProbingHashTable.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ProbingHashTable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/SpellCheckUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/SpellChecker.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -66,8 +67,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <breakpoint_rules converted="true" />
     <ui_properties converted="true" />
+    <breakpoint_rules converted="true" />
   </component>
   <component name="ErrorTreeViewConfiguration">
     <option name="autoscrollToSource" value="true" />
@@ -84,33 +85,59 @@
       <file leaf-file-name="ChainingHashTable.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ChainingHashTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="1160">
+            <state vertical-scroll-proportion="0.0" vertical-offset="696" max-vertical-offset="3915">
               <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProbingHashTable.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ProbingHashTable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="3973" max-vertical-offset="4437">
+              <caret line="137" column="25" selection-start-line="137" selection-start-column="25" selection-end-line="137" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpellCheckUtil.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/SpellCheckUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.28423476" vertical-offset="14" max-vertical-offset="1015">
+              <caret line="20" column="71" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="71" />
               <folding>
-                <element signature="docComment;class#ChainingHashTable#0" expanded="false" />
-                <element signature="docComment;method#ChainingHashTable#0;class#ChainingHashTable#0" expanded="false" />
-                <element signature="docComment;method#setLambdaMAX#0;class#ChainingHashTable#0" expanded="false" />
-                <element signature="docComment;method#add#0;class#ChainingHashTable#0" expanded="false" />
-                <element signature="docComment;method#contains#0;class#ChainingHashTable#0" expanded="false" />
-                <element signature="docComment;method#clear#0;class#ChainingHashTable#0" expanded="false" />
-                <element signature="docComment;method#rehash#0;class#ChainingHashTable#0" expanded="false" />
+                <element signature="docComment;class#SpellCheckUtil#0" expanded="false" />
+                <element signature="docComment;method#SpellCheckUtil#0;class#SpellCheckUtil#0" expanded="false" />
+                <element signature="docComment;method#SpellCheckUtil#1;class#SpellCheckUtil#0" expanded="false" />
+                <element signature="docComment;method#SpellCheckUtil#2;class#SpellCheckUtil#0" expanded="false" />
+                <element signature="docComment;method#addToDictionary#0;class#SpellCheckUtil#0" expanded="false" />
+                <element signature="docComment;method#spellCheck#0;class#SpellCheckUtil#0" expanded="false" />
+                <element signature="docComment;method#buildDictionary#0;class#SpellCheckUtil#0" expanded="false" />
+                <element signature="docComment;method#readFromFile#0;class#SpellCheckUtil#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProbingHashTable.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ProbingHashTable.java">
+      <file leaf-file-name="HashTable.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.70080554" vertical-offset="0" max-vertical-offset="869">
-              <caret line="137" column="25" selection-start-line="137" selection-start-column="25" selection-end-line="137" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1305">
+              <caret line="107" column="5" selection-start-line="107" selection-start-column="5" selection-end-line="107" selection-end-column="5" />
               <folding>
-                <element signature="docComment;class#ProbingHashTable#0" expanded="false" />
-                <element signature="docComment;method#ProbingHashTable#0;class#ProbingHashTable#0" expanded="false" />
-                <element signature="docComment;method#add#0;class#ProbingHashTable#0" expanded="false" />
-                <element signature="docComment;method#contains#0;class#ProbingHashTable#0" expanded="false" />
-                <element signature="docComment;method#clear#0;class#ProbingHashTable#0" expanded="false" />
-                <element signature="docComment;method#rehash#0;class#ProbingHashTable#0" expanded="false" />
+                <element signature="docComment;class#HashTable#0" expanded="false" />
+                <element signature="docComment;field#size#0;class#HashTable#0" expanded="false" />
+                <element signature="docComment;method#addAll#0;class#HashTable#0" expanded="false" />
+                <element signature="docComment;method#containsAll#0;class#HashTable#0" expanded="false" />
+                <element signature="docComment;method#isEmpty#0;class#HashTable#0" expanded="false" />
+                <element signature="docComment;method#size#0;class#HashTable#0" expanded="false" />
+                <element signature="docComment;method#getCapacity#0;class#HashTable#0" expanded="false" />
+                <element signature="docComment;method#getCollisions#0;class#HashTable#0" expanded="false" />
+                <element signature="docComment;method#getLamda#0;class#HashTable#0" expanded="false" />
+                <element signature="docComment;method#nextPrime#0;class#HashTable#0" expanded="false" />
+                <element signature="docComment;method#isPrime#0;class#HashTable#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -138,7 +165,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryTest.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/examples/week1examples/Shape.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/examples/week2examples/MatrixTimer.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/BookTest.java" />
@@ -189,6 +215,7 @@
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/FairHashFunctor.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ChainingHashTable.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ProbingHashTable.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/SpellCheckUtil.java" />
       </list>
     </option>
   </component>
@@ -214,7 +241,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="0" />
+    <option name="STATE" value="2" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -235,58 +262,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="workspace" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CS 2420 - Summer 2014" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CS 2420 - Summer 2014" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CS 2420 - Summer 2014" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assignment8" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -343,6 +318,58 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CS 2420 - Summer 2014" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CS 2420 - Summer 2014" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CS 2420 - Summer 2014" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assignment8" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -391,17 +418,17 @@
     <property name="restartRequiresConfirmation" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="junit.framework.TestCase" />
+      <recent name="" />
+      <recent name="groovy.util.GroovyTestCase" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="assignment6" />
       <recent name="assignment4" />
       <recent name="assignment3" />
       <recent name="assignment2" />
       <recent name="homework10" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="junit.framework.TestCase" />
-      <recent name="" />
-      <recent name="groovy.util.GroovyTestCase" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="assignment8" />
@@ -411,11 +438,11 @@
       <recent name="homework09" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Casey\Documents\GitHub_Clones\school-java\CS 2420 - Summer 2014\src\assignment8" />
       <recent name="C:\Users\Casey\Documents\GitHub_Clones\school-java\CS 2420 - Summer 2014\src\assignment7" />
       <recent name="C:\Users\Cody\Java\school-java" />
       <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment7" />
       <recent name="C:\Users\Casey\Documents\GitHub_Clones\school-java\CS 2420 - Summer 2014\src\assignment6" />
-      <recent name="C:\Users\Casey\Documents\IntelliJ_Projects\school-java\CS 2420 - Summer 2014\src\assignment5" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment7\GraphsPlusData" />
@@ -581,6 +608,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -607,19 +647,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1966,7 +1993,6 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40133038" sideWeight="0.28916308" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26496673" sideWeight="0.36927083" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31374723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24892704" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1974,15 +2000,16 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13903743" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41796008" sideWeight="0.52566844" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32594234" sideWeight="0.34438503" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26496673" sideWeight="0.36927083" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -2214,13 +2241,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment6/BinarySearchTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="394" max-vertical-offset="2850">
-          <caret line="124" column="39" selection-start-line="124" selection-start-column="39" selection-end-line="124" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/LinkedStructureTimer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1501" max-vertical-offset="2790">
@@ -2309,67 +2329,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="737" max-vertical-offset="3366">
           <caret line="625" column="26" selection-start-line="625" selection-start-column="26" selection-end-line="625" selection-end-column="26" />
-          <folding>
-            <element signature="docComment;class#Math#0" expanded="false" />
-            <element signature="docComment;method#Math#0;class#Math#0" expanded="false" />
-            <element signature="docComment;field#E#0;class#Math#0" expanded="false" />
-            <element signature="docComment;field#PI#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#sin#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#cos#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#tan#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#asin#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#acos#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#atan#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#toRadians#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#toDegrees#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#exp#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#log#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#log10#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#sqrt#0;class#Math#0" expanded="false" />
-            <element signature="e#11941#11980#0" expanded="false" />
-            <element signature="docComment;method#cbrt#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#IEEEremainder#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#ceil#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#floor#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#rint#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#atan2#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#pow#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#round#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#round#1;class#Math#0" expanded="false" />
-            <element signature="docComment;method#random#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#abs#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#abs#1;class#Math#0" expanded="false" />
-            <element signature="docComment;method#abs#2;class#Math#0" expanded="false" />
-            <element signature="docComment;method#abs#3;class#Math#0" expanded="false" />
-            <element signature="docComment;method#max#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#max#1;class#Math#0" expanded="false" />
-            <element signature="docComment;method#max#2;class#Math#0" expanded="false" />
-            <element signature="docComment;method#max#3;class#Math#0" expanded="false" />
-            <element signature="docComment;method#min#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#min#1;class#Math#0" expanded="false" />
-            <element signature="docComment;method#min#2;class#Math#0" expanded="false" />
-            <element signature="docComment;method#min#3;class#Math#0" expanded="false" />
-            <element signature="docComment;method#ulp#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#ulp#1;class#Math#0" expanded="false" />
-            <element signature="docComment;method#signum#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#signum#1;class#Math#0" expanded="false" />
-            <element signature="docComment;method#sinh#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#cosh#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#tanh#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#hypot#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#expm1#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#log1p#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#copySign#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#copySign#1;class#Math#0" expanded="false" />
-            <element signature="docComment;method#getExponent#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#getExponent#1;class#Math#0" expanded="false" />
-            <element signature="docComment;method#nextAfter#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#nextAfter#1;class#Math#0" expanded="false" />
-            <element signature="docComment;method#nextUp#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#nextUp#1;class#Math#0" expanded="false" />
-            <element signature="docComment;method#scalb#0;class#Math#0" expanded="false" />
-            <element signature="docComment;method#scalb#1;class#Math#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2398,13 +2357,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.76869965" vertical-offset="1190" max-vertical-offset="2059">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="method#HashTable#0;class#HashTable#0" expanded="false" />
-            <element signature="method#insert#0;class#HashTable#0" expanded="false" />
-            <element signature="e#1173#1174#0" expanded="false" />
-            <element signature="e#1202#1203#0" expanded="false" />
-            <element signature="method#toString#0;class#HashTable#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2412,7 +2364,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3003452" vertical-offset="0" max-vertical-offset="869">
           <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2420,13 +2371,56 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="667">
           <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/BadHashFunctor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13348676" vertical-offset="0" max-vertical-offset="869">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/FairHashFunctor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13348676" vertical-offset="0" max-vertical-offset="869">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/GoodHashFunctor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23360184" vertical-offset="0" max-vertical-offset="869">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashFunctor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3003452" vertical-offset="0" max-vertical-offset="869">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ChainingHashTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="1160">
+          <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ProbingHashTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="841">
+          <caret line="137" column="25" selection-start-line="137" selection-start-column="25" selection-end-line="137" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6340621" vertical-offset="435" max-vertical-offset="1305">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1305">
           <caret line="107" column="5" selection-start-line="107" selection-start-column="5" selection-end-line="107" selection-end-column="5" />
           <folding>
             <element signature="docComment;class#HashTable#0" expanded="false" />
@@ -2444,69 +2438,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/BadHashFunctor.java">
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/SpellCheckUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13348676" vertical-offset="0" max-vertical-offset="869">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.28423476" vertical-offset="14" max-vertical-offset="1015">
+          <caret line="20" column="71" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="71" />
           <folding>
-            <element signature="docComment;class#BadHashFunctor#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/FairHashFunctor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13348676" vertical-offset="0" max-vertical-offset="869">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding>
-            <element signature="docComment;class#FairHashFunctor#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/GoodHashFunctor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23360184" vertical-offset="0" max-vertical-offset="869">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashFunctor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3003452" vertical-offset="0" max-vertical-offset="869">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ChainingHashTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="1160">
-          <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
-          <folding>
-            <element signature="docComment;class#ChainingHashTable#0" expanded="false" />
-            <element signature="docComment;method#ChainingHashTable#0;class#ChainingHashTable#0" expanded="false" />
-            <element signature="docComment;method#setLambdaMAX#0;class#ChainingHashTable#0" expanded="false" />
-            <element signature="docComment;method#add#0;class#ChainingHashTable#0" expanded="false" />
-            <element signature="docComment;method#contains#0;class#ChainingHashTable#0" expanded="false" />
-            <element signature="docComment;method#clear#0;class#ChainingHashTable#0" expanded="false" />
-            <element signature="docComment;method#rehash#0;class#ChainingHashTable#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ProbingHashTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70080554" vertical-offset="0" max-vertical-offset="869">
-          <caret line="137" column="25" selection-start-line="137" selection-start-column="25" selection-end-line="137" selection-end-column="25" />
-          <folding>
-            <element signature="docComment;class#ProbingHashTable#0" expanded="false" />
-            <element signature="docComment;method#ProbingHashTable#0;class#ProbingHashTable#0" expanded="false" />
-            <element signature="docComment;method#add#0;class#ProbingHashTable#0" expanded="false" />
-            <element signature="docComment;method#contains#0;class#ProbingHashTable#0" expanded="false" />
-            <element signature="docComment;method#clear#0;class#ProbingHashTable#0" expanded="false" />
-            <element signature="docComment;method#rehash#0;class#ProbingHashTable#0" expanded="false" />
+            <element signature="docComment;class#SpellCheckUtil#0" expanded="false" />
+            <element signature="docComment;method#SpellCheckUtil#0;class#SpellCheckUtil#0" expanded="false" />
+            <element signature="docComment;method#SpellCheckUtil#1;class#SpellCheckUtil#0" expanded="false" />
+            <element signature="docComment;method#SpellCheckUtil#2;class#SpellCheckUtil#0" expanded="false" />
+            <element signature="docComment;method#addToDictionary#0;class#SpellCheckUtil#0" expanded="false" />
+            <element signature="docComment;method#spellCheck#0;class#SpellCheckUtil#0" expanded="false" />
+            <element signature="docComment;method#buildDictionary#0;class#SpellCheckUtil#0" expanded="false" />
+            <element signature="docComment;method#readFromFile#0;class#SpellCheckUtil#0" expanded="false" />
           </folding>
         </state>
       </provider>
