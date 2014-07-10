@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="updated fairHashFunctor because he asked us in the lecture to do something more than just sum the char, so I multiplied sum by item.length() as well">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ChainingHashTable.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ChainingHashTable.java" />
+    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="improved quadratic probing implementation thats less complex in running time, used it from textbook. Also eliminated call to contains() in add method to decrease run time since add and contains have to do the same thing anyway">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ProbingHashTable.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ProbingHashTable.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -103,13 +102,12 @@
       <file leaf-file-name="ProbingHashTable.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ProbingHashTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.40654206" vertical-offset="696" max-vertical-offset="1943">
-              <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.70080554" vertical-offset="0" max-vertical-offset="869">
+              <caret line="137" column="25" selection-start-line="137" selection-start-column="25" selection-end-line="137" selection-end-column="25" />
               <folding>
                 <element signature="docComment;class#ProbingHashTable#0" expanded="false" />
                 <element signature="docComment;method#ProbingHashTable#0;class#ProbingHashTable#0" expanded="false" />
                 <element signature="docComment;method#add#0;class#ProbingHashTable#0" expanded="false" />
-                <element signature="method#add#0;class#ProbingHashTable#0" expanded="true" />
                 <element signature="docComment;method#contains#0;class#ProbingHashTable#0" expanded="false" />
                 <element signature="docComment;method#clear#0;class#ProbingHashTable#0" expanded="false" />
                 <element signature="docComment;method#rehash#0;class#ProbingHashTable#0" expanded="false" />
@@ -1923,7 +1921,11 @@
       <created>1405027482016</created>
       <updated>1405027482016</updated>
     </task>
-    <option name="localTasksCounter" value="272" />
+    <task id="LOCAL-00272" summary="improved quadratic probing implementation thats less complex in running time, used it from textbook. Also eliminated call to contains() in add method to decrease run time since add and contains have to do the same thing anyway">
+      <created>1405030789145</created>
+      <updated>1405030789145</updated>
+    </task>
+    <option name="localTasksCounter" value="273" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1998,7 +2000,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="updates" />
     <MESSAGE value="finished all tests, working!!" />
     <MESSAGE value="changes to writeDotRecursive" />
     <MESSAGE value="added comments" />
@@ -2023,7 +2024,8 @@
     <MESSAGE value="update" />
     <MESSAGE value="implemented rehash in ChainingHashTable and also added max lambda member variable in ChainingHashTable" />
     <MESSAGE value="updated fairHashFunctor because he asked us in the lecture to do something more than just sum the char, so I multiplied sum by item.length() as well" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated fairHashFunctor because he asked us in the lecture to do something more than just sum the char, so I multiplied sum by item.length() as well" />
+    <MESSAGE value="improved quadratic probing implementation thats less complex in running time, used it from textbook. Also eliminated call to contains() in add method to decrease run time since add and contains have to do the same thing anyway" />
+    <option name="LAST_COMMIT_MESSAGE" value="improved quadratic probing implementation thats less complex in running time, used it from textbook. Also eliminated call to contains() in add method to decrease run time since add and contains have to do the same thing anyway" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -2496,13 +2498,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ProbingHashTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.40654206" vertical-offset="696" max-vertical-offset="1943">
-          <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.70080554" vertical-offset="0" max-vertical-offset="869">
+          <caret line="137" column="25" selection-start-line="137" selection-start-column="25" selection-end-line="137" selection-end-column="25" />
           <folding>
             <element signature="docComment;class#ProbingHashTable#0" expanded="false" />
             <element signature="docComment;method#ProbingHashTable#0;class#ProbingHashTable#0" expanded="false" />
             <element signature="docComment;method#add#0;class#ProbingHashTable#0" expanded="false" />
-            <element signature="method#add#0;class#ProbingHashTable#0" expanded="true" />
             <element signature="docComment;method#contains#0;class#ProbingHashTable#0" expanded="false" />
             <element signature="docComment;method#clear#0;class#ProbingHashTable#0" expanded="false" />
             <element signature="docComment;method#rehash#0;class#ProbingHashTable#0" expanded="false" />

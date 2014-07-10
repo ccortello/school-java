@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- * An open-addressed HashTable implementation which uses quadratic probing to resolve collisions
- * and doesn't allow for duplicate items
+ * An open-addressed HashTable implementation which uses quadratic probing to resolve collisions and doesn't allow for
+ * duplicate items
  *
  * @author Cody Cortello
  * @author Casey Nordgran
@@ -14,8 +14,7 @@ public class ProbingHashTable extends HashTable {
     private String[] table;
 
     /**
-     * Constructs a HashTable with a given capacity and using a particular hash
-     * function.
+     * Constructs a HashTable with a given capacity and using a particular hash function.
      *
      * @param capacity the number of 'buckets' in the hash table
      * @param functor  the hash function the table uses to index objects
@@ -32,14 +31,19 @@ public class ProbingHashTable extends HashTable {
     }
 
     /**
-     * Ensures that this set contains the specified item. add is guaranteed to find an empty spot to add if
-     * capacity is prime and lambda < 0.5. With these to constraints enforced, int 'i' will never reach (capacity-1)
+     * Ensures that this set contains the specified item. add is guaranteed to find an empty spot to add if capacity is
+     * prime and lambda < 0.5. With these to constraints enforced, int 'i' will never reach (capacity-1)
      *
      * @param item - the item whose presence is ensured in this set
-     * @return true if this set changed as a result of this method call (that is,
-     * if the input item was actually inserted); otherwise, returns false
+     *
+     * @return true if this set changed as a result of this method call (that is, if the input item was actually
+     * inserted); otherwise, returns false
      */
     public boolean add(String item) {
+        // handle null case, nulls are not allowed to be added for a HashTable
+        if (item == null)
+            return false;
+
         // return integer using the HashFunctor with specified item.
         int hash = hasher.hash(item);
         // determine initial index to add to array using this HashTables capacity, also assert it's positive.
@@ -80,11 +84,12 @@ public class ProbingHashTable extends HashTable {
     }
 
     /**
-     * Determines if there is an item in this set that is equal to the specified item.
+     * Determines if there is an item in this set that is equal to the specified item. If capacity is prime and lambda <
+     * 0.5, currentIndex will always reach the equal item or null before 'i' in the for-loop ever reaches (capacity-1)
      *
      * @param item - the item sought in this set
-     * @return true if there is an item in this set that is equal to the input
-     * item; otherwise, returns false
+     *
+     * @return true if there is an item in this set that is equal to the input item; otherwise, returns false
      */
     public boolean contains(String item) {
         // handle null case
@@ -93,13 +98,28 @@ public class ProbingHashTable extends HashTable {
 
         // use quadratic probing to check for the item
         int hash = hasher.hash(item);
-        for (int i = 0; i < (capacity / 2) + 1; i++) {
-            int currentIndex = hash + i ^ 2;
+        // determine initial index to check in array using this HashTables capacity, also assert it's positive.
+        int currentIndex = Math.abs(hash % capacity);
+        // avoid skipping first index by evaluating at currentIndex once before the for loop.
+        if (table[currentIndex].equals(item))
+            return true;
+        if (table[currentIndex] == null)
+            return false;
+
+        // if neither condition above occurred, keep checking in for-loop while updating currentIndex
+        for (int i = 0; i < capacity; i++) {
+            // theorem 20.5 is used from textbook to update quadratic probe with less complexity than H+i^2
+            currentIndex = currentIndex + 2 * i - 1;
+            //account for wrap around
+            if (currentIndex >= capacity)
+                currentIndex = currentIndex - capacity;
+
             if (table[currentIndex] == null) // if the location is empty the item hasn't been added
                 return false;
             else if (table[currentIndex].equals(item)) // if the item is found it's obviously in the table
                 return true;
         }
+        // last condition if function breaks from for-loop without return, this should never be reached.
         return false;
     }
 
