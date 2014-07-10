@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="moved methods that don't implement the same in ChainedHashTable to be in ProbedHashTable alone, then did ChainedHashTable's own implementations. Did the same for member variables that aren't used in ChainedHashTable. Moved isPrime and nextPrime to HashTable so ChainedHashTable could use them, to return more evenly distributed hashcodes with the capacity being prime.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTester.java" />
+    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="changed goodHashFunctor so there were no errors">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/GoodHashFunctor.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/GoodHashFunctor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -112,9 +111,11 @@
       <file leaf-file-name="GoodHashFunctor.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/GoodHashFunctor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.73417723" vertical-offset="0" max-vertical-offset="870">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.23360184" vertical-offset="0" max-vertical-offset="899">
+              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+              <folding>
+                <element signature="method#hash#0;class#GoodHashFunctor#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -122,8 +123,8 @@
       <file leaf-file-name="HashTableTester.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="638">
-              <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="29" max-vertical-offset="667">
+              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -1920,7 +1921,11 @@
       <created>1404983049598</created>
       <updated>1404983049598</updated>
     </task>
-    <option name="localTasksCounter" value="266" />
+    <task id="LOCAL-00266" summary="changed goodHashFunctor so there were no errors">
+      <created>1405023901921</created>
+      <updated>1405023901921</updated>
+    </task>
+    <option name="localTasksCounter" value="267" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1995,7 +2000,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="added all the provided files, then created the rest of the necessary files" />
     <MESSAGE value="added BinaryNode class" />
     <MESSAGE value="added  BSTtester implementations for add to isEmtpy methods" />
     <MESSAGE value="updates" />
@@ -2020,7 +2024,8 @@
     <MESSAGE value="implementing HashTable methods" />
     <MESSAGE value="moving to Chaining implementation" />
     <MESSAGE value="moved methods that don't implement the same in ChainedHashTable to be in ProbedHashTable alone, then did ChainedHashTable's own implementations. Did the same for member variables that aren't used in ChainedHashTable. Moved isPrime and nextPrime to HashTable so ChainedHashTable could use them, to return more evenly distributed hashcodes with the capacity being prime." />
-    <option name="LAST_COMMIT_MESSAGE" value="moved methods that don't implement the same in ChainedHashTable to be in ProbedHashTable alone, then did ChainedHashTable's own implementations. Did the same for member variables that aren't used in ChainedHashTable. Moved isPrime and nextPrime to HashTable so ChainedHashTable could use them, to return more evenly distributed hashcodes with the capacity being prime." />
+    <MESSAGE value="changed goodHashFunctor so there were no errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed goodHashFunctor so there were no errors" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -2465,17 +2470,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="638">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="29" max-vertical-offset="667">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/GoodHashFunctor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73417723" vertical-offset="0" max-vertical-offset="870">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.23360184" vertical-offset="0" max-vertical-offset="899">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding>
+            <element signature="method#hash#0;class#GoodHashFunctor#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

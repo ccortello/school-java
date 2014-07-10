@@ -3,8 +3,9 @@ package assignment8;
 import java.math.BigInteger;
 
 /**
- * A good hashing algorithm for String objects which uses Java's Random
- * functionality to iterate through random ints
+ * A good hashing algorithm for String objects which creates a unique large integer value for each
+ * string, as a BigInteger, no two being the same, but then returns it as the BigInteger converted to
+ * an int.
  *
  * @author Cody Cortello
  * @author Casey Nordgran
