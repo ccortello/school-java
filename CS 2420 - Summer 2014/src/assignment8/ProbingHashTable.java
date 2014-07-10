@@ -21,14 +21,13 @@ public class ProbingHashTable extends HashTable {
      * @param functor  the hash function the table uses to index objects
      */
     public ProbingHashTable(int capacity, HashFunctor functor) {
-
-        // find a prime number to use for the capacity
-        int correctCapacity = nextPrime(capacity);
-
+        // check that capacity is a prime number, if not, make it prime.
+        if (! isPrime(capacity))
+            capacity = nextPrime(capacity);
         // initialize the object fields appropriately
         this.collisions = 0;
-        this.capacity = correctCapacity;
-        this.table = new String[correctCapacity];
+        this.capacity = capacity;
+        this.table = new String[capacity];
         hasher = functor;
     }
 

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="update">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTable.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ChainingHashTable.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ChainingHashTable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ProbingHashTable.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ProbingHashTable.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -81,54 +82,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HashTable.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.66743386" vertical-offset="290" max-vertical-offset="1305">
-              <caret line="81" column="4" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="4" />
-              <folding>
-                <element signature="docComment;class#HashTable#0" expanded="false" />
-                <element signature="docComment;field#size#0;class#HashTable#0" expanded="false" />
-                <element signature="docComment;method#addAll#0;class#HashTable#0" expanded="false" />
-                <element signature="docComment;method#containsAll#0;class#HashTable#0" expanded="false" />
-                <element signature="docComment;method#isEmpty#0;class#HashTable#0" expanded="false" />
-                <element signature="docComment;method#size#0;class#HashTable#0" expanded="false" />
-                <element signature="docComment;method#getCapacity#0;class#HashTable#0" expanded="false" />
-                <element signature="docComment;method#getCollisions#0;class#HashTable#0" expanded="false" />
-                <element signature="docComment;method#getLamda#0;class#HashTable#0" expanded="false" />
-                <element signature="docComment;method#nextPrime#0;class#HashTable#0" expanded="false" />
-                <element signature="docComment;method#isPrime#0;class#HashTable#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChainingHashTable.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ChainingHashTable.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ChainingHashTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="14" max-vertical-offset="2175">
-              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.8342923" vertical-offset="174" max-vertical-offset="1160">
+              <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
               <folding>
                 <element signature="docComment;class#ChainingHashTable#0" expanded="false" />
                 <element signature="docComment;method#ChainingHashTable#0;class#ChainingHashTable#0" expanded="false" />
-                <element signature="method#ChainingHashTable#0;class#ChainingHashTable#0" expanded="true" />
+                <element signature="docComment;method#setLambdaMAX#0;class#ChainingHashTable#0" expanded="false" />
                 <element signature="docComment;method#add#0;class#ChainingHashTable#0" expanded="false" />
-                <element signature="method#add#0;class#ChainingHashTable#0" expanded="true" />
                 <element signature="docComment;method#contains#0;class#ChainingHashTable#0" expanded="false" />
-                <element signature="method#contains#0;class#ChainingHashTable#0" expanded="true" />
                 <element signature="docComment;method#clear#0;class#ChainingHashTable#0" expanded="false" />
-                <element signature="method#clear#0;class#ChainingHashTable#0" expanded="true" />
+                <element signature="docComment;method#rehash#0;class#ChainingHashTable#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HashTableTester.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTester.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="29" max-vertical-offset="667">
-              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -136,15 +103,14 @@
       <file leaf-file-name="ProbingHashTable.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ProbingHashTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="841">
-              <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="899">
+              <caret line="99" column="23" selection-start-line="96" selection-start-column="4" selection-end-line="99" selection-end-column="23" />
               <folding>
                 <element signature="docComment;class#ProbingHashTable#0" expanded="false" />
                 <element signature="docComment;method#ProbingHashTable#0;class#ProbingHashTable#0" expanded="false" />
                 <element signature="docComment;method#add#0;class#ProbingHashTable#0" expanded="false" />
                 <element signature="docComment;method#contains#0;class#ProbingHashTable#0" expanded="false" />
                 <element signature="docComment;method#clear#0;class#ProbingHashTable#0" expanded="false" />
-                <element signature="docComment;method#rehash#0;class#ProbingHashTable#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -220,9 +186,9 @@
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/FairHashFunctor.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTester.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/GoodHashFunctor.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTable.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ProbingHashTable.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ChainingHashTable.java" />
-        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTable.java" />
       </list>
     </option>
   </component>
@@ -1943,7 +1909,11 @@
       <created>1405024226017</created>
       <updated>1405024226017</updated>
     </task>
-    <option name="localTasksCounter" value="269" />
+    <task id="LOCAL-00269" summary="update">
+      <created>1405024389464</created>
+      <updated>1405024389464</updated>
+    </task>
+    <option name="localTasksCounter" value="270" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -2455,61 +2425,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="29" max-vertical-offset="667">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/GoodHashFunctor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23360184" vertical-offset="0" max-vertical-offset="899">
           <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
           <folding>
-            <element signature="method#hash#0;class#GoodHashFunctor#0" expanded="true" />
+            <element signature="method#hash#0;class#GoodHashFunctor#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ChainingHashTable.java">
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="14" max-vertical-offset="2175">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          <folding>
-            <element signature="docComment;class#ChainingHashTable#0" expanded="false" />
-            <element signature="docComment;method#ChainingHashTable#0;class#ChainingHashTable#0" expanded="false" />
-            <element signature="method#ChainingHashTable#0;class#ChainingHashTable#0" expanded="true" />
-            <element signature="docComment;method#add#0;class#ChainingHashTable#0" expanded="false" />
-            <element signature="method#add#0;class#ChainingHashTable#0" expanded="true" />
-            <element signature="docComment;method#contains#0;class#ChainingHashTable#0" expanded="false" />
-            <element signature="method#contains#0;class#ChainingHashTable#0" expanded="true" />
-            <element signature="docComment;method#clear#0;class#ChainingHashTable#0" expanded="false" />
-            <element signature="method#clear#0;class#ChainingHashTable#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ProbingHashTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="841">
-          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#ProbingHashTable#0" expanded="false" />
-            <element signature="docComment;method#ProbingHashTable#0;class#ProbingHashTable#0" expanded="false" />
-            <element signature="docComment;method#add#0;class#ProbingHashTable#0" expanded="false" />
-            <element signature="docComment;method#contains#0;class#ProbingHashTable#0" expanded="false" />
-            <element signature="docComment;method#clear#0;class#ProbingHashTable#0" expanded="false" />
-            <element signature="docComment;method#rehash#0;class#ProbingHashTable#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="667">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66743386" vertical-offset="290" max-vertical-offset="1305">
-          <caret line="81" column="4" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.6340621" vertical-offset="435" max-vertical-offset="1305">
+          <caret line="107" column="5" selection-start-line="107" selection-start-column="5" selection-end-line="107" selection-end-column="5" />
           <folding>
             <element signature="docComment;class#HashTable#0" expanded="false" />
             <element signature="docComment;field#size#0;class#HashTable#0" expanded="false" />
@@ -2522,6 +2459,36 @@
             <element signature="docComment;method#getLamda#0;class#HashTable#0" expanded="false" />
             <element signature="docComment;method#nextPrime#0;class#HashTable#0" expanded="false" />
             <element signature="docComment;method#isPrime#0;class#HashTable#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ProbingHashTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="899">
+          <caret line="99" column="23" selection-start-line="96" selection-start-column="4" selection-end-line="99" selection-end-column="23" />
+          <folding>
+            <element signature="docComment;class#ProbingHashTable#0" expanded="false" />
+            <element signature="docComment;method#ProbingHashTable#0;class#ProbingHashTable#0" expanded="false" />
+            <element signature="docComment;method#add#0;class#ProbingHashTable#0" expanded="false" />
+            <element signature="docComment;method#contains#0;class#ProbingHashTable#0" expanded="false" />
+            <element signature="docComment;method#clear#0;class#ProbingHashTable#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ChainingHashTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8342923" vertical-offset="174" max-vertical-offset="1160">
+          <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#ChainingHashTable#0" expanded="false" />
+            <element signature="docComment;method#ChainingHashTable#0;class#ChainingHashTable#0" expanded="false" />
+            <element signature="docComment;method#setLambdaMAX#0;class#ChainingHashTable#0" expanded="false" />
+            <element signature="docComment;method#add#0;class#ChainingHashTable#0" expanded="false" />
+            <element signature="docComment;method#contains#0;class#ChainingHashTable#0" expanded="false" />
+            <element signature="docComment;method#clear#0;class#ChainingHashTable#0" expanded="false" />
+            <element signature="docComment;method#rehash#0;class#ChainingHashTable#0" expanded="false" />
           </folding>
         </state>
       </provider>

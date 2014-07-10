@@ -12,6 +12,7 @@ import java.util.LinkedList;
 public class ChainingHashTable extends HashTable {
     // underlying data structure for ChainingHashTable, uses seperate chaining to avoid collisions
     private LinkedList<String>[] storage;
+    private double lambda_MAX;
 
 
     /**
@@ -22,8 +23,7 @@ public class ChainingHashTable extends HashTable {
      */
     @SuppressWarnings("unchecked")
     public ChainingHashTable(int capacity, HashFunctor functor) {
-        /*if specified capacity is not prime, than for ChainingHashTable also change capacity to next largest prime
-        so that when determining hashcodes they will be more evenly distributed*/
+        // if the specified capacity is not prime, make it prime for more unique and distributed hash codes.
         if (! isPrime(capacity))
             capacity = nextPrime(capacity);
         storage = (LinkedList<String>[]) new LinkedList[capacity];
@@ -31,6 +31,15 @@ public class ChainingHashTable extends HashTable {
         this.capacity = capacity;
         size = 0;
         collisions = 0;
+        // default load factor threshold which determines when ChainingHashTable reHashes
+        lambda_MAX = 2.0;
+    }
+
+    /**
+     * Setter method to change the load factor threshold 'lambda_MAX'
+     */
+    public void setLambdaMAX(double newVal) {
+        lambda_MAX = newVal;
     }
 
     /**
@@ -42,21 +51,23 @@ public class ChainingHashTable extends HashTable {
      * inserted); otherwise, returns false
      */
     public boolean add(String item) {
-        // determine string hashcode using HashFunctor specified in constructor
+        // determine string hashcode using HashFunctor
         int hashCode = hasher.hash(item);
-        // use the item's hashcode and array size to determine the index or list to add item
+        // use the item's hashcode and array size to determine the index or list to add item (asserts positive)
         int index = Math.abs(hashCode % capacity);
         // check that String item is not already contained in the LinkedList at this index, if so return false.
         if (storage[index].contains(item))
             return false;
-        // first check if the LinkedList is empty, if not increment collisions, if empty increment M (# of lists)
+        // first check if the LinkedList is empty, if not increment collisions
         if (! storage[index].isEmpty())
             collisions++;
-        else
-            // specified item is not contained in the LinkedList at this index, add specified item and return true.
-            storage[index].add(item);
-        // increase size
+        // specified item is not contained in the LinkedList at this index, add specified item
+        storage[index].add(item);
+        // increase size, return true.
         size++;
+        // after adding, check if this ChainingHashTable needs to be rehashed
+        if (lambda_MAX <= getLamda())
+            this.rehash();
         return true;
     }
 
@@ -68,14 +79,14 @@ public class ChainingHashTable extends HashTable {
      * @return true if there is an item in this set that is equal to the input item; otherwise, returns false
      */
     public boolean contains(String item) {
-        // determine string hashcode using HashFunctor specified in constructor
+        // determine string hashcode
         int hashCode = hasher.hash(item);
-        // use the item's hashcode and array size to determine the index or list to add item
+        // determine index using array length to know which LinkedList to check
         int index = Math.abs(hashCode % capacity);
         // check first that LinkedList is not empty at this index, if it is return false.
         if (storage[index].isEmpty() && item != "")
             return false;
-        // check if the item is contained within the LinkedList at this index, if so return true, else return false.
+        // check if the item is contained in the non-empty LinkedList
         if (storage[index].contains(item))
             return true;
         // item not found, return false.
@@ -83,7 +94,7 @@ public class ChainingHashTable extends HashTable {
     }
 
     /**
-     * Clear all elements in this ChainingHashTable
+     * Clears all elements in this ChainingHashTable
      */
     @SuppressWarnings("unchecked")
     public void clear() {
@@ -92,4 +103,27 @@ public class ChainingHashTable extends HashTable {
         collisions = 0;
         storage = (LinkedList<String>[]) new LinkedList[capacity];
     }
+
+    /**
+     * Double the size and add each element to new array using new hash codes
+     */
+    @SuppressWarnings("unchecked")
+    public void rehash() {
+        // declare new LinkedList array to store reference to current LinkedList 'storage'
+        LinkedList<String>[] previousArr = storage;
+        // create new array for storage, of capacity 2*size so lambda becomes 1.0
+        capacity = size * 2;
+        storage = (LinkedList<String>[]) new LinkedList[capacity];
+        // update member variables
+        size = collisions = 0;
+        // rehash all the previous elements to the new LinkedList array
+        for (int i = 0; i < previousArr.length; i++) {
+            if (! previousArr[i].isEmpty()) {
+                for (String str : previousArr[i])
+                    this.add(str);
+            }
+        }
+    }
+
+    // end of class
 }
