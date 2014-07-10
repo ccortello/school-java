@@ -36,6 +36,14 @@ public class ChainingHashTable extends HashTable {
     }
 
     /**
+     * Getter method to return the load factor threshold 'lambda_MAX'
+     * @return the load factor threshold 'lambda_MAX'
+     */
+    public double getLambdaMAX() {
+        return lambda_MAX;
+    }
+
+    /**
      * Setter method to change the load factor threshold 'lambda_MAX'
      */
     public void setLambdaMAX(double newVal) {
@@ -56,13 +64,16 @@ public class ChainingHashTable extends HashTable {
         // use the item's hashcode and array size to determine the index or list to add item (asserts positive)
         int index = Math.abs(hashCode % capacity);
 
-        // first check if the LinkedList is empty, if not increment collisions
-        if (! storage[index].isEmpty()) {
+        // first check if the index is null, if not increment collisions
+        if (storage[index] != null) {
             // check that String item is not already contained in the LinkedList at this index, if so return false.
             if (storage[index].contains(item))
                 return false;
             collisions++;
         }
+        // initialize LinkedList to index if it is null
+        if (storage[index] == null)
+            storage[index] = new LinkedList<String>();
 
         // specified item is not contained in the LinkedList at this index, add specified item
         storage[index].add(item);
@@ -86,8 +97,8 @@ public class ChainingHashTable extends HashTable {
         int hashCode = hasher.hash(item);
         // determine index using array length to know which LinkedList to check
         int index = Math.abs(hashCode % capacity);
-        // check first that LinkedList is not empty at this index, if it is return false.
-        if (storage[index].isEmpty() && item != "")
+        // check first that index is not null, if it is return false.
+        if (storage[index] == null)
             return false;
         // check if the item is contained in the non-empty LinkedList
         if (storage[index].contains(item))
