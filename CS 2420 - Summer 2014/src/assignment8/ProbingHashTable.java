@@ -1,7 +1,11 @@
 package assignment8;
 
 /**
- * A closed-addressed HashTable implementation which uses quadratic probing
+ * An open-addressed HashTable implementation which uses quadratic probing to resolve collisions
+ * and doesn't allow for duplicate items
+ *
+ * @author Cody Cortello
+ * @author Casey Nordgran
  */
 public class ProbingHashTable extends HashTable {
     /**
@@ -39,11 +43,12 @@ public class ProbingHashTable extends HashTable {
         int hash = functor.hash(item);
         for (int i = 0; i < (capacity / 2) + 1; i++) {
             int currentIndex = hash + i ^ 2; // compute the next location to check
-            if (table[currentIndex] == null) { // if the location can be used add the item
+            if (table[currentIndex] == null) { // if the location can be used add the item and quit checking locations
                 table[currentIndex] = item;
                 size++;
+                break;
             }
-            collisions++;
+            collisions++; // if the item cannot be added at the location it's a collision
         }
 
         // resize the table if the load factor has become too large
