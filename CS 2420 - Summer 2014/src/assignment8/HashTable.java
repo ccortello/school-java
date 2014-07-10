@@ -6,8 +6,8 @@ import java.util.Collection;
  * An abstract class facilitating the implementation of a concrete hash table.
  *
  * @author Paymon Saebi
- * @author
- * @author
+ * @author Cody Cortello
+ * @author Casey Nordgran
  */
 public abstract class HashTable implements Set<String> {
     /**
@@ -48,6 +48,20 @@ public abstract class HashTable implements Set<String> {
      */
     public final int size() {
         //TODO
+        return 0;
+    }
+
+    /* advised helper methods - not necessary, but recommended */
+
+    public void rehash() {
+
+    }
+
+    public double getLamda() {
+        return 0.0;
+    }
+
+    public int getCollisions() {
         return 0;
     }
 }
