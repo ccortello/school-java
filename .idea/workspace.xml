@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="added more methods, classes, and helper methods">
+    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="implementing HashTable methods">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTable.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTable.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -84,19 +84,17 @@
       <file leaf-file-name="HashTable.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.50108695" vertical-offset="644" max-vertical-offset="1581">
-              <caret line="65" column="91" selection-start-line="65" selection-start-column="91" selection-end-line="65" selection-end-column="91" />
+            <state vertical-scroll-proportion="0.3326087" vertical-offset="255" max-vertical-offset="1887">
+              <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#addAll#0;class#HashTable#0" expanded="true" />
                 <element signature="method#containsAll#0;class#HashTable#0" expanded="true" />
-                <element signature="method#isEmpty#0;class#HashTable#0" expanded="true" />
+                <element signature="e#1973#1974#0" expanded="true" />
+                <element signature="e#2005#2006#0" expanded="true" />
                 <element signature="method#size#0;class#HashTable#0" expanded="true" />
-                <element signature="e#1418#1426#0" expanded="true" />
-                <element signature="e#1716#1717#0" expanded="true" />
-                <element signature="e#1742#1743#0" expanded="true" />
-                <element signature="e#1776#1777#0" expanded="true" />
-                <element signature="e#1800#1801#0" expanded="true" />
+                <element signature="method#rehash#0;class#HashTable#0" expanded="true" />
+                <element signature="e#2423#2431#0" expanded="true" />
+                <element signature="method#getLamda#0;class#HashTable#0" expanded="true" />
                 <element signature="method#clear#0;class#HashTable#0" expanded="true" />
               </folding>
             </state>
@@ -106,8 +104,8 @@
       <file leaf-file-name="Set.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Set.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1190">
-              <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1190">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -929,7 +927,7 @@
       <workItem from="1404619680623" duration="1000" />
       <workItem from="1404619689889" duration="2093000" />
       <workItem from="1404960693871" duration="240000" />
-      <workItem from="1404960937115" duration="1139000" />
+      <workItem from="1404960937115" duration="2118000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1390529187497</created>
@@ -1967,11 +1965,15 @@
       <created>1404961449283</created>
       <updated>1404961449283</updated>
     </task>
-    <option name="localTasksCounter" value="260" />
+    <task id="LOCAL-00260" summary="implementing HashTable methods">
+      <created>1404962091322</created>
+      <updated>1404962091322</updated>
+    </task>
+    <option name="localTasksCounter" value="261" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="296446000" />
+    <option name="totallyTimeSpent" value="297425000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -2042,7 +2044,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="LinkedStructureTimer_2 is the new class I created, to practice but also I got it working for get(i) pretty good. I still need to implement remove() methods and the stack methods." />
     <MESSAGE value="implemented timing test for MyLinkedList.remove(i)" />
     <MESSAGE value="some work done on stack methods timgin analysis" />
     <MESSAGE value="added all the provided files, then created the rest of the necessary files" />
@@ -2067,7 +2068,8 @@
     <MESSAGE value="timing sucks" />
     <MESSAGE value="update" />
     <MESSAGE value="added more methods, classes, and helper methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="added more methods, classes, and helper methods" />
+    <MESSAGE value="implementing HashTable methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementing HashTable methods" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -2457,27 +2459,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Set.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1190">
-          <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1190">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50108695" vertical-offset="644" max-vertical-offset="1581">
-          <caret line="65" column="91" selection-start-line="65" selection-start-column="91" selection-end-line="65" selection-end-column="91" />
+        <state vertical-scroll-proportion="0.3326087" vertical-offset="255" max-vertical-offset="1887">
+          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#addAll#0;class#HashTable#0" expanded="true" />
             <element signature="method#containsAll#0;class#HashTable#0" expanded="true" />
-            <element signature="method#isEmpty#0;class#HashTable#0" expanded="true" />
+            <element signature="e#1973#1974#0" expanded="true" />
+            <element signature="e#2005#2006#0" expanded="true" />
             <element signature="method#size#0;class#HashTable#0" expanded="true" />
-            <element signature="e#1418#1426#0" expanded="true" />
-            <element signature="e#1716#1717#0" expanded="true" />
-            <element signature="e#1742#1743#0" expanded="true" />
-            <element signature="e#1776#1777#0" expanded="true" />
-            <element signature="e#1800#1801#0" expanded="true" />
+            <element signature="method#rehash#0;class#HashTable#0" expanded="true" />
+            <element signature="e#2423#2431#0" expanded="true" />
+            <element signature="method#getLamda#0;class#HashTable#0" expanded="true" />
             <element signature="method#clear#0;class#HashTable#0" expanded="true" />
           </folding>
         </state>

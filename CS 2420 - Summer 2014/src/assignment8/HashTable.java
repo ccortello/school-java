@@ -18,36 +18,49 @@ public abstract class HashTable implements Set<String> {
      * your ChainingHashTable (such as, say, a size variable) probably belong here in
      * the parent class. Should the variable(s) be public, private, or protected?
      */
-    public int size;
-    public int capacity;
+    private int size, capacity, collisions;
     private String[] table;
+    private boolean[] deleted;
 
     /**
+     * Ensures that this set contains all items in the specified collection.
      *
+     * @param items - the collection of items whose presence is ensured in this set
+     * @return true if this set changed as a result of this method call (that is, if
+     * any item in the input collection was actually inserted); otherwise, returns false
      */
     public final boolean addAll(Collection<? extends String> items) {
-        //TODO
-        return false;
+        int initialSize = size;
+        for (String s : items)
+            if (!this.contains(s))
+                this.add(s);
+        return (initialSize != size);
     }
 
     /**
+     * Determines if for each item in the specified collection, there is an item
+     * in this set that is equal to it.
      *
+     * @param items - the collection of items sought in this set
+     * @return true if for each item in the specified collection, there is an
+     * item in this set that is equal to it; otherwise, returns false
      */
     public final boolean containsAll(Collection<? extends String> items) {
-        //TODO
-        return false;
+        for (String s : items)
+            if (!this.contains(s))
+                return false;
+        return true;
     }
 
     /**
-     *
+     * @return true if this set contains no items.
      */
     public final boolean isEmpty() {
-        //TODO
-        return false;
+        return (size == 0);
     }
 
     /**
-     *
+     * @return the number of items in this set.
      */
     public final int size() {return size;}
 
@@ -57,11 +70,11 @@ public abstract class HashTable implements Set<String> {
      * Double the size and add each element again
      */
     public void rehash() {
-        // copy all existing elements in the table to a new list
+        // copy all existing elements (which shouldn't be deleted) in the table to a new list
         LinkedList<String> tableCopy = new LinkedList<String>();
-        for (String s : table)
-            if (s != null)
-                tableCopy.add(s);
+        for (int i = 0; i < table.length; i++)
+            if (table[i] != null && !deleted[i])
+                tableCopy.add(table[i]);
 
         // increase the capacity of the table, clear all elements, then rehash them back in
         capacity *= 2;
@@ -69,12 +82,18 @@ public abstract class HashTable implements Set<String> {
         addAll(tableCopy);
     }
 
+    /**
+     * @return the load factor lambda of the current table
+     */
     public double getLamda() {
-        return 0.0;
+        return ((double) capacity) / size;
     }
 
+    /**
+     * @return the number of collisions which happened in creating the current table
+     */
     public int getCollisions() {
-        return 0;
+        return collisions;
     }
 
     /**
@@ -82,6 +101,8 @@ public abstract class HashTable implements Set<String> {
      */
     public void clear() {
         size = 0;
+        collisions = 0;
         table = new String[capacity];
+        deleted = new boolean[capacity];
     }
 }
