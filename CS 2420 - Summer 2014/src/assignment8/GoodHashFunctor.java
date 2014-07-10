@@ -1,7 +1,6 @@
 package assignment8;
 
 import java.math.BigInteger;
-import java.util.Random;
 
 /**
  * A good hashing algorithm for String objects which uses Java's Random
@@ -12,9 +11,14 @@ import java.util.Random;
  */
 public class GoodHashFunctor implements HashFunctor {
     public int hash(String item) {
-        BigInteger seed = BigInteger.valueOf(0);
-        for (int i = 0; i < item.length(); i++)
-            seed += BigInteger.valueOf(item.charAt(i));
-        return new Random(Integer.parseInt(intString)).nextInt();
+        // string to hold all the integer values of each char in the specified string item
+        String numVal = "";
+        for (int i = 0; i < item.length(); i++) {
+            numVal += item.codePointAt(i);
+        }
+        // convert the long string integer into a BigInteger
+        BigInteger intVal = new BigInteger(numVal);
+        // return the BigInteger converted to an integer
+        return intVal.intValue();
     }
 }
