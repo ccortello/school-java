@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="added HashTableTimer class with //TODO: 's and his recomendations on how to do it.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTester.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTester.java" />
+    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="update">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTimer.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTimer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -81,31 +81,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HashTableTester.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="HashTableTester.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.05140187" vertical-offset="7496" max-vertical-offset="8352">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1160">
               <caret line="260" column="0" selection-start-line="260" selection-start-column="0" selection-end-line="260" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#testChainingHashTable#0;class#HashTableTester#0" expanded="true" />
-                <element signature="e#488#496#0" expanded="true" />
-                <element signature="method#testProbingHashTable#0;class#HashTableTester#0" expanded="true" />
-                <element signature="e#4740#4748#0" expanded="true" />
-                <element signature="method#testPrimeNumberMethods#0;class#HashTableTester#0" expanded="true" />
-                <element signature="method#testHashFunctors#0;class#HashTableTester#0" expanded="true" />
-                <element signature="method#testSpellChecker#0;class#HashTableTester#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HashTableTimer.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="HashTableTimer.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTimer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="841">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.6340621" vertical-offset="0" max-vertical-offset="869">
+              <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+              <folding>
+                <element signature="docComment;class#HashTableTimer#0" expanded="false" />
+                <element signature="e#3426#3454#0" expanded="false" />
+                <element signature="e#3543#3649#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -180,9 +175,9 @@
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ChainingHashTable.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTable.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/GoodHashFunctor.java" />
-        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTimer.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/lab6/GraphUtil.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTester.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTimer.java" />
       </list>
     </option>
   </component>
@@ -208,7 +203,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="2" />
+    <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -223,16 +218,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Default">
           <PATH>
@@ -337,6 +322,16 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -419,36 +414,7 @@
       <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HashTableTester">
-    <configuration default="false" name="GraphUtilTester.testBreadthFirstSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="CS 2420 - Summer 2014" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="assignment7" />
-      <option name="MAIN_CLASS_NAME" value="assignment7.GraphUtilTester" />
-      <option name="METHOD_NAME" value="testBreadthFirstSearch" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.HashTableTimer">
     <configuration default="false" name="GraphUtilTimer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -542,6 +508,23 @@
       </option>
       <envs />
       <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="HashTableTimer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="assignment8.HashTableTimer" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="CS 2420 - Summer 2014" />
+      <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
@@ -695,19 +678,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.testBinarySearchTree" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.GraphUtilTester.testBreadthFirstSearch" />
-      <item index="2" class="java.lang.String" itemvalue="Application.GraphUtilTimer" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.HashTableTester" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.HashTableTester.testHashFunctors" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.HashTableTester.testSpellChecker" />
+      <item index="1" class="java.lang.String" itemvalue="Application.GraphUtilTimer" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.HashTableTester" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.HashTableTester.testHashFunctors" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.HashTableTester.testSpellChecker" />
+      <item index="5" class="java.lang.String" itemvalue="Application.HashTableTimer" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.HashTableTester" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.HashTableTester.testSpellChecker" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.HashTableTester.testHashFunctors" />
-        <item index="3" class="java.lang.String" itemvalue="Application.GraphUtilTimer" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.GraphUtilTester.testBreadthFirstSearch" />
+        <item index="0" class="java.lang.String" itemvalue="Application.HashTableTimer" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.HashTableTester" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.HashTableTester.testSpellChecker" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.HashTableTester.testHashFunctors" />
+        <item index="4" class="java.lang.String" itemvalue="Application.GraphUtilTimer" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1947,7 +1930,11 @@
       <created>1405045656524</created>
       <updated>1405045656524</updated>
     </task>
-    <option name="localTasksCounter" value="280" />
+    <task id="LOCAL-00280" summary="update">
+      <created>1405045757680</created>
+      <updated>1405045757680</updated>
+    </task>
+    <option name="localTasksCounter" value="281" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1988,7 +1975,6 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40133038" sideWeight="0.28916308" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26496673" sideWeight="0.36927083" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31374723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24892704" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1996,15 +1982,16 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13903743" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41796008" sideWeight="0.52566844" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32594234" sideWeight="0.34438503" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32594234" sideWeight="0.34438503" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26496673" sideWeight="0.36927083" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -2043,11 +2030,11 @@
     <MESSAGE value="updated fairHashFunctor because he asked us in the lecture to do something more than just sum the char, so I multiplied sum by item.length() as well" />
     <MESSAGE value="improved quadratic probing implementation thats less complex in running time, used it from textbook. Also eliminated call to contains() in add method to decrease run time since add and contains have to do the same thing anyway" />
     <MESSAGE value="added SpellChecker &amp; SpellCheckerUtil to assignment 8 and made the necessary changes to them." />
-    <MESSAGE value="update" />
     <MESSAGE value="implemented all testing for methods of both HashTables and remaing functions in HashTable class, still fault HashFuntor methods, and possibly spell checkers" />
     <MESSAGE value="impletented the rests of the tests, which were for the HashFunctors, and testing the SpellChecker from the testing class." />
     <MESSAGE value="added HashTableTimer class with //TODO: 's and his recomendations on how to do it." />
-    <option name="LAST_COMMIT_MESSAGE" value="added HashTableTimer class with //TODO: 's and his recomendations on how to do it." />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -2257,13 +2244,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtilTimer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35108694" vertical-offset="0" max-vertical-offset="920">
-          <caret line="255" column="0" selection-start-line="255" selection-start-column="0" selection-end-line="255" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.59347826" vertical-offset="1154" max-vertical-offset="3315">
@@ -2327,13 +2307,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/FairHashFunctor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13348676" vertical-offset="0" max-vertical-offset="869">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashFunctor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3003452" vertical-offset="0" max-vertical-offset="869">
@@ -2345,11 +2318,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.1179906" vertical-offset="1392" max-vertical-offset="3016">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#main#0;class#SpellChecker#0" expanded="true" />
-            <element signature="method#run_spell_check#0;class#SpellChecker#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2357,19 +2325,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.83314157" vertical-offset="349" max-vertical-offset="1305">
           <caret line="112" column="17" selection-start-line="112" selection-start-column="17" selection-end-line="112" selection-end-column="17" />
-          <folding>
-            <element signature="docComment;class#HashTable#0" expanded="false" />
-            <element signature="docComment;field#size#0;class#HashTable#0" expanded="false" />
-            <element signature="docComment;method#addAll#0;class#HashTable#0" expanded="false" />
-            <element signature="docComment;method#containsAll#0;class#HashTable#0" expanded="false" />
-            <element signature="docComment;method#isEmpty#0;class#HashTable#0" expanded="false" />
-            <element signature="docComment;method#size#0;class#HashTable#0" expanded="false" />
-            <element signature="docComment;method#getCapacity#0;class#HashTable#0" expanded="false" />
-            <element signature="docComment;method#getCollisions#0;class#HashTable#0" expanded="false" />
-            <element signature="docComment;method#getLamda#0;class#HashTable#0" expanded="false" />
-            <element signature="docComment;method#nextPrime#0;class#HashTable#0" expanded="false" />
-            <element signature="docComment;method#isPrime#0;class#HashTable#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2377,14 +2332,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.70080554" vertical-offset="0" max-vertical-offset="869">
           <caret line="138" column="25" selection-start-line="138" selection-start-column="25" selection-end-line="138" selection-end-column="25" />
-          <folding>
-            <element signature="docComment;class#ProbingHashTable#0" expanded="false" />
-            <element signature="docComment;method#ProbingHashTable#0;class#ProbingHashTable#0" expanded="false" />
-            <element signature="docComment;method#add#0;class#ProbingHashTable#0" expanded="false" />
-            <element signature="docComment;method#contains#0;class#ProbingHashTable#0" expanded="false" />
-            <element signature="docComment;method#clear#0;class#ProbingHashTable#0" expanded="false" />
-            <element signature="docComment;method#rehash#0;class#ProbingHashTable#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2402,16 +2349,6 @@
             <element signature="docComment;method#contains#0;class#ChainingHashTable#0" expanded="false" />
             <element signature="docComment;method#clear#0;class#ChainingHashTable#0" expanded="false" />
             <element signature="docComment;method#rehash#0;class#ChainingHashTable#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/GoodHashFunctor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13551402" vertical-offset="87" max-vertical-offset="957">
-          <caret line="7" column="62" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="62" />
-          <folding>
-            <element signature="method#hash#0;class#GoodHashFunctor#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2437,21 +2374,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="174" max-vertical-offset="2030">
           <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
-          <folding>
-            <element signature="docComment;method#setUp#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testAdd#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testAddAll#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testClear#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testContains#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testContainsAll#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testRemove#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testRemoveAll#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testSize#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testToArrayList#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testInOrderDFT#0;class#BSTtester#0" expanded="false" />
-            <element signature="docComment;method#testWriteDot#0;class#BSTtester#0" expanded="false" />
-            <element signature="e#19657#19761#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2459,9 +2381,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1290" max-vertical-offset="2929">
           <caret line="70" column="57" selection-start-line="70" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding>
-            <element signature="method#main#0;class#SpellChecker#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2469,11 +2388,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23714954" vertical-offset="0" max-vertical-offset="856">
           <caret line="25" column="133" selection-start-line="25" selection-start-column="133" selection-end-line="25" selection-end-column="133" />
-          <folding>
-            <element signature="docComment;class#GraphUtil#0" expanded="false" />
-            <element signature="docComment;method#generateGraphInDotFile#0;class#GraphUtil#0" expanded="false" />
-            <element signature="docComment;method#buildGraphFromDotFile#0;class#GraphUtil#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2481,31 +2395,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30490655" vertical-offset="0" max-vertical-offset="2784">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTimer.java">
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment7/GraphUtilTimer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="841">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="348" max-vertical-offset="2871">
+          <caret line="115" column="13" selection-start-line="112" selection-start-column="12" selection-end-line="115" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/FairHashFunctor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33878505" vertical-offset="0" max-vertical-offset="856">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/GoodHashFunctor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23714954" vertical-offset="0" max-vertical-offset="856">
+          <caret line="7" column="62" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05140187" vertical-offset="7496" max-vertical-offset="8352">
+        <state vertical-scroll-proportion="0.0" vertical-offset="7429" max-vertical-offset="8323">
           <caret line="260" column="0" selection-start-line="260" selection-start-column="0" selection-end-line="260" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTimer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6340621" vertical-offset="0" max-vertical-offset="869">
+          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#testChainingHashTable#0;class#HashTableTester#0" expanded="true" />
-            <element signature="e#488#496#0" expanded="true" />
-            <element signature="method#testProbingHashTable#0;class#HashTableTester#0" expanded="true" />
-            <element signature="e#4740#4748#0" expanded="true" />
-            <element signature="method#testPrimeNumberMethods#0;class#HashTableTester#0" expanded="true" />
-            <element signature="method#testHashFunctors#0;class#HashTableTester#0" expanded="true" />
-            <element signature="method#testSpellChecker#0;class#HashTableTester#0" expanded="true" />
+            <element signature="docComment;class#HashTableTimer#0" expanded="false" />
+            <element signature="e#3426#3454#0" expanded="false" />
+            <element signature="e#3543#3649#0" expanded="false" />
           </folding>
         </state>
       </provider>
