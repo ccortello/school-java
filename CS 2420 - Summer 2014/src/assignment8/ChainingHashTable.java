@@ -113,6 +113,7 @@ public class ChainingHashTable extends HashTable {
     @SuppressWarnings("unchecked")
     public void clear() {
         // set everything to zero & create new empty array for the variable 'storage'
+        lambda_MAX = 3.0;
         size = 0;
         collisions = 0;
         storage = (LinkedList<String>[]) new LinkedList[capacity];
@@ -125,8 +126,8 @@ public class ChainingHashTable extends HashTable {
     public void rehash() {
         // declare new LinkedList array to store reference to current LinkedList 'storage'
         LinkedList<String>[] previousArr = storage;
-        // create new array for storage, of capacity 2*size so lambda becomes 1.0
-        capacity = size * 2;
+        // create new array for storage, of capacity = size so lambda becomes 1.0
+        capacity = size;
         storage = (LinkedList<String>[]) new LinkedList[capacity];
         // update member variables
         size = collisions = 0;

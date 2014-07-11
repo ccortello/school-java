@@ -92,7 +92,7 @@ public abstract class HashTable implements Set<String> {
     /**
      * Returns the first prime integer greater than or equal to the passed integer
      */
-    public int nextPrime(int number) {
+    public static int nextPrime(int number) {
         // copy the number so we don't affect the parameter
         int n = number;
 
@@ -110,7 +110,7 @@ public abstract class HashTable implements Set<String> {
     /**
      * Returns true iff the passed int is prime
      */
-    public boolean isPrime(int number) {
+    public static boolean isPrime(int number) {
         // test each odd integer smaller than sqrt(number) to see if it's a factor
         for (int test = 3; test < Math.sqrt(number) + 1; test += 2)
             if (number % test == 0)
