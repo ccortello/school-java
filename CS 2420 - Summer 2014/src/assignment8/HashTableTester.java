@@ -103,7 +103,6 @@ public class HashTableTester extends TestCase {
         testTable = new ChainingHashTable(30, new GoodHashFunctor());
         assertEquals(31, testTable.getCapacity());
     }
-//  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 //  <<<<<<<<<<<<<<<<<<<<<<<<<<<<   TESTED PROBING HASH TABLE METHODS    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -189,7 +188,6 @@ public class HashTableTester extends TestCase {
         testTable = new ProbingHashTable(30, new GoodHashFunctor());
         assertEquals(31, testTable.getCapacity());
     }
-//  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 //  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<    TESTING PRIME NUMBER HELPER METHODS   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -220,7 +218,6 @@ public class HashTableTester extends TestCase {
         assertEquals(503, HashTable.nextPrime(500));
         assertEquals(2111, HashTable.nextPrime(2100));
     }
-//  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 //  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<    TESTING HASH FUNCTOR OBJECT METHODS   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -260,8 +257,6 @@ public class HashTableTester extends TestCase {
         assertTrue(good.hash("Data Structures") == good.hash("Data Structures"));
         assertTrue(good.hash("hi") == good.hash("hi"));
     }
-
-//  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 //  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<    TESTING SPELL CHECKER CLASSES   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
