@@ -8,20 +8,18 @@ import java.util.Random;
 import java.util.Scanner;
 
 /**
- * Utility class containing methods for operating on graphs.
- * The class also provides routines for generating and building graphs.
+ * Utility class containing methods for operating on graphs. The class also provides routines for generating and
+ * building graphs.
  *
  * @author Paymon Saebi
  */
 public class GraphUtil {
     /**
-     * Builds a graph according to the edges specified in the given DOT file (e.g., "a -- b" or "a -> b").
-     * Accepts directed ("digraph") or undirected ("graph") graphs.
+     * Builds a graph according to the edges specified in the given DOT file (e.g., "a -- b" or "a -> b"). Accepts
+     * directed ("digraph") or undirected ("graph") graphs.
      * <p/>
-     * Accepts many used DOT files (see examples posted with assignment).
-     * --accepts \\-style comments
-     * --accepts one edge per line or edges terminated with ;\
-     * --accepts label attributes (e.g., [label = "a label"]) for weights
+     * Accepts many used DOT files (see examples posted with assignment). --accepts \\-style comments --accepts one edge
+     * per line or edges terminated with ;\ --accepts label attributes (e.g., [label = "a label"]) for weights
      *
      * @param filename - name of the DOT file
      */
@@ -30,7 +28,8 @@ public class GraphUtil {
 
         try {
             out = new PrintWriter(filename);
-        } catch (IOException e) {
+        }
+        catch (IOException e) {
             System.out.println(e);
         }
 
@@ -50,7 +49,6 @@ public class GraphUtil {
             vertex[i] = "v" + i;
 
         if (acyclic) {
-            // TODO
         } else {
             for (int i = 0; i < vertexCount; i++) // randomly connect the vertices using 2 * |V| edges
             {
@@ -68,10 +66,11 @@ public class GraphUtil {
     }
 
     /**
-     * Builds a graph according to the edges specified in the given DOT file (e.g., "a -- b" or "a -> b"). Accepts directed ("digraph") or undirected ("graph") graphs.
+     * Builds a graph according to the edges specified in the given DOT file (e.g., "a -- b" or "a -> b"). Accepts
+     * directed ("digraph") or undirected ("graph") graphs.
      * <p/>
-     * Accepts many used DOT files (see examples posted with assignment). --accepts \\-style comments --accepts one edge per line or edges terminated with ; --does not accept
-     * attributes in [] (e.g., [label = "a label"])
+     * Accepts many used DOT files (see examples posted with assignment). --accepts \\-style comments --accepts one edge
+     * per line or edges terminated with ; --does not accept attributes in [] (e.g., [label = "a label"])
      *
      * @param filename - name of the DOT file
      */
@@ -82,7 +81,8 @@ public class GraphUtil {
         Scanner s = null;
         try {
             s = new Scanner(new File(filename)).useDelimiter(";|\n");
-        } catch (FileNotFoundException e) {
+        }
+        catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
         }
 
