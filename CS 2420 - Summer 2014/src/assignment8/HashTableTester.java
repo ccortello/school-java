@@ -221,4 +221,66 @@ public class HashTableTester extends TestCase {
         assertEquals(2111, HashTable.nextPrime(2100));
     }
 //  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+//  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<    TESTING HASH FUNCTOR OBJECT METHODS   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    public void testHashFunctors() {
+        // first test bad functor method, create new functor
+        HashFunctor bad = new BadHashFunctor();
+        // BadHashFunctor returns only the length of the string, assert this is true multiple times
+        assertEquals(5, bad.hash("three"));
+        assertEquals(10, bad.hash("university"));
+        assertEquals(7, bad.hash("CS 2420"));
+        assertEquals(15, bad.hash("Data Structures"));
+        assertEquals(2, bad.hash("hi"));
+
+        // now test the fair functor method
+        HashFunctor fair = new FairHashFunctor();
+        // FairHashFunctor sums all the char values in the string then multiplies the sum by the string length
+        assertEquals(2680, fair.hash("three"));
+        assertEquals(11220, fair.hash("university"));
+        assertEquals(2674, fair.hash("CS 2420"));
+        assertEquals(22530, fair.hash("Data Structures"));
+        assertEquals(418, fair.hash("hi"));
+
+        // now test the good functor method
+        HashFunctor good = new GoodHashFunctor();
+        /* this hash function places the integer values of each character in the string side by side
+           to create a large BigInteger that uniquely defines that string, the BigInteger is then
+           converted to an int and the absolute value of this is returned from the hash method */
+        assertEquals(1736811667, good.hash("three"));
+        assertEquals(777408473, good.hash("university"));
+        assertEquals(1462947976, good.hash("CS 2420"));
+        assertEquals(323755387, good.hash("Data Structures"));
+        assertEquals(104105, good.hash("hi"));
+        // also assert that the hash function should create the same hashcode for the same string every time.
+        assertTrue(good.hash("three") == good.hash("three"));
+        assertTrue(good.hash("university") == good.hash("university"));
+        assertTrue(good.hash("CS 2420") == good.hash("CS 2420"));
+        assertTrue(good.hash("Data Structures") == good.hash("Data Structures"));
+        assertTrue(good.hash("hi") == good.hash("hi"));
+    }
+
+//  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+//  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<    TESTING SPELL CHECKER CLASSES   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    public void testSpellChecker() {
+        // create string array of desired arguments to pass to main.
+        String[] args = new String[3];
+        args[0] = "dictionary.txt";
+        args[1] = "hello_world.txt";
+        args[2] = "-p";
+        // call main and pass the arguments, .txt files must be in the same workspace directory. Prints to screen
+        SpellChecker.main(args);
+
+        // test again with the second argument as the good_luck.txt document to spell check
+        args[1] = "good_luck.txt";
+        SpellChecker.main(args);
+
+        // end of all statements in testing class, if next statement prints than all the tests passed
+        System.out.println("! ALL TESTS HAVE PASSED !");
+    }
+
+//  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 }
