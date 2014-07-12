@@ -9,10 +9,10 @@ import java.util.Random;
  * @author Casey Nordgran
  */
 public class HashTableTimer {
-    static int MAX_TABLE_SIZE = 100000;
+    static int MAX_TABLE_SIZE = 35000;
     static int TIMES_TO_LOOP = 100;
-    static int INTERVAL = 5000;
-    static long seed = 82314917283974983L;
+    static int INTERVAL = 2500;
+//    static long seed = 82314917283974983L;
 
     public static void main(String[] args) {
         hashFunctionTime();
@@ -92,7 +92,7 @@ public class HashTableTimer {
         // method to create a string array of random strings made up of lowercase letters.
 
         String[] array = new String[capacity];
-        Random rand = new Random(seed);
+        Random rand = new Random(System.currentTimeMillis());
 
         // first loop to iterate indexes in array
         for (int i = 0; i < capacity; i++) {
