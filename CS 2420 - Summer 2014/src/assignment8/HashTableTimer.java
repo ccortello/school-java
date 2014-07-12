@@ -23,12 +23,15 @@ public class HashTableTimer {
         int dataIndex = 0;
         // stores values than prints at the end.
         int[] sizeData = new int[MAX_TABLE_SIZE / INTERVAL + 1];
-        double[] timeData = new double[MAX_TABLE_SIZE / INTERVAL + 1];
+        double[] totalTimeData = new double[MAX_TABLE_SIZE / INTERVAL + 1];
 
         //uncomment the hashfunction you want to test
-        /*HashFunctor hasher = new BadHashFunctor();*/
-        /*HashFunctor hasher = new FairHashFunctor();*/
-        HashFunctor hasher = new GoodHashFunctor();
+        HashFunctor hasher = new BadHashFunctor();
+//        HashFunctor hasher = new FairHashFunctor();
+//        HashFunctor hasher = new GoodHashFunctor();
+
+        // print header
+        System.out.println("Timing trial for BadHashFunctor()\nHashes\tTotal time\tAverage Time");
 
         // table sizes
         for (int i = 0; i <= MAX_TABLE_SIZE; i += INTERVAL) {
@@ -64,17 +67,24 @@ public class HashTableTimer {
 //            }
 
             endTime = System.nanoTime();
-            sizeData[dataIndex] = i;
-            timeData[dataIndex++] = (double) (2 * midTime - startTime - endTime) / combined;
-//            timeData[dataIndex++] = (double) (2 * midTime - startTime - endTime) / i;
 
+            // calculate the total time and the average time
+            double totalTime = (double) (2 * midTime - startTime - endTime);
+            double avgTime = totalTime / combined;
+
+            // store the times to be printed after execution completes
+            sizeData[dataIndex] = i;
+            totalTimeData[dataIndex] = totalTime;
+            totalTimeData[dataIndex++] = avgTime;
+
+            // uncomment this section to print the results as the test runs
+//            System.out.println(i+ "\t" + totalTime+"\t"+avgTime);
             if (i == 1000) i = 0;
         }
         // after testing finishes, print stored data
         System.out.println("size\ttime");
-        for (int i = 0; i <= MAX_TABLE_SIZE / INTERVAL; i++) {
-            System.out.println(sizeData[i] + "\t" + timeData[i]);
-        }
+        for (int i = 0; i <= MAX_TABLE_SIZE / INTERVAL; i++)
+            System.out.println(sizeData[i] + "\t" + totalTimeData[i]);
     }
 
     public static String[] stringArray(int capacity) {
