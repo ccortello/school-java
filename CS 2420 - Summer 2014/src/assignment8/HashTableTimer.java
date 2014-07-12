@@ -25,7 +25,7 @@ public class HashTableTimer {
         int[] sizeData = new int[MAX_TABLE_SIZE / INTERVAL + 1];
         double[] totalTimeData = new double[MAX_TABLE_SIZE / INTERVAL + 1];
 
-        //uncomment the hashfunction you want to test
+        //uncomment the hash function you want to test
         HashFunctor hasher = new BadHashFunctor();
 //        HashFunctor hasher = new FairHashFunctor();
 //        HashFunctor hasher = new GoodHashFunctor();
@@ -78,13 +78,13 @@ public class HashTableTimer {
             totalTimeData[dataIndex++] = avgTime;
 
             // uncomment this section to print the results as the test runs
-//            System.out.println(i+ "\t" + totalTime+"\t"+avgTime);
+            System.out.println(i + "\t" + totalTime + "\t" + avgTime);
             if (i == 1000) i = 0;
         }
         // after testing finishes, print stored data
-        System.out.println("size\ttime");
-        for (int i = 0; i <= MAX_TABLE_SIZE / INTERVAL; i++)
-            System.out.println(sizeData[i] + "\t" + totalTimeData[i]);
+//        System.out.println("size\ttime");
+//        for (int i = 0; i <= MAX_TABLE_SIZE / INTERVAL; i++)
+//            System.out.println(sizeData[i] + "\t" + totalTimeData[i]);
     }
 
     public static String[] stringArray(int capacity) {
