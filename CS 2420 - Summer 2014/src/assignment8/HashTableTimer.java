@@ -78,6 +78,7 @@ public class HashTableTimer {
     }
 
     public static String[] stringArray(int capacity) {
+
         // method to create a string array of random strings made up of lowercase letters.
 
         String[] array = new String[capacity];
