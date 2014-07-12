@@ -12,7 +12,7 @@ public class HashTableTimer {
     static int MAX_TABLE_SIZE = 100000;
     static int TIMES_TO_LOOP = 100;
     static int INTERVAL = 5000;
-
+    static long seed = 82314917283974983L;
 
     public static void main(String[] args) {
         hashFunctionTime();
@@ -92,7 +92,7 @@ public class HashTableTimer {
         // method to create a string array of random strings made up of lowercase letters.
 
         String[] array = new String[capacity];
-        Random rand = new Random(System.currentTimeMillis());
+        Random rand = new Random(seed);
 
         // first loop to iterate indexes in array
         for (int i = 0; i < capacity; i++) {
@@ -100,11 +100,8 @@ public class HashTableTimer {
             int stringLength = rand.nextInt(17) + 4;
             // for loop adds random characters to string at index 'i' until j = stringLength-1
             array[i] = "";
-            for (int j = 0; j < stringLength; j++) {
+            for (int j = 0; j < stringLength; j++)
                 array[i] += Character.toString((char) (rand.nextInt(26) + 97));
-            }
-//            if (i%1000==0)
-//                System.out.println(array[i]);
 
         }
         return array;
