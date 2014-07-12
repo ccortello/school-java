@@ -94,34 +94,29 @@
       <file leaf-file-name="HashTableTimer.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTimer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.20389806" vertical-offset="0" max-vertical-offset="1904">
-              <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.43328336" vertical-offset="0" max-vertical-offset="667">
+              <caret line="171" column="65" selection-start-line="171" selection-start-column="65" selection-end-line="171" selection-end-column="65" />
               <folding>
                 <element signature="docComment;class#HashTableTimer#0" expanded="false" />
-                <element signature="e#392#393#0" expanded="true" />
-                <element signature="e#426#427#0" expanded="true" />
-                <element signature="e#3939#4045#0" expanded="false" />
+                <element signature="method#main#0;class#HashTableTimer#0" expanded="false" />
+                <element signature="method#BadHashFunctionTime#0;class#HashTableTimer#0" expanded="false" />
+                <element signature="e#1043#1058#0" expanded="false" />
+                <element signature="e#2685#2743#0" expanded="false" />
+                <element signature="e#3016#3079#0" expanded="false" />
+                <element signature="e#3254#3298#0" expanded="false" />
+                <element signature="method#FairHashFunctionTime#0;class#HashTableTimer#0" expanded="false" />
+                <element signature="e#3874#3889#0" expanded="false" />
+                <element signature="e#5517#5575#0" expanded="false" />
+                <element signature="e#5848#5911#0" expanded="false" />
+                <element signature="e#6086#6130#0" expanded="false" />
+                <element signature="method#GoodHashFunctionTime#0;class#HashTableTimer#0" expanded="false" />
+                <element signature="e#6706#6721#0" expanded="false" />
+                <element signature="e#8349#8407#0" expanded="false" />
+                <element signature="e#8680#8743#0" expanded="false" />
+                <element signature="e#8918#8962#0" expanded="false" />
+                <element signature="method#stringArray#0;class#HashTableTimer#0" expanded="false" />
+                <element signature="e#9955#10061#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HashFunctor.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashFunctor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChainingHashTable.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/ChainingHashTable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1562" max-vertical-offset="2482">
-              <caret line="129" column="24" selection-start-line="129" selection-start-column="24" selection-end-line="129" selection-end-column="24" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -1975,7 +1970,11 @@
       <created>1405131501192</created>
       <updated>1405131501192</updated>
     </task>
-    <option name="localTasksCounter" value="286" />
+    <task id="LOCAL-00286" summary="slightly changed hashing timing">
+      <created>1405132589973</created>
+      <updated>1405132589973</updated>
+    </task>
+    <option name="localTasksCounter" value="287" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -2022,7 +2021,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1390625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1390625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26687765" sideWeight="0.63072914" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
@@ -2420,14 +2419,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashFunctor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.7.0_55/src.zip!/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="44658" max-vertical-offset="61472">
@@ -2452,15 +2443,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashFunctor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20389806" vertical-offset="0" max-vertical-offset="667">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTimer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20389806" vertical-offset="0" max-vertical-offset="1904">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.43328336" vertical-offset="0" max-vertical-offset="667">
+          <caret line="171" column="65" selection-start-line="171" selection-start-column="65" selection-end-line="171" selection-end-column="65" />
           <folding>
             <element signature="docComment;class#HashTableTimer#0" expanded="false" />
-            <element signature="e#392#393#0" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#3939#4045#0" expanded="false" />
+            <element signature="method#main#0;class#HashTableTimer#0" expanded="false" />
+            <element signature="method#BadHashFunctionTime#0;class#HashTableTimer#0" expanded="false" />
+            <element signature="e#1043#1058#0" expanded="false" />
+            <element signature="e#2685#2743#0" expanded="false" />
+            <element signature="e#3016#3079#0" expanded="false" />
+            <element signature="e#3254#3298#0" expanded="false" />
+            <element signature="method#FairHashFunctionTime#0;class#HashTableTimer#0" expanded="false" />
+            <element signature="e#3874#3889#0" expanded="false" />
+            <element signature="e#5517#5575#0" expanded="false" />
+            <element signature="e#5848#5911#0" expanded="false" />
+            <element signature="e#6086#6130#0" expanded="false" />
+            <element signature="method#GoodHashFunctionTime#0;class#HashTableTimer#0" expanded="false" />
+            <element signature="e#6706#6721#0" expanded="false" />
+            <element signature="e#8349#8407#0" expanded="false" />
+            <element signature="e#8680#8743#0" expanded="false" />
+            <element signature="e#8918#8962#0" expanded="false" />
+            <element signature="method#stringArray#0;class#HashTableTimer#0" expanded="false" />
+            <element signature="e#9955#10061#0" expanded="false" />
           </folding>
         </state>
       </provider>
