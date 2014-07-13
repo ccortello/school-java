@@ -12,10 +12,10 @@ import java.util.Random;
  * @author Casey Nordgran
  */
 public class HashTableTimer {
-    static int MAX_TABLE_SIZE = 35000;
-    static int TIMES_TO_LOOP = 100;
-	static int INTERVAL = 200;
-	static int ADDED_ITEMS = 10000;
+	static int MAX_TABLE_SIZE = 1000000;
+	static int TIMES_TO_LOOP = 10;
+	static int INTERVAL = 10000;
+	static int ADDED_ITEMS = 5000;
 	static boolean printAsRuns = true;
 	static boolean printAtEnd = false;
 	static boolean printToFile = false;
@@ -313,13 +313,14 @@ public class HashTableTimer {
 					"(ns)\tCollisions");
 
 		// table sizes
-		for (int i = 100; i <= MAX_TABLE_SIZE; i += INTERVAL) {
+		for (int i = 100000; i <= MAX_TABLE_SIZE; i += INTERVAL) {
 //			if (i == 0) i = 1000;
 
-			ProbingHashTable table = new ProbingHashTable(i, hasher);
+			ProbingHashTable table;
 			int combined = i * TIMES_TO_LOOP;
-			String[] randomStrings = stringArray(combined);
+			String[] randomStrings = stringArray(ADDED_ITEMS);
 			int index;
+			long totalCollisions = 0;
 
 			// let a while loop run for a full second to get things spooled up.
 			startTime = System.nanoTime();
@@ -327,20 +328,28 @@ public class HashTableTimer {
 			}
 
 			startTime = System.nanoTime();
-			index = 0;
-			for (int k = 0; k < combined; k++) {
-				table.add(randomStrings[index++]);
+			for (int k = 0; k < TIMES_TO_LOOP; k++) {
+				table = new ProbingHashTable(i, hasher);
+				for (int j = 0; j < randomStrings.length; j++)
+					table.add(randomStrings[j]);
+				totalCollisions += table.getCollisions();
 			}
 
 			midTime = System.nanoTime();
-			for (int k = 0; k < combined; k++) {}
+			for (int k = 0; k < TIMES_TO_LOOP; k++) {
+				table = new ProbingHashTable(i, hasher);
+				for (int j = 0; j < ADDED_ITEMS; j++) {
+				}
+				totalCollisions += 0;
+			}
 
 			endTime = System.nanoTime();
 
 			// calculate the total time and the average time
 			double totalTime = (double) (2 * midTime - startTime - endTime) / 1e9;
 			double avgTime = totalTime * 1e9 / combined;
-			long collisions = table.getCollisions();
+//			long collisions = table.getCollisions();
+			long collisions = totalCollisions / TIMES_TO_LOOP;
 
 			// store the times to be printed after execution completes
 			if (printAtEnd) {
