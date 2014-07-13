@@ -14,7 +14,7 @@ import java.util.Random;
 public class HashTableTimer {
     static int MAX_TABLE_SIZE = 35000;
     static int TIMES_TO_LOOP = 100;
-    static int INTERVAL = 1000;
+	static int INTERVAL = 200;
 	static boolean printAsRuns = true;
 	static boolean printAtEnd = false;
 	static boolean printToFile = false;
@@ -298,14 +298,16 @@ public class HashTableTimer {
 
 		// print header
 		if (printAsRuns || printAtEnd)
-			System.out.println("Timing trial for BadHashProbingTableTime\nHashes\tTotal time (s)\tAverage Time (ns)");
+			System.out.println("Timing trial for BadHash with ProbingTable\nHashes\tTotal time (s)\tAverage Time (ns)" +
+					"\tCollisions");
 		if (printToFile)
-			writer.write("Timing trial for BadHash with ProbingTable()\nHashes	Total time	Average Time");
+			writer.write("Timing trial for BadHash with ProbingTable\nHashes\tTotal time (s)\tAverage Time (ns)\tCollisions");
 
 		// table sizes
 		for (int i = 0; i <= MAX_TABLE_SIZE; i += INTERVAL) {
-			if (i == 0) i = 1000;
+//			if (i == 0) i = 1000;
 
+			ProbingHashTable table = new ProbingHashTable(i, hasher);
 			int combined = i * TIMES_TO_LOOP;
 			String[] randomStrings = stringArray(combined);
 			String temp;
@@ -318,24 +320,20 @@ public class HashTableTimer {
 
 			startTime = System.nanoTime();
 			index = 0;
-//            for (int j = 0; j < TIMES_TO_LOOP; j++) {
 			for (int k = 0; k < combined; k++) {
-				temp = randomStrings[index++];
-				// this next statement is what is dependent on the hashtable size.
-				int hashIndex = hasher.hash(temp) % i;
+				table.add(randomStrings[index++]);
 			}
-//            }
 
 			midTime = System.nanoTime();
 			index = 0;
-			for (int k = 0; k < combined; k++)
-				temp = randomStrings[index++];
+			for (int k = 0; k < combined; k++) {}
 
 			endTime = System.nanoTime();
 
 			// calculate the total time and the average time
 			double totalTime = (double) (2 * midTime - startTime - endTime) / 1e9;
 			double avgTime = totalTime * 1e9 / combined;
+			long collisions = table.getCollisions();
 
 			// store the times to be printed after execution completes
 			if (printAtEnd) {
@@ -346,14 +344,14 @@ public class HashTableTimer {
 
 			// write the data to the created file
 			if (printToFile)
-				writer.write(i + "\t" + totalTime + "\t" + avgTime);
+				writer.write(i + "\t" + totalTime + "\t" + avgTime + "\t" + collisions);
 
 			// print the results as the test runs
 			if (printAsRuns)
-				System.out.println(i + "\t" + totalTime + "\t" + avgTime);
+				System.out.println(i + "\t" + totalTime + "\t" + avgTime + "\t" + collisions);
 
 			// return i to 0 for the first loop
-			if (i == 1000) i = 0;
+//			if (i == 1000) i = 0;
 		}
 		System.out.println("Finished BadHashFunction timing!\n");
 		// after testing finishes, print stored data
