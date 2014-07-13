@@ -15,6 +15,7 @@ public class HashTableTimer {
     static int MAX_TABLE_SIZE = 35000;
     static int TIMES_TO_LOOP = 100;
 	static int INTERVAL = 200;
+	static int ADDED_ITEMS = 2000;
 	static boolean printAsRuns = true;
 	static boolean printAtEnd = false;
 	static boolean printToFile = false;
@@ -266,16 +267,16 @@ public class HashTableTimer {
 		}
 	}
 
-    public static String[] stringArray(int capacity) {
+	public static String[] stringArray(int length) {
 
         // method to create a string array of random strings made up of lowercase letters.
 
-        String[] array = new String[capacity];
-        Random rand = new Random(System.currentTimeMillis());
+		String[] array = new String[length];
+		Random rand = new Random(System.currentTimeMillis());
 
         // first loop to iterate indexes in array
-        for (int i = 0; i < capacity; i++) {
-            // sets random string length at index 'i' of the string array, length from 4 to 20 characters
+		for (int i = 0; i < length; i++) {
+			// sets random string length at index 'i' of the string array, length from 4 to 20 characters
             int stringLength = rand.nextInt(17) + 4;
             // for loop adds random characters to string at index 'i' until j = stringLength-1
             array[i] = "";
@@ -286,6 +287,13 @@ public class HashTableTimer {
         return array;
     }
 
+//     TODO: conduct an experiment assess the quality and efficiency of each of your three hash functions.
+//    * A recommendation for this experiment is to create two plots: one that shows the
+//    growth of the number of collisions incurred by each hash function for a variety of
+//    hash table sizes, and one that shows the actual running time required by each hash
+//    function for a variety of hash table sizes. You may use either type of table for
+//    this experiment.
+
 	public static void BadHashProbingTableTime() throws Exception {
 		long startTime, midTime, endTime;
 		int dataIndex = 0;
@@ -294,14 +302,16 @@ public class HashTableTimer {
 		int[] sizeData = new int[MAX_TABLE_SIZE / INTERVAL + 1];
 		double[] totalTimeData = new double[MAX_TABLE_SIZE / INTERVAL + 1];
 
-		HashFunctor hasher = new BadHashFunctor();
+		HashFunctor hasher = new FairHashFunctor();
 
 		// print header
 		if (printAsRuns || printAtEnd)
-			System.out.println("Timing trial for BadHash with ProbingTable\nHashes\tTotal time (s)\tAverage Time (ns)" +
+			System.out.println("Timing trial for BadHash with ProbingTable\nInitial capacity\tTotal time (s)\tAverage " +
+					"Time (ns)" +
 					"\tCollisions");
 		if (printToFile)
-			writer.write("Timing trial for BadHash with ProbingTable\nHashes\tTotal time (s)\tAverage Time (ns)\tCollisions");
+			writer.write("Timing trial for BadHash with ProbingTable\nInitial capacity\tTotal time (s)\tAverage Time " +
+					"(ns)\tCollisions");
 
 		// table sizes
 		for (int i = 0; i <= MAX_TABLE_SIZE; i += INTERVAL) {
@@ -325,7 +335,6 @@ public class HashTableTimer {
 			}
 
 			midTime = System.nanoTime();
-			index = 0;
 			for (int k = 0; k < combined; k++) {}
 
 			endTime = System.nanoTime();
@@ -361,13 +370,6 @@ public class HashTableTimer {
 				System.out.println(sizeData[i] + "\t" + totalTimeData[i]);
 		}
 	}
-//     TODO: conduct an experiment assess the quality and efficiency of each of your three hash functions.
-//    * A recommendation for this experiment is to create two plots: one that shows the
-//    growth of the number of collisions incurred by each hash function for a variety of
-//    hash table sizes, and one that shows the actual running time required by each hash
-//    function for a variety of hash table sizes. You may use either type of table for
-//    this experiment.
-
 
 //     TODO: conduct an experiment assess the quality and efficiency of each of your two hash tables.
 //    * A recommendation for this experiment is to create two plots: one that shows the number of
