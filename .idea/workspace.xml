@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="slightly changed hashing timing">
+    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="separated bad, fair, and good timers">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Data/HashingTimes.txt" />
+      <change type="MOVED" beforePath="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment8\HashFunctor Times.pdf" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Data/HashFunctor Times.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTimer.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTimer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -66,8 +69,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <breakpoint_rules converted="true" />
     <ui_properties converted="true" />
+    <breakpoint_rules converted="true" />
   </component>
   <component name="ErrorTreeViewConfiguration">
     <option name="autoscrollToSource" value="true" />
@@ -81,42 +84,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HashTableTester.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTester.java">
+      <file leaf-file-name="HashTableTimer.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTimer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4420" max-vertical-offset="4879">
-              <caret line="260" column="0" selection-start-line="260" selection-start-column="0" selection-end-line="260" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.22608696" vertical-offset="4705" max-vertical-offset="6460">
+              <caret line="289" column="74" selection-start-line="289" selection-start-column="74" selection-end-line="289" selection-end-column="74" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HashTableTimer.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTimer.java">
+      <file leaf-file-name="HashingTimes.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Data/HashingTimes.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43328336" vertical-offset="0" max-vertical-offset="667">
-              <caret line="171" column="65" selection-start-line="171" selection-start-column="65" selection-end-line="171" selection-end-column="65" />
-              <folding>
-                <element signature="docComment;class#HashTableTimer#0" expanded="false" />
-                <element signature="method#main#0;class#HashTableTimer#0" expanded="false" />
-                <element signature="method#BadHashFunctionTime#0;class#HashTableTimer#0" expanded="false" />
-                <element signature="e#1043#1058#0" expanded="false" />
-                <element signature="e#2685#2743#0" expanded="false" />
-                <element signature="e#3016#3079#0" expanded="false" />
-                <element signature="e#3254#3298#0" expanded="false" />
-                <element signature="method#FairHashFunctionTime#0;class#HashTableTimer#0" expanded="false" />
-                <element signature="e#3874#3889#0" expanded="false" />
-                <element signature="e#5517#5575#0" expanded="false" />
-                <element signature="e#5848#5911#0" expanded="false" />
-                <element signature="e#6086#6130#0" expanded="false" />
-                <element signature="method#GoodHashFunctionTime#0;class#HashTableTimer#0" expanded="false" />
-                <element signature="e#6706#6721#0" expanded="false" />
-                <element signature="e#8349#8407#0" expanded="false" />
-                <element signature="e#8680#8743#0" expanded="false" />
-                <element signature="e#8918#8962#0" expanded="false" />
-                <element signature="method#stringArray#0;class#HashTableTimer#0" expanded="false" />
-                <element signature="e#9955#10061#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="1717">
+              <caret line="77" column="30" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -143,9 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/BookTest.java" />
-        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryGenericTest.java" />
-        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/testLibraryGeneric.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryGeneric.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/LibraryBook.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment2/OurLibraryGenericTest.java" />
@@ -193,6 +175,9 @@
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/GoodHashFunctor.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/lab6/GraphUtil.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTester.java" />
+        <option value="$PROJECT_DIR$/BadHashFunctionTime.txt" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashingTimes.txt" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Data/HashingTimes.txt" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTimer.java" />
       </list>
     </option>
@@ -203,8 +188,24 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
+    <option name="width" value="1932" />
     <option name="height" value="1056" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Abstraction issues</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -284,14 +285,26 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CS 2420 - Summer 2014" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assignment8" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Data" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -348,6 +361,16 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -359,7 +382,7 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Java" />
+    <property name="options.lastSelected" value="preferences.sourceCode.Java" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -396,17 +419,17 @@
     <property name="restartRequiresConfirmation" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="junit.framework.TestCase" />
+      <recent name="" />
+      <recent name="groovy.util.GroovyTestCase" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="assignment6" />
       <recent name="assignment4" />
       <recent name="assignment3" />
       <recent name="assignment2" />
       <recent name="homework10" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="junit.framework.TestCase" />
-      <recent name="" />
-      <recent name="groovy.util.GroovyTestCase" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="assignment8" />
@@ -423,11 +446,11 @@
       <recent name="C:\Users\Casey\Documents\GitHub_Clones\school-java\CS 2420 - Summer 2014\src\assignment6" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment8\Data" />
       <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment7\GraphsPlusData" />
       <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment6\Cody's Analysis" />
       <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment6" />
       <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment2" />
-      <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014" />
     </key>
   </component>
   <component name="RunManager" selected="Application.HashTableTimer">
@@ -541,7 +564,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="CS 2420 - Summer 2014" />
       <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -574,6 +603,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -602,17 +644,20 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+    <configuration default="true" type="XSLT" factoryName="XSLT">
+      <option name="myOutputFile" />
+      <option name="myOpenOutputFile" value="false" />
+      <option name="myOpenInBrowser" value="false" />
+      <option name="mySmartErrorHandling" value="true" />
+      <option name="myRunnerPort" value="34873" />
+      <option name="myVmArguments" />
+      <option name="myWorkingDirectory" />
+      <option name="myModule" />
+      <option name="myJdk" />
+      <parameters />
+      <OutputType value="CONSOLE" save-to-file="false" />
+      <FileType name="XML" />
+      <JdkChoice value="FROM_MODULE" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1974,7 +2019,11 @@
       <created>1405132589973</created>
       <updated>1405132589973</updated>
     </task>
-    <option name="localTasksCounter" value="287" />
+    <task id="LOCAL-00287" summary="separated bad, fair, and good timers">
+      <created>1405133611658</created>
+      <updated>1405133611658</updated>
+    </task>
+    <option name="localTasksCounter" value="288" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -2001,7 +2050,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2011,28 +2060,58 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41796008" sideWeight="0.47433156" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41715977" sideWeight="0.4736457" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32805908" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40133038" sideWeight="0.28916308" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26476794" sideWeight="0.36927083" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31374723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24892704" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1390625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26687765" sideWeight="0.63072914" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14270833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32489452" sideWeight="0.6557292" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24947807" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32594234" sideWeight="0.34438503" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32489452" sideWeight="0.34427083" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26476794" sideWeight="0.36927083" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5140625" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.14166667" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32805908" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40133038" sideWeight="0.28916308" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31374723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14270833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24947807" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32489452" sideWeight="0.6557292" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32489452" sideWeight="0.34427083" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41715977" sideWeight="0.4736457" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26476794" sideWeight="0.36927083" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24892704" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -2049,7 +2128,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="finished assignment6!!" />
     <MESSAGE value="dowloaded files for assignent7" />
     <MESSAGE value="started DFS" />
     <MESSAGE value="implemented depthFirstSearch method, added test class to test it and it works great!!" />
@@ -2074,7 +2152,8 @@
     <MESSAGE value="added some timing analysis implementation for the HashFunctors" />
     <MESSAGE value="added PDF showing resulting times for the HashFunctors using the timing analysis" />
     <MESSAGE value="slightly changed hashing timing" />
-    <option name="LAST_COMMIT_MESSAGE" value="slightly changed hashing timing" />
+    <MESSAGE value="separated bad, fair, and good timers" />
+    <option name="LAST_COMMIT_MESSAGE" value="separated bad, fair, and good timers" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -2089,7 +2168,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="27" />
+      <option name="time" value="28" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -2097,24 +2176,21 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/List.java">
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTimer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.74453396" vertical-offset="1847" max-vertical-offset="2760">
-          <caret line="50" column="6" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="4705" max-vertical-offset="6460">
+          <caret line="289" column="74" selection-start-line="289" selection-start-column="74" selection-end-line="289" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment5/MyStack.java">
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Data/HashingTimes.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="163" max-vertical-offset="1344">
-          <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_55/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27157652" vertical-offset="8608" max-vertical-offset="13684">
-          <caret line="634" column="0" selection-start-line="634" selection-start-column="0" selection-end-line="634" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="1717">
+          <caret line="77" column="30" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2407,7 +2483,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="7429" max-vertical-offset="8323">
           <caret line="260" column="0" selection-start-line="260" selection-start-column="0" selection-end-line="260" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2415,7 +2490,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1562" max-vertical-offset="2482">
           <caret line="129" column="24" selection-start-line="129" selection-start-column="24" selection-end-line="129" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2447,34 +2521,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20389806" vertical-offset="0" max-vertical-offset="667">
           <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Data/HashingTimes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="1717">
+          <caret line="77" column="30" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTimer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43328336" vertical-offset="0" max-vertical-offset="667">
-          <caret line="171" column="65" selection-start-line="171" selection-start-column="65" selection-end-line="171" selection-end-column="65" />
+        <state vertical-scroll-proportion="0.22608696" vertical-offset="4705" max-vertical-offset="6460">
+          <caret line="289" column="74" selection-start-line="289" selection-start-column="74" selection-end-line="289" selection-end-column="74" />
           <folding>
-            <element signature="docComment;class#HashTableTimer#0" expanded="false" />
-            <element signature="method#main#0;class#HashTableTimer#0" expanded="false" />
-            <element signature="method#BadHashFunctionTime#0;class#HashTableTimer#0" expanded="false" />
-            <element signature="e#1043#1058#0" expanded="false" />
-            <element signature="e#2685#2743#0" expanded="false" />
-            <element signature="e#3016#3079#0" expanded="false" />
-            <element signature="e#3254#3298#0" expanded="false" />
-            <element signature="method#FairHashFunctionTime#0;class#HashTableTimer#0" expanded="false" />
-            <element signature="e#3874#3889#0" expanded="false" />
-            <element signature="e#5517#5575#0" expanded="false" />
-            <element signature="e#5848#5911#0" expanded="false" />
-            <element signature="e#6086#6130#0" expanded="false" />
-            <element signature="method#GoodHashFunctionTime#0;class#HashTableTimer#0" expanded="false" />
-            <element signature="e#6706#6721#0" expanded="false" />
-            <element signature="e#8349#8407#0" expanded="false" />
-            <element signature="e#8680#8743#0" expanded="false" />
-            <element signature="e#8918#8962#0" expanded="false" />
-            <element signature="method#stringArray#0;class#HashTableTimer#0" expanded="false" />
-            <element signature="e#9955#10061#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
