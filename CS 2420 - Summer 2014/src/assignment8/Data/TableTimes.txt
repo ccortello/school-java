@@ -1,6 +1,5 @@
 Timing trial for BadHash with ProbingTable
 Hashes	Total time (s)	Average Time (ns)	Collisions
-0	0.0	NaN	0
 200	0.624593161	31229.65805	13788572
 400	2.611249884	65281.2471	55238938
 600	6.595389044	109923.15073333333	124660251

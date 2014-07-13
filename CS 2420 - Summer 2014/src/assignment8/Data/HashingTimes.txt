@@ -57,7 +57,6 @@ Finished GoodHashFunction timing!
 
 Timing trial for GoodHashFunctor() #2
 Hashes	Total time (s)	Average Time (ns)
-0	0.0	NaN
 1000	0.287230472	2872.30472
 2000	0.550929607	2754.648035
 3000	0.805364798	2684.5493266666667

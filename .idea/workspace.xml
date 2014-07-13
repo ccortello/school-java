@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="more work on timing, started table timing">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Data/BadHashFunctor.tif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Data/FairHashFunctor.tif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Data/GoodHashFunctor.tif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTimer.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTimer.java" />
+    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="more table timing">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Data/BadHashFunctor2.tif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Data/BadHashProbing - Average.tif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Data/HashingTimes.txt" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Data/HashingTimes.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Data/TableTimes.txt" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Data/TableTimes.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -84,11 +84,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HashTableTimer.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="HashTableTimer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTimer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.69863015" vertical-offset="153" max-vertical-offset="1853">
-              <caret line="296" column="66" selection-start-line="296" selection-start-column="66" selection-end-line="296" selection-end-column="66" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="191" max-vertical-offset="629">
+              <caret line="379" column="0" selection-start-line="379" selection-start-column="0" selection-end-line="379" selection-end-column="0" />
               <folding>
                 <element signature="docComment;class#HashTableTimer#0" expanded="false" />
                 <element signature="method#main#0;class#HashTableTimer#0" expanded="false" />
@@ -98,9 +98,10 @@
                 <element signature="method#GoodHashFunctionTime#0;class#HashTableTimer#0" expanded="false" />
                 <element signature="e#8898#8933#0" expanded="false" />
                 <element signature="method#stringArray#0;class#HashTableTimer#0" expanded="false" />
-                <element signature="e#10071#10177#0" expanded="false" />
-                <element signature="e#12729#12764#0" expanded="false" />
-                <element signature="e#13087#13188#0" expanded="false" />
+                <element signature="e#10041#10147#0" expanded="false" />
+                <element signature="method#BadHashProbingTableTime#0;class#HashTableTimer#0" expanded="false" />
+                <element signature="e#12719#12754#0" expanded="false" />
+                <element signature="e#13077#13178#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -109,18 +110,18 @@
       <file leaf-file-name="HashingTimes.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Data/HashingTimes.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1717">
-              <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1700">
+              <caret line="58" column="41" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TableTimes.txt" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TableTimes.txt" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Data/TableTimes.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.038812786" vertical-offset="0" max-vertical-offset="438">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="11" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -195,10 +196,10 @@
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/lab6/GraphUtil.java" />
         <option value="$PROJECT_DIR$/BadHashFunctionTime.txt" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashingTimes.txt" />
-        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Data/HashingTimes.txt" />
-        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Data/TableTimes.txt" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTester.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTimer.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Data/TableTimes.txt" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Data/HashingTimes.txt" />
       </list>
     </option>
   </component>
@@ -2046,7 +2047,11 @@
       <created>1405212553672</created>
       <updated>1405212553672</updated>
     </task>
-    <option name="localTasksCounter" value="290" />
+    <task id="LOCAL-00290" summary="more table timing">
+      <created>1405223409350</created>
+      <updated>1405223409350</updated>
+    </task>
+    <option name="localTasksCounter" value="291" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -2151,7 +2156,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="started DFS" />
     <MESSAGE value="implemented depthFirstSearch method, added test class to test it and it works great!!" />
     <MESSAGE value="implemented breadthFirstSearch method, added tests for i in GraphUtilTester. Everything works as it should, and tests pass!!" />
     <MESSAGE value="implementing dijkstra's =)" />
@@ -2176,7 +2180,8 @@
     <MESSAGE value="slightly changed hashing timing" />
     <MESSAGE value="separated bad, fair, and good timers" />
     <MESSAGE value="more work on timing, started table timing" />
-    <option name="LAST_COMMIT_MESSAGE" value="more work on timing, started table timing" />
+    <MESSAGE value="more table timing" />
+    <option name="LAST_COMMIT_MESSAGE" value="more table timing" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -2199,14 +2204,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Data/HashingTimes.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="1717">
-          <caret line="77" column="30" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment3/ArrayBasedCollectionTester.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1248">
@@ -2532,31 +2529,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Data/TableTimes.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Data/BadHashFunctor.tif">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Data/HashingTimes.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1717">
-          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTimer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.69863015" vertical-offset="153" max-vertical-offset="1853">
-          <caret line="296" column="66" selection-start-line="296" selection-start-column="66" selection-end-line="296" selection-end-column="66" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="191" max-vertical-offset="629">
+          <caret line="379" column="0" selection-start-line="379" selection-start-column="0" selection-end-line="379" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#HashTableTimer#0" expanded="false" />
             <element signature="method#main#0;class#HashTableTimer#0" expanded="false" />
@@ -2566,10 +2547,32 @@
             <element signature="method#GoodHashFunctionTime#0;class#HashTableTimer#0" expanded="false" />
             <element signature="e#8898#8933#0" expanded="false" />
             <element signature="method#stringArray#0;class#HashTableTimer#0" expanded="false" />
-            <element signature="e#10071#10177#0" expanded="false" />
-            <element signature="e#12729#12764#0" expanded="false" />
-            <element signature="e#13087#13188#0" expanded="false" />
+            <element signature="e#10041#10147#0" expanded="false" />
+            <element signature="method#BadHashProbingTableTime#0;class#HashTableTimer#0" expanded="false" />
+            <element signature="e#12719#12754#0" expanded="false" />
+            <element signature="e#13077#13178#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Data/BadHashFunctor2.tif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Data/HashingTimes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1700">
+          <caret line="58" column="41" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/Data/TableTimes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.038812786" vertical-offset="0" max-vertical-offset="438">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="11" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
