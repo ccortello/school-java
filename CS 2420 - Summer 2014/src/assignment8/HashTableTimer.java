@@ -15,7 +15,7 @@ public class HashTableTimer {
     static int MAX_TABLE_SIZE = 35000;
     static int TIMES_TO_LOOP = 100;
 	static int INTERVAL = 200;
-	static int ADDED_ITEMS = 2000;
+	static int ADDED_ITEMS = 10000;
 	static boolean printAsRuns = true;
 	static boolean printAtEnd = false;
 	static boolean printToFile = false;
@@ -302,25 +302,23 @@ public class HashTableTimer {
 		int[] sizeData = new int[MAX_TABLE_SIZE / INTERVAL + 1];
 		double[] totalTimeData = new double[MAX_TABLE_SIZE / INTERVAL + 1];
 
-		HashFunctor hasher = new FairHashFunctor();
+		HashFunctor hasher = new BadHashFunctor();
 
 		// print header
 		if (printAsRuns || printAtEnd)
 			System.out.println("Timing trial for BadHash with ProbingTable\nInitial capacity\tTotal time (s)\tAverage " +
-					"Time (ns)" +
-					"\tCollisions");
+					"Time (ns)\tCollisions");
 		if (printToFile)
 			writer.write("Timing trial for BadHash with ProbingTable\nInitial capacity\tTotal time (s)\tAverage Time " +
 					"(ns)\tCollisions");
 
 		// table sizes
-		for (int i = 0; i <= MAX_TABLE_SIZE; i += INTERVAL) {
+		for (int i = 100; i <= MAX_TABLE_SIZE; i += INTERVAL) {
 //			if (i == 0) i = 1000;
 
 			ProbingHashTable table = new ProbingHashTable(i, hasher);
 			int combined = i * TIMES_TO_LOOP;
 			String[] randomStrings = stringArray(combined);
-			String temp;
 			int index;
 
 			// let a while loop run for a full second to get things spooled up.
@@ -372,7 +370,7 @@ public class HashTableTimer {
 	}
 
 //     TODO: conduct an experiment assess the quality and efficiency of each of your two hash tables.
-//    * A recommendation for this experiment is to create two plots: one that shows the number of
+//     * A recommendation for this experiment is to create two plots: one that shows the number of
 //     collisions incurred by each hash table using the hash function in GoodHashFunctor, and one
 //     that shows the actual running time required by each hash table using the hash function in
 //     GoodHashFunctor.
