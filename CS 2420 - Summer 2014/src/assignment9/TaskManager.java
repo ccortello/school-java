@@ -9,8 +9,9 @@ import java.util.Scanner;
  * Represents an arbitrary task management infrastructure
  *
  * @author Paymon saebi
- * @author
- * @author
+ * @author Casey Nordgran
+ * @author Cody Cortello
+ * @version 7/16/2014
  */
 public class TaskManager {
     private Task currentTask;

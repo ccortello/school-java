@@ -9,6 +9,7 @@ import java.util.*;
  *
  * @author Cody Cortello
  * @author Casey Nordgran
+ * @version 7/16/2014
  */
 public class BinarySearchTree<Type> {
     private BinaryNode root;

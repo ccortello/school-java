@@ -12,8 +12,8 @@ import java.util.NoSuchElementException;
  *
  * @author Paymon Saebi
  * @author Casey Nordgran
- * @author
- * @version 7/15/2014
+ * @author Cody Cortello
+ * @version 7/16/2014
  */
 public class PriorityQueueHEAP<AnyType> {
     private AnyType[] array;
