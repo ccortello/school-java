@@ -173,11 +173,24 @@ public class PriorityQueueHEAP<AnyType> {
      * @param index array index of specified element to percolate up
      */
     private void percolateUp(int index) {
+        if (index <= 0)
+            return;
         // store item at specified index to be inserted at correct location instead of swaping
         AnyType item = array[index];
         // continually move next parent down to current index if item is less than parent.
-        while (compare(item, array[Math.abs((index - 1) / 2)]) < 0 && (index - 1) / 2 >= 0)
-            array[index] = array[(index++ - 1) / 2];
+        do {
+            if (compare(item, array[(index - 1) / 2]) < 0) {
+                array[index] = array[(index - 1) / 2];
+            } else
+                break;
+            // update index
+            index = (index - 1) / 2;
+        } while ((index - 1) / 2 >= 0);
+
+//        while (compare(item, array[(index - 1) / 2]) < 0 && (index - 1) / 2 >= 0) {
+//            array[index] = array[(index - 1) / 2];
+//            index = (index-1)/2;
+//        }
         // after percolate up reaches correct spot, item is inserted at current index.
         array[index] = item;
     }
