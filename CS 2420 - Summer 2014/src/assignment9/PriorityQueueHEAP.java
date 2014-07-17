@@ -185,12 +185,15 @@ public class PriorityQueueHEAP<AnyType> {
                 break;
             // update index
             index = (index - 1) / 2;
-        } while ((index - 1) / 2 >= 0);
-
-//        while (compare(item, array[(index - 1) / 2]) < 0 && (index - 1) / 2 >= 0) {
-//            array[index] = array[(index - 1) / 2];
-//            index = (index-1)/2;
-//        }
+        } while ((index - 1) / 2 > 0);
+        // if there is still a parent index at 0, if so compare and swap if necessary.
+        if (index > 0 && (index - 1) / 2 <= 0) {
+            if (compare(item, array[0]) < 0) {
+                array[index] = array[0];
+                array[0] = item;
+                return;
+            }
+        }
         // after percolate up reaches correct spot, item is inserted at current index.
         array[index] = item;
     }

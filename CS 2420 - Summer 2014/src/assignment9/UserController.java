@@ -17,9 +17,11 @@ public class UserController {
      * @param args
      */
     public static void main(String[] args) {
+        args = new String[10];
+        args[0] = "tasks.txt";
 
         // check that atleast one argument was passed
-        if (args[0] == null || args[0] == "") {
+        if (args.length == 0) {
             System.out.println("You must give atleast one parameter!");
             return;
         }

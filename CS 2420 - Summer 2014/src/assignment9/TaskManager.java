@@ -177,23 +177,28 @@ public class TaskManager {
     protected class TaskComparator implements Comparator<Task> {
         // implement compare method
         public int compare(Task lhs, Task rhs) {
-            char leftGroup = lhs.getPriorityGroup(), rightGroup = rhs.getPriorityGroup();
-            if (leftGroup != rightGroup) {
-                // if the lhs is less than rhs, mean rhs is closer to Z, return -1
-                if (leftGroup < rightGroup)
+            if (lhs != null && rhs != null) {
+
+                char leftGroup = lhs.getPriorityGroup(), rightGroup = rhs.getPriorityGroup();
+                if (leftGroup != rightGroup) {
+                    // if the lhs is less than rhs, mean rhs is closer to Z, return -1
+                    if (leftGroup < rightGroup)
+                        return -1;
+                    else if (leftGroup > rightGroup)
+                        return 1;
+                }
+                // here leftGroup & rightGroup must be equal, tiebreaker is the task's priority level
+                int leftLevel = lhs.getPriorityLevel(), rightLevel = rhs.getPriorityLevel();
+                if (leftLevel < rightLevel)
                     return -1;
-                else if (leftGroup > rightGroup)
+                else if (leftLevel > rightLevel)
                     return 1;
+                // if this point is reached than lhs & rhs must be equal, return 0
+                return 0;
             }
-            // here leftGroup & rightGroup must be equal, tiebreaker is the task's priority level
-            int leftLevel = lhs.getPriorityLevel(), rightLevel = rhs.getPriorityLevel();
-            if (leftLevel < rightLevel)
-                return -1;
-            else if (leftLevel > rightLevel)
-                return 1;
-            // if this point is reached than lhs & rhs must be equal, return 0
             return 0;
         }
+
     }
 
 }
