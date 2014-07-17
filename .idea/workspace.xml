@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="update">
+    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="got the program running for about half the time until I hit exceptions">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment9/PriorityQueueHEAP.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment9/PriorityQueueHEAP.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment9/TaskManager.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment9/TaskManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment9/UserController.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment9/UserController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workspace.iws" />
@@ -99,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PriorityQueueHEAP.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="PriorityQueueHEAP.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment9/PriorityQueueHEAP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1591" max-vertical-offset="2755">
-              <caret line="196" column="0" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.2542662" vertical-offset="982" max-vertical-offset="4089">
+              <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
               <folding>
                 <element signature="docComment;class#PriorityQueueHEAP#0" expanded="false" />
                 <element signature="docComment;method#PriorityQueueHEAP#0;class#PriorityQueueHEAP#0" expanded="false" />
@@ -116,9 +114,12 @@
                 <element signature="method#add#0;class#PriorityQueueHEAP#0" expanded="true" />
                 <element signature="docComment;method#toArray#0;class#PriorityQueueHEAP#0" expanded="false" />
                 <element signature="docComment;method#compare#0;class#PriorityQueueHEAP#0" expanded="false" />
+                <element signature="method#compare#0;class#PriorityQueueHEAP#0" expanded="true" />
                 <element signature="docComment;method#generateDotFile#0;class#PriorityQueueHEAP#0" expanded="false" />
                 <element signature="docComment;method#percolateUp#0;class#PriorityQueueHEAP#0" expanded="false" />
+                <element signature="method#percolateUp#0;class#PriorityQueueHEAP#0" expanded="true" />
                 <element signature="docComment;method#percolateDown#0;class#PriorityQueueHEAP#0" expanded="false" />
+                <element signature="method#percolateDown#0;class#PriorityQueueHEAP#0" expanded="true" />
                 <element signature="docComment;method#doublePQ#0;class#PriorityQueueHEAP#0" expanded="false" />
                 <element signature="docComment;method#swap#0;class#PriorityQueueHEAP#0" expanded="false" />
               </folding>
@@ -154,12 +155,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Vertex.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Vertex.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment9/Vertex.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33275563" vertical-offset="4129" max-vertical-offset="4756">
-              <caret line="206" column="0" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="116" max-vertical-offset="4756">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding>
+                <element signature="method#compareTo#0;class#Vertex#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -235,8 +238,8 @@
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment9/BinarySearchTree.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment8/HashTableTimer.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment9/UserController.java" />
-        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment9/PriorityQueueHEAP.java" />
         <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment9/TaskManager.java" />
+        <option value="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment9/PriorityQueueHEAP.java" />
       </list>
     </option>
   </component>
@@ -2090,7 +2093,11 @@
       <created>1405560339730</created>
       <updated>1405560339730</updated>
     </task>
-    <option name="localTasksCounter" value="297" />
+    <task id="LOCAL-00297" summary="got the program running for about half the time until I hit exceptions">
+      <created>1405565231587</created>
+      <updated>1405565231587</updated>
+    </task>
+    <option name="localTasksCounter" value="298" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -2127,18 +2134,18 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32815966" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46674058" sideWeight="0.48609626" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="1.0" sideWeight="0.3540107" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32150775" sideWeight="0.51336896" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40133038" sideWeight="0.28916308" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26385808" sideWeight="0.36898395" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31374723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31374723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24892704" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22459893" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30931264" sideWeight="0.6304813" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31374723" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2195,7 +2202,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="implementing dijkstra's =)" />
     <MESSAGE value="added isCyclic( ) and hasPath( ) methods.   isCyclic( ) uses hasPath( ), and isCyclic is used in topologicalSort to throw an error if the graph is cyclic." />
     <MESSAGE value="more timing..." />
     <MESSAGE value="timing sucks" />
@@ -2220,30 +2226,23 @@
     <MESSAGE value="added necessary files with good portion implemented" />
     <MESSAGE value="implemented the TODO's in UserController" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="got the program running for about half the time until I hit exceptions" />
+    <option name="LAST_COMMIT_MESSAGE" value="got the program running for about half the time until I hit exceptions" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment9/TaskManager.java</url>
-          <line>94</line>
-          <properties />
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment9/PriorityQueueHEAP.java</url>
-          <line>110</line>
-          <properties />
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="37" />
+        </breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="37" />
+      <option name="time" value="38" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -2586,31 +2585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment9/PriorityQueueHEAP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1591" max-vertical-offset="2755">
-          <caret line="196" column="0" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#PriorityQueueHEAP#0" expanded="false" />
-            <element signature="docComment;method#PriorityQueueHEAP#0;class#PriorityQueueHEAP#0" expanded="false" />
-            <element signature="docComment;method#PriorityQueueHEAP#1;class#PriorityQueueHEAP#0" expanded="false" />
-            <element signature="docComment;method#size#0;class#PriorityQueueHEAP#0" expanded="false" />
-            <element signature="docComment;method#clear#0;class#PriorityQueueHEAP#0" expanded="false" />
-            <element signature="docComment;method#findMin#0;class#PriorityQueueHEAP#0" expanded="false" />
-            <element signature="docComment;method#deleteMin#0;class#PriorityQueueHEAP#0" expanded="false" />
-            <element signature="docComment;method#add#0;class#PriorityQueueHEAP#0" expanded="false" />
-            <element signature="method#add#0;class#PriorityQueueHEAP#0" expanded="true" />
-            <element signature="docComment;method#toArray#0;class#PriorityQueueHEAP#0" expanded="false" />
-            <element signature="docComment;method#compare#0;class#PriorityQueueHEAP#0" expanded="false" />
-            <element signature="docComment;method#generateDotFile#0;class#PriorityQueueHEAP#0" expanded="false" />
-            <element signature="docComment;method#percolateUp#0;class#PriorityQueueHEAP#0" expanded="false" />
-            <element signature="docComment;method#percolateDown#0;class#PriorityQueueHEAP#0" expanded="false" />
-            <element signature="docComment;method#doublePQ#0;class#PriorityQueueHEAP#0" expanded="false" />
-            <element signature="docComment;method#swap#0;class#PriorityQueueHEAP#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment9/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="67" max-vertical-offset="2291">
@@ -2640,9 +2614,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment9/Vertex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33275563" vertical-offset="4129" max-vertical-offset="4756">
-          <caret line="206" column="0" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="116" max-vertical-offset="4756">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="method#compareTo#0;class#Vertex#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment9/PriorityQueueHEAP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2542662" vertical-offset="982" max-vertical-offset="4089">
+          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#PriorityQueueHEAP#0" expanded="false" />
+            <element signature="docComment;method#PriorityQueueHEAP#0;class#PriorityQueueHEAP#0" expanded="false" />
+            <element signature="docComment;method#PriorityQueueHEAP#1;class#PriorityQueueHEAP#0" expanded="false" />
+            <element signature="docComment;method#size#0;class#PriorityQueueHEAP#0" expanded="false" />
+            <element signature="docComment;method#clear#0;class#PriorityQueueHEAP#0" expanded="false" />
+            <element signature="docComment;method#findMin#0;class#PriorityQueueHEAP#0" expanded="false" />
+            <element signature="docComment;method#deleteMin#0;class#PriorityQueueHEAP#0" expanded="false" />
+            <element signature="docComment;method#add#0;class#PriorityQueueHEAP#0" expanded="false" />
+            <element signature="method#add#0;class#PriorityQueueHEAP#0" expanded="true" />
+            <element signature="docComment;method#toArray#0;class#PriorityQueueHEAP#0" expanded="false" />
+            <element signature="docComment;method#compare#0;class#PriorityQueueHEAP#0" expanded="false" />
+            <element signature="method#compare#0;class#PriorityQueueHEAP#0" expanded="true" />
+            <element signature="docComment;method#generateDotFile#0;class#PriorityQueueHEAP#0" expanded="false" />
+            <element signature="docComment;method#percolateUp#0;class#PriorityQueueHEAP#0" expanded="false" />
+            <element signature="method#percolateUp#0;class#PriorityQueueHEAP#0" expanded="true" />
+            <element signature="docComment;method#percolateDown#0;class#PriorityQueueHEAP#0" expanded="false" />
+            <element signature="method#percolateDown#0;class#PriorityQueueHEAP#0" expanded="true" />
+            <element signature="docComment;method#doublePQ#0;class#PriorityQueueHEAP#0" expanded="false" />
+            <element signature="docComment;method#swap#0;class#PriorityQueueHEAP#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

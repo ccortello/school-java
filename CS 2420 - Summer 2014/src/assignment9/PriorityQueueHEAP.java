@@ -92,9 +92,9 @@ public class PriorityQueueHEAP<AnyType> {
         // set last item to index 0 and set it's previous index to null
         array[0] = array[currentSize - 1];
         array[currentSize - 1] = null;
+        currentSize--;
         // now percolateDown the newly set element at index 0, and decrement size
         percolateDown(0);
-        currentSize--;
         // return previous element at index 0 before the remove
         return minItem;
     }
