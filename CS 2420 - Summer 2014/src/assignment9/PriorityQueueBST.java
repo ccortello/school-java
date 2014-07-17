@@ -1,6 +1,5 @@
 package assignment9;
 
-import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.NoSuchElementException;
 
@@ -97,16 +96,7 @@ public class PriorityQueueBST<AnyType> {
      * @return Object array containing the PQs elements
      */
     public Object[] toArray() {
-        // create new object array of the exact size of this list
-        Object[] returnArray = new Object[BST.size()];
-        // convert the BST to ArrayList using the built in function
-        ArrayList<AnyType> bstArrayList = BST.toArrayList();
-        int index = 0;
-        // transfer ArrayList items to Object array
-        for (AnyType item : bstArrayList)
-            returnArray[index++] = item;
-        // return the object array
-        return returnArray;
+        return BST.toArrayList().toArray();
     }
 }
 
