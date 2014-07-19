@@ -45,12 +45,15 @@ public class PriorityQueueTester extends TestCase {
         assertEquals(5, testPQ.size());
         // create Object[] to test toArray method
         Object[] arrayTest = testPQ.toArray();
-//        assertEquals("", arrayTest.toString());
-        System.out.println(arrayTest.toString());
+        assertTrue(arrayTest != null && arrayTest.length != 0);
+        // with the above tests passed we know percolate up and percolate down also work
+        testPQ.clear();
+        // test the above method call to clear, clears the PQ
+        assertTrue(testPQ.size() == 0);
     }
 
     /**
-     * Tests the methods of the PriorityQueueBST class, the three methods tested are add,
+     * Tests the methods of the PriorityQueueHEAP class, the three methods tested are add,
      * findMin & deleteMin
      */
     public void testPriorityQueueBST() {
@@ -73,6 +76,20 @@ public class PriorityQueueTester extends TestCase {
         // assert next delete min leaves the PQ to size 0
         testPQ.deleteMin();
         assertEquals(0, testPQ.size());
+        // re-add integers to test other methods
+        testPQ.add(1);
+        testPQ.add(20);
+        testPQ.add(-5);
+        testPQ.add(-1);
+        testPQ.add(12);
+        assertEquals(5, testPQ.size());
+        // create Object[] to test toArray method
+        Object[] arrayTest = testPQ.toArray();
+        assertTrue(arrayTest != null && arrayTest.length != 0);
+        // with the above tests passed we know percolate up and percolate down also work
+        testPQ.clear();
+        // test the above method call to clear, clears the PQ
+        assertTrue(testPQ.size() == 0);
     }
 
 	public void testBulkHEAP() {
