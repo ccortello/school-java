@@ -4,7 +4,6 @@ import junit.framework.TestCase;
 
 import java.util.PriorityQueue;
 import java.util.Random;
-import java.util.TreeMap;
 
 /**
  * Class to test various methods of the priority queues
@@ -115,13 +114,15 @@ public class PriorityQueueTester extends TestCase {
 	public void testBulkBST() {
 		// create a new test PriorityQueue and comparison Objects and test random operations upon them
 		PriorityQueueBST<Integer> pq = new PriorityQueueBST<Integer>();
-		TreeMap<Integer> jpq = new PriorityQueue<Integer>();
+		PriorityQueue<Integer> jpq = new PriorityQueue<Integer>();
 
 		Random rand = new Random(seed);
 		int nextRandomInt = rand.nextInt();
 
 		// for the first 50% of the operations just add things to the PQs to populate them
 		for (int i = 0; i < 0.50 * operations; i++) {
+			if (jpq.contains(nextRandomInt)) // don't repeat items to maintain PriorityHeap set properties
+				continue;
 			pq.add(nextRandomInt);
 			jpq.add(nextRandomInt);
 		}
@@ -131,18 +132,21 @@ public class PriorityQueueTester extends TestCase {
 
 			// first type of random operation is add()
 			if (nextRandomInt % 3 == 0) {
-				System.out.println("Adding!");
+				if (jpq.size() != 0 && jpq.contains(nextRandomInt)) // don't repeat items to maintain PriorityHeap set
+					// properties
+					continue;
+				System.out.println("Adding, size = " + pq.size());
 				pq.add(nextRandomInt);
 				jpq.add(nextRandomInt);
 			}
 			// second type of random operation is findMin()
 			else if (nextRandomInt % 3 == 1) {
-				System.out.println("Asserting findMin!");
+				System.out.println("Asserting findMin, size = " + pq.size());
 				assertEquals(pq.findMin(), jpq.peek());
 			}
 			// third type of random operation is delMin()
 			else {
-				System.out.println("Asserting delMin()!");
+				System.out.println("Asserting delMin(), size = " + pq.size());
 				assertEquals(pq.deleteMin(), jpq.poll());
 			}
 		}
