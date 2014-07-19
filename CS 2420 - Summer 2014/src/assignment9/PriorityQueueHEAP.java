@@ -140,7 +140,6 @@ public class PriorityQueueHEAP<AnyType> {
         if (cmp == null)
             return ((Comparable<? super AnyType>) lhs).compareTo(rhs); // safe to ignore warning
         // We won't test your code on non-Comparable types if we didn't supply a Comparator
-
         return cmp.compare(lhs, rhs);
     }
 
