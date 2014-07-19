@@ -4,6 +4,7 @@ import junit.framework.TestCase;
 
 import java.util.PriorityQueue;
 import java.util.Random;
+import java.util.TreeMap;
 
 /**
  * Class to test various methods of the priority queues
@@ -13,7 +14,8 @@ public class PriorityQueueTester extends TestCase {
 	int operations = 1000000;
 
     /**
-     * Tests the methods of the PriorityQueueHEAP class
+     * Tests the methods of the PriorityQueueHEAP class, the three methods tested are add,
+     * findMin & deleteMin
      */
     public void testPriorityQueueHEAP() {
         // create a PQ of type Integer to test
@@ -23,7 +25,55 @@ public class PriorityQueueTester extends TestCase {
         // add Integers to th PQ, and test min value
         testPQ.add(1);
         assertEquals((Integer) 1, testPQ.findMin());
+        testPQ.add(20);
+        assertEquals((Integer) 1, testPQ.findMin());
+        testPQ.add(-5);
+        assertEquals((Integer) (-5), testPQ.findMin());
+        // test delete min
+        testPQ.deleteMin();
+        assertEquals((Integer) 1, testPQ.findMin());
+        testPQ.deleteMin();
+        assertEquals((Integer) 20, testPQ.findMin());
+        // assert next delete min leaves the PQ to size 0
+        testPQ.deleteMin();
+        assertEquals(0, testPQ.size());
+        // re-add integers to test other methods
+        testPQ.add(1);
+        testPQ.add(20);
+        testPQ.add(-5);
+        testPQ.add(-1);
+        testPQ.add(12);
+        assertEquals(5, testPQ.size());
+        // create Object[] to test toArray method
+        Object[] arrayTest = testPQ.toArray();
+//        assertEquals("", arrayTest.toString());
+        System.out.println(arrayTest.toString());
+    }
 
+    /**
+     * Tests the methods of the PriorityQueueBST class, the three methods tested are add,
+     * findMin & deleteMin
+     */
+    public void testPriorityQueueBST() {
+        // create a PQ of type Integer to test
+        PriorityQueueBST<Integer> testPQ = new PriorityQueueBST<Integer>();
+        // before adding, assert the size is zero
+        assertEquals(0, testPQ.size());
+        // add Integers to th PQ, and test min value
+        testPQ.add(1);
+        assertEquals((Integer) 1, testPQ.findMin());
+        testPQ.add(20);
+        assertEquals((Integer) 1, testPQ.findMin());
+        testPQ.add(-5);
+        assertEquals((Integer) (-5), testPQ.findMin());
+        // test delete min
+        testPQ.deleteMin();
+        assertEquals((Integer) 1, testPQ.findMin());
+        testPQ.deleteMin();
+        assertEquals((Integer) 20, testPQ.findMin());
+        // assert next delete min leaves the PQ to size 0
+        testPQ.deleteMin();
+        assertEquals(0, testPQ.size());
     }
 
 	public void testBulkHEAP() {
