@@ -142,15 +142,11 @@ public class PriorityQueueTester extends TestCase {
 				jpq.add(nextRandomInt);
 			}
 			// second type of random operation is findMin()
-			else if (nextRandomInt % 3 == 1) {
-//				System.out.println("Asserting findMin, size = " + pq.size());
+			else if (nextRandomInt % 3 == 1)
 				assertEquals(pq.findMin(), jpq.peek());
-			}
 			// third type of random operation is delMin()
-			else {
-//				System.out.println("Asserting delMin(), size = " + pq.size());
+			else
 				assertEquals(pq.deleteMin(), jpq.poll());
-			}
 		}
 	}
 }
