@@ -134,13 +134,15 @@ public class PriorityQueueTester extends TestCase {
 
 			// first type of random operation is add()
 			if (nextRandomInt % 3 == 0) {
-				if (jpq.size() != 0 && jpq.contains(nextRandomInt)) // don't repeat items to maintain PriorityHeap set
-					// properties
+
+				// don't repeat items to maintain PriorityHeap set properties
+				if (jpq.size() != 0 && jpq.contains(nextRandomInt))
 					continue;
-//				System.out.println("Adding, size = " + pq.size());
+
 				pq.add(nextRandomInt);
 				jpq.add(nextRandomInt);
 			}
+
 			// second type of random operation is findMin()
 			else if (nextRandomInt % 3 == 1)
 				assertEquals(pq.findMin(), jpq.peek());
