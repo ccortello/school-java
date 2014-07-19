@@ -111,20 +111,15 @@ public class PriorityQueueTester extends TestCase {
 
 			// first type of random operation is add()
 			if (nextRandomInt % 3 == 0) {
-				System.out.println("Adding!");
 				pq.add(nextRandomInt);
 				jpq.add(nextRandomInt);
 			}
 			// second type of random operation is findMin()
-			else if (nextRandomInt % 3 == 1) {
-				System.out.println("Asserting findMin!");
+			else if (nextRandomInt % 3 == 1)
 				assertEquals(pq.findMin(), jpq.peek());
-			}
 			// third type of random operation is delMin()
-			else {
-				System.out.println("Asserting delMin()!");
+			else
 				assertEquals(pq.deleteMin(), jpq.poll());
-			}
 		}
 	}
 
@@ -139,8 +134,8 @@ public class PriorityQueueTester extends TestCase {
 		// for the first 50% of the operations just add things to the PQs to populate them
 		for (int i = 0; i < 0.50 * operations; i++) {
 			nextRandomInt = rand.nextInt();
-			if (jpq.size() == 0 || !jpq.contains(nextRandomInt)) { // don't repeat items to maintain PriorityHeap set
-			// properties
+			// don't repeat items to maintain PriorityHeap set properties
+			if (jpq.size() == 0 || !jpq.contains(nextRandomInt)) {
 				pq.add(nextRandomInt);
 				jpq.add(nextRandomInt);
 			}
