@@ -10,7 +10,7 @@ import java.util.Random;
  */
 public class PriorityQueueTester extends TestCase {
 	long seed = 3892477348952745972L;
-	int operations = 1000000;
+	int operations = 1000;
 
     /**
      * Tests the methods of the PriorityQueueHEAP class, the three methods tested are add,
@@ -117,14 +117,16 @@ public class PriorityQueueTester extends TestCase {
 		PriorityQueue<Integer> jpq = new PriorityQueue<Integer>();
 
 		Random rand = new Random(seed);
-		int nextRandomInt = rand.nextInt();
+		int nextRandomInt;
 
 		// for the first 50% of the operations just add things to the PQs to populate them
 		for (int i = 0; i < 0.50 * operations; i++) {
-			if (jpq.contains(nextRandomInt)) // don't repeat items to maintain PriorityHeap set properties
-				continue;
-			pq.add(nextRandomInt);
-			jpq.add(nextRandomInt);
+			nextRandomInt = rand.nextInt();
+			if (jpq.size() == 0 || !jpq.contains(nextRandomInt)) { // don't repeat items to maintain PriorityHeap set
+			// properties
+				pq.add(nextRandomInt);
+				jpq.add(nextRandomInt);
+			}
 		}
 
 		for (int i = 0; i < 0.50 * operations; i++) {
@@ -135,18 +137,18 @@ public class PriorityQueueTester extends TestCase {
 				if (jpq.size() != 0 && jpq.contains(nextRandomInt)) // don't repeat items to maintain PriorityHeap set
 					// properties
 					continue;
-				System.out.println("Adding, size = " + pq.size());
+//				System.out.println("Adding, size = " + pq.size());
 				pq.add(nextRandomInt);
 				jpq.add(nextRandomInt);
 			}
 			// second type of random operation is findMin()
 			else if (nextRandomInt % 3 == 1) {
-				System.out.println("Asserting findMin, size = " + pq.size());
+//				System.out.println("Asserting findMin, size = " + pq.size());
 				assertEquals(pq.findMin(), jpq.peek());
 			}
 			// third type of random operation is delMin()
 			else {
-				System.out.println("Asserting delMin(), size = " + pq.size());
+//				System.out.println("Asserting delMin(), size = " + pq.size());
 				assertEquals(pq.deleteMin(), jpq.poll());
 			}
 		}
