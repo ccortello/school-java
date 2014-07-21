@@ -5,7 +5,7 @@ import java.util.Random;
 /**
  * Created by Cody on 7/20/2014.
  */
-public class PriorityHeapTimer {
+public class PriorityQueueTimer {
     static long seed = 274981289975398L;
     static boolean printAsRuns = true;
     static boolean printAtEnd = false;
@@ -14,10 +14,10 @@ public class PriorityHeapTimer {
     static int TIMES_TO_LOOP = 200;
 
     public static void main(String[] args) {
-        new PriorityHeapTimer();
+        new PriorityQueueTimer();
     }
 
-    PriorityHeapTimer() {
+    PriorityQueueTimer() {
         try {
 //            PriorityHeapAddTimer();
 //            PriorityHeapFindMinTimer();
