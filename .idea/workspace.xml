@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="findMin() timing data + graph">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment9/PQ findMin().tif" />
+    <list default="true" id="f36d3194-0376-44c3-a668-32eca328c1b5" name="Default" comment="delMin() timing data + graph">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment9/Data/BST add().tif" />
+      <change type="DELETED" beforePath="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment9\PQ findMin().tif" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment9\PQ findMin().tif" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment9/Data/PQ delMin().tif" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment9/PriorityHeapTimer.java" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment9/PriorityHeapTimer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment9/Data/TimingOutput.txt" afterPath="$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment9/Data/TimingOutput.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -86,30 +88,23 @@
       <file leaf-file-name="PriorityHeapTimer.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment9/PriorityHeapTimer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.71629214" vertical-offset="0" max-vertical-offset="493">
-              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.58532935" vertical-offset="0" max-vertical-offset="668">
+              <caret line="240" column="62" selection-start-line="240" selection-start-column="62" selection-end-line="240" selection-end-column="62" />
               <folding>
                 <element signature="docComment;class#PriorityHeapTimer#0" expanded="false" />
                 <element signature="method#PriorityHeapTimer#0;class#PriorityHeapTimer#0" expanded="false" />
                 <element signature="e#480#517#0" expanded="false" />
                 <element signature="method#PriorityHeapAddTimer#0;class#PriorityHeapTimer#0" expanded="false" />
-                <element signature="e#1360#1406#0" expanded="false" />
-                <element signature="e#3053#3100#0" expanded="false" />
+                <element signature="e#1397#1443#0" expanded="false" />
+                <element signature="e#3090#3137#0" expanded="false" />
                 <element signature="method#PriorityHeapFindMinTimer#0;class#PriorityHeapTimer#0" expanded="false" />
-                <element signature="e#5734#5781#0" expanded="false" />
+                <element signature="e#5771#5818#0" expanded="false" />
                 <element signature="method#PriorityHeapDelMinTimer#0;class#PriorityHeapTimer#0" expanded="false" />
-                <element signature="e#8639#8686#0" expanded="false" />
+                <element signature="e#8676#8723#0" expanded="false" />
+                <element signature="method#PriorityBSTAddTimer#0;class#PriorityHeapTimer#0" expanded="false" />
+                <element signature="e#9757#9803#0" expanded="false" />
+                <element signature="e#11451#11498#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TimingOutput.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment9/Data/TimingOutput.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2330" max-vertical-offset="3213">
-              <caret line="183" column="0" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -196,8 +191,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -485,8 +480,8 @@
       <recent name="homework09" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment9" />
       <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment9\Data" />
+      <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment9" />
       <recent name="C:\Users\Casey\Documents\GitHub_Clones\school-java\CS 2420 - Summer 2014\src\assignment9" />
       <recent name="C:\Users\Casey\Documents\GitHub_Clones\school-java\CS 2420 - Summer 2014\src\assignment8" />
       <recent name="C:\Users\Cody\Java\school-java\CS 2420 - Summer 2014\src\assignment8\Data" />
@@ -2134,7 +2129,11 @@
       <created>1405906258319</created>
       <updated>1405906258319</updated>
     </task>
-    <option name="localTasksCounter" value="307" />
+    <task id="LOCAL-00307" summary="delMin() timing data + graph">
+      <created>1405909128953</created>
+      <updated>1405909128953</updated>
+    </task>
+    <option name="localTasksCounter" value="308" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -2161,7 +2160,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2181,8 +2180,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.21192758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22401172" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3962264" sideWeight="0.63103956" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22395833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2658228" sideWeight="0.63103956" order="3" side_tool="true" content_ui="tabs" x="-41" y="445" width="1920" height="278" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2209,7 +2208,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="moved methods that don't implement the same in ChainedHashTable to be in ProbedHashTable alone, then did ChainedHashTable's own implementations. Did the same for member variables that aren't used in ChainedHashTable. Moved isPrime and nextPrime to HashTable so ChainedHashTable could use them, to return more evenly distributed hashcodes with the capacity being prime." />
     <MESSAGE value="changed goodHashFunctor so there were no errors" />
     <MESSAGE value="implemented rehash in ChainingHashTable and also added max lambda member variable in ChainingHashTable" />
     <MESSAGE value="updated fairHashFunctor because he asked us in the lecture to do something more than just sum the char, so I multiplied sum by item.length() as well" />
@@ -2234,7 +2232,8 @@
     <MESSAGE value="update" />
     <MESSAGE value="Started Timing" />
     <MESSAGE value="findMin() timing data + graph" />
-    <option name="LAST_COMMIT_MESSAGE" value="findMin() timing data + graph" />
+    <MESSAGE value="delMin() timing data + graph" />
+    <option name="LAST_COMMIT_MESSAGE" value="delMin() timing data + graph" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -2636,27 +2635,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment9/Data/TimingOutput.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2330" max-vertical-offset="3213">
-          <caret line="183" column="0" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.8727545" vertical-offset="3055" max-vertical-offset="3740">
+          <caret line="214" column="0" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CS 2420 - Summer 2014/src/assignment9/PriorityHeapTimer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71629214" vertical-offset="0" max-vertical-offset="493">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.58532935" vertical-offset="0" max-vertical-offset="668">
+          <caret line="240" column="62" selection-start-line="240" selection-start-column="62" selection-end-line="240" selection-end-column="62" />
           <folding>
             <element signature="docComment;class#PriorityHeapTimer#0" expanded="false" />
             <element signature="method#PriorityHeapTimer#0;class#PriorityHeapTimer#0" expanded="false" />
             <element signature="e#480#517#0" expanded="false" />
             <element signature="method#PriorityHeapAddTimer#0;class#PriorityHeapTimer#0" expanded="false" />
-            <element signature="e#1360#1406#0" expanded="false" />
-            <element signature="e#3053#3100#0" expanded="false" />
+            <element signature="e#1397#1443#0" expanded="false" />
+            <element signature="e#3090#3137#0" expanded="false" />
             <element signature="method#PriorityHeapFindMinTimer#0;class#PriorityHeapTimer#0" expanded="false" />
-            <element signature="e#5734#5781#0" expanded="false" />
+            <element signature="e#5771#5818#0" expanded="false" />
             <element signature="method#PriorityHeapDelMinTimer#0;class#PriorityHeapTimer#0" expanded="false" />
-            <element signature="e#8639#8686#0" expanded="false" />
+            <element signature="e#8676#8723#0" expanded="false" />
+            <element signature="method#PriorityBSTAddTimer#0;class#PriorityHeapTimer#0" expanded="false" />
+            <element signature="e#9757#9803#0" expanded="false" />
+            <element signature="e#11451#11498#0" expanded="false" />
           </folding>
         </state>
       </provider>
