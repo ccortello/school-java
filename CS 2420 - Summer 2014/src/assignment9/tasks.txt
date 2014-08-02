@@ -1,0 +1,7 @@
+cpu_check A 1
+mem_check A 2
+pcu_check A 3
+user_init B 1
+user_comm B 2
+user_shut C 1
+sys_close C 2

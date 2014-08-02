@@ -90,7 +90,7 @@ public class TaskManager {
             int level = 0;
             char group = 0;
             String name = "";
-            String token = "";
+            String token;
 
             while (fileInput.hasNextLine()) {
                 token = fileInput.next();

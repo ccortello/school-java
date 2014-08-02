@@ -54,7 +54,6 @@ public class SpellCheckUtil {
      * Spell-checks a document against the dictionary.
      *
      * @param documentFile - the File that contains Strings to be looked up in the dictionary
-     *
      * @return a List of misspelled words
      */
     public List<String> spellCheck(File documentFile) {
@@ -65,7 +64,7 @@ public class SpellCheckUtil {
         /*enhanced for loop iterates all strings in wordsToCheck. If dictionary does not contain the string
         and the string does not equal "", add the string to the misspelledWords list.*/
         for (String word : wordsToCheck)
-            if (! (dictionary.contains(word)) && word != "")
+            if (!(dictionary.contains(word)) && !word.equals(""))
                 misspelledWords.add(word);
 
         // after iteration completes, return misspelledWords list.
@@ -86,7 +85,6 @@ public class SpellCheckUtil {
      * ignored.)
      *
      * @param file - the File to be read
-     *
      * @return a List of the Strings in the input file
      */
     private List<String> readFromFile(File file) {
@@ -112,11 +110,10 @@ public class SpellCheckUtil {
             while (fileInput.hasNext()) {
                 String s = fileInput.next();
 
-                if (! s.equals(""))
+                if (!s.equals(""))
                     words.add(s.toLowerCase());
             }
-        }
-        catch (FileNotFoundException e) {
+        } catch (FileNotFoundException e) {
             System.err.println("File " + file + " cannot be found.");
         }
 
