@@ -1,7 +1,0 @@
-hallo, goot luk on the finak progect!
-
-binary serch trees are graat deta structures. 
-Serch is super fasf if th orded in whch th BST is constructed is nott too bad. 
-Bee carful, insertion and deletion cann bee tricky.
-
-Paymon

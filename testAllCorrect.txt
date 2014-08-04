@@ -1,7 +1,0 @@
-hello, good luck on the! 
-
-binary search trees are great data structures. 
-search is super fast if to order in which to is constructed is not too bad. 
-bye careful, insertion and deletion can bye tricky. 
-
-
